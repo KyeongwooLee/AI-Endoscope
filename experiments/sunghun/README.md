@@ -4,6 +4,13 @@ Qwen2.5-1.5B-Instruct가 직접 생성한 답변을 정답/오답으로 나누�
 중간 layer 표현으로 최종 오답 위험을 예측할 수 있는지 조사한 실험 코드다.
 **Qwen 가중치는 고정했으며, 학습한 것은 작은 classifier/probe뿐이다.**
 
+## 문서 읽기 순서
+
+전체 MD 문서별 내용과 목적별 추천 경로는 [브랜치 첫 README의 읽기 안내](../../README.md#처음-읽는-팀원을-위한-안내)에 있다.
+처음에는 이 문서의 타임라인·실제 결과를 읽고, 데이터 분석은 [DATA_README.md](DATA_README.md),
+실행 재현은 [REPRODUCE.md](REPRODUCE.md)로 이동하면 된다.
+개별 실험의 당시 설계는 아래 Experiment Order 표의 문서 링크를 참고한다.
+
 ## Contents
 
 - `gsm8k-logit-study/`: 실제 사용한 연구 코드, 설정, 설계 문서, 테스트.
