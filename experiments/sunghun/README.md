@@ -9,11 +9,16 @@ Qwen2.5-1.5B-Instruct가 직접 생성한 답변을 정답/오답으로 나누�
 - `gsm8k-logit-study/`: 실제 사용한 연구 코드, 설정, 설계 문서, 테스트.
 - `work/`: 실제 입력 패키징, detached 실행, 백업, 그림 생성에 사용한 보조 코드.
 - [REPRODUCE.md](REPRODUCE.md): 설치, 실행 순서, 필요한 외부 데이터와 입력 형식.
+- [DATA_README.md](DATA_README.md): 전체 train 데이터/feature 사전, AI 전달법, 누수 방지, CPU 로딩.
+- [DATA_SCHEMA.json](DATA_SCHEMA.json): 기계 판독용 배열/필드/feature 정의.
+- `data_tools/`: 원본을 변경하지 않는 Release 패키징·검증·로딩 도구와 테스트.
 - `source_manifest.json`: 업로드한 코드와 원본의 해시 대조 기록.
 
 생성 답변, feature 배열, 학습된 probe, 모델 가중치, 환경/cache, SSH 키는 포함하지 않는다.
-코드만 복제해서 과거 결과를 분석할 수는 없으며, 해당 결과 데이터가 별도로 필요하다.
-대용량 데이터를 GitHub Release로 올리는 작업은 아직 수행하지 않았다.
+전체 train 7,473개의 생성 답변과 compact feature는
+[별도 Release](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/gsm8k-train-features-v1)에서 받는다.
+`AI_STARTER.zip`은 팀원/AI용 작은 설명·샘플·scalar feature 묶음이다.
+초기 study의 전체 logit-lens 자료나 학습된 probe는 이 데이터 Release 범위에 포함하지 않는다.
 
 ## Fixed Protocol
 

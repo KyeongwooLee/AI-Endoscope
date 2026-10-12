@@ -1,0 +1,131 @@
+{
+  "schema_version": "train-compact-release-v1",
+  "release_tag": "gsm8k-train-features-v1",
+  "scope": "Official GSM8K train only; not a supplied fit/validation/test split",
+  "counts": {
+    "problems": 7473,
+    "incorrect": 1382,
+    "correct": 6091,
+    "parse_failures": 78,
+    "truncated": 16,
+    "truncated_parse_failures": 16,
+    "parsed_nontruncated": 7395,
+    "parsed_nontruncated_incorrect": 1304,
+    "replay_positions": 28251,
+    "replay_matches": 28251
+  },
+  "accuracy": 0.8150675766091262,
+  "checkpoint_problems": {
+    "0": 7473,
+    "32": 7467,
+    "64": 7446,
+    "128": 5865
+  },
+  "checkpoint_incorrect": {
+    "0": 1382,
+    "32": 1377,
+    "64": 1372,
+    "128": 1235
+  },
+  "by_origin": {
+    "old_confirmation": {
+      "problems": 1000,
+      "incorrect": 175
+    },
+    "old_exploration": {
+      "problems": 1000,
+      "incorrect": 190
+    },
+    "old_pilot": {
+      "problems": 128,
+      "incorrect": 23
+    },
+    "new_train": {
+      "problems": 5345,
+      "incorrect": 994
+    }
+  },
+  "generated_tokens_mean": 186.07440117757258,
+  "generated_tokens_median": 174.0,
+  "unique_normalized_question_groups": 7473,
+  "duplicate_question_groups": 0,
+  "duplicate_question_extra_rows": 0,
+  "scalar_feature_names": [
+    "l7.entropy.current",
+    "l7.entropy.mean",
+    "l7.entropy.std",
+    "l7.entropy.change_from_t0",
+    "l7.margin.current",
+    "l7.margin.mean",
+    "l7.margin.std",
+    "l7.margin.change_from_t0",
+    "l7.top1_probability.current",
+    "l7.top1_probability.mean",
+    "l7.top1_probability.std",
+    "l7.top1_probability.change_from_t0",
+    "l10.entropy.current",
+    "l10.entropy.mean",
+    "l10.entropy.std",
+    "l10.entropy.change_from_t0",
+    "l10.margin.current",
+    "l10.margin.mean",
+    "l10.margin.std",
+    "l10.margin.change_from_t0",
+    "l10.top1_probability.current",
+    "l10.top1_probability.mean",
+    "l10.top1_probability.std",
+    "l10.top1_probability.change_from_t0",
+    "l14.entropy.current",
+    "l14.entropy.mean",
+    "l14.entropy.std",
+    "l14.entropy.change_from_t0",
+    "l14.margin.current",
+    "l14.margin.mean",
+    "l14.margin.std",
+    "l14.margin.change_from_t0",
+    "l14.top1_probability.current",
+    "l14.top1_probability.mean",
+    "l14.top1_probability.std",
+    "l14.top1_probability.change_from_t0"
+  ],
+  "scalar_checkpoint_positions": [
+    0,
+    32
+  ],
+  "target": "incorrect=1; correct=0; parse failures included in incorrect",
+  "official_test_loaded": false,
+  "probe_retrained_on_full_pool": false,
+  "model": {
+    "id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "dtype": "float32",
+    "device": "cuda:0",
+    "attention_backend": "sdpa",
+    "expected_layers": 28,
+    "expected_hidden_size": 1536,
+    "expected_vocab_size": 151936
+  },
+  "dataset": {
+    "id": "openai/gsm8k",
+    "revision": "740312add88f781978c0658806c59bc2815b9866",
+    "name": "main",
+    "pilot_size": 128,
+    "exploration_size": 1000,
+    "expected_train_size": 7473,
+    "expected_test_size": 1319
+  },
+  "prompt": {
+    "system": "You are a math problem-solving assistant. Explain your reasoning step by step. You must end every answer with a separate final line formatted exactly as #### followed by a space and the numerical answer. Write nothing after this final line. Do not omit this line. The final answer must contain only a number, without units, currency symbols, Markdown emphasis, or LaTeX.",
+    "user_template": "Problem:\n{question}\n\nSolve the problem step by step. After your reasoning, write the answer on the LAST line using exactly this format:\n#### <number>\nReplace <number> with the numerical answer. Do not write any text after that line."
+  },
+  "fingerprint": "38d173815f312ea20a45d08cf33fe6795b9411e02c155bbd16079c7fa77d1ea4",
+  "original_batch_zip_bytes": 730618272,
+  "source_metadata_zip_sha256": "d766d0e51f6d0640af59b6df19fb1b091589a5dd683b8347558a4abc0c990098",
+  "warnings": [
+    "Origin names are provenance, NOT split assignments.",
+    "No calibrated probability of answer correctness is provided.",
+    "Exclude labels, gold, lengths, origin/ID and future time/layer values from early predictors.",
+    "Full pool includes previous fit/tuning/evaluation examples.",
+    "Scalar convenience views are new aggregation, not new inference or trained results."
+  ]
+}

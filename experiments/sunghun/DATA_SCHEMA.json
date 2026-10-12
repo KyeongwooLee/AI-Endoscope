@@ -1,0 +1,83 @@
+{
+  "schema_version": "train-compact-release-v1",
+  "schema_kind": "data dictionary, not a JSON Schema validator",
+  "dataset": "official GSM8K train only",
+  "id_join_key": "id (train-00000 through train-07472); join by string, never row order",
+  "target": {"name": "incorrect", "type": "integer", "values": {"0": "correct final numeric answer", "1": "wrong numeric answer OR parse failure"}},
+  "checkpoint_definition": "t generated answer tokens already in context; before predicting zero-based generated token t (human token t+1)",
+  "checkpoint_availability": "t < generated_tokens; missing checkpoints have no row, not zero/NaN padding",
+  "checkpoints": [0, 32, 64, 128],
+  "raw_layers": [7, 10, 13, 14],
+  "readout_layers": [7, 10, 14],
+  "readout_metrics": ["entropy", "margin", "top1_probability"],
+  "trajectory_layers": "1..28; array index l-1 is transition h_(l-1) -> h_l; h_0 is embedding output",
+  "trajectory_metrics": ["previous_norm", "hidden_norm", "delta_norm", "relative_delta", "cosine_distance"],
+  "dimensions": {"B": "problems in batch, normally 32; last batch 17", "C": "sum of available checkpoint counts across B problems", "R": "sum(min(129, generated_tokens)) across B problems", "D": 1536},
+  "npz": {
+    "ids": {"dtype": "Unicode string", "shape": ["C"], "meaning": "problem ID for each checkpoint row; repeats across checkpoints"},
+    "checkpoints": {"dtype": "int16", "shape": ["C"], "meaning": "t aligned with ids/hidden/trajectory"},
+    "hidden": {"dtype": "float32", "shape": ["C", 4, 1536], "meaning": "raw block outputs BEFORE final RMSNorm; axis 1 follows raw_layers"},
+    "trajectory": {"dtype": "float32", "shape": ["C", 28, 5], "meaning": "all layer transitions at checkpoint; for early prediction slice [:14], never full 28"},
+    "readout_ids": {"dtype": "Unicode string", "shape": ["B"], "meaning": "one problem ID per ragged readout segment"},
+    "readout_offsets": {"dtype": "int64", "shape": ["B+1"], "meaning": "segment i = readouts[offsets[i]:offsets[i+1]]; begins at t0; offsets[0]=0, offsets[-1]=R"},
+    "readouts": {"dtype": "float32", "shape": ["R", 3, 3], "meaning": "logit-lens statistics at every position 0..min(128,L-1), not just checkpoints; axes readout_layers/readout_metrics"}
+  },
+  "formulas": {
+    "logit_lens": "p_l = softmax(frozen_LM_head(final_RMSNorm(h_l))); FP32",
+    "entropy": "-sum_v p_l[v]*ln(p_l[v]); nats, NOT bits",
+    "margin": "largest probability minus second-largest probability; NOT logit gap",
+    "top1_probability": "max_v p_l[v]; next-token peak, NOT answer correctness probability",
+    "previous_norm": "||h_(l-1)||_2",
+    "hidden_norm": "||h_l||_2",
+    "delta_norm": "||h_l-h_(l-1)||_2",
+    "relative_delta": "delta_norm/max(previous_norm,1e-12)",
+    "cosine_distance": "1-clamp(dot(h_(l-1),h_l)/max(previous_norm*hidden_norm,1e-12),-1,1)"
+  },
+  "generation_record": {
+    "id": "join key",
+    "fingerprint": "immutable extraction protocol fingerprint",
+    "generation": {
+      "prompt_token_ids": "integer list, rendered system/user chat + assistant generation prefix",
+      "generated_token_ids": "integer list, model's own greedy path, not gold teacher forcing",
+      "text": "decoded answer with special tokens skipped",
+      "prompt_tokens": "prompt length, metadata; not an internal feature",
+      "generated_tokens": "L, final answer length; future leakage at t0/t32/etc",
+      "truncated": "whether generation hit configured budget",
+      "stop_reason": "original stopping diagnostic string",
+      "effective_stopping_rule": "original stopping rule description",
+      "generation_seconds": "runtime diagnostic, not predictor",
+      "effective_generation_config": "effective generation settings; optional extra legacy fields may exist"
+    },
+    "label": {
+      "gold_number": "Decimal-compatible string parsed from gold final line",
+      "predicted_number": "Decimal-compatible string or null on parse failure",
+      "parse_status": "ok, missing, or invalid_final_line",
+      "answer_correct": "boolean; parsed numeric equality, NOT proof of valid reasoning",
+      "truncated": "boolean, separately recorded; does not independently force a wrong label",
+      "analysis_eligible": "parse_status == ok AND not truncated; optional retrospective sensitivity subset"
+    },
+    "summary": {
+      "id": "join key",
+      "origin": "new_train, old_pilot, old_exploration, old_confirmation; provenance, NOT split/predictor",
+      "incorrect": "target 0/1",
+      "parse_status": "same label diagnostic",
+      "truncated": "same generation diagnostic",
+      "generated_tokens": "final length, forbidden early predictor",
+      "quality": "positions, matches, causal_max_abs_error; replay diagnostics, NOT predictors"
+    }
+  },
+  "questions_record": {"id": "join key", "index": "zero-based official train index at pinned revision", "question": "original question text", "gold": "full original worked solution and #### numeric answer; forbidden predictor"},
+  "derived_views": {
+    "problem_index.jsonl": "one row/problem: id,batch,question_group_sha256,origin,incorrect,answer_correct,parse_status,truncated,analysis_eligible,generated_tokens,available_checkpoints; metadata and target, not feature matrix",
+    "question_group_sha256": "SHA256(UTF8(' '.join(question.split()))); whitespace-only normalization, not semantic deduplication",
+    "scalar_features_t0_t32.jsonl": "one row/problem: id, incorrect, features.t0 (36 floats), features.t32 (36 floats or null if unavailable)",
+    "scalar_column_order": "nested loops layer=[7,10,14], metric=[entropy,margin,top1_probability], stat=[current,mean,std,change_from_t0]",
+    "scalar_formulas": {"current": "r[t]", "mean": "mean(r[0:t+1])", "std": "population std(r[0:t+1]), ddof=0", "change_from_t0": "r[t]-r[0]"},
+    "scalar_precision": "derived in float64 from saved float32 readouts; JSON numbers; NOT new inference or past trained features",
+    "samples.json": "small original question/gold + generation records + t0/t32 convenience features; no raw hidden vectors"
+  },
+  "early_feature_allowlist": ["hidden at chosen t: layers 7,10,13,14", "trajectory at chosen t: layers 1..14 only", "readouts at positions 0..t, layers 7,10,14 only", "derived scalar values using ONLY those readouts"],
+  "forbidden_predictors": ["incorrect/answer_correct/label fields", "gold solution or gold_number", "predicted final number/full answer", "total generated length", "parse_status/truncated/analysis_eligible", "origin/ID/official index/group hash", "later times or layers 15..28", "future token IDs", "quality/replay diagnostics"],
+  "not_saved": ["full vocabulary logits/probabilities", "generated-token log-probability/rank", "JS-to-final/adjacent JS", "final-layer confidence", "full-token hidden states", "attention/gradients", "trained probes", "official test outputs"],
+  "split_policy": "No train/validation/test split shipped. Full train pool includes previous fitting/tuning/confirmation examples. Group by normalized question before freezing a new split. Official test not included."
+}

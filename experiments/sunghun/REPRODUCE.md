@@ -122,7 +122,32 @@ Do not launch a second producer against an active root, and do not run cleanup a
 
 ## Data Publication
 
-No dataset artifacts or credentials are included in this branch. Final train batch ZIPs total
-730,618,272 bytes, excluding historical study data. A separate data release would need an inventory,
-SHA-256 manifest, feature schema, original dataset attribution and documented split history.
-Until that is published, results cannot be independently reconstructed from this checkout alone.
+Large dataset artifacts and credentials are not committed to this branch. The official train
+7,473-problem compact dataset is distributed in the
+[gsm8k-train-features-v1 Release](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/gsm8k-train-features-v1).
+Read [DATA_README.md](DATA_README.md) and [DATA_SCHEMA.json](DATA_SCHEMA.json) first.
+The full ZIP preserves the original feature/generation member bytes, has per-file SHA-256 checksums,
+and includes GSM8K attribution, metadata and a NumPy-only loader. AI_STARTER.zip contains a smaller
+documentation/sample/scalar-feature view, not raw hidden vectors. No prior fitted model or old
+study/test outputs are included, so those historical metrics cannot be recreated with this release alone.
+
+```bash
+gh release download gsm8k-train-features-v1 --repo KyeongwooLee/AI-Endoscope --pattern gsm8k-train-all-v1.zip
+# Extract the ZIP, then run with Python >=3.10 and NumPy 2.2.6:
+python gsm8k-train-all-v1/load_train_all.py gsm8k-train-all-v1 --verify --t 32 --kind h14
+```
+
+Release packaging tests (CPU only):
+
+```bash
+python -m unittest discover -s data_tools -p 'test_*.py' -v
+```
+
+Maintainers can rebuild from the complete verified local backup without changing original files:
+
+```bash
+python data_tools/build_release.py ORIGINAL_BACKUP NEW_OUTPUT_OUTSIDE_GIT
+```
+
+The builder checks all 234 original archives/member hashes, recomputes every label, validates NPZ
+shapes/dtypes/finite values and reads back the newly packaged ZIP before producing SHA256SUMS.txt.
