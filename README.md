@@ -43,10 +43,11 @@
 
 ## Experiments
 
-- [Sunghun: Qwen2.5-1.5B / GSM8K error-risk experiments](experiments/sunghun/README.md)
-  - Self-generated logit-lens features, post-hoc classifiers, causal-prefix probes,
-    hidden-state probes, layer trajectories, feature ablations, and entropy confirmation.
-  - RTX 3090 configuration, offline tests, historical run helpers, and reproducibility notes.
-  - Code and documentation only; generated data and model artifacts are not committed.
-  - [Full-train data Release (7,473 problems)](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/gsm8k-train-features-v1)
-    and [detailed data/feature README](experiments/sunghun/DATA_README.md).
+- [성훈: Qwen2.5-1.5B / GSM8K 오답 위험 예측 실험](experiments/sunghun/README.md)
+  - 모델이 직접 생성한 답변의 logit-lens 특징 분석, 답변 생성 후 정오답 분류,
+    생성 중간 시점의 특징·은닉 상태를 이용한 예측, 층별 변화량 분석, 특징별 비교와 엔트로피 후보 검증.
+  - RTX 3090 실행 설정, 오프라인 테스트, 실제 실험 실행·백업 보조 도구와 재현 방법 포함.
+  - 이 브랜치에는 코드와 문서를 올렸으며, **실험 데이터는 아래 GitHub Release에서 다운로드할 수 있다.**
+  - [실험 데이터 다운로드 (Release)](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/gsm8k-train-features-v1):
+    공식 train 7,473문제의 전체 데이터 약 701MB와 AI 전달용 묶음 약 5.3MB. 공식 test와 학습된 모델은 포함하지 않는다.
+  - [데이터·특징 상세 설명](experiments/sunghun/DATA_README.md): 파일 구조, 특징 계산식, 정답 판정 기준, 분석 시 주의사항과 로딩 방법.
