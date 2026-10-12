@@ -1,0 +1,115 @@
+# Qwen2.5 / GSM8K Error-Risk Experiments
+
+Qwen2.5-1.5B-Instruct가 직접 생성한 답변을 정답/오답으로 나누고, 출력 분포와
+중간 layer 표현으로 최종 오답 위험을 예측할 수 있는지 조사한 실험 코드다.
+**Qwen 가중치는 고정했으며, 학습한 것은 작은 classifier/probe뿐이다.**
+
+## Contents
+
+- `gsm8k-logit-study/`: 실제 사용한 연구 코드, 설정, 설계 문서, 테스트.
+- `work/`: 실제 입력 패키징, detached 실행, 백업, 그림 생성에 사용한 보조 코드.
+- [REPRODUCE.md](REPRODUCE.md): 설치, 실행 순서, 필요한 외부 데이터와 입력 형식.
+- `source_manifest.json`: 업로드한 코드와 원본의 해시 대조 기록.
+
+생성 답변, feature 배열, 학습된 probe, 모델 가중치, 환경/cache, SSH 키는 포함하지 않는다.
+코드만 복제해서 과거 결과를 분석할 수는 없으며, 해당 결과 데이터가 별도로 필요하다.
+대용량 데이터를 GitHub Release로 올리는 작업은 아직 수행하지 않았다.
+
+## Fixed Protocol
+
+| 항목 | 설정 |
+|---|---|
+| Model | `Qwen/Qwen2.5-1.5B-Instruct` |
+| Model revision | `989aa7980e4cf806f80c7fef2b1adb7bc71aa306` |
+| Dataset | `openai/gsm8k`, `main` |
+| Dataset revision | `740312add88f781978c0658806c59bc2815b9866` |
+| Device | RTX 3090 24GB 한 장 |
+| Inference | FP32, SDPA, TF32 disabled, greedy, batch size 1 |
+| Length budget | Prompt 3,072 / generated 1,024 / total 4,096 tokens |
+| Label | 파싱된 최종 숫자를 gold 숫자와 비교; 파싱 실패는 오답, truncation은 별도 기록 |
+| Early checkpoint | `t=0,32,64,128`; t는 이미 생성한 답변 토큰 수 |
+| Raw vectors | final RMSNorm 적용 전 `h7,h10,h13,h14` |
+
+실제 revision을 고정한 설정은
+[`configs/rtx3090.fp32-pinned.json`](gsm8k-logit-study/configs/rtx3090.fp32-pinned.json)이다.
+원본 `rtx3090.json`은 prepare 시 revision을 해석하는 초기 설정으로 보존했다.
+정답 풀이를 teacher forcing하는 실험이 아니라, 모델 자신의 생성 token ID 경로를 causal replay한다.
+
+## Experiment Order
+
+| 순서 | 실험 | 코드 / 문서 |
+|---|---|---|
+| 1 | 자체 생성 답변의 정답/오답별 logit-lens 통계 비교 | `gsm8k_lens/`, [실행 안내](gsm8k-logit-study/README.md) |
+| 2 | 답변 전체 confidence / internal / length로 사후 classifier | `scripts/train_error_classifier.py`, [설계](gsm8k-logit-study/CLASSIFIER.md) |
+| 3 | layer 14까지만 사용하는 causal-prefix scalar classifier | `scripts/train_midlayer_classifier.py`, [설계](gsm8k-logit-study/MIDLAYER_CLASSIFIER.md) |
+| 4 | h14 / [h14, h14-h13] / [h7,h10,h14] linear·MLP probe | `scripts/extract_hidden_probes.py`, `scripts/train_hidden_probes.py`, [설계](gsm8k-logit-study/HIDDEN_PROBES.md) |
+| 5 | layer별 절대·상대·방향 변화량과 1/x 가설 분석 | `scripts/analyze_hidden_trajectory.py` |
+| 6 | 구조·변화·entropy 안정성 feature ablation | `scripts/prepare_feature_ablation.py`, `scripts/train_feature_ablation.py`, [설계](gsm8k-logit-study/FEATURE_ABLATION.md) |
+| 7 | 동결한 entropy 후보를 새로운 train 문제 1,000개에서 확인 | `scripts/confirm_entropy_features.py`, [설계](gsm8k-logit-study/ENTROPY_CONFIRMATION.md) |
+| 8 | 공식 train 7,473개 전체의 compact feature 추출 | `scripts/extract_train_all.py`, [설계](gsm8k-logit-study/TRAIN_ALL_EXTRACTION.md) |
+
+모든 `scripts/` 경로는 `gsm8k-logit-study/`를 기준으로 한다.
+2차 실험의 confidence는 최종 layer 28의 entropy, margin, 생성 토큰 log-probability,
+하위 10% log-probability 통계 묶음이다. 길이는 prompt를 제외한 생성 답변의 토큰 수다.
+2차 실험의 internal에는 최종 layer와 비교하는 feature도 있어, 조기 사용 가능한 feature와 같지 않다.
+3차 실험부터는 입력 시점과 layer 경계를 제한한다.
+
+## Verified Findings
+
+- 최초 고정 primary인 reasoning / layer-14 mean JS-to-final의 오답-정답 집단 차이는
+  exploration과 test 모두 bootstrap 95% CI가 0을 포함했다.
+- 사후 confidence+length logistic classifier의 test AUROC는 약 0.795였다.
+  그 위에 internal을 추가했을 때의 개선은 확립되지 않았다.
+- t32 raw hidden MLP test AUROC: h14 0.607, h14+adjacent delta 0.615,
+  multi-depth 0.572. delta MLP의 h14 대비 개선 CI는 0을 포함했다.
+- 첫 답변 토큰 생성 전 h14 MLP의 보조 test AUROC는 약 0.700이었다.
+  문제 난이도나 모델의 문제별 취약성을 읽는 신호일 수 있다.
+- layer 변화량은 단순한 단조 감소 1/x 형태를 지지하지 않았다.
+- 탐색에서 선택한 entropy 후보는 새 문제 1,000개에서 AUROC 약 0.58~0.60으로 약해졌다.
+  같은 평가의 frozen initial h14 MLP는 약 0.643이었다. paired 차이는 유의하지 않았다.
+
+이 결과들은 각기 다른 입력, split, 대상군에서 얻은 것이므로 순위를 직접 비교하지 않는다.
+
+## Full Train Extraction: Completed 2026-10-10
+
+| 항목 | 결과 |
+|---|---:|
+| Official train problems | 7,473 |
+| Correct | 6,091 (81.5068%) |
+| Incorrect | 1,382 (18.4932%) |
+| Parse failures | 78 |
+| Truncated | 16; 모두 위 parse failures에 포함 |
+| Parsed, nontruncated incorrect | 1,304 |
+| Newly generated responses / incorrect | 5,345 / 994 |
+| Reused historical responses | 2,128 |
+| t0 / t32 / t64 / t128 available | 7,473 / 7,467 / 7,446 / 5,865 |
+| Replay checkpoint argmax agreement | 28,251 / 28,251 |
+| Verified backup batches | 234 |
+| Batch ZIP bytes | 730,618,272 |
+
+이 단계에서는 공식 test 1,319개를 로드하지 않았다. 전체 데이터 백업과 해시 검증은 완료됐지만,
+**이 확대 데이터로 probe를 재학습한 결과는 아직 없다.**
+
+## Interpretation Boundaries
+
+- 예측 대상은 최종 답변의 오답 여부이지, 추론 오류가 처음 생긴 token이나 원인은 아니다.
+- t0 표현은 생성 전의 문제 신호다. t32 신호도 난이도와 생성 경로 신호를 함께 포함할 수 있다.
+- 과거 test는 이미 여러 실험에서 확인했다. 최종 untouched holdout으로 주장하지 않는다.
+- 전체 train에는 과거 fit/tuning/confirmation 문제가 포함된다. 다음 학습 전에
+  normalized-question 단위 split을 새로 고정하고, 과거 holdout 재사용을 명시해야 한다.
+- weighted BCE 점수와 logit-lens entropy는 calibrated 정답 확률이 아니다.
+- 서로 다른 t에서 답변이 끝난 문제는 관측되지 않는다. 대상군 변화와 성능 변화를 구분한다.
+- 이전 token들은 전체 28개 layer로 생성됐다. 중간 probe가 곧 절반 계산량을 뜻하지 않는다.
+- 같은 문제의 여러 sampling 경로 비교와 compute-matched 개입 실험은 아직 수행하지 않았다.
+- 위험도 예측이 실제 정답률 향상을 입증한 것은 아니다.
+
+## Source Preservation
+
+`gsm8k-logit-study/`의 원래 코드·설계 파일은 바이트 그대로 복사했다.
+추가한 pinned config와 GPU용 dependency 안내는 별도 파일이다.
+`.gitattributes`는 원본 코드의 줄바꿈 변환을 막는다. resume fingerprint가 소스 해시를 포함하므로
+과거 run에 변경한 코드를 섞지 말고, 기능을 수정하면 새 output directory에서 실행해야 한다.
+보조 백업 도구 두 개만 공개본에서 SSH 실행 경로·서버 주소·로컬 저장 경로를 CLI 인자로 바꿨다.
+
+업로드 전 검증: 2026-10-12 CPU 환경에서 offline unit tests 48개가 모두 통과했다.
+이번 업로드를 위해 Qwen inference나 GPU probe 학습을 다시 실행하지는 않았다.

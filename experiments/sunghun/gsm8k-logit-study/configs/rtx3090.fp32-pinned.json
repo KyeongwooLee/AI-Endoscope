@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "model": {
+    "id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "dtype": "float32",
+    "device": "cuda:0",
+    "attention_backend": "sdpa",
+    "expected_layers": 28,
+    "expected_hidden_size": 1536,
+    "expected_vocab_size": 151936
+  },
+  "dataset": {
+    "id": "openai/gsm8k",
+    "revision": "740312add88f781978c0658806c59bc2815b9866",
+    "name": "main",
+    "pilot_size": 128,
+    "exploration_size": 1000,
+    "expected_train_size": 7473,
+    "expected_test_size": 1319
+  },
+  "prompt": {
+    "system": "You are a math problem-solving assistant. Explain your reasoning step by step. You must end every answer with a separate final line formatted exactly as #### followed by a space and the numerical answer. Write nothing after this final line. Do not omit this line. The final answer must contain only a number, without units, currency symbols, Markdown emphasis, or LaTeX.",
+    "user_template": "Problem:\n{question}\n\nSolve the problem step by step. After your reasoning, write the answer on the LAST line using exactly this format:\n#### <number>\nReplace <number> with the numerical answer. Do not write any text after that line."
+  },
+  "generation": {
+    "batch_size": 1,
+    "max_new_tokens": 1024,
+    "max_prompt_tokens": 3072,
+    "max_sequence_tokens": 4096
+  },
+  "extraction": {
+    "projection_chunk_tokens": 32,
+    "cache_mode": "features_only",
+    "top_k": 5,
+    "minimum_free_disk_gib": 5
+  },
+  "quality": {
+    "generation_replay_examples": 8,
+    "native_lens_max_logprob_error": 0.02,
+    "generation_replay_max_logprob_error": 0.25,
+    "generation_replay_min_top1_agreement": 0.99
+  },
+  "analysis": {
+    "primary_layer": 14,
+    "late_start_layer": 14,
+    "trajectory_bins": 20,
+    "bootstrap_replicates": 2000,
+    "minimum_group_size": 50
+  }
+}

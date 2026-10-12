@@ -1,0 +1,4 @@
+* text=auto
+# Preserve the original bytes: experiment resume fingerprints hash these files.
+experiments/sunghun/gsm8k-logit-study/** -text
+experiments/sunghun/work/** -text
