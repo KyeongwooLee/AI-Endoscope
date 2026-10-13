@@ -1,0 +1,372 @@
+{
+  "validation": {
+    "external": {
+      "Keep": {
+        "mean_probability": 0.7365972247797667,
+        "actual_success_rate": 0.7375,
+        "Brier": 0.15069394297779612,
+        "correlation_with_keep": 0.9999999999999998,
+        "by_original_correctness": {
+          "0": {
+            "n": 21,
+            "mean_predicted_success": 0.614286908985704,
+            "actual_success_rate": 0.0,
+            "mean_predicted_gain": 0.0,
+            "actual_gain": 0.0
+          },
+          "1": {
+            "n": 59,
+            "mean_predicted_success": 0.7801314049776535,
+            "actual_success_rate": 1.0,
+            "mean_predicted_gain": 0.0,
+            "actual_gain": 0.0
+          }
+        }
+      },
+      "Recalculate": {
+        "mean_probability": 0.6606557587877464,
+        "actual_success_rate": 0.6086956521739131,
+        "Brier": 0.22120295250019967,
+        "correlation_with_keep": 0.8322696706794503,
+        "by_original_correctness": {
+          "0": {
+            "n": 9,
+            "mean_predicted_success": 0.6228758233602306,
+            "actual_success_rate": 0.0,
+            "mean_predicted_gain": 0.011728462950709888,
+            "actual_gain": 0.0
+          },
+          "1": {
+            "n": 14,
+            "mean_predicted_success": 0.6849428601340068,
+            "actual_success_rate": 1.0,
+            "mean_predicted_gain": -0.059586825010517486,
+            "actual_gain": 0.0
+          }
+        }
+      },
+      "Rebuild": {
+        "mean_probability": 0.6968943714390171,
+        "actual_success_rate": 0.75,
+        "Brier": 0.16139762230036733,
+        "correlation_with_keep": 0.8304889570986443,
+        "by_original_correctness": {
+          "0": {
+            "n": 21,
+            "mean_predicted_success": 0.5945391618061036,
+            "actual_success_rate": 0.47619047619047616,
+            "mean_predicted_gain": -0.0197477471796004,
+            "actual_gain": 0.47619047619047616
+          },
+          "1": {
+            "n": 59,
+            "mean_predicted_success": 0.733325886732088,
+            "actual_success_rate": 0.847457627118644,
+            "mean_predicted_gain": -0.04680551824556553,
+            "actual_gain": -0.15254237288135594
+          }
+        }
+      },
+      "Review": {
+        "mean_probability": 0.7619659285527343,
+        "actual_success_rate": 0.7375,
+        "Brier": 0.16000701432679793,
+        "correlation_with_keep": 0.9934005537972832,
+        "by_original_correctness": {
+          "0": {
+            "n": 21,
+            "mean_predicted_success": 0.6468624187469749,
+            "actual_success_rate": 0.09523809523809523,
+            "mean_predicted_gain": 0.03257550976127092,
+            "actual_gain": 0.09523809523809523
+          },
+          "1": {
+            "n": 59,
+            "mean_predicted_success": 0.8029349744158011,
+            "actual_success_rate": 0.9661016949152542,
+            "mean_predicted_gain": 0.02280356943814749,
+            "actual_gain": -0.03389830508474576
+          }
+        }
+      }
+    },
+    "internal": {
+      "Keep": {
+        "mean_probability": 0.7872720083434339,
+        "actual_success_rate": 0.7375,
+        "Brier": 0.14175755119642258,
+        "correlation_with_keep": 0.9999999999999999,
+        "by_original_correctness": {
+          "0": {
+            "n": 21,
+            "mean_predicted_success": 0.6085212494111829,
+            "actual_success_rate": 0.0,
+            "mean_predicted_gain": 0.0,
+            "actual_gain": 0.0
+          },
+          "1": {
+            "n": 59,
+            "mean_predicted_success": 0.8508951598277946,
+            "actual_success_rate": 1.0,
+            "mean_predicted_gain": 0.0,
+            "actual_gain": 0.0
+          }
+        }
+      },
+      "Recalculate": {
+        "mean_probability": 0.751499268423904,
+        "actual_success_rate": 0.6086956521739131,
+        "Brier": 0.2381168735382743,
+        "correlation_with_keep": 0.812581992127933,
+        "by_original_correctness": {
+          "0": {
+            "n": 9,
+            "mean_predicted_success": 0.6869401598954414,
+            "actual_success_rate": 0.0,
+            "mean_predicted_gain": 0.07293206817208443,
+            "actual_gain": 0.0
+          },
+          "1": {
+            "n": 14,
+            "mean_predicted_success": 0.7930015524779156,
+            "actual_success_rate": 1.0,
+            "mean_predicted_gain": -0.04078177358446171,
+            "actual_gain": 0.0
+          }
+        }
+      },
+      "Rebuild": {
+        "mean_probability": 0.7299213837422489,
+        "actual_success_rate": 0.75,
+        "Brier": 0.16788904229493373,
+        "correlation_with_keep": 0.660612646842377,
+        "by_original_correctness": {
+          "0": {
+            "n": 21,
+            "mean_predicted_success": 0.6097954154101006,
+            "actual_success_rate": 0.47619047619047616,
+            "mean_predicted_gain": 0.0012741659989178628,
+            "actual_gain": 0.47619047619047616
+          },
+          "1": {
+            "n": 59,
+            "mean_predicted_success": 0.7726780843350475,
+            "actual_success_rate": 0.847457627118644,
+            "mean_predicted_gain": -0.07821707549274713,
+            "actual_gain": -0.15254237288135594
+          }
+        }
+      },
+      "Review": {
+        "mean_probability": 0.8024708383054368,
+        "actual_success_rate": 0.7375,
+        "Brier": 0.15578593111284395,
+        "correlation_with_keep": 0.9675814391727625,
+        "by_original_correctness": {
+          "0": {
+            "n": 21,
+            "mean_predicted_success": 0.6337453608253165,
+            "actual_success_rate": 0.09523809523809523,
+            "mean_predicted_gain": 0.02522411141413364,
+            "actual_gain": 0.09523809523809523
+          },
+          "1": {
+            "n": 59,
+            "mean_predicted_success": 0.8625256692729371,
+            "actual_success_rate": 0.9661016949152542,
+            "mean_predicted_gain": 0.011630509445142491,
+            "actual_gain": -0.03389830508474576
+          }
+        }
+      }
+    },
+    "fixed_policy_bootstrap_winners_with_Keep_first_ties": {
+      "Keep": 0.342,
+      "Recalculate": 0.0,
+      "Rebuild": 0.5005,
+      "Review": 0.1575
+    }
+  },
+  "test": {
+    "external": {
+      "Keep": {
+        "mean_probability": 0.6831110582950359,
+        "actual_success_rate": 0.65,
+        "Brier": 0.19349895009754184,
+        "correlation_with_keep": 1.0,
+        "by_original_correctness": {
+          "0": {
+            "n": 35,
+            "mean_predicted_success": 0.5758989674404807,
+            "actual_success_rate": 0.0,
+            "mean_predicted_gain": 0.0,
+            "actual_gain": 0.0
+          },
+          "1": {
+            "n": 65,
+            "mean_predicted_success": 0.7408406456782581,
+            "actual_success_rate": 1.0,
+            "mean_predicted_gain": 0.0,
+            "actual_gain": 0.0
+          }
+        }
+      },
+      "Recalculate": {
+        "mean_probability": 0.6510705770540098,
+        "actual_success_rate": 0.6285714285714286,
+        "Brier": 0.20825997550882533,
+        "correlation_with_keep": 0.9140523348745481,
+        "by_original_correctness": {
+          "0": {
+            "n": 12,
+            "mean_predicted_success": 0.5804103189514285,
+            "actual_success_rate": 0.0,
+            "mean_predicted_gain": -0.009768936641284809,
+            "actual_gain": 0.0
+          },
+          "1": {
+            "n": 23,
+            "mean_predicted_success": 0.6879367986727477,
+            "actual_success_rate": 0.9565217391304348,
+            "mean_predicted_gain": -0.02300955866267864,
+            "actual_gain": -0.043478260869565216
+          }
+        }
+      },
+      "Rebuild": {
+        "mean_probability": 0.6659437427180454,
+        "actual_success_rate": 0.63,
+        "Brier": 0.19579614953234073,
+        "correlation_with_keep": 0.8991514134327517,
+        "by_original_correctness": {
+          "0": {
+            "n": 35,
+            "mean_predicted_success": 0.5934847981004321,
+            "actual_success_rate": 0.34285714285714286,
+            "mean_predicted_gain": 0.017585830659951493,
+            "actual_gain": 0.34285714285714286
+          },
+          "1": {
+            "n": 65,
+            "mean_predicted_success": 0.7049600975121451,
+            "actual_success_rate": 0.7846153846153846,
+            "mean_predicted_gain": -0.035880548166113115,
+            "actual_gain": -0.2153846153846154
+          }
+        }
+      },
+      "Review": {
+        "mean_probability": 0.712547885121413,
+        "actual_success_rate": 0.68,
+        "Brier": 0.20009523758501171,
+        "correlation_with_keep": 0.9956221439346566,
+        "by_original_correctness": {
+          "0": {
+            "n": 35,
+            "mean_predicted_success": 0.6106996920470905,
+            "actual_success_rate": 0.11428571428571428,
+            "mean_predicted_gain": 0.03480072460660976,
+            "actual_gain": 0.11428571428571428
+          },
+          "1": {
+            "n": 65,
+            "mean_predicted_success": 0.7673892198537404,
+            "actual_success_rate": 0.9846153846153847,
+            "mean_predicted_gain": 0.02654857417548233,
+            "actual_gain": -0.015384615384615385
+          }
+        }
+      }
+    },
+    "internal": {
+      "Keep": {
+        "mean_probability": 0.7159209647076523,
+        "actual_success_rate": 0.65,
+        "Brier": 0.19807541785745264,
+        "correlation_with_keep": 0.9999999999999998,
+        "by_original_correctness": {
+          "0": {
+            "n": 35,
+            "mean_predicted_success": 0.5652985933640616,
+            "actual_success_rate": 0.0,
+            "mean_predicted_gain": 0.0,
+            "actual_gain": 0.0
+          },
+          "1": {
+            "n": 65,
+            "mean_predicted_success": 0.797025318508047,
+            "actual_success_rate": 1.0,
+            "mean_predicted_gain": 0.0,
+            "actual_gain": 0.0
+          }
+        }
+      },
+      "Recalculate": {
+        "mean_probability": 0.7400345002481047,
+        "actual_success_rate": 0.6285714285714286,
+        "Brier": 0.2118994446811171,
+        "correlation_with_keep": 0.9043731734614431,
+        "by_original_correctness": {
+          "0": {
+            "n": 12,
+            "mean_predicted_success": 0.6006228546040725,
+            "actual_success_rate": 0.0,
+            "mean_predicted_gain": 0.017311041887272918,
+            "actual_gain": 0.0
+          },
+          "1": {
+            "n": 23,
+            "mean_predicted_success": 0.8127710110189043,
+            "actual_success_rate": 0.9565217391304348,
+            "mean_predicted_gain": 0.03417805490228234,
+            "actual_gain": -0.043478260869565216
+          }
+        }
+      },
+      "Rebuild": {
+        "mean_probability": 0.7002119157930282,
+        "actual_success_rate": 0.63,
+        "Brier": 0.2023032813528844,
+        "correlation_with_keep": 0.8027594726886369,
+        "by_original_correctness": {
+          "0": {
+            "n": 35,
+            "mean_predicted_success": 0.6268174841809565,
+            "actual_success_rate": 0.34285714285714286,
+            "mean_predicted_gain": 0.06151889081689491,
+            "actual_gain": 0.34285714285714286
+          },
+          "1": {
+            "n": 65,
+            "mean_predicted_success": 0.7397319943533744,
+            "actual_success_rate": 0.7846153846153846,
+            "mean_predicted_gain": -0.057293324154672615,
+            "actual_gain": -0.2153846153846154
+          }
+        }
+      },
+      "Review": {
+        "mean_probability": 0.736373889030873,
+        "actual_success_rate": 0.68,
+        "Brier": 0.21765721450246336,
+        "correlation_with_keep": 0.9793391870691511,
+        "by_original_correctness": {
+          "0": {
+            "n": 35,
+            "mean_predicted_success": 0.5857650710754553,
+            "actual_success_rate": 0.11428571428571428,
+            "mean_predicted_gain": 0.02046647771139367,
+            "actual_gain": 0.11428571428571428
+          },
+          "1": {
+            "n": 65,
+            "mean_predicted_success": 0.8174709448530209,
+            "actual_success_rate": 0.9846153846153847,
+            "mean_predicted_gain": 0.02044562634497377,
+            "actual_gain": -0.015384615384615385
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "pilot": {
+    "collection_seconds": 278.04288278496824,
+    "original_generation_seconds": 66.16254917101469,
+    "verdict_generation_seconds": 9.825903896038653,
+    "hidden_pass_seconds": 6.700941486953525,
+    "all_repair_seconds": 164.11744851109688,
+    "peak_reserved_bytes": 8065646592,
+    "generated_original_tokens": 7648,
+    "generated_repair_tokens": 13568
+  },
+  "train": {
+    "collection_seconds": 7050.527710258688,
+    "original_generation_seconds": 1606.9964374790143,
+    "verdict_generation_seconds": 285.2494669223379,
+    "hidden_pass_seconds": 192.3186909541255,
+    "all_repair_seconds": 4171.521523804142,
+    "peak_reserved_bytes": 11437867008,
+    "generated_original_tokens": 220537,
+    "generated_repair_tokens": 394030
+  },
+  "validation": {
+    "collection_seconds": 1068.396175266069,
+    "original_generation_seconds": 252.23859397892375,
+    "verdict_generation_seconds": 46.85858441577875,
+    "hidden_pass_seconds": 31.718211975181475,
+    "all_repair_seconds": 595.0386363258294,
+    "peak_reserved_bytes": 11362369536,
+    "generated_original_tokens": 36247,
+    "generated_repair_tokens": 63899
+  },
+  "test": {
+    "collection_seconds": 1868.177807162021,
+    "original_generation_seconds": 418.99201063404325,
+    "verdict_generation_seconds": 72.58735800493741,
+    "hidden_pass_seconds": 48.29082444193773,
+    "all_repair_seconds": 1109.908015025343,
+    "peak_reserved_bytes": 11395923968,
+    "generated_original_tokens": 55974,
+    "generated_repair_tokens": 101546
+  }
+}

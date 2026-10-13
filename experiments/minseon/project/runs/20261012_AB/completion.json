@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "completed_kst": "2026-10-12T20:45:39.771762+09:00",
+  "pilot_examples": 40,
+  "train_examples": 200,
+  "validation_examples": 80,
+  "official_test_examples": 100,
+  "experiments_completed": [
+    "A",
+    "B"
+  ],
+  "deferred": [
+    "C"
+  ],
+  "remaining_required_work": [],
+  "integrity_audit_passed": true,
+  "frozen_protocol_hashes_verified": true,
+  "trained_model_hash_verified": true,
+  "prior_results_preserved": true,
+  "scope": "exploratory fixed-size run, not full GSM8K test evaluation"
+}

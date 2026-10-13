@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "completed_utc": "2026-10-09T07:06:49.909901+00:00",
+  "completed_kst": "2026-10-09T16:06:49.909901+09:00",
+  "pilot": 50,
+  "main": 500,
+  "main_parse_failures": 127,
+  "main_alignment_failures": 0,
+  "runtime_failures_in_final_run": 0,
+  "bootstrap_valid": 2000,
+  "label_shuffle_runs_per_model": 20,
+  "independent_decimal_equality_conflicts": [],
+  "remaining_required_work": [],
+  "deferred_by_original_scope": [
+    "FinQA",
+    "error type classification",
+    "recovery routing",
+    "fine-tuning",
+    "logit lens",
+    "perturbation"
+  ]
+}

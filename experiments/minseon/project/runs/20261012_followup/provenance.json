@@ -1,0 +1,48 @@
+{
+  "source_run": "runs/20261012_AB",
+  "reused_components": [
+    "frozen model/tokenizer/dataset revisions",
+    "original/verifier/independent repair prompts",
+    "safe calculator unchanged",
+    "compatible inference/training helper code",
+    "old responses/features/outcomes for exploratory diagnostics only"
+  ],
+  "regenerated_originals_reason": "Historical train originals were FP16; standardized follow-up uses newly generated FP32 responses on previously unused question IDs.",
+  "seeds": {
+    "dataset_splits_train": 20261014,
+    "dataset_split_test": 20261015,
+    "model_initialization_inherited_Engine": 20261012,
+    "greedy_generation_stochastic_sampling": false,
+    "nested_training_permutations": [
+      101,
+      202
+    ],
+    "PCA": 17,
+    "logistic_classifier": 20261012,
+    "paired_bootstrap": 312,
+    "original_manual_audit_sampling": 21,
+    "original_validation_policy_bootstrap": 523
+  },
+  "decoding": {
+    "do_sample": false,
+    "num_beams": 1,
+    "repetition_penalty": 1.1,
+    "max_original_tokens": 512,
+    "max_repair_tokens": 512,
+    "max_verdict_tokens": 8,
+    "precision": "float32",
+    "attention": "SDPA math"
+  },
+  "source_hashes": {
+    "experiments/ab/pipeline.py": "cea3d6507059f15cfed0ba380ac165e952ad3d2e687f2892249988b8b057ce84",
+    "experiments/ab/common.py": "a39e44544a63fa26f57da92edacdd3329fee32d50adb44e75abe328eae538091",
+    "experiments/ab/evaluate.py": "092332c4b2d50d17e91dd3cec73fc603ff398e145a61afb5dc780a386d6d00b8"
+  },
+  "known_exclusions_from_collection_wall": [
+    "model loading",
+    "interrupted partial work",
+    "duplicate pilot throughput benchmark",
+    "dependency setup"
+  ],
+  "interruption": "Initial main collector completed64 records before chat interruption; resumed stages without regenerating compatible saved responses."
+}

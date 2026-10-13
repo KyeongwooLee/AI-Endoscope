@@ -1,0 +1,16 @@
+{
+  "preverdict_L14": {
+    "dimension": 1536,
+    "mean_raw_norm": 42.561668395996094,
+    "mean_standardized_norm": 38.56399154663086,
+    "mean_current_norm": 0.9839802410709786,
+    "effective_hidden_coefficient_penalty_multiplier": 1536
+  },
+  "boundary_L28": {
+    "dimension": 1536,
+    "mean_raw_norm": 207.41241455078125,
+    "mean_standardized_norm": 37.95808792114258,
+    "mean_current_norm": 0.9685202679588741,
+    "effective_hidden_coefficient_penalty_multiplier": 1536
+  }
+}

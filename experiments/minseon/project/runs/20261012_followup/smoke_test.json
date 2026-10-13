@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "scope": "CPU wiring only; duplicated excluded-pilot fixtures; no scientific claims",
+  "policies": [
+    "keep",
+    "external_selector",
+    "external_conservative",
+    "external_trigger",
+    "internal_selector",
+    "internal_conservative",
+    "internal_trigger",
+    "best_fixed"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "n": 40,
+  "errors": 16,
+  "correct": 24,
+  "repairable_errors": 8,
+  "seconds": 278.04288278496824,
+  "peak_gpu_reserved_bytes": 8065646592,
+  "prefix_checks": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    9.418231456947979e-07,
+    1.0941780601569917e-06,
+    0.0
+  ],
+  "verdict_counts": {
+    "CORRECT": 18,
+    "INCORRECT": 22,
+    "INVALID": 0
+  },
+  "numeric_available": 40
+}

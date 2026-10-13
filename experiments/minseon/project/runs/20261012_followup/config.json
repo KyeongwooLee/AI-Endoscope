@@ -1,0 +1,101 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "tokenizer_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dataset": "openai/gsm8k",
+  "data_revision": "740312add88f781978c0658806c59bc2815b9866",
+  "data_config": "main",
+  "system_prompt": "You are a helpful assistant. Solve math problems using concise reasoning. Follow the required plain-text output format exactly. Do not use Markdown formatting or LaTeX.",
+  "user_instruction": "Solve the problem below. Use this exact plain-text structure:\nReasoning:\n<your concise calculations>\nFinal answer: <number>\n\nThe last line must be Final answer: followed by one decimal number only. Do not put parentheses, units, Markdown, or LaTeX around that number.\n\nProblem:\n",
+  "rebuild_prompt": "Solve this problem afresh. Identify the needed quantities and their relationships, calculate carefully, and give a concise solution. End with Final answer: <number>.\n\nProblem:\n",
+  "review_prompt": "Check the proposed solution for reasoning and arithmetic mistakes. Revise only if needed. Give a concise checked solution and end with Final answer: <number>.\n\n",
+  "verification_prompt": "Is the proposed response correct? Respond only with CORRECT or INCORRECT.",
+  "verification_system": "You are a careful mathematics verifier.",
+  "max_new_tokens": 512,
+  "max_repair_tokens": 512,
+  "max_verdict_tokens": 8,
+  "seed": 20261014,
+  "dtype": "float32",
+  "do_sample": false,
+  "num_beams": 1,
+  "repetition_penalty": 1.1,
+  "batch_size": 16,
+  "repair_batch_size": 32,
+  "blocks": [
+    14
+  ],
+  "hidden_candidates": [
+    "numeric_L14",
+    "boundary_L14",
+    "preverdict_L14"
+  ],
+  "representations": [
+    "scaled",
+    "standard",
+    "pca32"
+  ],
+  "C_grid": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "sizes": [
+    200,
+    500,
+    1000
+  ],
+  "training_seeds": [
+    101,
+    202
+  ],
+  "split_counts": {
+    "pilot": 40,
+    "train": 1200,
+    "validation": 200,
+    "test": 300
+  },
+  "scoring": "scoring.py v3; pre-fit measurement amendment fixes next-line/prose marker and contextual-number regressions; legacy and strict sensitivities retained",
+  "calculator": "unchanged legacy calculator; no extensions",
+  "candidate_verdicts": [
+    "CORRECT",
+    "INCORRECT"
+  ],
+  "verdict_score": "sum raw autoregressive log probability of all label tokens, no EOS; normalize two full label sequence probabilities; no length normalization",
+  "hidden_positions": "last token overlapping reference-free extracted numeric span in verification prompt; dedicated boundary; final pre-verdict prompt token. Raw post-block14, pre model.norm.",
+  "missing_numeric_hidden": "zero vector + shared availability scalar; no substitution with another position",
+  "representation_details": {
+    "scaled": "train coordinate StandardScaler / sqrt(1536), original approach",
+    "standard": "train coordinate StandardScaler, no block shrinkage",
+    "pca32": "train coordinate StandardScaler then train-fit randomized PCA32, no whitening"
+  },
+  "selection": "A validation AUROC. B heads validation mean available-head logloss; policies validation accuracy, ties fewer interventions. Fixed dev; no test access before freeze.",
+  "margin_grid": [
+    0.0,
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    1.01
+  ],
+  "detector_thresholds": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.01
+  ],
+  "bootstrap_iterations": 2000,
+  "primary_training_seed": 101,
+  "group_predictor_minority_min": 20,
+  "pilot_batch_size": 8,
+  "pilot_repair_batch_size": 16,
+  "scale_justification": "Pilot 6.95s/question with batch8/16; pilot benchmark batch16/32 generation4.79s/question, peak9.93GB, 16/16 original texts identical. Main pool1200 + dev200 + test300 expected roughly2.5-3hours; storage ample. Two distinct nested training samples up to1000.",
+  "group_predictors": "At n1000, independent fixed C=.1 logistic recovery/damage models per available action and variant. Require at least20 per training outcome class. Correctness defines groups only, never deployed features.",
+  "shared_calculator_availability_control": "Reference-free eligibility is an explicit scalar in strengthened external/internal features, as well as the required decision mask. No calculator success label or result value is an input."
+}

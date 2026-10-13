@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+experiments/minseon/project/runs/*/records/
+experiments/minseon/project/runs/*/hidden/
+experiments/minseon/project/runs/*/models/

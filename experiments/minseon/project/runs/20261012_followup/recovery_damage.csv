@@ -1,0 +1,25 @@
+run,name,train_n,train_negative,train_positive,test_n,test_negative,test_positive,AUROC,Brier,deferred
+n1000_seed101,external_Recalculate_recovery,72,69,3,17,17,0,,,Fewer than 20 training examples in one outcome class
+n1000_seed101,external_Recalculate_damage,277,276,1,81,81,0,,,Fewer than 20 training examples in one outcome class
+n1000_seed101,external_Rebuild_recovery,243,143,100,91,54,37,0.6691691691691691,0.22113370680418679,
+n1000_seed101,external_Rebuild_damage,757,657,100,209,162,47,0.6731021801943788,0.16386245998472262,
+n1000_seed101,external_Review_recovery,243,210,33,91,80,11,0.553409090909091,0.1091834638446169,
+n1000_seed101,external_Review_damage,757,747,10,209,206,3,,,Fewer than 20 training examples in one outcome class
+n1000_seed101,internal_Recalculate_recovery,72,69,3,17,17,0,,,Fewer than 20 training examples in one outcome class
+n1000_seed101,internal_Recalculate_damage,277,276,1,81,81,0,,,Fewer than 20 training examples in one outcome class
+n1000_seed101,internal_Rebuild_recovery,243,143,100,91,54,37,0.6681681681681682,0.22210409752029822,
+n1000_seed101,internal_Rebuild_damage,757,657,100,209,162,47,0.6867612293144207,0.16079084391944395,
+n1000_seed101,internal_Review_recovery,243,210,33,91,80,11,0.5579545454545455,0.10760555844999733,
+n1000_seed101,internal_Review_damage,757,747,10,209,206,3,,,Fewer than 20 training examples in one outcome class
+n1000_seed202,external_Recalculate_recovery,71,67,4,17,17,0,,,Fewer than 20 training examples in one outcome class
+n1000_seed202,external_Recalculate_damage,292,289,3,81,81,0,,,Fewer than 20 training examples in one outcome class
+n1000_seed202,external_Rebuild_recovery,242,137,105,91,54,37,0.6731731731731733,0.2198728912355343,
+n1000_seed202,external_Rebuild_damage,758,652,106,209,162,47,0.6741528762805359,0.16278656391837507,
+n1000_seed202,external_Review_recovery,242,205,37,91,80,11,0.5465909090909091,0.1131827922384612,
+n1000_seed202,external_Review_damage,758,747,11,209,206,3,,,Fewer than 20 training examples in one outcome class
+n1000_seed202,internal_Recalculate_recovery,71,67,4,17,17,0,,,Fewer than 20 training examples in one outcome class
+n1000_seed202,internal_Recalculate_damage,292,289,3,81,81,0,,,Fewer than 20 training examples in one outcome class
+n1000_seed202,internal_Rebuild_recovery,242,137,105,91,54,37,0.5875875875875876,0.27683366637175977,
+n1000_seed202,internal_Rebuild_damage,758,652,106,209,162,47,0.6887312844759653,0.1588552800995489,
+n1000_seed202,internal_Review_recovery,242,205,37,91,80,11,0.5954545454545453,0.12951366682259666,
+n1000_seed202,internal_Review_damage,758,747,11,209,206,3,,,Fewer than 20 training examples in one outcome class

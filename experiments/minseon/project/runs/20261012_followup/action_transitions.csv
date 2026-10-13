@@ -1,0 +1,17 @@
+split,action,available,correct_to_correct,correct_to_incorrect,incorrect_to_correct,incorrect_to_incorrect
+pilot,Keep,40,24,0,0,16
+pilot,Recalculate,16,12,0,0,4
+pilot,Rebuild,40,20,4,8,8
+pilot,Review,40,24,0,1,15
+train,Keep,1200,906,0,0,294
+train,Recalculate,418,333,3,4,78
+train,Rebuild,1200,789,117,129,165
+train,Review,1200,893,13,46,248
+validation,Keep,200,154,0,0,46
+validation,Recalculate,64,51,1,2,10
+validation,Rebuild,200,130,24,24,22
+validation,Review,200,154,0,6,40
+test,Keep,300,209,0,0,91
+test,Recalculate,98,81,0,0,17
+test,Rebuild,300,162,47,37,54
+test,Review,300,206,3,11,80

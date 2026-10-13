@@ -1,0 +1,136 @@
+{
+  "pilot": {
+    "n": 40,
+    "correct": 24,
+    "errors": 16,
+    "oracle_accuracy": 0.8,
+    "repairable_errors": 8,
+    "calculator_available": 16,
+    "numeric_available": 40,
+    "review_changes": 4,
+    "calculator_unavailability_reasons": {
+      "no_explicit_final_numeric_equality": 24
+    },
+    "truncated_originals": 0,
+    "fixed_policy_accuracy": {
+      "Keep": 0.6,
+      "Recalculate": 0.6,
+      "Rebuild": 0.7,
+      "Review": 0.625
+    },
+    "best_fixed_accuracy": 0.7,
+    "oracle_minus_best_fixed": 0.10000000000000009,
+    "repair_overlap": {
+      "Recalculate & Recalculate": 0,
+      "Recalculate & Rebuild": 0,
+      "Recalculate & Review": 0,
+      "Rebuild & Recalculate": 0,
+      "Rebuild & Rebuild": 8,
+      "Rebuild & Review": 1,
+      "Review & Recalculate": 0,
+      "Review & Rebuild": 1,
+      "Review & Review": 1
+    }
+  },
+  "train": {
+    "n": 1200,
+    "correct": 906,
+    "errors": 294,
+    "oracle_accuracy": 0.8708333333333333,
+    "repairable_errors": 139,
+    "calculator_available": 418,
+    "numeric_available": 1191,
+    "review_changes": 103,
+    "calculator_unavailability_reasons": {
+      "no_explicit_final_numeric_equality": 774,
+      "no_final_answer": 8
+    },
+    "truncated_originals": 8,
+    "fixed_policy_accuracy": {
+      "Keep": 0.755,
+      "Recalculate": 0.7558333333333334,
+      "Rebuild": 0.765,
+      "Review": 0.7825
+    },
+    "best_fixed_accuracy": 0.7825,
+    "oracle_minus_best_fixed": 0.08833333333333337,
+    "repair_overlap": {
+      "Recalculate & Recalculate": 4,
+      "Recalculate & Rebuild": 3,
+      "Recalculate & Review": 0,
+      "Rebuild & Recalculate": 3,
+      "Rebuild & Rebuild": 129,
+      "Rebuild & Review": 37,
+      "Review & Recalculate": 0,
+      "Review & Rebuild": 37,
+      "Review & Review": 46
+    }
+  },
+  "validation": {
+    "n": 200,
+    "correct": 154,
+    "errors": 46,
+    "oracle_accuracy": 0.9,
+    "repairable_errors": 26,
+    "calculator_available": 64,
+    "numeric_available": 200,
+    "review_changes": 13,
+    "calculator_unavailability_reasons": {
+      "no_explicit_final_numeric_equality": 136
+    },
+    "truncated_originals": 0,
+    "fixed_policy_accuracy": {
+      "Keep": 0.77,
+      "Recalculate": 0.775,
+      "Rebuild": 0.77,
+      "Review": 0.8
+    },
+    "best_fixed_accuracy": 0.8,
+    "oracle_minus_best_fixed": 0.09999999999999998,
+    "repair_overlap": {
+      "Recalculate & Recalculate": 2,
+      "Recalculate & Rebuild": 1,
+      "Recalculate & Review": 0,
+      "Rebuild & Recalculate": 1,
+      "Rebuild & Rebuild": 24,
+      "Rebuild & Review": 5,
+      "Review & Recalculate": 0,
+      "Review & Rebuild": 5,
+      "Review & Review": 6
+    }
+  },
+  "test": {
+    "n": 300,
+    "correct": 209,
+    "errors": 91,
+    "oracle_accuracy": 0.84,
+    "repairable_errors": 43,
+    "calculator_available": 98,
+    "numeric_available": 299,
+    "review_changes": 26,
+    "calculator_unavailability_reasons": {
+      "no_explicit_final_numeric_equality": 201,
+      "no_final_answer": 1
+    },
+    "truncated_originals": 2,
+    "fixed_policy_accuracy": {
+      "Keep": 0.6966666666666667,
+      "Recalculate": 0.6966666666666667,
+      "Rebuild": 0.6633333333333333,
+      "Review": 0.7233333333333334
+    },
+    "best_fixed_accuracy": 0.7233333333333334,
+    "oracle_minus_best_fixed": 0.11666666666666659,
+    "repair_overlap": {
+      "Recalculate & Recalculate": 0,
+      "Recalculate & Rebuild": 0,
+      "Recalculate & Review": 0,
+      "Rebuild & Recalculate": 0,
+      "Rebuild & Rebuild": 37,
+      "Rebuild & Review": 5,
+      "Review & Recalculate": 0,
+      "Review & Rebuild": 5,
+      "Review & Review": 11
+    }
+  }
+}

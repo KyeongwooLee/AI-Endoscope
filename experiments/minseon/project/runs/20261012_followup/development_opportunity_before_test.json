@@ -1,0 +1,26 @@
+{
+  "train_pool": {
+    "n": 1200,
+    "fixed_policy_accuracy": {
+      "Keep": 0.755,
+      "Recalculate": 0.7558333333333334,
+      "Rebuild": 0.765,
+      "Review": 0.7825
+    },
+    "oracle_accuracy": 0.8708333333333333,
+    "oracle_minus_best_fixed": 0.08833333333333337,
+    "repairable_errors": 139
+  },
+  "validation": {
+    "n": 200,
+    "fixed_policy_accuracy": {
+      "Keep": 0.77,
+      "Recalculate": 0.775,
+      "Rebuild": 0.77,
+      "Review": 0.8
+    },
+    "oracle_accuracy": 0.9,
+    "oracle_minus_best_fixed": 0.09999999999999998,
+    "repairable_errors": 26
+  }
+}

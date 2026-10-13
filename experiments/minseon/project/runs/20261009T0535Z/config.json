@@ -1,0 +1,97 @@
+{
+  "seed": 42,
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "tokenizer_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dataset": "openai/gsm8k",
+  "data_revision": "740312add88f781978c0658806c59bc2815b9866",
+  "data_config": "main",
+  "source_split": "train",
+  "dataset_fingerprint": "c6f812ae33c9159d",
+  "system_prompt": "You are a helpful assistant. Solve the math problem carefully.",
+  "user_instruction": "Solve the following problem. Write your reasoning under \"Reasoning:\". End with a separate line exactly in the form \"Final answer: <number>\". Use a decimal number, without units, for the final answer.\n\n",
+  "dtype": "float16",
+  "batch_size": 1,
+  "max_new_tokens": 512,
+  "do_sample": false,
+  "num_beams": 1,
+  "use_cache": true,
+  "blocks": [
+    7,
+    14,
+    21,
+    28
+  ],
+  "hidden_index_mapping": {
+    "7": "model.layers[6] raw post-block output BEFORE model.norm",
+    "14": "model.layers[13] raw post-block output BEFORE model.norm",
+    "21": "model.layers[20] raw post-block output BEFORE model.norm",
+    "28": "model.layers[27] raw post-block output BEFORE model.norm"
+  },
+  "C_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "selection_metric": "validation AUROC; ties: earlier layer then smaller C",
+  "PCA": false,
+  "features": {
+    "B0": [
+      "response_tokens",
+      "reasoning_steps",
+      "number_spans",
+      "operator_spans",
+      "format_success",
+      "truncated"
+    ],
+    "B1": [
+      "response_tokens",
+      "reasoning_steps",
+      "number_spans",
+      "operator_spans",
+      "format_success",
+      "truncated",
+      "response_mean_nll"
+    ],
+    "B2": [
+      "response_tokens",
+      "reasoning_steps",
+      "number_spans",
+      "operator_spans",
+      "format_success",
+      "truncated",
+      "response_mean_nll",
+      "number_mean_nll",
+      "number_max_span_mean_nll",
+      "operator_mean_nll",
+      "final_mean_nll",
+      "max_step_mean_nll",
+      "final_minus_prior_number_mean_nll"
+    ],
+    "D": [
+      "delta_7_14_final_rel_l2",
+      "delta_7_14_final_one_minus_cos",
+      "delta_7_14_text_rel_l2",
+      "delta_7_14_text_one_minus_cos",
+      "delta_14_21_final_rel_l2",
+      "delta_14_21_final_one_minus_cos",
+      "delta_14_21_text_rel_l2",
+      "delta_14_21_text_one_minus_cos",
+      "delta_21_28_final_rel_l2",
+      "delta_21_28_final_one_minus_cos",
+      "delta_21_28_text_rel_l2",
+      "delta_21_28_text_one_minus_cos",
+      "delta_all_number_rel_l2",
+      "delta_all_number_one_minus_cos",
+      "delta_all_operator_rel_l2",
+      "delta_all_operator_one_minus_cos",
+      "delta_max_number_rel_l2",
+      "delta_max_operator_rel_l2"
+    ]
+  },
+  "bootstrap_iterations": 2000,
+  "shuffle_iterations": 20,
+  "attention_implementation": "sdpa",
+  "SDPA_backend": "math (float32 intermediate attention accumulation with float16 model)"
+}

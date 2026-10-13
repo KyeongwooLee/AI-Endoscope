@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "n": 5,
+  "reference_free_inputs": true,
+  "all_A_B_probabilities_and_choices_match": true
+}

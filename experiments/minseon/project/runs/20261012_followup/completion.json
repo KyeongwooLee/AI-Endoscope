@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "completed_at_utc": "2026-10-12T15:28:12Z",
+  "A": "completed",
+  "B": "completed",
+  "C": "deferred",
+  "FinQA": "deferred",
+  "larger_models": "deferred",
+  "activation_steering": "deferred",
+  "records": {
+    "pilot": 40,
+    "train": 1200,
+    "validation": 200,
+    "test": 300
+  },
+  "preserved_old_files": 2646
+}

@@ -1,0 +1,234 @@
+{
+  "train": {
+    "D4": [
+      {
+        "generation": {
+          "coefficient_L2": 1.2938305690199672,
+          "logit_contribution_mean": 2.2515322939398176e-15,
+          "logit_contribution_sd": 1.1803788512484201
+        },
+        "text": {
+          "coefficient_L2": 3.521609645170207,
+          "logit_contribution_mean": -0.14102240314857967,
+          "logit_contribution_sd": 0.26086940640690587
+        },
+        "verification": {
+          "coefficient_L2": 0.3881879012262958,
+          "logit_contribution_mean": -1.7763568394002505e-17,
+          "logit_contribution_sd": 0.5773885429632519
+        },
+        "hidden": {
+          "coefficient_L2": 2.814807146758163,
+          "logit_contribution_mean": -4.440892098500626e-18,
+          "logit_contribution_sd": 0.4338747689560639
+        }
+      }
+    ],
+    "internal": [
+      {
+        "generation": {
+          "coefficient_L2": 1.241468190439802,
+          "logit_contribution_mean": -2.264854970235319e-15,
+          "logit_contribution_sd": 1.1303655735273122
+        },
+        "text": {
+          "coefficient_L2": 3.4395736360908313,
+          "logit_contribution_mean": 0.1506751186633716,
+          "logit_contribution_sd": 0.25837868059338726
+        },
+        "verification": {
+          "coefficient_L2": 0.32374961008273434,
+          "logit_contribution_mean": 1.3322676295501878e-17,
+          "logit_contribution_sd": 0.47451149314440794
+        },
+        "hidden": {
+          "coefficient_L2": 3.316132224798092,
+          "logit_contribution_mean": 3.053113317719181e-17,
+          "logit_contribution_sd": 0.4471022320276433
+        }
+      },
+      {
+        "generation": {
+          "coefficient_L2": 1.4270763775905948,
+          "logit_contribution_mean": -3.348432642269472e-15,
+          "logit_contribution_sd": 1.3172365107068935
+        },
+        "text": {
+          "coefficient_L2": 1.7357347567729726,
+          "logit_contribution_mean": 0.1508854706253639,
+          "logit_contribution_sd": 0.13076984683387236
+        },
+        "verification": {
+          "coefficient_L2": 0.15081112051040543,
+          "logit_contribution_mean": 2.220446049250313e-18,
+          "logit_contribution_sd": 0.1521050088049457
+        },
+        "hidden": {
+          "coefficient_L2": 1.5328292549960094,
+          "logit_contribution_mean": 0.0,
+          "logit_contribution_sd": 0.20485663968391943
+        }
+      },
+      {
+        "generation": {
+          "coefficient_L2": 0.8749773376130939,
+          "logit_contribution_mean": -1.9184653865522706e-15,
+          "logit_contribution_sd": 0.7999558420912173
+        },
+        "text": {
+          "coefficient_L2": 4.078116052238982,
+          "logit_contribution_mean": 0.1498562501594022,
+          "logit_contribution_sd": 0.30875569716898665
+        },
+        "verification": {
+          "coefficient_L2": 0.4529627478892608,
+          "logit_contribution_mean": 1.1102230246251566e-17,
+          "logit_contribution_sd": 0.4400977536943876
+        },
+        "hidden": {
+          "coefficient_L2": 3.2958979244251116,
+          "logit_contribution_mean": 1.7763568394002505e-17,
+          "logit_contribution_sd": 0.36061315258790233
+        }
+      },
+      {
+        "generation": {
+          "coefficient_L2": 1.3802146194674603,
+          "logit_contribution_mean": -2.7311486405778852e-15,
+          "logit_contribution_sd": 1.2555297041323712
+        },
+        "text": {
+          "coefficient_L2": 3.299581727747265,
+          "logit_contribution_mean": 0.12231218517894828,
+          "logit_contribution_sd": 0.24675682829391526
+        },
+        "verification": {
+          "coefficient_L2": 0.387006640378593,
+          "logit_contribution_mean": 3.552713678800501e-17,
+          "logit_contribution_sd": 0.5731930743637859
+        },
+        "hidden": {
+          "coefficient_L2": 2.7574262098160824,
+          "logit_contribution_mean": -5.828670879282072e-18,
+          "logit_contribution_sd": 0.3897102950799231
+        }
+      }
+    ]
+  },
+  "validation": {
+    "D4": [
+      {
+        "generation": {
+          "coefficient_L2": 1.2938305690199672,
+          "logit_contribution_mean": 0.03402308146147788,
+          "logit_contribution_sd": 1.0872741358364175
+        },
+        "text": {
+          "coefficient_L2": 3.521609645170207,
+          "logit_contribution_mean": -0.13567026524527592,
+          "logit_contribution_sd": 0.1535705676589034
+        },
+        "verification": {
+          "coefficient_L2": 0.3881879012262958,
+          "logit_contribution_mean": 0.020728612972545555,
+          "logit_contribution_sd": 0.570360614779951
+        },
+        "hidden": {
+          "coefficient_L2": 2.814807146758163,
+          "logit_contribution_mean": 0.006734912089451398,
+          "logit_contribution_sd": 0.3917648191609867
+        }
+      }
+    ],
+    "internal": [
+      {
+        "generation": {
+          "coefficient_L2": 1.241468190439802,
+          "logit_contribution_mean": -0.042579245619304595,
+          "logit_contribution_sd": 1.0483308517657544
+        },
+        "text": {
+          "coefficient_L2": 3.4395736360908313,
+          "logit_contribution_mean": 0.1393393762184885,
+          "logit_contribution_sd": 0.15526220012437913
+        },
+        "verification": {
+          "coefficient_L2": 0.32374961008273434,
+          "logit_contribution_mean": -0.012230455957602316,
+          "logit_contribution_sd": 0.4689772437095524
+        },
+        "hidden": {
+          "coefficient_L2": 3.316132224798092,
+          "logit_contribution_mean": 0.025254916271400786,
+          "logit_contribution_sd": 0.37517062560588305
+        }
+      },
+      {
+        "generation": {
+          "coefficient_L2": 1.4270763775905948,
+          "logit_contribution_mean": -0.11999146601523476,
+          "logit_contribution_sd": 1.242967356059033
+        },
+        "text": {
+          "coefficient_L2": 1.7357347567729726,
+          "logit_contribution_mean": 0.1327808195862979,
+          "logit_contribution_sd": 0.09395444498628863
+        },
+        "verification": {
+          "coefficient_L2": 0.15081112051040543,
+          "logit_contribution_mean": 0.012364246037537451,
+          "logit_contribution_sd": 0.15662171361642763
+        },
+        "hidden": {
+          "coefficient_L2": 1.5328292549960094,
+          "logit_contribution_mean": -0.00374447691811364,
+          "logit_contribution_sd": 0.1830674271647348
+        }
+      },
+      {
+        "generation": {
+          "coefficient_L2": 0.8749773376130939,
+          "logit_contribution_mean": -0.05973638487732534,
+          "logit_contribution_sd": 0.754741273541375
+        },
+        "text": {
+          "coefficient_L2": 4.078116052238982,
+          "logit_contribution_mean": 0.15957090245835504,
+          "logit_contribution_sd": 0.18290986700588396
+        },
+        "verification": {
+          "coefficient_L2": 0.4529627478892608,
+          "logit_contribution_mean": -0.06293864531872333,
+          "logit_contribution_sd": 0.4599068219065619
+        },
+        "hidden": {
+          "coefficient_L2": 3.2958979244251116,
+          "logit_contribution_mean": 0.006562977326100672,
+          "logit_contribution_sd": 0.3231662613632515
+        }
+      },
+      {
+        "generation": {
+          "coefficient_L2": 1.3802146194674603,
+          "logit_contribution_mean": -0.06502349048651211,
+          "logit_contribution_sd": 1.1748007090473707
+        },
+        "text": {
+          "coefficient_L2": 3.299581727747265,
+          "logit_contribution_mean": 0.10959903213951261,
+          "logit_contribution_sd": 0.13495452745415848
+        },
+        "verification": {
+          "coefficient_L2": 0.387006640378593,
+          "logit_contribution_mean": -0.03486062560302797,
+          "logit_contribution_sd": 0.5674261409876287
+        },
+        "hidden": {
+          "coefficient_L2": 2.7574262098160824,
+          "logit_contribution_mean": -0.03877024109729328,
+          "logit_contribution_sd": 0.29818928794989746
+        }
+      }
+    ]
+  }
+}
