@@ -32,7 +32,7 @@ The selectors did not establish an advantage over error-triggered fixed repair. 
 
 ## Organization
 
-Following [Sunghun's branch](https://github.com/KyeongwooLee/AI-Endoscope/tree/sunghun), this contribution lives on a personal branch under `experiments/minseon/`. The original code layout is nested under `project/` so its relative path resolution remains intact.
+This contribution lives on a personal branch under `experiments/minseon/`. The original code layout is nested under `project/` so its relative path resolution remains intact.
 
 - `project/experiments/ab/`, `project/experiments/followup/`: byte-preserved experiment code and settings.
 - `project/runs/`: browseable reports, figures, tables, configurations and predictions.
@@ -40,6 +40,6 @@ Following [Sunghun's branch](https://github.com/KyeongwooLee/AI-Endoscope/tree/s
 - `data/`: compressed, checksum-verified run bundles split into 2 MiB parts. Run `python restore_data.py` to reconstruct the complete published records, hidden features and trained small models.
 - `publication_manifest.json`: every archive/part/member hash, copied source hashes and explicit exclusions.
 
-Sunghun used GitHub Releases for large data. This upload uses versioned archive parts on the branch because the connected upload interface has no release-asset operation. Both original A/B and follow-up artifacts are included, along with earlier runs needed for provenance. No Qwen weights, model cache, virtual environment, credentials, or separate source Notion/team documents are distributed. Local originals were not edited for publication.
+Both original A/B and follow-up artifacts are included, along with earlier runs needed for provenance. No Qwen weights, model cache, virtual environment, credentials, or separate source Notion/team documents are distributed. Local originals were not edited for publication.
 
 Historical reports retain the machine paths and historical verification counts from execution; publication verification is separately recorded. All source code is retained without retuning or new GPU inference.
