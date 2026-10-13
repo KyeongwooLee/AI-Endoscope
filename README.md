@@ -1,6 +1,6 @@
-# AI-Endoscope — Minseon's experiments
+# 구민선 실험 진행 상황
 
-This `minseon` branch contains the GSM8K frozen-model A/B experiments and stronger follow-up.
+This `minseon` branch contains the GSM8K frozen-model A/B experiments and follow-up.
 
 - [Start here: results and document map](experiments/minseon/README.md)
 - [Latest report](experiments/minseon/project/runs/20261012_followup/REPORT.md)
