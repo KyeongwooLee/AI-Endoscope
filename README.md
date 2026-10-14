@@ -1,4 +1,4 @@
-# 구민선 실험 진행 상황
+# AI-Endoscope 실험 진행 상황
 
 This `minseon` branch contains the GSM8K frozen-model A/B experiments and follow-up.
 
