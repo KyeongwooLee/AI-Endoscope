@@ -8,10 +8,25 @@
 
 ## 다운로드와 문서 안내
 
-- [전용 GitHub Release: error-taxonomy-full-v1-draft](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/error-taxonomy-full-v1-draft): **인간 검수 전 prerelease**. 전체 ZIP과 개별 JSONL/문서, `SHA256SUMS.txt` 제공.
-- [전체 묶음 다운로드](https://github.com/KyeongwooLee/AI-Endoscope/releases/download/error-taxonomy-full-v1-draft/error-taxonomy-full-v1.zip): 압축을 풀고 이 README → CODEBOOK → labels 순서로 읽는다.
+- [전용 GitHub Release: error-taxonomy-full-v1-draft](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/error-taxonomy-full-v1-draft): **인간 검수 전 prerelease**. 오류 주석뿐 아니라 아래 전체 응답·feature도 같은 릴리즈에서 받는다.
+- [오류 주석 묶음 다운로드](https://github.com/KyeongwooLee/AI-Endoscope/releases/download/error-taxonomy-full-v1-draft/error-taxonomy-full-v1.zip): 주석 대상 1,100개의 질문·응답·reference·유형·원장. **5,000개 전체 응답 또는 feature ZIP은 아니다.**
 - [labels.jsonl만 다운로드](https://github.com/KyeongwooLee/AI-Endoscope/releases/download/error-taxonomy-full-v1-draft/labels.jsonl): 실제 질문·응답·reference·주석 1,100행.
 - 코드 저장소에는 `sunghun` 브랜치의 문서와 기준을 올리고, 데이터 본문은 Release에서 배포한다. `main`은 변경하지 않는다.
+
+**이 릴리즈에서 원본 전체 응답과 feature까지 함께 받기:**
+
+| 파일 | 범위 |
+|---|---|
+| [gsm8k-sampled-posthoc-v1.zip](https://github.com/KyeongwooLee/AI-Endoscope/releases/download/error-taxonomy-full-v1-draft/gsm8k-sampled-posthoc-v1.zip) | 500문제×8회 sampling한 **4,000응답 전체**, 실제 생성 token IDs, 정오답·품질, h28/confidence/length feature. 약 72.5MB |
+| [svamp-inference-v1.zip](https://github.com/KyeongwooLee/AI-Endoscope/releases/download/error-taxonomy-full-v1-draft/svamp-inference-v1.zip) | SVAMP **1,000응답 전체**와 같은 종류의 원문·토큰·label·feature. 약 23.3MB |
+| `gsm8k_answers.jsonl`, `svamp_answers.jsonl` | AI 전달용 전체 질문·응답·reference·binary label. token/hidden 배열 없이 텍스트부터 읽을 때 사용 |
+| `transfer-results-v1.zip` | 양방향 전이 결과·개별 예측·작은 probe. 약 2.3MB |
+| `DATA_README.md`, `DATA_SCHEMA.json`, `dataset_summary.json`, `RELEASE_AUDIT.json` | inference/feature 계산·로딩·집계·검증 설명. 주석 설명인 `ANNOTATION_README.md` 및 `AUDIT.json`과 구별 |
+
+[DOWNLOAD_GUIDE.md](DOWNLOAD_GUIDE.md)에 목적별 다운로드와 연결 방법을 정리했다.
+전체 5,000개에는 정답·오답·형식 실패가 모두 들어 있지만, **오류 유형 주석은 형식 정상 오답 1,100개에만** 있다.
+나머지 응답에 오류 유형 라벨이 없다는 것을 `none_observed`로 해석하지 않는다.
+데이터/주석 ZIP은 기존 버전을 보존했고 다운로드 안내와 릴리즈 전체 `SHA256SUMS.txt`만 확장했다.
 
 **기존 `gsm8k-train-features-v1` Release와 다른 데이터다.** 기존 것은 greedy 생성한 공식 train 7,473문제의 feature이고,
 이번 것은 후속 sampling 실험의 GSM8K/SVAMP 오답에 붙인 주석이다. 기존 Release의 feature에 행 순서나 질문 ID만으로 연결하면 안 된다.
@@ -101,10 +116,10 @@
 
 ## Feature 연결과 후속 분석
 
-후속 배포 안내: 이 주석과 정확히 대응하는 sampling 응답과 완료 feature는
-[SVAMP/GSM8K 전이 데이터 설명](../posthoc-transfer-data-v1/README.md) 및
-[posthoc-transfer-data-v1 Release](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/posthoc-transfer-data-v1)에서 받는다.
-기존 주석 ZIP에는 feature 배열을 추가하지 않았으며, 주석 데이터는 변경하지 않았다.
+이 주석과 정확히 대응하는 sampling 응답과 완료 feature는 **현재 오류 유형 주석 릴리즈의 별도 dataset ZIP**에서 받는다.
+[SVAMP/GSM8K 전이 데이터 설명](../posthoc-transfer-data-v1/README.md)에서 feature 계산법을 확인한다.
+[posthoc-transfer-data-v1 Release](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/posthoc-transfer-data-v1)에도 동일 파일을 보존했다.
+기존 주석 ZIP 자체나 주석 내용은 변경하지 않았으며, 같은 릴리즈에 전체 데이터 자산을 추가한 것이다.
 
 현재 보수적 후보는 **786개**다. 관계 구성·산술·단위 변환·상태/논리 주석을 기존 완료 hidden/confidence/length와 `id`로 연결할 수 있다.
 이 단계에서는 classifier 학습이나 hidden 패턴 검정은 수행하지 않았다. 주석 작성 중 hidden·confidence·verifier 점수는 보지 않았다.

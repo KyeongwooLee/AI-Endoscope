@@ -10,6 +10,8 @@
 **추가 공개: [오류 유형 주석 1,100개 (인간 검수 전 초안)](experiments/sunghun/error-taxonomy-full-v1/README.md)**
 후속 sampling 실험의 GSM8K 896개 + SVAMP 204개를 assistant가 직접 분류했다.
 [전용 prerelease에서 다운로드](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/error-taxonomy-full-v1-draft)할 수 있다.
+같은 릴리즈에 **GSM8K sampling 4,000응답·SVAMP 1,000응답 전체 원문/feature**도 함께 올렸다.
+[다운로드 안내](experiments/sunghun/error-taxonomy-full-v1/DOWNLOAD_GUIDE.md)에서 필요한 파일을 고르면 된다.
 인간 검수·독립 의미 검증 전이며, 기존 7,473문제 feature Release와 생성 답변이 다른 데이터다.
 
 **SVAMP inference·양방향 전이 데이터:** [설명](experiments/sunghun/posthoc-transfer-data-v1/README.md) /
