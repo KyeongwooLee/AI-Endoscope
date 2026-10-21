@@ -1,0 +1,99 @@
+{
+  "version": "posthoc-transfer-data-v1",
+  "response_key": "id",
+  "question_group": "question_id",
+  "record_order": "features.npz ids equals records.jsonl line order; always check IDs",
+  "arrays": {
+    "question": {
+      "shape": [
+        "N",
+        1536
+      ],
+      "dtype": "float32",
+      "layer": 28,
+      "normalization": "before final RMSNorm"
+    },
+    "end": {
+      "shape": [
+        "N",
+        1536
+      ],
+      "dtype": "float32",
+      "layer": 28,
+      "normalization": "before final RMSNorm"
+    },
+    "mean": {
+      "shape": [
+        "N",
+        1536
+      ],
+      "dtype": "float32",
+      "layer": 28,
+      "normalization": "before final RMSNorm"
+    },
+    "number": {
+      "shape": [
+        "N",
+        1536
+      ],
+      "dtype": "float32",
+      "layer": 28,
+      "normalization": "before final RMSNorm"
+    }
+  },
+  "confidence": {
+    "shape": [
+      "N",
+      26
+    ],
+    "dtype": "float32",
+    "names": [
+      "whole_logp_mean",
+      "whole_logp_q10",
+      "whole_logp_min",
+      "whole_logp_last16_mean",
+      "whole_prob_lt_01_ratio",
+      "whole_prob_lt_05_ratio",
+      "whole_entropy_mean",
+      "whole_entropy_q90",
+      "whole_entropy_max",
+      "whole_entropy_last16_mean",
+      "whole_margin_mean",
+      "whole_margin_q10",
+      "whole_margin_min",
+      "number_logp_mean",
+      "number_logp_q10",
+      "number_logp_min",
+      "number_logp_last16_mean",
+      "number_prob_lt_01_ratio",
+      "number_prob_lt_05_ratio",
+      "number_entropy_mean",
+      "number_entropy_q90",
+      "number_entropy_max",
+      "number_entropy_last16_mean",
+      "number_margin_mean",
+      "number_margin_q10",
+      "number_margin_min"
+    ],
+    "missing": "NaN retained for empty number masks; fit-only imputation required"
+  },
+  "length": {
+    "shape": [
+      "N",
+      4
+    ],
+    "dtype": "float32",
+    "transform": "natural log1p",
+    "columns": [
+      "prompt_tokens",
+      "generated_tokens",
+      "whole_mask_tokens",
+      "number_mask_tokens"
+    ]
+  },
+  "score_note": "SVAMP feature score_* and prediction group arrays are uncalibrated mean sigmoid outputs of GSM-trained probes; wrong=1. Reverse prediction arrays use SVAMP-trained probes.",
+  "source_fold_note": "GSM8K folds from original 500-question protocol; SVAMP folds added later for reverse transfer, not used for forward target adaptation.",
+  "annotation_release": "error-taxonomy-full-v1-draft",
+  "annotation_semantics_human_validated": false,
+  "labels": "original strict Decimal numerical equality; not human-reviewed reasoning correctness"
+}

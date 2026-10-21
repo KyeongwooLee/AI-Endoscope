@@ -101,6 +101,11 @@
 
 ## Feature 연결과 후속 분석
 
+후속 배포 안내: 이 주석과 정확히 대응하는 sampling 응답과 완료 feature는
+[SVAMP/GSM8K 전이 데이터 설명](../posthoc-transfer-data-v1/README.md) 및
+[posthoc-transfer-data-v1 Release](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/posthoc-transfer-data-v1)에서 받는다.
+기존 주석 ZIP에는 feature 배열을 추가하지 않았으며, 주석 데이터는 변경하지 않았다.
+
 현재 보수적 후보는 **786개**다. 관계 구성·산술·단위 변환·상태/논리 주석을 기존 완료 hidden/confidence/length와 `id`로 연결할 수 있다.
 이 단계에서는 classifier 학습이나 hidden 패턴 검정은 수행하지 않았다. 주석 작성 중 hidden·confidence·verifier 점수는 보지 않았다.
 모든 fit/validation/test 답변을 요청에 따라 주석했다. 분류 기준은 기존 fit-only pilot을 기준으로 유지했지만 독립 인간 검수 없이 확장한 v1 초안이다. 이후 test 사례를 보고 클래스/feature를 다시 정하면 새 탐색으로 기록하고 기존 test를 미사용 최종검증셋으로 주장하지 않는다.

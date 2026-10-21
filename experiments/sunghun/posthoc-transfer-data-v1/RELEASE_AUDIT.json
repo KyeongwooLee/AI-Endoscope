@@ -1,0 +1,186 @@
+{
+  "status": "passed",
+  "source_snapshot_manifest_files_verified": {
+    "gsm8k": 2045,
+    "svamp": 447,
+    "reverse": 37
+  },
+  "labels_recomputed": 5000,
+  "response_and_feature_ids_unique": true,
+  "shapes_and_finite_values_checked": true,
+  "confidence_nans_preserved": true,
+  "annotation_overlay_exact_matches": 1100,
+  "question_folds_consistent": true,
+  "stored_aurocs_recomputed": [
+    {
+      "study": "gsm8k",
+      "domain": "test",
+      "feature": "question",
+      "auroc": 0.6726155592996851
+    },
+    {
+      "study": "gsm8k",
+      "domain": "test",
+      "feature": "length",
+      "auroc": 0.7116923668595707
+    },
+    {
+      "study": "gsm8k",
+      "domain": "test",
+      "feature": "confidence",
+      "auroc": 0.7947494689033769
+    },
+    {
+      "study": "gsm8k",
+      "domain": "test",
+      "feature": "confidence_length",
+      "auroc": 0.8308274119112152
+    },
+    {
+      "study": "gsm8k",
+      "domain": "test",
+      "feature": "completed_hidden",
+      "auroc": 0.8607885869167095
+    },
+    {
+      "study": "gsm8k",
+      "domain": "test",
+      "feature": "combined",
+      "auroc": 0.8580506922569775
+    },
+    {
+      "study": "gsm8k",
+      "domain": "test",
+      "feature": "combined_question",
+      "auroc": 0.8457026957732033
+    },
+    {
+      "study": "svamp",
+      "domain": "test",
+      "feature": "question",
+      "auroc": 0.6099338685605475
+    },
+    {
+      "study": "svamp",
+      "domain": "test",
+      "feature": "length",
+      "auroc": 0.6806681333950904
+    },
+    {
+      "study": "svamp",
+      "domain": "test",
+      "feature": "confidence",
+      "auroc": 0.7048209047398486
+    },
+    {
+      "study": "svamp",
+      "domain": "test",
+      "feature": "confidence_length",
+      "auroc": 0.7863980237764397
+    },
+    {
+      "study": "svamp",
+      "domain": "test",
+      "feature": "completed_hidden",
+      "auroc": 0.8125675467037208
+    },
+    {
+      "study": "svamp",
+      "domain": "test",
+      "feature": "combined",
+      "auroc": 0.8228475117080952
+    },
+    {
+      "study": "svamp",
+      "domain": "test",
+      "feature": "combined_question",
+      "auroc": 0.8089393237610004
+    },
+    {
+      "study": "reverse",
+      "domain": "source_test",
+      "feature": "question",
+      "auroc": 0.6794197353738243
+    },
+    {
+      "study": "reverse",
+      "domain": "source_test",
+      "feature": "length",
+      "auroc": 0.7820022317870238
+    },
+    {
+      "study": "reverse",
+      "domain": "source_test",
+      "feature": "confidence",
+      "auroc": 0.7736330304479516
+    },
+    {
+      "study": "reverse",
+      "domain": "source_test",
+      "feature": "confidence_length",
+      "auroc": 0.8345289335246293
+    },
+    {
+      "study": "reverse",
+      "domain": "source_test",
+      "feature": "completed_hidden",
+      "auroc": 0.8536585365853658
+    },
+    {
+      "study": "reverse",
+      "domain": "source_test",
+      "feature": "combined",
+      "auroc": 0.8482384823848238
+    },
+    {
+      "study": "reverse",
+      "domain": "source_test",
+      "feature": "combined_question",
+      "auroc": 0.8444125617726765
+    },
+    {
+      "study": "reverse",
+      "domain": "target_test",
+      "feature": "question",
+      "auroc": 0.5200901032891363
+    },
+    {
+      "study": "reverse",
+      "domain": "target_test",
+      "feature": "length",
+      "auroc": 0.6663293897882939
+    },
+    {
+      "study": "reverse",
+      "domain": "target_test",
+      "feature": "confidence",
+      "auroc": 0.7804739579517984
+    },
+    {
+      "study": "reverse",
+      "domain": "target_test",
+      "feature": "confidence_length",
+      "auroc": 0.7996758479232291
+    },
+    {
+      "study": "reverse",
+      "domain": "target_test",
+      "feature": "completed_hidden",
+      "auroc": 0.8059299685004762
+    },
+    {
+      "study": "reverse",
+      "domain": "target_test",
+      "feature": "combined",
+      "auroc": 0.7872408614753498
+    },
+    {
+      "study": "reverse",
+      "domain": "target_test",
+      "feature": "combined_question",
+      "auroc": 0.7613911068786169
+    }
+  ],
+  "semantic_labels_human_reviewed": false,
+  "new_generation_or_training": false
+}

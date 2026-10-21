@@ -1,0 +1,34 @@
+{
+  "svamp": {
+    "answers": 1000,
+    "questions": 1000,
+    "correct": 762,
+    "wrong": 238,
+    "eligible": 966,
+    "eligible_wrong": 204,
+    "parse_failures": 34,
+    "truncated": 0,
+    "question_folds": {
+      "validation": 200,
+      "test": 200,
+      "fit": 600
+    },
+    "confidence_nan_cells": 442
+  },
+  "gsm8k": {
+    "answers": 4000,
+    "questions": 500,
+    "correct": 2976,
+    "wrong": 1024,
+    "eligible": 3872,
+    "eligible_wrong": 896,
+    "parse_failures": 128,
+    "truncated": 7,
+    "question_folds": {
+      "fit": 300,
+      "validation": 100,
+      "test": 100
+    },
+    "confidence_nan_cells": 1664
+  }
+}

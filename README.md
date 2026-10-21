@@ -12,6 +12,11 @@
 [전용 prerelease에서 다운로드](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/error-taxonomy-full-v1-draft)할 수 있다.
 인간 검수·독립 의미 검증 전이며, 기존 7,473문제 feature Release와 생성 답변이 다른 데이터다.
 
+**SVAMP inference·양방향 전이 데이터:** [설명](experiments/sunghun/posthoc-transfer-data-v1/README.md) /
+[Release 다운로드](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/posthoc-transfer-data-v1).
+SVAMP 1,000응답, 별도 GSM8K sampling 4,000응답, 완료 hidden/confidence feature와 양방향 verifier 결과를 제공한다.
+기존 전체 train 7,473응답을 줄인 것이 아니며, 두 생성 실험은 별개다.
+
 ### 문서별 내용
 
 | 문서 | 어떤 정보가 있는가 |
@@ -27,6 +32,7 @@
 | 9. [ENTROPY_CONFIRMATION.md](experiments/sunghun/gsm8k-logit-study/ENTROPY_CONFIRMATION.md) | 탐색에서 고른 entropy 후보를 고정한 뒤 새 train 1,000문제에서 확인하는 실험. 후보·학습·capture 품질·평가 기준과 원격 실행 |
 | 10. [TRAIN_ALL_EXTRACTION.md](experiments/sunghun/gsm8k-logit-study/TRAIN_ALL_EXTRACTION.md) | 공식 train 7,473개 확대 추출의 설계. 기존 답변 재사용, compact feature 범위, test 제외, 품질 gate, 배치 저장·백업·resume, 이후 분석의 경계 |
 | 11. [오류 유형 주석 README](experiments/sunghun/error-taxonomy-full-v1/README.md) / [CODEBOOK](experiments/sunghun/error-taxonomy-full-v1/CODEBOOK.md) | 후속 sampling 응답 1,100개의 오류 유형 초안. 선택 범위, assistant 직접 labeling 절차, 유형별 수, 근거·교정·reference 플래그, 인간 검수 전 상태, 로딩·누수 방지. 기존 feature Release와 별도 |
+| 12. [SVAMP inference·전이 데이터 README](experiments/sunghun/posthoc-transfer-data-v1/README.md) | SVAMP 1,000응답과 비교 GSM8K 4,000응답, 생성 protocol, 완료 h28/confidence/length 계산, 양방향 전이 결과, 7,473개와의 차이, 오류 유형 주석 연결과 로딩 |
 
 ### 추천 읽기 순서
 

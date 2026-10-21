@@ -19,6 +19,11 @@ GSM8K 896개 + SVAMP 204개 답변을 assistant가 직접 분류한 방법과 �
 [전용 prerelease](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/error-taxonomy-full-v1-draft)에서
 질문·응답·reference·주석을 받을 수 있다. 기존 7,473문제 feature Release와 생성 경로/응답이 다르므로 구별해야 한다.
 
+[SVAMP inference·양방향 전이 데이터 안내](posthoc-transfer-data-v1/README.md)와
+[전용 Release](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/posthoc-transfer-data-v1)에는
+SVAMP 1,000응답, 별도 GSM8K sampling 4,000응답의 완료 feature와 양방향 verifier 결과를 공유한다.
+전체 train 7,473응답을 축소한 것이 아니며, 오류 유형 주석 1,100개와는 응답 ID/hash로 연결할 수 있다.
+
 ## Contents
 
 - `gsm8k-logit-study/`: 실제 사용한 연구 코드, 설정, 설계 문서, 테스트.
