@@ -1,0 +1,17 @@
+{
+  "count": 1100,
+  "dataset_counts": {
+    "gsm8k": 896,
+    "svamp": 204
+  },
+  "review_units": 1098,
+  "response_characters": 676741,
+  "exact_duplicate_propagation_only": true,
+  "codebook_frozen_before_full_review": true,
+  "codebook_sha256": "3cf59fd9fbd6343212a15f291e843bf2b9edf3b678340f2ad895fde5b74783bd",
+  "packet_sha256": "70338704729aff06b3038ec1f8d48fa5694c1f7758b2237ae9f5147bb21f32f7",
+  "hidden_or_probe_scores_exposed": false,
+  "human_validated": false,
+  "includes_fit_validation_test": true,
+  "format_failures_excluded": 162
+}

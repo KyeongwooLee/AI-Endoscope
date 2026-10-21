@@ -11,6 +11,14 @@ Qwen2.5-1.5B-Instruct가 직접 생성한 답변을 정답/오답으로 나누�
 실행 재현은 [REPRODUCE.md](REPRODUCE.md)로 이동하면 된다.
 개별 실험의 당시 설계는 아래 Experiment Order 표의 문서 링크를 참고한다.
 
+### 후속 오류 유형 주석 데이터
+
+[오류 유형 주석 README](error-taxonomy-full-v1/README.md)에 후속 sampling 실험의
+GSM8K 896개 + SVAMP 204개 답변을 assistant가 직접 분류한 방법과 필드, 유형별 집계를 정리했다.
+**모두 인간 검수 전 초안**이며 독립적인 의미 검증이나 라벨 정확도 평가를 거치지 않았다.
+[전용 prerelease](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/error-taxonomy-full-v1-draft)에서
+질문·응답·reference·주석을 받을 수 있다. 기존 7,473문제 feature Release와 생성 경로/응답이 다르므로 구별해야 한다.
+
 ## Contents
 
 - `gsm8k-logit-study/`: 실제 사용한 연구 코드, 설정, 설계 문서, 테스트.

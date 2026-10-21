@@ -7,6 +7,11 @@
 전체 train 7,473문제의 데이터는 Git 파일이 아니라
 [GitHub Release](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/gsm8k-train-features-v1)에서 받는다.
 
+**추가 공개: [오류 유형 주석 1,100개 (인간 검수 전 초안)](experiments/sunghun/error-taxonomy-full-v1/README.md)**
+후속 sampling 실험의 GSM8K 896개 + SVAMP 204개를 assistant가 직접 분류했다.
+[전용 prerelease에서 다운로드](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/error-taxonomy-full-v1-draft)할 수 있다.
+인간 검수·독립 의미 검증 전이며, 기존 7,473문제 feature Release와 생성 답변이 다른 데이터다.
+
 ### 문서별 내용
 
 | 문서 | 어떤 정보가 있는가 |
@@ -21,6 +26,7 @@
 | 8. [FEATURE_ABLATION.md](experiments/sunghun/gsm8k-logit-study/FEATURE_ABLATION.md) | 벡터 크기·집중도, 인접/depth 간 변화, 변화량 곡선, entropy 등의 안정성 feature 그룹. 같은 대상군에서 비교하는 ablation, fit/validation과 선택 편향 주의사항 |
 | 9. [ENTROPY_CONFIRMATION.md](experiments/sunghun/gsm8k-logit-study/ENTROPY_CONFIRMATION.md) | 탐색에서 고른 entropy 후보를 고정한 뒤 새 train 1,000문제에서 확인하는 실험. 후보·학습·capture 품질·평가 기준과 원격 실행 |
 | 10. [TRAIN_ALL_EXTRACTION.md](experiments/sunghun/gsm8k-logit-study/TRAIN_ALL_EXTRACTION.md) | 공식 train 7,473개 확대 추출의 설계. 기존 답변 재사용, compact feature 범위, test 제외, 품질 gate, 배치 저장·백업·resume, 이후 분석의 경계 |
+| 11. [오류 유형 주석 README](experiments/sunghun/error-taxonomy-full-v1/README.md) / [CODEBOOK](experiments/sunghun/error-taxonomy-full-v1/CODEBOOK.md) | 후속 sampling 응답 1,100개의 오류 유형 초안. 선택 범위, assistant 직접 labeling 절차, 유형별 수, 근거·교정·reference 플래그, 인간 검수 전 상태, 로딩·누수 방지. 기존 feature Release와 별도 |
 
 ### 추천 읽기 순서
 
@@ -28,6 +34,7 @@
 - **데이터를 분석하거나 AI에게 전달할 때:** 1번 실험 개요 → 2번 DATA_README → 아래 JSON 보조 자료 → Release의 `AI_STARTER.zip`. raw hidden 분석에는 전체 데이터 ZIP도 필요하다.
 - **코드를 실행하거나 후속 실험을 할 때:** 1번 실험 개요 → 2번 DATA_README → 3번 REPRODUCE → 실행할 실험의 4~10번 문서.
 - **연구 진행 순서대로 자세히 볼 때:** 4번 최초 study → 5번 사후 classifier → 6번 조기 scalar classifier → 7번 hidden probe·layer 변화 → 8번 ablation → 9번 새 문제 confirmation → 10번 전체 train 추출.
+- **새 오류 유형 데이터를 사용할 때:** 11번 주석 README → CODEBOOK → 전용 Release의 `labels.jsonl`. 검수 전 초안이며, 기존 7,473문제 배열과 행 순서로 연결하지 않는다.
 
 ### 데이터 분석용 보조 자료
 

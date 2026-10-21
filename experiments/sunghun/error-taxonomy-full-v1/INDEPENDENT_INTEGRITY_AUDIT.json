@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "count": 1100,
+  "dataset_counts": {
+    "gsm8k": 896,
+    "svamp": 204
+  },
+  "original_labels_unchanged": true,
+  "all_source_responses_exact_match": true,
+  "all_evidence_spans_exact_match": true,
+  "no_missing_or_duplicate_ids": true,
+  "same_question_fold_consistent": true,
+  "format_failures_excluded": 162,
+  "recommended_candidates": 786,
+  "reference_review": 155,
+  "pilot_overlap_type_consistency_count": 16,
+  "packet_and_frozen_codebook_hashes_match": true,
+  "semantic_labels_independently_validated": false,
+  "note": "Integrity audit only. Label semantics require independent human review."
+}
