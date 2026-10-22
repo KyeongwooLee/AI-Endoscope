@@ -1,0 +1,33 @@
+{
+  "study": "smollm2-detailed-v1",
+  "seed": 2026102101,
+  "model": {
+    "id": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "revision": "RESOLVE_DURING_PREPARE",
+    "dtype": "float32",
+    "device": "cuda:0",
+    "attention_backend": "sdpa",
+    "expected_layers": 24,
+    "expected_hidden_size": 2048,
+    "expected_vocab_size": 49152
+  },
+  "generation": {"batch_size": 1, "max_prompt_tokens": 3072, "max_new_tokens": 1024, "max_sequence_tokens": 4096},
+  "datasets": {
+    "gsm8k": {"questions": 7473, "attempts": 1, "do_sample": false},
+    "svamp": {"questions": 1000, "attempts": 1, "do_sample": true, "temperature": 0.7, "top_p": 0.95, "top_k": 0}
+  },
+  "extraction": {
+    "checkpoints": [0, 32, 64, 128],
+    "raw_layers": "embedding + all 24 blocks",
+    "primary_layer": 12,
+    "readout_layers": [6, 9, 11, 12, 18, 24],
+    "readout_prefix_tokens": 129,
+    "projection_chunk_tokens": 16,
+    "top_k": 10,
+    "all_token_all_layer_trajectory": true,
+    "all_layer_completed_pools": true
+  },
+  "storage": {"batch_examples": 16, "minimum_free_gib": 6, "maximum_study_gib": 35, "maximum_outbox_gib": 18},
+  "quality": {"pilot_examples": 32, "prefix_checks": 8, "generation_logit_examples": 2, "minimum_greedy_checkpoint_agreement": 0.99},
+  "notes": "New model, no reused Qwen responses or probe weights. GSM official train only, matching previous greedy full-train protocol. SVAMP matches previous T0.7 single-answer protocol. No model/probe training. No full-token dense residuals or vocabulary logits stored."
+}

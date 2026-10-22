@@ -2,3 +2,6 @@
 # Preserve the original bytes: experiment resume fingerprints hash these files.
 experiments/sunghun/gsm8k-logit-study/** -text
 experiments/sunghun/work/** -text
+experiments/sunghun/smollm2-detailed-v1/** -text
+experiments/sunghun/smollm2-recovery-v1/** -text
+experiments/sunghun/smollm2-release-v1/** -text

@@ -35,6 +35,7 @@ SVAMP 1,000응답, 별도 GSM8K sampling 4,000응답, 완료 hidden/confidence f
 | 10. [TRAIN_ALL_EXTRACTION.md](experiments/sunghun/gsm8k-logit-study/TRAIN_ALL_EXTRACTION.md) | 공식 train 7,473개 확대 추출의 설계. 기존 답변 재사용, compact feature 범위, test 제외, 품질 gate, 배치 저장·백업·resume, 이후 분석의 경계 |
 | 11. [오류 유형 주석 README](experiments/sunghun/error-taxonomy-full-v1/README.md) / [CODEBOOK](experiments/sunghun/error-taxonomy-full-v1/CODEBOOK.md) | 후속 sampling 응답 1,100개의 오류 유형 초안. 선택 범위, assistant 직접 labeling 절차, 유형별 수, 근거·교정·reference 플래그, 인간 검수 전 상태, 로딩·누수 방지. 기존 feature Release와 별도 |
 | 12. [SVAMP inference·전이 데이터 README](experiments/sunghun/posthoc-transfer-data-v1/README.md) | SVAMP 1,000응답과 비교 GSM8K 4,000응답, 생성 protocol, 완료 h28/confidence/length 계산, 양방향 전이 결과, 7,473개와의 차이, 오류 유형 주석 연결과 로딩 |
+| 13. [SmolLM2 compact/full 데이터 안내](experiments/sunghun/smollm2-release-v1/README.md) / [복구 protocol](experiments/sunghun/smollm2-recovery-v1/README.md) | 24층 SmolLM2의 GSM8K/SVAMP 데이터, Qwen과 같은 종류의 compact 및 상세 full feature, 상대 깊이 대응, 계산식·로더, 보존 원본/유실분 재실행 구분. 실제 공개 여부·범위는 Releases와 RELEASE_SCOPE를 확인 |
 
 ### 추천 읽기 순서
 
