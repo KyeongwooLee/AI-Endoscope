@@ -25,6 +25,7 @@ exact match 및 모든 feature 배열의 shape/value 비교를 통과해야 누�
 ## 파일
 
 - `prepare_recovery.py`: 로컬 보존 원본 해시 검증, 누락 ID/대조군 고정, 새 fingerprint와 입력 ZIP 생성.
+- `prepare_resume.py`: 새 서버에서도 기존 고정 입력을 유지하고, 로컬에서 재검증한 복구 batch의 receipt/ACK만 복원해 중복 추론 방지.
 - `recovery_worker.py`: 보존 ID를 제외한 추론/feature 추출, 개별 generation과 NPZ 저장, 16응답 batch commit 및 QA.
 - `bootstrap.sh`, `launch.py`: 고정 라이브러리 설치, 원래 코드 테스트 후 SSH와 독립적인 worker 실행.
 - `collect_recovery.py`: 30초 간격의 로컬 백업, ZIP 및 모든 내부 member SHA-256 확인 후 해당 서버 ZIP만 ACK 정리.
@@ -47,3 +48,22 @@ Metadata만 받은 상태를 feature 전체 백업 완료로 해석하지 않는
 full 원본 batch ZIP 보존, GitHub asset 제한과 최종 SHA를 검증한다.
 업로더는 전체 readiness marker가 없으면 중단하고, GitHub draft의 asset 크기/SHA-256이 모두 일치한 뒤 공개한다.
 최종 공개 집계는 과거 원본 집계와 다를 수 있으므로 `RELEASE_SCOPE.md`/`dataset_summary.json`을 기준으로 한다.
+
+## 새 서버에서 같은 실행 재개
+
+2026-10-26 재개 시 이전 `/root` 결과 폴더도 없어졌지만 복구 63배치/1,008응답은 로컬에 남아 있었다.
+보존 원본 1,744개와 합쳐 2,752개를 유지하고, 남은 5,721개만 실행하도록 완료 기록을 복원했다.
+이 숫자는 당시 재개 기준이며 실시간 진행도는 아니다. 새 VESSL 환경에서 별도 볼륨의 내용이
+유지된다고 가정하지 않는다.
+
+`prepare_resume.py`는 기존 `input-bundle.zip` 및 fingerprint를 확인하고, 로컬 ZIP과 모든 member hash,
+응답 ID/label과 receipt summary를 대조한 뒤 완료 receipt와 검증 ACK만 묶는다.
+과거 worker PID는 복원하지 않는다. 기존 과학 코드/입력/seed를 바꾸거나 새 fingerprint를 만들지 않는다.
+
+```text
+python prepare_resume.py --prepared ORIGINAL_PREPARED --backup VERIFIED_BACKUP --output NEW_RESUME_FOLDER
+```
+
+새 서버에서 원래 입력 ZIP과 `resume-state.zip`을 복원한 뒤, 원래 bootstrap/launch를 실행하면
+검증된 완료 batch는 건너뛰고 대조군 재현 검사 후 다음 미완료 batch부터 진행한다.
+새로 만든 준비 패키지로 원래 고정 입력을 덮어쓰거나, ZIP 검증 없이 ACK만 복원하면 안 된다.
