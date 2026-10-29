@@ -19,6 +19,11 @@
 SVAMP 1,000응답, 별도 GSM8K sampling 4,000응답, 완료 hidden/confidence feature와 양방향 verifier 결과를 제공한다.
 기존 전체 train 7,473응답을 줄인 것이 아니며, 두 생성 실험은 별개다.
 
+**2026-10-29 추가 수집:** [새 오답 4,000개 안내](experiments/sunghun/extra-errors-20261029-v1/README.md) /
+[전체 응답·feature Release](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/qwen-extra-errors-20261029-v1).
+18,656응답에서 GSM8K 3,188 + SVAMP 812개를 선택했고 해당 오답의 상세 feature를 제공한다.
+**추가 4,000개의 오류 유형은 아직 미분류·인간 미검수**이며 기존 1,100개 주석과 구별한다.
+
 ### 문서별 내용
 
 | 문서 | 어떤 정보가 있는가 |

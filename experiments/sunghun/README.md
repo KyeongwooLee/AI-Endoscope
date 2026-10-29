@@ -26,6 +26,13 @@ GSM8K 896개 + SVAMP 204개 답변을 assistant가 직접 분류한 방법과 �
 SVAMP 1,000응답, 별도 GSM8K sampling 4,000응답의 완료 feature와 양방향 verifier 결과를 공유한다.
 전체 train 7,473응답을 축소한 것이 아니며, 오류 유형 주석 1,100개와는 응답 ID/hash로 연결할 수 있다.
 
+### 추가 오답 4,000개 수집 (2026-10-29)
+
+[추가 수집 안내](extra-errors-20261029-v1/README.md)와 [전용 Release](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/qwen-extra-errors-20261029-v1)에
+새 Qwen 응답 18,656개, 선택 오답 4,000개(GSM8K 3,188 / SVAMP 812), 해당 오답의 상세 feature를 추가했다.
+기존 실행·AI 주석을 보존한 별도 수집이며 **추가 4,000개의 오류 유형은 아직 미분류·인간 미검수**다.
+고유 질문은 2,717개이며 유형별 균형 표본이나 새 미사용 test가 아니다.
+
 ## Contents
 
 - `gsm8k-logit-study/`: 실제 사용한 연구 코드, 설정, 설계 문서, 테스트.

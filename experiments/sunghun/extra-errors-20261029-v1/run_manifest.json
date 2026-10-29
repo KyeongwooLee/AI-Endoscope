@@ -1,0 +1,16 @@
+{
+  "files": {
+    "worker.py": "4fb813ff88628301dfcf0d17ed7523bb4635077d7817be6ce39b4a6707cf09fd",
+    "protocol.py": "57857f72643b88744633e9b3ee980bc7787545f5b189908b0257d8190029e631",
+    "control.py": "38c3b5f05fd6f7149e3bcc6d74b978a65c42890ef67f0055ccd2e584ab059c25",
+    "input/config.json": "8f59b0f30d88f18045d28670a07bdc739b46097e310264418604420409e4540b",
+    "input/questions.json": "845e1b582b42c1f7e83fc14023de5e4505d9111aa5b0f48ffe56a068b12663e4",
+    "input/existing_pairs.json": "26c3b3dc6d618968eb0b28e80399286f26acaa382639ce5662054c8b3f391eac",
+    "input/input_summary.json": "fdb5bbc7433c37b5a06421ac1a94a0c9ca04b7be2ea0424fe07da44f375c39ed",
+    "baseline_dedup.json": "083fdb8f78309a4f7e08b798fb1b0014e0fe637ebb7a54834abe1ca5abbf96ec",
+    "model_files.json": "8a034323a4767b7a4880acc2f2591cbdd063c37e090a9533cac3673d8f2a2e4c"
+  },
+  "created_unix": 1793233957.1299863,
+  "remote_root": "/root/AI-Endoscope/extra_errors_20261029",
+  "source_commit": "a178c22b807ee4727b59fb29365d9ff8c3ec9c2a"
+}

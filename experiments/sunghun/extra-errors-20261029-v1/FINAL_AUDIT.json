@@ -1,0 +1,23 @@
+{
+  "generated": 18656,
+  "selected_errors": 4000,
+  "verified_features": 4000,
+  "datasets": {
+    "gsm8k": 3188,
+    "svamp": 812
+  },
+  "raw_outcomes": {
+    "correct": 13880,
+    "eligible_error": 4000,
+    "format_or_truncation": 695,
+    "duplicate": 81
+  },
+  "unique_selected_questions": 2717,
+  "duplicate_response_and_grade_checks_passed": true,
+  "feature_shape_and_link_checks_passed": true,
+  "qa": {
+    "prefix_checks": 16
+  },
+  "complete": true,
+  "taxonomy_status": "unannotated"
+}

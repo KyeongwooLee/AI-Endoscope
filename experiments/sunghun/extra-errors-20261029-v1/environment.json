@@ -1,0 +1,13 @@
+{
+  "torch": "2.9.1+cu126",
+  "transformers": "4.57.6",
+  "numpy": "2.2.6",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dtype": "torch.float32",
+  "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "parameters": 1543714304,
+  "tf32": false,
+  "batch_size": 32
+}

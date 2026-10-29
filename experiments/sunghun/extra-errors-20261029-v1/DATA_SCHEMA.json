@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "layers": 28,
+  "hidden_size": 1536,
+  "record_identity": [
+    "id",
+    "response_sha256"
+  ],
+  "jsonl_separator": "LF only; Unicode paragraph separators can occur inside strings",
+  "label": "Strict parsed Decimal final numeric equality, not semantic or causal error classification",
+  "math_error_type": null,
+  "human_review_status": "not_reviewed",
+  "dimensions": {
+    "C": "number of checkpoints among 0/32/64/128 strictly less than N",
+    "N": "actual generated token count",
+    "P": "min(N,129)"
+  },
+  "axes": {
+    "hidden": [
+      "C",
+      "embedding 0 then blocks 1..28",
+      1536
+    ],
+    "pooled_hidden": [
+      28,
+      "end non-special / whole nonwhitespace mean / final-number mean",
+      1536
+    ],
+    "trajectory": [
+      "N",
+      28,
+      "previous_norm / hidden_norm / delta_norm / relative_delta / cosine_distance"
+    ],
+    "checkpoint_readouts": [
+      "C",
+      28,
+      "generated_logprob / entropy / probability_margin / top1_probability / generated_rank / js_to_final / js_to_previous"
+    ],
+    "prefix_readouts": [
+      "P",
+      "blocks 7/10/14/28",
+      "generated_logprob / entropy / probability_margin / top1_probability / generated_rank"
+    ],
+    "token_readouts": [
+      "N",
+      "same five token metrics"
+    ],
+    "token_masks": [
+      "N",
+      "content non-special / whole nonwhitespace / final-number"
+    ],
+    "posthoc_question": "hidden at t0, h28",
+    "posthoc_end": "pooled_hidden block28 pool0",
+    "posthoc_mean": "pooled_hidden block28 pool1",
+    "posthoc_number": "pooled_hidden block28 pool2",
+    "length": "log1p([prompt token count, generated token count, whole nonwhitespace count, final-number count])",
+    "token_region": {
+      "excluded": 0,
+      "reasoning": 1,
+      "final_number": 2,
+      "format": 3,
+      "unparsed": 4
+    }
+  },
+  "confidence_names": [
+    "whole_logp_mean",
+    "whole_logp_q10",
+    "whole_logp_min",
+    "whole_logp_last16_mean",
+    "whole_prob_lt_01_ratio",
+    "whole_prob_lt_05_ratio",
+    "whole_entropy_mean",
+    "whole_entropy_q90",
+    "whole_entropy_max",
+    "whole_entropy_last16_mean",
+    "whole_margin_mean",
+    "whole_margin_q10",
+    "whole_margin_min",
+    "number_logp_mean",
+    "number_logp_q10",
+    "number_logp_min",
+    "number_logp_last16_mean",
+    "number_prob_lt_01_ratio",
+    "number_prob_lt_05_ratio",
+    "number_entropy_mean",
+    "number_entropy_q90",
+    "number_entropy_max",
+    "number_entropy_last16_mean",
+    "number_margin_mean",
+    "number_margin_q10",
+    "number_margin_min"
+  ],
+  "sample_arrays": {
+    "checkpoints": {
+      "sample_shape": [
+        4
+      ],
+      "dtype": "int16"
+    },
+    "hidden": {
+      "sample_shape": [
+        4,
+        29,
+        1536
+      ],
+      "dtype": "float32"
+    },
+    "pooled_hidden": {
+      "sample_shape": [
+        28,
+        3,
+        1536
+      ],
+      "dtype": "float32"
+    },
+    "trajectory": {
+      "sample_shape": [
+        170,
+        28,
+        5
+      ],
+      "dtype": "float32"
+    },
+    "checkpoint_readouts": {
+      "sample_shape": [
+        4,
+        28,
+        7
+      ],
+      "dtype": "float32"
+    },
+    "checkpoint_top_ids": {
+      "sample_shape": [
+        4,
+        28,
+        5
+      ],
+      "dtype": "int32"
+    },
+    "checkpoint_top_logprob": {
+      "sample_shape": [
+        4,
+        28,
+        5
+      ],
+      "dtype": "float32"
+    },
+    "prefix_readouts": {
+      "sample_shape": [
+        129,
+        4,
+        5
+      ],
+      "dtype": "float32"
+    },
+    "token_readouts": {
+      "sample_shape": [
+        170,
+        5
+      ],
+      "dtype": "float32"
+    },
+    "token_top_ids": {
+      "sample_shape": [
+        170,
+        5
+      ],
+      "dtype": "int32"
+    },
+    "token_top_logprob": {
+      "sample_shape": [
+        170,
+        5
+      ],
+      "dtype": "float32"
+    },
+    "token_region": {
+      "sample_shape": [
+        170
+      ],
+      "dtype": "int8"
+    },
+    "token_offsets": {
+      "sample_shape": [
+        170,
+        2
+      ],
+      "dtype": "int32"
+    },
+    "token_masks": {
+      "sample_shape": [
+        170,
+        3
+      ],
+      "dtype": "bool"
+    },
+    "confidence": {
+      "sample_shape": [
+        26
+      ],
+      "dtype": "float32"
+    },
+    "length": {
+      "sample_shape": [
+        4
+      ],
+      "dtype": "float32"
+    },
+    "posthoc_question": {
+      "sample_shape": [
+        1536
+      ],
+      "dtype": "float32"
+    },
+    "posthoc_end": {
+      "sample_shape": [
+        1536
+      ],
+      "dtype": "float32"
+    },
+    "posthoc_mean": {
+      "sample_shape": [
+        1536
+      ],
+      "dtype": "float32"
+    },
+    "posthoc_number": {
+      "sample_shape": [
+        1536
+      ],
+      "dtype": "float32"
+    }
+  },
+  "implementation": "metadata ZIP: source/smollm2-detailed-v1/extract.py and common.py; model is Qwen, not SmolLM2",
+  "timing": "t is generated answer-token count; completed pools and native whole-response confidence are posthoc",
+  "missing": "Unavailable checkpoints omitted; inspect checkpoints array. Confidence mask-empty groups can be NaN; other arrays are required finite. Empty pools use zero vectors.",
+  "feature_scope": "Detailed features only for 4000 selected errors; actual tokens and grades for all 18656 generations"
+}
