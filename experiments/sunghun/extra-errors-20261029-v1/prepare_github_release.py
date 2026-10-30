@@ -54,18 +54,16 @@ def main():
         receipt = json.loads(rp.read_text(encoding='utf-8'))
         zp = rp.with_suffix('.zip')
         assert zp.stat().st_size == receipt['bytes'] and sha(zp) == receipt['archive_sha256'], zp.name
-        # The prior full audit checked every original inner member and feature link.
-        # Check the complete inner member hash list again while packaging.
-        with zipfile.ZipFile(zp) as z:
-            assert set(z.namelist()) == set(receipt['members'])
-            for n, h in receipt['members'].items():
-                assert hashlib.sha256(z.read(n)).hexdigest() == h, n
+        # FINAL_AUDIT checked every original inner member and feature link.
+        # Matching the entire original ZIP's SHA carries those checks forward;
+        # the new independent ZIP members are also read back byte-for-byte below.
         files += [(zp, f'{PREFIX}/backup/outbox/{zp.name}'),
                   (rp, f'{PREFIX}/backup/outbox/{rp.name}')]
     assert len(files) == 2332
     parts, current, size = [], [], 0
     for source, name in files:
-        if current and size + source.stat().st_size > 1024**3 - 1024**2:
+        # Keep individual HTTP uploads short enough to survive unstable links.
+        if current and size + source.stat().st_size > 192 * 1024**2:
             parts.append(current)
             current, size = [], 0
         current.append((source, name))
@@ -103,7 +101,7 @@ def main():
             if p.is_file() and 'outbox' not in p.relative_to(ROOT / 'backup').parts:
                 z.write(p, f'{PREFIX}/backup/{p.relative_to(ROOT / "backup").as_posix()}')
         for p in CODE.iterdir():
-            if p.is_file():
+            if p.is_file() and p.name not in {'FULL_INDEX.json', 'PUBLICATION_MANIFEST.json'}:
                 z.write(p, f'{PREFIX}/code/{p.name}')
         # Frozen imports are distributed alongside the pinned source commit for offline inspection.
         for sub in ['gsm8k-logit-study/gsm8k_lens', 'smollm2-detailed-v1']:

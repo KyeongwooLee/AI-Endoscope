@@ -29,6 +29,7 @@
 | `FINAL_AUDIT.json`, `dataset_summary.json` | 최종 검증과 집계 |
 
 분할 파일은 **각각 독립 ZIP**이다. 모두 같은 위치에 압축 해제한다. 바이너리 연결하지 않는다.
+전송 연결이 끊겨도 다시 받는 양을 줄이도록 각 ZIP을 약 200MB 이하로 나눴다.
 AI_STARTER와 metadata ZIP도 같은 위치에 풀면 `qwen-extra-errors-20261029-v1/` 아래에 합쳐진다.
 원본 batch ZIP은 `backup/outbox/` 안에 그대로 보존했으므로 nested ZIP을 지원하는 아래 로더를 사용한다.
 
