@@ -1,0 +1,26 @@
+## agreement on 30 shared items (4 labelers each)
+  pairwise: code 0.87, group 0.94
+  all four agree: code 24/30, group 27/30
+  disagreement patterns: {'CV/HA': 2, 'CO/PS': 1, 'MS/TG': 1, 'CV/PS': 1, 'CV/FC/TG': 1}
+
+## all 885 (n=885)
+  groups: A=264 (30%)  B=434 (49%)  C=141 (16%)  D=45 (5%)  UN=1 (0%)
+  codes : CV=147  CO=86  HA=31  OP=73  FC=117  MS=111  TG=133  CA=76  PS=65  UC=45  UN=1
+  borderline (conf m): 539 (61%)
+
+## gsm8k (n=720)
+  groups: A=208 (29%)  B=348 (48%)  C=118 (16%)  D=45 (6%)  UN=1 (0%)
+  codes : CV=106  CO=78  HA=24  OP=57  FC=105  MS=106  TG=80  CA=60  PS=58  UC=45  UN=1
+  borderline (conf m): 430 (60%)
+
+## svamp (n=165)
+  groups: A=56 (34%)  B=86 (52%)  C=23 (14%)  D=0 (0%)  UN=0 (0%)
+  codes : CV=41  CO=8  HA=7  OP=16  FC=12  MS=5  TG=53  CA=16  PS=7
+  borderline (conf m): 109 (66%)
+
+## Sunghun type (rows) x new code (cols)
+                          CV   CO   HA   OP   FC   MS   TG   CA   PS   UC   UN
+  modeling_relation      144   85   29   70  116  103  132    1   32   19    1   | n=732
+  arithmetic_execution     0    0    0    0    0    0    0   75    0    1    0   | n=76
+  reasoning_state          3    1    2    3    0    8    0    0   32    0    0   | n=49
+  unit_conversion          0    0    0    0    1    0    1    0    1   25    0   | n=28

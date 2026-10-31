@@ -1,0 +1,886 @@
+id	dataset	sunghun_type	code	group	conf	reason
+svamp-chal-108__T070__a00	svamp	arithmetic_execution	CA	C	h	141*71 computed as 10021 instead of 10011
+svamp-chal-111__T070__a00	svamp	modeling_relation	CO	A	m	Counts 15 candies together with 52 cookies
+svamp-chal-112__T070__a00	svamp	modeling_relation	TG	B	h	Answers total oranges instead of sacks
+svamp-chal-152__T070__a00	svamp	arithmetic_execution	CA	C	h	5440*32 computed as 173280 instead of 174080
+svamp-chal-154__T070__a00	svamp	modeling_relation	TG	B	m	Reports dad's computed weight magnitude as the difference; flawed premise
+svamp-chal-161__T070__a00	svamp	modeling_relation	CV	A	m	Reads stated 2 total beads as beads per necklace; flawed premise
+svamp-chal-167__T070__a00	svamp	modeling_relation	HA	A	m	Invents 14 invitations per friend and divides by it
+svamp-chal-16__T070__a00	svamp	modeling_relation	FC	B	m	Assigns 36-12 remainder to Marco instead of dad
+svamp-chal-171__T070__a00	svamp	modeling_relation	TG	B	m	Reports county kids plus outside attendees instead of county kids only
+svamp-chal-188__T070__a00	svamp	modeling_relation	TG	B	m	Computes combined change of Fred and Jason instead of Jason's
+svamp-chal-18__T070__a00	svamp	modeling_relation	TG	B	h	Answers all students instead of girls only
+svamp-chal-194__T070__a00	svamp	modeling_relation	TG	B	h	Answers combined earnings instead of Fred's
+svamp-chal-196__T070__a00	svamp	modeling_relation	CV	A	m	Treats picked 28 apples as initial total
+svamp-chal-197__T070__a00	svamp	modeling_relation	CV	A	h	Uses Jake's apples 21 instead of Steven's 11
+svamp-chal-19__T070__a00	svamp	modeling_relation	OP	B	m	Adds found wrappers to current instead of subtracting
+svamp-chal-204__T070__a00	svamp	modeling_relation	TG	B	m	Compares departed to initial families instead of those remaining
+svamp-chal-207__T070__a00	svamp	modeling_relation	TG	B	m	Sums all three subjects instead of math plus biology
+svamp-chal-209__T070__a00	svamp	modeling_relation	CO	A	m	Counts initial two birds again as storks
+svamp-chal-220__T070__a00	svamp	reasoning_state	PS	C	h	Subtracts sold 71 again from already-net 184
+svamp-chal-226__T070__a00	svamp	reasoning_state	PS	C	m	Treats own difference 23 as before-count and subtracts 18 again
+svamp-chal-228__T070__a00	svamp	modeling_relation	TG	B	h	Reports crackers per friend only; question asks crackers plus cakes
+svamp-chal-231__T070__a00	svamp	modeling_relation	FC	B	m	Computes found-minus-now changes instead of comparing found 30 and 14
+svamp-chal-238__T070__a00	svamp	modeling_relation	MS	B	m	Omits adding the 2 picked ripe apples
+svamp-chal-239__T070__a00	svamp	modeling_relation	TG	B	m	Computes minutes for both days instead of yesterday only
+svamp-chal-257__T070__a00	svamp	modeling_relation	CV	A	m	Reads remaining change 56 as amount spent
+svamp-chal-261__T070__a00	svamp	arithmetic_execution	CA	C	h	115*106 computed as 11990 instead of 12190
+svamp-chal-267__T070__a00	svamp	modeling_relation	OP	B	h	Subtracts gift instead of adding to reconstruct prior stock
+svamp-chal-26__T070__a00	svamp	modeling_relation	CV	A	h	Uses current 9 wrappers instead of found 65
+svamp-chal-270__T070__a00	svamp	arithmetic_execution	CA	C	m	404+495 computed as 900
+svamp-chal-27__T070__a00	svamp	modeling_relation	CV	A	m	Treats 450 potato suggesters as total students
+svamp-chal-286__T070__a00	svamp	modeling_relation	CV	A	m	Reads joint 15 nails as per-plank requirement
+svamp-chal-28__T070__a00	svamp	modeling_relation	TG	B	m	Answers crackers per person instead of combined crackers and cakes
+svamp-chal-301__T070__a00	svamp	modeling_relation	CV	A	h	Assigns wax quantities 288 and 260 to colors
+svamp-chal-304__T070__a00	svamp	modeling_relation	OP	B	m	Reverses Steven-Jill comparison direction; premise yields negatives
+svamp-chal-305__T070__a00	svamp	modeling_relation	CV	A	m	Misreads Fred's current 9 dollars as an amount lost
+svamp-chal-322__T070__a00	svamp	modeling_relation	CV	A	m	Counts made cakes as part of cakes bought
+svamp-chal-327__T070__a00	svamp	modeling_relation	CV	A	h	Uses garden 59 as final vase count instead of 20
+svamp-chal-333__T070__a00	svamp	modeling_relation	TG	B	m	Computes pages per day for a chapters-per-day target
+svamp-chal-342__T070__a00	svamp	modeling_relation	FC	B	m	Treats 4 minus 3 shortfall as total candy expenditure
+svamp-chal-347__T070__a00	svamp	modeling_relation	TG	B	m	Compares total revenues instead of per-item prices
+svamp-chal-349__T070__a00	svamp	modeling_relation	CV	A	m	Treats joint 22 pounds as Marco's initial weight; inconsistent premise
+svamp-chal-357__T070__a00	svamp	modeling_relation	TG	B	m	Reports both people's remaining total as dad's share
+svamp-chal-363__T070__a00	svamp	modeling_relation	CV	A	h	Uses 5 cups of flour as sugar already added
+svamp-chal-364__T070__a00	svamp	modeling_relation	TG	B	m	Answers total fish lost instead of goldfish
+svamp-chal-36__T070__a00	svamp	reasoning_state	OP	B	m	Sign flipped: $1 surplus called $1 short
+svamp-chal-377__T070__a00	svamp	modeling_relation	TG	B	h	Reports remaining cakes instead of sold minus bought
+svamp-chal-379__T070__a00	svamp	modeling_relation	TG	B	m	Computes Jake-vs-Steven apples difference instead of Steven apples minus peaches
+svamp-chal-37__T070__a00	svamp	modeling_relation	HA	A	m	Assumes two-day total recurs daily for 25 days
+svamp-chal-381__T070__a00	svamp	modeling_relation	FC	B	m	Wrong formula: divides pages by chapters for daily average
+svamp-chal-383__T070__a00	svamp	modeling_relation	OP	B	m	Multiplies pages by days instead of dividing
+svamp-chal-38__T070__a00	svamp	modeling_relation	CV	A	m	Reads mom's 7 more dollars as 5+7 for mom
+svamp-chal-398__T070__a00	svamp	modeling_relation	TG	B	h	Stops at toy tickets instead of clothes-toys difference
+svamp-chal-402__T070__a00	svamp	modeling_relation	PS	C	m	Uses own combined total 13 as mom's gift
+svamp-chal-403__T070__a00	svamp	modeling_relation	CV	A	m	Attributes ring-toss 420 to both games combined
+svamp-chal-415__T070__a00	svamp	modeling_relation	CV	A	m	Treats found bottle caps as initial holdings
+svamp-chal-416__T070__a00	svamp	modeling_relation	CV	A	h	Uses 59 files as the initial app count
+svamp-chal-417__T070__a00	svamp	reasoning_state	OP	B	m	Discards sign of derived -7 books sold
+svamp-chal-420__T070__a00	svamp	modeling_relation	OP	B	h	Subtracts current from desired: 12-20 instead of 20-12
+svamp-chal-433__T070__a00	svamp	modeling_relation	CV	A	m	Uses read/watched counts instead of series sizes 10 and 8
+svamp-chal-443__T070__a00	svamp	arithmetic_execution	CA	C	h	244*146 computed as 35644 instead of 35624
+svamp-chal-446__T070__a00	svamp	arithmetic_execution	CA	C	h	31*61 computed as 1901
+svamp-chal-449__T070__a00	svamp	arithmetic_execution	CA	C	h	221*77 computed as 16987 instead of 17017
+svamp-chal-463__T070__a00	svamp	modeling_relation	MS	B	m	Treats net change as roses cut, omitting the 33 thrown away
+svamp-chal-472__T070__a00	svamp	modeling_relation	TG	B	m	Groups all items incl. erasers and scales, not skittles only
+svamp-chal-473__T070__a00	svamp	modeling_relation	CO	A	m	Counts marbles together with eggs in an eggs-only grouping
+svamp-chal-483__T070__a00	svamp	arithmetic_execution	CA	C	h	466*53 computed as 24918 instead of 24698
+svamp-chal-484__T070__a00	svamp	modeling_relation	FC	B	m	Uses remaining stock instead of lost count in comparison
+svamp-chal-493__T070__a00	svamp	arithmetic_execution	CA	C	h	491*1181 miscomputed as 555961
+svamp-chal-496__T070__a00	svamp	modeling_relation	TG	B	m	Reports total items sold instead of pens sold
+svamp-chal-497__T070__a00	svamp	modeling_relation	CV	A	m	Treats current 28 caps as amount lost from found 71
+svamp-chal-498__T070__a00	svamp	modeling_relation	CV	A	m	Reads $3 as each bar's price instead of total cost
+svamp-chal-499__T070__a00	svamp	modeling_relation	TG	B	h	Reports gross boarders instead of boarders minus departures
+svamp-chal-506__T070__a00	svamp	modeling_relation	CO	A	m	Counts current day's 705 visitors in the previous-days total
+svamp-chal-50__T070__a00	svamp	modeling_relation	HA	A	m	Invents 415 as the Ace card count
+svamp-chal-514__T070__a00	svamp	modeling_relation	CV	A	h	Uses 10 caps found instead of current 27 caps
+svamp-chal-515__T070__a00	svamp	modeling_relation	TG	B	h	Includes Monday's bags in after-Monday target
+svamp-chal-531__T070__a00	svamp	modeling_relation	TG	B	m	Reports unrelated classroom-times-seats product instead of 3 students
+svamp-chal-533__T070__a00	svamp	modeling_relation	TG	B	m	Computes Jake-vs-Steven apples difference instead of Steven peaches minus apples
+svamp-chal-534__T070__a00	svamp	modeling_relation	OP	B	h	Subtracts found 58 caps instead of adding them
+svamp-chal-53__T070__a00	svamp	modeling_relation	CV	A	m	Treats 5 necklaces as 5 beads used
+svamp-chal-543__T070__a00	svamp	modeling_relation	TG	B	m	Adds David's counts to a Zachary-only target
+svamp-chal-546__T070__a00	svamp	modeling_relation	CV	A	m	Misreads $3 total spent; computes 4-3 as spending
+svamp-chal-550__T070__a00	svamp	modeling_relation	TG	B	h	Includes bottles in cans-only total
+svamp-chal-55__T070__a00	svamp	reasoning_state	CV	A	m	Reads current 14 customers as additional to initial 12
+svamp-chal-571__T070__a00	svamp	modeling_relation	TG	B	m	Counts all sacks instead of ripe sacks only
+svamp-chal-574__T070__a00	svamp	arithmetic_execution	CA	C	h	95*118 computed as 11330 instead of 11210
+svamp-chal-590__T070__a00	svamp	reasoning_state	CO	A	m	Labels whole-day 13 letters as morning, then counts them again
+svamp-chal-59__T070__a00	svamp	modeling_relation	CV	A	m	Reads current 3 roses as roses added
+svamp-chal-603__T070__a00	svamp	modeling_relation	TG	B	h	Switches from price difference to total revenue
+svamp-chal-604__T070__a00	svamp	modeling_relation	MS	B	m	Omits the later 5 eaten by placing 8 left too early
+svamp-chal-608__T070__a00	svamp	modeling_relation	TG	B	h	Compares remaining amounts instead of quantities made
+svamp-chal-610__T070__a00	svamp	modeling_relation	TG	B	h	Counts apples in a bottles-only total
+svamp-chal-615__T070__a00	svamp	modeling_relation	OP	B	h	Subtracts needed wax instead of adding to current wax
+svamp-chal-623__T070__a00	svamp	modeling_relation	TG	B	m	Includes outside-county kids in county population
+svamp-chal-625__T070__a00	svamp	modeling_relation	PS	C	m	Uses own combined gift total 7 in place of dad's 5
+svamp-chal-629__T070__a00	svamp	modeling_relation	CV	A	m	Treats stated 97 cakes sold as amount to subtract from stock
+svamp-chal-631__T070__a00	svamp	modeling_relation	HA	A	m	Invents initial cookie amounts to repair inconsistent premise
+svamp-chal-636__T070__a00	svamp	modeling_relation	TG	B	m	Switches target from pencil total to number of rows
+svamp-chal-638__T070__a00	svamp	modeling_relation	CO	A	m	Includes marbles among eggs being grouped
+svamp-chal-641__T070__a00	svamp	modeling_relation	CV	A	h	Uses unit price 3 as total spent instead of 6
+svamp-chal-644__T070__a00	svamp	modeling_relation	TG	B	h	Finds remaining distance then answers travel time instead
+svamp-chal-647__T070__a00	svamp	modeling_relation	FC	B	m	Models current day count as sum of previous days
+svamp-chal-665__T070__a00	svamp	modeling_relation	TG	B	m	Compares total revenues instead of per-item prices
+svamp-chal-666__T070__a00	svamp	modeling_relation	HA	A	m	Invents affordability constraint, drops purchased chocolate
+svamp-chal-676__T070__a00	svamp	modeling_relation	FC	B	m	Divides chapters by pages per day; wrong rate formula
+svamp-chal-685__T070__a00	svamp	modeling_relation	TG	B	h	Adds remaining cakes to pastries-only target
+svamp-chal-687__T070__a00	svamp	modeling_relation	TG	B	m	Computes Texas-game money only instead of all 95 shirts
+svamp-chal-688__T070__a00	svamp	modeling_relation	CV	A	m	Uses combined 11 birds as stork count
+svamp-chal-689__T070__a00	svamp	modeling_relation	OP	B	h	Multiplies students by buses instead of dividing
+svamp-chal-692__T070__a00	svamp	modeling_relation	TG	B	m	Computes revenue difference instead of unit price difference
+svamp-chal-696__T070__a00	svamp	modeling_relation	TG	B	h	Answers total items change instead of files minus apps remaining
+svamp-chal-702__T070__a00	svamp	modeling_relation	TG	B	m	Adds push-ups to a crunches-only target
+svamp-chal-715__T070__a00	svamp	modeling_relation	CV	A	m	Treats potato-only 182 as combined total
+svamp-chal-720__T070__a00	svamp	modeling_relation	TG	B	m	Compares remaining stock instead of amounts made
+svamp-chal-723__T070__a00	svamp	modeling_relation	TG	B	m	Answers apps plus files deleted instead of files only
+svamp-chal-731__T070__a00	svamp	modeling_relation	MS	B	m	Books sold ignores the 42 bought; uses net decrease
+svamp-chal-735__T070__a00	svamp	modeling_relation	FC	B	m	Puts all blocks' mail into one block's equation
+svamp-chal-73__T070__a00	svamp	modeling_relation	TG	B	h	Reports emails plus letters instead of emails only
+svamp-chal-751__T070__a00	svamp	modeling_relation	OP	B	m	Subtracts weight lost instead of adding to current weight
+svamp-chal-753__T070__a00	svamp	reasoning_state	HA	A	m	Invents narrative that all Ace cards were given away
+svamp-chal-762__T070__a00	svamp	modeling_relation	TG	B	h	Compares remaining stocks instead of amounts eaten
+svamp-chal-771__T070__a00	svamp	modeling_relation	TG	B	h	Stops at flour still needed instead of flour-sugar difference
+svamp-chal-776__T070__a00	svamp	modeling_relation	CV	A	h	Uses daily 67 sacks instead of requested 35 sacks
+svamp-chal-779__T070__a00	svamp	modeling_relation	TG	B	m	Computes David's crunches minus push-ups instead of Zachary's
+svamp-chal-781__T070__a00	svamp	modeling_relation	FC	B	m	Total spent modeled as money left plus showroom spending
+svamp-chal-782__T070__a00	svamp	modeling_relation	TG	B	m	Compares frog and mouse instead of mouse and grasshopper
+svamp-chal-783__T070__a00	svamp	modeling_relation	MS	B	h	Omits six picked apples from initial total
+svamp-chal-786__T070__a00	svamp	modeling_relation	TG	B	m	Counts rows of pencils plus crayons instead of pencils only
+svamp-chal-791__T070__a00	svamp	modeling_relation	CV	A	m	Uses David's crunch count instead of Zachary's stated 58
+svamp-chal-797__T070__a00	svamp	modeling_relation	FC	B	m	Multiplies catalogue counts by read counts needlessly
+svamp-chal-801__T070__a00	svamp	modeling_relation	OP	B	m	Reads increase 3 to 4 as one departure; subtraction reversed
+svamp-chal-811__T070__a00	svamp	modeling_relation	CV	A	m	Uses recipe flour 6 as comparison base instead of sugar 13
+svamp-chal-815__T070__a00	svamp	modeling_relation	FC	B	m	Equation adds remaining 332 and equates to initial; wrong relation
+svamp-chal-81__T070__a00	svamp	reasoning_state	CV	A	m	Rewrites given 68 departures as 32
+svamp-chal-825__T070__a00	svamp	reasoning_state	PS	C	m	Subtracts remaining 6 again after already finding giveaway 105
+svamp-chal-828__T070__a00	svamp	modeling_relation	TG	B	h	Changes rent-only target to net income
+svamp-chal-832__T070__a00	svamp	modeling_relation	OP	B	h	Reverses subtraction direction: camp minus stayed-home
+svamp-chal-845__T070__a00	svamp	reasoning_state	HA	A	m	Rejects stated 34 discarded roses and invents alternative premise
+svamp-chal-848__T070__a00	svamp	modeling_relation	CV	A	m	Assigns ambiguous 'he' to Adam, misreading the entity
+svamp-chal-851__T070__a00	svamp	arithmetic_execution	CA	C	h	183*62 computed as 11406 instead of 11346
+svamp-chal-865__T070__a00	svamp	modeling_relation	CV	A	m	Uses Fred plus Jason's 79 as Jason's initial money
+svamp-chal-870__T070__a00	svamp	modeling_relation	CO	A	m	Counts all 63 boys as recipients instead of 13 marble players
+svamp-chal-875__T070__a00	svamp	modeling_relation	CV	A	m	Uses tax amount as net earnings after tax
+svamp-chal-877__T070__a00	svamp	modeling_relation	CO	A	m	Includes eggs in marbles being grouped
+svamp-chal-884__T070__a00	svamp	modeling_relation	PS	C	m	Mislabels spending and uses pre-purchase 144 as spending
+svamp-chal-895__T070__a00	svamp	arithmetic_execution	CA	C	h	109*74 computed as 8086 instead of 8066
+svamp-chal-898__T070__a00	svamp	modeling_relation	TG	B	h	Computes unwatched movies instead of movies minus books in series
+svamp-chal-905__T070__a00	svamp	modeling_relation	CV	A	h	Subtracts sugar already added from flour amount
+svamp-chal-917__T070__a00	svamp	modeling_relation	TG	B	h	Compares remaining stocks instead of amounts made
+svamp-chal-918__T070__a00	svamp	modeling_relation	FC	B	m	Includes Jeff's 11 cards in Nell's initial total
+svamp-chal-927__T070__a00	svamp	modeling_relation	TG	B	h	Reports each friend's share instead of total given
+svamp-chal-928__T070__a00	svamp	reasoning_state	OP	B	m	Reverses farther-than comparison to less-than for grasshopper and frog
+svamp-chal-932__T070__a00	svamp	modeling_relation	TG	B	m	Answers t-shirts plus trousers instead of t-shirts only
+svamp-chal-936__T070__a00	svamp	modeling_relation	CV	A	m	Misreads stated 391 remaining; calls 531-391 the crayons left
+svamp-chal-943__T070__a00	svamp	modeling_relation	CV	A	m	Subtracts irrelevant 40 watched movies from catalogue difference
+svamp-chal-949__T070__a00	svamp	arithmetic_execution	CA	C	h	146*157 computed as 22602 instead of 22922
+svamp-chal-954__T070__a00	svamp	modeling_relation	CV	A	h	Uses 66 hikers as morning rowers instead of 29
+svamp-chal-95__T070__a00	svamp	modeling_relation	PS	C	m	Uses own two-day total 37 instead of Monday's 19
+svamp-chal-969__T070__a00	svamp	arithmetic_execution	CA	C	h	Arithmetic slip: 13+10 computed as 28
+svamp-chal-978__T070__a00	svamp	modeling_relation	OP	B	m	Reverses David-more-than-Zachary comparison direction
+svamp-chal-985__T070__a00	svamp	arithmetic_execution	CA	C	h	939*1091 computed as 1026279 instead of 1024449
+svamp-chal-986__T070__a00	svamp	modeling_relation	CV	A	m	Reads biology as 3 more than math plus reading
+svamp-chal-989__T070__a00	svamp	arithmetic_execution	CA	C	h	191*79 computed as 15269 instead of 15089
+svamp-chal-992__T070__a00	svamp	modeling_relation	TG	B	m	Includes teachers in pupils-only count
+svamp-chal-995__T070__a00	svamp	modeling_relation	OP	B	m	Adds missing 22 g to total instead of subtracting
+train-00090__T070__a07	gsm8k	modeling_relation	CO	A	m	Counts every month as 31 days after noting February has 28
+train-00118__T070__a00	gsm8k	modeling_relation	CO	A	m	Week indexing off: counts start as week 1, four increments
+train-00118__T070__a02	gsm8k	modeling_relation	CO	A	m	Counts initial ability as a practice week (off by one)
+train-00118__T070__a03	gsm8k	modeling_relation	TG	B	h	Sums weekly skill levels instead of reporting final week's count
+train-00118__T070__a04	gsm8k	modeling_relation	CO	A	m	Off-by-one: applies four increases instead of five weeks
+train-00118__T070__a05	gsm8k	modeling_relation	TG	B	h	Sums weekly skill levels instead of final week's level
+train-00118__T070__a06	gsm8k	modeling_relation	TG	B	m	Computes cumulative sum instead of final juggling ability
+train-00118__T070__a07	gsm8k	modeling_relation	CO	A	m	Off-by-one: treats starting ability as week one
+train-00143__T070__a00	gsm8k	modeling_relation	CV	A	h	Reverses stated 25% at surface to 75%
+train-00164__T070__a02	gsm8k	reasoning_state	PS	C	m	Computes Thursday purchase of 5 but never adds it to 27
+train-00179__T070__a02	gsm8k	arithmetic_execution	CA	C	h	12+14+4 evaluated as 20
+train-00189__T070__a04	gsm8k	modeling_relation	CV	A	h	Ironman compared to Captain America instead of Peter Parker
+train-00191__T070__a00	gsm8k	modeling_relation	CV	A	h	Uses 100 weasels instead of 3 foxes as multiplier
+train-00191__T070__a01	gsm8k	modeling_relation	TG	B	h	Reports only weasels instead of weasels plus rabbits
+train-00191__T070__a02	gsm8k	modeling_relation	TG	B	h	Reports rabbits only; question asks rabbits plus weasels
+train-00191__T070__a03	gsm8k	modeling_relation	TG	B	h	Reports weasels only; question asks rabbits plus weasels
+train-00191__T070__a04	gsm8k	modeling_relation	TG	B	h	Reports remaining weasels only instead of weasels plus rabbits
+train-00191__T070__a05	gsm8k	modeling_relation	CO	A	m	Uses one fox's catch, omitting the three foxes
+train-00191__T070__a06	gsm8k	modeling_relation	TG	B	h	Answers weasels only instead of weasels plus rabbits
+train-00191__T070__a07	gsm8k	modeling_relation	MS	B	m	Omits multiplying catch by three foxes
+train-00206__T070__a00	gsm8k	modeling_relation	MS	B	h	Omits lion deaths when reversing population change
+train-00206__T070__a01	gsm8k	arithmetic_execution	CA	C	h	Evaluates 60-12 as 54 instead of 48
+train-00211__T070__a00	gsm8k	modeling_relation	MS	B	m	Omits original food cost from this year's total
+train-00211__T070__a04	gsm8k	modeling_relation	FC	B	m	Treats tripled insurance as old cost plus triple
+train-00211__T070__a05	gsm8k	modeling_relation	MS	B	m	Omits food's base cost 200 from new monthly total
+train-00211__T070__a07	gsm8k	modeling_relation	UC	D	m	Reports monthly increase as annual increase
+train-00276__T070__a00	gsm8k	modeling_relation	TG	B	h	Computes pages already read instead of pages remaining
+train-00276__T070__a04	gsm8k	modeling_relation	MS	B	m	Drops the half: treats all remaining books as read in month two
+train-00276__T070__a05	gsm8k	arithmetic_execution	CA	C	m	Evaluation drops the /2 factor from its own expression
+train-00276__T070__a07	gsm8k	arithmetic_execution	CA	C	m	Evaluates 800+5*200 as 1000 per annotator; arithmetic slip
+train-00311__T070__a01	gsm8k	modeling_relation	PS	C	h	Duplicates first-stop passenger state in final expression
+train-00311__T070__a04	gsm8k	modeling_relation	OP	B	m	Treats net boarding group as departing passengers
+train-00311__T070__a06	gsm8k	reasoning_state	PS	C	h	Uses initial state after already computing later stop states
+train-00322__T070__a00	gsm8k	modeling_relation	FC	B	h	Takes tax on total bill instead of meal subtotal
+train-00322__T070__a01	gsm8k	modeling_relation	FC	B	h	Uses total bill instead of food cost as tax base
+train-00322__T070__a04	gsm8k	modeling_relation	FC	B	h	Applies tax to final bill instead of meal price
+train-00322__T070__a05	gsm8k	modeling_relation	PS	C	m	Computes tax but leaves it out of subtracted subtotal
+train-00399__T070__a01	gsm8k	modeling_relation	FC	B	m	Attributes joint team output to Jack alone
+train-00399__T070__a02	gsm8k	modeling_relation	CV	A	m	Assigns joint Sam-and-Jack rate to Jack alone
+train-00399__T070__a03	gsm8k	modeling_relation	FC	B	m	Attributes joint Sam-Jack production rate to Jack alone
+train-00399__T070__a04	gsm8k	modeling_relation	CV	A	m	Assigns joint Sam-and-Jack rate to Jack alone
+train-00399__T070__a05	gsm8k	modeling_relation	MS	B	h	Ignores Sam's two solo hours of output
+train-00399__T070__a06	gsm8k	modeling_relation	FC	B	m	Adds Sam's solo time to shared work interval
+train-00437__T070__a00	gsm8k	modeling_relation	CV	A	m	Applies whole bag price to each chicken
+train-00437__T070__a01	gsm8k	modeling_relation	CV	A	m	Uses $1.50 selling price in place of 2 pounds feed
+train-00437__T070__a02	gsm8k	modeling_relation	CV	A	m	Uses $2 bag price as cost of 2 lb per chicken
+train-00440__T070__a05	gsm8k	modeling_relation	OP	B	h	Reverses which person is one-third the other's age
+train-00480__T070__a00	gsm8k	unit_conversion	UC	D	m	Uses one month's raised salary as a full year's income
+train-00480__T070__a01	gsm8k	modeling_relation	CO	A	m	Applies raise from first year; counts three raised years instead of two
+train-00480__T070__a02	gsm8k	unit_conversion	UC	D	h	Treats monthly salary as yearly salary
+train-00480__T070__a03	gsm8k	modeling_relation	FC	B	m	Applies raised salary to all three years, ignoring raise timing
+train-00480__T070__a05	gsm8k	modeling_relation	CO	A	m	Applies raise in first year; three raised years instead of two
+train-00480__T070__a06	gsm8k	modeling_relation	HA	A	h	Invents repeated yearly raises not in problem
+train-00480__T070__a07	gsm8k	modeling_relation	FC	B	m	Applies raise starting in the first year
+train-00483__T070__a00	gsm8k	modeling_relation	TG	B	h	Reports current weight as amount less than starting weight
+train-00483__T070__a02	gsm8k	modeling_relation	FC	B	m	Wrong percentage base: one-eighth of gained weight, not total
+train-00483__T070__a03	gsm8k	modeling_relation	MS	B	m	Applies only one monthly loss for three months
+train-00483__T070__a04	gsm8k	reasoning_state	PS	C	m	Compares original weight to stale pre-exercise weight
+train-00483__T070__a05	gsm8k	arithmetic_execution	CA	C	m	147/8 rounded to 18 instead of 18.375
+train-00486__T070__a00	gsm8k	reasoning_state	PS	C	h	Keeps stale weekly total 10 after computing Friday's 10
+train-00486__T070__a05	gsm8k	modeling_relation	CV	A	m	Doubles Monday morning 2 inches instead of Monday total 3
+train-00520__T070__a00	gsm8k	modeling_relation	MS	B	h	Omits ten sandstone layers before taking remaining layers
+train-00520__T070__a02	gsm8k	modeling_relation	CV	A	m	Reads four quartz as all remaining layers
+train-00520__T070__a03	gsm8k	modeling_relation	TG	B	m	Sums layer counts instead of counting singleton rock types
+train-00538__T070__a07	gsm8k	modeling_relation	PS	C	m	Applies 15% markup again to already marked-up price
+train-00547__T070__a01	gsm8k	modeling_relation	PS	C	m	Adds own bedroom-kitchen subtotal again alongside living room
+train-00547__T070__a03	gsm8k	modeling_relation	PS	C	h	Uses bedroom-plus-kitchen subtotal as bedroom-only time
+train-00547__T070__a05	gsm8k	modeling_relation	CV	A	m	Applies the three-bedroom count to single kitchen time
+train-00558__T070__a01	gsm8k	modeling_relation	CV	A	m	Uses all Best Buy cards and one Walmart as sent
+train-00558__T070__a05	gsm8k	modeling_relation	PS	C	m	Subtracts sent value from itself instead of initial total
+train-00558__T070__a06	gsm8k	modeling_relation	CO	A	m	Counts all twelve remaining cards as Walmart
+train-00587__T070__a00	gsm8k	modeling_relation	OP	B	h	Multiplies weekend Facebook time instead of dividing by three
+train-00587__T070__a01	gsm8k	modeling_relation	CV	A	m	Applies weekend ratio to whole week's hours
+train-00587__T070__a02	gsm8k	modeling_relation	CO	A	h	Says weekend has five days
+train-00587__T070__a03	gsm8k	modeling_relation	OP	B	h	Reverses weekend ratio direction
+train-00587__T070__a04	gsm8k	modeling_relation	FC	B	m	Multiplies weekly catch-up total by weekend days and ratio; wrong relation
+train-00587__T070__a05	gsm8k	modeling_relation	CO	A	m	Uses seven days of Facebook time for two weekend days
+train-00587__T070__a06	gsm8k	modeling_relation	FC	B	m	Mixes Facebook hours with weekday work hours in total
+train-00587__T070__a07	gsm8k	modeling_relation	OP	B	h	Reverses weekend ratio direction
+train-00601__T070__a00	gsm8k	unit_conversion	UC	D	h	Applies speed conversion factor to distance in feet
+train-00601__T070__a03	gsm8k	unit_conversion	UC	D	h	Treats gazelle's 40 mph as 40 ft/s
+train-00601__T070__a04	gsm8k	unit_conversion	UC	D	h	Subtracts unconverted 40 mph from 90 ft/s
+train-00647__T070__a01	gsm8k	reasoning_state	MS	B	m	Subtracts only four adult cupcakes, dropping 34 student cupcakes
+train-00647__T070__a03	gsm8k	modeling_relation	MS	B	h	Ignores cupcakes given to both student classes
+train-00648__T070__a00	gsm8k	modeling_relation	OP	B	h	Adds encore songs instead of subtracting them from pool
+train-00648__T070__a01	gsm8k	reasoning_state	PS	C	h	Subtracts encore again after already removing it
+train-00648__T070__a02	gsm8k	reasoning_state	PS	C	h	Subtracts encore again after already including it
+train-00648__T070__a03	gsm8k	modeling_relation	CO	A	m	Miscounts remaining sets as six, mixing song counts with sets
+train-00648__T070__a04	gsm8k	modeling_relation	MS	B	h	Fails to reserve two encore songs before averaging
+train-00650__T070__a01	gsm8k	modeling_relation	TG	B	m	Stops at remaining 35 before subtracting Josh's 16
+train-00650__T070__a04	gsm8k	reasoning_state	PS	C	h	Uses pre-gift 70 after computing friend's 35
+train-00679__T070__a07	gsm8k	modeling_relation	TG	B	h	Answers notepad count instead of total pages
+train-00695__T070__a06	gsm8k	arithmetic_execution	CA	C	h	600/150 evaluated as 6 servings instead of 4
+train-00736__T070__a00	gsm8k	modeling_relation	MS	B	h	Omits $2 mango lassi from subtotal
+train-00736__T070__a03	gsm8k	modeling_relation	MS	B	h	Omits mango lassi before tip
+train-00766__T070__a03	gsm8k	arithmetic_execution	CA	C	h	(7+8)-3 evaluated as 15
+train-00770__T070__a00	gsm8k	modeling_relation	CO	A	m	Counts 4 viewing days for two weeks instead of 8
+train-00770__T070__a02	gsm8k	unit_conversion	UC	D	h	Multiplies days by days per week without converting to weeks
+train-00770__T070__a04	gsm8k	modeling_relation	CV	A	m	Uses 7 days per week instead of allowed 4
+train-00789__T070__a03	gsm8k	reasoning_state	PS	C	h	Replaces own computed 18-day period with 21 days
+train-00814__T070__a01	gsm8k	arithmetic_execution	CA	C	h	4.5+4.5+3+4+5 summed as 19
+train-00814__T070__a07	gsm8k	modeling_relation	CO	A	m	Counts a $4 item twice after croissant subtotal
+train-00862__T070__a04	gsm8k	modeling_relation	TG	B	h	Reports group deficit as each squirrel's need
+train-00862__T070__a06	gsm8k	modeling_relation	TG	B	h	Reports total deficit 75 instead of per-squirrel amount
+train-00862__T070__a07	gsm8k	modeling_relation	TG	B	h	Reports total shortfall instead of per-squirrel amount
+train-00879__T070__a01	gsm8k	reasoning_state	PS	C	h	Subtracts brother's half again from retained 30
+train-00899__T070__a05	gsm8k	modeling_relation	PS	C	m	Labels ten-day hours as one day, then applies ten days again
+train-00902__T070__a01	gsm8k	modeling_relation	PS	C	m	Divides both groups' straw total among piglets
+train-00902__T070__a07	gsm8k	modeling_relation	HA	A	h	Invents piglets being 3 times smaller
+train-00932__T070__a02	gsm8k	modeling_relation	CV	A	m	Uses 4 worked-on requests as the total received
+train-00932__T070__a04	gsm8k	modeling_relation	TG	B	m	Reports daily leftover instead of total remaining after 5 days
+train-00932__T070__a06	gsm8k	modeling_relation	CV	A	h	Uses incoming 6 requests as completed per day
+train-00932__T070__a07	gsm8k	modeling_relation	CV	A	m	Uses incoming 6 requests per day as work rate
+train-00975__T070__a02	gsm8k	modeling_relation	MS	B	m	Counts fouls as shots, omitting two shots per foul
+train-00981__T070__a01	gsm8k	modeling_relation	CO	A	m	Counts two pairs of shoes per person instead of one
+train-00981__T070__a02	gsm8k	modeling_relation	HA	A	h	Invents two pairs of shoes per person
+train-00981__T070__a05	gsm8k	modeling_relation	CV	A	m	Uses stripe count 3 as shoe count, invents pairs
+train-00991__T070__a01	gsm8k	modeling_relation	OP	B	h	Inverts 3 meters per step into 3 steps per meter
+train-00991__T070__a03	gsm8k	modeling_relation	PS	C	m	Uses all-unicorn distance as each unicorn's, then multiplies by six again
+train-00991__T070__a05	gsm8k	modeling_relation	TG	B	m	Reports one unicorn's flowers instead of all six
+train-00991__T070__a06	gsm8k	modeling_relation	CV	A	h	Uses 3 m step length instead of 9 km journey
+train-01034__T070__a02	gsm8k	modeling_relation	FC	B	m	Ignores 1:4 sugar to cream cheese ratio
+train-01094__T070__a03	gsm8k	reasoning_state	PS	C	m	Quadruples evaporated 4 instead of current water 12
+train-01123__T070__a04	gsm8k	modeling_relation	FC	B	m	Subtracts shortfall from holdings instead of holdings from price
+train-01125__T070__a03	gsm8k	arithmetic_execution	CA	C	h	198-20 evaluated as 168 instead of 178
+train-01125__T070__a04	gsm8k	modeling_relation	CV	A	m	Uses 20+3 instead of stated 3*20+6 for plates
+train-01125__T070__a05	gsm8k	modeling_relation	FC	B	m	Models Sharon's cutlery as 2*(plates*cutlery) instead of twice Angela's cutlery
+train-01125__T070__a06	gsm8k	modeling_relation	CV	A	m	Uses multiplier 3 as pot count instead of 20
+train-01125__T070__a07	gsm8k	modeling_relation	OP	B	m	Writes 20+6*3 instead of 3*20+6; operations swapped
+train-01171__T070__a00	gsm8k	modeling_relation	FC	B	m	Assigns Jack's future 300 to present, temporal relation wrong
+train-01171__T070__a01	gsm8k	modeling_relation	CV	A	m	Uses Michael's future count instead of current 30 as base
+train-01171__T070__a03	gsm8k	modeling_relation	CV	A	m	Uses Michael's future 130 instead of current 30 as comparison base
+train-01281__T070__a03	gsm8k	arithmetic_execution	CA	C	h	80*20000 computed with an extra zero
+train-01281__T070__a07	gsm8k	arithmetic_execution	CA	C	h	80*20000 written as 16,000,000; extra zero
+train-01366__T070__a01	gsm8k	modeling_relation	CV	A	h	Uses 15 instead of stated morning 20
+train-01366__T070__a07	gsm8k	modeling_relation	FC	B	m	Treats '15 more than morning' as afternoon count of 15
+train-01375__T070__a00	gsm8k	modeling_relation	FC	B	m	Applies summed cohort durations to all six pigs
+train-01375__T070__a04	gsm8k	reasoning_state	MS	B	m	Omits extra four months' feed for second group
+train-01375__T070__a05	gsm8k	modeling_relation	FC	B	m	Treats all-pig monthly feed cost as per-pig cost
+train-01435__T070__a05	gsm8k	unit_conversion	UC	D	m	Wrong coin-to-cent factor: quarter as 1 cent
+train-01451__T070__a01	gsm8k	reasoning_state	PS	C	h	Adds initial followers again after already included
+train-01454__T070__a02	gsm8k	modeling_relation	CO	A	h	Counts four 100-mile days including Monday; should be three
+train-01454__T070__a03	gsm8k	modeling_relation	CV	A	m	Assigns 100 miles to Sunday instead of 50
+train-01454__T070__a07	gsm8k	modeling_relation	CV	A	h	Assigns 100 miles to Sunday, which is a 50-mile day
+train-01459__T070__a03	gsm8k	modeling_relation	CO	A	h	Excludes James from coffee drinkers
+train-01459__T070__a04	gsm8k	modeling_relation	CO	A	h	Counts three household members, omitting James
+train-01459__T070__a05	gsm8k	modeling_relation	CO	A	h	Omits James himself from coffee drinkers
+train-01475__T070__a00	gsm8k	modeling_relation	MS	B	h	Omits Pete's original four blue marbles
+train-01475__T070__a01	gsm8k	reasoning_state	PS	C	h	Forgets own earlier step keeping one red marble
+train-01475__T070__a02	gsm8k	modeling_relation	OP	B	m	Reverses trade direction: gives blue for red
+train-01475__T070__a03	gsm8k	modeling_relation	MS	B	h	Omits removing traded red marbles
+train-01475__T070__a04	gsm8k	modeling_relation	MS	B	h	Omits four originally owned blue marbles from total
+train-01475__T070__a05	gsm8k	modeling_relation	CV	A	m	Subtracts kept red marble instead of traded red marbles
+train-01475__T070__a06	gsm8k	modeling_relation	MS	B	h	Omits the retained red marble from final total
+train-01564__T070__a00	gsm8k	arithmetic_execution	CA	C	h	21+88 summed as 110
+train-01564__T070__a01	gsm8k	modeling_relation	CV	A	m	Multiplies Friday's two episodes by the week's 8 episodes
+train-01564__T070__a02	gsm8k	modeling_relation	HA	A	m	Invents two weekend episodes not stated in problem
+train-01564__T070__a03	gsm8k	modeling_relation	MS	B	h	Omits Friday's episodes from weekday subtotal
+train-01564__T070__a04	gsm8k	modeling_relation	OP	B	m	Reverses difference: weekdays minus total instead of total minus weekdays
+train-01564__T070__a06	gsm8k	modeling_relation	TG	B	m	Reports Thursday plus Friday minutes as the weekend amount
+train-01564__T070__a07	gsm8k	arithmetic_execution	CA	C	h	Correct subtraction evaluated as 125 instead of 105
+train-01592__T070__a05	gsm8k	arithmetic_execution	CA	C	h	20+5 computed as 30
+train-01592__T070__a06	gsm8k	modeling_relation	FC	B	m	Treats one-quarter more as one-quarter as many
+train-01592__T070__a07	gsm8k	modeling_relation	FC	B	m	Treats '1/4 more' as 1/4 of 20, omitting the base
+train-01595__T070__a00	gsm8k	reasoning_state	PS	C	h	Uses Hornets' old score 86 instead of updated 90
+train-01595__T070__a01	gsm8k	modeling_relation	CV	A	h	Adds Hornets' two-point baskets to Fireflies' score
+train-01595__T070__a02	gsm8k	modeling_relation	CV	A	m	Misreads Hornets' score 86 as an 86-point lead
+train-01595__T070__a05	gsm8k	modeling_relation	FC	B	m	Sets Hornets' score to score difference 86-74
+train-01595__T070__a06	gsm8k	modeling_relation	CV	A	m	Adds Fireflies' 74 into Hornets' score
+train-01636__T070__a06	gsm8k	modeling_relation	TG	B	h	Reports total time of five classes instead of per-class average
+train-01636__T070__a07	gsm8k	modeling_relation	CO	A	h	Counts seven other classes instead of five
+train-01761__T070__a07	gsm8k	modeling_relation	MS	B	h	Omits mango crates when subtracting from total
+train-01772__T070__a04	gsm8k	modeling_relation	FC	B	h	Uses Pythagorean displacement instead of driven path length
+train-01792__T070__a00	gsm8k	modeling_relation	CV	A	m	Attaches 'twice as many lilies' to daisies, not snapdragons
+train-01792__T070__a02	gsm8k	modeling_relation	CV	A	m	Uses roses instead of snapdragons as lily base
+train-01792__T070__a03	gsm8k	modeling_relation	CV	A	m	Uses roses instead of snapdragons as lily base
+train-01792__T070__a04	gsm8k	modeling_relation	CV	A	m	Uses roses instead of snapdragons as lily base
+train-01792__T070__a06	gsm8k	modeling_relation	CV	A	m	Takes lilies as twice roses instead of twice snapdragons
+train-01818__T070__a03	gsm8k	modeling_relation	CV	A	m	Applies hot 20% to non-hot peppers
+train-01818__T070__a04	gsm8k	arithmetic_execution	CA	C	h	Daily pepper counts summed as 72 instead of 80
+train-01824__T070__a00	gsm8k	reasoning_state	MS	B	h	Sums only last two subtotals, dropping three donors
+train-01824__T070__a02	gsm8k	arithmetic_execution	CA	C	h	Five-term sum computed as 330 instead of 375
+train-01931__T070__a00	gsm8k	modeling_relation	CO	A	m	Miscounts daily open hours as two-hour interval
+train-01931__T070__a02	gsm8k	arithmetic_execution	CA	C	h	Converts 1/40 to 3/60 instead of 1.5/60
+train-01931__T070__a03	gsm8k	modeling_relation	CV	A	h	Uses women's sale rate for men's T-shirts
+train-01931__T070__a04	gsm8k	modeling_relation	PS	C	m	Uses own combined shirt count as women's shirt count
+train-01931__T070__a07	gsm8k	modeling_relation	UC	D	m	Uses one day's selling minutes as the weekly amount
+train-01989__T070__a01	gsm8k	modeling_relation	MS	B	h	Omits babysitting income from total revenue
+train-01989__T070__a02	gsm8k	modeling_relation	FC	B	h	Wrong profit relation: adds revenue to net profit
+train-01989__T070__a03	gsm8k	modeling_relation	FC	B	m	Equates revenue plus babysitting with profit, ignoring costs
+train-01989__T070__a04	gsm8k	modeling_relation	TG	B	m	Reports stand net income instead of operating expense
+train-01989__T070__a05	gsm8k	modeling_relation	MS	B	h	Omits babysitting income from total before subtracting profit
+train-01989__T070__a06	gsm8k	modeling_relation	MS	B	m	Omits babysitting income from total revenue
+train-02019__T070__a00	gsm8k	modeling_relation	CV	A	m	Misstates given relation: says Alma twice Melina instead of Melina thrice Alma
+train-02050__T070__a01	gsm8k	modeling_relation	FC	B	m	Treats 25% as 0.25 days rather than 25% of 4 days
+train-02050__T070__a05	gsm8k	modeling_relation	FC	B	m	Treats 25% extra (1 day) as second protest length
+train-02063__T070__a00	gsm8k	modeling_relation	MS	B	h	Omits Bess's return throw distance from each cycle
+train-02063__T070__a02	gsm8k	modeling_relation	MS	B	h	Counts Bess's outgoing throws only, omitting return trips
+train-02063__T070__a03	gsm8k	modeling_relation	MS	B	h	Omits Bess's return throws from total distance
+train-02063__T070__a04	gsm8k	modeling_relation	MS	B	h	Uses Bess's outgoing distance only, omitting returns
+train-02063__T070__a05	gsm8k	modeling_relation	MS	B	h	Omits Bess's return-throw distance
+train-02063__T070__a07	gsm8k	modeling_relation	MS	B	m	Counts one round trip, omitting the four repetitions
+train-02085__T070__a00	gsm8k	modeling_relation	OP	B	h	Adds change and game value instead of subtracting
+train-02085__T070__a01	gsm8k	modeling_relation	OP	B	m	Treats received game as payment given
+train-02085__T070__a02	gsm8k	modeling_relation	OP	B	h	Adds change and game received instead of subtracting them
+train-02085__T070__a03	gsm8k	modeling_relation	OP	B	m	Combines outgoing $80 with incoming change and game
+train-02085__T070__a04	gsm8k	modeling_relation	OP	B	m	Adds cash given and change received instead of subtracting
+train-02085__T070__a05	gsm8k	modeling_relation	OP	B	h	Adds change received to cash paid instead of subtracting
+train-02085__T070__a06	gsm8k	modeling_relation	OP	B	m	Adds game value to trade credit instead of subtracting; cash omitted
+train-02085__T070__a07	gsm8k	modeling_relation	OP	B	m	Subtracts cash paid from trade credit instead of adding
+train-02191__T070__a02	gsm8k	modeling_relation	CV	A	m	Reads "10 more girls" as 10 girls total
+train-02191__T070__a03	gsm8k	modeling_relation	CA	C	m	Missing parentheses: multiplies only girls by 2 cans
+train-02215__T070__a03	gsm8k	modeling_relation	CO	A	m	Counts remaining runners as finishers then adds subset again
+train-02241__T070__a05	gsm8k	modeling_relation	FC	B	h	Uses pursuer speed instead of closing speed
+train-02241__T070__a07	gsm8k	modeling_relation	TG	B	m	Adds the head-start hour to catch-up time after departure
+train-02278__T070__a00	gsm8k	modeling_relation	MS	B	m	Spends all 240 minutes on short walks, omitting long-walk time
+train-02278__T070__a02	gsm8k	modeling_relation	MS	B	m	Spends all 240 minutes on short walks, omitting long-walk time
+train-02278__T070__a03	gsm8k	modeling_relation	FC	B	m	Divides minutes by dog capacity; wrong relation
+train-02278__T070__a04	gsm8k	modeling_relation	MS	B	m	Omits long-walk time from the daily time budget
+train-02278__T070__a05	gsm8k	modeling_relation	FC	B	m	Gives short walks the full 240 minutes, ignoring shared time budget
+train-02278__T070__a06	gsm8k	modeling_relation	CV	A	m	Labels 30-minute walk slots as 60-minute walks; ignores six dogs
+train-02278__T070__a07	gsm8k	modeling_relation	UC	D	m	Two remaining hours treated as two 30-minute slots
+train-02282__T070__a02	gsm8k	modeling_relation	TG	B	m	Reports discount amount instead of saving versus $130 budget
+train-02283__T070__a00	gsm8k	modeling_relation	CO	A	m	Mislabels brass as percussion, omitting Sebastian and conductor
+train-02283__T070__a02	gsm8k	modeling_relation	CO	A	h	Omits Sebastian and the conductor from orchestra count
+train-02283__T070__a03	gsm8k	modeling_relation	CO	A	h	Leaves drummer and conductor out of headcount
+train-02283__T070__a04	gsm8k	modeling_relation	CO	A	h	Excludes Sebastian and the maestro from headcount
+train-02283__T070__a06	gsm8k	modeling_relation	CO	A	h	Misses Sebastian and the maestro in headcount
+train-02283__T070__a07	gsm8k	modeling_relation	CO	A	h	Counts trio and quartet as one player each
+train-02301__T070__a00	gsm8k	modeling_relation	CV	A	h	Subtracts increment 4 instead of initial 10 snowflakes
+train-02301__T070__a01	gsm8k	modeling_relation	UC	D	m	Treats four per five minutes as four per minute
+train-02301__T070__a05	gsm8k	arithmetic_execution	CA	C	h	48/0.8 computed as 50 instead of 60
+train-02329__T070__a05	gsm8k	modeling_relation	UC	D	m	Relabels 21 doses as 21 days
+train-02343__T070__a00	gsm8k	modeling_relation	OP	B	h	Adds purchases to current total instead of subtracting
+train-02343__T070__a04	gsm8k	modeling_relation	CV	A	m	Treats purchased 15 as current holdings, ignoring stated 40
+train-02355__T070__a00	gsm8k	arithmetic_execution	CA	C	h	Six correct tape components summed as 42 instead of 44
+train-02440__T070__a04	gsm8k	modeling_relation	FC	B	m	Wrong ratio split: gives whole 300 to each person
+train-02440__T070__a07	gsm8k	modeling_relation	CV	A	h	Uses Jensen's 4/15 share instead of Finley's 11/15
+train-02489__T070__a04	gsm8k	modeling_relation	CO	A	m	Counts Samara among the friends, then adds her again
+train-02504__T070__a00	gsm8k	modeling_relation	MS	B	m	Balance equation omits the 20 wipes used
+train-02504__T070__a05	gsm8k	modeling_relation	HA	A	h	Invents ten-day refill duration
+train-02541__T070__a00	gsm8k	arithmetic_execution	CA	C	h	5/1200*3600 evaluated as 30 instead of 15
+train-02541__T070__a04	gsm8k	arithmetic_execution	CA	C	h	200*5280/3600 evaluated as 320 instead of 293.33
+train-02541__T070__a05	gsm8k	unit_conversion	UC	D	h	Mixes miles-per-minute speed with time in hours
+train-02541__T070__a07	gsm8k	unit_conversion	UC	D	h	Inverts seconds-to-hours conversion
+train-02559__T070__a07	gsm8k	modeling_relation	FC	B	m	Price equation uses wrong terms for paid and owed amounts
+train-02584__T070__a05	gsm8k	arithmetic_execution	CA	C	h	42+67+51 summed as 159
+train-02773__T070__a00	gsm8k	modeling_relation	CV	A	m	Assigns current age 26 to Justin's birth time
+train-02773__T070__a05	gsm8k	modeling_relation	OP	B	m	Subtracts sister's age gap instead of adding; Jessica is older
+train-02827__T070__a01	gsm8k	modeling_relation	MS	B	m	Adds five years to Grant but not to hospital
+train-02827__T070__a02	gsm8k	modeling_relation	CV	A	m	Uses hospital's age where Grant's future age belongs
+train-02827__T070__a03	gsm8k	modeling_relation	MS	B	m	Omits aging the hospital by five years
+train-02827__T070__a05	gsm8k	modeling_relation	MS	B	m	Omits five years of hospital aging in equation
+train-02827__T070__a07	gsm8k	modeling_relation	TG	B	m	Reports hospital's age in five years, not current age
+train-02847__T070__a02	gsm8k	modeling_relation	MS	B	h	Omits 8 remaining pieces from total
+train-02847__T070__a03	gsm8k	modeling_relation	TG	B	m	Reports piece count instead of dividing by 4 for mushrooms
+train-02858__T070__a02	gsm8k	modeling_relation	MS	B	m	Omits the 30 women from people who stayed
+train-02872__T070__a02	gsm8k	modeling_relation	TG	B	m	Reports oatmeal students count instead of cookies
+train-02888__T070__a00	gsm8k	modeling_relation	TG	B	m	Treats discounted total as original, ends reporting cost not savings
+train-02888__T070__a02	gsm8k	modeling_relation	PS	C	m	Subtracts own discounted totals from themselves instead of originals
+train-02888__T070__a03	gsm8k	modeling_relation	TG	B	h	Reports purchase cost instead of amount saved
+train-02888__T070__a04	gsm8k	modeling_relation	TG	B	m	Reports total discounted cost labeled as savings
+train-02888__T070__a05	gsm8k	modeling_relation	TG	B	m	Reports discounted spending as savings
+train-02888__T070__a06	gsm8k	modeling_relation	TG	B	h	Computes discounted costs instead of savings
+train-02888__T070__a07	gsm8k	modeling_relation	MS	B	m	Original prices not multiplied by quantities before subtracting
+train-02891__T070__a00	gsm8k	modeling_relation	OP	B	m	Adds base offset instead of subtracting it
+train-02891__T070__a01	gsm8k	modeling_relation	TG	B	m	Reports riverbed-to-peak distance instead of hill height
+train-02891__T070__a02	gsm8k	modeling_relation	TG	B	m	Reports riverbed-to-peak distance instead of hill height
+train-02891__T070__a03	gsm8k	modeling_relation	FC	B	m	Assigns quarter-distance condition to wrong segment
+train-02891__T070__a04	gsm8k	modeling_relation	OP	B	m	Adds base depth instead of subtracting for hill height
+train-02891__T070__a05	gsm8k	modeling_relation	TG	B	h	Reports riverbed-to-peak distance instead of hill height
+train-02891__T070__a06	gsm8k	modeling_relation	OP	B	m	Adds base offset 300 instead of subtracting it
+train-02915__T070__a00	gsm8k	modeling_relation	FC	B	m	Models combined age growing by one per year instead of two
+train-02915__T070__a03	gsm8k	modeling_relation	FC	B	m	Uses age gap 4 as combined yearly aging rate
+train-02915__T070__a05	gsm8k	modeling_relation	FC	B	m	Treats combined age increase as elapsed years; ignores two people aging
+train-02915__T070__a07	gsm8k	modeling_relation	FC	B	m	Models combined age growing by x instead of 2x per year
+train-03084__T070__a00	gsm8k	reasoning_state	PS	C	m	Applies eaten loss again, turning 4 retained into 3
+train-03084__T070__a02	gsm8k	modeling_relation	FC	B	m	Equates picked berries to basket capacity, ignoring eaten berries
+train-03084__T070__a03	gsm8k	modeling_relation	FC	B	m	Uses eaten fraction 1/5 instead of retained 4/5
+train-03084__T070__a04	gsm8k	modeling_relation	FC	B	m	Treats capacity minus one as number of handfuls
+train-03084__T070__a05	gsm8k	modeling_relation	TG	B	h	Reports number of handfuls, not berries picked
+train-03084__T070__a06	gsm8k	modeling_relation	MS	B	m	Divides by five picked, omitting the eaten berry per handful
+train-03084__T070__a07	gsm8k	modeling_relation	MS	B	m	Divides by five, omitting the eaten berry per handful
+train-03094__T070__a01	gsm8k	modeling_relation	CV	A	m	Uses cups-per-hour painting rate as dollar price per cup
+train-03113__T070__a02	gsm8k	modeling_relation	MS	B	m	Gives sister all unripe mangoes, omitting 16 kept
+train-03175__T070__a00	gsm8k	modeling_relation	UC	D	m	Equates street miles with cable miles, no 5x factor
+train-03230__T070__a01	gsm8k	arithmetic_execution	CA	C	h	1920/240*350 evaluated as 3500 instead of 2800
+train-03230__T070__a02	gsm8k	modeling_relation	CV	A	m	Applies elephant jade amount/count to giraffes
+train-03230__T070__a05	gsm8k	unit_conversion	UC	D	m	Price divided by grams gives dollars per gram, labeled per statue
+train-03230__T070__a06	gsm8k	modeling_relation	FC	B	m	Subtracts jade grams from price as if material cost
+train-03284__T070__a02	gsm8k	modeling_relation	FC	B	m	Assumes each coin has both denominations' values
+train-03284__T070__a04	gsm8k	modeling_relation	MS	B	m	Uses remaining $11 as initial coin value, omitting $3 spent
+train-03284__T070__a05	gsm8k	modeling_relation	MS	B	m	Equates coins' initial value to remaining 11, omitting $3 spent
+train-03284__T070__a06	gsm8k	modeling_relation	MS	B	m	Uses remaining $11 as initial value, omitting $3 spent
+train-03284__T070__a07	gsm8k	modeling_relation	MS	B	m	Uses remaining $11 as initial value, omitting $3 spent
+train-03287__T070__a06	gsm8k	modeling_relation	CO	A	h	Counts one construction worker instead of two
+train-03296__T070__a02	gsm8k	modeling_relation	TG	B	m	Reports one-pack price 40 as the cost of 50 packs
+train-03310__T070__a01	gsm8k	unit_conversion	UC	D	h	Converts gallons to seconds with unrelated time factors
+train-03310__T070__a03	gsm8k	reasoning_state	PS	C	h	Complements already-derived remaining 32 gallons again
+train-03320__T070__a01	gsm8k	modeling_relation	MS	B	h	Omits 30 potatoes from planted vegetables
+train-03370__T070__a03	gsm8k	modeling_relation	FC	B	m	Equation counts customers equal to melons, dropping per-customer multipliers
+train-03370__T070__a06	gsm8k	modeling_relation	FC	B	m	Subtracts customer count from melon count; customers-melons relation wrong
+train-03370__T070__a07	gsm8k	modeling_relation	FC	B	m	Subtracts customer counts from melon total
+train-03388__T070__a01	gsm8k	arithmetic_execution	CA	C	h	6/16 evaluated as 0.4 instead of 0.375
+train-03388__T070__a04	gsm8k	modeling_relation	HA	A	m	Adds an unexplained extra 1 lb to perfume weight
+train-03388__T070__a06	gsm8k	arithmetic_execution	CA	C	h	6/16 evaluated as 0.4 instead of 0.375
+train-03388__T070__a07	gsm8k	unit_conversion	UC	D	h	Relabels six ounces of perfume as six pounds
+train-03391__T070__a00	gsm8k	modeling_relation	CO	A	m	Miscounts travel days, mixing stays into travel subtotal
+train-03391__T070__a01	gsm8k	modeling_relation	CO	A	h	Counts three travel days to sister's instead of two
+train-03391__T070__a02	gsm8k	modeling_relation	CO	A	m	Counts first travel day as two days
+train-03391__T070__a03	gsm8k	modeling_relation	FC	B	m	Re-adds return travel and sets invented total 9
+train-03391__T070__a04	gsm8k	modeling_relation	CO	A	m	Counts two travel days at start instead of one
+train-03391__T070__a05	gsm8k	modeling_relation	CO	A	h	Counts two extra one-day travel periods
+train-03391__T070__a06	gsm8k	modeling_relation	CO	A	m	Omits two single travel days when counting non-sister days
+train-03391__T070__a07	gsm8k	arithmetic_execution	CA	C	h	Correct subtraction 21-1-5-1-5-2-2 evaluated as 11
+train-03395__T070__a00	gsm8k	modeling_relation	FC	B	m	Treats 'one-third bigger' as one-third as large
+train-03395__T070__a03	gsm8k	arithmetic_execution	CA	C	m	Invalid algebraic substitution applies Canada ratio twice
+train-03410__T070__a00	gsm8k	modeling_relation	PS	C	h	Divides per-person share by six again
+train-03410__T070__a05	gsm8k	modeling_relation	PS	C	h	Divides own per-person 320 by six again
+train-03410__T070__a07	gsm8k	modeling_relation	CO	A	m	Miscounts Thursday-Sunday as four weekdays plus weekend
+train-03448__T070__a00	gsm8k	modeling_relation	MS	B	m	Ignores four clean towels left before computing deficit days
+train-03448__T070__a01	gsm8k	modeling_relation	TG	B	h	Reports supplied days instead of days without towels
+train-03448__T070__a02	gsm8k	modeling_relation	TG	B	m	Reports days with clean towels instead of days without
+train-03448__T070__a03	gsm8k	modeling_relation	CV	A	m	Misreads daily towel use as per wash cycle
+train-03448__T070__a04	gsm8k	unit_conversion	TG	B	m	Reports missing towels count as days
+train-03448__T070__a05	gsm8k	modeling_relation	FC	B	m	Misroles remaining clean towels and equates towels with days
+train-03448__T070__a06	gsm8k	modeling_relation	TG	B	m	Reports days with clean towels instead of days without
+train-03448__T070__a07	gsm8k	modeling_relation	TG	B	m	Computes days with clean towels but labels them as without
+train-03519__T070__a01	gsm8k	modeling_relation	UC	D	m	Uses per-box price $7.50 as per-bar price without converting
+train-03519__T070__a03	gsm8k	modeling_relation	TG	B	h	Stops at group cost instead of per-person cost
+train-03519__T070__a05	gsm8k	modeling_relation	UC	D	m	Multiplies bar count by per-box price
+train-03519__T070__a06	gsm8k	modeling_relation	TG	B	h	Reports total cost instead of per-person amount
+train-03519__T070__a07	gsm8k	modeling_relation	CV	A	m	Applies box price to each bar
+train-03614__T070__a00	gsm8k	modeling_relation	CV	A	m	Uses 200 m for final house-to-center leg instead of 500
+train-03614__T070__a01	gsm8k	modeling_relation	CV	A	h	Uses full 500 m for the first partial 200 m walk
+train-03614__T070__a02	gsm8k	modeling_relation	CV	A	m	Uses 500 m for initial 200 m partial walk
+train-03614__T070__a03	gsm8k	modeling_relation	CV	A	m	First leg taken as 500 m instead of 200 m
+train-03614__T070__a05	gsm8k	modeling_relation	CO	A	m	Adds an extra 500 m leg; path legs counted wrongly
+train-03614__T070__a06	gsm8k	modeling_relation	CV	A	m	Uses 200 m for final leg to city center instead of 500
+train-03623__T070__a01	gsm8k	modeling_relation	CO	A	m	Counts each daily duration once instead of over 2 and 3 days
+train-03623__T070__a02	gsm8k	modeling_relation	MS	B	m	Adds daily 8 minutes to weekly 90 without multiplying by 5 days
+train-03623__T070__a05	gsm8k	modeling_relation	CO	A	m	Counts parking and walking for one day, not five
+train-03623__T070__a07	gsm8k	modeling_relation	CV	A	m	Treats 30 minutes per day as total for two days
+train-03629__T070__a00	gsm8k	modeling_relation	TG	B	h	Reports white roses only instead of red or white
+train-03637__T070__a07	gsm8k	modeling_relation	FC	B	m	Makes each leftover object its own trip despite capacity 3
+train-03666__T070__a00	gsm8k	modeling_relation	CV	A	m	Reads Luka's age at Max's birth as his current age
+train-03666__T070__a01	gsm8k	modeling_relation	CV	A	m	Uses Luka's age at Max's birth as Max's later age
+train-03666__T070__a06	gsm8k	modeling_relation	OP	B	h	Reverses direction: says Luka younger than Max
+train-03709__T070__a02	gsm8k	arithmetic_execution	CA	C	h	139+25+25 evaluated as 209 instead of 189
+train-03717__T070__a03	gsm8k	modeling_relation	CO	A	m	Reverses two doublings instead of three months
+train-03717__T070__a05	gsm8k	modeling_relation	FC	B	m	Equation adds removed plants back while equating to 20
+train-03717__T070__a06	gsm8k	modeling_relation	MS	B	m	Undoes only one doubling instead of three
+train-03759__T070__a03	gsm8k	modeling_relation	MS	B	h	Omits 60 mixed bottles from halving
+train-03759__T070__a05	gsm8k	modeling_relation	MS	B	h	Drops the mixed-drink bottle category from the total
+train-03786__T070__a02	gsm8k	modeling_relation	MS	B	h	Omits the 23-inch donation when computing needed growth
+train-03786__T070__a04	gsm8k	modeling_relation	CV	A	m	Uses current 14 instead of donation 23 with retained 12
+train-03786__T070__a06	gsm8k	modeling_relation	CV	A	m	Uses current 14 instead of desired retained 12
+train-03790__T070__a04	gsm8k	modeling_relation	TG	B	m	Includes friend's jars in jars James must buy
+train-03790__T070__a07	gsm8k	reasoning_state	PS	C	m	Reuses jar count 100 as liters and divides again
+train-03823__T070__a00	gsm8k	modeling_relation	UC	D	m	Treats 200 kg per collection as 200 kg per day
+train-03823__T070__a02	gsm8k	modeling_relation	MS	B	m	Omits three collections per week in second week
+train-03823__T070__a05	gsm8k	modeling_relation	MS	B	m	Applies first-week piling to second week, omitting halving
+train-03823__T070__a06	gsm8k	modeling_relation	MS	B	m	Omits halving policy for second week's garbage
+train-03879__T070__a02	gsm8k	modeling_relation	PS	C	m	Relabels own 75 batches as sacks and multiplies by 15 again
+train-03879__T070__a04	gsm8k	modeling_relation	MS	B	m	Omits multiplying by 5 sacks for daily production
+train-03879__T070__a05	gsm8k	modeling_relation	CV	A	m	Treats batches per sack as batches per day, ignoring 5 sacks
+train-03922__T070__a04	gsm8k	modeling_relation	UC	D	m	Annual shortfall reported as monthly increment without dividing by 12
+train-03922__T070__a06	gsm8k	modeling_relation	TG	B	h	Reports new monthly total instead of increment asked
+train-03941__T070__a07	gsm8k	arithmetic_execution	CA	C	h	36+34+38 summed as 110
+train-03950__T070__a07	gsm8k	modeling_relation	TG	B	h	Answers home team's wins only instead of both teams' matches
+train-03966__T070__a01	gsm8k	modeling_relation	OP	B	m	Adds overlap instead of subtracting it from inclusive counts
+train-03966__T070__a04	gsm8k	modeling_relation	FC	B	m	Models overlapping categories as disjoint S+S/2=13, ignoring S=10
+train-03966__T070__a05	gsm8k	modeling_relation	OP	B	h	Subtraction direction reversed: 13-15 instead of 15-13
+train-03966__T070__a06	gsm8k	modeling_relation	FC	B	m	Inclusion-exclusion set up wrong: subtracts both groups from total
+train-03966__T070__a07	gsm8k	modeling_relation	OP	B	m	Adds overlap instead of subtracting in union count
+train-03993__T070__a00	gsm8k	modeling_relation	HA	A	m	Invents 8-hour shift length, omitting two staff per shift
+train-03993__T070__a02	gsm8k	modeling_relation	CV	A	m	Uses 8 hours instead of stated 16 operating hours
+train-03993__T070__a06	gsm8k	modeling_relation	CO	A	m	Pays one employee instead of two per shift
+train-03993__T070__a07	gsm8k	modeling_relation	MS	B	m	Wages use one employee's hours; second employee per shift omitted
+train-04000__T070__a07	gsm8k	modeling_relation	MS	B	h	Mark's total drops the initial 15 feet
+train-04016__T070__a00	gsm8k	modeling_relation	OP	B	h	Adds double-counted sheep instead of subtracting
+train-04016__T070__a04	gsm8k	modeling_relation	OP	B	h	Adds forgotten pigs instead of subtracting them
+train-04016__T070__a05	gsm8k	modeling_relation	FC	B	m	Models sheep and pigs as separate totals, duplicating total
+train-04016__T070__a07	gsm8k	modeling_relation	OP	B	h	Adds double-counted 7 instead of removing it
+train-04066__T070__a01	gsm8k	modeling_relation	TG	B	h	Reports third-day take only, not Cleo's total holdings
+train-04066__T070__a02	gsm8k	modeling_relation	TG	B	h	Reports Cleo's third-day share only, not her accumulated total
+train-04066__T070__a03	gsm8k	modeling_relation	TG	B	h	Reports Cleo's third-day share only, not her accumulated total
+train-04066__T070__a04	gsm8k	modeling_relation	TG	B	h	Reports third-day take only, not Cleo's total holdings
+train-04066__T070__a06	gsm8k	modeling_relation	TG	B	h	Reports third-day take only, not Cleo's total holdings
+train-04066__T070__a07	gsm8k	modeling_relation	TG	B	h	Reports third-day gain instead of Cleo's total marbles
+train-04102__T070__a00	gsm8k	modeling_relation	TG	B	m	Answers unit price instead of original total
+train-04102__T070__a04	gsm8k	modeling_relation	FC	B	h	Takes 20% of discounted total as discount base
+train-04102__T070__a05	gsm8k	modeling_relation	CV	A	m	Reads paid discounted $500 as the undiscounted price
+train-04102__T070__a06	gsm8k	modeling_relation	FC	B	m	Undoes 20% discount by adding 20% to discounted price
+train-04114__T070__a01	gsm8k	modeling_relation	OP	B	h	Reverses which runner is three times faster
+train-04114__T070__a02	gsm8k	modeling_relation	OP	B	h	Multiplies by 3 for slower runner instead of dividing
+train-04114__T070__a03	gsm8k	modeling_relation	UC	D	m	Adult-field laps not converted to half-length child laps
+train-04114__T070__a04	gsm8k	modeling_relation	PS	C	m	Reuses own lap-length variable D as lap count
+train-04114__T070__a05	gsm8k	modeling_relation	FC	B	h	Divides distance by lap length as if it were speed
+train-04114__T070__a06	gsm8k	modeling_relation	OP	B	h	Multiplies by 1/2 instead of dividing by half-length lap
+train-04114__T070__a07	gsm8k	modeling_relation	HA	A	m	Introduces unsupported factor 12 squaring lap count
+train-04118__T070__a06	gsm8k	modeling_relation	CV	A	m	Applies 8 servings per pie as servings per guest
+train-04118__T070__a07	gsm8k	modeling_relation	CV	A	h	Uses 12 guests in place of 8 servings per pie
+train-04165__T070__a00	gsm8k	modeling_relation	MS	B	m	Sums only four days, omitting days five and six
+train-04165__T070__a01	gsm8k	modeling_relation	FC	B	m	Continues doubling instead of restarting three-day cycle
+train-04165__T070__a03	gsm8k	modeling_relation	FC	B	m	Wrong periodic model: day four doubles instead of restarting at 2
+train-04165__T070__a04	gsm8k	modeling_relation	FC	B	m	Continues doubling past day three instead of repeating cycle
+train-04165__T070__a05	gsm8k	modeling_relation	FC	B	m	Keeps doubling past day 3, ignoring three-day repeat
+train-04165__T070__a07	gsm8k	modeling_relation	MS	B	m	Sums one three-day cycle for six days, omitting second cycle
+train-04191__T070__a00	gsm8k	reasoning_state	MS	B	m	Keeps John's experience from 8 years ago; omits adding 8 years
+train-04191__T070__a01	gsm8k	modeling_relation	CV	A	m	Assigns John's 16 years to eight years ago without support
+train-04191__T070__a02	gsm8k	reasoning_state	MS	B	m	Uses John's experience 8 years ago as current; omits +8
+train-04191__T070__a03	gsm8k	modeling_relation	CV	A	m	Misplaces John's 16-year mark at eight years ago
+train-04191__T070__a05	gsm8k	modeling_relation	MS	B	m	Takes John's experience 8 years ago as current; omits +8
+train-04202__T070__a02	gsm8k	modeling_relation	CV	A	h	Assigns baking time 15 minutes to batter making
+train-04202__T070__a03	gsm8k	modeling_relation	HA	A	m	Invents zero cooling time not given in problem
+train-04202__T070__a04	gsm8k	modeling_relation	CV	A	m	Assigns 30-minute icing hardening time to initial cooling
+train-04202__T070__a05	gsm8k	modeling_relation	HA	A	m	Invents cooling time equal to dough time plus baking
+train-04202__T070__a07	gsm8k	modeling_relation	CV	A	m	Assigns the 15-minute baking time to batter preparation
+train-04237__T070__a02	gsm8k	arithmetic_execution	CA	C	h	15.5+21.5+21.5 summed as 68
+train-04237__T070__a03	gsm8k	arithmetic_execution	CA	C	h	15.5+21.5+21.5 summed as 68 instead of 58.5
+train-04237__T070__a04	gsm8k	reasoning_state	MS	B	h	Subtracts only first two parts, omitting the third 21.5 km part
+train-04323__T070__a00	gsm8k	modeling_relation	UC	D	m	Labels five-day per-puppy supply as daily amount
+train-04323__T070__a01	gsm8k	modeling_relation	PS	C	m	Divides by days again after already dividing by days
+train-04323__T070__a03	gsm8k	modeling_relation	TG	B	h	Switches from times per day to portions per feeding
+train-04323__T070__a04	gsm8k	modeling_relation	OP	B	h	Multiplies per-puppy supply by days instead of dividing
+train-04323__T070__a06	gsm8k	modeling_relation	FC	B	h	Equates feeding sessions with puppy count; wrong relation model
+train-04346__T070__a00	gsm8k	modeling_relation	CV	A	m	Claims Julio has only orange soda, dropping seven grape bottles
+train-04346__T070__a04	gsm8k	arithmetic_execution	CA	C	h	8+14 computed as 18
+train-04346__T070__a05	gsm8k	unit_conversion	UC	D	m	Treats bottle counts as liters without 2 L per bottle
+train-04346__T070__a06	gsm8k	unit_conversion	UC	D	m	Treats bottle counts as liters, no 2 L conversion
+train-04346__T070__a07	gsm8k	unit_conversion	UC	D	m	Labels 11 bottles as 11 liters without converting
+train-04368__T070__a06	gsm8k	modeling_relation	TG	B	m	Mislabels remaining tape as used, then reports used
+train-04389__T070__a00	gsm8k	unit_conversion	UC	D	m	Converts years to months twice (20*12*12)
+train-04389__T070__a01	gsm8k	unit_conversion	UC	D	h	Converts years to months twice: 20*12*12
+train-04389__T070__a02	gsm8k	modeling_relation	HA	A	h	Invents 6% interest rate not in problem
+train-04389__T070__a03	gsm8k	modeling_relation	HA	A	h	Invents 4% interest rate not given in problem
+train-04389__T070__a04	gsm8k	modeling_relation	HA	A	h	Invents a monthly interest rate not in problem
+train-04389__T070__a05	gsm8k	modeling_relation	HA	A	h	Invents 4% interest rate
+train-04389__T070__a06	gsm8k	modeling_relation	HA	A	h	Invents 5% interest rate not in problem
+train-04392__T070__a01	gsm8k	reasoning_state	PS	C	h	Doubles subtotal for two sides though both sides already included
+train-04417__T070__a02	gsm8k	modeling_relation	CV	A	h	Uses brother's 12 instead of Levi's 8
+train-04417__T070__a04	gsm8k	modeling_relation	FC	B	m	Wrong gap relation: 15-7 instead of 15+5-8
+train-04417__T070__a05	gsm8k	modeling_relation	CV	A	m	Misreads goal as more than own 8, not brother's score plus 5
+train-04417__T070__a06	gsm8k	modeling_relation	PS	C	m	Treats own additional-baskets 12 as goal total and subtracts 8 again
+train-04417__T070__a07	gsm8k	modeling_relation	MS	B	m	Uses lead 5 alone, omitting current deficit 7
+train-04435__T070__a00	gsm8k	modeling_relation	PS	C	m	Adds cereal again on top of own subtotal including it
+train-04435__T070__a01	gsm8k	modeling_relation	HA	A	m	Invents four cookie boxes not given in problem
+train-04435__T070__a05	gsm8k	modeling_relation	PS	C	m	Subtracts cereal again after already in subtotal
+train-04464__T070__a00	gsm8k	modeling_relation	PS	C	m	Adds actors again after including them in subtotal
+train-04464__T070__a02	gsm8k	modeling_relation	MS	B	h	Omits actor cost from total expense
+train-04513__T070__a02	gsm8k	modeling_relation	HA	A	m	Adds unjustified rounding to 2 bushels for practical purposes
+train-04513__T070__a03	gsm8k	modeling_relation	UC	D	m	Subtracts per-bushel cost from per-apple price; mixed units
+train-04513__T070__a07	gsm8k	modeling_relation	UC	D	h	Multiplies apple count by per-bushel price
+train-04558__T070__a00	gsm8k	modeling_relation	CO	A	m	Counts Yves as an extra eater of 2 slices
+train-04596__T070__a06	gsm8k	modeling_relation	OP	B	h	Reverses '5 more quiz than homework' direction
+train-04604__T070__a01	gsm8k	modeling_relation	FC	B	m	Treats 2/5 more as 2/5 as many girls
+train-04604__T070__a02	gsm8k	modeling_relation	CO	A	h	Adds only teacher, omitting driver and assistant
+train-04604__T070__a03	gsm8k	modeling_relation	CO	A	h	Omits driver and assistant from people on bus
+train-04604__T070__a05	gsm8k	modeling_relation	FC	B	m	Treats 2/5 times more as 2/5 of boys; excess as total
+train-04604__T070__a07	gsm8k	modeling_relation	FC	B	m	Treats 2/5 times more girls as 2/5 of boys
+train-04611__T070__a03	gsm8k	modeling_relation	MS	B	m	Omits adding 20 new students before transfer fraction
+train-04733__T070__a00	gsm8k	modeling_relation	CV	A	m	Misreads aired seasons as already watched
+train-04757__T070__a00	gsm8k	unit_conversion	UC	D	h	Subtracts 15 pounds directly from 400 ounces
+train-04757__T070__a01	gsm8k	modeling_relation	CV	A	h	Uses Katy's three bags as 3 pounds instead of 15
+train-04757__T070__a02	gsm8k	unit_conversion	UC	D	h	Relabels Katy's 15 pounds as 15 ounces
+train-04757__T070__a05	gsm8k	unit_conversion	PS	C	m	Uses Wendi's derived 30 as Katy's amount, relabeled ounces
+train-04757__T070__a06	gsm8k	unit_conversion	UC	D	h	Relabels Katy's 15 pounds as 15 ounces
+train-04760__T070__a00	gsm8k	modeling_relation	PS	C	m	Variable collision: Jamison's derived 180 reused as John's weight
+train-04760__T070__a03	gsm8k	modeling_relation	OP	B	h	Subtracts 20 for Jamison though Jamison is heavier
+train-04760__T070__a05	gsm8k	modeling_relation	OP	B	h	Subtracts 20 from Mary for Jamison; comparison direction reversed
+train-04794__T070__a05	gsm8k	modeling_relation	HA	A	m	Invents upper bound on die value not in problem
+train-04794__T070__a06	gsm8k	modeling_relation	TG	B	m	Reports tying value instead of value needed to lead
+train-04865__T070__a02	gsm8k	modeling_relation	MS	B	h	Omits twin births from new population
+train-04865__T070__a03	gsm8k	modeling_relation	CO	A	m	Counts twin pregnancies as one baby each
+train-04865__T070__a04	gsm8k	modeling_relation	MS	B	h	Adds only twin-parent count, omitting single births and twin doubling
+train-04918__T070__a07	gsm8k	modeling_relation	OP	B	h	Reverses Bailey-Michiko half relation
+train-04931__T070__a01	gsm8k	modeling_relation	FC	B	m	Halves sprouted seeds again instead of all sprouted eaten
+train-04936__T070__a07	gsm8k	modeling_relation	TG	B	h	Reports water poured in, not remaining space in 6-liter bucket
+train-05002__T070__a00	gsm8k	modeling_relation	FC	B	h	Equates two expressions for Jordan instead of total equation
+train-05002__T070__a02	gsm8k	modeling_relation	FC	B	m	Writes J+3=2J instead of James=2J+3 with total 36
+train-05025__T070__a00	gsm8k	arithmetic_execution	CA	C	h	1% of 45000 computed as 4500
+train-05025__T070__a01	gsm8k	modeling_relation	MS	B	h	Omits second candidate's salary from cost
+train-05025__T070__a03	gsm8k	modeling_relation	OP	B	h	Adds salary expense to revenue instead of subtracting
+train-05025__T070__a04	gsm8k	arithmetic_execution	CA	C	h	1% of 45000 computed as 4500
+train-05025__T070__a05	gsm8k	arithmetic_execution	CA	C	h	1% of 45000 computed as 4500
+train-05025__T070__a06	gsm8k	modeling_relation	MS	B	h	Omits first applicant's salary from net revenue
+train-05025__T070__a07	gsm8k	modeling_relation	PS	C	m	Does not deduct own computed 45450 cost for second candidate
+train-05081__T070__a06	gsm8k	modeling_relation	CO	A	m	Counts dog weight once per person instead of one dog
+train-05093__T070__a00	gsm8k	modeling_relation	FC	B	m	Adds Maurice's pre-visit rides into Matt's ride total equation
+train-05093__T070__a02	gsm8k	modeling_relation	FC	B	m	Includes Maurice's prior rides in Matt's two-week count
+train-05097__T070__a00	gsm8k	modeling_relation	CV	A	m	Applies six new minerals to gemstone count
+train-05097__T070__a02	gsm8k	modeling_relation	FC	B	m	Models yesterday's minerals as x+0.5x, mixing in gemstones
+train-05117__T070__a00	gsm8k	modeling_relation	TG	B	m	Reports units of one building instead of both buildings
+train-05117__T070__a01	gsm8k	modeling_relation	TG	B	m	Reports one building's units instead of both buildings
+train-05117__T070__a05	gsm8k	modeling_relation	TG	B	m	Reports one building's units instead of both buildings
+train-05117__T070__a07	gsm8k	modeling_relation	TG	B	m	Reports one building's units instead of both buildings
+train-05149__T070__a07	gsm8k	modeling_relation	OP	B	m	Subtracts sold categories from each other instead of summing
+train-05211__T070__a02	gsm8k	modeling_relation	FC	B	m	Takes total as one part instead of sum of six parts
+train-05211__T070__a05	gsm8k	modeling_relation	FC	B	m	Treats ounces-per-part as total number of parts
+train-05238__T070__a06	gsm8k	modeling_relation	CV	A	m	Uses payment per 5 kg as payment per kg
+train-05286__T070__a03	gsm8k	modeling_relation	HA	A	h	Invents requirement that each bouquet contains both flower types
+train-05286__T070__a05	gsm8k	modeling_relation	HA	A	h	Invents per-type bouquet constraint, using minimum instead of sum
+train-05336__T070__a01	gsm8k	modeling_relation	TG	B	h	Reports weekly laps instead of daily laps
+train-05336__T070__a05	gsm8k	modeling_relation	TG	B	h	Reports weekly laps instead of laps per day
+train-05379__T070__a03	gsm8k	modeling_relation	FC	B	m	Multiplies tip difference by 5% again; wrong formula
+train-05379__T070__a04	gsm8k	modeling_relation	FC	B	m	Uses 5 percent as five dollars, not 5% of bill
+train-05379__T070__a06	gsm8k	unit_conversion	FC	B	m	Converts percents to cents without applying to $26 bill base
+train-05417__T070__a05	gsm8k	modeling_relation	CV	A	m	Reads half a dozen as 3 instead of 6
+train-05417__T070__a06	gsm8k	modeling_relation	PS	C	m	Adds regained weight to loss amount instead of current weight
+train-05430__T070__a02	gsm8k	modeling_relation	FC	B	h	Equates perimeter to radius squared instead of area
+train-05493__T070__a00	gsm8k	reasoning_state	MS	B	m	Skips the 3/5 multiplication, using Christina's full 35
+train-05493__T070__a02	gsm8k	modeling_relation	FC	B	m	Multiplies ratio by 15-year offset instead of shifting age by 15
+train-05493__T070__a05	gsm8k	modeling_relation	FC	B	m	Uses 15-year offset as a multiplier and inverts ratio
+train-05537__T070__a02	gsm8k	reasoning_state	MS	B	m	Omits weekly 1000-step increase, reusing week-one rate
+train-05537__T070__a04	gsm8k	arithmetic_execution	CA	C	h	Weekly step totals summed as 60000 instead of 70000
+train-05537__T070__a05	gsm8k	reasoning_state	PS	C	m	Reuses first week's 1000 daily steps, not applying the increase
+train-05537__T070__a06	gsm8k	arithmetic_execution	CA	C	h	Weekly step totals summed as 60000 instead of 70000
+train-05547__T070__a00	gsm8k	modeling_relation	CV	A	m	Treats 5 still hanging as initial stock that 8 fell from
+train-05547__T070__a02	gsm8k	modeling_relation	OP	B	m	Subtracts ground apples instead of adding them
+train-05600__T070__a02	gsm8k	arithmetic_execution	CA	C	h	482653-119666 computed as 363987
+train-05601__T070__a01	gsm8k	modeling_relation	FC	B	m	Treats price at 25% of original as 25% off
+train-05601__T070__a07	gsm8k	modeling_relation	FC	B	m	Treats price at 25% of original as 25% off
+train-05631__T070__a04	gsm8k	reasoning_state	PS	C	h	Subtracts dropped class twice
+train-05709__T070__a07	gsm8k	modeling_relation	CV	A	h	Uses wight rate 3 for vampire bats instead of 8
+train-05814__T070__a02	gsm8k	modeling_relation	OP	B	h	Adds completed minutes to target instead of subtracting
+train-05909__T070__a00	gsm8k	modeling_relation	CO	A	m	Miscounts roller-skate wheels per skate and pair
+train-05909__T070__a03	gsm8k	modeling_relation	CO	A	m	Counts a pair of skates as 4 wheels instead of 8
+train-05909__T070__a06	gsm8k	modeling_relation	CO	A	m	Counts pair of roller skates as 4 wheels instead of 8
+train-05920__T070__a01	gsm8k	modeling_relation	FC	B	m	Wrong comparison base for 'one-third less' white cheese
+train-05920__T070__a02	gsm8k	modeling_relation	OP	B	h	Reverses which cheese is one-third less
+train-05920__T070__a03	gsm8k	modeling_relation	CV	A	m	Uses swiss instead of blue as one-third-less base
+train-05920__T070__a04	gsm8k	modeling_relation	FC	B	m	Takes one-third reduction 200g as the white cheese amount
+train-05920__T070__a05	gsm8k	modeling_relation	FC	B	m	Treats one-third less as one-third of blue amount
+train-05920__T070__a06	gsm8k	modeling_relation	HA	A	h	Invents 300 g white cheese base
+train-05920__T070__a07	gsm8k	modeling_relation	UC	D	m	Reads $6 per 200 g package as $6 per gram
+train-05952__T070__a05	gsm8k	modeling_relation	TG	B	h	Answers only Orlando's gain instead of all three combined
+train-05954__T070__a01	gsm8k	modeling_relation	CO	A	m	Omits sick Zack from class count; uses 22 as full class
+train-05954__T070__a02	gsm8k	modeling_relation	CO	A	m	Omits sick Zack; uses 22 instead of 23 class size
+train-05954__T070__a03	gsm8k	modeling_relation	FC	B	m	Halves one class instead of combined two classes
+train-05954__T070__a04	gsm8k	modeling_relation	CO	A	m	Takes 22 present as full class, omitting sick Zack
+train-05954__T070__a05	gsm8k	modeling_relation	CV	A	m	Reads 22 present while Zack sick as full class
+train-05954__T070__a06	gsm8k	modeling_relation	CO	A	m	Omits sick Zack from his class count (22 instead of 23)
+train-05954__T070__a07	gsm8k	modeling_relation	CO	A	m	Treats 22 present as Zack's class size, omitting Zack
+train-05971__T070__a01	gsm8k	modeling_relation	UC	D	m	Treats 20 key chains as 20 packs without converting units
+train-05975__T070__a02	gsm8k	unit_conversion	UC	D	h	Treats 20-pound bag as 20 cups
+train-05975__T070__a05	gsm8k	modeling_relation	TG	B	m	Reports fractional bags consumed, not whole bags to buy
+train-06044__T070__a03	gsm8k	arithmetic_execution	CA	C	m	9*4 evaluated as 72
+train-06044__T070__a05	gsm8k	modeling_relation	CO	A	m	Counts 18 holes total instead of holes over nine rounds
+train-06044__T070__a06	gsm8k	modeling_relation	HA	A	m	Introduces 18 holes per round not stated in problem
+train-06044__T070__a07	gsm8k	modeling_relation	UN	UN	m	Flagged step matches gold's holes convention; actual error unclear
+train-06068__T070__a01	gsm8k	reasoning_state	PS	C	h	Subtracts purchases from pre-investment balance after computing investment
+train-06068__T070__a05	gsm8k	reasoning_state	PS	C	h	Subtracts from pre-investment balance after computing investment
+train-06109__T070__a02	gsm8k	modeling_relation	MS	B	h	Omits Friday's two candies from purchased total
+train-06137__T070__a04	gsm8k	arithmetic_execution	CA	C	h	3*3 written as 3 instead of 9
+train-06137__T070__a05	gsm8k	modeling_relation	MS	B	m	Omits car-count multipliers, one car per color
+train-06137__T070__a06	gsm8k	unit_conversion	UC	D	h	Uses 15 car-hours as 15 minutes
+train-06137__T070__a07	gsm8k	modeling_relation	MS	B	h	Omits car-count multipliers in earnings
+train-06153__T070__a02	gsm8k	modeling_relation	MS	B	h	Omits cost of the 15 additional books
+train-06153__T070__a04	gsm8k	modeling_relation	FC	B	m	Uses $2 discount as price of additional books
+train-06153__T070__a05	gsm8k	modeling_relation	MS	B	h	Omits cost of fifteen additional books
+train-06181__T070__a03	gsm8k	modeling_relation	MS	B	m	Counts one daily set of pills instead of 14 days
+train-06181__T070__a04	gsm8k	modeling_relation	UC	D	m	Treats five pills per day as five per week
+train-06181__T070__a05	gsm8k	modeling_relation	FC	B	m	Divides 14 days by 5 supplements instead of multiplying
+train-06181__T070__a06	gsm8k	modeling_relation	MS	B	m	Uses one day's 5 pills for whole two weeks
+train-06181__T070__a07	gsm8k	modeling_relation	CO	A	m	Counts seven days for a two-week period
+train-06254__T070__a01	gsm8k	modeling_relation	CV	A	m	Treats given pre-purchase 125 as post-purchase balance
+train-06254__T070__a02	gsm8k	modeling_relation	CV	A	m	Treats 125 balance as pre-gift amount, double counting gifts
+train-06254__T070__a03	gsm8k	modeling_relation	CO	A	m	Adds gifts again to 125 balance that already includes them
+train-06254__T070__a04	gsm8k	modeling_relation	CO	A	m	Adds gifts to 125 balance that already includes them; double count
+train-06254__T070__a05	gsm8k	modeling_relation	CO	A	m	Adds gifts to 125 balance that already includes them; double count
+train-06254__T070__a06	gsm8k	modeling_relation	CV	A	m	Uses gift total 75 instead of given 125 balance
+train-06254__T070__a07	gsm8k	modeling_relation	CV	A	m	Reads 125 as balance before gifts; adds gifts again
+train-06256__T070__a01	gsm8k	modeling_relation	TG	B	h	Reports required average instead of gap below 287
+train-06256__T070__a02	gsm8k	modeling_relation	TG	B	h	Stops at required team total instead of per-player average difference
+train-06256__T070__a03	gsm8k	modeling_relation	TG	B	h	Reports required average instead of difference from record
+train-06256__T070__a04	gsm8k	modeling_relation	TG	B	h	Reports required final-round average instead of its gap below 287
+train-06256__T070__a05	gsm8k	modeling_relation	TG	B	h	Reports required average instead of difference from record
+train-06286__T070__a00	gsm8k	modeling_relation	CO	A	h	Omits the queen from the total bee count
+train-06286__T070__a01	gsm8k	modeling_relation	CO	A	h	Omits the queen from the total bee count
+train-06286__T070__a02	gsm8k	reasoning_state	PS	C	h	Repeats day-one state instead of updating from previous day
+train-06286__T070__a03	gsm8k	modeling_relation	CO	A	h	Omits the queen from total bee count
+train-06286__T070__a04	gsm8k	modeling_relation	CO	A	h	Omits the queen from total bee count
+train-06286__T070__a05	gsm8k	modeling_relation	CO	A	h	Omits the queen from the total bee count
+train-06286__T070__a06	gsm8k	modeling_relation	CO	A	h	Omits the queen from total bee count
+train-06286__T070__a07	gsm8k	modeling_relation	CO	A	h	Omits the queen from the total bee count
+train-06306__T070__a00	gsm8k	modeling_relation	FC	B	m	Equates per-bag mass 7n to three-bag total 147
+train-06306__T070__a02	gsm8k	modeling_relation	FC	B	m	Splits total mass equally as counts, ignoring fruit weights
+train-06306__T070__a03	gsm8k	modeling_relation	FC	B	m	Equation equates three-bag mass to single-bag capacity
+train-06306__T070__a04	gsm8k	modeling_relation	FC	B	m	Equation sets per-bag n equal to three-bag mass
+train-06306__T070__a05	gsm8k	modeling_relation	FC	B	m	Divides total fruit mass by apple weight as apple count
+train-06306__T070__a07	gsm8k	modeling_relation	UC	D	m	Reports apple count 21 without converting to ounces
+train-06310__T070__a00	gsm8k	modeling_relation	FC	B	h	Defines range as minimum plus one instead of max minus min
+train-06310__T070__a03	gsm8k	reasoning_state	PS	C	m	Picks 52 as minimum despite own derived 46
+train-06310__T070__a05	gsm8k	reasoning_state	CV	A	m	Uses Tracy's 52 as maximum instead of Jake's 60
+train-06310__T070__a07	gsm8k	reasoning_state	PS	C	m	Ignores computed John 46 when picking minimum weight
+train-06311__T070__a03	gsm8k	reasoning_state	PS	C	h	Reuses shirt-only 36 instead of updated subtotal 41
+train-06364__T070__a02	gsm8k	modeling_relation	CO	A	m	Counts three treadmills instead of one
+train-06369__T070__a02	gsm8k	modeling_relation	FC	B	m	Treats giving away half the pieces as halving piece length
+train-06369__T070__a03	gsm8k	modeling_relation	FC	B	m	Regroups remaining pieces instead of halving each 50 m piece
+train-06369__T070__a04	gsm8k	modeling_relation	MS	B	m	Treats remaining pieces as final, omitting the two-way subdivision
+train-06369__T070__a06	gsm8k	modeling_relation	MS	B	m	Treats subdivided pieces as same length, omitting final halving
+train-06376__T070__a02	gsm8k	modeling_relation	CV	A	m	Uses whole school 400 as attendees instead of half
+train-06378__T070__a00	gsm8k	modeling_relation	CO	A	h	Includes two unpaid teeth in remaining 19 teeth
+train-06378__T070__a01	gsm8k	modeling_relation	CO	A	h	Counts first tooth again among 18 remaining paid teeth
+train-06378__T070__a02	gsm8k	modeling_relation	CO	A	m	Miscounts excluded teeth; divides by 18 instead of 17
+train-06378__T070__a03	gsm8k	modeling_relation	CO	A	m	Counts 19 paid teeth after first, ignoring two unpaid teeth
+train-06378__T070__a04	gsm8k	modeling_relation	CO	A	h	Counts 19 paid teeth, missing dropped and swallowed teeth
+train-06378__T070__a05	gsm8k	modeling_relation	CO	A	m	Counts 18 teeth after the first instead of 17
+train-06378__T070__a06	gsm8k	modeling_relation	CO	A	m	Excludes only first tooth, not the two unpaid teeth
+train-06378__T070__a07	gsm8k	modeling_relation	CO	A	m	Divides among 18 teeth, not excluding first tooth
+train-06420__T070__a02	gsm8k	modeling_relation	MS	B	m	Omits doubling for the third leg distance
+train-06420__T070__a05	gsm8k	reasoning_state	PS	C	h	Halves stale 220 instead of updated 660 total
+train-06425__T070__a02	gsm8k	modeling_relation	MS	B	m	Omits 10 questions per survey multiplier
+train-06428__T070__a01	gsm8k	modeling_relation	CV	A	m	Uses 2 daily hours as weekly hours, ignoring five weekdays
+train-06428__T070__a03	gsm8k	modeling_relation	MS	B	m	Uses one weekday's swims instead of five weekdays
+train-06438__T070__a04	gsm8k	modeling_relation	CV	A	m	Misreads 40 legs as all used for chairs
+train-06458__T070__a02	gsm8k	modeling_relation	PS	C	m	Uses own two-bottle total $4 instead of one bottle price
+train-06464__T070__a00	gsm8k	modeling_relation	CV	A	h	Doubles initial 30 Narra instead of fallen 2
+train-06464__T070__a01	gsm8k	modeling_relation	MS	B	h	Omits subtracting the 5 fallen trees
+train-06464__T070__a02	gsm8k	arithmetic_execution	CA	C	h	50+30-5+4+9 evaluated as 79 instead of 88
+train-06464__T070__a05	gsm8k	modeling_relation	OP	B	m	Adds fallen Mahogany trees instead of subtracting
+train-06464__T070__a06	gsm8k	modeling_relation	PS	C	m	Doubles own surviving Narra count instead of fallen count
+train-06464__T070__a07	gsm8k	modeling_relation	OP	B	m	Adds fallen trees instead of subtracting them
+train-06509__T070__a00	gsm8k	modeling_relation	OP	B	m	Multiplies weight by 1/2 instead of dividing by half-pound
+train-06509__T070__a03	gsm8k	modeling_relation	CV	A	m	Misreads 1 ounce per half pound as per two pounds
+train-06509__T070__a04	gsm8k	modeling_relation	CV	A	h	Reads 1 oz per half pound as 1 oz per pound
+train-06527__T070__a01	gsm8k	modeling_relation	MS	B	h	Omits dad's $25 from total
+train-06543__T070__a01	gsm8k	modeling_relation	CV	A	m	Uses days per year as length of one season
+train-06543__T070__a07	gsm8k	unit_conversion	UC	D	h	Multiplies seasons by days per year without conversion
+train-06602__T070__a00	gsm8k	modeling_relation	CV	A	m	Takes Ofelia's score 21 as her incorrect count
+train-06602__T070__a02	gsm8k	modeling_relation	CV	A	m	Treats Ofelia's score 21 as her number of mistakes
+train-06602__T070__a06	gsm8k	modeling_relation	FC	B	m	Labels correct-answer total 53 as incorrect answers
+train-06602__T070__a07	gsm8k	modeling_relation	MS	B	m	Uses one person's 35 questions instead of team's 70
+train-06608__T070__a01	gsm8k	modeling_relation	CV	A	m	Uses 20 gyms as bike count, ignoring per-gym 10 bikes
+train-06608__T070__a04	gsm8k	modeling_relation	TG	B	m	Reports one gym's cost instead of all twenty gyms
+train-06620__T070__a03	gsm8k	modeling_relation	UC	D	m	Treats 10 daily hours as weekly hours
+train-06620__T070__a06	gsm8k	modeling_relation	PS	C	m	Applies individual saving rate to combined salary of all three
+train-06641__T070__a00	gsm8k	modeling_relation	OP	B	m	Multiplies weight by legs instead of dividing among legs
+train-06641__T070__a03	gsm8k	modeling_relation	FC	B	m	Pressure computed as weight per leg, no division by area
+train-06641__T070__a05	gsm8k	modeling_relation	MS	B	m	Omits dividing weight among eight legs
+train-06642__T070__a02	gsm8k	modeling_relation	OP	B	h	Adds net removed channels instead of subtracting
+train-06642__T070__a07	gsm8k	arithmetic_execution	CA	C	h	Correct signed expression evaluated as 157 instead of 147
+train-06651__T070__a07	gsm8k	arithmetic_execution	CA	C	h	285-49-59 evaluated as 187
+train-06670__T070__a00	gsm8k	modeling_relation	MS	B	h	Subtracts white chips but omits three blue chips
+train-06670__T070__a03	gsm8k	modeling_relation	MS	B	h	Green count omits subtracting the 3 blue chips
+train-06670__T070__a04	gsm8k	modeling_relation	MS	B	h	Subtracts white chips but omits three blue chips
+train-06670__T070__a05	gsm8k	modeling_relation	MS	B	h	Omits three blue chips when finding green
+train-06696__T070__a07	gsm8k	modeling_relation	OP	B	h	Subtracts bought sugar instead of adding
+train-06716__T070__a06	gsm8k	modeling_relation	FC	B	m	Ignores area: assumes 12 sq in uses same ink as 16 sq in
+train-06724__T070__a06	gsm8k	modeling_relation	MS	B	m	Omits multiplying per-basket counts by three baskets
+train-06744__T070__a02	gsm8k	modeling_relation	OP	B	h	Subtracts shortfall from funds instead of adding it
+train-06744__T070__a04	gsm8k	modeling_relation	FC	B	m	Takes shortfall 400 as purchase cost instead of 2000
+train-06759__T070__a00	gsm8k	modeling_relation	MS	B	h	Omits second 45-minute segment and 15-minute rewind
+train-06759__T070__a03	gsm8k	reasoning_state	PS	C	m	Re-adds rewind minutes already included in its 40 and 60
+train-06759__T070__a05	gsm8k	modeling_relation	MS	B	h	Omits second 15-minute rewind from total
+train-06759__T070__a07	gsm8k	reasoning_state	PS	C	m	Reuses own 60-minute segment instead of final 20 minutes
+train-06783__T070__a00	gsm8k	modeling_relation	MS	B	m	Omits juice cost from per-person bundle cost
+train-06783__T070__a01	gsm8k	modeling_relation	CO	A	m	Counts Lyle as two people when reserving his own meal
+train-06783__T070__a02	gsm8k	modeling_relation	TG	B	m	Reports five people total instead of four friends
+train-06783__T070__a03	gsm8k	modeling_relation	PS	C	m	Divides already-derived count of 5 meals by price again
+train-06783__T070__a04	gsm8k	modeling_relation	TG	B	m	Reports number of people affordable, not friends excluding Lyle
+train-06783__T070__a06	gsm8k	modeling_relation	TG	B	m	Reports affordable people count as friends, not reserving Lyle
+train-06783__T070__a07	gsm8k	modeling_relation	TG	B	m	Reports five people total instead of four friends
+train-06797__T070__a05	gsm8k	modeling_relation	CV	A	m	Uses Carrie's 90 rate for Barney instead of 45
+train-06823__T070__a00	gsm8k	arithmetic_execution	CA	C	h	54/9 computed as 5
+train-06866__T070__a00	gsm8k	modeling_relation	OP	B	h	Reverses five less than 15 as 5-15
+train-06866__T070__a05	gsm8k	modeling_relation	OP	B	h	Reverses "five less than 15" into 5-15
+train-06893__T070__a05	gsm8k	modeling_relation	OP	B	m	Subtracts Sarah's time from Samuel's; difference direction reversed
+train-06917__T070__a00	gsm8k	arithmetic_execution	CA	C	h	Five rainfall amounts summed as 11.10 instead of 20
+train-06917__T070__a01	gsm8k	arithmetic_execution	CA	C	h	Rainfall sum computed as 20.90 instead of 20
+train-06917__T070__a03	gsm8k	arithmetic_execution	CA	C	h	Rainfall sum computed as 19.90 instead of 20
+train-06917__T070__a04	gsm8k	arithmetic_execution	CA	C	h	Rainfall sum computed as 19.90 instead of 20
+train-06924__T070__a00	gsm8k	modeling_relation	CV	A	m	Applies male 2/3 fraction to female count
+train-06924__T070__a06	gsm8k	modeling_relation	CV	A	m	Applies male fraction 2/3 to female contestants
+train-06941__T070__a04	gsm8k	modeling_relation	MS	B	h	Omits 80 children when subtracting from total
+train-06946__T070__a00	gsm8k	modeling_relation	HA	A	h	Invents an extra one-fifth consumption not in problem
+train-07028__T070__a01	gsm8k	modeling_relation	TG	B	h	Finds 8 winners but reports 32 empty envelopes
+train-07050__T070__a01	gsm8k	modeling_relation	CV	A	m	Reads two unfinished courses as built portion of last wall
+train-07050__T070__a02	gsm8k	modeling_relation	OP	B	m	Adds unfinished courses' bricks instead of subtracting
+train-07050__T070__a06	gsm8k	modeling_relation	MS	B	m	Omits deducting two unfinished courses of last wall
+train-07050__T070__a07	gsm8k	modeling_relation	MS	B	m	Counts last wall as full, omitting two unfinished courses
+train-07066__T070__a00	gsm8k	modeling_relation	CV	A	m	States box costs $4 though carton costs $4; final unexplained
+train-07066__T070__a01	gsm8k	modeling_relation	CV	A	h	Uses pencil box price $2 as carton price
+train-07080__T070__a00	gsm8k	modeling_relation	MS	B	h	Omits all tips, totaling wages only
+train-07080__T070__a01	gsm8k	arithmetic_execution	CA	C	h	70+18 computed as 98
+train-07080__T070__a06	gsm8k	modeling_relation	MS	B	h	Omits all tips from total earnings
+train-07080__T070__a07	gsm8k	modeling_relation	MS	B	h	Omits Tuesday and Wednesday wages from total
+train-07124__T070__a02	gsm8k	arithmetic_execution	CA	C	h	50 + 7.5 computed as 57
+train-07145__T070__a00	gsm8k	arithmetic_execution	CA	C	h	246240*1.5 computed as 374360
+train-07154__T070__a00	gsm8k	modeling_relation	CV	A	m	Changes threefold ratio to half for dresses
+train-07154__T070__a01	gsm8k	modeling_relation	CV	A	m	Gives Isabella Alexis's 18 dresses, ignoring factor 3
+train-07154__T070__a05	gsm8k	reasoning_state	PS	C	m	Uses own combined total 39 as pants-only count
+train-07154__T070__a07	gsm8k	modeling_relation	OP	B	h	Multiplies by 3 instead of dividing to get Isabella's amount
+train-07196__T070__a00	gsm8k	arithmetic_execution	CA	C	h	Activity durations summed to 220 instead of 500
+train-07196__T070__a01	gsm8k	arithmetic_execution	CA	C	h	120+240+30+40+70 summed as 460 instead of 500
+train-07196__T070__a05	gsm8k	arithmetic_execution	CA	C	h	Durations summing to 500 added as 520
+train-07196__T070__a07	gsm8k	arithmetic_execution	CA	C	h	Durations summed as 520 instead of 500
+train-07200__T070__a02	gsm8k	modeling_relation	FC	B	m	Adds doubled count to original instead of replacing it
+train-07235__T070__a01	gsm8k	modeling_relation	FC	B	m	Treats event-time ages as current ages and shifts by age gap
+train-07235__T070__a03	gsm8k	modeling_relation	FC	B	m	Treats target-event age gap as elapsed time after solving event ages
+train-07235__T070__a07	gsm8k	modeling_relation	TG	B	m	Adds age gap to Charlie's age, reporting Jenny's age
+train-07262__T070__a04	gsm8k	modeling_relation	CO	A	h	Counts Sebastian and two parents as two people
+train-07305__T070__a01	gsm8k	modeling_relation	FC	B	m	Dropped the 'half' relation: original dogs written as C instead of C/2
+train-07305__T070__a03	gsm8k	modeling_relation	HA	A	m	Invents twenty newborn cats; only dogs were born
+train-07305__T070__a04	gsm8k	modeling_relation	PS	C	m	Uses current dog count 40 in pre-birth relation
+train-07305__T070__a05	gsm8k	modeling_relation	CV	A	m	Ignores given current 20 cats, using initial C instead
+train-07311__T070__a06	gsm8k	arithmetic_execution	CA	C	h	600/4 evaluated as 15 instead of 150
+train-07311__T070__a07	gsm8k	arithmetic_execution	CA	C	h	10/4*60 evaluated as 15 instead of 150
+train-07377__T070__a06	gsm8k	arithmetic_execution	CA	C	h	Coin values 19+8.5+1+1.5 summed as 38 instead of 30
+train-07420__T070__a00	gsm8k	unit_conversion	UC	D	h	Uses one dollar per leaf instead of one penny
+train-07420__T070__a01	gsm8k	modeling_relation	OP	B	m	Adds earnings to food cost instead of subtracting
+train-07420__T070__a02	gsm8k	arithmetic_execution	CA	C	h	6000*0.01 computed as 6 instead of 60
+train-07420__T070__a05	gsm8k	modeling_relation	FC	B	m	Models $5 per-job fee as a one-time fee
+train-07420__T070__a07	gsm8k	modeling_relation	OP	B	h	Adds cost to income instead of finding shortfall
+train-07425__T070__a00	gsm8k	unit_conversion	UC	D	m	Treats three 2-hour baking periods as three hours
+train-07425__T070__a02	gsm8k	modeling_relation	TG	B	h	Reports loaves only, excluding baguettes from total breads
+train-07425__T070__a06	gsm8k	arithmetic_execution	UC	D	m	Mixes per-hour rate 15 with count of two-hour blocks
+train-07425__T070__a07	gsm8k	modeling_relation	TG	B	m	Answers loaves only, excluding baguettes from total breads
+train-07459__T070__a04	gsm8k	modeling_relation	FC	B	m	Equates paid amount to remaining 75% instead of paid 25%

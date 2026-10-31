@@ -1,0 +1,244 @@
+train-07305__T070__a01	FC	m	Dropped the 'half' relation: original dogs written as C instead of C/2
+svamp-chal-533__T070__a00	TG	m	Computes Jake-vs-Steven apples difference instead of Steven peaches minus apples
+train-01366__T070__a07	FC	m	Treats '15 more than morning' as afternoon count of 15
+train-00814__T070__a07	CO	m	Counts a $4 item twice after croissant subtotal
+train-04202__T070__a02	CV	h	Assigns baking time 15 minutes to batter making
+train-04323__T070__a06	FC	h	Equates feeding sessions with puppy count; wrong relation model
+train-05954__T070__a06	CO	m	Omits sick Zack from his class count (22 instead of 23)
+train-04604__T070__a03	CO	h	Omits driver and assistant from people on bus
+svamp-chal-877__T070__a00	CO	m	Includes eggs in marbles being grouped
+train-04346__T070__a04	CA	h	8+14 computed as 18
+train-01281__T070__a07	CA	h	80*20000 computed with an extra zero
+train-03623__T070__a01	CO	m	Counts each daily duration once instead of over 2 and 3 days
+svamp-chal-171__T070__a00	TG	m	Reports county kids plus outside attendees instead of county kids only
+train-01989__T070__a02	FC	h	Wrong profit relation: adds revenue to net profit
+train-04596__T070__a06	OP	h	Reverses '5 more quiz than homework' direction
+svamp-chal-531__T070__a00	TG	m	Reports unrelated classroom-times-seats product instead of 3 students
+svamp-chal-81__T070__a00	CV	m	Rewrites given 68 departures as 32
+train-00480__T070__a03	FC	m	Applies raised salary to all three years, ignoring raise timing
+train-03993__T070__a06	CO	m	Pays one employee instead of two per shift
+train-02888__T070__a06	TG	h	Computes discounted costs instead of savings
+train-03310__T070__a01	UC	m	Nonsensical conversion of gallons to seconds
+train-02278__T070__a03	FC	m	Divides minutes by dog capacity; wrong relation
+train-03310__T070__a03	PS	h	Complements already-derived remaining 32 gallons again
+train-05286__T070__a03	HA	h	Invents both-types-per-bouquet constraint not in problem
+train-00648__T070__a01	PS	h	Subtracts encore again after already removing it
+train-00587__T070__a01	CV	m	Applies weekend ratio to whole week's hours
+train-03519__T070__a06	TG	h	Reports total cost instead of per-person amount
+svamp-chal-499__T070__a00	TG	h	Reports gross boarders instead of boarders minus departures
+train-03084__T070__a03	FC	m	Uses eaten fraction 1/5 instead of retained 4/5
+svamp-chal-845__T070__a00	CV	m	Rejects given 34 discarded roses and substitutes another value
+svamp-chal-483__T070__a00	CA	h	466*53 computed as 24918 instead of 24698
+train-06464__T070__a07	OP	m	Adds fallen trees instead of subtracting them
+svamp-chal-865__T070__a00	CV	m	Uses Fred plus Jason's 79 as Jason's initial money
+train-02278__T070__a05	FC	m	Gives short walks the full 240 minutes, ignoring shared time budget
+train-03448__T070__a05	FC	m	Misroles remaining clean towels and equates towels with days
+train-05920__T070__a01	FC	m	Wrong comparison base for 'one-third less' white cheese
+train-05211__T070__a02	FC	m	Takes total as one part instead of sum of six parts
+train-05117__T070__a07	TG	m	Reports one building's units instead of both buildings
+svamp-chal-443__T070__a00	CA	h	244*146 computed as 35644 instead of 35624
+train-00143__T070__a00	CV	h	Reverses stated 25% at surface to 75%
+svamp-chal-484__T070__a00	FC	m	Uses remaining stock instead of lost count in comparison
+train-00879__T070__a01	PS	h	Subtracts brother's half again from retained 30
+svamp-chal-666__T070__a00	HA	m	Invents affordability constraint, drops purchased chocolate
+svamp-chal-417__T070__a00	OP	m	Discards sign of derived -7 books sold
+svamp-chal-851__T070__a00	CA	h	183*62 computed as 11406 instead of 11346
+train-05379__T070__a06	FC	m	Converts percents to cents without applying to $26 bill base
+train-04611__T070__a03	MS	m	Omits adding 20 new students before transfer fraction
+train-05920__T070__a04	FC	m	Takes one-third reduction 200g as the white cheese amount
+train-03993__T070__a02	CV	m	Uses 8 hours instead of stated 16 operating hours
+train-02891__T070__a03	FC	m	Assigns quarter-distance condition to wrong segment
+train-04191__T070__a05	MS	m	Takes John's experience 8 years ago as current; omits +8
+svamp-chal-496__T070__a00	TG	m	Computes all items sold instead of pens sold
+train-04165__T070__a07	TG	m	Reports one three-day cycle total instead of six days
+train-02872__T070__a02	TG	m	Reports oatmeal students count instead of cookies
+train-06254__T070__a03	CO	m	Adds gifts again to 125 balance that already includes them
+svamp-chal-638__T070__a00	CO	m	Includes marbles among eggs being grouped
+train-04558__T070__a00	CO	m	Counts Yves as an extra eater of 2 slices
+train-00399__T070__a02	CV	m	Assigns joint Sam-and-Jack rate to Jack alone
+train-00558__T070__a01	CV	m	Uses all Best Buy cards and one Walmart as sent
+svamp-chal-696__T070__a00	TG	h	Answers total items change instead of files minus apps remaining
+train-01125__T070__a05	FC	m	Models Sharon's cutlery as 2*(plates*cutlery) instead of twice Angela's cutlery
+train-04118__T070__a07	CV	h	Uses 12 guests in place of 8 servings per pie
+train-00191__T070__a05	CO	m	Uses one fox's catch, omitting the three foxes
+train-06464__T070__a05	OP	m	Adds fallen Mahogany trees instead of subtracting
+train-01595__T070__a02	CV	m	Misreads Hornets' score 86 as an 86-point lead
+train-02915__T070__a00	FC	m	Combined age grows one per year instead of two
+train-00991__T070__a05	TG	m	Reports one unicorn's flowers instead of all six
+train-00547__T070__a01	PS	m	Adds own bedroom-kitchen subtotal again alongside living room
+train-02504__T070__a00	MS	m	Balance equation omits the 20 wipes used
+train-04757__T070__a00	UC	h	Subtracts 15 pounds directly from 400 ounces
+train-00191__T070__a01	TG	h	Reports only weasels instead of weasels plus rabbits
+train-04760__T070__a00	PS	m	Variable collision: Jamison's derived 180 reused as John's weight
+train-01931__T070__a04	PS	m	Uses own combined shirt count as each category's count
+train-00311__T070__a01	PS	h	Duplicates first-stop passenger state in final expression
+svamp-chal-801__T070__a00	OP	m	Reads increase 3 to 4 as one departure; subtraction reversed
+train-00480__T070__a02	UC	h	Treats monthly salary as yearly salary
+train-00814__T070__a01	CA	h	4.5+4.5+3+4+5 summed as 19
+train-03941__T070__a07	CA	h	36+34+38 summed as 110
+train-06306__T070__a05	FC	m	Divides total fruit mass by apple weight as apple count
+train-05537__T070__a02	MS	m	Omits weekly 1000-step increase, reusing week-one rate
+train-02050__T070__a05	FC	m	Treats 25% extra (1 day) as second protest length
+train-06378__T070__a04	CO	h	Counts 19 paid teeth, missing dropped and swallowed teeth
+train-00118__T070__a07	CO	m	Off-by-one: treats starting ability as week one
+svamp-chal-27__T070__a00	CV	m	Treats 450 potato suggesters as total students
+train-03448__T070__a03	CV	m	Misreads daily towel use as per wash cycle
+train-04389__T070__a02	HA	h	Invents 6% interest rate not in problem
+train-01818__T070__a03	CV	m	Applies hot 20% to non-hot peppers
+train-00789__T070__a03	PS	h	Replaces own computed 18-day period with 21 days
+train-03786__T070__a02	MS	h	Omits 23-inch donation from required length
+train-06608__T070__a01	CV	m	Uses 20 gyms as bike count, ignoring per-gym 10 bikes
+svamp-chal-196__T070__a00	CV	m	Treats picked 7 per tree as initial apples per tree
+train-06376__T070__a02	CV	m	Uses whole school 400 as attendees instead of half
+svamp-chal-95__T070__a00	PS	m	Uses own two-day total 37 instead of Monday's 19
+train-00322__T070__a04	FC	h	Applies tax to final bill instead of meal price
+train-05025__T070__a01	MS	h	Omits second candidate's salary from cost
+train-00118__T070__a06	TG	m	Computes cumulative sum instead of final juggling ability
+train-01761__T070__a07	MS	h	Omits mango crates when subtracting from total
+svamp-chal-848__T070__a00	CV	m	Assigns ambiguous 'he' to Adam, misreading the entity
+train-00587__T070__a03	OP	h	Reverses weekend ratio direction
+train-07235__T070__a07	TG	m	Adds age gap to Charlie's age, reporting Jenny's age
+train-00770__T070__a04	CV	m	Uses 7 days per week instead of allowed 4
+train-00276__T070__a07	CA	h	800+5*200 evaluated as 1000
+train-07050__T070__a02	OP	m	Adds unfinished courses' bricks instead of subtracting
+svamp-chal-19__T070__a00	OP	m	Adds found wrappers to current instead of subtracting
+train-01592__T070__a07	FC	m	Treats '1/4 more' as 1/4 of 20, omitting the base
+train-06137__T070__a06	UC	h	Uses 15 car-hours as 15 minutes
+svamp-chal-590__T070__a00	PS	m	Labels whole-day 13 as morning total then counts again
+train-02847__T070__a02	MS	h	Omits 8 remaining pieces from total
+train-07262__T070__a04	CO	h	Counts Sebastian and two parents as two people
+train-00902__T070__a01	PS	m	Divides both groups' straw total among piglets
+svamp-chal-333__T070__a00	TG	m	Computes pages per day for a chapters-per-day target
+train-02329__T070__a05	UC	m	Relabels 21 doses as 21 days
+train-02355__T070__a00	CA	h	Six component tape lengths summed as 42, not 44
+train-00862__T070__a04	TG	h	Reports group deficit as each squirrel's need
+train-03717__T070__a05	FC	m	Equation adds removed plants back while equating to 20
+train-06420__T070__a05	PS	h	Halves stale 220 instead of updated 660 total
+train-03759__T070__a03	MS	h	Omits 60 mixed bottles from halving
+train-00587__T070__a07	OP	h	Reverses weekend ratio direction
+train-05954__T070__a07	CO	m	Treats 22 present as Zack's class size, omitting Zack
+train-02504__T070__a05	HA	h	Invents ten-day refill duration
+train-03614__T070__a01	CV	m	Treats partial 200 m walk as full 500 m leg
+svamp-chal-433__T070__a00	CV	m	Uses read/watched counts instead of series sizes 10 and 8
+train-00437__T070__a01	CV	m	Uses $1.50 selling price in place of 2 pounds feed
+train-00902__T070__a07	HA	h	Invents piglets being 3 times smaller
+svamp-chal-347__T070__a00	TG	m	Compares total revenues instead of per-item prices
+train-01792__T070__a00	CV	m	Attaches 'twice as many lilies' to daisies, not snapdragons
+train-01094__T070__a03	PS	m	Quadruples evaporated 4 instead of current water 12
+train-00118__T070__a04	CO	m	Off-by-one: applies four increases instead of five weeks
+train-06716__T070__a06	FC	m	Ignores area: assumes 12 sq in uses same ink as 16 sq in
+train-05493__T070__a00	MS	m	Skips the 3/5 multiplication, using Christina's full 35
+train-07080__T070__a00	MS	m	Total earnings omit all tips
+train-03410__T070__a07	CO	m	Miscounts Thursday-Sunday as four weekdays plus weekend
+train-06286__T070__a06	CO	h	Omits the queen from total bee count
+train-02891__T070__a05	TG	h	Reports riverbed-to-peak distance instead of hill height
+train-06651__T070__a07	CA	h	285-49-59 evaluated as 187
+train-01171__T070__a00	FC	m	Assigns Jack's future 300 to present, temporal relation wrong
+svamp-chal-194__T070__a00	TG	h	Answers combined earnings instead of Fred's
+train-00736__T070__a03	MS	h	Omits mango lassi before tip
+svamp-chal-381__T070__a00	FC	m	Wrong formula: divides pages by chapters for daily average
+train-05631__T070__a04	PS	h	Subtracts dropped class twice
+train-03284__T070__a02	FC	m	Assumes each coin has both denominations' values
+train-05286__T070__a05	HA	m	Assumes bouquets need both types; limiting-factor constraint invented
+train-04114__T070__a04	PS	m	Reuses own lap-length variable D as lap count
+train-04513__T070__a07	UC	h	Multiplies apple count by per-bushel price
+train-06311__T070__a03	PS	h	Reuses shirt-only 36 instead of updated subtotal 41
+train-06068__T070__a05	PS	h	Uses pre-investment 17 after computing investment
+svamp-chal-37__T070__a00	HA	m	Assumes two-day total recurs daily for 25 days
+svamp-chal-636__T070__a00	TG	m	Switches target from pencil total to number of rows
+train-04757__T070__a05	PS	m	Uses Wendi's derived 30 as Katy's amount, relabeled ounces
+train-02541__T070__a04	CA	h	200*5280/3600 evaluated as 320
+train-06642__T070__a02	OP	h	Adds net removed channels instead of subtracting
+svamp-chal-239__T070__a00	TG	m	Computes minutes for both days instead of yesterday only
+train-01818__T070__a04	CA	h	Daily pepper counts summed as 72 instead of 80
+train-04346__T070__a06	UC	m	Treats bottle counts as liters, no 2 L conversion
+train-06181__T070__a05	FC	m	Divides 14 days by 5 supplements instead of multiplying
+train-04165__T070__a05	FC	m	Keeps doubling past day 3, ignoring three-day repeat
+svamp-chal-220__T070__a00	PS	h	Subtracts sold 71 again from already-net 184
+train-05537__T070__a06	CA	h	Weekly step totals summed as 60000 instead of 70000
+train-06306__T070__a00	FC	m	Equates per-bag mass 7n to three-bag total 147
+train-06044__T070__a06	HA	m	Introduces 18 holes per round not stated in problem
+train-01989__T070__a06	MS	m	Omits babysitting income from total revenue
+train-01792__T070__a03	CV	m	Uses roses instead of snapdragons as lily base
+train-07196__T070__a07	CA	h	Durations summed as 520 instead of 500
+train-06602__T070__a00	CV	m	Takes Ofelia's score 21 as her incorrect count
+train-01595__T070__a06	CV	m	Adds Fireflies' 74 into Hornets' score
+train-00981__T070__a05	CV	m	Uses stripe count 3 as shoe count, invents pairs
+train-00991__T070__a06	CV	h	Uses 3 m step length instead of 9 km journey
+train-00558__T070__a06	CO	m	Counts all twelve remaining cards as Walmart
+train-03113__T070__a02	MS	m	Gives sister all unripe mangoes, omitting 16 kept
+train-05920__T070__a02	OP	h	Reverses which cheese is one-third less
+train-06670__T070__a05	MS	h	Omits three blue chips when finding green
+train-00399__T070__a04	CV	m	Assigns joint Sam-and-Jack rate to Jack alone
+train-00483__T070__a04	PS	m	Compares original weight to stale pre-exercise weight
+train-04435__T070__a00	PS	m	Adds cereal again on top of own subtotal including it
+train-05920__T070__a06	HA	h	Invents 300 g white cheese base
+svamp-chal-415__T070__a00	CV	m	Treats found bottle caps as initial holdings
+train-04389__T070__a05	HA	h	Invents 4% interest rate
+train-06602__T070__a02	CV	m	Assigns Ofelia's score 21 as her mistakes
+svamp-chal-895__T070__a00	CA	h	109*74 computed as 8086 instead of 8066
+train-04389__T070__a01	UC	h	Converts years to months twice
+train-00486__T070__a00	PS	h	Keeps stale weekly total 10 after computing Friday's 10
+train-03519__T070__a05	UC	m	Multiplies bar count by per-box price
+train-04114__T070__a01	OP	h	Reverses which runner is three times faster
+train-00587__T070__a00	OP	h	Multiplies weekend Facebook time instead of dividing by three
+train-06797__T070__a05	PS	m	Uses Carrie's derived 90 rate for Barney
+train-05417__T070__a06	PS	m	Adds regained weight to loss amount instead of current weight
+train-03395__T070__a00	FC	m	Treats 'one-third bigger' as one-third as large
+train-00587__T070__a06	FC	m	Mixes Facebook hours with weekday work hours in total
+train-04191__T070__a02	MS	m	Uses John's experience 8 years ago as current; omits +8
+train-01564__T070__a03	MS	h	Omits Friday's episodes from weekday subtotal
+train-01375__T070__a00	FC	m	Applies summed cohort durations to all six pigs
+train-03370__T070__a03	FC	m	Equation counts customers equal to melons, dropping per-customer multipliers
+train-00558__T070__a05	PS	m	Subtracts sent value from itself instead of initial total
+svamp-chal-631__T070__a00	CV	m	Replaces given 8 sweet cookies with assumed 20
+train-03391__T070__a00	CO	m	Miscounts travel days, mixing stays into travel subtotal
+train-04865__T070__a02	MS	h	Omits twin births from new population
+train-00601__T070__a00	UC	h	Applies speed conversion factor to distance in feet
+train-06364__T070__a02	CO	m	Counts three treadmills instead of one
+train-01564__T070__a06	TG	m	Reports Thursday plus Friday minutes as weekend amount
+svamp-chal-305__T070__a00	CV	m	Misreads Fred's current 9 dollars as an amount lost
+train-06641__T070__a05	MS	m	Omits dividing weight among eight legs
+svamp-chal-108__T070__a00	CA	h	141*71 computed as 10021 instead of 10011
+train-06924__T070__a00	CV	m	Applies male 2/3 fraction to female count
+train-02584__T070__a05	CA	h	42+67+51 summed as 159
+train-06783__T070__a06	TG	m	Reports affordable people count as friends, not reserving Lyle
+train-02915__T070__a03	FC	m	Uses age gap 4 as combined yearly aging rate
+train-01564__T070__a00	CA	h	21+88 summed as 110
+svamp-chal-383__T070__a00	OP	m	Multiplies pages by days instead of dividing
+train-03993__T070__a00	HA	m	Invents 8-hour shift length, omitting two staff per shift
+train-06044__T070__a07	UN	m	Flagged step matches gold's holes convention; actual error unclear
+train-06641__T070__a03	FC	m	Pressure computed as weight per leg, no division by area
+train-00483__T070__a05	CA	m	147/8 rounded to 18 instead of 18.375
+train-07305__T070__a05	CV	m	Ignores given current 20 cats, using initial C instead
+train-05709__T070__a07	CV	h	Uses wight rate 3 for vampire bats instead of 8
+train-03623__T070__a05	CO	m	Counts parking and walking for one day, not five
+train-06823__T070__a00	CA	h	54/9 computed as 5
+train-04346__T070__a05	UC	m	Treats bottle counts as liters, no 2 L conversion
+train-02301__T070__a05	CA	h	48/0.8 computed as 50 instead of 60
+train-06941__T070__a04	MS	h	Omits 80 children when subtracting from total
+svamp-chal-608__T070__a00	TG	h	Compares remaining amounts instead of quantities made
+train-07420__T070__a07	OP	h	Adds cost to income instead of finding shortfall
+train-05149__T070__a07	OP	m	Subtracts sold categories from each other instead of summing
+train-04865__T070__a03	CO	m	Counts twin pregnancies as one baby each
+svamp-chal-515__T070__a00	TG	h	Includes Monday's bags in after-Monday target
+train-03175__T070__a00	UC	m	Equates street miles with cable miles, no 5x factor
+train-03448__T070__a01	TG	h	Reports supplied days instead of days without towels
+train-06917__T070__a04	CA	h	Rainfall sum computed as 19.90 instead of 20
+train-06256__T070__a01	TG	h	Reports required average instead of gap below 287
+train-02440__T070__a04	FC	m	Wrong ratio split: gives whole 300 to each person
+svamp-chal-665__T070__a00	TG	m	Compares total revenues instead of per-item prices
+train-03790__T070__a04	TG	m	Includes friend's jars in jars James must buy
+train-00276__T070__a05	CA	m	Evaluation drops the /2 factor from its own expression
+train-04392__T070__a01	PS	h	Doubles subtotal that already includes both sides
+train-02282__T070__a02	TG	m	Reports discount amount instead of saving versus $130 budget
+train-04237__T070__a02	CA	h	15.5+21.5+21.5 summed as 68
+train-04114__T070__a07	HA	m	Introduces unsupported factor 12 squaring lap count
+svamp-chal-270__T070__a00	CA	m	404+495 computed as 900
+train-03320__T070__a01	MS	h	Omits 30 potatoes from planted vegetables
+train-01989__T070__a05	MS	m	Omits babysitting income from total revenue
+train-06642__T070__a07	CA	h	Correct signed expression evaluated as 157 instead of 147
+train-03084__T070__a00	PS	m	Applies eaten loss again, turning 4 retained into 3
+train-03448__T070__a06	TG	h	Reports available days instead of days without towels
+train-00480__T070__a07	FC	m	Applies raise starting in the first year
+train-06543__T070__a07	UC	h	Multiplies seasons by days per year without conversion

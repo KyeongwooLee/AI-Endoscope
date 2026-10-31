@@ -1,0 +1,64 @@
+solutions=42951 (format failures excluded: 1009), problems=8792, acc greedy=0.808 sampled=0.764, mixed problems=3693 (17007 wrong-correct pairs)
+
+## solution-level correct/wrong, AUROC (all / greedy only / within same problem)
+  input                                       all  greedy  within
+  length                                    0.616   0.647   0.430
+  confidence                                0.771   0.762   0.675
+  confidence + length                       0.804   0.802   0.661
+  -- q_end
+  hidden q_end L4                           0.671   0.681   0.502
+  hidden q_end L8                           0.678   0.696   0.493
+  hidden q_end L12                          0.699   0.717   0.500
+  hidden q_end L16                          0.747   0.763   0.502
+  hidden q_end L20                          0.757   0.774   0.515
+  hidden q_end L24                          0.750   0.766   0.494
+  hidden q_end L28                          0.733   0.746   0.492
+  -- r_end
+  hidden r_end L4                           0.760   0.760   0.649
+  hidden r_end L4 + conf + length           0.842   0.847   0.725
+  hidden r_end L8                           0.775   0.776   0.652
+  hidden r_end L8 + conf + length           0.846   0.851   0.727
+  hidden r_end L12                          0.817   0.815   0.698
+  hidden r_end L12 + conf + length          0.859   0.861   0.750
+  hidden r_end L16                          0.847   0.848   0.730
+  hidden r_end L16 + conf + length          0.871   0.872   0.765
+  hidden r_end L20                          0.860   0.863   0.758
+  hidden r_end L20 + conf + length          0.879   0.881   0.785
+  hidden r_end L24                          0.851   0.856   0.750
+  hidden r_end L24 + conf + length          0.874   0.876   0.780
+  hidden r_end L28                          0.838   0.839   0.737
+  hidden r_end L28 + conf + length          0.865   0.867   0.764
+  -- r_mean
+  hidden r_mean L4                          0.751   0.743   0.624
+  hidden r_mean L4 + conf + length          0.836   0.830   0.719
+  hidden r_mean L8                          0.775   0.763   0.645
+  hidden r_mean L8 + conf + length          0.844   0.836   0.733
+  hidden r_mean L12                         0.814   0.803   0.686
+  hidden r_mean L12 + conf + length         0.853   0.846   0.749
+  hidden r_mean L16                         0.854   0.846   0.747
+  hidden r_mean L16 + conf + length         0.868   0.860   0.770
+  hidden r_mean L20                         0.876   0.877   0.784
+  hidden r_mean L20 + conf + length         0.882   0.881   0.791
+  hidden r_mean L24                         0.867   0.866   0.777
+  hidden r_mean L24 + conf + length         0.873   0.870   0.781
+  hidden r_mean L28                         0.856   0.851   0.766
+  hidden r_mean L28 + conf + length         0.865   0.858   0.771
+  -- ans
+  hidden ans L4                             0.754   0.743   0.659
+  hidden ans L4 + conf + length             0.848   0.847   0.726
+  hidden ans L8                             0.767   0.761   0.667
+  hidden ans L8 + conf + length             0.846   0.845   0.734
+  hidden ans L12                            0.816   0.815   0.704
+  hidden ans L12 + conf + length            0.860   0.858   0.752
+  hidden ans L16                            0.850   0.847   0.742
+  hidden ans L16 + conf + length            0.873   0.871   0.769
+  hidden ans L20                            0.857   0.855   0.751
+  hidden ans L20 + conf + length            0.877   0.876   0.775
+  hidden ans L24                            0.848   0.846   0.748
+  hidden ans L24 + conf + length            0.872   0.873   0.774
+  hidden ans L28                            0.832   0.828   0.734
+  hidden ans L28 + conf + length            0.864   0.864   0.765
+
+## paired bootstrap over problems (1000x), 95% CI   [best hidden = hidden r_mean L20; best combined = hidden r_mean L20 + conf + length]
+  hidden r_mean L20 vs confidence: all +0.105 [+0.098, +0.111] | within +0.109 [+0.098, +0.120]
+  hidden r_mean L20 + conf + length vs confidence + length: all +0.078 [+0.073, +0.083] | within +0.130 [+0.120, +0.142]

@@ -1,0 +1,14 @@
+## test: solutions=6428, wrong rate=0.318
+  input                                   all  within
+  confidence                            0.753   0.648
+  confidence + length                   0.781   0.627
+  question only: hidden q_end L20       0.767   0.527
+  hidden r_mean L20                     0.864   0.754
+  hidden r_mean L20 + conf + length     0.870   0.765
+## train: solutions=36523, wrong rate=0.211
+  input                                   all  within
+  confidence                            0.772   0.680
+  confidence + length                   0.807   0.668
+  question only: hidden q_end L20       0.750   0.507
+  hidden r_mean L20                     0.877   0.790
+  hidden r_mean L20 + conf + length     0.883   0.796

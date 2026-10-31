@@ -1,0 +1,6 @@
+## [A-div] divergent-token surprisal baseline (same token as hidden @div), AUROC
+  overall 0.960  per type: HA=0.96 CA=0.98 FC=0.96 CO=0.97 MS=0.73 OP=0.94 CV=0.99 PS=0.99 UC=0.99
+
+## [B-div] 9-way type @div, macro-F1, question-grouped 5-fold  (multi = questions with >=2 types)
+  trans @div                                         L0:0.51(multi 0.33) L8:0.77(multi 0.57) L16:0.82(multi 0.57) L28:0.79(multi 0.58)
+  ORIG @div (control: correct token, same position)  L0:0.50(multi 0.32) L8:0.78(multi 0.53) L16:0.80(multi 0.60) L28:0.76(multi 0.53)

@@ -1,0 +1,58 @@
+pairs=1558 steps=11795  labels: correct=7784 first-wrong=1558 after-error=2453
+
+## first-wrong-step localization, no oracle position (question-grouped 5-fold)
+   step AUROC: all correct steps vs first-wrong steps across whole solutions
+  method                                 stepAUROC  acc_err  acc_cor     F1 | erroneous sols: exact / flagged-too-early / late-or-miss
+  baseline: step NLL max (lowest token prob)     0.891    0.556    0.709  0.623 | 0.56 / 0.17 / 0.28
+  baseline: step NLL mean                    0.826    0.436    0.611  0.509 | 0.44 / 0.23 / 0.33
+  hidden end  L4                             0.656    0.302    0.527  0.384 | 0.30 / 0.16 / 0.54
+  hidden end  L8                             0.672    0.306    0.564  0.397 | 0.31 / 0.16 / 0.53
+  hidden end  L12                            0.724    0.357    0.607  0.450 | 0.36 / 0.13 / 0.51
+  hidden end  L16                            0.798    0.449    0.655  0.532 | 0.45 / 0.09 / 0.46
+  hidden end  L20                            0.783    0.431    0.651  0.518 | 0.43 / 0.10 / 0.47
+  hidden end  L24                            0.737    0.385    0.601  0.469 | 0.39 / 0.09 / 0.52
+  hidden end  L28                            0.807    0.470    0.626  0.537 | 0.47 / 0.11 / 0.42
+  hidden mean L4                             0.721    0.366    0.593  0.453 | 0.37 / 0.13 / 0.50
+  hidden mean L8                             0.755    0.397    0.624  0.485 | 0.40 / 0.14 / 0.47
+  hidden mean L12                            0.787    0.451    0.653  0.534 | 0.45 / 0.12 / 0.43
+  hidden mean L16                            0.860    0.549    0.732  0.627 | 0.55 / 0.08 / 0.37
+  hidden mean L20                            0.846    0.543    0.702  0.612 | 0.54 / 0.07 / 0.39
+  hidden mean L24                            0.816    0.503    0.649  0.566 | 0.50 / 0.09 / 0.41
+  hidden mean L28                            0.885    0.598    0.735  0.660 | 0.60 / 0.10 / 0.30
+  NLL max+mean (LR)                          0.893    0.547    0.691  0.611 | 0.55 / 0.18 / 0.27
+  hidden mean L16 + NLL                      0.950    0.722    0.784  0.752 | 0.72 / 0.07 / 0.20
+  hidden mean L28 + NLL                      0.949    0.724    0.789  0.755 | 0.72 / 0.08 / 0.20
+
+  acc_err per type
+   baseline: step NLL max (lowest token prob) HA=0.78 CA=0.51 FC=0.56 CO=0.36 MS=0.47 OP=0.59 CV=0.64 PS=0.51 UC=0.58
+   hidden mean L28                        HA=0.63 CA=0.48 FC=0.62 CO=0.66 MS=0.57 OP=0.35 CV=0.68 PS=0.50 UC=0.85
+   hidden mean L28 + NLL                  HA=0.85 CA=0.67 FC=0.73 CO=0.68 MS=0.61 OP=0.61 CV=0.79 PS=0.66 UC=0.89
+
+## paired bootstrap (resampling questions, 2000x): F1(A) - F1(B), 95% CI
+  hidden mean L28          vs baseline: step NLL max (lowest token prob): +0.036  [+0.008, +0.066]
+  hidden mean L28 + NLL    vs baseline: step NLL max (lowest token prob): +0.132  [+0.109, +0.155]
+  hidden mean L28 + NLL    vs NLL max+mean (LR)                         : +0.145  [+0.121, +0.169]
+
+## SAME metric, two conditions: position given (oracle) vs not given (scan all steps)
+   acc_err = erroneous solutions judged right, acc_cor = correct solutions judged right, F1 = harmonic mean
+  method                                 | given: acc_err  acc_cor     F1 | not given: acc_err  acc_cor     F1
+  baseline: step NLL max (lowest token prob) |          0.791    0.815  0.802 |              0.556    0.709  0.623
+  baseline: step NLL mean                |          0.775    0.705  0.738 |              0.436    0.611  0.509
+  hidden end  L4                         |          0.493    0.603  0.543 |              0.302    0.527  0.384
+  hidden end  L8                         |          0.527    0.598  0.560 |              0.306    0.564  0.397
+  hidden end  L12                        |          0.547    0.677  0.605 |              0.357    0.607  0.450
+  hidden end  L16                        |          0.625    0.712  0.666 |              0.449    0.655  0.532
+  hidden end  L20                        |          0.608    0.717  0.658 |              0.431    0.651  0.518
+  hidden end  L24                        |          0.574    0.678  0.622 |              0.385    0.601  0.469
+  hidden end  L28                        |          0.673    0.727  0.699 |              0.470    0.626  0.537
+  hidden mean L4                         |          0.537    0.618  0.575 |              0.366    0.593  0.453
+  hidden mean L8                         |          0.575    0.709  0.635 |              0.397    0.624  0.485
+  hidden mean L12                        |          0.615    0.708  0.658 |              0.451    0.653  0.534
+  hidden mean L16                        |          0.704    0.777  0.739 |              0.549    0.732  0.627
+  hidden mean L20                        |          0.682    0.761  0.719 |              0.543    0.702  0.612
+  hidden mean L24                        |          0.641    0.725  0.680 |              0.503    0.649  0.566
+  hidden mean L28                        |          0.773    0.800  0.786 |              0.598    0.735  0.660
+  NLL max+mean (LR)                      |          0.809    0.829  0.819 |              0.547    0.691  0.611
+  hidden mean L16 + NLL                  |          0.870    0.849  0.859 |              0.722    0.784  0.752
+  hidden mean L28 + NLL                  |          0.854    0.874  0.864 |              0.724    0.789  0.755
+divergent-token prob (position given): acc_err=0.888 acc_cor=0.899 F1=0.894
