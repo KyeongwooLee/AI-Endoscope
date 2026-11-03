@@ -1,0 +1,20 @@
+## agreement on 30 shared items (5 labelers each)
+  first wrong equation: pairwise 0.96, Fleiss kappa 0.95, all agree 28/30
+  agrees with the rule (y/n): pairwise 0.92, all agree 25/30
+  words: pairwise 0.95   prose: pairwise 0.85
+
+## rule location vs audit (630 items)
+  all           n= 630  agree 33.0%  agree_prose 18.6%  rule_late 37.1%  rule_early 11.3%
+  ARITH         n=  60  agree 75.0%  agree_prose  6.7%  rule_late 16.7%  rule_early  1.7%
+  SETUP/NEWNUM  n= 570  agree 28.6%  agree_prose 19.8%  rule_late 39.3%  rule_early 12.3%
+  conf=h only   n= 521  agree 37.0%  agree_prose 19.4%  rule_late 35.5%  rule_early  8.1%
+  estimate for all 5765 located solutions (weighted by type): agree ~1832 (32%)  agree_prose ~1091 (19%)  rule_late ~2176 (38%)  rule_early ~666 (12%)
+  disagreements with an audited equation, audited - rule: -2: 29  -1: 57  +1: 25  +2: 32
+
+## location probe re-scored on the audit (items whose audited first error is a marked equation, words=n)
+  items: 468 (rule disagrees on 143)
+  input                                                     vs rule  vs audit audit k/k-1  disagree: =audit  =rule
+  position (list)                                             34.2%     33.8%       51.3%             26.6%  28.0%
+  confidence + position (list, centered)                      44.0%     51.5%       63.7%             44.8%  20.3%
+  v1: res L20 + position (indep)                              51.5%     46.2%       61.5%             25.2%  42.7%
+  pre+res+mean L20 + position (list, centered)                57.3%     54.9%       66.5%             30.1%  37.8%

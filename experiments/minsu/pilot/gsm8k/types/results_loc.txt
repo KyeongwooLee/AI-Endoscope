@@ -1,0 +1,35 @@
+skipped solutions (not aligned): 339
+steps=21487  solutions=5765  problems=2844  mean steps/solution=3.7
+
+## first wrong step, top-1 accuracy (solutions=5765; ARITH=395, SETUP=5339, k>=1: 3640)
+  input                                 top-1 k or k-1 >=3 eq   k>=1  ARITH  SETUP
+  random (expected)                     34.4%
+  always first step                     36.9%    63.3%  27.4%   0.0%  34.4%  37.1%
+  always last step                      33.8%    33.8%  25.6%  42.9%  43.3%  33.1%
+  position                              37.1%    52.3%  27.8%  19.5%  41.3%  36.8%
+  confidence + position                 42.5%    59.9%  34.3%  27.6%  83.0%  39.4%
+  text TF-IDF + position                41.6%    59.5%  33.3%  30.1%  55.7%  40.5%
+  hidden eq L8 + position               44.8%    62.3%  36.5%  34.3%  63.8%  43.4%
+  hidden eq L12 + position              47.6%    64.8%  39.9%  38.9%  69.9%  46.0%
+  hidden eq L16 + position              50.9%    66.1%  43.3%  43.1%  72.7%  49.3%
+  hidden eq L20 + position              50.9%    65.9%  43.4%  42.5%  72.4%  49.4%
+  hidden eq L24 + position              49.8%    65.3%  42.2%  40.9%  73.2%  48.1%
+  hidden eq L28 + position              48.8%    64.8%  40.9%  39.2%  71.9%  47.1%
+  hidden res L8 + position              49.0%    63.8%  41.1%  39.3%  64.3%  48.1%
+  hidden res L12 + position             51.6%    66.3%  43.5%  43.2%  70.4%  50.4%
+  hidden res L16 + position             52.5%    65.7%  44.7%  44.9%  72.7%  51.0%
+  hidden res L20 + position             52.8%    67.0%  45.7%  44.9%  72.9%  51.4%
+  hidden res L24 + position             50.7%    65.8%  43.5%  41.9%  71.9%  49.1%
+  hidden res L28 + position             48.5%    63.9%  40.8%  37.9%  69.9%  46.9%
+  hidden res L20 (no position)          51.9%    65.1%  44.4%  46.0%  73.4%  50.3%
+  hidden res L20 + delta + position     53.4%    67.7%  45.9%  48.4%  70.9%  52.1%
+  hidden res L20 + conf + position      53.6%    67.3%  46.5%  45.9%  81.8%  51.5%
+
+## accuracy by true location k: hidden res L20 + position vs position
+  k=0 (n=2125): hidden 66.4%  position 67.3%
+  k=1 (n=1523): hidden 44.3%  position 0.0%
+  k=2 (n=1168): hidden 49.7%  position 48.4%
+  k=3+ (n=949): hidden 39.9%  position 15.4%
+  bootstrap hidden res L20 + position - position: +0.157 [+0.138, +0.177]
+  bootstrap hidden res L20 + position - confidence + position: +0.104 [+0.086, +0.121]
+  bootstrap hidden res L20 + position - text TF-IDF + position: +0.112 [+0.096, +0.129]

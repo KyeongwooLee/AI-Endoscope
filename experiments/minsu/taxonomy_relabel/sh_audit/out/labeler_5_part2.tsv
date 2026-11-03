@@ -1,0 +1,50 @@
+train-06924__T070__a06	modeling_relation	h	Applies male fraction 2/3 to compute female count.
+train-06369__T070__a02	modeling_relation	h	Halves piece length for giving away half the pieces.
+svamp-chal-442__T070__a00	undetermined	h	Answer only, no work shown.
+train-07420__T070__a07	modeling_relation	h	Adds food cost and leaf earnings instead of subtracting.
+svamp-chal-629__T070__a00	modeling_relation	h	Treats cakes sold as 14-97 remaining instead of 97 sold.
+train-03084__T070__a07	modeling_relation	h	Divides 60 by 5 ignoring eaten berry; only 4 per handful reach basket.
+train-03448__T070__a02	modeling_relation	h	Computes days with clean towels (2), not days without.
+train-07108__T070__a07	undetermined	h	Answer only, no work shown.
+train-05735__T070__a05	undetermined	h	Answer only, no work shown.
+train-00437__T070__a01	modeling_relation	h	Feed cost per chicken uses selling price 1.50 instead of 2 pounds.
+train-07404__T070__a03	undetermined	h	Correct setup but no computation; outputs unexplained 1300.
+train-02191__T070__a03	modeling_relation	m	Writes 15+25x2, so males get no doubled cans; alt=arithmetic_execution
+svamp-chal-356__T070__a00	none_observed	m	Literal question gives 8/10 shelves; gold 80 conflicts with wording; alt=modeling_relation
+train-06044__T070__a05	modeling_relation	m	Uses 18 holes instead of 9 given rounds; alt=undetermined
+train-04389__T070__a01	unit_conversion	h	Multiplies months by 12 again: 20*12*12 payments.
+train-00648__T070__a03	modeling_relation	h	Invents six remaining sets including encore instead of two.
+train-03623__T070__a07	modeling_relation	h	Reads 30 minutes per day as total for two days.
+svamp-chal-493__T070__a00	arithmetic_execution	h	491x1181 computed as 555961 instead of 579871.
+svamp-chal-731__T070__a00	modeling_relation	h	Books sold computed as 21-15, ignoring 42 books bought.
+train-00090__T070__a07	modeling_relation	m	Assumes all months 31 days and counts half-cup feedings as cups; alt=reasoning_state
+train-01563__T070__a00	undetermined	h	Answer only, no work shown.
+train-02773__T070__a00	modeling_relation	h	Misreads ages: Jessica 20 years older, James 20 older than Jessica.
+svamp-chal-497__T070__a00	modeling_relation	h	Computes caps now as 71-28 though 28 is given as current.
+train-00736__T070__a03	modeling_relation	h	Omits $2 mango lassi from food subtotal before tip.
+svamp-chal-305__T070__a00	modeling_relation	h	Uses 86-9 as Fred's money now instead of given 9.
+train-06602__T070__a03	undetermined	h	Answer only, no work shown.
+train-06642__T070__a03	undetermined	h	Answer only, no work shown.
+train-05537__T070__a06	arithmetic_execution	h	7000+14000+21000+28000 summed as 60000 instead of 70000.
+train-01931__T070__a03	modeling_relation	m	Uses 2 sales/hour for 40-minute men's shirts and $18 for all; alt=unit_conversion
+svamp-chal-470__T070__a00	none_observed	h	Literal Zachary minus John is -30; gold conflicts with question wording.
+train-05971__T070__a01	modeling_relation	m	Treats 20 key chains as 20 packs; alt=unit_conversion
+train-02260__T070__a02	undetermined	h	Answer only, no work shown.
+svamp-chal-267__T070__a00	modeling_relation	h	Subtracts given-away books from remaining instead of adding back.
+train-02283__T070__a02	modeling_relation	h	Omits Sebastian and the maestro from orchestra count.
+train-01094__T070__a03	modeling_relation	h	Quadruples evaporated 4 tbsp instead of remaining 12 tbsp water.
+train-07153__T070__a05	undetermined	h	Correct setup but no computation; outputs unexplained 350.
+train-03629__T070__a07	undetermined	h	Answer only, no work shown.
+train-06759__T070__a00	modeling_relation	h	Omits the 45-minute segment and 15-minute rewind from total.
+train-00770__T070__a00	modeling_relation	h	Uses 4 days total for two weeks instead of 8 days.
+svamp-chal-791__T070__a00	modeling_relation	h	Uses David's crunches -4 in place of Zachary's 58.
+train-04237__T070__a04	modeling_relation	h	Subtracts only first and second parts, omitting third part.
+train-06641__T070__a05	modeling_relation	h	Puts whole spider weight on one leg, ignoring eight legs.
+train-01454__T070__a03	modeling_relation	h	Gives Sunday 100 miles and omits remaining three 100-mile days.
+svamp-chal-783__T070__a00	modeling_relation	h	Omits 6 picked apples; counts only apples left on tree.
+train-04016__T070__a07	modeling_relation	h	Reverses corrections: adds double-counted 7, subtracts missed 3.
+train-03786__T070__a06	modeling_relation	h	Builds wrong relations: 14-23 as length after donation, then subtracts 14.
+train-02343__T070__a04	modeling_relation	h	Treats 15 purchased cars as current total, ignoring 40.
+train-04757__T070__a06	unit_conversion	h	Subtracts Katy's 15 pounds from Carrie's 400 ounces without converting.
+train-00276__T070__a04	modeling_relation	h	Second month reads all 10 remaining books instead of half.
+svamp-chal-55__T070__a00	modeling_relation	h	Adds initial 12, remaining 14 and new 10 together.

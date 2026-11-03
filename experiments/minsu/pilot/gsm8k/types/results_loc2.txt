@@ -1,0 +1,43 @@
+skipped solutions (not aligned): 339
+steps=21487  solutions=5765  dev solutions=4501  test solutions=1264
+
+## DEV: 5-fold CV on train-split problems (solutions=4501); listwise: best lambda on dev
+  input                                                     top-1 k or k-1 >=3 eq   k>=1  ARITH  SETUP
+  random (expected)                                         34.4%
+  position (indep)                                          37.1%    49.0%  27.9%  28.0%  45.3%  36.6%
+  position (list) lam=0.0003                                37.6%    55.2%  28.5%  27.9%  41.2%  37.3%
+  confidence + position (indep)                             43.3%    59.9%  35.5%  32.0%  83.4%  40.4%
+  confidence + position (list, centered) lam=0.03           43.6%    59.5%  35.2%  35.3%  85.1%  40.5%
+  text SVD + position (list, centered) lam=0.03             42.0%    58.2%  33.2%  34.5%  54.4%  41.2%
+  v1: res L20 + position (indep)                            52.1%    66.3%  44.9%  45.0%  68.9%  50.9%
+  res L20 + position (list) lam=0.03                        52.0%    65.8%  44.8%  46.4%  68.6%  50.8%
+  res L20 + position (list, centered) lam=0.003             52.0%    65.7%  44.6%  46.3%  68.2%  50.9%
+  mean L20 + position (list, centered) lam=0.0003           52.1%    66.6%  45.0%  45.1%  68.6%  50.9%
+  pre L20 + position (list, centered) lam=0.03              46.3%    62.7%  38.5%  39.0%  55.4%  45.7%
+  pre+res+mean L20 + position (list, centered) lam=0.03     54.3%    66.8%  46.6%  49.1%  68.2%  53.2%
+  pre+res+mean L12-24 + position (indep)                    53.8%    66.7%  46.5%  47.4%  66.9%  52.8%
+  pre+res+mean L12-24 + position (list, centered) lam=0.03  53.4%    66.2%  46.2%  48.1%  66.2%  52.4%
+  pre+res+mean L12-24 + conf + position (list, centered) lam=0.03  53.9%    66.5%  46.7%  48.6%  72.3%  52.5%
+
+selected on dev: hidden = pre+res+mean L20 + position (list, centered); best non-hidden = confidence + position (list, centered)
+
+## TEST: train on all dev, evaluate once on test-split problems (solutions=1264)
+  input                                                     top-1 k or k-1 >=3 eq   k>=1  ARITH  SETUP
+  random (expected)                                         34.7%
+  position (indep)                                          35.8%    45.5%  25.7%  28.3%  48.5%  34.5%
+  position (list)                                           35.5%    52.5%  25.4%  27.9%  39.4%  35.1%
+  confidence + position (indep)                             44.1%    60.4%  36.6%  34.4%  76.8%  41.2%
+  confidence + position (list, centered)                    43.8%    59.9%  35.8%  35.8%  80.8%  40.4% <- best non-hidden
+  text SVD + position (list, centered)                      41.3%    58.6%  32.2%  34.5%  55.6%  40.2%
+  v1: res L20 + position (indep)                            52.1%    65.0%  44.8%  45.7%  69.7%  50.5%
+  res L20 + position (list)                                 52.8%    64.7%  45.6%  47.7%  63.6%  51.9%
+  res L20 + position (list, centered)                       53.4%    64.9%  45.6%  48.2%  64.6%  52.4%
+  mean L20 + position (list, centered)                      53.6%    66.1%  47.1%  48.9%  70.7%  52.0%
+  pre L20 + position (list, centered)                       48.8%    64.2%  41.9%  44.0%  61.6%  47.7%
+  pre+res+mean L20 + position (list, centered)              53.9%    65.5%  46.3%  48.7%  53.5%  53.7% <- selected
+  pre+res+mean L12-24 + position (indep)                    53.9%    66.5%  46.1%  47.6%  67.7%  52.5%
+  pre+res+mean L12-24 + position (list, centered)           55.1%    67.1%  47.5%  49.0%  67.7%  53.9%
+  pre+res+mean L12-24 + conf + position (list, centered)    55.5%    67.3%  47.7%  49.4%  72.7%  53.8%
+  bootstrap TEST selected - confidence + position (list, centered): +0.102 [+0.067, +0.138]
+  bootstrap TEST selected - position (list): +0.184 [+0.143, +0.224]
+  bootstrap TEST selected - v1: res L20 + position (indep): +0.018 [-0.008, +0.046]

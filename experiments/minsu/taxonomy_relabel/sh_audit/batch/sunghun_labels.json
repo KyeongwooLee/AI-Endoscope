@@ -1,0 +1,602 @@
+{
+"train-00480__T070__a04": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-01247__T070__a03": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-06696__T070__a07": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-03637__T070__a07": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-01459__T070__a03": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-03284__T070__a04": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-03249__T070__a04": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-918__T070__a00": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "svamp",
+"reference_issue": "none"
+},
+"train-02019__T070__a00": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-723__T070__a00": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "svamp",
+"reference_issue": "none"
+},
+"train-02888__T070__a06": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-03391__T070__a06": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-07235__T070__a01": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-05093__T070__a07": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-00555__T070__a07": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-03966__T070__a05": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-06543__T070__a01": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-03922__T070__a04": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-112__T070__a00": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "svamp",
+"reference_issue": "none"
+},
+"train-04796__T070__a02": {
+"type": "none_observed",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "question_gold_mismatch"
+},
+"train-05631__T070__a04": {
+"type": "reasoning_state",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-04102__T070__a05": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-03395__T070__a00": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-02541__T070__a07": {
+"type": "unit_conversion",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-06527__T070__a01": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-417__T070__a00": {
+"type": "reasoning_state",
+"certainty": "medium",
+"dataset": "svamp",
+"reference_issue": "potential_premise_ambiguity"
+},
+"svamp-chal-954__T070__a00": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "svamp",
+"reference_issue": "none"
+},
+"train-04918__T070__a00": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-07196__T070__a05": {
+"type": "arithmetic_execution",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-02847__T070__a04": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-06256__T070__a02": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-04202__T070__a05": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-06946__T070__a00": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-04346__T070__a02": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-00981__T070__a01": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-05920__T070__a07": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-00902__T070__a02": {
+"type": "none_observed",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "potential_premise_ambiguity"
+},
+"train-06651__T070__a07": {
+"type": "arithmetic_execution",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-04865__T070__a02": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-06425__T070__a02": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-00538__T070__a07": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-06724__T070__a00": {
+"type": "none_observed",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "potential_premise_ambiguity"
+},
+"train-02504__T070__a05": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-06306__T070__a03": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-03717__T070__a05": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-00118__T070__a02": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-463__T070__a00": {
+"type": "modeling_relation",
+"certainty": "medium",
+"dataset": "svamp",
+"reference_issue": "potential_premise_ambiguity"
+},
+"train-06254__T070__a05": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-00191__T070__a07": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-02085__T070__a07": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-06924__T070__a06": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-06369__T070__a02": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-442__T070__a00": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "svamp",
+"reference_issue": "none"
+},
+"train-07420__T070__a07": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-629__T070__a00": {
+"type": "modeling_relation",
+"certainty": "medium",
+"dataset": "svamp",
+"reference_issue": "potential_premise_ambiguity"
+},
+"train-03084__T070__a07": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-03448__T070__a02": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-07108__T070__a07": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-05735__T070__a05": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-00437__T070__a01": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-07404__T070__a03": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-02191__T070__a03": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-356__T070__a00": {
+"type": "none_observed",
+"certainty": "medium",
+"dataset": "svamp",
+"reference_issue": "question_gold_mismatch"
+},
+"train-06044__T070__a05": {
+"type": "modeling_relation",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "question_gold_mismatch"
+},
+"train-04389__T070__a01": {
+"type": "unit_conversion",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-00648__T070__a03": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-03623__T070__a07": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-493__T070__a00": {
+"type": "arithmetic_execution",
+"certainty": "high",
+"dataset": "svamp",
+"reference_issue": "none"
+},
+"svamp-chal-731__T070__a00": {
+"type": "modeling_relation",
+"certainty": "medium",
+"dataset": "svamp",
+"reference_issue": "potential_premise_ambiguity"
+},
+"train-00090__T070__a07": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-01563__T070__a00": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-02773__T070__a00": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-497__T070__a00": {
+"type": "modeling_relation",
+"certainty": "medium",
+"dataset": "svamp",
+"reference_issue": "potential_premise_ambiguity"
+},
+"train-00736__T070__a03": {
+"type": "modeling_relation",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "potential_premise_ambiguity"
+},
+"svamp-chal-305__T070__a00": {
+"type": "modeling_relation",
+"certainty": "medium",
+"dataset": "svamp",
+"reference_issue": "potential_premise_ambiguity"
+},
+"train-06602__T070__a03": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-06642__T070__a03": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-05537__T070__a06": {
+"type": "arithmetic_execution",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-01931__T070__a03": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-470__T070__a00": {
+"type": "none_observed",
+"certainty": "medium",
+"dataset": "svamp",
+"reference_issue": "question_gold_mismatch"
+},
+"train-05971__T070__a01": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-02260__T070__a02": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-267__T070__a00": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "svamp",
+"reference_issue": "none"
+},
+"train-02283__T070__a02": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-01094__T070__a03": {
+"type": "reasoning_state",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-07153__T070__a05": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-03629__T070__a07": {
+"type": "undetermined",
+"certainty": "medium",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-06759__T070__a00": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-00770__T070__a00": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-791__T070__a00": {
+"type": "modeling_relation",
+"certainty": "medium",
+"dataset": "svamp",
+"reference_issue": "potential_premise_ambiguity"
+},
+"train-04237__T070__a04": {
+"type": "reasoning_state",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-06641__T070__a05": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-01454__T070__a03": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-783__T070__a00": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "svamp",
+"reference_issue": "none"
+},
+"train-04016__T070__a07": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-03786__T070__a06": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-02343__T070__a04": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-04757__T070__a06": {
+"type": "unit_conversion",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"train-00276__T070__a04": {
+"type": "modeling_relation",
+"certainty": "high",
+"dataset": "gsm8k",
+"reference_issue": "none"
+},
+"svamp-chal-55__T070__a00": {
+"type": "reasoning_state",
+"certainty": "medium",
+"dataset": "svamp",
+"reference_issue": "potential_premise_ambiguity"
+}
+}

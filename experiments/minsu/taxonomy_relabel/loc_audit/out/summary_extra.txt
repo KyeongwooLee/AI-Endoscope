@@ -1,0 +1,12 @@
+first wrong EQUATION (ignoring words/prose) = rule: 431/630 = 68.4%
+words=y (wrong number in text before the first wrong equation): 148 (23%); of these first == rule: 106
+prose=y: 205 (33%);  none: 28
+
+probe accuracy against the AUDIT location (n=468; rule==audit 325, rule!=audit 143)
+  position         all 33.8%   where rule==audit 36.9%   where rule!=audit 26.6%
+  confidence       all 51.5%   where rule==audit 54.5%   where rule!=audit 44.8%
+  hidden v1        all 46.2%   where rule==audit 55.4%   where rule!=audit 25.2%
+  hidden selected  all 54.9%   where rule==audit 65.8%   where rule!=audit 30.1%
+  bootstrap vs audit, hidden selected - confidence: +0.034 [-0.024, +0.094]
+  bootstrap vs audit, hidden selected - position: +0.212 [+0.156, +0.267]
+  bootstrap vs audit, hidden v1 - confidence: -0.053 [-0.111, +0.002]

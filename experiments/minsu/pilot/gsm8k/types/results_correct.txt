@@ -1,0 +1,39 @@
+
+## located errors (test split) (solutions=1264)
+  condition      fix rate any of N  tokens        true k=0       true k>=1     pred = rule    pred != rule           ARITH
+  restart           31.7%    60.4%     250           26.5%           35.1%           32.7%           30.4%           41.4%
+  refine             2.7%     7.9%     222            2.3%            2.9%            3.1%            2.1%            6.8%
+  pred_plain        22.3%    43.1%     178           18.7%           24.6%           26.4%           17.5%           32.1%
+  pred_typed        20.3%    42.0%     179           16.1%           23.1%           25.1%           14.7%           33.3%
+  true_plain        23.7%    46.0%     176           25.8%           22.2%           26.1%           20.8%           38.1%
+  true_typed        24.3%    46.8%     176           21.8%           25.9%           25.0%           23.5%           55.6%
+  subset sizes: true k=0=505  true k>=1=759  pred = rule=681  pred != rule=583  ARITH=99
+  pred_typed: reread n=1196 fix 19.3%  calc n=68 fix 39.0%
+  true_typed: reread n=1165 fix 21.6%  calc n=99 fix 55.6%
+
+  paired bootstrap over problems (difference in fix rate):
+  refine - restart: -0.290 [-0.315, -0.268]
+  pred_plain - restart: -0.094 [-0.114, -0.076]
+  pred_typed - restart: -0.114 [-0.135, -0.093]
+  pred_typed - pred_plain: -0.020 [-0.035, -0.005]
+  true_plain - restart: -0.080 [-0.100, -0.061]
+  true_typed - restart: -0.074 [-0.095, -0.053]
+  true_typed - true_plain: +0.006 [-0.012, +0.026]
+  only errors at the 2nd equation or later (true k>=1):
+  pred_typed - restart: -0.120 [-0.148, -0.093]
+  true_typed - restart: -0.092 [-0.120, -0.063]
+
+## by audit category (audited solutions in this set: 117)
+  agree        n= 36  restart 47%  refine 8%  pred_plain 46%  pred_typed 37%  true_plain 47%  true_typed 42%
+  agree_prose  n= 26  restart 51%  refine 2%  pred_plain 35%  pred_typed 41%  true_plain 40%  true_typed 35%
+  rule_late    n= 36  restart 51%  refine 5%  pred_plain 30%  pred_typed 27%  true_plain 30%  true_typed 26%
+  rule_early   n= 19  restart 33%  refine 4%  pred_plain 13%  pred_typed 5%  true_plain 32%  true_typed 25%
+
+## TARGET errors: final answer is an intermediate (test split) (solutions=131)
+  condition      fix rate any of N  tokens  
+  restart           44.3%    75.6%     226  
+  refine             6.7%    17.6%     187  
+  target_cue         9.9%    22.1%      29  
+  subset sizes: 
+  target_cue - restart: -0.344 [-0.407, -0.282]
+  refine - restart: -0.376 [-0.438, -0.317]

@@ -1,0 +1,19 @@
+  condition        n  repeat    fix fix|repeat fix|differ reject-resample  restart
+  pred_plain k>=1   565   49.3%  21.7%       8.3%      34.7%           26.2%    36.4%
+  pred_plain all   759   50.6%  17.5%       6.6%      28.6%           21.0%    33.1%
+  true_plain k>=1   759   47.9%  22.2%       3.6%      39.3%           28.7%    35.1%
+  true_plain all   759   47.9%  22.2%       3.6%      39.3%           28.7%    35.1%
+  pred_typed k>=1   530   26.9%  21.1%      12.3%      24.4%           22.5%    35.7%
+  pred_typed all   716   27.4%  17.1%       9.4%      20.0%           18.2%    32.6%
+  true_typed k>=1   697   26.8%  22.3%       4.4%      28.8%           25.7%    34.0%
+  true_typed all   697   26.8%  22.3%       4.4%      28.8%           25.7%    34.0%
+  (rows: cut after at least one kept equation, step >= 1; calculator attempts excluded)
+
+## resample until the redone step differs (16 samples per cut; 4 accepted attempts = first 4 samples whose redone step differs, filled with repeating ones if fewer)
+  condition            n    fix  restart                    diff samples used tokens/attempt
+  pred_plain all    1264  26.0%    31.7% -0.057 [-0.078, -0.037]          8.6       326 (restart 250)
+  pred_plain k>=1    759  28.4%    35.1% -0.067 [-0.094, -0.041]          9.5       352 (restart 252)
+  true_plain all    1264  32.2%    31.7% +0.006 [-0.016, +0.028]          8.3       308 (restart 250)
+  true_plain k>=1    759  32.8%    35.1% -0.023 [-0.054, +0.007]          9.5       288 (restart 252)
+
+  ARITH errors (n=99): true_typed (calculator at the true step) - restart: +0.141 [+0.017, +0.261]

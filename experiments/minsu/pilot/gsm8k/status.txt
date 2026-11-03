@@ -1,0 +1,9 @@
+[gen start] Sun Oct 11 12:27:38 UTC 2026
+test: 660 problems, 183s | greedy: n=660 acc=0.735 format_ok=0.991 | sampled: n=2640 acc=0.687 format_ok=0.971
+train: 3737 problems, 1079s | greedy: n=3737 acc=0.824 format_ok=0.989 | sampled: n=14948 acc=0.780 format_ok=0.975
+test: 659 problems, 181s | greedy: n=659 acc=0.706 format_ok=0.985 | sampled: n=2636 acc=0.649 format_ok=0.972
+train: 3736 problems, 1092s | greedy: n=3736 acc=0.818 format_ok=0.994 | sampled: n=14944 acc=0.777 format_ok=0.973
+[gen done] Sun Oct 11 12:49:14 UTC 2026
+[extract start] Sun Oct 11 12:49:29 UTC 2026
+[extract done] Sun Oct 11 13:00:04 UTC 2026
+[probe done] Sun Oct 11 13:07:56 UTC 2026

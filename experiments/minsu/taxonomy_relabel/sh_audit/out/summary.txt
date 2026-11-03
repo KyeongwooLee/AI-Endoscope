@@ -1,0 +1,38 @@
+## 100 items, 5 labelers (all label every item)
+  type: pairwise 0.97  Fleiss 0.94  all agree 94/100 (94%)
+  self-reported borderline (conf=m): 19.0% of labels; per labeler 19 19 18 20 19
+  items where >=1 labeler says m or labelers disagree: 29%
+
+## type counts per labeler (and Sunghun)
+                          1    2    3    4    5  Sung
+  modeling_relation      67   65   66   66   67    65
+  arithmetic_execution    4    4    4    4    4     4
+  unit_conversion         5    6    4    5    4     3
+  reasoning_state         3    4    5    4    4     5
+  answer_reporting        0    0    0    0    0     0
+  undetermined           18   18   18   18   18    18
+  none_observed           3    3    3    3    3     5
+
+## most confused pairs (disagreeing labeler pairs, out of 30)
+  modeling_relation vs reasoning_state: 16
+  modeling_relation vs unit_conversion: 14
+## conf=m alternatives (chosen -> alt)
+  modeling_relation -> reasoning_state: 33
+  reasoning_state -> modeling_relation: 16
+  modeling_relation -> unit_conversion: 14
+  modeling_relation -> arithmetic_execution: 9
+  unit_conversion -> modeling_relation: 6
+  modeling_relation -> none_observed: 5
+
+## vs Sunghun's original label
+  labeler_1: agree 92%, Cohen kappa 0.85
+  labeler_2: agree 90%, Cohen kappa 0.81
+  labeler_3: agree 91%, Cohen kappa 0.83
+  labeler_4: agree 91%, Cohen kappa 0.83
+  labeler_5: agree 92%, Cohen kappa 0.85
+  majority (> half, 100 items have one): agree with Sunghun 93%
+  Sunghun -> majority (only changed ones):
+    reasoning_state -> modeling_relation: 3
+    none_observed -> modeling_relation: 2
+    modeling_relation -> unit_conversion: 1
+    modeling_relation -> reasoning_state: 1

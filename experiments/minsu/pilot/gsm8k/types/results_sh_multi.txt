@@ -1,0 +1,32 @@
+types: modeling_relation=732  undetermined=169  arithmetic_execution=76  reasoning_state=49  none_observed=46  unit_conversion=28
+
+## one of 6 types, 1100 items, 517 questions (question-grouped CV)
+  input                                bal.acc macroF1    acc   recall per type: modeli undete arithm reason none_o unit_c
+  always modeling_relation               0.167   0.133  0.665     1.00   0.00   0.00   0.00   0.00   0.00
+  length                                 0.272   0.172  0.195     0.07   0.76   0.08   0.02   0.46   0.25
+  confidence                             0.394   0.270  0.263     0.09   0.90   0.30   0.31   0.59   0.18
+  confidence + length                    0.362   0.255  0.259     0.10   0.90   0.24   0.29   0.54   0.11
+  text TF-IDF                            0.288   0.297  0.676     0.85   0.62   0.12   0.10   0.00   0.04
+  hidden q_end L20 (question only)       0.288   0.275  0.512     0.62   0.44   0.30   0.14   0.09   0.14
+  hidden r_mean L4                       0.363   0.356  0.690     0.80   0.80   0.37   0.10   0.00   0.11
+  hidden r_mean L8                       0.357   0.349  0.681     0.79   0.80   0.39   0.08   0.00   0.07
+  hidden r_mean L12                      0.430   0.409  0.704     0.79   0.85   0.49   0.24   0.00   0.21
+  hidden r_mean L16                      0.408   0.392  0.698     0.78   0.86   0.46   0.22   0.04   0.07
+  hidden r_mean L20                      0.411   0.402  0.704     0.80   0.84   0.42   0.22   0.04   0.14
+  hidden r_mean L24                      0.396   0.385  0.697     0.80   0.79   0.43   0.20   0.00   0.14
+  hidden r_mean L28                      0.372   0.366  0.692     0.81   0.75   0.45   0.12   0.00   0.11
+  hidden r_mean L20 + conf + length      0.410   0.399  0.703     0.79   0.86   0.42   0.22   0.02   0.14
+  his h28 mean                           0.385   0.382  0.696     0.81   0.76   0.43   0.16   0.00   0.14
+  bootstrap hidden r_mean L20 - confidence: bal.acc +0.020 [-0.042, +0.091]  macroF1 +0.133 [+0.083, +0.185]
+  bootstrap hidden r_mean L20 - confidence + length: bal.acc +0.054 [-0.010, +0.124]  macroF1 +0.148 [+0.099, +0.199]
+  bootstrap hidden r_mean L20 - hidden q_end L20 (question only): bal.acc +0.125 [+0.063, +0.180]  macroF1 +0.130 [+0.075, +0.181]
+  bootstrap hidden r_mean L20 - text TF-IDF: bal.acc +0.124 [+0.080, +0.168]  macroF1 +0.106 [+0.063, +0.150]
+
+## confusion matrix, hidden r_mean L20 (rows = Sunghun label, columns = predicted)
+                       modeli undete arithm reason none_o unit_c
+  modeling_relation       583     17     47     60     13     12
+  undetermined             16    142      6      0      3      2
+  arithmetic_execution     29      1     32      5      2      7
+  reasoning_state          34      1      3     11      0      0
+  none_observed            40      2      2      0      2      0
+  unit_conversion          16      0      8      0      0      4

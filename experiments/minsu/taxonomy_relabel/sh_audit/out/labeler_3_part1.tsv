@@ -1,0 +1,50 @@
+train-00480__T070__a04	undetermined	h	Only step outline given; final 6000 has no derivation.
+train-01247__T070__a03	undetermined	h	Answer only; no solution to locate the error.
+train-06696__T070__a07	modeling_relation	h	Subtracts the 50 pounds bought instead of adding them.
+train-03637__T070__a07	modeling_relation	m	Treats remaining 2 objects as needing 2 trips, not one; alt=reasoning_state
+train-01459__T070__a03	modeling_relation	h	Ignores James himself; counts 3 people instead of 4.
+train-03284__T070__a04	modeling_relation	h	Uses remaining $11 as initial coin value instead of $14.
+train-03249__T070__a04	undetermined	h	Correct expressions set up but never computed; 22 output without derivation.
+svamp-chal-918__T070__a00	modeling_relation	h	Adds Jeff's cards to Nell's initial before subtracting her remaining.
+train-02019__T070__a00	modeling_relation	h	Sets sum of ages to 2A instead of A+M=80.
+svamp-chal-723__T070__a00	modeling_relation	m	Computed 14 deleted files, then wrongly added deleted apps; alt=answer_reporting
+train-02888__T070__a06	modeling_relation	h	Sums discounted total cost instead of the savings asked.
+train-03391__T070__a06	modeling_relation	m	Miscounts travel days, omitting two days traveling home; alt=reasoning_state
+train-07235__T070__a01	reasoning_state	m	Correctly finds C=11, then treats it as current age, subtracts 5; alt=modeling_relation
+train-05093__T070__a07	undetermined	h	Answer only; no reasoning shown.
+train-00555__T070__a07	undetermined	h	Correct relations written but computation omitted; 131 output without derivation.
+train-03966__T070__a05	modeling_relation	h	Reverses overlap subtraction (13-15), then arbitrary +1 adjustment.
+train-06543__T070__a01	modeling_relation	m	Uses 250 days per year as days per season; alt=unit_conversion
+train-03922__T070__a04	modeling_relation	m	Gives yearly shortfall 600, not divided by 12 for monthly; alt=unit_conversion
+svamp-chal-112__T070__a00	modeling_relation	h	Computes oranges instead of the asked number of sacks.
+train-04796__T070__a02	none_observed	h	Model's 120 matches reference derivation; gold 140 appears wrong.
+train-05631__T070__a04	reasoning_state	m	Subtracts the dropped class hours twice; alt=modeling_relation
+train-04102__T070__a05	modeling_relation	h	Treats discounted $500 as undiscounted; divides by units instead of 0.8.
+train-03395__T070__a00	modeling_relation	h	Interprets 1/3 bigger as 1/3 times Canada's size.
+train-02541__T070__a07	unit_conversion	m	Converts 30 seconds to hours inverted (3600/30); mislabels miles as feet; alt=modeling_relation
+train-06527__T070__a01	modeling_relation	h	Total omits dad's $25; adds only mom's $50 to $12.
+svamp-chal-417__T070__a00	reasoning_state	m	Solves x=-7 then wrongly flips sign to 7 books sold; alt=arithmetic_execution
+svamp-chal-954__T070__a00	modeling_relation	h	Uses 66 hiking campers as morning rowing count.
+train-04918__T070__a00	undetermined	h	Answer only; no solution to locate the error.
+train-07196__T070__a05	arithmetic_execution	h	Sums 120+240+30+40+70 as 520 instead of 500.
+train-02847__T070__a04	undetermined	h	Answer only; no solution to locate the error.
+train-06256__T070__a02	modeling_relation	h	Stops at final-round team points; ignores per-player average difference asked.
+train-04202__T070__a05	modeling_relation	h	Invents cooling time T+15 and double counts it in equation.
+train-06946__T070__a00	reasoning_state	m	Correct 96 found, then adds unstated third-day 1/5 usage; alt=modeling_relation
+train-04346__T070__a02	undetermined	h	Relations set up but never computed; 28 output without derivation.
+train-00981__T070__a01	modeling_relation	h	Assumes each person has two pairs, doubling stripe totals.
+train-05920__T070__a07	unit_conversion	h	Treats per-200g package prices as per-gram prices.
+train-00902__T070__a02	modeling_relation	h	Gives piglets 180 like adults instead of remaining 120 straws.
+train-06651__T070__a07	arithmetic_execution	h	285-49-59 computed as 187 instead of 177.
+train-04865__T070__a02	reasoning_state	m	Omits twin births; adds only 30,000 single births; alt=modeling_relation
+train-06425__T070__a02	modeling_relation	m	Multiplies surveys by per-question pay, omitting 10 questions per survey; alt=unit_conversion
+train-00538__T070__a07	modeling_relation	h	Labels 3450 as cost price and applies 15% profit twice.
+train-06724__T070__a00	modeling_relation	h	Counts first three baskets as one basket of 38.
+train-02504__T070__a05	modeling_relation	h	Invents multi-day scenario with assumed n=10 instead of single day.
+train-06306__T070__a03	modeling_relation	h	Sets 21n=49 mixing per-bag and three-bag totals; reports apple count not ounces.
+train-03717__T070__a05	modeling_relation	h	Adds back the 4 given plants, setting 8x=20 instead of 8x-4=20.
+train-00118__T070__a02	modeling_relation	h	Sums objects over weeks instead of reporting final week count.
+svamp-chal-463__T070__a00	modeling_relation	h	Wrong relation: roses cut = added minus thrown, then subtracts thrown again.
+train-06254__T070__a05	modeling_relation	h	Adds gifts to 125 euros though that total already includes them.
+train-00191__T070__a07	modeling_relation	h	Ignores three foxes; uses per-fox catches as total caught.
+train-02085__T070__a07	modeling_relation	h	Subtracts cash paid from trade-in value instead of adding them.

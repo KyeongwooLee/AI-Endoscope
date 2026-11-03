@@ -1,0 +1,41 @@
+wrong answers typed: 824  A=253  B=571
+mean reasoning length (tokens): A=229  B=215
+
+## A vs B  (n=253 vs 571, problems=824), AUROC  [within = same-problem pairs]
+  input                                 AUROC  within  pairs
+  length                                0.532     nan      0
+  confidence                            0.506     nan      0
+  confidence + length                   0.510     nan      0
+  text TF-IDF                           0.605     nan      0
+  hidden q_end L4                       0.562     nan      0
+  hidden q_end L8                       0.537     nan      0
+  hidden q_end L12                      0.552     nan      0
+  hidden q_end L16                      0.571     nan      0
+  hidden q_end L20                      0.607     nan      0
+  hidden q_end L24                      0.603     nan      0
+  hidden q_end L28                      0.619     nan      0
+  hidden r_end L4                       0.555     nan      0
+  hidden r_end L8                       0.540     nan      0
+  hidden r_end L12                      0.618     nan      0
+  hidden r_end L16                      0.582     nan      0
+  hidden r_end L20                      0.569     nan      0
+  hidden r_end L24                      0.608     nan      0
+  hidden r_end L28                      0.583     nan      0
+  hidden r_mean L4                      0.607     nan      0
+  hidden r_mean L8                      0.618     nan      0
+  hidden r_mean L12                     0.636     nan      0
+  hidden r_mean L16                     0.651     nan      0
+  hidden r_mean L20                     0.636     nan      0
+  hidden r_mean L24                     0.638     nan      0
+  hidden r_mean L28                     0.650     nan      0
+  hidden ans L4                         0.536     nan      0
+  hidden ans L8                         0.537     nan      0
+  hidden ans L12                        0.573     nan      0
+  hidden ans L16                        0.617     nan      0
+  hidden ans L20                        0.590     nan      0
+  hidden ans L24                        0.565     nan      0
+  hidden ans L28                        0.581     nan      0
+  hidden r_mean L20 + conf + length     0.629     nan      0
+  bootstrap hidden r_mean L20 - hidden q_end L20: +0.028 [-0.022, +0.082]
+  bootstrap hidden r_mean L20 - confidence + length: +0.125 [+0.069, +0.180]
+  bootstrap hidden r_mean L20 - text TF-IDF: +0.030 [-0.016, +0.074]

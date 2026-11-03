@@ -1,0 +1,13 @@
+## agreement on 30 shared items (6 labelers each)
+  pairwise: code 0.80, group 0.92, A-vs-B (pairs where both A/B) 0.92
+  Fleiss kappa: code 0.77, group 0.86
+  all 6 agree: code 17/30, group 25/30
+  majority size (group): {5: 1, 3: 1, 6: 25, 4: 3}
+  code disagreement patterns: {'FC/MS': 5, 'CO/MS': 3, 'CV/HA': 2, 'CO/UC': 1, 'CO/CV': 1, 'CO/FC/MS': 1}
+
+## 990 SETUP errors
+  groups: A=253 (26%)  B=571 (58%)  C=91 (9%)  D=40 (4%)  UN=35 (4%)
+  codes : CV=115  CO=106  HA=32  OP=136  FC=198  MS=205  TG=32  PS=91  UC=40  UN=35
+  borderline (conf m): 600 (61%)  by group: A 64%  B 59%
+  auto-located step was NOT the first error (loc=n): 242 (24%)
+  per-labeler A share on own unique items: 29% 24% 26% 24% 22% 25%

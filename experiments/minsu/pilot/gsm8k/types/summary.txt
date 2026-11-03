@@ -1,0 +1,11 @@
+solutions=42951 problems=8792 wrong=9734
+problems with >=1 wrong, by resampling behaviour: {'mixed': 3693, 'always_wrong_varied': 416, 'always_wrong_same': 138}
+
+## all (n=9734)
+  ARITH=414 (4%)  NEWNUM=31 (0%)  SETUP=5659 (58%)  TARGET=728 (7%)  OTHER=707 (7%)  NOEQ=2195 (23%)
+
+## has correct sibling (n=7061)
+  ARITH=328 (5%)  NEWNUM=20 (0%)  SETUP=3797 (54%)  TARGET=589 (8%)  OTHER=554 (8%)  NOEQ=1773 (25%)
+
+## always wrong (n=2673)
+  ARITH=86 (3%)  NEWNUM=11 (0%)  SETUP=1862 (70%)  TARGET=139 (5%)  OTHER=153 (6%)  NOEQ=422 (16%)
