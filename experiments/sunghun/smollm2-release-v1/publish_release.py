@@ -83,6 +83,14 @@ def gh(arguments, retry=3):
     raise RuntimeError("GitHub command failed: " + result.stderr[-2500:])
 
 
+def find_release():
+    # A draft without a published tag can return 404 from /releases/tags/{tag}.
+    pages = json.loads(gh(["api", f"repos/{REPO}/releases?per_page=100", "--paginate", "--slurp"]))
+    matches = [release for page in pages for release in page if release["tag_name"] == TAG]
+    require(len(matches) <= 1, "Multiple releases use the intended tag; inspect before uploading")
+    return matches[0] if matches else None
+
+
 def publish(root, target):
     require(re.fullmatch("[0-9a-f]{40}", target), "Pin a pushed sunghun commit SHA, not default main")
     assets = verified_assets(root)
@@ -92,15 +100,14 @@ def publish(root, target):
     status_path = root.parent / (root.name + "-publication.json")
     def status(state, **extra):
         status_path.write_text(json.dumps(dict(state=state, tag=TAG, updated_unix=time.time(), **extra), indent=2), encoding="utf-8")
-    lookup = subprocess.run(["gh", "api", f"repos/{REPO}/releases/tags/{TAG}"], capture_output=True, text=True, encoding="utf-8", timeout=60)
-    if lookup.returncode == 0:
-        release = json.loads(lookup.stdout)
+    release = find_release()
+    if release is not None:
         require(release["draft"] and RECOVERY_FINGERPRINT in release["body"], "Existing release is not this editable recovery draft")
     else:
-        require("404" in lookup.stderr or "Not Found" in lookup.stderr, "Cannot safely determine if release exists")
         gh(["release", "create", TAG, "-R", REPO, "--target", target, "--draft", "--latest=false",
             "--title", "SmolLM2 GSM8K/SVAMP features v1 (compact + full, recovered)", "--notes-file", str(notes_path)])
-        release = json.loads(gh(["api", f"repos/{REPO}/releases/tags/{TAG}"]))
+        release = find_release()
+        require(release is not None, "Created draft is missing from the release inventory")
     require(release["target_commitish"] == target, "Existing draft targets another commit")
     for name, expected in assets.items():
         current = {a["name"]: a for a in json.loads(gh(["api", f"repos/{REPO}/releases/{release['id']}/assets?per_page=100"]))}

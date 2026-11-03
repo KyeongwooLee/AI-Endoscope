@@ -14,7 +14,7 @@ import numpy as np
 
 from build_release import COMPACT_KEYS, combine_examples, compact_arrays, make_schema
 from load_data import SCALAR_NAMES, feature_matrix, iter_compact, iter_full, scalar_features, verify_checksums
-from publish_release import verified_assets
+from publish_release import find_release, verified_assets
 
 
 def synthetic(length):
@@ -26,6 +26,16 @@ def synthetic(length):
 
 
 class ReleaseTests(unittest.TestCase):
+    def test_find_unpublished_draft_without_tag_lookup(self):
+        draft = dict(tag_name="smollm2-features-v1", draft=True, id=123)
+        with patch("publish_release.gh", return_value=json.dumps([[], [draft]])) as call:
+            self.assertEqual(find_release(), draft)
+            self.assertIn("--paginate", call.call_args.args[0])
+            self.assertIn("--slurp", call.call_args.args[0])
+        with patch("publish_release.gh", return_value=json.dumps([[draft, draft]])):
+            with self.assertRaises(ValueError):
+                find_release()
+
     def test_exact_subsets(self):
         source = synthetic(65)
         out = compact_arrays(source)
