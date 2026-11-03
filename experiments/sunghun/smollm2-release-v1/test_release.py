@@ -39,7 +39,8 @@ class ReleaseTests(unittest.TestCase):
     def test_ragged_loader_and_availability(self):
         examples = []
         for name, length in [("short", 32), ("long", 33)]:
-            record = dict(id=name, label=dict(answer_correct=name == "short", analysis_eligible=True))
+            record = dict(id=name, text="reasoning\u2028paragraph\u2029answer",
+                label=dict(answer_correct=name == "short", analysis_eligible=True))
             examples.append((record, compact_arrays(synthetic(length))))
         binary, lines = combine_examples(examples)
         with np.load(io.BytesIO(binary), allow_pickle=False) as z:

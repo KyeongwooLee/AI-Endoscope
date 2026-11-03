@@ -33,6 +33,14 @@ SVAMP 1,000응답, 별도 GSM8K sampling 4,000응답의 완료 feature와 양방
 기존 실행·AI 주석을 보존한 별도 수집이며 **추가 4,000개의 오류 유형은 아직 미분류·인간 미검수**다.
 고유 질문은 2,717개이며 유형별 균형 표본이나 새 미사용 test가 아니다.
 
+### SmolLM2 전체 feature (compact / full)
+
+[데이터 설명·계산식·로더](smollm2-release-v1/README.md)와
+[전용 Release](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/smollm2-features-v1)에서
+GSM8K train 7,473응답 및 SVAMP 1,000응답을 받는다. Qwen과 feature 종류를 맞춘 compact와
+이번에 추출한 모든 feature의 full을 구분했다. 보존 원본 1,744개와 명시적 재실행 6,729개를 포함하며,
+오류 유형 주석이나 새 verifier 성능 결과는 포함하지 않는다.
+
 ## Contents
 
 - `gsm8k-logit-study/`: 실제 사용한 연구 코드, 설정, 설계 문서, 테스트.

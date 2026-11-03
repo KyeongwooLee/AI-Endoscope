@@ -51,7 +51,8 @@ def iter_compact(root, t=32, parsed_only=False):
     if t not in CHECKPOINTS:
         raise ValueError("Unavailable checkpoint")
     for batch in sorted(Path(root).glob("batch_[0-9][0-9][0-9][0-9]")):
-        records = {r["id"]: r for r in map(json.loads, (batch / "generations.jsonl").read_text(encoding="utf-8").splitlines())}
+        lines = (batch / "generations.jsonl").read_text(encoding="utf-8").split("\n")
+        records = {r["id"]: r for r in (json.loads(line) for line in lines if line)}
         with np.load(batch / "features.npz", allow_pickle=False) as z:
             data = {key: z[key] for key in z.files}
         lookup = {str(v): i for i, v in enumerate(data["readout_ids"])}

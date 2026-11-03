@@ -1,6 +1,6 @@
 # SmolLM2: Compact / Full Feature Data
 
-배포 파일은 [GitHub Releases](https://github.com/KyeongwooLee/AI-Endoscope/releases)에서 확인한다.
+배포 파일은 [SmolLM2 compact/full Release](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/smollm2-features-v1)에서 받는다.
 **실제 공개 범위와 최신 정오답 집계는 asset의 `RELEASE_SCOPE.md`와 `dataset_summary.json`이 기준**이다.
 추론 완료와 원본 백업 완료를 구분하며, 전체 검증 전에는 전체 Release로 공개하지 않는다.
 
@@ -9,6 +9,10 @@
 나머지 421배치 / 6,729응답을 재실행하는 복구 protocol을 사용한다.
 **재실행분은 유실된 원본 파일 자체의 복원이 아니며** fingerprint/provenance를 구분한다.
 Metadata에 남은 과거 숫자 label을 새 응답에 그대로 붙이지 않고 다시 판정한다.
+
+이번 배포 대상은 **보존 원본 1,744응답 + 재실행 6,729응답 = 전체 8,473응답 / 530배치**다.
+전체 백업은 2026-10-27 완료됐으며, 배포 시 모든 원본 ZIP/member hash, 배열 shape,
+현재 숫자 label, compact 변환의 정확한 값 일치와 full 원본 ZIP 보존을 다시 검증한다.
 
 ## 데이터 범위
 
@@ -21,14 +25,15 @@ Metadata에 남은 과거 숫자 label을 새 응답에 그대로 붙이지 않�
   정확한 prompt 및 설정은 실행 metadata의 `input/config.json`, 실제 token IDs는 generation record에 있다.
 - 모델 자신의 생성 경로를 causal replay했다. Gold 풀이를 teacher forcing해서 얻은 feature가 아니다.
 
-### 원래 완료된 실행의 집계
+### 이번 공개 응답의 집계
 
 | 데이터 | 응답 | 숫자 정답 | 오답(형식 실패 포함) | 형식 실패 | 길이 제한 도달 |
 |---|---:|---:|---:|---:|---:|
 | GSM8K train | 7,473 | 3,300 | 4,173 | 425 | 37 |
 | SVAMP | 1,000 | 417 | 583 | 36 | 4 |
 
-이는 **유실 전 전체 실행의 metadata 집계**이며, 현재 보존 원본의 수를 뜻하지 않는다.
+이는 **보존 원본과 재실행분을 합친 현재 응답의 집계**다. 유실 전 과거 집계와 숫자는 같지만,
+재실행분을 유실된 원본 파일 자체로 해석하면 안 된다. 실제 배포 시 재판정한 `dataset_summary.json`이 기준이다.
 41개 길이 제한 도달 응답은 모두 형식 실패에도 포함되므로 두 수를 더하지 않는다.
 정답률은 GSM8K 44.16%, SVAMP 41.70%다. 이 데이터로 새 verifier를 학습/평가한 결과는 아직 없다.
 기존 Qwen 오류 유형 주석이나 Qwen probe 가중치는 이번 데이터의 label/모델이 아니다.
@@ -53,7 +58,8 @@ Compact는 원본 FP32 배열에서 **필요한 축/시점만 선택**한다. �
 Full은 배포 대상 530개 batch ZIP의 **바이트를 그대로** 여러 part에 넣는다. 보존 원본과 명시적 재실행 batch를 함께 포함한다.
 GitHub 개별 asset 크기 제한을 피하기 위한
 약 960 MiB 단위의 묶음이며, `.part` 파일을 바이너리로 이어 붙이는 형식이 아니다.
-유실 전 전체 원본 batch는 10,399,064,394 bytes였다. 재실행 후 Compact/Full의 실제 크기는 완성된 asset에서 확인한다.
+이번 배포 대상 원본 batch ZIP 합계는 10,402,236,862 bytes다. 외부 ZIP/설명 파일을 포함한
+Full 크기와 Compact 크기는 실제 asset에서 확인한다.
 Compact와 Full은 같은 응답의 다른 뷰이지, 서로 다른 표본이 아니다.
 
 ### Qwen과 무엇이 같은가
@@ -106,6 +112,7 @@ batch_0000/generations.jsonl
 | `readouts` | float32 `[R,3,3]` | 매 위치 0..min(128,T-1), layer6/9/12, entropy/margin/top1 |
 
 Label/생성 답변은 JSONL, 문제와 gold는 `questions.json`에 있다. **dataset+id로 join**한다.
+JSONL은 LF(`\n`)로만 나눈다. 문자열 안에 있는 Unicode U+2028/U+2029를 새 레코드로 나누면 안 된다.
 `fingerprint`, `provenance.kind`로 보존 원본과 복구 재실행분을 구분한다. 같은 ID의 원래 label metadata를
 새 응답에 덮어쓰지 않는다. Compact와 Full의 현재 응답/label이 서로 대응한다.
 Qwen과 ID가 같아도 생성 응답과 label은 다르므로 Qwen label을 붙이지 않는다.
