@@ -1,0 +1,23 @@
+{
+  "data_dir": "sae_error_clustering/data",
+  "output_dir": "sae_error_clustering/results",
+  "release": "qwen-gsm8k-self-errors-v1",
+  "expected_responses": 7691,
+  "expected_problems": 3489,
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "sae": "HuggingAnalist/sae-qwen2.5-1.5B-res",
+  "sae_revision": "2a9297bf085d40d36ae0aad8a3a76a28d0ed6d59",
+  "sae_subfolder": "layer_17/final_sae",
+  "layer": 17,
+  "chunk_size": 128,
+  "shard_size": 32,
+  "components": 64,
+  "k_values": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "seeds": [42, 43, 44],
+  "n_init": 10,
+  "silhouette_samples": 2000,
+  "resample_runs": 5,
+  "split_seed": 42,
+  "confirmation_fraction": 0.2
+}
