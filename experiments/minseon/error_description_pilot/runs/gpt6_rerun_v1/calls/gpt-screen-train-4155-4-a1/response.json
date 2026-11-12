@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"12 iPods","check":"Emmy has 14 − 6 = 8 iPods. Since Emmy has twice Rosa’s number, Rosa has 8 ÷ 2 = 4, giving 8 + 4 = 12 together.","evidence_quote":"2 * 8 = 16 iPods","error_description":"The solution multiplies Emmy’s remaining number by 2 to obtain Rosa’s number, reversing the stated relationship. Rosa has 4 iPods, not 16."}

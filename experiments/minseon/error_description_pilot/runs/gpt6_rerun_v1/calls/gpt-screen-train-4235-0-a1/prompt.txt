@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: After 100 new people move into a town, 400 of the original population move out. Every year afterward, the town’s population is halved. After 4 years, the population is 60 people. Before the new people moved in, how many people lived in the town?
+SOLUTION: To solve this problem, let's work backwards from the given information.
+
+1. **Final Population After 4 Years:**
+   - The population after 4 years is 60 people.
+
+2. **Population After 3 Years:**
+   - Before the population is halved, it was 60 * 2 = 120 people.
+
+3. **Population After 2 Years:**
+   - Before the population is halved, it was 120 * 2 = 240 people.
+
+4. **Population After 1 Year:**
+   - Before the population is halved, it was 240 * 2 = 480 people.
+
+5. **Population Before New People Moved In:**
+   - Before the new people moved in, the population was 480 people.
+
+#### 480
+This is the number of people living in the town before the new people moved in.

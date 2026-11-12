@@ -1,0 +1,32 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Danai is decorating her house for Halloween. She puts 12 plastic skulls all around the house. She has 4 broomsticks, 1 for each side of the front and back doors to the house. She puts up 12 spiderwebs around various areas of the house. Danai puts twice as many pumpkins around the house as she put spiderwebs. She also places a large cauldron on the dining room table. If Danai has the budget left to buy 20 more decorations and has 10 left to put up, how many decorations will she put up in all?
+SOLUTION: Step 1: Calculate the total number of decorations Danai has already put up.
+- Plastic skulls: 12
+- Broomsticks: 4
+- Spiderwebs: 12
+- Pumpkins: 2 * 12 (twice as many as spiderwebs)
+- Cauldron: 1
+
+Step 2: Calculate the total decorations put up.
+- Total decorations = Plastic skulls + Broomsticks + Spiderwebs + Pumpkins + Cauldron
+- Total decorations = 12 + 4 + 12 + 24 + 1
+
+Step 3: Add the decorations Danai plans to put up.
+- Danai plans to put up 10 more decorations.
+
+Step 4: Calculate the total number of decorations after putting up the additional ones.
+- Total decorations after = Total decorations + 10
+
+Step 5: Verify the total decorations.
+- Total decorations = 12 + 4 + 12 + 24 + 1
+- Total decorations = 55
+
+Step 6: Add the decorations Danai plans to buy.
+- Total decorations after buying = Total decorations + 20
+
+Step 7: Calculate the final total.
+- Total decorations after buying = 55 + 20
+
+#### 75
+Danai will put up a total of 75 decorations.

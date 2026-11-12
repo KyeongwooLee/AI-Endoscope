@@ -1,0 +1,22 @@
+EXECUTION FAILURE control-2-one_correct-0 Unexpected tool activity for control-2-one_correct-0; do not accept experimental output
+EXECUTION FAILURE control-2-one_correct-1 Unexpected tool activity for control-2-one_correct-1; do not accept experimental output
+EXECUTION FAILURE control-2-negative_same_question-1 Unexpected tool activity for control-2-negative_same_question-1; do not accept experimental output
+EXECUTION FAILURE control-2-negative_same_question-0 Unexpected tool activity for control-2-negative_same_question-0; do not accept experimental output
+Traceback (most recent call last):
+  File "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/gpt6_rerun_v1/source/run_gpt.py", line 70, in <module>
+    run(phase)
+  File "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/gpt6_rerun_v1/source/run_gpt.py", line 64, in run
+    if fatal:raise fatal
+  File "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/gpt6_rerun_v1/source/run_gpt.py", line 56, in run
+    try:r=future.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/gpt6_rerun_v1/source/run_gpt.py", line 38, in judge
+    obj,meta,raw=call(p['job_id'],p['prompt'],'judge',1);assert obj.get('judgment') in ['same','different','uncertain'];return {k:v for k,v in p.items() if k!='prompt'}|{'output':obj,'model':'gpt-6-astra','reasoning_effort':'medium','usage':meta['usage'],'fresh_context':True,'human_ground_truth':False}
+  File "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/gpt6_rerun_v1/source/run_gpt.py", line 23, in call
+    if toolitems:raise RuntimeError(f'Unexpected tool activity for {job_id}; do not accept experimental output')
+RuntimeError: Unexpected tool activity for control-2-negative_same_question-0; do not accept experimental output

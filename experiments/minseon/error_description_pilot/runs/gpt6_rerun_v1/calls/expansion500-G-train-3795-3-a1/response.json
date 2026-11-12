@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3795-3",
+  "response_sha256": "a9b91c32621f89c494a21c3f242cd5717d638972720d71308a05429679627d14",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 40",
+  "evidence_start": 0,
+  "evidence_end": 7,
+  "evidence_occurrence": null,
+  "question_evidence_quote": "Natasha was going 10 mph over the speed limit",
+  "observed_error": "The headline answer contradicts the correctly calculated speed limit in the explanation.",
+  "violated_condition": "The speed limit must equal (60 miles / 1 hour) minus 10 mph.",
+  "error_description": "The response gives 40 as its headline answer, although its explanation correctly computes Natasha’s speed and subtracts 10 mph. The headline does not satisfy the required relation between her 60 mph travel speed and the speed limit.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text establishes an inconsistent headline answer but does not show how 40 was obtained."
+}

@@ -1,0 +1,95 @@
+EMBED pilot130 R 130
+EMBED pilot130 E 125
+EMBED pilot130 G 123
+EMBED pilot130 Q 130
+CLUSTER pilot130 native R 100
+CLUSTER pilot130 native E 97
+CLUSTER pilot130 native G 96
+CLUSTER pilot130 native Q 100
+CLUSTER pilot130 common R 95
+CLUSTER pilot130 common E 95
+CLUSTER pilot130 common G 95
+CLUSTER pilot130 common Q 95
+CLUSTER pilot130 historical_common R 91
+CLUSTER pilot130 historical_common E 91
+CLUSTER pilot130 historical_common G 91
+CLUSTER pilot130 historical_common Q 91
+CLUSTER pilot130 historical_common old_E 91
+CLUSTER pilot130 historical_common old_G 91
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+CLUSTER pilot130 development R 30
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+CLUSTER pilot130 development E 28
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+CLUSTER pilot130 development G 27
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:49: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_label = type_of_target(labels_true)
+/home/coder/yaicon-errorprobe/.venv-edp/lib/python3.10/site-packages/sklearn/metrics/cluster/_supervised.py:50: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+  type_pred = type_of_target(labels_pred)
+CLUSTER pilot130 development Q 30
+ANALYSIS COMPLETE pilot130 496

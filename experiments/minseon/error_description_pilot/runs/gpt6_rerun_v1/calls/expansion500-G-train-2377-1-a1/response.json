@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2377-1",
+  "response_sha256": "2c890661ee5fef11d0109ae1d3f16fb35b51ff3062621f621a50746b7497c98b",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 168",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Tickets to the school play cost $6 for students and $8 for adults. If 20 students and 12 adults bought tickets, how many dollars' worth of tickets were sold?",
+  "observed_error": "The stated total of $168 does not equal 20 × $6 + 12 × $8.",
+  "violated_condition": "Total revenue must equal student ticket revenue plus adult ticket revenue.",
+  "error_description": "The response reports $168 in ticket sales, which does not equal the revenue from 20 student tickets at $6 each plus 12 adult tickets at $8 each. It provides no calculations establishing where the incorrect total arose.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The displayed plan is valid; the omitted calculations prevent distinguishing an incorrect relation from an arithmetic execution error."
+}

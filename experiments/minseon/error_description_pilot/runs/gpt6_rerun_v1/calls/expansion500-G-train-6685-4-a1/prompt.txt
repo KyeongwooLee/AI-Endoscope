@@ -1,0 +1,81 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-6685-4
+response_sha256: 76e14f2709528450eb943df79d67dceee0e8f6ab4b4591ffadabe911cac03bbe
+
+=== QUESTION ===
+Heather made four times as many pizzas as Craig made on their first day at work at Mr. Pizza Inns. On their second day, Heather made 20 fewer pizzas than Craig's number. If Craig made 40 pizzas on their first day and 60 more pizzas on their second day than their first day, calculate the total number of pizzas the two made together in the two days.
+=== MODEL SOLUTION ===
+Step 1: Determine the number of pizzas Heather made on the first day.
+Heather made four times as many pizzas as Craig.
+Craig made 40 pizzas on the first day.
+Heather made 4 * 40 = 160 pizzas on the first day.
+
+Step 2: Determine the number of pizzas Heather made on the second day.
+Heather made 20 fewer pizzas than Craig.
+Craig made 60 more pizzas on the second day than his first day.
+Craig made 60 pizzas on the second day.
+Heather made 60 - 20 = 40 pizzas on the second day.
+
+Step 3: Calculate the total number of pizzas Heather made.
+Heather made 160 pizzas on the first day and 40 pizzas on the second day.
+Total number of pizzas Heather made = 160 + 40 = 200
+
+Step 4: Calculate the total number of pizzas Craig made.
+Craig made 40 pizzas on the first day and 60 more on the second day than the first.
+Craig made 40 + 60 = 100 pizzas on the second day.
+Total number of pizzas Craig made = 40 + 100 = 140
+
+Step 5: Calculate the total number of pizzas made by both Heather and Craig.
+Total number of pizzas made by both = 200 (Heather) + 140 (Craig) = 340
+
+#### 340
+This is the total number of pizzas made by both Heather and Craig together in the two days.
+=== REFERENCE SOLUTION (fallible aid) ===
+Craig made 40 pizzas on their first day at work, while heather made four times that number, a total of 4*40= 160 pizzas.
+Together, they made 160+40 = <<160+40=200>>200 pizzas on their first day.
+On the second day, Craig made 60 more pizzas than his first day at work, which totals 60+40 = <<60+40=100>>100 pizzas.
+On the same day, Heather made 20 fewer pizzas than Craig, a total of 100-20 = <<100-20=80>>80 pizzas.
+Together, they made 80+100 = <<80+100=180>>180 pizzas on the second day.
+In the two days, the two of them made a total of 180 +200 = <<180+200=380>>380 pizzas.
+#### 380
+=== END ===

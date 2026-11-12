@@ -1,0 +1,107 @@
+[
+  {
+    "source_id": "train-1081-4",
+    "issue": "reference_error",
+    "reason_ko": "원래 풀이1060은 맞다. 참조가500/1000을1000/500으로 뒤집고, 둘째 벌 수800을700으로 바꿨다.",
+    "arithmetic": "1000*(1-.2)=800; 500/1000=.5; 800*.5*1.4+500=1060",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_screen": {
+      "status": "no_math_error",
+      "independent_answer": "1060 liters",
+      "check": "The second hive produces 500 × 0.80 × 1.40 = 560 liters. Both hives produce 500 + 560 = 1060 liters, matching the solution and answer marker.",
+      "evidence_quote": "#### 1060",
+      "error_description": ""
+    }
+  },
+  {
+    "source_id": "train-3995-2",
+    "issue": "reference_error",
+    "reason_ko": "타일 넓이가6제곱인치라고 주어졌다. 원래 풀이576이 문구에 맞고, 참조는6을 한 변 길이로 취급했다.",
+    "arithmetic": "48*72/6=576",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_screen": {
+      "status": "no_math_error",
+      "independent_answer": "576 tiles",
+      "check": "The floor area is 48 × 72 = 3456 square inches. Dividing by 6 square inches per tile gives 576 tiles, matching the solution.",
+      "evidence_quote": null,
+      "error_description": ""
+    }
+  },
+  {
+    "source_id": "train-3795-3",
+    "issue": "answer_marker_conflict",
+    "reason_ko": "본문의 제한속도50은 맞지만 서두####40과 충돌한다. 본문의 계산 오류로 분류하지 않는다.",
+    "arithmetic": "60/1-10=50",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_screen": {
+      "status": "answer_conflict",
+      "independent_answer": "50 mph",
+      "check": "Natasha's speed was 60 miles ÷ 1 hour = 60 mph, so the speed limit was 60 − 10 = 50 mph. The worked solution is correct, but its leading answer marker conflicts with it.",
+      "evidence_quote": "#### 40",
+      "error_description": "The leading marker gives 40, while the correct worked final answer is 50 mph."
+    }
+  },
+  {
+    "source_id": "train-7430-4",
+    "issue": "answer_marker_conflict",
+    "reason_ko": "본문의 남은 좌석120은 맞지만 서두####20과 충돌한다.",
+    "arithmetic": "50*4-80=120",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_screen": {
+      "status": "answer_conflict",
+      "independent_answer": "120 available spaces",
+      "check": "The total capacity is 50 × 4 = 200 people, leaving 200 − 80 = 120 spaces. The worked solution is correct, but its leading answer marker conflicts with it.",
+      "evidence_quote": "#### 20",
+      "error_description": "The leading marker states 20, while the correct derivation and worked final answer state 120."
+    }
+  },
+  {
+    "source_id": "train-7421-3",
+    "issue": "answer_marker_conflict",
+    "reason_ko": "본문의 상금160은 맞지만 서두####200과 충돌한다.",
+    "arithmetic": "(2400-2400/3)/10=160",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_screen": {
+      "status": "answer_conflict",
+      "independent_answer": "$160 per winner.",
+      "check": "The first winner receives $2,400 / 3 = $800, leaving $1,600. Each of the next ten winners receives $1,600 / 10 = $160, matching the worked solution but contradicting the leading marker.",
+      "evidence_quote": "#### 200",
+      "error_description": "The leading answer marker states 200, while the correct worked final answer is 160."
+    }
+  },
+  {
+    "source_id": "train-1297-4",
+    "issue": "answer_marker_conflict",
+    "reason_ko": "본문의 학생8명은 맞지만 서두####16과 충돌한다.",
+    "arithmetic": "40*.8*.25=8",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_screen": {
+      "status": "answer_conflict",
+      "independent_answer": "8 students",
+      "check": "80% of 40 is 32, and 25% of 32 is 8. The worked solution and final sentence are correct, but the leading answer marker conflicts with them.",
+      "evidence_quote": "#### 16",
+      "error_description": "The leading marker gives 16, while the correct worked final answer is 8."
+    }
+  },
+  {
+    "source_id": "train-6861-3",
+    "issue": "question_ambiguity",
+    "reason_ko": "둘이 게임 하나를 공동 구매하면12개, 각각 하나씩 사면24개다. 참조는 후자를 가정한다. 문구만으로 전자의 풀이를 확실한 오류로 단정하기 어렵다.",
+    "arithmetic": "60/5=12; 2*60/5=24",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_screen": {
+      "status": "ambiguous",
+      "independent_answer": "12 ice creams for one shared game; 24 for one game each.",
+      "check": "A shared game requires 60/5 = 12 ice creams. If both buy their own copy, they need (2 × 60)/5 = 24; the question does not clearly specify which.",
+      "evidence_quote": "So, they need to earn $60 in total.",
+      "error_description": "The solution correctly calculates the shared-game interpretation, but the wording also permits each friend buying a copy."
+    }
+  }
+]

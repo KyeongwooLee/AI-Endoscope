@@ -1,0 +1,81 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-6979-4
+response_sha256: a4d0f1a8be2ec5846696acd40e3630fe52bc61c3e9c9148fcf94ba47fa91a2e6
+
+=== QUESTION ===
+The length of a red bus is four times the length of an orange car. The length of the orange car is also 3.5 times shorter than the length of a yellow bus. If the yellow bus and red bus are sitting next to each other, what length of the red bus may the yellow bus driver see if the red bus is 48 feet long?
+=== MODEL SOLUTION ===
+To solve this problem, let's break it down step by step:
+
+1. **Determine the length of the orange car:**
+   - Let the length of the red bus be \( R \).
+   - Given \( R = 48 \) feet.
+   - The length of the orange car is \( \frac{R}{4} \).
+
+   \[
+   \text{Length of orange car} = \frac{48}{4} = 12 \text{ feet}
+   \]
+
+2. **Determine the length of the yellow bus:**
+   - Let the length of the yellow bus be \( Y \).
+   - The length of the yellow bus is 3.5 times longer than the length of the orange car.
+
+   \[
+   Y = 3.5 \times \text{Length of orange car} = 3.5 \times 12 = 42 \text{ feet}
+   \]
+
+3. **Compare lengths to determine the visible length:**
+   - The yellow bus driver can see the entire length of the red bus if they are sitting next to the red bus.
+
+   \[
+   \text{Visible length} = R = 48 \text{ feet}
+   \]
+
+Therefore,
+#### 48
+=== REFERENCE SOLUTION (fallible aid) ===
+If the red bus is 48 feet long, the orange car is 48/4 = <<48/4=12>>12 feet long.
+Since the length of the orange car is 3.5 times shorter than a yellow bus, the yellow bus is 3.5*12 = <<3.5*12=42>>42 feet long.
+If sitting next to each other, the driver of the yellow car will see 48-42 = <<48-42=6>>6 feet of the red bus.
+#### 6
+=== END ===

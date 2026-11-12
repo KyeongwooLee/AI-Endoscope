@@ -1,0 +1,20 @@
+{
+  "source_id": "train-2965-2",
+  "response_sha256": "acc6baa0956e5a26abb2e202f7c42614410645e546c86142a661d3ae7516b7b8",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "**Step 4:** After 4 games, she has 1 ball.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Every four games, she buys a canister of three balls.",
+  "observed_error": "The ball count remains at one after game four, omitting the three-ball purchase.",
+  "violated_condition": "The first purchase adds three balls after game four, before any scheduled loss or wear.",
+  "error_description": "The response keeps Bertha's count at one ball after the fourth game. The required purchase at that point adds three balls to her initial one, and neither a loss nor wear has occurred yet. The stated count therefore fails to include the first scheduled purchase.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The count stays unchanged from game four to game five despite the scheduled loss of one ball.",
+    "The count stays unchanged at game ten despite explicitly noting that a ball wears out."
+  ],
+  "uncertainty_note": null
+}

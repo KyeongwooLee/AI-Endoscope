@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Tom cannot afford a normal doctor, so he goes to a discount clinic that is 70% cheaper.   It takes two visits, though, instead of 1.   A normal doctor charges $200 for a visit.   How much money does he save?
+SOLUTION: Step 1: Calculate the cost of a visit at the discount clinic.
+- Normal doctor's cost: $200
+- Discount clinic cost: 70% of $200
+
+Step 2: Calculate the total cost for two visits at the discount clinic.
+- Total cost for two visits: 2 * (70% of $200)
+
+Step 3: Calculate the total cost for one visit at the normal doctor's office.
+- Total cost for one visit: $200
+
+Step 4: Calculate the savings by comparing the total costs.
+- Savings: (Total cost for one visit at normal doctor) - (Total cost for two visits at discount clinic)
+
+Step 5: Perform the calculations.
+- 70% of $200 = 0.70 * $200 = $140
+- Total cost for two visits at discount clinic = 2 * $140 = $280
+- Total cost for one visit at normal doctor = $200
+- Savings = $200 - $280 = -$80
+
+#### -80
+It seems there is an error in the problem statement or the calculations. The discount clinic should not save money if the total cost is higher than the normal doctor's cost. Please double-check the problem or provide additional context.

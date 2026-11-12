@@ -1,0 +1,1 @@
+{"case1_error":"Numerical evaluation error: 8 × 5 is 40, not 35.","case2_error":"Treats the daily amount as the weekly total, omitting the five-day factor.","reason":"Case 1 evaluates a correct expression incorrectly; case 2 uses an incorrect relation between daily and weekly amounts.","judgment":"different"}

@@ -1,0 +1,10 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Adam teaches 50 students a year. How many students will Adam teach in 10 years if in the first year he only teaches 40 students?
+SOLUTION: Step 1: Identify the number of students Adam teaches in the first year, which is given as 40.
+Step 2: Identify the number of students Adam teaches in the following years, which is given as 50.
+Step 3: Calculate the total number of students Adam will teach in 10 years by adding the number of students taught in the first year to the number of students taught in the following 9 years. This is because the number of students taught in each subsequent year is the same as the number taught in the first year.
+
+Total number of students taught in 10 years = 40 (first year) + 9 * 50 (subsequent years)
+
+#### 530

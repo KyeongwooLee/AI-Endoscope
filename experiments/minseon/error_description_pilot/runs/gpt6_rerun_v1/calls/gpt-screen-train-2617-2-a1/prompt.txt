@@ -1,0 +1,16 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Mark builds an apartment that is 16 by 10 feet.  There are 6 rooms in total.  All the rooms are the same size except the living room which is as big as 3 other rooms.  How big is the living room?
+SOLUTION: Step 1: Calculate the total area of the apartment.
+The apartment is 16 by 10 feet, so the total area is 16 * 10 = 160 square feet.
+
+Step 2: Determine the area of one room.
+Since there are 6 rooms in total, and 3 of them are the same size, let's assume each of these rooms is the same size as one of the other rooms. Therefore, the area of one room is 160 / 6 = 26.67 square feet.
+
+Step 3: Calculate the area of the living room.
+The living room is as big as 3 other rooms, so its area is 3 * 26.67 = 80 square feet.
+
+Answer:
+#### 80
+#### 80
+#### 80

@@ -1,0 +1,1 @@
+{"case1_error":"Answers Tully’s current age instead of his age one year ago.","case2_error":"No mathematical error; 61 - 1 = 60 correctly answers the question.","reason":"Case 1 answers the wrong requested quantity, while Case 2 is correct. With one case having no clear error, the comparison is uncertain.","judgment":"uncertain"}

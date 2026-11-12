@@ -1,0 +1,45 @@
+{
+  "counts": {
+    "responses": 7691,
+    "unique_response_ids": 7691,
+    "questions": 3489,
+    "sampled": 6380,
+    "greedy": 1311,
+    "finish_stop": 7656,
+    "finish_length": 35,
+    "extra_identical_pid_response_copies": 5,
+    "identical_response_text_across_pids": 0,
+    "normalized_question_groups_spanning_multiple_pids": 0,
+    "rule_counts": {
+      "SETUP": 4422,
+      "NOEQ": 1797,
+      "TARGET": 586,
+      "OTHER": 549,
+      "ARITH": 311,
+      "NEWNUM": 26
+    },
+    "finish_length_with_valid_final_marker": 35,
+    "empty_or_whitespace_responses": 0
+  },
+  "expected": {
+    "responses": 7691,
+    "questions": 3489,
+    "sampled": 6380,
+    "greedy": 1311,
+    "finish_stop": 7656,
+    "finish_length": 35,
+    "extra_identical_pid_response_copies": 5,
+    "rule_counts": {
+      "SETUP": 4422,
+      "NOEQ": 1797,
+      "TARGET": 586,
+      "OTHER": 549,
+      "ARITH": 311,
+      "NEWNUM": 26
+    },
+    "prior_label_overlap_questions": 201,
+    "prior_label_overlap_rows": 467,
+    "prior_label_exact_pairs": 1
+  },
+  "mismatches": {}
+}

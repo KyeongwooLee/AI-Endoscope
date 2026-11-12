@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5597-0",
+  "response_sha256": "22f84c16549dcb1e7a5efac63468226b0f31ce779e34283bc8ccf9e7758df333",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 6: Cooking dinner takes 90 minutes, so she will arrive home at 6:30 pm.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "90 minutes to cook dinner when she returns home.",
+  "observed_error": "Step 6 advances the established 5:30 pm time by only 60 minutes despite stating a 90-minute cooking duration.",
+  "violated_condition": "Dinner completion must be 90 minutes after the errands finish at 5:30 pm.",
+  "error_description": "The response correctly reaches 5:30 pm after the errands, then states that 90 minutes of cooking ends at 6:30 pm. That clock-time addition advances only 60 minutes, omitting 30 minutes of the specified cooking duration before Jasmine can eat dinner.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

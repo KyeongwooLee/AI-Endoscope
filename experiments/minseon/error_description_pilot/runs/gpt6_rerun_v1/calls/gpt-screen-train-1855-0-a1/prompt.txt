@@ -1,0 +1,42 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: In a town where 60% of the citizens own a pet, half own a dog and 30 own a cat. How many citizens are in the town?
+SOLUTION: To solve this problem, let's denote the total number of citizens in the town as \( x \).
+
+1. **Determine the number of citizens who own a dog:**
+   - Half of the citizens own a dog.
+   - Therefore, the number of citizens who own a dog is \( \frac{x}{2} \).
+
+2. **Determine the number of citizens who own a cat:**
+   - We are given that 30 citizens own a cat.
+   - This means that the number of citizens who own a cat is 30.
+
+3. **Set up the equation:**
+   - The total number of citizens who own a pet (either a dog or a cat) is the sum of the citizens who own a dog and the citizens who own a cat.
+   - Therefore, we have:
+     \[
+     \frac{x}{2} + 30 = x
+     \]
+
+4. **Solve the equation:**
+   - Subtract \( \frac{x}{2} \) from both sides:
+     \[
+     30 = x - \frac{x}{2}
+     \]
+   - Combine like terms:
+     \[
+     30 = \frac{2x}{2} - \frac{x}{2}
+     \]
+     \[
+     30 = \frac{x}{2}
+     \]
+   - Multiply both sides by 2 to solve for \( x \):
+     \[
+     60 = x
+     \]
+
+5. **Conclusion:**
+   - The total number of citizens in the town is 60.
+
+#### 60
+The final answer is 60.

@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"14 lambs.","check":"The count is 6 + (2 × 2) - 3 + 7 = 14 lambs. Step 3 counts the two parent lambs twice, since they were already included in the initial six.","evidence_quote":"6 + 4 + 2 = 12 lambs","error_description":"Step 3 adds two original lambs again, inflating the total by two and producing 16 instead of 14."}

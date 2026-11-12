@@ -1,0 +1,12 @@
+{
+  "judgment_counts": {
+    "different": 2108,
+    "same": 1
+  },
+  "ground_truth": "none",
+  "interpretation_ko": "극단적 라벨 분포와 실제 판정 이유 오류 때문에 검색 점수를 실제 정확도 또는 방법 우열의 신뢰할 만한 증거로 사용하지 않음. 별도 AI10쌍 라벨 일치8개도 검수 정확도 검증이 아님.",
+  "examples": [
+    "pair-0986",
+    "pair-2036"
+  ]
+}

@@ -1,0 +1,39 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A group of 6 students organized a fundraiser to go to Nicaragua for the summer. For them to go on the trip, each of them needs at least $450. On top of that, they need $3000 for their miscellaneous collective expenses. On the first day of their fundraiser, they receive $600. On the second day, they receive $900, and on the third day, they receive $400. For the next 4 days, they receive only half of what they raised on the first 3 days. How much more money does each person need to raise for them to reach their goal?
+SOLUTION: Step 1: Calculate the total amount of money needed for the trip and miscellaneous expenses.
+Total = Miscellaneous expenses + Fundraiser expenses
+Total = $3000 + $450 * 6
+Total = $3000 + $2700
+Total = $5700
+
+Step 2: Calculate the total amount of money raised in the first 3 days.
+Money raised in the first 3 days = $600 + $900 + $400
+Money raised in the first 3 days = $1900
+
+Step 3: Calculate the amount of money raised in the next 4 days.
+Money raised in the next 4 days = 1/2 * $1900
+Money raised in the next 4 days = $950
+
+Step 4: Calculate the total amount of money raised after 7 days.
+Total raised after 7 days = Money raised in the first 3 days + Money raised in the next 4 days
+Total raised after 7 days = $1900 + $950
+Total raised after 7 days = $2850
+
+Step 5: Calculate the total amount of money needed to reach the goal.
+Total needed = Total raised after 7 days + Miscellaneous expenses
+Total needed = $2850 + $3000
+Total needed = $5850
+
+Step 6: Calculate the amount of money still needed to reach the goal.
+Money still needed = Total needed - Total raised after 7 days
+Money still needed = $5850 - $2850
+Money still needed = $3000
+
+Step 7: Calculate the amount of money each person needs to raise.
+Money each person needs = Money still needed / Number of students
+Money each person needs = $3000 / 6
+Money each person needs = $500
+
+#### 500
+Each person needs to raise $500 more for them to reach their goal.

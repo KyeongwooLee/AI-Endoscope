@@ -1,0 +1,19 @@
+{
+  "source_id": "train-1287-4",
+  "response_sha256": "97ea21eecb5939ef64dd9fc065db24506a210d228fd3752fdee3ec175aa78d76",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Tracy can walk on her hands one quarter the speed that Tracy can do cartwheels.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "But Pete can walk on his hands only one quarter the speed that Tracy can do cartwheels.",
+  "observed_error": "The response assigns the quarter-speed hand-walking relation to Tracy instead of Pete.",
+  "violated_condition": "Pete's hand-walking speed, not Tracy's, equals one quarter of Tracy's cartwheel speed.",
+  "error_description": "The response changes the person in the quarter-speed relation from Pete to Tracy, then writes that relation using Tracy's hand-walking speed. The question relates Pete's hand-walking speed of 2 miles per hour to Tracy's cartwheel speed, so the substituted relation fails to connect the given speed to the requested quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The response independently asserts S_f = P_h from the backward-speed relation P_b = 3 × S_f, which does not equate Susan's forward speed with Pete's hand-walking speed."
+  ],
+  "uncertainty_note": null
+}

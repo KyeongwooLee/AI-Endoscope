@@ -1,0 +1,17 @@
+{
+  "source_id": "train-950-4",
+  "response_sha256": "04d520452238ba5397bbd59e097d2d8a89a1f96a011839600fd19375986fac3d",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Theodore's total earnings every month is $300.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He also pays 10 percent of his total earnings in taxes.",
+  "observed_error": "The final amount equals earnings before taxes despite the stated net-earnings formula.",
+  "violated_condition": "Monthly net earnings must subtract 10% tax from the proceeds of both statue types.",
+  "error_description": "The response reports $300 as monthly net earnings, although $300 is the proceeds before taxes from 10 stone statues at $20 and 20 wooden statues at $5. This contradicts its stated subtraction of 10% tax; the intermediate arithmetic is not shown.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text supports a wrong final amount but does not show which numerical calculation produced it."
+}

@@ -1,0 +1,15 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Stella collects stamps. She counted 50 pages in her collector's album. There are 5 rows of 30 stamps in each of the first 10 pages of her album. The rest of the pages each have 50 stamps. How many stamps are in Stella's album?
+SOLUTION: Step 1: Calculate the total number of stamps in the first 10 pages.
+50 pages * 5 rows/page * 30 stamps/row = 750 stamps
+
+Step 2: Calculate the total number of stamps in the remaining pages.
+50 pages - 10 pages = 40 pages
+40 pages * 50 stamps/page = 2000 stamps
+
+Step 3: Calculate the total number of stamps in the entire album.
+750 stamps + 2000 stamps = 2750 stamps
+
+#### 2750
+The total number of stamps in Stella's album is 2750.

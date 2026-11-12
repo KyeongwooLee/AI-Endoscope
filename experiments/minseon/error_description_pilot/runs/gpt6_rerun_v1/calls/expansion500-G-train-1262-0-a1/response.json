@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1262-0",
+  "response_sha256": "5485bb2186c295e065e03793d70de58a50edf0486b3947f0117886baf5973fe5",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "So, the total pints of coffee she drank is \\( \\frac{36}{3} = 12 \\) pints.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "4.5 gallons of coffee were divided among 18 thermoses. Genevieve drank 3 thermoses.",
+  "observed_error": "The response divides the total 36 pints by the 3 thermoses consumed.",
+  "violated_condition": "The consumed quantity must be 3 times the amount per thermos, with each thermos containing 36/18 pints.",
+  "error_description": "The response divides all 36 pints by the 3 thermoses Genevieve drank, instead of dividing by the 18 thermoses filled and multiplying by 3. The arithmetic 36/3 = 12 is correct, but this relation does not represent the quantity she consumed.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

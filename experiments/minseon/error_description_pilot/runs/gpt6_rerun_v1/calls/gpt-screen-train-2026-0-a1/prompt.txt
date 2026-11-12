@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Inez has $150. She spends one-half on hockey skates and a certain amount on hockey pads. If Inez has $25 remaining, how much did the hockey pads cost, together, in dollars?
+SOLUTION: Step 1: Determine the amount spent on hockey skates.
+Inez starts with $150 and spends half on hockey skates.
+150 / 2 = 75
+Inez spent $75 on hockey skates.
+
+Step 2: Calculate the total amount spent on hockey skates and pads.
+Inez has $25 remaining after her purchases.
+75 + 25 = 100
+Inez spent a total of $100.
+
+Step 3: Find the cost of the hockey pads.
+The total amount spent was $100, and $75 was spent on hockey skates.
+100 - 75 = 25
+The hockey pads cost $25.
+
+#### 25
+The hockey pads cost $25 together.

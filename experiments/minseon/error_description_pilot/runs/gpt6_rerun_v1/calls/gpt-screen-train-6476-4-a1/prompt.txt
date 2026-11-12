@@ -1,0 +1,32 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Today Geoff bought 2 pairs of sneakers and spent $60 equally between the two. Tomorrow, he's going to spend 4 times as much on sneakers than he did on Monday. Wednesday, he'll spend 5 times as much on sneakers than he did on Monday. How much will Geoff spend on sneakers over these three days?
+SOLUTION: Step 1: Determine the amount spent on Monday.
+Geoff spent $60 on Tuesday which is equally between the two pairs of sneakers.
+$$
+\text{Amount spent on Monday} = \frac{\text{Total spent on Tuesday}}{2} = \frac{60}{2} = 30 \text{ dollars}
+$$
+
+Step 2: Calculate the amount spent on Tuesday.
+Geoff spent $60 on Tuesday which is equally between the two pairs of sneakers.
+$$
+\text{Amount spent on Tuesday} = 60 \text{ dollars}
+$$
+
+Step 3: Calculate the amount spent on Wednesday.
+Geoff will spend 5 times as much on sneakers on Wednesday as he did on Monday.
+$$
+\text{Amount spent on Wednesday} = 5 \times 30 = 150 \text{ dollars}
+$$
+
+Step 4: Calculate the total amount spent over the three days.
+Add the amounts spent on Monday, Tuesday, and Wednesday.
+$$
+\text{Total amount spent} = \text{Amount spent on Monday} + \text{Amount spent on Tuesday} + \text{Amount spent on Wednesday}
+$$
+$$
+\text{Total amount spent} = 30 + 60 + 150 = 240 \text{ dollars}
+$$
+
+#### 240
+Geoff will spend a total of 240 dollars on sneakers over these three days.

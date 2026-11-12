@@ -1,0 +1,17 @@
+{
+  "source_id": "train-689-4",
+  "response_sha256": "cc0c1268af25af407ea0262b3f6da714740edde35666032522e2274a0db4f80e",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The Lyft ride costs $4 more than the Uber ride.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "An Uber ride downtown costs $3 more than a Lyft ride.",
+  "observed_error": "The response makes Lyft $4 more expensive than Uber.",
+  "violated_condition": "Uber costs $3 more than Lyft, so Lyft must cost $3 less than Uber.",
+  "error_description": "The response states that Lyft costs $4 more than Uber and adds $4 to the $22 Uber fare. The question instead makes Uber $3 more expensive than Lyft, requiring subtraction of $3. The written addition is executed correctly; the fare relation has the wrong direction and difference.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

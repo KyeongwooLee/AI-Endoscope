@@ -1,0 +1,1 @@
+{"case1_error":"Correct multiplication expression evaluated incorrectly: 32 × 12 is 384, not 360.","case2_error":"Correct subtraction expression evaluated incorrectly: 80 − 16 is 64, not 40.","reason":"Both incorrectly evaluate a correctly written expression for the requested quantity.","judgment":"same"}

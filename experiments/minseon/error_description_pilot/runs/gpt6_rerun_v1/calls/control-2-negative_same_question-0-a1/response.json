@@ -1,0 +1,1 @@
+{"case1_error":"Numerical evaluation error: 80 - 16 equals 64, not 40.","case2_error":"Erroneous relation: adds sold pencils instead of subtracting them; 80 + 16 = 96 is correctly evaluated.","reason":"Case 1 miscalculates the correct expression; case 2 correctly evaluates an incorrect expression.","judgment":"different"}

@@ -1,0 +1,30 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jason is trying to figure out whether he can afford a new car. The car he wants costs $32,000, and he can make a down payment of $8,000. He'll have to get a loan for the rest of the amount and make 48 equal monthly payments on it. Each month, he also has to pay interest equal to 5% of that month's payment. How much will Jason's monthly payments be?
+SOLUTION: Step 1: Calculate the loan amount.
+Loan amount = Total cost of the car - Down payment
+Loan amount = $32,000 - $8,000
+Loan amount = $24,000
+
+Step 2: Calculate the total amount to be paid over 48 months.
+Total payments = Loan amount / Number of months
+Total payments = $24,000 / 48
+Total payments = $500 per month
+
+Step 3: Calculate the monthly interest payment.
+Monthly interest payment = 5% of monthly payment
+Monthly interest payment = 0.05 * $500
+Monthly interest payment = $25
+
+Step 4: Calculate the total amount paid excluding interest.
+Total amount paid excluding interest = Total payments - Monthly interest payment
+Total amount paid excluding interest = $500 - $25
+Total amount paid excluding interest = $475
+
+Step 5: Calculate the total amount paid including interest.
+Total amount paid including interest = Total amount paid excluding interest + Monthly interest payment
+Total amount paid including interest = $475 + $25
+Total amount paid including interest = $500
+
+#### 500
+Jason's monthly payments will be $500.

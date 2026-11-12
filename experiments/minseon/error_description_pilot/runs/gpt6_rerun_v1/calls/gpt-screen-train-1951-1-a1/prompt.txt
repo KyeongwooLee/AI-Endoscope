@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Marnie opens a bag of chips and eats 5 of them to see if she likes them. She does, so she eats 5 more. The bag has 100 chips in it and starting on the second day she has them, Marnie eats 10 each day. How many days does it take for Marnie to eat the whole bag of chips?
+SOLUTION: Step 1: Determine how many chips Marnie has eaten after the first day.
+Marnie eats 5 chips on the first day and then 5 more on the second day.
+5 + 5 = 10 chips eaten in total after the first two days.
+
+Step 2: Calculate the number of chips left in the bag after the first two days.
+The bag initially has 100 chips.
+100 - 10 = 90 chips left after the first two days.
+
+Step 3: Determine how many days it takes Marnie to eat the remaining chips.
+Marnie eats 10 chips each day from the third day onwards.
+90 / 10 = 9 days to eat the remaining chips.
+
+Step 4: Calculate the total number of days it takes Marnie to eat the whole bag of chips.
+2 (first two days) + 9 (remaining days) = 11 days in total.
+
+#### 11
+Marnie takes 11 days to eat the whole bag of chips.

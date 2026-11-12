@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4248-2",
+  "response_sha256": "6d0362634fe47a286df8316367e0736de90181c423df5166a80637ef41b3e492",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 6",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Albert has to run 99 meters in gym class. The track is 9 meters around. He has already run 6 times around it.",
+  "observed_error": "The final answer gives 6 additional laps, inconsistent with the correctly stated relations.",
+  "violated_condition": "Additional laps must equal (99 − 6 × 9) ÷ 9.",
+  "error_description": "The response reports 6 additional complete laps despite correctly describing how to subtract the distance already run and divide by the lap length. That number does not equal (99 − 6 × 9) ÷ 9.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "No intermediate numerical evaluations are shown, so the specific calculation that produced 6 cannot be identified."
+}

@@ -1,0 +1,45 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John is very unfit and decides to work up to doing a push-up.  He trains 5 days a week for them and starts with wall push-ups.  He adds 1 rep a day and once he gets to 15 reps he will start training high elevation push-ups. and then low elevation push-ups, and finally floor push-ups.  How many weeks will it take him to get to floor push-ups?
+SOLUTION: To determine how many weeks it will take John to get to floor push-ups, we need to break down his training process:
+
+1. **Start with Wall Push-ups:**
+   - John starts with wall push-ups.
+   - He trains 5 days a week.
+   - He adds 1 rep a day.
+   - To get to 15 reps on wall push-ups:
+     - Initial reps: 0
+     - Add 1 rep each day: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+     - Number of days to reach 15 reps: 15
+
+2. **Train High Elevation Push-ups:**
+   - Once he reaches 15 reps on wall push-ups, he will start training high elevation push-ups.
+   - He continues to add 1 rep a day on high elevation push-ups.
+   - Number of days to reach 15 reps on high elevation push-ups:
+     - Initial reps: 15
+     - Add 1 rep each day: 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
+     - Number of days to reach 15 reps: 15
+
+3. **Train Low Elevation Push-ups:**
+   - Once he reaches 15 reps on high elevation push-ups, he will start training low elevation push-ups.
+   - He continues to add 1 rep a day on low elevation push-ups.
+   - Number of days to reach 15 reps on low elevation push-ups:
+     - Initial reps: 15
+     - Add 1 rep each day: 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
+     - Number of days to reach 15 reps: 15
+
+4. **Train Floor Push-ups:**
+   - Once he reaches 15 reps on low elevation push-ups, he will start training floor push-ups.
+   - He continues to add 1 rep a day on floor push-ups.
+   - Number of days to reach 15 reps on floor push-ups:
+     - Initial reps: 15
+     - Add 1 rep each day: 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
+     - Number of days to reach 15 reps: 15
+
+5. **Total Weeks Calculation:**
+   - John trains 5 days a week.
+   - Number of weeks to reach 15 reps on each push-up: 15
+   - Total weeks: 15 * 3 = 45
+
+#### 45
+John will take 45 weeks to get to floor push-ups.

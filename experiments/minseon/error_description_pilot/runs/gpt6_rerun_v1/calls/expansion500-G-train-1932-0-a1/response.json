@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1932-0",
+  "response_sha256": "c91e2421b9943575070d82129e81f71f3e4a096ef27025a3d7bdccf5bdd648d4",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total amount collected = (Total amount from 8 parties) * 8",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "the entire team attends 8 such parties in a year",
+  "observed_error": "Step 3 multiplies the already aggregated eight-party total by 8 again.",
+  "violated_condition": "The total is $40 per player per party × 60 players × 8 parties, with the party count applied once.",
+  "error_description": "After correctly expressing the eight-party total as the one-party collection multiplied by 8, the response multiplies that aggregate by 8 again. This introduces an extra factor of 8 into the stated relation, although the question asks for collections across only eight parties.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The unexplained numerical outputs do not establish how the written arithmetic was executed."
+}

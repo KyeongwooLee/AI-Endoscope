@@ -1,0 +1,38 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: In ten years, I'll be twice my brother's age. The sum of our ages will then be 45 years old. How old am I now?
+SOLUTION: Let's denote my current age as x and my brother's current age as y.
+
+According to the problem:
+
+1. In ten years, I'll be twice my brother's age: x + 10 = 2(y + 10)
+2. The sum of our ages will then be 45 years old: x + y = 45
+
+Now, we have a system of two equations with two variables:
+
+x + 10 = 2y + 20
+x + y = 45
+
+Solving these equations step by step:
+
+1. From the first equation, we can express y in terms of x:
+   2y = x + 10 - 20
+   y = (x + 10 - 20) / 2
+   y = (x - 10) / 2
+
+2. Substitute this expression for y into the second equation:
+   x + (x - 10) / 2 = 45
+
+3. Multiply both sides by 2 to clear the fraction:
+   2x + (x - 10) = 90
+
+4. Simplify and solve for x:
+   2x + x - 10 = 90
+   3x = 100
+   x = 100 / 3
+   x = 33.33
+
+Therefore, my current age is 33.33 years old.
+
+#### 33.33
+This is my current age.

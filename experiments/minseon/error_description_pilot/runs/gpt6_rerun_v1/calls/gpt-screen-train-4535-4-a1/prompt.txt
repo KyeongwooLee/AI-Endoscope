@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: There are 26 chickens, 40 piglets, and 34 goats at Stacy’s farm. A really bad storm hits and half of all the animals get sick. How many animals in total get sick?
+SOLUTION: Step 1: Determine the total number of animals on the farm.
+Total animals = Chickens + Piglets + Goats
+Total animals = 26 + 40 + 34
+
+Step 2: Calculate half of the total number of animals.
+Half of the total animals = Total animals / 2
+
+Step 3: The number of animals that get sick is equal to the number of animals that are half of the total.
+Number of animals that get sick = Half of the total animals
+
+Final Step: Plug in the numbers to find the answer.
+Number of animals that get sick = (26 + 40 + 34) / 2
+
+#### 55
+The answer is 55.

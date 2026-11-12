@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Fred spent half of his allowance going to the movies. He washed the family car and earned 6 dollars. What is his weekly allowance if he ended with 14 dollars?
+SOLUTION: #### 20
+Step 1: Let's denote Fred's weekly allowance by \( A \) dollars.
+Step 2: Fred spent half of his allowance on movies, so he spent \( \frac{A}{2} \) dollars.
+Step 3: After spending, he earned $6 by washing the car.
+Step 4: He ended with $14, so the equation representing his situation is:
+   \[
+   \frac{A}{2} + 6 = 14
+   \]
+Step 5: Subtract 6 from both sides to isolate the term with \( A \):
+   \[
+   \frac{A}{2} = 8
+   \]
+Step 6: Multiply both sides by 2 to solve for \( A \):
+   \[
+   A = 16
+   \]
+Step 7: Therefore, Fred's weekly allowance is $16.

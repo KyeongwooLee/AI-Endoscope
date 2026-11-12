@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "response_sha256": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "supported_error",
+        "insufficient_evidence",
+        "no_error_observed",
+        "ambiguous"
+      ]
+    },
+    "reference_review_needed": {
+      "type": "boolean"
+    },
+    "explanation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "source_id",
+    "response_sha256",
+    "status",
+    "reference_review_needed",
+    "explanation"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "train-6912-1",
+  "response_sha256": "1c248ffe6a5ba3ceb71735f6160f15f891c1c5a5759e301e3a82060aa912bb07",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The total cost of the tuna was $14.50 - $1.25 = $13.25.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "had 5 coupons for 25 cents off a single can per coupon. He paid $20 and got $5.50 in change.",
+  "observed_error": "Subtracts the coupon savings from the amount paid to obtain the undiscounted total.",
+  "violated_condition": "The undiscounted cost equals the net payment plus the coupon savings.",
+  "error_description": "The response subtracts $1.25 in coupon savings from the $14.50 net payment. Recovering the price before coupons requires adding those savings back before dividing by nine cans. The subtraction is executed correctly, but the relation between the payment and undiscounted cost is reversed.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The per-can quotient calculated from dollar amounts is labeled as cents without multiplying by 100."
+  ],
+  "uncertainty_note": "The unexplained opening answer of 25 does not establish a separate identifiable error mechanism."
+}

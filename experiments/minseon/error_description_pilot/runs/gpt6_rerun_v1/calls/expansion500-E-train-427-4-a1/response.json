@@ -1,0 +1,1 @@
+{"source_id":"train-427-4","response_sha256":"82cd5c68034410d0af2853038b41951a789bda829087551279b92b2811212513","status":"supported_error","reference_review_needed":false,"explanation":"The earliest observable mistake is the final answer of $12,000, which does not follow from the correctly stated expression in Step 4. Evaluating $3,000 + ($276 × 48) + $7,000 gives $23,248."}

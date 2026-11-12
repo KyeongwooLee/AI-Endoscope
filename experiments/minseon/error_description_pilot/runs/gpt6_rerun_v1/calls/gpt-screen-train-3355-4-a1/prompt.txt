@@ -1,0 +1,27 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A tank with a capacity of 8000 gallons is 3/4 full. Daxton empty's the tank by 40% of the total volume of water in the tank to water his vegetable farm. He then fills the tank with 30% of the volume of water remaining in the tank. Calculate the final volume of water in the tank.
+SOLUTION: Step 1: Calculate the initial volume of water in the tank.
+\[ \text{Initial volume} = \frac{3}{4} \times 8000 \]
+
+Step 2: Calculate the volume of water Daxton empties from the tank.
+\[ \text{Volume emptied} = 40\% \times \text{Initial volume} \]
+
+Step 3: Calculate the remaining volume after the water is emptied.
+\[ \text{Remaining volume after emptying} = \text{Initial volume} - \text{Volume emptied} \]
+
+Step 4: Calculate the volume of water Daxton fills back into the tank.
+\[ \text{Volume filled} = 30\% \times \text{Remaining volume after emptying} \]
+
+Step 5: Calculate the final volume of water in the tank.
+\[ \text{Final volume} = \text{Remaining volume after emptying} + \text{Volume filled} \]
+
+#### 3000
+#### 4000
+#### 2000
+#### 6000
+#### 3000
+#### 9000
+#### 6000
+#### 54000
+#### 34000

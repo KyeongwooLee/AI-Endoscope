@@ -1,0 +1,78 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-4817-4
+response_sha256: 13560edd2317ca82a0855a1670d3303c7181aed0e89863c8d1092d681ef15e95
+
+=== QUESTION ===
+Jeff orders a Halloween costume.  He has to put in a 10% deposit and then pay the rest when he picks it up.  The costume is 40% more expensive than last year's costume, which cost $250.  How much did he pay when picking it up, in dollars?
+=== MODEL SOLUTION ===
+To find out how much Jeff paid when picking up the costume, we need to follow these steps:
+
+1. Calculate the cost of this year's costume.
+2. Determine the deposit amount.
+3. Calculate the remaining amount to be paid after the deposit.
+4. Add the deposit to the remaining amount to get the total cost Jeff pays.
+
+Step 1: Calculate the cost of this year's costume.
+This year's costume is 40% more expensive than last year's costume, which cost $250.
+Cost increase = 250 * 0.40 = $100
+Cost of this year's costume = 250 + 100 = $350
+
+Step 2: Determine the deposit amount.
+Jeff has to put in a 10% deposit.
+Deposit amount = 350 * 0.10 = $35
+
+Step 3: Calculate the remaining amount to be paid after the deposit.
+Remaining amount = 350 - 35 = $315
+
+Step 4: Add the deposit to the remaining amount to get the total cost Jeff pays.
+Total amount paid = 35 + 315 = $350
+
+#### 350
+Jeff paid $350 when picking up the costume.
+=== REFERENCE SOLUTION (fallible aid) ===
+It cost 250*.4=$<<250*.4=100>>100 more than his old costume
+So it cost 250+100=$<<250+100=350>>350
+He left a 350*.1=$<<350*.1=35>>35 deposit
+So he had to pay 350-35=$<<350-35=315>>315
+#### 315
+=== END ===

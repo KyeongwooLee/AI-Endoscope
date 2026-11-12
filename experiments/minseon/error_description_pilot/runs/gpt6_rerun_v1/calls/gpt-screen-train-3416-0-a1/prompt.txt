@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: September's temperature fluctuated severely in 1 week.  They started off with 40 degrees on Sunday then hit 50 on Monday, 65 on Tuesday, 36 on Wednesday, 82 on Thursday, 72 on Friday and ended the week at 26 on Saturday.  What was the average temperature for that week?
+SOLUTION: Step 1: Calculate the total temperature for the week.
+- Sunday: 40 degrees
+- Monday: 50 degrees
+- Tuesday: 65 degrees
+- Wednesday: 36 degrees
+- Thursday: 82 degrees
+- Friday: 72 degrees
+- Saturday: 26 degrees
+
+Total temperature = 40 + 50 + 65 + 36 + 82 + 72 + 26 = 361 degrees
+
+Step 2: Calculate the average temperature.
+Average temperature = Total temperature / Number of days
+Average temperature = 361 / 7 = 51.57142857142857
+
+#### 51.57142857142857

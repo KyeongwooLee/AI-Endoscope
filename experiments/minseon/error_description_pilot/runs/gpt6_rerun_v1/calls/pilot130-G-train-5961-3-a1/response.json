@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5961-3",
+  "response_sha256": "4cf4ae1ac46701511a289a7a3e697eaf1b4f32ca1f851552e1dae1edd998964e",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "- Remaining days: \\(7 - 2 = 5\\) days",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If, for the remaining of the days of the week, an equal number of vehicles passed through the toll booth",
+  "observed_error": "The response subtracts only Wednesday and Thursday when counting the remaining days.",
+  "violated_condition": "The remaining days exclude all four specified days, Monday through Thursday, so their count is 7 - 4.",
+  "error_description": "The response counts the remaining days by subtracting only the two days with 100 cars from seven. Monday and Tuesday were also already included in the 300-car subtotal, so the remaining 150 cars belong to three days. The subtraction is executed correctly, but its day-count relation is wrong.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

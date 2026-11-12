@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3553-1",
+  "response_sha256": "bc0927798718c49a6568fb61efa55faa9bbc2af4e65efeec2afaee18979b54b8",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\text{Water left} = 120 \\text{ liters} - 0.25 \\text{ pool} = 120 \\text{ liters}",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "The pool holds 120 liters of water.",
+  "observed_error": "The response subtracts a pool fraction from liters without conversion and leaves the initial volume unchanged.",
+  "violated_condition": "The calculated loss of 0.25 pool must be converted using 120 liters per pool before subtraction from the initial volume.",
+  "error_description": "The response calculates a loss of 0.25 pool over three hours, then subtracts that fraction directly from 120 liters and reports no decrease. Since one pool holds 120 liters, the loss represents 30 liters and must be subtracted in compatible units.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

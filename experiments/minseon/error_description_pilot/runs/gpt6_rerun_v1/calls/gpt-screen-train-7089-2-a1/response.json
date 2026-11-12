@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$832","check":"The mileage charge is (620 + 744) × $0.50 = $682. Adding the $150 rental fee gives $832.","evidence_quote":"Total cost: \\(310 + 372 = 682\\) dollars","error_description":"The solution correctly computes the mileage charges but omits the $150 rental fee from the total."}

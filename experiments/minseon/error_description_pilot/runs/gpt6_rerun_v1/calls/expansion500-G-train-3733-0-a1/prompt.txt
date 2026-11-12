@@ -1,0 +1,72 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-3733-0
+response_sha256: 1624e87dc0a892a2fd97577a14ee32f843bd40bef3a8f8e95096bf19109b79c8
+
+=== QUESTION ===
+Last year, Jorge planted corn on all of his 60 acres of property.  Typically, corn grown on good soil yields 400 bushels per acre, but in clay-rich soil, the yield is only half as much per acre as in good soil.  One-third of Jorge's 60 acres of land is clay-rich soil and the rest is good soil.  How many bushels of corn did Jorge's land yield last year?
+=== MODEL SOLUTION ===
+Step 1: Calculate the total yield from good soil.
+Jorge has 60 acres of land, with one-third being clay-rich soil. Therefore, the remaining two-thirds are good soil.
+Total good soil acres = 60 acres * (2/3) = 40 acres
+Yield per acre in good soil = 400 bushels
+Total yield from good soil = 40 acres * 400 bushels/acre = 16,000 bushels
+
+Step 2: Calculate the total yield from clay-rich soil.
+Yield per acre in clay-rich soil = 400 bushels / 2 = 200 bushels
+Total yield from clay-rich soil = 40 acres * 200 bushels/acre = 8,000 bushels
+
+Step 3: Calculate the total yield from all the land.
+Total yield = Yield from good soil + Yield from clay-rich soil
+Total yield = 16,000 bushels + 8,000 bushels = 24,000 bushels
+
+#### 24000
+This is the total number of bushels of corn Jorge's land yielded last year.
+=== REFERENCE SOLUTION (fallible aid) ===
+Jorge has 60 * (1/3) = <<60*(1/3)=20>>20 acres of clay-rich soil.
+He has 60 - 20 = <<60-20=40>>40 acres of good soil.
+At 400 bushels per acre, his 40 acres of good soil produced 40 * 400 = <<400*40=16000>>16,000 bushels of corn.
+If good soil produces 400 bushels per acre, clay-rich soil produces 400 / 2 = <<400/2=200>>200 bushels per acre.
+At 200 bushels per acre, his 20 acres of clay-rich soil produced 20 * 200 = <<200*20=4000>>4,000 bushels of corn.
+Altogether, his land produced 16,000 + 4,000 = <<16000+4000=20000>>20,000 bushels of corn.
+#### 20000
+=== END ===

@@ -1,0 +1,1 @@
+{"source_id":"train-1081-4","response_sha256":"008e41520472bee58b08316fd027ead042966cfe7b9e333a1cdc194529d54196","status":"no_error_observed","reference_review_needed":true,"explanation":"The model correctly calculates 800 bees producing 0.70 liters each, giving 1060 liters overall. The reference incorrectly reverses the per-bee division and later uses 700 bees instead of 800."}

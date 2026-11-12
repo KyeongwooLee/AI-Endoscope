@@ -1,0 +1,17 @@
+{
+  "source_id": "train-868-0",
+  "response_sha256": "16199bc61b50e5affa367dfea6d6f61cf82171dc9a63c52721b0bc2ca8d1d4dd",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "the remaining part of the flagpole is 12 - 2 = 10 feet.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "what was the tip of the flagpole is now dangling two feet above the ground.",
+  "observed_error": "The response identifies 12 − 2 as the height of the standing portion.",
+  "violated_condition": "If the break height is h feet, the folded portion has length 12 − h feet, so h − (12 − h) = 2.",
+  "error_description": "The response subtracts the tip’s two-foot clearance from the original 12-foot height and treats the result as the standing portion. The subtraction is executed correctly, but the clearance equals the standing height minus the folded portion’s length, not the original height minus the standing height.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

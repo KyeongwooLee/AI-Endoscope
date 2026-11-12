@@ -1,0 +1,70 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-3923-2
+response_sha256: 6d6f2dfb81b862e1a325d9fadf575fff2a76553b0820b0753e7313168f0f8891
+
+=== QUESTION ===
+Reginald is selling apples. He sells each apple for $1.25. He plans to use his profits to help repair his bike. His bike cost $80 and the repairs cost 25% of what his bike cost. After the repairs are paid for, 1/5 of the money he'd earned remains. How many apples did he sell?
+=== MODEL SOLUTION ===
+Step 1: Calculate the cost of bike repairs.
+Repair cost = 25% of bike cost = 0.25 * $80 = $20
+
+Step 2: Calculate the total amount earned before the bike repairs.
+Total amount earned = bike cost + repair cost = $80 + $20 = $100
+
+Step 3: Calculate the total amount earned after paying for bike repairs.
+Total amount earned after repairs = total amount earned - repair cost = $100 - $20 = $80
+
+Step 4: Calculate the number of apples sold.
+Number of apples sold = total amount earned after repairs / price per apple = $80 / $1.25 = 64
+
+#### 64
+The number of apples sold is 64.
+=== REFERENCE SOLUTION (fallible aid) ===
+The bike repairs cost $20 because 80 x .25 = <<80*.25=20>>20
+Call the amount he earns e. We know that e - 20 = 1/5e
+Therefore 5e - 100 = e
+Therefore, 4e = 100
+Therefore, e = <<25=25>>25
+Therefore, he sold 20 apples because 25 / 1.25 = <<25/1.25=20>>20
+#### 20
+=== END ===

@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Frank bakes two trays of cookies per day, for 6 days. Frank eats one cookie each day to make sure they taste good. Ted comes over on the sixth day and eats 4 cookies. If each tray makes 12 cookies, how many cookies are left when Ted leaves?
+SOLUTION: Step 1: Calculate the total number of trays baked over 6 days.
+Frank bakes 2 trays per day for 6 days.
+2 trays/day * 6 days = 12 trays
+
+Step 2: Calculate the total number of cookies baked.
+Each tray makes 12 cookies.
+12 cookies/tray * 12 trays = 144 cookies
+
+Step 3: Calculate the number of cookies eaten by Frank.
+Frank eats 1 cookie each day for 6 days.
+1 cookie/day * 6 days = 6 cookies
+
+Step 4: Calculate the number of cookies left after Frank eats.
+Total cookies baked - Cookies eaten by Frank = Cookies left
+144 cookies - 6 cookies = 138 cookies
+
+#### 138
+Frank has 138 cookies left when Ted leaves.

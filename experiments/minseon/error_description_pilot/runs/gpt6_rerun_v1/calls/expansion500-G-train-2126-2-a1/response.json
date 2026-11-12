@@ -1,0 +1,19 @@
+{
+  "source_id": "train-2126-2",
+  "response_sha256": "9d0435f0eed568ff84377224f6386d8025369f84962a36fb75e8e85a85ce9957",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "This is because the number of students taught in each subsequent year is the same as the number taught in the first year.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Adam teaches 50 students a year. How many students will Adam teach in 10 years if in the first year he only teaches 40 students?",
+  "observed_error": "The explanation incorrectly equates subsequent annual enrollment with first-year enrollment.",
+  "violated_condition": "The first year has 40 students; each of the following nine years has 50.",
+  "error_description": "The response states that each subsequent year has the same number of students as the first year. This contradicts the specified exception of 40 students in the first year versus 50 in each following year, although its written total uses those distinct rates correctly.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The final total of 530 does not equal the correctly written expression 40 + 9 * 50."
+  ],
+  "uncertainty_note": null
+}

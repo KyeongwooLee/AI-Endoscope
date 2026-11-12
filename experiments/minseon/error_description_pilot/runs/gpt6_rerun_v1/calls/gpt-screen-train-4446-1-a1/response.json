@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$52","check":"There are 12 − 2 = 10 adults. The deposit is $20 + 10 × $3 + 2 × $1 = $52.","evidence_quote":"Total deposit: $30 + $2 = $32","error_description":"The solution omits the flat $20 fee from the total deposit, so its answer is $20 too low."}

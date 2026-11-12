@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4446-1",
+  "response_sha256": "ae5adc01bb3d4c0463af95995f8f89ad7ae882e04530401d29ce307c12c5973b",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "- Total deposit: Deposit for adults + Deposit for kids",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "the deposit is a flat $20 plus an extra $3 per adult but only $1 per child",
+  "observed_error": "The total-deposit relation omits the flat $20 charge.",
+  "violated_condition": "The total must include the flat $20 in addition to the adult and child charges.",
+  "error_description": "The response defines the total deposit as only the adult charge plus the child charge, omitting the required flat $20 reservation fee. Its addition of $30 and $2 is correct, but that sum covers only the per-person charges and does not satisfy the stated deposit condition.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

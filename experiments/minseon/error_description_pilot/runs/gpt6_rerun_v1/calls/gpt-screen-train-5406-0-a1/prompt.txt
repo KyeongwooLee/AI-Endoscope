@@ -1,0 +1,27 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Mr. and Mrs. Boyden take their 3 children to a leisure park. They buy tickets for the whole family. The cost of an adult ticket is $6 more than the cost of a child ticket. The total cost of the 5 tickets is $77. What is the cost of an adult ticket?
+SOLUTION: Let's denote the cost of a child ticket as \( x \) dollars. Then, the cost of an adult ticket is \( x + 6 \) dollars. The total cost for 5 tickets is given as $77. We can set up the following equation to represent this situation:
+
+\[ 5x + 5(x + 6) = 77 \]
+
+First, simplify the equation:
+
+\[ 5x + 5x + 30 = 77 \]
+\[ 10x + 30 = 77 \]
+
+Next, isolate \( x \) by subtracting 30 from both sides:
+
+\[ 10x = 47 \]
+
+Then, solve for \( x \) by dividing both sides by 10:
+
+\[ x = 4.7 \]
+
+So, the cost of a child ticket is $4.70. Now, calculate the cost of an adult ticket:
+
+\[ x + 6 = 4.7 + 6 = 10.7 \]
+
+Therefore, the cost of an adult ticket is:
+
+#### 10.7

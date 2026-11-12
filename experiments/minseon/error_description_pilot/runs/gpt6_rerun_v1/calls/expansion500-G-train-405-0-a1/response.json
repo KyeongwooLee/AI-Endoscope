@@ -1,0 +1,19 @@
+{
+  "source_id": "train-405-0",
+  "response_sha256": "be4eb7888044b6fbb01d3d9f3ee720909fc784da6ab0c85192e62d69c5bbea96",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total space for two boats:\n\\[ 3 \\text{ feet} + 2 \\text{ feet} = 5 \\text{ feet} \\]",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "each boat is 3 feet across and they must have at least 2 feet between them or the riverbank",
+  "observed_error": "The response treats one boat's width plus one gap as the space for two boats.",
+  "violated_condition": "Two boats and their intervening gap require 3 + 2 + 3 = 8 feet, excluding riverbank clearance.",
+  "error_description": "The response labels 3 feet of boat width plus a 2-foot gap as space for two boats, then counts two boats per such group. The addition is correct, but the relation omits the second boat's 3-foot width; two boats plus their intervening gap require 8 feet.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The division of the full 42-foot width by 5 reserves no additional 2-foot clearance at the other riverbank; n boats require 3n + 2(n + 1) feet."
+  ],
+  "uncertainty_note": null
+}

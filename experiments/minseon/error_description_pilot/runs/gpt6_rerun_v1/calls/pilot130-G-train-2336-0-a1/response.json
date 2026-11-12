@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2336-0",
+  "response_sha256": "96c3206b8bcd29f0224971a4730e7645b22912ede09c4fcb9965191bda2bda2b",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Latia needs to work an additional 100 hours to buy the TV.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "She works for a delivery service company for a month earning $10 per hour for a 30-hour workweek.",
+  "observed_error": "The reported 100 additional hours contradicts the response's written calculation.",
+  "violated_condition": "Additional hours must equal (1700 - 10 × 30 × 4) / 10 under the response's four-week assumption.",
+  "error_description": "The response reports 100 additional hours despite writing relations that subtract four weeks of earnings at $10 per hour for 30 hours per week from $1700, then divide the remainder by $10 per hour. The reported number does not follow those relations.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The intermediate arithmetic is not shown, so the particular calculation producing 100 cannot be identified."
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6908-0",
+  "response_sha256": "1bdd716ca16a1b8c818943b89573da510e9d457ad4a972f0e35d2ad9531eae00",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The final answer is 11/2.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He manages to gain 15% on his total and 8 pounds of body weight.",
+  "observed_error": "The stated final ratio does not equal the correctly specified quotient.",
+  "violated_condition": "The ratio must equal (2200 + 2200 × 0.15)/(245 + 8).",
+  "error_description": "The response correctly sets up the increased lifting total and bodyweight, then reports 11/2 without showing its evaluation. That value does not equal (2200 + 2200 × 0.15)/(245 + 8), the required ratio after both gains. The text does not identify the intervening calculation error.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The incorrect final value is observable, but the omitted arithmetic prevents identifying a specific execution mistake."
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "train-997-0",
+  "response_sha256": "e644b58ce50b46a9d30047fad223c106e9d6dfd2ee2e822f4bdf3e49e75539ab",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Oomyapeck eats 22 - 2 = 20 eyes.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "if Oomyapeck eats 22 eyes in a day?",
+  "observed_error": "The response subtracts the dog's two eyes from the stated number Oomyapeck eats.",
+  "violated_condition": "The 22 eyes are Oomyapeck's consumption after giving two to the dog; total eyes equal 22 + 2.",
+  "error_description": "The response subtracts the dog's two eyes from the 22 eyes Oomyapeck eats, although 22 already describes his consumption after giving the dog its share. The subtraction is executed correctly, but the relation is wrong: the dog's eyes must be added to his consumption to recover the total.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Step 5 treats 22 eyes as 22 fish when dividing by three, omitting the conversion of two eyes per fish."
+  ],
+  "uncertainty_note": null
+}

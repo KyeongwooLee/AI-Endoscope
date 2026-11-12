@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Amanda needs 12 more marbles to have twice as many marbles as Katrina, and Mabel has 5 times as many marbles as Katrina. If Mabel has 85 marbles, how many more marbles does Mabel have than Amanda?
+SOLUTION: To solve this problem, we will follow these steps:
+
+1. Determine how many marbles Katrina has.
+2. Use the information about Mabel to find out how many marbles Katrina has.
+3. Calculate how many more marbles Mabel has than Amanda.
+
+Step 1: Determine how many marbles Katrina has.
+Mabel has 5 times as many marbles as Katrina. Mabel has 85 marbles.
+\[ \text{Katrina's marbles} = \frac{85}{5} = 17 \]
+
+Step 2: Use the information about Mabel to find out how many marbles Katrina has.
+Mabel has 5 times as many marbles as Katrina, and we already calculated Katrina has 17 marbles.
+
+Step 3: Calculate how many more marbles Mabel has than Amanda.
+Amanda needs 12 more marbles to have twice as many marbles as Katrina.
+\[ \text{Amanda's marbles} = 2 \times 17 - 12 = 34 - 12 = 22 \]
+
+#### 73
+Mabel has 73 more marbles than Amanda.

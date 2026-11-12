@@ -1,0 +1,69 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-320-0
+response_sha256: 6eee8add22b167969242720e3b827df5deaf36dce723da03f75a368f8c041e7f
+
+=== QUESTION ===
+Austin bought his seven friends each a robot. Each robot costs $8.75.  He was charged $7.22 total for tax. He left with $11.53 in change. How much did Austin start with?
+=== MODEL SOLUTION ===
+Step 1: Calculate the total cost of the robots.
+Each robot costs $8.75 and Austin bought 7 robots.
+Total cost of robots = 8.75 * 7
+
+Step 2: Add the tax to the total cost of the robots.
+Total cost of robots + tax = (8.75 * 7) + 7.22
+
+Step 3: Add the change Austin left with to the total cost to find out how much he started with.
+Total cost of robots + tax + change = amount Austin started with
+
+Let's calculate the total cost of the robots.
+#### 61.25
+Now add the tax.
+#### 68.47
+Finally, add the change.
+#### 130.72
+=== REFERENCE SOLUTION (fallible aid) ===
+First we need to find the total amount for the robots. 7 robots * $8.75 per robot = $<<7*8.75=61.25>>61.25 in total.
+Now we need to add in the tax $61.25 for the robots + $7.22 for tax = $<<61.25+7.22=68.47>>68.47 total spent in store.
+Now to find what was the beginning amount we take the $68.47 total spent in-store + $11.53 in change = $<<68.47+11.53=80>>80 to start.
+#### 80
+=== END ===

@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A man is returning home from work and trying to decide which route to take.  His first route option includes 3 stoplights.  This route will take him 10 minutes if all three lights are green, but each light that is red will add 3 minutes to the trip.  The second route does not include any stoplights and takes 14 minutes.  If the man chooses the first route, how much longer will his trip be if all 3 stoplights are red?
+SOLUTION: To determine how much longer the trip will be if all three stoplights are red, let's break down the problem step by step.
+
+1. **First Route Analysis**:
+   - If all three stoplights are green, the trip takes 10 minutes.
+   - Each red light adds 3 minutes to the trip.
+
+2. **Second Route Analysis**:
+   - The second route takes 14 minutes without stoplights.
+
+3. **Calculating Time with All Red Stoplights**:
+   - If all three stoplights are red, each light will add 3 minutes to the trip.
+   - The total time with all red lights will be \(10 \text{ minutes} + 3 \times 3 \text{ minutes}\).
+
+Now, let's calculate this:
+
+\[ 10 \text{ minutes} + 3 \times 3 \text{ minutes} = 10 \text{ minutes} + 9 \text{ minutes} = 19 \text{ minutes} \]
+
+So, if all three stoplights are red, the trip will take 19 minutes.
+
+#### 19
+This is the final answer.

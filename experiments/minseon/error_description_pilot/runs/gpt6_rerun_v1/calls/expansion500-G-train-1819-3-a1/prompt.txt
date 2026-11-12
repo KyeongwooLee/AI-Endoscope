@@ -1,0 +1,77 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-1819-3
+response_sha256: 7dcf24c2c784a6c34056aba4bb9452165558dda7f3dc584c165cc066d2eccaff
+
+=== QUESTION ===
+Teresa orders 2 fancy ham and cheese sandwiches for $7.75 each at a local shop.  While there, she decides to pick up some salami for $4.00, more brie which is three times the price of the salami,  a 1/4 pound of olives that are $10.00 per pound, 1/2 pound of feta cheese that’s $8.00 a pound and another loaf of french bread that is $2.00.  How much does she spend at the local shop?
+=== MODEL SOLUTION ===
+Step 1: Calculate the cost of the salami
+Cost of salami = $4.00
+
+Step 2: Calculate the cost of the brie
+Cost of brie = 3 * Cost of salami = 3 * $4.00 = $12.00
+
+Step 3: Calculate the cost of the olives
+Cost of olives = 1/4 * Cost of olives per pound = 1/4 * $10.00 = $2.50
+
+Step 4: Calculate the cost of the feta cheese
+Cost of feta cheese = 1/2 * Cost of feta cheese per pound = 1/2 * $8.00 = $4.00
+
+Step 5: Calculate the cost of the french bread
+Cost of french bread = $2.00
+
+Step 6: Sum up all the costs
+Total cost = Cost of fancy ham and cheese + Cost of salami + Cost of brie + Cost of olives + Cost of feta cheese + Cost of french bread
+Total cost = $7.75 + $4.00 + $12.00 + $2.50 + $4.00 + $2.00
+Total cost = $30.25
+
+#### 30.25
+=== REFERENCE SOLUTION (fallible aid) ===
+She orders 2 sandwiches that are $7.75 so they cost 2*$7.75 = $<<2*7.75=15.50>>15.50
+The brie is three times more expensive than the $4.00 salami so the brie costs 3*$4 = $<<3*4=12.00>>12.00
+She buys 1/4 pound of the olives that costs $10.00 a pound so they cost .25*$10 =$<<1/4*10=2.50>>2.50
+She buys 1/2 pound of feta that costs $8.00 a pound so it costs .5*$8 = $<<1/2*8=4.00>>4.00
+The salami is $4.00, the brie is $12.00, olives are $2.50 and the feta is $4.00 and the sandwiches are $15.50 for a total of $4+$12+$2.50+$4+$15.50 = $<<4+12+2.5+4+15.50=38.00>>38.00
+Adding the french bread gives $38.00+$2.00 = $<<38+2=40>>40
+#### 40
+=== END ===

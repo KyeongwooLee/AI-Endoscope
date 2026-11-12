@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jill and her brother Jack are going apple picking.  Jill's basket can hold twice as much as Jack's basket when both are full.  Jack's basket is full when it has 12 apples, but currently space for 4 more.  How many times could Jack's current number of apples fit into Jill's basket?
+SOLUTION: Step 1: Determine the current number of apples in Jack's basket.
+Jack's basket is currently full space for 4 more apples.
+Jack's basket can hold 12 apples when full.
+Number of apples in Jack's basket = 12 - 4 = 8 apples.
+
+Step 2: Determine the capacity of Jill's basket.
+Jill's basket can hold twice as much as Jack's basket when both are full.
+Capacity of Jack's basket = 12 apples.
+Capacity of Jill's basket = 2 × 12 = 24 apples.
+
+Step 3: Calculate how many times Jack's current number of apples could fit into Jill's basket.
+Number of times Jack's current number of apples could fit into Jill's basket = 8 ÷ 12 = 2/3.
+
+#### 2/3
+Jack's current number of apples could fit into Jill's basket 2/3 times.

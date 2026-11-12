@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: At his cafe, Milton sells apple pie and peach pie slices.  He cuts the apple pie into 8 slices.  He cuts the peach pie into 6 slices.  On the weekend, 56 customers ordered apple pie slices and 48 customers ordered peach pie slices.  How many pies did Milton sell during the weekend?
+SOLUTION: Step 1: Calculate the number of apple pies sold.
+- Each apple pie is cut into 8 slices.
+- 56 customers ordered apple pie slices.
+- Number of apple pies sold = 56 / 8
+
+Step 2: Calculate the number of peach pies sold.
+- Each peach pie is cut into 6 slices.
+- 48 customers ordered peach pie slices.
+- Number of peach pies sold = 48 / 6
+
+Step 3: Sum the number of apple and peach pies sold to get the total number of pies sold.
+- Total pies sold = Number of apple pies sold + Number of peach pies sold
+
+Step 4: Calculate the total number of pies sold.
+- Total pies sold = (56 / 8) + (48 / 6)
+
+#### 22.0
+Explanation: Milton sold 22 pies during the weekend.

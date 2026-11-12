@@ -1,0 +1,35 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A man used to have 39 cows but last year 25 of them died and he sold 6 of them. This year the number of the cows increased by 24 and the man bought 43 more. His friend gave him 8 cows as a gift. How many cows does the man have now?
+SOLUTION: Step 1: Calculate the number of cows the man had after last year's events.
+- Initial number of cows: 39
+- Cows died: 25
+- Cows sold: 6
+- Cows increased by: 24
+- Cows bought: 43
+
+\[ \text{Cows after last year} = 39 - 25 + 6 + 24 + 43 \]
+
+Step 2: Simplify the expression to find the number of cows after last year.
+
+\[ \text{Cows after last year} = 39 - 25 + 6 + 24 + 43 \]
+\[ \text{Cows after last year} = 14 + 6 + 24 + 43 \]
+\[ \text{Cows after last year} = 20 + 24 + 43 \]
+\[ \text{Cows after last year} = 44 + 43 \]
+\[ \text{Cows after last year} = 87 \]
+
+#### 87
+This is the number of cows the man had after last year.
+
+Step 3: Calculate the number of cows the man has now, after this year's events.
+- Cows given as gift: 8
+
+\[ \text{Total cows now} = 87 + 8 \]
+
+Step 4: Simplify the expression to find the total number of cows now.
+
+\[ \text{Total cows now} = 87 + 8 \]
+\[ \text{Total cows now} = 95 \]
+
+#### 95
+This is the number of cows the man has now.

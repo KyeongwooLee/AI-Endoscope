@@ -1,0 +1,514 @@
+id	first	words	prose	conf	reason	rule	category	cat
+train-103-2	E3	n	n	h	adds today's typing to final 536; should subtract 278	E1	rule_early	SETUP
+train-1037-4	E1	n	y	h	Savings should be $300 from sale; computes 300-300=0.	E1	agree_prose	SETUP
+train-1039-0	E3	n	y	h	should subtract 72 from 102, not 102 from 120	E3	agree_prose	SETUP
+train-1054-3	E4	n	y	m	alt=E2; needs two tickets with fees: 115, not 57.50	E1	rule_early	SETUP
+train-1059-2	E1	y	n	h	each child gets 5 boxes per week, not 3	E1	rule_late	SETUP
+train-1060-4	E4	n	y	h	36 already includes the 12 received; no adding	E4	agree_prose	SETUP
+train-1113-1	E2	n	y	h	Viggo is 12 years older; current age 22, not 14+10	E1	rule_early	SETUP
+train-1115-0	E2	y	n	h	8 scallops per pound: 16 scallops weigh 2 pounds, not 16.	E3	rule_late	SETUP
+train-1117-1	E2	n	n	h	Sum of Billy and Lucas is 30/2 = 15, not 30 + 10.	E2	agree	SETUP
+train-1120-3	E6	n	n	h	Ignores 4 ads per block: 25*4*0.25=25 pages, not 6.25.	E6	agree	SETUP
+train-1150-4	E5	y	y	m	190 is daily; total should be 190 times 6 days; alt=E3	E5	rule_late	SETUP
+train-1164-4	E3	n	n	h	Ignores 2-gallon loss in hours 3 and 4.	E3	agree	SETUP
+train-1165-3	E4	n	y	m	Uses two-roof area for three roofs; needs 4800 sq ft. alt=E3	E3	rule_early	SETUP
+train-1171-2	E1	n	y	m	alt=E2; 300 is Jack's count in three years, claimed as current	E2	rule_late	SETUP
+train-1180-4	E2	y	n	h	bucket feeds 6 people, not 8 servings	E2	rule_late	SETUP
+train-1188-4	E3	y	n	h	tip is 10% of 110, $11, not $20	E3	rule_late	SETUP
+train-1189-3	E7	y	n	h	assumes 5 three-pointers per game; 135 points gives 3 per game	E1	rule_late	SETUP
+train-1191-2	E3	n	y	h	cost of additional bears uses discount 0.50 instead of 3.50 price	E4	rule_late	SETUP
+train-1196-2	E1	n	y	h	Reversed: Twin Valley is 40/4 = 10 years	E3	rule_late	SETUP
+train-1211-4	E1	y	n	h	Two brothers' tickets cost $20, not $10	E4	rule_late	SETUP
+train-1213-0	E3	n	n	h	Uses Precious's 12 mistakes as correct answers; she got 63.	E3	agree	SETUP
+train-1215-2	E1	y	n	h	There are 8 people, not 7; servings should be 16.	E1	rule_late	SETUP
+train-1227-4	E1	n	n	h	Assumes 4 crayons per box; boxes hold 16 (80/5).	E1	agree	SETUP
+train-1230-3	E1	y	n	h	Coats apply to all nails at once; each coat takes 40 min.	E1	rule_late	SETUP
+train-1251-4	E4	n	n	h	45+16+18 is 79, not 89	E4	agree	ARITH
+train-1268-4	E4	n	n	m	Family daily sum omits one child's 3 g; should be 21. alt=E1	E4	agree	SETUP
+train-1284-1	E1	n	n	h	Every other day for 4 weeks is 14 showers, not 56	E1	agree	SETUP
+train-1290-3	E2	n	y	h	White is 5/2 of green: 15 gallons, not 1.2.	E2	agree_prose	SETUP
+train-1298-0	E2	y	y	h	Second day should be 5+6+4=15, not 4 each	E2	rule_late	SETUP
+train-13-2	E2	n	n	m	Gold: cream cheese is half of $10 cheddar, so $5. alt=none	E2	agree	SETUP
+train-1306-2	E5	n	y	h	adds spending to money instead of subtracting	E5	agree_prose	SETUP
+train-1308-3	E3	n	n	h	Subtracts Mon-Wed 22 instead of Mon-Thu 33	E3	agree	SETUP
+train-1313-1	E1	n	n	h	Adds 45 + 50; other mazes total 4 x 50 = 200.	E1	agree	SETUP
+train-1317-2	none	y	n	h	marked fine; Diego's full time 300 s treated as 0	E1	rule_late	SETUP
+train-1326-1	E3	n	y	h	Original price adds savings: 75+9=84, not 75-9.	E1	rule_early	SETUP
+train-1329-4	E4	n	y	h	third candidate recomputed as 1000; should be 300	E5	rule_late	SETUP
+train-1336-3	E1	y	n	h	divides 30 minutes by 8 lawns; each lawn takes 30 minutes	E1	rule_late	SETUP
+train-134-3	E1	n	n	h	104*2 equals 208, not 210	E1	agree	ARITH
+train-1347-1	E1	n	y	h	Each counter gets 6 cabinets, so 18 installed, not 6	E2	rule_late	SETUP
+train-1381-4	E3	n	y	m	alt=E2; multiplies removed water 360 by 7 instead of 1320	E3	agree_prose	SETUP
+train-1386-4	E2	n	y	h	Shop buys 40 tires for 10 cars; 16 available is wrong	E4	rule_late	SETUP
+train-1412-1	E3	n	y	h	Remaining ducklings get half of mother's 126, not half of 15.	E3	agree_prose	SETUP
+train-1452-3	none	n	n	m	Final answer omits Abel's one-hour head start; add 60 minutes. alt=E4	E3	rule_early	SETUP
+train-1454-4	E1	n	y	h	Lists Monday twice; 100-mile days are 3, total 500 miles.	E1	agree_prose	SETUP
+train-1459-3	E1	n	n	h	Counts only 3 people; James also drinks, so 4 people.	E1	agree	SETUP
+train-1463-1	E2	n	n	m	alt=none; 55 is remaining climb time, claimed as defuse time; ignores 72s	E1	rule_early	SETUP
+train-1468-0	E4	n	n	h	subtracts Troy's one-day distance from Emily's five-day distance	E4	agree	SETUP
+train-1472-4	E2	n	n	h	halves 60 though 60 already is half of loan	E2	agree	SETUP
+train-1487-4	E4	y	n	h	Uses 15 hens and multiplies by 15 again; 25 hens give 300.	E3	rule_late	SETUP
+train-1506-4	E1	y	n	h	Tina ate 10 brownies (lunch and dinner), not 5.	E1	rule_late	SETUP
+train-1531-1	E4	n	n	h	adds years and months together without converting	E4	agree	SETUP
+train-1533-3	E2	n	y	h	one quarter equals 16 (second-day start), not 8	E2	agree_prose	SETUP
+train-1564-3	E5	n	y	h	Adds Friday's 88 minutes instead of subtracting; then double-subtracts.	E2	rule_early	SETUP
+train-1570-0	none	y	n	h	Marked sum fine; x-24=56 ignores the 64-ounce purchase	E1	rule_late	SETUP
+train-1577-1	E2	n	n	m	alt=E3; omits first-year $10 deposit; second-year interest also wrong	E2	agree	SETUP
+train-1606-1	E2	n	n	h	Maya's peak is half of 300, not half of 60	E2	agree	SETUP
+train-1622-2	E2	n	n	h	12 tablespoons per dozen, not per cupcake; needs 36	E2	agree	SETUP
+train-1631-3	E3	n	n	h	Sister is 10 years older: 50 + 10 = 60.	E3	agree	SETUP
+train-1662-2	E3	n	y	h	Adds picked tomatoes instead of subtracting; 75 - 20 = 55.	E3	agree_prose	SETUP
+train-1665-4	E3	n	n	h	Subtracts 48 before losing reds; should use 42 after losing.	E3	agree	SETUP
+train-17-0	E3	y	n	h	omits John's 6 pink hats; 22 removed, unmarked 16 wrong	E1	rule_late	SETUP
+train-171-2	E1	n	n	h	Should be 20 plants times 2 trees = 40 seeds	E1	agree	SETUP
+train-1746-3	E1	n	n	h	10*5*4*500 equals 100000 hours, not 20000	E1	agree	ARITH
+train-1752-1	E2	y	n	h	Jose's score taken as 40-10=30 instead of 100-10=90; Alisson wrong.	E2	rule_late	SETUP
+train-1774-4	E1	y	y	h	Should be 26 halves times 5 = 130; 13/2*5 also miscomputed	E1	rule_late	ARITH
+train-1776-0	none	n	n	m	All steps correct; gold 94 is wrong since 2250 - 2146 = 104. alt=E3	E1	rule_early	ARITH
+train-1802-1	E3	n	n	m	Keeps doubling ignoring day-3 removal; day 4 should be 32. alt=E7	E1	rule_early	SETUP
+train-1826-2	E4	n	n	h	Friday equals the four-day total 39; adds 39 twice	E4	agree	SETUP
+train-1834-1	E1	n	n	h	Adds whole $90 cabin cost; Jimmy pays only a third, $30.	E1	agree	SETUP
+train-1839-0	E2	n	y	h	donkey weight taken as 90% of elephant instead of 10%	E3	rule_late	SETUP
+train-184-3	E3	y	n	h	third-day recoveries are 200, not 50	E1	rule_late	SETUP
+train-1868-2	E2	y	y	m	alt=E1; tracks Max at -100; value meaningless, cumulative distance is 670	E1	rule_late	SETUP
+train-187-1	E2	n	n	h	5/8 of 48 equals 30, not 15	E1	rule_early	SETUP
+train-1873-0	E5	n	y	m	60 is Sophia's age in three years, mislabeled as current. alt=E6	E6	rule_late	SETUP
+train-1880-4	E1	n	y	h	Invents Milo wheelchair speed as double Cory's; speed relations reversed.	E1	agree_prose	SETUP
+train-1903-1	E1	n	n	h	uploads 10 hours per day, not 2	E1	agree	SETUP
+train-1923-1	none	n	n	h	All marked steps fine; omits friends' $60 from the total.	E1	rule_early	SETUP
+train-1943-3	E1	n	n	h	Family has two parents: 7 people, not 6.	E1	agree	SETUP
+train-1965-0	E4	n	n	h	adds twice the broken 3, i.e. 6, not 2*12	E4	agree	SETUP
+train-2027-3	E3	y	n	h	week total uses 5 days instead of 7	E3	rule_late	SETUP
+train-2028-3	E2	n	y	h	adds mother's 300 rings before the 3/4 sale	E2	agree_prose	SETUP
+train-2033-1	E1	n	n	h	Uses whole lot capacity 425; one level holds 425/5 = 85.	E1	agree	SETUP
+train-2063-4	E1	n	n	m	Bess's frisbee also travels back each time; her total is 160. alt=E3	E3	rule_late	SETUP
+train-2066-3	E2	n	n	h	Number of $10 units is 120/10 = 12, not 120/2.	E2	agree	SETUP
+train-2083-1	E1	n	n	m	alt=E2; 6 cans last 5 days, not a week; weekly is 8.4	E2	rule_late	SETUP
+train-2098-3	E2	n	y	h	roosters do not reduce eggs; 270 eggs per day	E2	agree_prose	SETUP
+train-2147-0	E4	n	n	h	newborn elephants are 125+10=135, not 160+10	E4	agree	SETUP
+train-2150-4	E1	n	n	h	the couple eats 4 eggs total per night, not 4 each	E1	agree	SETUP
+train-2170-1	E2	n	n	h	Crystal pays 3*$3+$1=$10, not 3*$4+$1.	E2	agree	SETUP
+train-2172-2	E1	n	y	h	Reverses relation; living room has 20/2 = 10 candles.	E1	agree_prose	SETUP
+train-220-0	E1	y	y	h	Ignores round trip: needs 1200 miles, 60 gallons, so 52 more.	E1	rule_late	SETUP
+train-2250-2	E1	y	n	h	uses 16 ounces per cup; a cup is 6 ounces	E1	rule_late	SETUP
+train-2263-3	E1	n	n	h	56+76 equals 132, not 112	E1	agree	ARITH
+train-2265-3	E3	n	y	h	should use 160 racers after doubling, not 50+80	E4	rule_late	SETUP
+train-2286-1	E1	y	y	h	Treats $240 as work-only and adds tips; should be 190/10.	E1	rule_late	SETUP
+train-2309-0	E3	y	n	h	Per-shirt pay is 400*5=2000, so wages total 3920	E3	rule_late	SETUP
+train-2315-3	E3	n	y	m	alt=E4; 15 is Samir's current age, claimed as his age ten years ago	E5	rule_late	SETUP
+train-2337-2	E1	n	n	h	101 times 5.80 is 585.80, not 588.80	E1	agree	ARITH
+train-2356-0	E1	n	n	h	Halves per-kg price; $6 is total for 3 kg apples, so $2/kg.	E2	rule_late	SETUP
+train-2362-4	E1	n	n	h	Only two short videos, so 4 minutes, not 3*2	E3	rule_late	SETUP
+train-2369-1	E2	y	n	h	Adds daily-rate and prorated costs; should be 500+6*50=800	E1	rule_late	SETUP
+train-24-4	E1	n	n	h	Adds payments to credit used; credit used is just $100.	E1	agree	SETUP
+train-2401-1	E2	n	n	h	Uses 10 mph for both hours; first hour after 4 AM still 25 mph.	E2	agree	SETUP
+train-2407-3	E1	n	n	h	Omits Jane's 45 pieces of bread from the total.	E1	agree	SETUP
+train-2435-3	E1	y	n	h	Ty is 2*4+4=12, not 8; Frank will be 36.	E1	rule_late	SETUP
+train-2463-4	E4	y	n	h	Night 2 should be 188 + 105 = 293, not 405.	E4	rule_late	SETUP
+train-2465-1	E2	n	n	m	alt=E3; 12 twigs already placed; still needs only 72	E2	agree	SETUP
+train-247-2	E2	n	n	h	halves two-day total 12 instead of daily dose 6	E3	rule_late	SETUP
+train-2488-1	E2	y	y	h	Swapped Theresa's years; 2009 is 12 and 2010 is 62	E2	rule_late	SETUP
+train-2519-0	E2	n	y	m	Money after selling should include the $15 saved: 115. alt=E3	E4	rule_late	SETUP
+train-2549-3	E4	n	y	h	each horse needs 4 horseshoes, so 56 horseshoes not 14	E4	agree_prose	SETUP
+train-2551-3	E2	n	n	h	Before final game he had 257-17=240, not 262-17	E1	rule_early	SETUP
+train-2579-2	E2	n	y	h	Treats 15 left as given away; Lea got 27 - 15 = 12.	E2	agree_prose	SETUP
+train-2605-0	E4	n	y	h	omits the $100 insurance payment; total 660	E1	rule_early	SETUP
+train-2620-1	E3	n	n	h	36-12-9-7 equals 8, not 10	E3	agree	ARITH
+train-2624-2	E1	n	y	h	$40 is 25% of price, not 75%	E1	agree_prose	SETUP
+train-2645-1	E5	n	y	m	alt=E4; dye cost $20 must be subtracted, not added	E5	agree_prose	SETUP
+train-269-4	E2	n	n	m	Both-weekend total omits previous $20; should be 47. alt=E3	E3	rule_late	SETUP
+train-2700-0	E3	y	n	h	treats school week as 10 days; per-student need is 4 total	E1	rule_late	SETUP
+train-2706-4	E4	y	n	m	Counts each swirl as a gust; after 4 gusts position is 14. alt=none	E2	rule_late	SETUP
+train-2721-1	E2	n	n	h	gets 3 sticks per week, not 40; 240/3=80	E2	agree	SETUP
+train-2724-3	E2	n	n	h	5*4*9 equals 180, not 90.	E3	rule_late	ARITH
+train-2736-2	E1	n	n	h	Uses 3 trips as stories; each trip is 5 stories, 50 feet	E1	agree	SETUP
+train-2739-4	E2	n	y	h	adds an extra bar; total bars should be 8	E2	agree_prose	SETUP
+train-2760-4	E2	n	y	m	Claims gap equals twice Joel's current age; nonsense step. alt=E3	E2	agree_prose	SETUP
+train-2765-3	E1	n	y	h	vanilla plus chocolate is not 220; chocolate should be 44/2	E1	agree_prose	SETUP
+train-2801-4	E1	y	n	m	Gold counts chimps as 4 legs; model uses 2. alt=none	E1	rule_late	SETUP
+train-2827-3	E2	n	n	m	45 is hospital age in five years, labeled current age; alt=none	E2	agree	SETUP
+train-2855-4	E1	y	n	h	Monday, Wednesday, Friday is 3 days, not 2	E1	rule_late	SETUP
+train-2856-0	E4	y	n	h	unmarked sum 150 should be 180 minutes; 3 hours	E4	rule_late	SETUP
+train-2871-2	E5	n	y	h	Cash should be added to tree money, not subtracted.	E4	rule_early	SETUP
+train-2882-0	E2	y	n	h	Each had a gallon; 8 liters total, so 4 liters left.	E1	rule_late	SETUP
+train-2895-3	E3	n	n	h	8+0.5+0.5 equals 9, not 9.5.	E3	agree	ARITH
+train-2898-1	E1	n	n	h	Adds per-floor rates without multiplying by 5 floors	E1	agree	SETUP
+train-290-4	E3	n	n	h	assumes 7 boys; number of boys is the unknown	E3	agree	SETUP
+train-2912-0	E1	n	y	h	Levels below top are larger; second level is 64/0.8 = 80.	E1	agree_prose	SETUP
+train-2919-4	E1	n	n	h	adds per-day class counts; weekly classes are 10+8=18	E1	agree	SETUP
+train-2926-4	none	n	n	m	Signed difference fine; final answer should be +120, not -120. alt=E3	E3	rule_early	SETUP
+train-2943-4	E1	n	n	h	Skips doubling; dad reduces from 80, giving 50.	E1	agree	SETUP
+train-2948-3	E2	y	n	h	multiplies middle level by level index 2; should be 36	E2	rule_late	SETUP
+train-2962-3	E3	n	y	m	Total omits $15 ride pay; later ride bonus also wrong. alt=E5	E3	agree_prose	SETUP
+train-2976-1	E3	n	y	h	The 8 hours are additional; should not subtract earlier 300 minutes.	E3	agree_prose	SETUP
+train-2984-2	E1	n	y	h	Divides 130 by 12 instead of computing 12*10=120 bottles in crates.	E2	rule_late	SETUP
+train-3001-3	E1	n	n	h	Group walk counted for one day only, ignoring 6 days	E1	agree	SETUP
+train-3003-3	E1	n	y	h	Reversed: June depth is July depth divided by 3	E1	agree_prose	SETUP
+train-3008-0	E3	n	y	h	Subtracts head again from body that already excludes head	E3	agree_prose	SETUP
+train-3012-0	E3	n	y	h	Adds slices needed to slices made; should subtract	E3	agree_prose	SETUP
+train-303-3	E2	y	n	h	48/12 is 4 bags; ten-pound bags are cheaper at $50	E2	rule_late	SETUP
+train-308-2	E2	n	n	h	Each part needs 2 grams; 2/30 is grams per ml, mislabeled.	E2	agree	SETUP
+train-3088-1	E3	n	n	m	subtracts initial tank; reference counts 560/40=14 refills; alt=none	E3	agree	SETUP
+train-3110-1	E1	n	y	h	Counts 3 adults; parents are seniors, so only 2 adult tickets.	E2	rule_late	SETUP
+train-3114-4	E5	n	n	m	subtracts 65 omitting final customer's 10 boxes; should be 75; alt=E4	E4	rule_early	SETUP
+train-3138-0	E1	y	n	h	grades list has five 3s; sum should be 27	E1	rule_late	ARITH
+train-3152-3	E3	n	y	h	Pieces are not slices; 7+6 sandwiches times 2 gives 26.	E1	rule_early	SETUP
+train-3163-4	none	y	y	h	setup mishandles leftovers; unmarked 3x=120 gives 40 instead of 32	E1	rule_late	SETUP
+train-3175-3	E5	n	n	h	380*2000 equals 760,000, not 7,600,000.	E5	agree	ARITH
+train-3184-4	E2	n	y	h	Adds Rick's 30 as clowns; Rick bought guppies only.	E2	agree_prose	SETUP
+train-3187-3	E1	n	y	m	adds extra weekday; reference uses 52 weeks times 5; alt=none	E1	agree_prose	SETUP
+train-3220-4	E5	n	n	h	Ignores 80% insurance coverage; medication cost should be $730.	E5	agree	SETUP
+train-3230-2	E5	n	n	m	Elephant uses 240 grams; profit per gram 110/240, not 110/120. alt=E2	E1	rule_early	SETUP
+train-3268-4	E1	y	n	h	$90 is total sales, not price per chocolate.	E1	rule_late	SETUP
+train-3273-3	E2	n	y	h	subtracts seed cost from ear price; each ear needs 4 seeds	E2	agree_prose	SETUP
+train-3288-3	E3	n	n	h	Weekend total is 2 hours, not 2 hours times 2.	E3	agree	SETUP
+train-3296-0	E1	n	y	h	round trip is 4 hours; pack costs $40, not $20	E1	agree_prose	SETUP
+train-3303-4	E3	n	y	h	Damage is 20% of 245 remaining pages, not of 350.	E4	rule_late	SETUP
+train-3304-1	E1	n	y	m	alt=none; reference reads oranges as 60, not 15/4	E1	agree_prose	SETUP
+train-3316-3	E3	n	n	h	Bowl had 50 left, not 70; total is 190.	E3	agree	SETUP
+train-3366-4	E3	n	n	h	difference should be 16-15=1, not negative	E3	agree	SETUP
+train-338-1	E1	y	n	h	Total miles are 5+5+2+2+6=20, not 24.	E1	rule_late	SETUP
+train-3388-2	E6	y	n	h	Perfume is 5*1.2=6 ounces, not 6 pounds.	E1	rule_late	SETUP
+train-3390-4	E1	y	n	h	ignores buy-1-get-1 special; should pay for 5 pizzas, $25	E1	rule_late	SETUP
+train-3411-1	E5	n	n	h	omits 73-second door time from total	E5	agree	SETUP
+train-3433-3	E1	y	n	h	catch-up time is 8 min; subtracting from 56 is wrong	E1	rule_late	SETUP
+train-3444-4	E6	y	y	h	invents 8% sales tax not in the problem	E6	rule_late	SETUP
+train-3448-4	E2	y	y	m	Calls 4 leftover towels a shortage; real shortage is 10 towels. alt=E3	E2	rule_late	SETUP
+train-3451-0	E7	n	n	h	Green beans lost nothing; they remain 60 kg, not 50.	E8	rule_late	SETUP
+train-3457-4	E4	y	n	h	adds total bronze 1000 instead of per-chest 200	E4	rule_late	SETUP
+train-3460-4	E4	y	n	h	Ignores $2 change; ice cream money is $18, split per person	E4	rule_late	SETUP
+train-3466-2	E2	n	n	h	Should halve 30 then subtract 2, giving 13	E2	agree	SETUP
+train-347-2	E1	n	y	h	Reverses relation: today has 9+5=14 songs, not 9-5=4.	E1	agree_prose	SETUP
+train-3479-1	E1	n	n	h	300 minutes divided by 10 gives 30 sharks, not 300.	E2	rule_late	SETUP
+train-3480-3	none	n	n	m	all marked results fine; final answer in hours, gold is 200 minutes; alt=E3	E1	rule_early	SETUP
+train-3492-0	E3	y	n	h	Counts one $10 bill; $50 in tens is 5 bills.	E3	rule_late	SETUP
+train-3508-2	E2	y	n	h	Return distance is 30 miles, not 60; speed is 20 mph.	E2	rule_late	SETUP
+train-3509-3	E2	n	n	h	Doubles 3-day total; Thursday and Friday are 6 miles each, 12.	E2	agree	SETUP
+train-3529-0	none	n	n	m	alt=E1; matches question's 40%; reference uses 60% for first team	E1	rule_early	SETUP
+train-3546-2	E1	n	n	h	15 alligators is the total; multiplying by 3 weeks is wrong.	E1	agree	SETUP
+train-356-0	E4	n	n	h	Bonus earned in four perfect rounds, not one	E1	rule_early	SETUP
+train-3574-1	E4	n	n	h	Nuts only in 36 cookies (15+21), not all 60	E1	rule_early	SETUP
+train-3577-3	E1	n	y	h	race distance is 7*0.75=5.25 miles, not 7*42	E1	agree_prose	SETUP
+train-3591-4	E3	n	n	h	second-week gain is 50% of 500, not of 100	E4	rule_late	SETUP
+train-360-4	E1	n	y	h	20 oz is total batch; oil is 2/10 of 20 = 4	E1	agree_prose	SETUP
+train-3603-4	E6	y	n	m	adds contributions as shares; each gets 900 from E5; alt=none	E1	rule_late	SETUP
+train-3614-3	E1	y	n	h	Last leg is 500 m from house, not 200 m.	E1	rule_late	SETUP
+train-3623-1	E4	n	n	h	Weekly total omits 40 min parking and walking; should be 130.	E4	agree	SETUP
+train-3639-3	E5	n	n	h	counts only two of Bill, Fred, Mark; eaten should be 18	E5	agree	SETUP
+train-365-0	E2	n	n	h	Adds per-runner times; total is 5 x 8 + 3 x 10 = 70.	E2	agree	SETUP
+train-3673-4	E3	n	y	m	Computes irrelevant tallest-minus-average difference; plan misreads question. alt=E4	E3	agree_prose	SETUP
+train-3684-4	E1	n	n	h	Sum of the six times is 344, not 324	E1	agree	ARITH
+train-3696-1	E1	n	n	h	round trip is 14 km/day; Mon-Thu should be 56	E1	agree	SETUP
+train-3730-4	E1	n	n	h	Kristin is slower: 18*3=54 hours per book, not 18/3=6.	E1	agree	SETUP
+train-374-2	E1	y	n	h	Takes yesterday as 50; yesterday was 25, so today is 65.	E1	rule_late	SETUP
+train-3758-3	none	n	n	m	Q2+Q4=3500 is correct; forgot to subtract fourth quarter's $2000. alt=E2	E2	rule_early	SETUP
+train-3798-0	E1	n	n	h	Monthly fee applies 12 months; yearly per person is 16000.	E1	agree	SETUP
+train-3803-1	E3	n	n	h	Discount is 20% of $300 = $60, not 20*20%	E3	agree	ARITH
+train-3813-0	E2	n	y	h	Multiplies 8 hours by 24 nights; needs 48 hours of burning.	E2	agree_prose	SETUP
+train-3818-2	E1	y	n	h	Yellow balloons are 672/4=168, not 4.	E1	rule_late	SETUP
+train-3822-0	E2	n	n	h	Already-pledged votes are half the class, 30, not 45	E6	rule_late	SETUP
+train-3833-4	E4	n	y	h	adds used candles instead of subtracting from 40	E4	agree_prose	SETUP
+train-386-3	E3	n	n	m	alt=E4; shoe cost taken at full $100, ignoring the computed discount	E4	rule_late	SETUP
+train-3862-2	none	y	n	m	Unmarked final sum $275 is hourly; never multiplied by 8 hours. alt=E3	E1	rule_late	SETUP
+train-3869-1	E1	n	n	m	alt=E7; recommended sleep uses actual 5 hours instead of 8	E7	rule_late	SETUP
+train-3872-2	E6	n	n	m	omits home game's 62 from cumulative points; alt=E4	E4	rule_early	SETUP
+train-3874-4	E1	n	n	h	cakes made only on 5 weekdays: 4*5*4=80, not 7 days	E1	agree	SETUP
+train-3922-4	none	n	n	m	alt=E3; 150 is new rate; question asks added 50	E3	rule_early	SETUP
+train-3931-0	E2	y	n	h	Gina scored 4 on day two, not 2; her total is 6.	E4	rule_late	SETUP
+train-3940-0	none	n	n	h	All steps correct; 390 minutes converted to 6.5 hours, answer unit mismatch.	E3	rule_early	SETUP
+train-3945-2	E3	n	n	h	nights = $60/$4 = 15, not $4/$4	E3	agree	SETUP
+train-3970-4	E1	n	n	h	50% more than 2 cans of beans is 3 tomatoes, not 1.	E3	rule_late	SETUP
+train-40-1	E5	n	y	h	Adds discount to $400 instead of adding discounted tickets $76.	E5	agree_prose	SETUP
+train-4002-3	E1	n	n	h	Two weeks has 56 six-hour intervals, not 28	E1	agree	SETUP
+train-4027-2	E3	n	n	h	Oreos limit to 5 cheesecakes; graham used should be 10	E4	rule_late	SETUP
+train-4034-3	E6	n	y	h	Adds 100% scorers to over-80% scorers instead of 48-24	E6	agree_prose	SETUP
+train-4043-3	E3	n	y	h	third puzzle should equal second, not 50% more than it	E3	agree_prose	SETUP
+train-406-0	none	n	n	h	all marked results fine; final answer omits 30 minutes cooking	E6	rule_early	SETUP
+train-4066-3	E4	n	n	h	subtracts Cleo's share from jar; 12 marbles remain	E5	rule_late	SETUP
+train-4068-2	E1	n	y	h	Each friend needs 8+6=14 minutes; omits ankle cuffs	E1	agree_prose	SETUP
+train-4098-2	E2	y	n	h	Coffee per thermos is 20-4=16, not 20+4=24.	E2	rule_late	SETUP
+train-4104-4	E1	y	n	h	Annie has 34 classmates, not 35; 80 candies	E1	rule_late	SETUP
+train-4108-2	E3	n	y	h	should subtract 2 hours from 8 pm, not 5 pm	E3	agree_prose	SETUP
+train-4124-3	E4	n	n	h	22 gallons already covers all three; times 3 trips only	E4	agree	SETUP
+train-4149-3	E5	n	y	h	Should subtract the 100 parked cars, not add them	E5	agree_prose	SETUP
+train-4163-4	E3	n	y	h	60-40 is not a loss; sold shares cost only 30	E4	rule_late	SETUP
+train-4179-2	E1	n	y	m	alt=E2; folder plus new files is not total files size	E1	agree_prose	SETUP
+train-4186-2	E1	y	n	h	treats $40 as 40 boxes; he bought 8 boxes	E1	rule_late	SETUP
+train-4193-0	E1	n	n	h	multiplies daily 8 minutes by 4 weeks, ignoring 5 days per week	E1	agree	SETUP
+train-420-2	E2	n	y	m	Treats 2-hour total as homework time; homework is 40 minutes. alt=E3	E1	rule_early	SETUP
+train-4217-1	E4	n	n	h	Survivors are 14 unpoisoned plus 2 recovered, not 14 - 2.	E4	agree	SETUP
+train-4228-4	E4	n	y	h	Subtracts exception-day savings instead of adding them	E4	agree_prose	SETUP
+train-4240-1	E1	n	y	h	Alex is twice Diane's age, 60, not half	E3	rule_late	SETUP
+train-4273-0	E1	n	n	m	Gold reads 'ten times more' as 220 bee-eaters; model uses 200. alt=none	E4	rule_late	SETUP
+train-4291-0	E3	n	y	h	Adds $18 to original $30; she had only $15 left	E3	agree_prose	SETUP
+train-4293-3	E3	n	n	h	Prince bought only half the $10 CDs: 40, so $400.	E3	agree	SETUP
+train-430-2	E2	n	n	m	Halves only non-plum fruit; 9 remaining means 18 total. alt=E1	E1	rule_early	SETUP
+train-437-4	E1	y	n	m	Feed for 2 pounds costs $0.20, not $0.10; should be subtracted. alt=E2	E2	rule_late	SETUP
+train-4389-3	E1	n	n	h	invents a 7.5% interest rate not in the problem	E1	agree	SETUP
+train-4399-1	E6	n	y	h	Potatoes already included; subtracts them twice	E6	agree_prose	SETUP
+train-4400-1	E6	n	n	m	Premature rounding to 2.17 hours gives 130.2; exact is 130. alt=none	E6	agree	SETUP
+train-4401-3	E1	n	n	h	Swaps counts; she sold 6 Adidas and 8 Nikes.	E1	agree	SETUP
+train-4405-0	E1	n	n	m	Calls 1000 - 350 house-to-first-sign distance; that is 350. alt=E2	E2	rule_late	SETUP
+train-4415-1	E1	n	n	h	2pm to 4pm is 2 hours, not 4; 8 inches	E1	agree	SETUP
+train-4416-2	E1	y	n	h	11 days is 1 week plus 4 days, not 4 weeks	E1	rule_late	SETUP
+train-442-0	E4	n	y	m	Sums foot differences; should average percentage increases per crane. alt=none	E1	rule_early	SETUP
+train-4430-3	E1	n	y	h	Assumes all allowance saved; she actually has only $20.	E1	agree_prose	SETUP
+train-4438-4	E2	n	n	h	Weekend is 4 + 5 = 9 per week; (4+5)x2 is also 18.	E2	agree	ARITH
+train-4445-3	E4	n	n	m	alt=E3; treats all four bedroom walls as 10x10; two are 12x10	E5	rule_late	SETUP
+train-4450-4	E2	n	n	h	240% of $50 is $120, not 240 x 50.	E2	agree	ARITH
+train-4456-0	E1	n	y	m	Calls 200 x 5 daily sheets for all classes; it is weekly per class. alt=E2	E2	rule_late	SETUP
+train-4480-3	E3	n	n	h	only 5 minutes remain at 4 oz/min: 20, not 40	E3	agree	SETUP
+train-4493-0	E4	n	y	m	alt=E3; 90 is already dollars, dividing by 100 wrong	E4	agree_prose	SETUP
+train-4509-2	E2	n	n	h	occupancy uses wrong per-apartment counts; should be 70 per building	E1	rule_early	SETUP
+train-4520-3	E1	n	n	h	halves Madeline's 63; Cheryl should have 126	E1	agree	SETUP
+train-4521-2	E1	n	n	h	375 is insurance coverage; John pays 25%, which is $125	E2	rule_late	SETUP
+train-4522-4	E2	n	n	m	Labels 72 keys as locks; locks are 24, then multiplies again. alt=E3	E3	rule_late	SETUP
+train-4545-0	E3	n	n	h	Adele is 15 now, 25 in ten years; not 3/4 of 30	E3	agree	SETUP
+train-4549-4	E2	y	n	h	Uses bus rate for car; car takes 35 minutes one way.	E1	rule_late	SETUP
+train-4555-4	E1	n	n	h	eats only on 5 school days; weekly 10 not 14	E1	agree	SETUP
+train-4556-2	E2	y	n	h	300/20/7 is not 15; also should use 5 school days	E2	rule_late	ARITH
+train-4580-4	E1	n	n	m	alt=E2; 60 is games won or lost, not games lost	E2	rule_late	SETUP
+train-4582-4	E2	n	y	h	double counts boxes; should only add 5 loose cards	E2	agree_prose	ARITH
+train-4587-4	E4	y	n	h	unmarked 7-3=4 subtracts again; should be 7+12-6	E4	rule_late	SETUP
+train-4598-1	E3	n	n	h	each shirt type is 10 shirts, not 20	E1	rule_early	SETUP
+train-4603-1	E4	n	n	h	subtracts female cats; remaining cats should be 6+12=18	E4	agree	SETUP
+train-462-4	E1	y	n	h	Roberto skips 4200/60=70 per minute, not 80.	E3	rule_late	SETUP
+train-4633-3	E1	n	y	m	assigns full shared fries to Toby; later double counts; alt=E3	E1	agree_prose	SETUP
+train-4646-3	none	y	y	m	alt=E1; 1799 only ties; needs 1800, i.e. 300 per game	E1	rule_late	SETUP
+train-4663-2	E2	n	y	h	Uses today's price for Friday instead of rolled-back $1 per liter	E3	rule_late	SETUP
+train-4667-1	E2	n	n	h	Only 4 pieces are 100mm; subtract 400, not 15400.	E2	agree	ARITH
+train-4673-2	E3	n	n	h	234 + 166 = 400, not 399; arithmetic error.	E3	agree	ARITH
+train-4691-3	E2	n	y	h	Omits the 6 hours mowing the lawn	E3	rule_late	SETUP
+train-470-3	E2	y	n	h	Arbitrarily assumes 50 hours; regular hours should be 40	E2	rule_late	SETUP
+train-4727-4	E1	y	n	h	uses 39 days instead of 40, giving 46.8 delay	E1	rule_late	SETUP
+train-4732-4	none	y	n	h	Unmarked 51 x 0.1961 is 10.0, not 10.15; arithmetic error.	E2	rule_late	SETUP
+train-4742-2	E1	n	n	h	3 brothers times 2 children is 6; spouses also omitted	E1	agree	SETUP
+train-4799-2	E2	n	y	m	alt=E4; total discount $75 taken as total fee; fees are $1425	E2	agree_prose	SETUP
+train-4821-3	E1	n	y	h	down payment is one-time $50, not per year	E1	agree_prose	SETUP
+train-4826-1	E1	n	n	h	75 - 45 - 24 = 6, not 8; arithmetic error.	E1	agree	ARITH
+train-4827-2	E4	n	n	h	arithmetic error: 360-90-54 equals 216, not 116	E4	agree	ARITH
+train-483-0	E2	n	n	h	Subtracts only one month's loss; three months lose 72 pounds	E2	agree	SETUP
+train-4874-2	E3	n	n	h	Uses 30 red eaten as red remaining; 20 red remain.	E3	agree	SETUP
+train-4880-0	E3	n	y	h	they split one order of fries: $8, not $16	E4	rule_late	SETUP
+train-4892-1	E1	n	y	h	Only bills are paid; trip cost should not be subtracted.	E1	agree_prose	SETUP
+train-4910-3	E1	n	n	h	Savings-per-device formula is nonsense; per-device costs are $8 and $6.	E2	rule_late	SETUP
+train-4922-4	E7	n	y	h	135000 is already per person; divides by 4 again	E1	rule_early	SETUP
+train-4962-3	E1	y	n	h	Sunday needs two shirts; weekly total is 11	E1	rule_late	SETUP
+train-4969-1	E2	n	n	h	Counts one skirt; overskirt plus two petticoats is 3 skirts.	E4	rule_late	SETUP
+train-4976-1	E1	n	n	h	6*4/5 equals 4.8, not 2.4	E1	agree	ARITH
+train-4991-2	E3	n	n	h	Votes needed is just over 100, not 1.5 x 200 = 300.	E3	agree	SETUP
+train-5000-3	E3	n	y	h	omits $3.50 crackers from subtotal	E1	rule_early	SETUP
+train-5009-3	E2	n	n	h	Notebooks cost 6*$1=$6, not $1; total 28.	E2	agree	SETUP
+train-5058-3	E2	n	n	h	3*60 is 180, not 150; sixth graders planted 150.	E2	agree	SETUP
+train-508-0	E3	n	n	h	Second leg lasts twice as long, 1 hour, not 0.25.	E3	agree	SETUP
+train-5119-4	E1	y	y	h	Each car has 4 tires plus a spare, not 3 plus spare.	E1	rule_late	SETUP
+train-5134-0	E1	y	n	m	alt=none; uses literal Ann=300/0.85; gold expects 1.15*300=345	E1	rule_late	SETUP
+train-5139-4	E1	n	n	h	Multiplies 16 by 16 instead of adding to 32 squares	E1	agree	SETUP
+train-5145-2	E2	n	n	h	80% of 40 is 32 (or 3200), not 320	E2	agree	ARITH
+train-5154-0	E3	n	y	h	misreads question; Thomas must reach James's current age 24	E3	agree_prose	SETUP
+train-5184-1	E2	n	n	h	Needs 7 pairs, 59.5 feet, not 8.5	E3	rule_late	SETUP
+train-5192-2	E4	n	n	h	arithmetic error: 33+32+18+37 equals 120, not 110	E4	agree	ARITH
+train-52-0	E2	n	y	h	should add kept pencils to shared ones, 50, not subtract	E2	agree_prose	SETUP
+train-5215-2	E2	n	n	h	Must regrow all 48 lost hairs plus 1, not 32+1	E2	agree	SETUP
+train-5224-3	E2	n	y	h	Statues weigh 58 total, not 58 + 22 = 80.	E4	rule_late	SETUP
+train-5255-4	E1	y	n	h	1 slice is leftover, not eaten; slices eaten are 24.	E1	rule_late	SETUP
+train-5257-4	E1	y	n	h	She works 5 days, not 3	E1	rule_late	SETUP
+train-5277-4	E1	y	y	h	adds unripe apples per pie; should remove 6 from 34	E1	rule_late	SETUP
+train-5280-2	E3	y	n	h	Assumes 12 eggs per tray; reference uses 36 eggs per tray.	E3	rule_late	SETUP
+train-5297-4	E3	n	n	m	alt=E2; 8 goals per game times 15 is 120; subtract 120	E3	agree	SETUP
+train-5298-2	E3	n	n	h	counts restocked cans as given away	E6	rule_late	SETUP
+train-5305-3	E3	n	n	h	counts one cheesecake and adds wrong: should be 12+18+18=48	E3	agree	ARITH
+train-5333-0	none	y	n	m	Per-pepper values fine; final sum keeps 20 large slices, ignores 5 peppers. alt=E1	E1	rule_late	SETUP
+train-5361-2	E3	n	y	h	omits 3 salsa dishes, subtracts picked 2 again; answer 28	E3	agree_prose	SETUP
+train-5418-3	none	y	n	h	Divisions correct; misreads them, already below 50 four days ago	E5	rule_late	SETUP
+train-5425-4	E5	n	n	m	alt=E3; 60 drivers mean 60 cars, not 1.5	E3	rule_early	SETUP
+train-5440-2	E1	n	y	h	Subtracts $46 from one week's $50; two weeks save $100	E1	agree_prose	SETUP
+train-5460-3	E2	n	y	h	Second drink is half the cup (6 oz), not half of remaining.	E2	agree_prose	SETUP
+train-5464-1	E3	n	y	h	remaining milk 16-4+4=16 should be 8 gallons	E6	rule_late	SETUP
+train-547-0	E3	n	n	h	Kitchen is 4 + 2 = 6 hours, not 12 + 2.	E3	agree	SETUP
+train-5481-1	E1	n	y	h	Misreads relations: Calvin and Phoebe have 25; Frank 17, not 35.	E1	agree_prose	SETUP
+train-5496-2	E1	y	n	m	Omits driver counted by reference; should be 11 - 3 = 8. alt=none	E1	rule_late	SETUP
+train-5523-4	E1	n	y	h	nonsense games count (240-50)/30; should divide 240 by net loss 20	E1	agree_prose	SETUP
+train-5528-1	E1	n	n	h	60% of total 125 cows, not of 50 males	E1	agree	SETUP
+train-5531-4	E3	y	y	h	converts minutes to days at $250/day; should be 0.5 hr times 250	E2	rule_late	SETUP
+train-5536-4	E1	y	n	m	Carries unmarked error 57 + 16 = 63; should be 73, giving 307. alt=none	E1	rule_late	ARITH
+train-5539-0	E4	n	n	h	weekend equals 11 hours, not double	E5	rule_late	SETUP
+train-5562-0	E2	n	n	h	adds 27 total vegetables to corn count	E2	agree	SETUP
+train-5566-1	E1	n	y	m	Mislabels one-way 5 + 7 as to and from bus stop. alt=none	E2	rule_late	SETUP
+train-5567-0	E2	n	n	h	uses 1600 per person instead of 800 for first six	E2	agree	SETUP
+train-5580-0	E4	n	y	h	Cars use 30 caps (75%): 30/5=6, not 40/5=8.	E4	agree_prose	SETUP
+train-5604-1	E3	n	n	h	Team A second half is 8 - 2 = 6, not 12 - 2.	E3	agree	SETUP
+train-5621-4	E4	y	n	h	Divides by 4 days; should divide by 7	E4	rule_late	SETUP
+train-5623-0	E3	n	y	h	English fraction applies to whole class, not remaining 24	E2	rule_early	SETUP
+train-5635-0	E2	n	y	m	Per-customer weight is 25, not 100 x 25. alt=E3	E3	rule_late	SETUP
+train-565-3	E1	n	n	h	wrong substitution of K; should get 10K+20=1000 and M=294	E1	agree	SETUP
+train-5655-3	E3	n	n	h	Weekdays total 3*5=15 boxes, not 3.	E3	agree	SETUP
+train-5670-1	E5	n	y	h	omits 8 added students and adds sum wrong	E5	agree_prose	ARITH
+train-57-2	E2	n	n	h	One-fifth of all 10 kg is 2 kg, not 5/5.	E3	rule_late	SETUP
+train-5706-2	E2	n	n	h	Each folder has 10 sheets, not 30; red is 30 stickers.	E2	agree	SETUP
+train-5713-2	E1	y	y	h	Tom is 3 times faster: 2 minutes, not 18	E1	rule_late	SETUP
+train-572-1	E1	n	n	h	Monday picked 8 pounds, not 2; earnings $16	E4	rule_late	SETUP
+train-5725-4	E2	n	n	h	increase is all 7300 learned words, not half of them	E2	agree	SETUP
+train-5773-4	E1	y	n	h	Ravenswood has 4 x 20 = 80 gnomes, not 20.	E1	rule_late	SETUP
+train-5778-2	E2	n	y	h	computes monthly hours; question asks two weeks plus 6 extra/week	E2	agree_prose	SETUP
+train-5794-1	E3	n	y	h	Subtracts ingredients from repayment; should be 100 - 75 + 150 - 110.	E3	agree_prose	SETUP
+train-5804-2	E5	n	n	h	15+5+5+2+1 is 28, so rap requests are 2.	E5	agree	SETUP
+train-5811-4	E4	y	n	h	October equals September's 124; adds weeds again	E4	rule_late	SETUP
+train-5879-0	E1	n	y	h	back spots are one-third of 60 total, not half of 30	E1	agree_prose	SETUP
+train-59-1	E2	n	n	h	15+35+35+35 equals 120, not 110.	E2	agree	ARITH
+train-5914-4	E1	y	n	h	treats 50% as 0.5 trees; left side equals 5.5, not 55	E3	rule_late	SETUP
+train-5919-2	E3	n	y	h	Multiplies weekly 77 minutes by 7 again; answer is 77.	E3	agree_prose	SETUP
+train-5926-4	E1	n	n	h	42 pounds converted wrongly to 84 euros; should be 21	E1	agree	SETUP
+train-5931-1	E1	n	n	h	Uses 15 hours instead of 0.25 hours; distance is 7 miles.	E1	agree	SETUP
+train-5932-3	E1	n	y	h	sharpenings are 105/1.5=70, not times 5	E1	agree_prose	SETUP
+train-5936-2	E1	n	n	m	Gold treats 9 cakes total, 900g; model uses 18 cakes. alt=none	E1	agree	NEWNUM
+train-5941-4	E3	n	y	h	Leftover 15 gallons should be added, not subtracted	E3	agree_prose	SETUP
+train-5947-0	E2	n	n	h	Brother is younger: born 1970+20=1990, not 1950.	E2	agree	SETUP
+train-5949-2	E3	n	y	h	Totally damaged carton loses 20 jars, not 5	E5	rule_late	SETUP
+train-5954-1	E1	y	y	h	Zack's class has 23 including Zack; T and M should be 23	E1	rule_late	SETUP
+train-597-2	E4	n	n	h	Computes 34-34=0 instead of subtracting 34 from 234.	E4	agree	SETUP
+train-5971-2	E3	n	n	h	20 key chains at $2 cost $40, not $4.	E4	rule_late	SETUP
+train-6002-4	E2	n	n	h	Shared rent means she pays $600, not $1200	E2	agree	SETUP
+train-601-4	none	n	n	h	All equations correct; final answer reports gazelle distance 420 instead of 7	E5	rule_early	SETUP
+train-6012-3	E2	n	y	h	Meaningless growth per inch; tree should grow 2*12=24 inches	E2	agree_prose	SETUP
+train-6034-3	E2	n	n	h	Omits Brendan's 5 afternoon fish; total should be 23.	E2	agree	SETUP
+train-6036-2	E5	y	n	h	Filled after 5+4=9 hours, at 10 pm, not 11 pm.	E5	rule_late	SETUP
+train-6056-1	E1	y	n	m	Amoura arrived 8:55, not 9:05; Ingrid is 3 x 55 late. alt=E2	E1	rule_late	ARITH
+train-606-3	E4	n	n	h	arithmetic error: 180-20-60-12 equals 88, not 98	E4	agree	ARITH
+train-6085-3	E2	n	y	h	Fifth hour only loses 8 with no filling; net is -8	E2	agree_prose	SETUP
+train-6089-4	E6	n	n	h	Brother ate only 15 oz; wrongly adds Javier's 14	E6	agree	SETUP
+train-6092-0	E1	n	y	h	ignores 6 bathrooms; needs 6 rolls per day, not 1	E1	agree_prose	SETUP
+train-611-4	E1	n	n	h	Jelly's quarter has 40/4=10 pepperoni; answer should be 10-1=9.	E1	agree	SETUP
+train-6150-1	E2	n	n	h	50 cm per 2 weeks over 16 weeks is 400, not 800	E2	agree	ARITH
+train-6162-4	E1	y	n	h	Assumes all $80 from pencils; ignores eraser revenue, pencil is $2.	E1	rule_late	SETUP
+train-617-3	E5	n	n	h	50 + 90 + 140 + 300 + 240 = 820, not 720.	E5	agree	ARITH
+train-6175-4	E3	n	y	h	average over two players: 184/2=92, not per game	E3	agree_prose	SETUP
+train-6190-4	E1	n	n	h	6.5*31 equals 201.5, not 199.5.	E1	agree	ARITH
+train-6219-4	E2	y	n	h	Only 2 fruit salads; need one per person, 4 salads.	E2	rule_late	SETUP
+train-6222-4	E3	n	n	h	omits 30 additional teddies from total	E3	agree	SETUP
+train-623-2	E1	y	n	h	18 is cups, not drinks; also 18/4 is 4.5.	E1	rule_late	ARITH
+train-6242-4	E2	n	n	h	20 ounces is 0.625 quarts, not 0.125	E2	agree	ARITH
+train-6256-2	E1	n	n	m	2870 is one player's season total, not team total needed (11480). alt=E2	E2	rule_late	SETUP
+train-6258-0	E4	n	y	m	invents three more months after 420,000; only 3 months remain; alt=E3	E3	rule_early	SETUP
+train-626-3	E2	n	n	h	Time per question is 12/16=0.75, not 1/5*12=2.4.	E1	rule_early	SETUP
+train-6275-1	E5	n	y	h	adds both rope options; should pick cheaper $5 rope	E5	agree_prose	SETUP
+train-6321-0	E5	n	n	h	Only 1 kg potatoes bought; cost is $1, not $2.	E7	rule_late	SETUP
+train-6328-2	E1	n	y	h	Tailored suit is 3*300+200=1100, not 300+200	E1	agree_prose	SETUP
+train-6338-4	E3	n	y	h	Adds one-time case and headphones as monthly costs; omits phone.	E3	agree_prose	SETUP
+train-6339-2	E3	y	n	h	Two weeks at 30 kg each is 60 kg, not 30.	E3	rule_late	SETUP
+train-6349-3	E3	n	y	h	subtracts yellow houses; non-yellow is just red plus green	E3	agree_prose	SETUP
+train-6355-3	E2	y	n	h	Treats $141 as pattern plus thread; fabric is 141 - 21 = 120.	E2	rule_late	SETUP
+train-637-4	E3	n	y	h	Tony is 12 years younger than Jacob, not 6	E2	rule_early	SETUP
+train-6374-2	E1	n	n	h	halves triple-flips instead of 48 flips; Tyler flipped 24 times	E1	agree	SETUP
+train-6378-1	E2	y	n	h	Divides by 19 teeth; only 17 teeth after first earned money.	E2	rule_late	ARITH
+train-6403-2	E5	n	n	h	3520 - 2464 = 1056, not 1064; arithmetic error.	E5	agree	ARITH
+train-6405-0	E2	n	n	h	divides 180 by 25 ignoring pause time; should count 30-minute cycles	E1	rule_early	SETUP
+train-6407-4	E1	n	n	h	Nougats are 2*3=6; wrongly adds the caramels	E3	rule_late	SETUP
+train-6411-0	E3	n	n	h	Treats a set as one earring; 4 sets are 8 earrings.	E1	rule_early	SETUP
+train-6415-1	E2	n	y	h	subtracts 8 people from 14; jackets reduce capacity by only 4	E2	agree_prose	SETUP
+train-6416-3	E1	n	n	h	Five back then ten forward is +5, not -5	E1	agree	SETUP
+train-6420-2	E2	n	y	m	alt=E1; third leg should be 440, not 220	E2	agree_prose	ARITH
+train-6444-1	E1	n	n	h	Books sold sum to 200, not 190	E1	agree	ARITH
+train-6450-1	E4	n	n	h	Subtracts weekly withholding from annual pay; should subtract 6,240.	E4	agree	SETUP
+train-647-4	E2	n	n	h	adds 1 instead of 4 staff cupcakes	E2	agree	SETUP
+train-6473-4	E5	n	n	h	36 already covers both packets; doubling to 72 is wrong.	E5	agree	SETUP
+train-648-2	E3	n	n	h	Adds encore back instead of subtracting; third and fourth sets total 16.	E4	rule_late	SETUP
+train-6480-1	E3	y	n	h	Adds 40 to color counts; other color is 40 - 36 = 4.	E3	rule_late	SETUP
+train-6481-3	none	y	n	h	marked conversions fine; Jake volume 3.33 not 3.4, sign/units wrong	E1	rule_late	SETUP
+train-6487-2	E3	n	y	h	65 already includes the 5 kept; adds 5 again	E3	agree_prose	SETUP
+train-6531-2	E1	n	n	h	burns 3 logs per hour: 9 not 6*3=18	E1	agree	SETUP
+train-6538-0	E1	y	n	h	Ignores 42-foot bridge; 858/6 = 143 poles per side.	E1	rule_late	SETUP
+train-6545-1	E2	n	y	h	Savings are $8 - $3 = $5 per day, not $8 - $4.	E3	rule_late	SETUP
+train-6552-1	E3	n	y	h	Reversed relation: strawberry is half of grape, not double	E3	agree_prose	SETUP
+train-6561-1	E1	n	n	h	A fifth of 50 is 10, not 5	E2	rule_late	SETUP
+train-6571-3	E2	n	n	h	Steve receives 3 marbles; should be 7 + 3 = 10.	E1	rule_early	SETUP
+train-6597-3	E3	n	n	m	Jacob still has 8 fish; adding Alex's lost fish is wrong. alt=E4	E3	agree	SETUP
+train-6601-3	E2	y	y	h	Subtracts one batch cost; all $15 buys 12 artichokes.	E1	rule_late	SETUP
+train-6608-3	E1	n	n	h	20 gyms times 20 machines is 400, not 200	E6	rule_late	SETUP
+train-6614-3	E4	n	n	h	counts 4 regular snakes instead of 5	E5	rule_late	SETUP
+train-6619-3	E2	n	n	h	each trip is a 120-mile round trip; total 2400 miles	E2	agree	SETUP
+train-6629-1	E3	n	n	h	third group should be 7*2+6=20, not 16	E3	agree	SETUP
+train-6635-4	E1	n	n	h	nonsense 3-5-1; teachers got 25-5-1-3=16	E1	agree	SETUP
+train-6637-2	E1	y	n	h	Capacity is 8/0.2=40 liters, not 80; total 1600.	E1	rule_late	SETUP
+train-6653-3	E2	n	n	h	batter sugar per dozen taken as 12 cups instead of 1	E2	agree	SETUP
+train-669-3	E1	n	n	h	Frisbees are 60/2 = 30, not 2 x 60.	E1	agree	SETUP
+train-6694-3	E1	n	y	h	He earns $25/day; $500/10 is not his rate.	E1	agree_prose	SETUP
+train-6700-1	E1	n	n	h	10 oz for $1 is $0.10 per ounce, not $1	E2	rule_late	ARITH
+train-6732-0	E1	y	n	m	Built on unmarked errors: 30% of 90,000 is 27,000, not 9,000. alt=none	E1	rule_late	SETUP
+train-6734-3	E2	n	y	h	Omits the 16 cookies sold in the afternoon	E3	rule_late	SETUP
+train-6766-2	E4	n	n	h	arithmetic error: 30+15+90+450 equals 585, not 605	E4	agree	ARITH
+train-6767-0	E1	y	n	h	30-4 is 26 readable days, not 20; then 25	E1	rule_late	SETUP
+train-6812-3	E1	y	n	h	Sells all 52; she gave 8 away, so sold 44.	E1	rule_late	SETUP
+train-6832-4	E1	n	y	m	alt=E2; 8 hours is the round trip; reading takes 16 hours	E2	rule_late	SETUP
+train-6842-2	E3	n	y	h	Assumes overlap of taken and broken seats; they are disjoint.	E3	agree_prose	SETUP
+train-6844-4	E1	n	n	h	Speed is per second; 30 minutes is 1800 seconds	E1	agree	SETUP
+train-6849-3	E4	y	n	h	Four rest stops in total, 2 hours, not 1 hour.	E3	rule_late	SETUP
+train-6850-2	E1	n	n	m	144 is strings, not shows; shows are 72; alt=E2	E2	rule_late	SETUP
+train-6879-3	none	y	y	m	Unmarked equation uses 48x; only 20 teddy bears, x = 15. alt=E2	E2	rule_late	SETUP
+train-6897-4	E5	n	n	m	converts 1 hour instead of 5 hours; should be 300; alt=none	E5	agree	SETUP
+train-6902-3	E1	n	y	h	three times smaller means divide by 3, giving 150	E1	agree_prose	SETUP
+train-6918-3	E1	y	n	h	Second batch is 25 texts, so police texts are 10% of 30.	E1	rule_late	SETUP
+train-6922-4	E1	n	n	h	200/3 times 900/3 equals 20000, not 6666.67	E1	agree	ARITH
+train-6935-4	E1	y	y	h	Uses 0.9 kW per hour as daily; daily is 5.4 kW.	E1	rule_late	SETUP
+train-6938-4	none	y	n	h	Equations fine; pooled method flawed yet gives 100; recorded answer 1 mismatched	E1	rule_late	SETUP
+train-6952-4	E4	n	n	h	7+1.5+1+3+1.5 equals 14, not 13.	E4	agree	ARITH
+train-6953-0	E1	n	n	m	alt=E8; counts full 100 oz as available wax; only 10% remains	E1	agree	SETUP
+train-6978-1	E3	n	n	h	divide deer by 4 hunting wolves, not 20	E3	agree	SETUP
+train-6986-1	none	n	n	h	marked values fine; final omits multiplying daily $1000 by 7 days	E1	rule_early	SETUP
+train-6998-1	E1	n	y	m	Calls 30 pages read so far; she has read 90. alt=E2	E2	rule_late	SETUP
+train-700-4	E2	y	n	h	Two white socks cost 45, so brown is 45-25=20	E1	rule_late	SETUP
+train-7005-2	E2	n	n	h	Ignores moon's 1/5 area: should be 80/5*6=96.	E2	agree	SETUP
+train-7008-4	E5	n	y	h	sums one square painting (36) instead of three (108)	E5	agree_prose	SETUP
+train-7032-4	E3	y	n	h	27 donuts remain after eating 3, not 3; 27-4=23	E3	rule_late	SETUP
+train-7050-2	E4	n	y	m	Last wall has 4 courses built, 40 bricks, not 2. alt=E5	E3	rule_early	SETUP
+train-7054-3	E2	n	n	h	48 - 37 is 11, not 111; arithmetic error.	E2	agree	ARITH
+train-7116-3	E2	n	y	m	alt=E4; intact boxes hold 9 eggs, 90 oz, not 30	E1	rule_early	SETUP
+train-7117-2	E1	y	y	h	reverses who finished first; Jack's total is 25, not 39	E1	rule_late	SETUP
+train-7123-3	E3	y	n	h	Advanced classes hold 20 per grade, not 212 students.	E3	rule_late	SETUP
+train-7133-3	E1	n	y	h	Misreads: one child sold 7; two children ate 4 each	E1	agree_prose	SETUP
+train-7137-4	E2	n	n	h	One bag holds 3 macaroons, 15 ounces, not all 60.	E3	rule_late	SETUP
+train-7148-1	E1	n	n	h	Three weeks is 21 days: 42 koi added, not 6.	E1	agree	SETUP
+train-7151-0	E2	y	n	h	Second year has 4 visits, not 12; should be $28.	E2	rule_late	SETUP
+train-7193-0	E1	y	n	h	Adds two students' scores; needs 39 of 40 questions.	E1	rule_late	SETUP
+train-7215-3	E1	n	n	h	multiplies summed counts by summed prices; average is $80	E1	agree	SETUP
+train-7250-2	E2	n	n	h	Two cars with 4 wheels each is 8, not 4.	E3	rule_late	SETUP
+train-7263-4	none	y	n	h	Marked steps fine; final says 7 cans needed instead of 42-7=35.	E3	rule_late	SETUP
+train-7265-0	E2	n	n	h	Remainder after Michael is 30, not 0.	E2	agree	SETUP
+train-7269-1	E1	n	n	h	Two weeks is 14 days, not 2 days per week	E1	agree	SETUP
+train-7290-4	E2	y	y	h	Offices are 75, not 150; restaurants are 75.	E2	rule_late	SETUP
+train-7298-1	E2	n	n	h	33/275*100 equals 12, not 11.92; arithmetic slip.	E2	agree	ARITH
+train-7305-2	E1	y	y	h	Uses current 20 cats as original; original dogs are 40-20=20.	E1	rule_late	SETUP
+train-7320-3	E1	n	n	h	Pedro has 20+60=80, not 60	E3	rule_late	SETUP
+train-7325-4	E2	n	n	h	Rebeca is John's height plus 6: 158, not 143.	E2	agree	SETUP
+train-7330-3	E1	n	y	m	4/8 is hours per foot; speed is 2 feet per hour; alt=E3	E3	rule_late	SETUP
+train-7332-4	E1	n	y	h	$45,000 covers only first three pieces, each $15,000	E1	agree_prose	SETUP
+train-7337-4	E1	n	n	m	takes 1/4 of 40 as second intersection count, not 50; alt=E2	E3	rule_late	SETUP
+train-7339-1	E5	n	y	h	Assumes butter sold per customer; all 24 sticks are sold	E7	rule_late	SETUP
+train-734-3	E1	y	n	h	Swaps sweet and sour shares; average price 0.4 gives 100 apples.	E1	rule_late	SETUP
+train-7360-1	E1	n	n	m	3 apples is monthly rate; second half costs 36; alt=E2	E2	rule_late	SETUP
+train-7364-3	E3	n	n	h	2+0.5+0.5 equals 3, not 3.5.	E3	agree	ARITH
+train-7370-0	E1	n	n	m	ignores every-other rule; only 14 lessons are paid; alt=E2	E1	agree	SETUP
+train-7371-0	E2	n	n	h	extra $100 means 10 points: average 85, not 81	E2	agree	ARITH
+train-7400-2	E2	n	y	m	alt=E1; multiplies $49 by 7/4 again; whole collection is already $49	E2	agree_prose	ARITH
+train-7418-1	E2	n	n	h	should multiply 288 by 7 caps per ounce, not divide	E2	agree	SETUP
+train-7424-0	E2	n	n	h	subtracts minimum spend from total paid including tax; wrong quantity	E2	agree	SETUP
+train-7435-4	none	y	y	h	Marked 1+3 fine; subtracting eaten maggots from 20 is wrong	E1	rule_late	SETUP
+train-7437-1	E1	n	n	h	Total is 1000 cents; wrongly adds 1000 + 500 = 1500.	E1	agree	SETUP
+train-7455-2	E1	n	n	m	Tire profit uses $20 price, ignoring $5 parts; alt=E3 if read as revenue.	E3	rule_late	SETUP
+train-7460-4	E3	n	n	h	Discounted price per 10 seats is 270, not 30*0.9=27.	E3	agree	SETUP
+train-756-1	E3	n	y	m	Reverses trade direction; Jeff count 29 wrong. alt=E4	E3	agree_prose	SETUP
+train-770-4	E1	n	n	h	Uses 7 days; TV allowed only 4 days a week.	E1	agree	SETUP
+train-804-3	E1	y	n	h	16 pandas form 8 couples, not 16	E1	rule_late	SETUP
+train-805-4	E1	n	n	h	Should divide 8 hours by 2 hours: 4 movies per screen.	E1	agree	SETUP
+train-81-0	E1	n	n	h	First round is 16 - 1 = 15; uses second-round rule.	E5	rule_late	ARITH
+train-83-0	E4	n	n	h	Uses only Paityn's red hats (20) instead of her 44 hats	E4	agree	SETUP
+train-840-0	E2	n	n	h	puppy eats half per meal: 2 lb, not half of daily 12	E2	agree	SETUP
+train-869-3	E2	n	n	m	combines sheets; separate sharing leaves 3 stickers; alt=E1	E1	rule_early	SETUP
+train-880-1	E3	n	n	m	Uses two-day total 3 as daily amount; should be 1.5*14. alt=E2	E2	rule_early	SETUP
+train-884-4	E1	y	n	h	each vampire turns 5, so 10 new the first night	E1	rule_late	SETUP
+train-915-3	E4	n	y	h	Charges 20 cents per kW; rate is 20 cents per watt.	E2	rule_early	SETUP
+train-938-4	E1	n	n	h	Joe's team has 3+3=6 points; sum is wrong	E1	agree	ARITH
+train-948-4	E1	n	y	h	four times as often: 4*2=8 per week, not 10	E1	agree_prose	SETUP
+train-953-4	E2	n	n	h	doubling already gives 8 total; adding 4 again is wrong	E2	agree	SETUP
+train-957-0	none	n	n	h	All steps correct; 240 minutes converted to 4 hours, answer unit mismatch.	E2	rule_early	SETUP
+train-986-0	E3	n	n	h	monthly difference 8; weekly difference should be 2	E1	rule_early	SETUP

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6663-1",
+  "response_sha256": "0793fecec8268b566a63cd9b80b5e8b098c7d72b4e299542ea985be9a4b3c805",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Difference in speed = 420 - (-380) = 420 + 380 = 800 feet per second",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how much faster, in feet per second, is the bullet flying than if he fires the bullet in the opposite direction of what the horse was running?",
+  "observed_error": "The response subtracts signed velocities instead of comparing speed magnitudes.",
+  "violated_condition": "Speed is a nonnegative magnitude; the backward bullet's velocity of -380 feet per second corresponds to a speed of 380 feet per second.",
+  "error_description": "The response uses the backward bullet’s signed velocity, -380 feet per second, as its speed when subtracting from 420 feet per second. The question asks how much faster one bullet travels, requiring a comparison of nonnegative speed magnitudes. The displayed arithmetic is correct, but the comparison relation is wrong.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

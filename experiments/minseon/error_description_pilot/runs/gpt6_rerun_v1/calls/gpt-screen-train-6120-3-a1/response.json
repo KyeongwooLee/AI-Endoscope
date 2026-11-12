@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"144 students","check":"Blue: 0.30 × 200 = 60; red: 0.40 × 140 = 56. Yellow: 200 − 60 − 56 = 84, so blue and yellow total 60 + 84 = 144.","evidence_quote":"200 - 60 - 56 = 184","error_description":"Step 4 incorrectly evaluates the subtraction as 184 instead of 84. This incorrect yellow count leads to the incorrect final total of 244."}

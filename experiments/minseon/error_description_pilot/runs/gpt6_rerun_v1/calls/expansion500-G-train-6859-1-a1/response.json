@@ -1,0 +1,20 @@
+{
+  "source_id": "train-6859-1",
+  "response_sha256": "d074068fa27619636df9ecb75afe39e456570d33490a41dcec6c91918d30a0bd",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "36 sticks / 3 = 12 sticks (for Gerry's raft)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Gerry's raft needs two-thirds of the number of sticks that Simon needs",
+  "observed_error": "The response assigns Gerry one-third of Simon's sticks instead of two-thirds.",
+  "violated_condition": "Gerry's stick requirement must equal (2/3) × 36.",
+  "error_description": "The response divides Simon's 36 sticks by 3 and assigns the resulting 12 sticks to Gerry. That division is executed correctly, but it calculates only one-third of Simon's requirement, violating the condition that Gerry needs two-thirds of Simon's sticks.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Step 4 uses 48 sticks for Simon and 57 for Gerry, contradicting its earlier individual allocations of 36 and 12; it should sum each boy's individual requirement once.",
+    "Step 4 incorrectly evaluates its written sum: 48 + 57 + 57 equals 162, not 156."
+  ],
+  "uncertainty_note": null
+}

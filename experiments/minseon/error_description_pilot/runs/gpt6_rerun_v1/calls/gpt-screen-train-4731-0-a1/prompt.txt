@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Billy ate 20 apples this week. On Monday, he ate 2 apples. On Tuesday, he ate twice as many as he ate the day before. He’s not sure what he ate on Wednesday. On Thursday, he ate four times as many as he ate on Friday. On Friday, he ate half of the amount he ate on Monday.  How many apples did he eat on Wednesday?
+SOLUTION: Step 1: Determine the number of apples Billy ate on Tuesday.
+Billy ate 2 apples on Monday and twice as many on Tuesday.
+2 * 2 = 4 apples on Tuesday.
+
+Step 2: Determine the number of apples Billy ate on Friday.
+Billy ate half of the amount he ate on Monday.
+2 / 2 = 1 apple on Friday.
+
+Step 3: Determine the number of apples Billy ate on Thursday.
+Billy ate four times as many apples on Thursday as he did on Friday.
+4 * 1 = 4 apples on Thursday.
+
+Step 4: Determine the number of apples Billy ate on Wednesday.
+We know the total number of apples Billy ate this week is 20.
+We also know the number of apples he ate on Monday, Tuesday, Thursday, and Friday.
+20 - (2 + 4 + 1 + 4) = 11 apples on Wednesday.
+
+#### 11
+The answer is 11.

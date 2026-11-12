@@ -1,0 +1,1 @@
+{"case1_error":"Unsupported final number 70 after the correct formula 5 * 12; the total is 60.","case2_error":"Unsupported final number 500 after the correct formula (10 * 5) * 4; the total is 200.","reason":"Both give correct formulas followed by incorrect final numbers without showing an evaluation that explains the error.","judgment":"same"}

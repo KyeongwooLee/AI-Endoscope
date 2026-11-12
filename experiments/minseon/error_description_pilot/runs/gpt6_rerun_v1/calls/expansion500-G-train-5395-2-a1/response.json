@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5395-2",
+  "response_sha256": "09daa4b01acbf12c4dfb13e5399930a9c91923430db8d10540b05d18a4b33d0e",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\text{Total pasta} = 9.5",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "The original recipe calls for 2 pounds of pasta and serves 7 people. Dale's family reunion will have 35 people.",
+  "observed_error": "The response evaluates the written product 35 × 0.2857 as 9.5.",
+  "violated_condition": "Total pasta must equal 35 times the per-person quantity of 2/7 pounds; 35 × 0.2857 equals 9.9995, not 9.5.",
+  "error_description": "The response correctly sets up proportional scaling from 2 pounds for 7 people to 35 people, but then evaluates 35 × 0.2857 as 9.5 pounds. That multiplication gives 9.9995 pounds, so the stated quantity does not follow from its written arithmetic.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

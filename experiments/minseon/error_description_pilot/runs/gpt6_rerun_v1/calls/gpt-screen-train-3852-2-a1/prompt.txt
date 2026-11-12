@@ -1,0 +1,30 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John has to replace the ball bearings for machines he works with.  He has 10 machines and they take 30 ball bearings each.  It normally costs $1 per ball bearing but right now there is a sale where they are only $.75.  Also since he is buying in bulk he gets a further 20% discount.  How much money did he save by buying them all during the sale rather than 1 at a time?
+SOLUTION: Step 1: Calculate the total number of ball bearings needed.
+Total ball bearings = Number of machines * Ball bearings per machine
+Total ball bearings = 10 * 30
+Total ball bearings = 300
+
+Step 2: Calculate the cost without any discount.
+Cost without discount = Total ball bearings * Cost per ball bearing
+Cost without discount = 300 * $1
+Cost without discount = $300
+
+Step 3: Calculate the cost during the sale.
+Cost during sale = Total ball bearings * Sale price per ball bearing
+Cost during sale = 300 * $.75
+Cost during sale = $225
+
+Step 4: Calculate the discount amount.
+Discount amount = Cost without discount - Cost during sale
+Discount amount = $300 - $225
+Discount amount = $75
+
+Step 5: Calculate the total savings.
+Total savings = Cost without discount - Cost during sale
+Total savings = $300 - $225
+Total savings = $75
+
+#### 75
+The answer is 75.

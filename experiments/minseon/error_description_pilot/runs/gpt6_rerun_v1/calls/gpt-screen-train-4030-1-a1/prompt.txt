@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: In the beginning, Justine had 10 more rubber bands than Bailey but 2 fewer bands than Ylona. Bailey decided to give two bands each to Justine and Ylona so that he is left with only 8 rubber bands. How many rubber bands did Ylona have in the beginning?
+SOLUTION: Step 1: Let's denote the number of rubber bands Ylona had in the beginning as \( y \).
+
+Step 2: According to the problem, Bailey had \( y - 2 \) rubber bands in the beginning.
+Step 3: Justine had \( y - 2 + 10 = y + 8 \) rubber bands in the beginning.
+
+Step 4: Bailey gave 2 bands to Justine and 2 bands to Ylona. After giving away the bands, Bailey is left with 8 bands. So, the total number of bands Bailey had initially minus the bands he gave away equals 8:
+\[ (y - 2) - 2 + 2 = 8 \]
+
+Step 5: Simplify the equation:
+\[ y - 2 = 8 \]
+
+Step 6: Solve for \( y \):
+\[ y = 8 + 2 \]
+\[ y = 10 \]
+
+#### 10

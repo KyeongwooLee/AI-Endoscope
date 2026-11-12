@@ -1,0 +1,19 @@
+{
+  "source_id": "train-3939-0",
+  "response_sha256": "0e0707407e5a314deb599248a290a6b593386180c002924e7d00190f3dad8002",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "3. \\( I = J - 30 \\) (Ida's dress is $30 more than Jean's)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Ida's dress was $30 more than Jean's dress",
+  "observed_error": "The response subtracts $30 from Jean's price to represent Ida's price.",
+  "violated_condition": "Ida's dress costs $30 more than Jean's: I = J + 30.",
+  "error_description": "The response represents Ida's dress as Jean's price minus $30, reversing the stated condition that Ida's dress costs $30 more. Its subsequent calculation of 20 − 30 = −10 correctly executes the written subtraction; the error is the relation used to determine Ida's price.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The final price list assigns Ida and Patty $10 each without justification, independently violating the condition that Patty's dress costs $10 more than Ida's."
+  ],
+  "uncertainty_note": null
+}

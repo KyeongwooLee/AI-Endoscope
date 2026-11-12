@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3706-3",
+  "response_sha256": "5aef4790af3a4b54c8e2102ebdbabcdeeb260633f13b5449f433e6e5df15fcb0",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Final amount = $450 - Total taxes and fees\n#### 340\n#### 340",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "what is the final amount left in Bobby's paycheck, in dollars?",
+  "observed_error": "The reported $340 does not equal the result of the correctly written deduction formulas.",
+  "violated_condition": "The final paycheck must equal $450 − (450/3 + 0.08 × 450 + 50 + 20 + 10).",
+  "error_description": "The response correctly sets up both taxes and all three fixed deductions, but reports $340 as the remaining paycheck. That amount does not satisfy its written subtraction relation. No intermediate numerical evaluations show which calculation produced the discrepancy.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The incorrect final amount is observable, but the specific arithmetic operation responsible is not shown."
+}

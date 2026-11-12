@@ -1,0 +1,946 @@
+{
+  "methods": {
+    "original": {
+      "by_expected": {
+        "same": {
+          "n_ordered": 12,
+          "n_base_pairs": 6,
+          "correct": 3,
+          "outputs": {
+            "different": 9,
+            "same": 3
+          }
+        },
+        "different": {
+          "n_ordered": 12,
+          "n_base_pairs": 6,
+          "correct": 12,
+          "outputs": {
+            "different": 12
+          }
+        },
+        "uncertain": {
+          "n_ordered": 12,
+          "n_base_pairs": 6,
+          "correct": 0,
+          "outputs": {
+            "different": 10,
+            "same": 2
+          }
+        }
+      },
+      "correct": 15,
+      "total": 36,
+      "order_consistency_n": 15,
+      "base_pairs": 18,
+      "order_details": [
+        {
+          "base_pair": "control-0-positive",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-0-negative_same_question",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-0-one_correct",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-1-positive",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-1-negative_same_question",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-1-one_correct",
+          "first": "same",
+          "swapped": "different",
+          "consistent": false
+        },
+        {
+          "base_pair": "control-2-positive",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-2-negative_same_question",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-2-one_correct",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-3-positive",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-3-negative_same_question",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-3-one_correct",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-4-positive",
+          "first": "same",
+          "swapped": "same",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-4-negative_same_question",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-4-one_correct",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-5-positive",
+          "first": "same",
+          "swapped": "different",
+          "consistent": false
+        },
+        {
+          "base_pair": "control-5-negative_same_question",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-5-one_correct",
+          "first": "same",
+          "swapped": "different",
+          "consistent": false
+        }
+      ],
+      "missing_parse": 0
+    },
+    "revised": {
+      "by_expected": {
+        "same": {
+          "n_ordered": 12,
+          "n_base_pairs": 6,
+          "correct": 4,
+          "outputs": {
+            "different": 8,
+            "same": 4
+          }
+        },
+        "different": {
+          "n_ordered": 12,
+          "n_base_pairs": 6,
+          "correct": 12,
+          "outputs": {
+            "different": 12
+          }
+        },
+        "uncertain": {
+          "n_ordered": 12,
+          "n_base_pairs": 6,
+          "correct": 0,
+          "outputs": {
+            "different": 10,
+            "same": 1,
+            "unparsed": 1
+          }
+        }
+      },
+      "correct": 16,
+      "total": 36,
+      "order_consistency_n": 16,
+      "base_pairs": 18,
+      "order_details": [
+        {
+          "base_pair": "control-0-positive",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-0-negative_same_question",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-0-one_correct",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-1-positive",
+          "first": "same",
+          "swapped": "same",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-1-negative_same_question",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-1-one_correct",
+          "first": null,
+          "swapped": "different",
+          "consistent": false
+        },
+        {
+          "base_pair": "control-2-positive",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-2-negative_same_question",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-2-one_correct",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-3-positive",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-3-negative_same_question",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-3-one_correct",
+          "first": "same",
+          "swapped": "different",
+          "consistent": false
+        },
+        {
+          "base_pair": "control-4-positive",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-4-negative_same_question",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-4-one_correct",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-5-positive",
+          "first": "same",
+          "swapped": "same",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-5-negative_same_question",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        },
+        {
+          "base_pair": "control-5-one_correct",
+          "first": "different",
+          "swapped": "different",
+          "consistent": true
+        }
+      ],
+      "missing_parse": 1
+    }
+  },
+  "rows": [
+    {
+      "control_id": "control-2-one_correct-0",
+      "method": "original",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly states 80 - 16 = 40 (error in arithmetic), while REFERENCE correctly gives 64. CASE 2 correctly computes 80 - 16 = 64, matching reference. The errors are distinct: one is a wrong arithmetic evaluation, the other is correct. No shared error mechanism.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-2-one_correct-1",
+      "method": "original",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 correctly computes 80 - 16 = 64. Case 2 incorrectly reports 40, showing a numerical evaluation error despite the correct expression, indicating a specific arithmetic mistake in computation, not a shared mechanism.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-2-negative_same_question-0",
+      "method": "original",
+      "expected": "different",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly subtracts 16 from 80 but reports 40 instead of 64, showing a calculation error. CASE 2 applies addition instead of subtraction, reversing the relation entirely. The error mechanisms are distinct: one is arithmetic miscomputation, the other is a fundamental operational reversal.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-2-negative_same_question-1",
+      "method": "original",
+      "expected": "different",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly adds 80 and 16, reversing the subtraction operation; CASE 2 incorrectly computes 80 - 16 as 40, showing a calculation error in arithmetic despite the correct operation being subtraction. The error mechanisms—reversal of relation and arithmetic miscalculation—are distinct.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-5-one_correct-0",
+      "method": "original",
+      "expected": "uncertain",
+      "actual": "same",
+      "reason": "Both solutions correctly apply subtraction of 1 from 61 to find Tully's age one year ago, using the same arithmetic operation and correct mathematical mechanism without deviation or error.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-5-one_correct-1",
+      "method": "original",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 correctly subtracts 1 from 61 to get 60. Case 2 incorrectly states the answer is 61, applying a wrong relation by omitting the subtraction and misrepresenting the age one year ago.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-2-positive-0",
+      "method": "original",
+      "expected": "same",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly subtracts 16 from 80 (should be 64), a calculation error in arithmetic. CASE 2 incorrectly multiplies 32 by 12 (should be 384), another arithmetic error. Both involve wrong arithmetic evaluation, but applied to different operations and contexts—distinct error mechanisms.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-2-positive-1",
+      "method": "original",
+      "expected": "same",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly computes 32 * 12 as 360 (should be 384), a multiplication error. CASE 2 incorrectly computes 80 - 16 as 64 (should be 40), a subtraction error. Different error mechanisms: wrong arithmetic operation result, not reversing or misapplying ratios.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-5-negative_same_question-0",
+      "method": "original",
+      "expected": "different",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly states Tully was 61 years old, ignoring the subtraction; CASE 2 correctly computes 61 - 1 = 60 but reports 59, showing a calculation error. Both misstate the result, but the mechanisms differ: one omits subtraction, the other applies it incorrectly.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-5-negative_same_question-1",
+      "method": "original",
+      "expected": "different",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly states 61 - 1 = 59 (arithmetic error), while REFERENCE correctly gives 60. CASE 2 omits subtraction entirely, claiming Tully was 61 years old—answering a different quantity (present age vs. past age). Both errors are distinct: one is a calculation mistake, the other is a conceptual misapplication.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-5-positive-0",
+      "method": "original",
+      "expected": "same",
+      "actual": "same",
+      "reason": "Both solutions incorrectly state the current age as the answer instead of subtracting one year, showing the same error mechanism: omitting the required subtraction and applying the wrong base value despite a correct arithmetic expression in the reference.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-5-positive-1",
+      "method": "original",
+      "expected": "same",
+      "actual": "different",
+      "reason": "CASE 1 correctly computes 41 - 1 = 40, but the solution falsely states the answer is 41. CASE 2 similarly misstates the answer as 61 instead of 60. Both errors involve reporting an unsupported number despite a correct numeric formula, but the specific mechanism (failing to subtract one) is identical in form and intent, so the error mechanism is the same.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-3-positive-0",
+      "method": "original",
+      "expected": "same",
+      "actual": "different",
+      "reason": "Case 1 incorrectly computes 10×5×4 as 500 instead of 200, a multiplication error. Case 2 misstates 5×12 as 70 instead of 60, a calculation error. Both involve arithmetic mistakes, but the error mechanisms differ: one is a multiplication miscalculation, the other a specific arithmetic error in a different context with distinct numbers and structure.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-3-positive-1",
+      "method": "original",
+      "expected": "same",
+      "actual": "different",
+      "reason": "Case 1 incorrectly computes 5 * 12 as 70 instead of 60, a multiplication error. Case 2 computes (10 * 5) * 4 as 500 instead of 200, another multiplication error. The errors are numerically distinct and involve different arithmetic missteps, not shared mechanisms.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-3-one_correct-0",
+      "method": "original",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 incorrectly computes (10*5)*4 as 500, violating arithmetic; Case 2 correctly computes 200. Error in Case 1 is a miscalculation of multiplication, while Case 2 has no error. The mechanisms differ: one is incorrect evaluation, the other is correct.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-3-one_correct-1",
+      "method": "original",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 correctly computes 10 * 5 * 4 = 200. Case 2 incorrectly evaluates (10 * 5) * 4 as 500, violating arithmetic; it applies the multiplication correctly but miscomputes the result, showing an error in numeric evaluation despite correct structure.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-4-positive-0",
+      "method": "original",
+      "expected": "same",
+      "actual": "same",
+      "reason": "Both solutions incorrectly apply the multiplier to the wrong base—reversing the relation by treating the quantity per unit as the total instead of multiplying by the number of units. The correct mechanism is the same: omitting the unit quantity and applying the arithmetic operator to the wrong base.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-4-positive-1",
+      "method": "original",
+      "expected": "same",
+      "actual": "same",
+      "reason": "Both solutions incorrectly treat a per-unit rate as a total without multiplication by the quantity. Case 1 omits multiplying 30 by 4; Case 2 omits multiplying 8 by 5. Both apply the wrong base (unit rate) to the count, failing to scale properly.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-0-negative_same_question-0",
+      "method": "original",
+      "expected": "different",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly adds 45 + 5, misapplying the ratio to oranges; CASE 2 incorrectly computes 15 + 5 = 21 instead of 15 + 5 = 20, a simple arithmetic error. The mechanisms differ: one misapplies the relation to the wrong base, the other miscomputes a correct expression.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-0-negative_same_question-1",
+      "method": "original",
+      "expected": "different",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly states 15 + 5 = 21 (arithmetic error), while CASE 2 applies the ratio to oranges (wrong base) instead of Amelia's apples, showing a distinct error mechanism: misapplying the relation to the wrong quantity.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-0-one_correct-0",
+      "method": "original",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly adds 45 (oranges) and 5, misapplying the ratio to the wrong base. CASE 2 correctly adds Amelia's apples (15) and 5. The error mechanisms differ: one applies a wrong base, the other is correct.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-0-one_correct-1",
+      "method": "original",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 correctly adds 5 to Amelia's apples (15 + 5 = 20). Case 2 incorrectly applies the ratio to oranges (45 + 5), misaligning the base quantity and using the wrong reference point, showing a distinct error of applying the increment to the wrong base.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-0-positive-0",
+      "method": "original",
+      "expected": "same",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly adds oranges to apples, applying the ratio to the wrong base; CASE 2 wrongly adds red beads to blue beads, misapplying the increment to the wrong quantity. Both errors involve applying an addition to an unrelated base, but the specific mechanism (wrong base for increment) differs in context and target variable.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-0-positive-1",
+      "method": "original",
+      "expected": "same",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly adds red beads to blue beads; CASE 2 wrongly applies the apple count to oranges. One misapplies the ratio to wrong base (oranges), the other confuses bead type with color count—distinct error mechanisms.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-3-negative_same_question-0",
+      "method": "original",
+      "expected": "different",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly computes (10*5)*4 as 500 instead of 200, a multiplication error. CASE 2 adds 50 and 4, applying a wrong operation (addition instead of multiplication) to the weekly hours. The error mechanisms—misapplying arithmetic (multiplication vs. addition)—are distinct.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-3-negative_same_question-1",
+      "method": "original",
+      "expected": "different",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly adds 50 and 4 instead of multiplying by 4; CASE 2 incorrectly computes (10*5)*4 = 500 instead of 200. Both misapply multiplication, but one adds, one multiplies erroneously—distinct error mechanisms.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-4-one_correct-0",
+      "method": "original",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly states the answer as 8 biscuits, ignoring the 5-day multiplier, showing a failure to apply multiplication to the number of days. CASE 2 correctly computes 8 * 5 = 40. The error in CASE 1 is a missing multiplication step, not present in CASE 2.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-4-one_correct-1",
+      "method": "original",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 correctly multiplies 8 by 5 to find weekly consumption. Case 2 incorrectly assumes daily intake equals weekly intake, omitting the school day multiplier, showing a failure to apply the correct repeated contribution mechanism.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-4-negative_same_question-0",
+      "method": "original",
+      "expected": "different",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly states the total as 8 biscuits, ignoring multiplication by 5; CASE 2 correctly computes 8 * 5 but reports 35 instead of 40, showing an arithmetic error in evaluation. The mechanisms differ: one omits multiplication entirely, the other misapplies arithmetic.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-4-negative_same_question-1",
+      "method": "original",
+      "expected": "different",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly computes 8 * 5 as 35 (arithmetic error), while CASE 2 omits multiplication entirely, stating only daily consumption. The errors are distinct: one is a calculation mistake, the other is a missing multiplication step.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-1-positive-0",
+      "method": "original",
+      "expected": "same",
+      "actual": "different",
+      "reason": "Case 1 incorrectly treats '12 more green apples than red' as 12 green apples instead of 16 + 12 = 28 green apples. Case 2 similarly misreads '8 more seniors than juniors' as 8 seniors instead of 20 + 8 = 28. Both errors involve misapplying the 'more than' relation to the base quantity, but the specific misstep (adding 12 or 8 to the base incorrectly) differs in context and magnitude.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-1-positive-1",
+      "method": "original",
+      "expected": "same",
+      "actual": "different",
+      "reason": "Case 1 incorrectly states seniors are 8 total, not 20+8, and miscomputes total as 28. Case 2 correctly computes green apples as 16+12=28 but adds 16+28=44, which is wrong due to misapplying the 'more than' relation to total. Both misapply the 'more than' relation, but Case 1 confuses base values, while Case 2 misidentifies the total quantity to add.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-1-one_correct-0",
+      "method": "original",
+      "expected": "uncertain",
+      "actual": "same",
+      "reason": "Both solutions incorrectly calculate green apples as 16 + 12 instead of 16 + 12 = 28, then add red and green apples incorrectly by treating green apples as a separate total without recognizing the green apples should be 16 + 12 = 28, leading to a shared error of misapplying the '12 more' relation to the red count rather than to the red count itself.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-1-one_correct-1",
+      "method": "original",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 correctly calculates green apples as 16 + 12 = 28 and total as 16 + 28 = 44. Case 2 incorrectly states green apples are 12 (not 12 more than red), misapplying the relation by treating 12 as absolute instead of a difference, leading to wrong total.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-1-negative_same_question-0",
+      "method": "original",
+      "expected": "different",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly states total as 28, omitting green apples' correct value; CASE 2 correctly computes green apples as 28 but wrongly sums to 40 instead of 44, showing a specific arithmetic error in addition, not a shared mechanism.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-1-negative_same_question-1",
+      "method": "original",
+      "expected": "different",
+      "actual": "different",
+      "reason": "CASE 1 incorrectly computes total as 40 instead of 44 by adding 16 + 28; CASE 2 wrongly assumes green apples are 12, not 16 + 12, and misidentifies the total. Both misapply the '12 more' relation, but to different bases: one omits the red apple base, the other misreads the quantity.",
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-2-one_correct-0",
+      "method": "revised",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 incorrectly computes 80 - 16 as 40, which is wrong; Case 2 correctly computes 80 - 16 as 64. Both address the same question, but use different arithmetic, leading to different answers. The mechanism (subtraction of sold pencils from total) is the same, but the calculation is wrong in case 1 and correct in case 2. Since the error is in the arithmetic operation and the result differs, the mechanisms differ in execution despite the same context. Thus, different.",
+      "case1_error": "none",
+      "case2_error": "incorrect subtraction: 80 - 16 should be 64, but the solution states 64 as the result of 80 - 16, which is correct, but the text says '80 - 16 = 64 pencils remain' — this is mathematically correct, so no error. However, the solution incorrectly claims 64 remains when it should be 64, which is correct. Wait: 80 - 16 = 64, so the solution is correct. But the question is 'how many remain?' and 80 - 16 = 64. So the solution says 64, which is correct. But in case 1, it says 40, which is wrong. So case 1 has an error: 80 - 16 = 40 is incorrect. 80 - 16 = 64. So case 1: error in arithmetic. Case 2: correct arithmetic. So: case1_error: incorrect arithmetic (80 - 16 = 40 is false), case2_error: none."
+    },
+    {
+      "control_id": "control-2-one_correct-1",
+      "method": "revised",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 correctly computes 80 - 16 = 64, matching the question. Case 2 incorrectly computes the same subtraction as 40, which is a mathematical error. Both use the same mechanism (subtraction of sold pencils from initial amount), so the mechanism is the same, but the calculation error in case 2 makes the result wrong. Since there is a diagnosable error in case 2 and the answer is inconsistent with the correct arithmetic, the judgment is different.",
+      "case1_error": "none",
+      "case2_error": "incorrect subtraction: 80 - 16 should be 64, not 40"
+    },
+    {
+      "control_id": "control-2-negative_same_question-0",
+      "method": "revised",
+      "expected": "different",
+      "actual": "different",
+      "reason": "Case 1 correctly subtracts 16 from 80 to find the remaining pencils. Case 2 incorrectly adds 16 to 80, which is mathematically inconsistent with the question of how many remain after selling. The mechanism differs: one uses subtraction (correct), the other uses addition (incorrect).",
+      "case1_error": "none",
+      "case2_error": "adds instead of subtracts; incorrectly computes remaining pencils as 96 when selling reduces the amount"
+    },
+    {
+      "control_id": "control-2-negative_same_question-1",
+      "method": "revised",
+      "expected": "different",
+      "actual": "different",
+      "reason": "Case 1 incorrectly adds 16 to 80, violating the question's request for remaining pencils after selling. Case 2 correctly subtracts 16 from 80. The mechanisms differ: one uses addition (incorrect), the other subtraction (correct).",
+      "case1_error": "adds instead of subtracts; incorrectly treats selling as an increase",
+      "case2_error": "none"
+    },
+    {
+      "control_id": "control-2-positive-0",
+      "method": "revised",
+      "expected": "same",
+      "actual": "different",
+      "reason": "Case 1 correctly subtracts 16 from 80 to find the remaining pencils, using the appropriate operation for a remaining amount. Case 2 correctly multiplies 32 by 12 to find total ounces of punch, using multiplication for total quantity. The mechanisms differ: one uses subtraction to find a remainder, the other uses multiplication to find a total. No mathematical errors are present in either solution.",
+      "case1_error": "none",
+      "case2_error": "none"
+    },
+    {
+      "control_id": "control-2-positive-1",
+      "method": "revised",
+      "expected": "same",
+      "actual": "different",
+      "reason": "Case 1 multiplies guests by ounces per guest to find total ounces, correctly applying multiplication for total quantity. Case 2 subtracts sold pencils from total to find remainder, correctly applying subtraction. The mechanisms differ: one uses multiplication to compute total amount, the other uses subtraction to compute remaining amount. No observable mathematical errors or answer inconsistencies.",
+      "case1_error": "none",
+      "case2_error": "none"
+    },
+    {
+      "control_id": "control-5-one_correct-0",
+      "method": "revised",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 incorrectly uses the current age as the past age without subtracting one year, while Case 2 correctly computes 61 - 1 = 60. The mechanisms differ: one omits the subtraction, the other performs it correctly.",
+      "case1_error": "incorrectly states Tully was 61 years old one year ago when it should be 60",
+      "case2_error": "none"
+    },
+    {
+      "control_id": "control-5-one_correct-1",
+      "method": "revised",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 correctly subtracts 1 from 61 to get 60, using the proper mechanism of subtracting one year. Case 2 incorrectly states the answer is 61, which is the current age, not the age one year ago. The mechanism differs: one uses subtraction, the other omits the subtraction and misrepresents the answer.",
+      "case1_error": "none",
+      "case2_error": "answer inconsistency: reports current age (61) when asking for age one year ago"
+    },
+    {
+      "control_id": "control-5-negative_same_question-0",
+      "method": "revised",
+      "expected": "different",
+      "actual": "different",
+      "reason": "Case 1 incorrectly claims Tully was 61 one year ago, failing to subtract one year; Case 2 correctly computes 61 - 1 = 59. The mechanisms differ: one omits the subtraction, the other applies it correctly.",
+      "case1_error": "incorrectly states Tully was 61 years old one year ago when the correct age should be 60",
+      "case2_error": "none"
+    },
+    {
+      "control_id": "control-5-negative_same_question-1",
+      "method": "revised",
+      "expected": "different",
+      "actual": "different",
+      "reason": "Case 1 correctly subtracts 1 from 61 to get 59, using the proper mechanism of subtracting one year. Case 2 incorrectly states the answer is 61, which is the current age, not the age one year ago. The mechanisms differ: one uses subtraction, the other omits the subtraction and misrepresents the answer.",
+      "case1_error": "none",
+      "case2_error": "answer inconsistency: reports current age (61) when asking for age one year ago"
+    },
+    {
+      "control_id": "control-5-positive-0",
+      "method": "revised",
+      "expected": "same",
+      "actual": "same",
+      "reason": "Both solutions fail to subtract one year from the current age, instead incorrectly reporting the current age as the past age. This is the same observable error: treating the current age as the past age without subtracting one year.",
+      "case1_error": "incorrectly states Tully's age one year ago as 61 when it should be 60",
+      "case2_error": "incorrectly states Jo's age one year ago as 41 when it should be 40"
+    },
+    {
+      "control_id": "control-5-positive-1",
+      "method": "revised",
+      "expected": "same",
+      "actual": "same",
+      "reason": "Both solutions incorrectly state that one year ago the person was the same age as now, failing to subtract one year. The observable mechanism—answering current age instead of past age—is identical in both cases, even though the names and numbers differ.",
+      "case1_error": "none",
+      "case2_error": "none"
+    },
+    {
+      "control_id": "control-3-positive-0",
+      "method": "revised",
+      "expected": "same",
+      "actual": "different",
+      "reason": "Case 1 incorrectly computes 10*5*4 as 500 (should be 200); Case 2 incorrectly computes 5*12 as 70 (should be 60). Both have arithmetic errors in final answers, but the mechanisms (multiplication of rate and time or count and per-unit) are the same, yet the errors are in the numeric result, not in the structure. However, since the errors are in the final arithmetic and the specific values are wrong, and the reasoning steps are correct in form, the mechanism is the same (multiplication of two quantities), but the errors are in the execution. Still, the judgment is 'different' because the errors are both in the final number and the specific calculation is wrong, and the question context differs. However, since both use a simple multiplication and the mechanism is the same, but the errors are in the arithmetic, and the mechanism is identical, the correct judgment is 'same' only if the mechanism is shared. The mechanism is shared: both use multiplication of two quantities (hours/day × days/week × weeks, or boxes × cups/box). Therefore, despite wrong answers, the observable mechanism is the same. Thus, the judgment should be 'same'.",
+      "case1_error": "incorrect final answer; (10 * 5) * 4 = 200, not 500",
+      "case2_error": "incorrect final answer; 5 * 12 = 60, not 70"
+    },
+    {
+      "control_id": "control-3-positive-1",
+      "method": "revised",
+      "expected": "same",
+      "actual": "different",
+      "reason": "Case 1 incorrectly computes 5 * 12 as 70 (should be 60); Case 2 incorrectly computes (10 * 5) * 4 as 500 (should be 200). Both contain arithmetic errors in the final calculation, and the mechanisms differ: Case 1 uses a simple multiplication with a wrong result, while Case 2 applies a multi-step multiplication with a wrong final value. The errors are in the arithmetic execution, not in the structure of the reasoning.",
+      "case1_error": "incorrect multiplication: 5 * 12 = 60, not 70",
+      "case2_error": "incorrect multiplication: (10 * 5) * 4 = 50 * 4 = 200, not 500"
+    },
+    {
+      "control_id": "control-3-one_correct-0",
+      "method": "revised",
+      "expected": "uncertain",
+      "actual": "same",
+      "reason": "Both solutions correctly identify the multiplication of 10 hours/day, 5 days/week, and 4 weeks. Case 1 incorrectly computes (10 * 5) * 4 as 500 instead of 200, but the mechanism—multiplying daily hours by days per week and then by weeks—is identical to case 2. The error in case 1 is a numerical mistake in the final arithmetic, not a change in mechanism.",
+      "case1_error": "incorrect final calculation; (10 * 5) * 4 = 200, not 500",
+      "case2_error": "none"
+    },
+    {
+      "control_id": "control-3-one_correct-1",
+      "method": "revised",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 correctly computes 10 * 5 * 4 = 200 hours. Case 2 correctly identifies the weekly hours as 10 * 5 = 50, but then incorrectly reports 500 hours (50 * 10), which is a calculation error. The mechanism differs: case 1 directly multiplies all values, while case 2 uses a step but makes a numerical error in the final multiplication. The error in case 2 is a concrete arithmetic mistake, not a conceptual flaw.",
+      "case1_error": "none",
+      "case2_error": "incorrect calculation: 10 * 5 = 50, then 50 * 4 = 200, but the solution states 500 hours, which is wrong"
+    },
+    {
+      "control_id": "control-0-negative_same_question-0",
+      "method": "revised",
+      "expected": "different",
+      "actual": "different",
+      "reason": "Case 1 incorrectly uses the number of oranges (45) as a base for the addition, violating the condition that George has 5 more apples than Amelia. Case 2 correctly applies the relationship to Amelia's apples (15). The mechanisms differ: one misidentifies the comparison base, the other correctly identifies it.",
+      "case1_error": "incorrectly adds 45 and 5 when the question states George has 5 more apples than Amelia, not 5 more than the number of oranges",
+      "case2_error": "correctly adds 15 and 5 to find George's apples, which is accurate given the statement '5 more apples than Amelia'"
+    },
+    {
+      "control_id": "control-0-negative_same_question-1",
+      "method": "revised",
+      "expected": "different",
+      "actual": "different",
+      "reason": "Case 1 correctly adds 5 to Amelia's 15 apples to get 21. Case 2 mistakenly treats George's 45 oranges as the base for calculating apples, incorrectly computing 45 + 5 = 50. Both address the same question, but Case 2 uses an unrelated quantity (oranges) as a comparison base, which is a distinct and diagnosable error. This constitutes a different mechanism.",
+      "case1_error": "none",
+      "case2_error": "incorrectly uses oranges as the base for apples; should use Amelia's apples (15) to add 5, not 45"
+    },
+    {
+      "control_id": "control-0-one_correct-0",
+      "method": "revised",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 incorrectly treats the 5 more apples as a difference from the oranges, not from Amelia's apples. Case 2 correctly interprets the phrase '5 more apples than Amelia' and computes 15 + 5 = 20. The mechanisms differ: one misapplies the comparison base, the other correctly applies it. Both answer the correct question, but use different mathematical mechanisms.",
+      "case1_error": "incorrectly adds 5 to the number of oranges (45) instead of to Amelia's apples (15)",
+      "case2_error": "correctly adds 5 to Amelia's apples (15 + 5 = 20), which is accurate given the statement '5 more apples than Amelia'"
+    },
+    {
+      "control_id": "control-0-one_correct-1",
+      "method": "revised",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 correctly adds 5 to Amelia's 15 apples to get 20 apples. Case 2 incorrectly treats George's 45 oranges as the base and adds 5, resulting in 50 apples, which is mathematically invalid since the problem specifies George has 5 more apples than Amelia, not 5 more than oranges. The mechanisms differ: one correctly uses the stated relationship (5 more than Amelia), the other misapplies the quantity (using oranges instead of Amelia's apples).",
+      "case1_error": "none",
+      "case2_error": "incorrectly uses oranges as the base for apples; the question states George has 5 more apples than Amelia, not 5 more than oranges"
+    },
+    {
+      "control_id": "control-0-positive-0",
+      "method": "revised",
+      "expected": "same",
+      "actual": "different",
+      "reason": "Case 1 correctly adds 5 to Amelia's apples (15) to get George's apples, but the solution incorrectly states George has 45 + 5 = 50, which is wrong because George has 5 more apples than Amelia (15 + 5 = 20), not 5 more than 45. The solution misreads the problem by treating the oranges as a base for apples. Case 2 incorrectly adds 7 to Lia's red beads (30) instead of her blue beads (12), misapplying the given difference. Both make observable errors in the mechanism: Case 1 confuses the quantity being increased (apples vs. oranges), Case 2 misidentifies the base quantity (red vs. blue beads). The mechanisms differ.",
+      "case1_error": "none",
+      "case2_error": "none"
+    },
+    {
+      "control_id": "control-0-positive-1",
+      "method": "revised",
+      "expected": "same",
+      "actual": "different",
+      "reason": "Case 1 incorrectly uses red beads instead of blue beads to compute Tom's blue beads; Case 2 incorrectly uses oranges instead of apples to compute George's apples. Both errors involve misapplying the relevant quantity (blue vs. red, apples vs. oranges) and using an unrelated number as the base for addition. The mechanisms differ: one misidentifies the type of bead, the other misidentifies the type of fruit. Both are observable errors in reasoning, not just answer conflicts.",
+      "case1_error": "Tom has 7 more blue beads than Lia, who has 12 blue beads, so the correct number is 12 + 7 = 19. The solution incorrectly adds 30 (red beads) and 7, which is a misapplication of the given information.",
+      "case2_error": "George has 5 more apples than Amelia, who has 15 apples. So George has 15 + 5 = 20 apples. The solution incorrectly adds 45 (oranges) and 5, treating oranges as apples, which is a misinterpretation of the question."
+    },
+    {
+      "control_id": "control-4-positive-0",
+      "method": "revised",
+      "expected": "same",
+      "actual": "different",
+      "reason": "Case 1 fails to multiply the daily consumption by the number of school days (should be 8 × 5 = 40), treating daily amount as weekly. Case 2 fails to multiply packet count by peanuts per packet (should be 4 × 30 = 120), treating packet count as peanut count. Both errors involve omitting a required multiplicity, but applied to different quantities and contexts, so the mechanisms differ.",
+      "case1_error": "incorrectly assumes 8 biscuits per day equals 8 biscuits per week, omitting multiplication by 5 school days",
+      "case2_error": "incorrectly states 'I buy 4 peanuts' when there are 4 packets each containing 30 peanuts, omitting multiplication by 30"
+    },
+    {
+      "control_id": "control-4-positive-1",
+      "method": "revised",
+      "expected": "same",
+      "actual": "different",
+      "reason": "Case 1 incorrectly uses the number of packets as the number of peanuts instead of multiplying packets by peanuts per packet. Case 2 fails to multiply daily biscuits by the number of school days, treating daily amount as weekly. Both errors involve omitting a required multiplicity, but applied to different contexts and with different observable mechanisms: one misapplies packet-to-peanut conversion, the other misapplies day-to-week conversion. The mechanisms differ in structure and operation.",
+      "case1_error": "incorrectly treats number of packets as number of peanuts, should multiply packets by peanuts per packet",
+      "case2_error": "incorrectly treats daily consumption as weekly consumption without multiplying by number of days"
+    },
+    {
+      "control_id": "control-1-one_correct-0",
+      "method": "revised",
+      "expected": "uncertain",
+      "actual": null,
+      "reason": null,
+      "case1_error": null,
+      "case2_error": null
+    },
+    {
+      "control_id": "control-1-one_correct-1",
+      "method": "revised",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 correctly computes green apples as 16 + 12 = 28 and adds to red apples for total 44. Case 2 misreads the condition by treating '12 more green apples than red' as '12 green apples', leading to an incorrect total of 28. The mechanisms differ: Case 1 uses the correct relational quantity (12 more than red), while Case 2 uses an absolute number (12) as if it were the count of green apples, which is a fundamental error in interpreting the problem.",
+      "case1_error": "none",
+      "case2_error": "incorrectly assumes green apples are 12 instead of 12 more than red apples"
+    },
+    {
+      "control_id": "control-1-positive-0",
+      "method": "revised",
+      "expected": "same",
+      "actual": "same",
+      "reason": "Both solutions correctly interpret the relationship '12 more' or '8 more' as an addition to the base quantity, and both compute the total by adding the two groups. Case 1 incorrectly states '12 green apples' instead of '12 more than red', which is a misstatement of the problem, but the calculation (16 + 12 = 28) is mathematically valid given the stated numbers. However, the error is in the representation — it assumes 12 green apples, not 12 more than red. But since the question asks for the total and the calculation is correct under the misstated assumption, and the mechanism (adding base and difference) is the same, it is still a valid observable mechanism. Case 2 correctly computes 20 + 8 = 28, with proper interpretation of '8 more senior members than juniors'. Both use the same mechanism: adding a base number to a difference to get total. Thus, the mechanism is the same.",
+      "case1_error": "none",
+      "case2_error": "none"
+    },
+    {
+      "control_id": "control-1-positive-1",
+      "method": "revised",
+      "expected": "same",
+      "actual": "same",
+      "reason": "Both solutions incorrectly interpret the problem: Case 1 states there are 8 senior members, but the question says there are 8 more senior members than juniors (20 + 8 = 28), so seniors should be 20 + 8 = 28, not 8. Similarly, Case 2 incorrectly states there are 12 green apples, when it should be 16 + 12 = 28 green apples. Both solutions treat the difference as a standalone quantity (8 or 12) rather than adding the difference to the base group. Both use the same mechanism: misreading '8 more' or '12 more' as the absolute number of the other group instead of adding the difference to the base. This is a shared observable error in mechanism.",
+      "case1_error": "none",
+      "case2_error": "none"
+    },
+    {
+      "control_id": "control-1-negative_same_question-0",
+      "method": "revised",
+      "expected": "different",
+      "actual": "different",
+      "reason": "Case 1 misreads '12 more green apples than red' as 12 green apples, not 28. Case 2 correctly computes green apples as 28 but then incorrectly adds to get 40 (should be 44). Both make observable mathematical errors in the mechanism: Case 1 misrepresents the quantity of green apples, Case 2 miscomputes the total after correct green apple calculation. The mechanisms differ: one omits the correct addition of the difference, the other adds incorrectly after correct green apple value.",
+      "case1_error": "incorrectly states there are 12 green apples when the question says there are 12 more green apples than red apples; should be 16 + 12 = 28 green apples, not 12",
+      "case2_error": "incorrectly calculates total apples as 40; green apples are 16 + 12 = 28, so total should be 16 + 28 = 44, not 40"
+    },
+    {
+      "control_id": "control-1-negative_same_question-1",
+      "method": "revised",
+      "expected": "different",
+      "actual": "different",
+      "reason": "Case 1 correctly computes green apples as 16 + 12 = 28 and adds to red apples for total 40. Case 2 misreads the condition by treating '12 more green apples than red' as '12 green apples', leading to an incorrect total of 28. The mechanisms differ: Case 1 uses the correct relational interpretation, while Case 2 omits the 'more than' relationship and uses an absolute number.",
+      "case1_error": "none",
+      "case2_error": "incorrectly assumes green apples are 12 instead of 12 more than red apples"
+    },
+    {
+      "control_id": "control-3-negative_same_question-0",
+      "method": "revised",
+      "expected": "different",
+      "actual": "different",
+      "reason": "Case 1 incorrectly computes total hours as 500 instead of 200; Case 2 incorrectly adds 4 to 50 instead of multiplying by 4. Both use wrong mechanisms: Case 1 miscomputes the multiplication, Case 2 misapplies addition as multiplication. The mechanisms differ: one uses correct multiplication but with wrong arithmetic, the other uses incorrect addition. Both answer incorrectly, but with distinct mathematical errors.",
+      "case1_error": "incorrect arithmetic: (10 * 5) * 4 = 200, not 500",
+      "case2_error": "incorrect arithmetic: 50 + 4 = 54, should be 50 * 4 = 200"
+    },
+    {
+      "control_id": "control-3-negative_same_question-1",
+      "method": "revised",
+      "expected": "different",
+      "actual": "different",
+      "reason": "Case 1 incorrectly adds 4 to weekly hours (50 + 4 = 54), treating the number of weeks as an additive term rather than a multiplicative factor. Case 2 incorrectly computes (10 * 5) * 4 as 500, which is wrong because 50 * 4 = 200. Both make arithmetic errors in the final step, but with different mechanisms: one uses addition instead of multiplication, the other multiplies incorrectly. The mechanisms differ, so the judgment is different.",
+      "case1_error": "adds 4 to 50 instead of multiplying by 4; incorrect calculation of total hours",
+      "case2_error": "incorrectly computes (10 * 5) * 4 as 500; correct product is 200, not 500"
+    },
+    {
+      "control_id": "control-4-one_correct-0",
+      "method": "revised",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 incorrectly treats the daily amount as the weekly amount without multiplying by the number of days, while Case 2 correctly computes 8 * 5 = 40. The mechanisms differ: one omits the multiplicative step required by the question, the other applies it correctly.",
+      "case1_error": "incorrectly omits multiplication and fails to account for 5 school days, stating they eat 8 biscuits this week instead of 8 times 5",
+      "case2_error": "none"
+    },
+    {
+      "control_id": "control-4-one_correct-1",
+      "method": "revised",
+      "expected": "uncertain",
+      "actual": "different",
+      "reason": "Case 1 correctly multiplies 8 by 5 to find total weekly biscuits. Case 2 incorrectly states the weekly amount as 8 biscuits, treating daily consumption as weekly without scaling by the number of days. This is a clear mechanistic error: one uses multiplication, the other omits it entirely and misrepresents the quantity.",
+      "case1_error": "none",
+      "case2_error": "incorrectly assumes daily consumption equals weekly consumption without multiplication; fails to account for 5 school days"
+    },
+    {
+      "control_id": "control-4-negative_same_question-0",
+      "method": "revised",
+      "expected": "different",
+      "actual": "different",
+      "reason": "Case 1 incorrectly reports 8 biscuits for the week without multiplying by 5, missing the required multiplication. Case 2 performs multiplication but computes 8 * 5 = 35, which is mathematically wrong (should be 40). Both have observable arithmetic errors in the calculation mechanism: one omits the multiplication entirely, the other performs it incorrectly. The mechanisms differ: one fails to apply the multiplicity, the other applies it incorrectly. Thus, the errors are distinct and diagnosable.",
+      "case1_error": "incorrectly states the weekly total as 8 instead of 8 * 5; fails to multiply by 5, omitting the number of days",
+      "case2_error": "incorrectly computes 8 * 5 = 35; the correct product is 40, not 35"
+    },
+    {
+      "control_id": "control-4-negative_same_question-1",
+      "method": "revised",
+      "expected": "different",
+      "actual": "different",
+      "reason": "Case 1 correctly multiplies 8 by 5 to get 40 biscuits. Case 2 incorrectly states the weekly amount as 8, omitting the multiplication by 5 days, thus using the daily amount as the weekly amount. This is a clear mechanistic difference: one applies the correct multiplicative scaling, the other fails to do so.",
+      "case1_error": "none",
+      "case2_error": "answers 8 instead of 40; incorrectly treats daily amount as weekly amount without multiplication by 5 days"
+    }
+  ],
+  "interpretation": "Constructed sanity checks,18 base pairs each in two orders, not36 independent natural cases. Both prompts fail basic same-error and uncertainty checks. Do not use as a reliable retrieval evaluator."
+}

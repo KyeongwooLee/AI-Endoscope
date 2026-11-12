@@ -1,0 +1,30 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Archie is playing with his marbles outside. He loses 60% of them into the street. Of the remaining ones, he loses half down a sewer. If he has 20 left, how many did he start with?
+SOLUTION: To solve this problem, let's break it down step by step.
+
+1. **Final number of marbles left**: 20
+2. **Marbles remaining after losing half down the sewer**:
+   - Let's denote the number of marbles Archie had after losing half down the sewer as \( x \).
+   - Since he has 20 marbles left after losing half, \( x = 20 \).
+
+3. **Marbles remaining after losing 60% into the street**:
+   - If he loses 60% into the street, he retains 40% of his initial marbles.
+   - Let's denote the initial number of marbles as \( y \).
+   - After losing 60%, he retains 40%, so \( 0.4y = 20 \).
+
+4. **Solve for \( y \)**:
+   - To find \( y \), divide both sides by 0.4:
+     \[
+     y = \frac{20}{0.4}
+     \]
+   - Calculate the division:
+     \[
+     y = 50
+     \]
+
+5. **Conclusion**:
+   - Archie started with 50 marbles.
+
+#### 50
+Archie started with 50 marbles.

@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"225 players","check":"The two older groups contain 400 and 375 players. The remaining number is 1000 - 400 - 375 = 225, not 200.","evidence_quote":"1000 - 400 - 375 = 200","error_description":"The solution sets up the subtraction correctly but evaluates it incorrectly, giving 200 instead of 225."}

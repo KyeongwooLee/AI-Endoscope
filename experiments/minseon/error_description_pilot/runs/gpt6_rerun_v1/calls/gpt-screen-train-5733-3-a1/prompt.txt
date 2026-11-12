@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: The total number of years in a century is the same as the number of marbles Gideon has. If he gives 3/4 of the marbles to his sister and multiples the number of remaining marbles by 2, he gets his age five years from now. How old is Gideon now?
+SOLUTION: Step 1: Let the number of marbles Gideon has be \( x \).
+Since the total number of years in a century is also \( x \), we have \( x = 100 \).
+
+Step 2: Gideon gives 3/4 of his marbles to his sister. This means he gives away \( \frac{3}{4}x \) marbles.
+The number of remaining marbles is \( x - \frac{3}{4}x = \frac{1}{4}x \).
+
+Step 3: According to the problem, the number of remaining marbles is multiplied by 2 to get his age five years from now.
+So, \( 2 \cdot \frac{1}{4}x = 5 \).
+
+Step 4: Simplify the equation:
+\[ \frac{2}{4}x = 5 \]
+\[ \frac{1}{2}x = 5 \]
+
+Step 5: Solve for \( x \):
+\[ x = 5 \times 2 \]
+\[ x = 10 \]
+
+Step 6: The number of marbles Gideon has is 10. Since 100 is the number of years in a century, Gideon is 100 years old.
+
+#### 100

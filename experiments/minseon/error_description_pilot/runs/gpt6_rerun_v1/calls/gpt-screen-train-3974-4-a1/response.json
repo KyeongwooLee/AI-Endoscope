@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"4 weeks","check":"John reads 2 × 50 = 100 pages daily, so 2800 ÷ 100 = 28 days, or 28 ÷ 7 = 4 weeks. The solution gives correct formulas but reports 80 instead of 4.","evidence_quote":"#### 80","error_description":"The final number 80 does not match the result of the stated formulas. No correct worked final answer is shown."}

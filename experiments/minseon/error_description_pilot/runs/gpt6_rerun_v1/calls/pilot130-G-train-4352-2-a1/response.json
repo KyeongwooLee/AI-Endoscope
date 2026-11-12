@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4352-2",
+  "response_sha256": "d18f725ab3d2526f4dff7a62bd9578cb278b214c2c04c38d269da070a18489e0",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "500 flowers * $5/rose = $2500",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Each centerpiece will have 10 roses ($5 each) and 15 lilies ($4 each).",
+  "observed_error": "The response uses the total count of both flower types as the rose count.",
+  "violated_condition": "Rose cost must use 20 × 10 roses at $5 each, rather than all 500 flowers.",
+  "error_description": "The response multiplies all 500 flowers by $5 per rose, although only 10 roses per centerpiece should receive that price. It subsequently charges all 500 flowers at the lily price too. The multiplications are executed correctly, but both costs use the combined flower count instead of the respective species counts.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

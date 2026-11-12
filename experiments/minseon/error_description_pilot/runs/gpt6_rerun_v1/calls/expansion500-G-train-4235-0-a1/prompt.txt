@@ -1,0 +1,74 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-4235-0
+response_sha256: 49babe858f21f1464f8fb590a6d94dfe4a2bf167ed77e5aded23eaf82f2ef248
+
+=== QUESTION ===
+After 100 new people move into a town, 400 of the original population move out. Every year afterward, the town’s population is halved. After 4 years, the population is 60 people. Before the new people moved in, how many people lived in the town?
+=== MODEL SOLUTION ===
+To solve this problem, let's work backwards from the given information.
+
+1. **Final Population After 4 Years:**
+   - The population after 4 years is 60 people.
+
+2. **Population After 3 Years:**
+   - Before the population is halved, it was 60 * 2 = 120 people.
+
+3. **Population After 2 Years:**
+   - Before the population is halved, it was 120 * 2 = 240 people.
+
+4. **Population After 1 Year:**
+   - Before the population is halved, it was 240 * 2 = 480 people.
+
+5. **Population Before New People Moved In:**
+   - Before the new people moved in, the population was 480 people.
+
+#### 480
+This is the number of people living in the town before the new people moved in.
+=== REFERENCE SOLUTION (fallible aid) ===
+If the population is halving then at the end of the third year, the population must have been 60 people in the fourth year * 2 = <<60*2=120>>120 people.
+In the second year, the population was 120 people in the third year * 2 = <<120*2=240>>240 people.
+And in the first year, the population was 240 people in the third year * 2 = <<240*2=480>>480 people.
+Additional people moved out in the first year, so accounting for these shows the population was 480 people + 400 people who moved out = <<480+400=880>>880 people.
+Then removing the new people shows there were originally 880 people – 100 new people = <<880-100=780>>780 people.
+#### 780
+=== END ===

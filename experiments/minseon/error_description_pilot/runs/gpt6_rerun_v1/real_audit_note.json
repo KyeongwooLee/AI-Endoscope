@@ -1,0 +1,6 @@
+{
+  "n_pairs": 20,
+  "expected_label_origin": "previous Codex original-text audits and exact arithmetic; not human ground truth",
+  "selection": "targeted known issues, not random; fixed before GPT pair judgments",
+  "purpose": "check real-text behavior as a supplement to synthetic gate; does not estimate overall accuracy"
+}

@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: An office has 90 workers. 2/3rds of them are men and the rest are women. The company hires 10 new employees and 100% of them are women. What is the total percentage of women in the company now?
+SOLUTION: Step 1: Calculate the number of men initially in the company.
+- Total workers = 90
+- Men = 2/3 * 90 = 60
+
+Step 2: Calculate the number of women initially in the company.
+- Women = Total workers - Men = 90 - 60 = 30
+
+Step 3: Calculate the new number of workers after hiring 10 new women.
+- New total workers = 90 + 10 = 100
+- New women = 100 - 30 + 10 = 80
+
+Step 4: Calculate the new total percentage of women in the company.
+- New women percentage = (New women / New total workers) * 100 = (80 / 100) * 100 = 80%
+
+#### 80
+The total percentage of women in the company now is 80%.

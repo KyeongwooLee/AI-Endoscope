@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1225-0",
+  "response_sha256": "c85c448ea9a5cf158420754b99fdfdfd11d9130cd3a5f9b40cf8798ffc257227",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Average points needed per game = Additional points needed / Total number of games",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "His team has played 15 games this season. He has a goal of averaging 30 points per game for the entire 20 game season.",
+  "observed_error": "The response divides the 210 additional points by all 20 season games instead of the 5 remaining games.",
+  "violated_condition": "The additional points must be scored over the remaining 20 - 15 = 5 games.",
+  "error_description": "The response calculates the required future scoring average by dividing 210 additional points by all 20 season games. Those points must be scored in the 5 games remaining after 15 have been played. The division is executed correctly, but its denominator violates the remaining-game requirement.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

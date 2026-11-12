@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5612-0",
+  "response_sha256": "b2a3b34c6c2ba318a33ffebf20998ca79dde78b0c20d047722e78f792d3c6ee5",
+  "status": "no_error_observed",
+  "reference_review_needed": true,
+  "evidence_quote": null,
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": null,
+  "question_evidence_quote": "How many movies and books does Sue now have?",
+  "observed_error": null,
+  "violated_condition": null,
+  "error_description": null,
+  "reference_review_reason": "The reference gives a combined total, while the response correctly gives separate movie and book counts. The question does not explicitly require a combined total.",
+  "secondary_errors": [],
+  "uncertainty_note": "The wording permits either separate counts or a combined total; all relations and arithmetic in the response are correct."
+}

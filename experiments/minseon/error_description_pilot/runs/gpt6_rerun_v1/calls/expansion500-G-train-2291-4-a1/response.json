@@ -1,0 +1,20 @@
+{
+  "source_id": "train-2291-4",
+  "response_sha256": "7d091ac0f27aee3385c8dd17cc53acc78ec4513ea43b9dcae31bd2704eff7ae8",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "Day 2: 2 miles (100% of the first day)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "One day, she goes on a 1-mile walk.",
+  "observed_error": "The response labels 2 miles as 100% of the first day's 1 mile.",
+  "violated_condition": "Percentage of the first day's distance equals the distance divided by 1 mile, multiplied by 100%.",
+  "error_description": "The response correctly computes the second day's distance as 2 miles but labels it as 100% of the first day's 1 mile. That ratio is 200%; 100% describes the increase over the first day, not the total distance as written.",
+  "reference_review_reason": "The reference also replaces the strict requirement to exceed 10 miles with greater than or equal to 10 miles, although this does not change the qualifying day.",
+  "secondary_errors": [
+    "The response changes 'more than 10 times' to '10 miles or more', incorrectly allowing equality.",
+    "The response selects Day 4 despite correctly listing its distance as 8 miles, which does not exceed the stated 10-mile threshold."
+  ],
+  "uncertainty_note": null
+}

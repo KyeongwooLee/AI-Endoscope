@@ -1,0 +1,17 @@
+{
+  "source_id": "train-851-4",
+  "response_sha256": "893b4d0f858d2b14fc332d9c8da39fd6eb97838796f8f97492b5a5251c50cfc3",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "60 - 20 = 40 \\text{ points}",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Jane ends up with 60 points. If she lost 20 points",
+  "observed_error": "The response subtracts the loss from the stated final balance and labels 40 points as the balance after playing.",
+  "violated_condition": "The final balance is already 60 points; points earned minus 20 points lost must equal 60.",
+  "error_description": "The response subtracts 20 lost points from Jane’s stated ending balance of 60 and treats 40 as her balance after playing. The subtraction is arithmetically correct, but the relation is wrong: the ending balance already includes the loss.",
+  "reference_review_reason": "The reference equates rounds won with rounds played, although only wins award 10 points and the question does not specify how many rounds produced the losses.",
+  "secondary_errors": [],
+  "uncertainty_note": "The balance error is supported independently of the ambiguity about total rounds played versus rounds won."
+}

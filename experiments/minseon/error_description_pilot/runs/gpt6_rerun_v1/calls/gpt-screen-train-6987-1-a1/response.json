@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"5,500 fish.","check":"The increase is 10 × 500 = 5,000 salmon, so the total is 500 + 5,000 = 5,500. The solution states the correct formula but gives a conflicting final number of 6,000.","evidence_quote":"#### 6000","error_description":"The final number does not match the stated initial-plus-increase formula, which yields 5,500."}

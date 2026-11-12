@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: I caught 4 fewer fish than the number in my tank and added them to my fish tank. If the tank has 20 fish right now, how many did I add?
+SOLUTION: To solve the problem, we start by determining how many fish you originally had in your tank.
+
+1. **Identify the total number of fish in the tank:**
+   The tank currently has 20 fish.
+
+2. **Determine the number of fish you caught:**
+   You caught 4 fewer fish than the number in your tank. Therefore, the number of fish you caught is:
+   \[
+   20 - 4 = 16
+   \]
+
+3. **Calculate the number of fish added to the tank:**
+   You added these 16 fish to the tank. Therefore, the number of fish added is:
+   \[
+   16
+   \]
+
+#### 16
+Replace <number> with the numerical answer.

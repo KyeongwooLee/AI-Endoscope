@@ -1,0 +1,26 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Toby, the Alaskan Malamute, can pull a sled at a speed of 20 miles per hour if the sled is unloaded, but he pulls the same sled at a speed of 10 miles per hour if the sled is fully loaded.  If Toby takes a continuous 4-part journey, first pulling the loaded sled for 180 miles, then pulling the unloaded sled for 120 miles, then pulling the loaded sled 80 miles, and finally, pulling the unloaded sled another 140 miles, how many hours in total will Toby spend pulling the sled?
+SOLUTION: To solve this problem, we need to calculate the time Toby spends pulling the sled in each segment of the journey.
+
+1. **First part: Pulling the loaded sled for 180 miles**
+   - Speed: 10 miles per hour
+   - Time: \( \frac{180 \text{ miles}}{10 \text{ miles/hour}} = 18 \text{ hours} \)
+
+2. **Second part: Pulling the unloaded sled for 120 miles**
+   - Speed: 20 miles per hour
+   - Time: \( \frac{120 \text{ miles}}{20 \text{ miles/hour}} = 6 \text{ hours} \)
+
+3. **Third part: Pulling the loaded sled for 80 miles**
+   - Speed: 10 miles per hour
+   - Time: \( \frac{80 \text{ miles}}{10 \text{ miles/hour}} = 8 \text{ hours} \)
+
+4. **Fourth part: Pulling the unloaded sled for 140 miles**
+   - Speed: 20 miles per hour
+   - Time: \( \frac{140 \text{ miles}}{20 \text{ miles/hour}} = 7 \text{ hours} \)
+
+Total time spent pulling the sled is the sum of the times for each segment:
+\[ 18 \text{ hours} + 6 \text{ hours} + 8 \text{ hours} + 7 \text{ hours} = 49 \text{ hours} \]
+
+#### 49
+The answer is 49.

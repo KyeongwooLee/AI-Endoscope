@@ -1,0 +1,37 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A factory decides to stop making cars and start making motorcycles instead. When it made cars, per month, it cost $100 for materials, they could make 4 cars, and they sold each car for $50. Now that they make motorcycles it costs $250 for materials, but they sell 8 of them for $50 each. How much more profit do they make per month selling motorcycles instead of cars?
+SOLUTION: Step 1: Calculate the profit from making cars per month.
+- Cost per car: $100
+- Number of cars made per month: 4
+- Selling price per car: $50
+
+Profit per car = Selling price - Cost = $50 - $100 = -$50
+
+Step 2: Calculate the total profit from making cars per month.
+- Profit per car: -$50
+- Number of cars made per month: 4
+
+Total profit from cars per month = Profit per car * Number of cars = -$50 * 4 = -$200
+
+Step 3: Calculate the profit from making motorcycles per month.
+- Cost per motorcycle: $250
+- Number of motorcycles sold per month: 8
+- Selling price per motorcycle: $50
+
+Profit per motorcycle = Selling price - Cost = $50 - $250 = -$200
+
+Step 4: Calculate the total profit from making motorcycles per month.
+- Profit per motorcycle: -$200
+- Number of motorcycles sold per month: 8
+
+Total profit from motorcycles per month = Profit per motorcycle * Number of motorcycles = -$200 * 8 = -$1600
+
+Step 5: Calculate the difference in profit between making cars and motorcycles.
+- Profit from cars: -$200
+- Profit from motorcycles: -$1600
+
+Difference in profit = Profit from motorcycles - Profit from cars = -$1600 - (-$200) = -$1400
+
+#### -1400
+The factory makes $1400 less profit per month selling motorcycles instead of cars.

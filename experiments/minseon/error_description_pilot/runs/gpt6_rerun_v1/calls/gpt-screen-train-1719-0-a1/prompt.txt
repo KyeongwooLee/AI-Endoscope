@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Tonya has $150.00 on her credit card.  If she leaves any balance on her card at the end of the month, she is charged 20% interest.  If she makes a $50.00 payment on her card, what will be the new balance?
+SOLUTION: Step 1: Calculate the interest on the balance.
+Interest = 20% of $150.00
+Interest = 0.20 * $150.00
+Interest = $30.00
+
+Step 2: Subtract the interest from the balance.
+Balance after interest = $150.00 - $30.00
+Balance after interest = $120.00
+
+Step 3: Subtract the payment from the balance after interest.
+New balance = $120.00 - $50.00
+New balance = $70.00
+
+#### 70.00
+The new balance on Tonya's credit card after the payment is $70.00.

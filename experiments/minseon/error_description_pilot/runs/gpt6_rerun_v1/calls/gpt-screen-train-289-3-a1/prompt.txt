@@ -1,0 +1,40 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jim collects model cars, and he has 301 models total.  Jim has 4 times as many Buicks as Fords, and 3 more than twice the number of Fords than Chevys.  How many Buicks does Jim have?
+SOLUTION: Let's denote the number of Fords as F. According to the problem:
+1. The number of Buicks is 4 times the number of Fords, so Buicks = 4F.
+2. The number of Fords is 3 more than twice the number of Chevys, so F = 2C + 3, where C is the number of Chevys.
+
+We also know that the total number of model cars is 301:
+301 = Buicks + Fords + Chevys
+
+Substituting the expressions for Buicks and Fords in terms of C:
+301 = 4F + F + 2C + 3
+
+Now, express F in terms of C:
+F = 2C + 3
+
+Substitute F into the equation for 301:
+301 = 4(2C + 3) + (2C + 3) + 2C + 3
+
+Simplify and solve for C:
+301 = 8C + 12 + 2C + 3 + 2C + 3
+301 = 12C + 18
+183 = 12C
+C = 183 / 12
+C = 15.25
+
+Since the number of Chevys must be a whole number, we round C to the nearest whole number, which is 15.
+
+Now, find the number of Fords using C:
+F = 2C + 3
+F = 2(15) + 3
+F = 30 + 3
+F = 33
+
+Finally, find the number of Buicks:
+Buicks = 4F
+Buicks = 4(33)
+Buicks = 132
+
+#### 132

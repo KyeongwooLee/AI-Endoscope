@@ -1,0 +1,77 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-5669-3
+response_sha256: 2df5d0cff1e5df63193f87aaf11c984e3b751462ae2c9bade2b6257880d86126
+
+=== QUESTION ===
+Jett bought a cow from the market at $600 and took it to his farm. He spent $20 every day to buy food. He also used $500 to vaccinate and deworm the cow. If he sold the cow for $2500 after 40 days, calculate the profit he made from selling back the cow to the market.
+=== MODEL SOLUTION ===
+Step 1: Calculate the total cost of food for 40 days.
+Jett spent $20 every day for 40 days.
+$20/day * 40 days = $800
+
+Step 2: Add the cost of vaccination and deworming.
+Jett spent $500 on vaccination and deworming.
+$500
+
+Step 3: Calculate the total cost incurred.
+Total cost = Food cost + Vaccine and deworming cost
+Total cost = $800 + $500
+Total cost = $1300
+
+Step 4: Calculate the total revenue from selling the cow.
+Jett sold the cow for $2500.
+
+Step 5: Calculate the profit.
+Profit = Total revenue - Total cost
+Profit = $2500 - $1300
+Profit = $1200
+
+#### 1200
+Jett made a profit of $1200 from selling the cow back to the market.
+=== REFERENCE SOLUTION (fallible aid) ===
+The total cost of food that the cow ate for the forty days is 40*$20 = $<<40*20=800>>800
+To feed and maintain the health of the cow, the total expenses Jett used is $500+$800 = $<<500+800=1300>>1300
+With the expenses, Jett used $1300+$600 = $<<1300+600=1900>>1900 on the cow.
+If he sold the cow at $2500, Jett made a profit of $2500-$1900 = $<<2500-1900=600>>600
+#### 600
+=== END ===

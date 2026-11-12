@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: If Billy and Jenny each order a $20 steak along with a $5 drink, how much will Billy have to pay in tips if he wants to cover 80% of a 20% tip for the two of them?
+SOLUTION: Let's break down the problem step by step:
+
+1. **Calculate the total cost of the meal:**
+   - Billy and Jenny each order a $20 steak.
+   - They also order a $5 drink each.
+   - Therefore, the total cost for the steaks is \(20 \times 2 = 40\) dollars.
+   - The total cost for the drinks is \(5 \times 2 = 10\) dollars.
+   - The total cost for the meal is \(40 + 10 = 50\) dollars.
+
+2. **Calculate the total tip:**
+   - They want to cover 80% of a 20% tip for the two of them.
+   - First, calculate the 20% tip: \(50 \times 0.20 = 10\) dollars.
+   - Then, calculate 80% of this tip: \(10 \times 0.80 = 8\) dollars.
+
+3. **Determine Billy's share of the tip:**
+   - Since Billy and Jenny are sharing the tip, we divide the total tip by 2.
+   - Billy's share of the tip is \(\frac{8}{2} = 4\) dollars.
+
+Therefore, Billy will have to pay in tips:
+
+#### 4

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3199-2",
+  "response_sha256": "5850b984f2d9ba6eda90f4851fcf08aa407d4894ed93b389097736d0733fc84e",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "**Total Romantic Lines Written:**\n   - Horatio wrote 70 romantic lines.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "the 70 romantic lines he wrote that she never heard",
+  "observed_error": "The response treats the 70 unheard lines as all the lines Horatio wrote.",
+  "violated_condition": "Total sonnets written include both the seven sonnets read aloud and the sonnets represented by the 70 unheard lines.",
+  "error_description": "The response labels the 70 unheard romantic lines as the total lines written, then uses 70 divided by 14 to count all sonnets. That division correctly counts only the unread sonnets; the requested total must also include the seven sonnets his lady already heard.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "stage": "test",
+    "result": "ok"
+  },
+  {
+    "stage": "audit",
+    "result": "ok"
+  },
+  {
+    "stage": "sample",
+    "result": "ok"
+  },
+  {
+    "stage": "import-dev",
+    "result": "ok"
+  },
+  {
+    "stage": "freeze",
+    "result": "ok"
+  },
+  {
+    "stage": "import-eval",
+    "result": "ok"
+  },
+  {
+    "stage": "embed",
+    "result": "ok"
+  },
+  {
+    "stage": "retrieve",
+    "result": "ok"
+  },
+  {
+    "stage": "review-package",
+    "result": "ok"
+  },
+  {
+    "stage": "cluster-dev",
+    "result": "ok"
+  },
+  {
+    "stage": "bridge",
+    "result": "ok"
+  },
+  {
+    "stage": "report",
+    "result": "ok"
+  }
+]

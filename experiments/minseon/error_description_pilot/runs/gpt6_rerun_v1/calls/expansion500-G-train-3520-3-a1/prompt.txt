@@ -1,0 +1,73 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-3520-3
+response_sha256: 53163408d96e381921177fb9f90ad925dbbc4c55e6671633a545a089e55e2f9b
+
+=== QUESTION ===
+Haley is getting ready to watch a comet fly over her house. She spends two hours shopping for a telescope, half an hour getting everything set up in the backyard, three times the setup time making snacks, and 20 minutes watching the comet. What percentage of the total time she spent on all those activities was spent watching the comet, rounded to the nearest percent?
+=== MODEL SOLUTION ===
+Step 1: Calculate the total time spent on shopping, setup, making snacks, and watching the comet.
+- Shopping: 2 hours
+- Setup: 0.5 hours
+- Making snacks: 3 times the setup time = 3 * 0.5 = 1.5 hours
+- Watching the comet: 20 minutes = 20/60 = 1/3 hours
+
+Step 2: Convert all times to hours for consistency.
+- Total time: 2 + 0.5 + 1.5 + 1/3 = 2 + 0.5 + 1.5 + 0.333 = 4.333 hours
+
+Step 3: Calculate the percentage of time spent watching the comet.
+\[ \text{Percentage} = \left( \frac{\text{Time watching the comet}}{\text{Total time}} \right) \times 100 \]
+\[ \text{Percentage} = \left( \frac{1/3}{4.333} \right) \times 100 \approx 2.31\% \]
+
+Step 4: Round to the nearest percent.
+\[ \text{Percentage} \approx 2\% \]
+
+#### 2
+The percentage of the total time Haley spent watching the comet is 2%.
+=== REFERENCE SOLUTION (fallible aid) ===
+First convert Haley's shopping time to minutes: 2 hours * 60 minutes/hour = <<2*60=120>>120 minutes
+Then convert Haley's setup time to minutes: .5 hours * 60 minutes/hour = <<.5*60=30>>30 minutes
+Then find the total time she spends making a snack: 3 * 30 minutes = <<3*30=90>>90 minutes
+Then add the time she spends on each activity to find the total time: 120 minutes + 30 minutes + 90 minutes = <<120+30+90=240>>240 minutes
+Then divide the time she spends watching the comet by the total time and multiply by 100% to express the answer as a percentage: 20 minutes / 240 minutes = 8.333...%, which rounds down to 8%
+#### 8
+=== END ===

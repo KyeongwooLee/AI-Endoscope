@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1877-4",
+  "response_sha256": "1c59e4416db6917375d2be5d671f988ffbf67983b4ec37f1d958a5c0a1a931b6",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### The answer is 2500.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "This week she read twice as much. How many pages did Maya read in total?",
+  "observed_error": "The final total of 2500 pages contradicts the correctly stated relations.",
+  "violated_condition": "The total must equal (5 × 300) + 2 × (5 × 300) pages.",
+  "error_description": "The response states the correct relations for both weeks but reports 2500 pages, which does not equal the sum of last week's 5 × 300 pages and twice that quantity this week. No intermediate numerical evaluation identifies which arithmetic operation produced the incorrect total.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The incorrect final total is observable, but the text does not establish a specific arithmetic execution error."
+}

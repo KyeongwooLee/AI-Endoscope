@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5304-0",
+  "response_sha256": "4db0e07502ce8c5e2f9beadfeb29628604acbcbc9368e55b77558fae3b0e072e",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "9 + 9 + 9 + 8 + 8 + 8 = 49 liters",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He drank nine liters of water on Monday, Thursday and Saturday and 8 liters of water on Tuesday, Friday and Sunday.",
+  "observed_error": "The six listed daily amounts are added incorrectly as 49 liters.",
+  "violated_condition": "The known six-day intake equals 9 + 9 + 9 + 8 + 8 + 8 = 51 liters.",
+  "error_description": "The response correctly lists the six known daily amounts but evaluates 9 + 9 + 9 + 8 + 8 + 8 as 49 liters instead of 51 liters. This understates the intake excluding Wednesday; the subsequent subtraction from 60 liters correctly uses that erroneous subtotal.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

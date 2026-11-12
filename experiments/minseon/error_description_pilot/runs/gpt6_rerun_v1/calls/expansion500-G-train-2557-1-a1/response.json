@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2557-1",
+  "response_sha256": "71e0fd6c6979f11f5554978f37d28af993789b6076349ebdd6107ec200a3daff",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "30 precious stones in agate + 35 precious stones in olivine + 46 precious stones in diamond = 101 precious stones.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how many precious stones do they have together",
+  "observed_error": "The response incorrectly evaluates 30 + 35 + 46 as 101.",
+  "violated_condition": "The combined quantity must equal the sum of all three stone counts.",
+  "error_description": "The response correctly determines that olivine has 35 precious stones and diamond has 46, but evaluates the written sum 30 + 35 + 46 as 101 precious stones. The addition is executed incorrectly, so the reported total does not equal the three quantities combined.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

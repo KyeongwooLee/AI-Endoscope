@@ -1,0 +1,29 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Julia bought 3 packs of red balls, 10 packs of yellow balls, and 8 packs of green balls. There were 19 balls in each package. How many balls did Julie buy in all?
+SOLUTION: To find the total number of balls Julia bought, we need to calculate the total number of each color of balls and then sum them up.
+
+1. Calculate the total number of red balls:
+   Julia bought 3 packs of red balls, and each pack contains 19 balls.
+   \[
+   \text{Total red balls} = 3 \times 19 = 57
+   \]
+
+2. Calculate the total number of yellow balls:
+   Julia bought 10 packs of yellow balls, and each pack contains 19 balls.
+   \[
+   \text{Total yellow balls} = 10 \times 19 = 190
+   \]
+
+3. Calculate the total number of green balls:
+   Julia bought 8 packs of green balls, and each pack contains 19 balls.
+   \[
+   \text{Total green balls} = 8 \times 19 = 152
+   \]
+
+4. Sum the total number of balls:
+   \[
+   \text{Total balls} = 57 + 190 + 152 = 309
+   \]
+
+#### 309

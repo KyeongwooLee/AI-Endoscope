@@ -1,0 +1,28 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Mr. Wells has a garden of flowers with 50 rows. If each row has 400 flowers and Mr. Wells cuts 60% of the flowers, how many flowers are remaining in the garden?
+SOLUTION: #### 100
+Let's break down the problem step by step:
+
+1. **Calculate the total number of flowers initially:**
+   - Mr. Wells has 50 rows.
+   - Each row has 400 flowers.
+   - Therefore, the total number of flowers is:
+     \[
+     50 \times 400 = 20000
+     \]
+
+2. **Determine how many flowers are cut:**
+   - Mr. Wells cuts 60% of the flowers.
+   - To find 60% of 20000:
+     \[
+     0.60 \times 20000 = 12000
+     \]
+
+3. **Calculate the remaining flowers:**
+   - Subtract the number of flowers cut from the total number of flowers:
+     \[
+     20000 - 12000 = 8000
+     \]
+
+So, the number of flowers remaining in the garden is 8000.

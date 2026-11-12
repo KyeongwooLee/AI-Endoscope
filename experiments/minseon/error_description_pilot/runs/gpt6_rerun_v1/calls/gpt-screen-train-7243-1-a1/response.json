@@ -1,0 +1,1 @@
+{"status":"answer_conflict","independent_answer":"45 students","check":"There were 30/2 = 15 hot-dog orders, so the total was 30 + 15 = 45 students. The worked solution is correct, but its leading answer marker says 90.","evidence_quote":"#### 90","error_description":"The leading answer marker conflicts with the correctly derived final answer of 45 students."}

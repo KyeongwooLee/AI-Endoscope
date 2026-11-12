@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"13 cards","check":"Rick kept 15 cards, gave friends 8 × 12 = 96, and gave sisters 2 × 3 = 6. Miguel received 130 − 15 − 96 − 6 = 13 cards.","evidence_quote":"Cards given to Miguel = 124 - 96 = 28 cards","error_description":"The calculation omits the 15 cards Rick kept, so it overstates Miguel's share by 15 cards."}

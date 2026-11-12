@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2729-4",
+  "response_sha256": "db4407b94b967ffe17878abdad00793abeea57ec492b6f4e1063a5e650bf548d",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "4. **Total earnings per man:**\n   - The three men working together for 5 hours would earn:\n     \\[\n     5 \\text{ hours} \\times 3 \\text{ men} \\times \\$10/\\text{hour} = 15 \\times \\$10 = \\$150",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "pays each of them $10 per hour",
+  "observed_error": "The response labels earnings already summed over three men as earnings per man, then multiplies by three again.",
+  "violated_condition": "Total earnings equal five hours times three men times $10 per man per hour; the workforce factor is included only once.",
+  "error_description": "The response labels the product of five hours, three men, and $10 per hour as earnings per man, although that product already includes all three workers. It then multiplies this collective amount by three again. The arithmetic is executed correctly, but the payment relation counts the workforce twice.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

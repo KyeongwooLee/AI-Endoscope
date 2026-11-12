@@ -1,0 +1,25 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: There are four members in one household. Each member consumes 3 slices of bread during breakfast and 2 slices of bread for snacks. A loaf of bread has 12 slices. How many days will five loaves of bread last in this family?
+SOLUTION: Step 1: Calculate the total number of slices consumed by one member per day.
+Each member consumes 3 slices for breakfast and 2 slices for snacks.
+Total slices per member per day = 3 + 2 = 5 slices
+
+Step 2: Calculate the total number of slices consumed by the entire household per day.
+There are four members in the household.
+Total slices per day for the household = 5 slices/member * 4 members = 20 slices
+
+Step 3: Calculate the total number of slices consumed by the household in five days.
+Total slices in five days = 20 slices/day * 5 days = 100 slices
+
+Step 4: Calculate how many loaves of bread are needed for five days.
+A loaf of bread has 12 slices.
+Loaves needed = 100 slices / 12 slices/loaf = 8.33 loaves
+
+Step 5: Determine how many days the five loaves of bread will last.
+One loaf lasts for 12 days.
+Total loaves needed = 8.33 loaves.
+Total days the bread will last = 8.33 loaves * 12 days/loaf = 100 days
+
+#### 100
+Five loaves of bread will last the family for 100 days.

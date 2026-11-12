@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5330-1",
+  "response_sha256": "6c5dc480b018a66f0d83b44c5d6c5a329290ac583ec53455d56fa95624961743",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Net income after union dues = $36,000 - $800\nNet income after union dues = $35,200\n\n#### 35200",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He loses 20 percent to taxes, 10 percent to healthcare, and 800$ to local union dues.",
+  "observed_error": "The final take-home amount omits the calculated $8,000 tax deduction.",
+  "violated_condition": "Take-home pay must subtract taxes, healthcare, and union dues from annual income.",
+  "error_description": "The response calculates $8,000 in taxes but reports take-home pay after subtracting only $4,000 for healthcare and $800 for union dues from $40,000. The written subtractions are arithmetically correct, but the final amount fails to include the required tax deduction.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

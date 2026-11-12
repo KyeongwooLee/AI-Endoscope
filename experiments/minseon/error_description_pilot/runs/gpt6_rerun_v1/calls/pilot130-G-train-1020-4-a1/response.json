@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1020-4",
+  "response_sha256": "616d2fd4a34b5f59eecbf7e4c6d105d40c5944950f2e1844b0954b3cbc0fdaee",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Final Answer:\n#### 5\n#### 5",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "How many words would Matt write in 5 minutes with his right hand than with his left?",
+  "observed_error": "The final value 5 does not equal the correctly stated difference of the two five-minute word totals.",
+  "violated_condition": "The requested word difference must equal (10 words/minute × 5 minutes) − (7 words/minute × 5 minutes).",
+  "error_description": "The response correctly sets up both five-minute word totals and their subtraction, but reports 5 as the final word difference. That value does not equal its stated expression, 10 × 5 − 7 × 5. No evaluated intermediate arithmetic identifies how the discrepancy arose.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The final-value mismatch is observable, but the text does not establish a specific arithmetic execution error."
+}

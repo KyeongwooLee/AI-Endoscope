@@ -1,0 +1,28 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Hannah sold 40 pieces of cookies for $0.8 each and 30 cupcakes for $2 each. She used the money to buy 2 sets of measuring spoons for $6.5 each. How much money does she have left?
+SOLUTION: Step 1: Calculate the total money from selling cookies
+Hannah sold 40 pieces of cookies for $0.8 each.
+Total money from cookies = 40 * 0.8
+
+Step 2: Calculate the total money from selling cupcakes
+Hannah sold 30 cupcakes for $2 each.
+Total money from cupcakes = 30 * 2
+
+Step 3: Calculate the total money Hannah has after selling cookies and cupcakes
+Total money after selling = (Total money from cookies) + (Total money from cupcakes)
+
+Step 4: Calculate the total cost of buying measuring spoons
+Hannah bought 2 sets of measuring spoons for $6.5 each.
+Total cost of measuring spoons = 2 * 6.5
+
+Step 5: Calculate the money left after buying measuring spoons
+Money left = (Total money after selling) - (Total cost of measuring spoons)
+
+Let's perform the calculations:
+#### 104
+#### 102
+#### 2
+#### 100
+#### 3
+#### 98

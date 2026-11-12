@@ -1,0 +1,94 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-501-1
+response_sha256: 0eecf9ba3d5de712e4fd8af50f06f05e8d853230f3a38370c8b86ce7c8c95c50
+
+=== QUESTION ===
+John is very unfit and decides to work up to doing a push-up.  He trains 5 days a week for them and starts with wall push-ups.  He adds 1 rep a day and once he gets to 15 reps he will start training high elevation push-ups. and then low elevation push-ups, and finally floor push-ups.  How many weeks will it take him to get to floor push-ups?
+=== MODEL SOLUTION ===
+To determine how many weeks it will take John to get to floor push-ups, we need to break down his training process:
+
+1. **Start with Wall Push-ups:**
+   - John starts with wall push-ups.
+   - He trains 5 days a week.
+   - He adds 1 rep a day.
+   - To get to 15 reps on wall push-ups:
+     - Initial reps: 0
+     - Add 1 rep each day: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+     - Number of days to reach 15 reps: 15
+
+2. **Train High Elevation Push-ups:**
+   - Once he reaches 15 reps on wall push-ups, he will start training high elevation push-ups.
+   - He continues to add 1 rep a day on high elevation push-ups.
+   - Number of days to reach 15 reps on high elevation push-ups:
+     - Initial reps: 15
+     - Add 1 rep each day: 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
+     - Number of days to reach 15 reps: 15
+
+3. **Train Low Elevation Push-ups:**
+   - Once he reaches 15 reps on high elevation push-ups, he will start training low elevation push-ups.
+   - He continues to add 1 rep a day on low elevation push-ups.
+   - Number of days to reach 15 reps on low elevation push-ups:
+     - Initial reps: 15
+     - Add 1 rep each day: 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
+     - Number of days to reach 15 reps: 15
+
+4. **Train Floor Push-ups:**
+   - Once he reaches 15 reps on low elevation push-ups, he will start training floor push-ups.
+   - He continues to add 1 rep a day on floor push-ups.
+   - Number of days to reach 15 reps on floor push-ups:
+     - Initial reps: 15
+     - Add 1 rep each day: 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
+     - Number of days to reach 15 reps: 15
+
+5. **Total Weeks Calculation:**
+   - John trains 5 days a week.
+   - Number of weeks to reach 15 reps on each push-up: 15
+   - Total weeks: 15 * 3 = 45
+
+#### 45
+John will take 45 weeks to get to floor push-ups.
+=== REFERENCE SOLUTION (fallible aid) ===
+He needs to do 15*3=<<15*3=45>>45 progressions
+That will take 45/5=<<45/5=9>>9 weeks
+#### 9
+=== END ===

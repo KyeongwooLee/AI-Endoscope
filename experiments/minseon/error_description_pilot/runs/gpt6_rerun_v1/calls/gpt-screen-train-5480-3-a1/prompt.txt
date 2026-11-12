@@ -1,0 +1,30 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Helga works for a newspaper company. She can write 5 articles every 30 minutes, and she usually works 4 hours a day 5 days a week. If Helga worked an extra 2 hours last Thursday, and an extra 3 hours last Friday, how many articles was she able to write this week?
+SOLUTION: To determine how many articles Helga wrote this week, we need to break down her work schedule and calculate the total hours she worked.
+
+1. **Regular Work Schedule:**
+   - Helga works 4 hours a day, 5 days a week.
+   - Regular work hours per week = 4 hours/day * 5 days/week = 20 hours/week
+
+2. **Extra Work Hours:**
+   - Last Thursday: 2 extra hours
+   - Last Friday: 3 extra hours
+   - Total extra hours worked = 2 + 3 = 5 extra hours
+
+3. **Total Hours Worked This Week:**
+   - Total hours worked this week = Regular work hours + Extra hours
+   - Total hours worked this week = 20 hours + 5 hours = 25 hours
+
+4. **Articles Written:**
+   - Helga writes 5 articles every 30 minutes.
+   - Since she works 25 hours this week, we need to calculate the total number of articles written.
+   - Total hours worked this week = 25 hours
+   - Number of 30-minute intervals in 25 hours = 25 hours * 4 intervals/hour = 100 intervals
+
+5. **Total Articles Written:**
+   - Number of articles written = Number of intervals * Articles per interval
+   - Total articles written = 100 intervals * 5 articles/interval = 500 articles
+
+#### 500
+Helga was able to write 500 articles this week.

@@ -1,0 +1,1 @@
+{"source_id":"train-334-1","response_sha256":"32bdb5654a0825bf4c7a4808c990cb06d58ad630adb4e94b1e921f4e12181006","status":"supported_error","reference_review_needed":true,"explanation":"The first mistake is treating the $3 strawberry package price as a per-cup price. Four cups require two 2-cup packages, so the strawberries cost $6, not the stated $12."}

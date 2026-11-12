@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6712-1",
+  "response_sha256": "ca2eb78d7b6acbdb1f4a9261a6416e095d93aa1801d304284e3b7b3ba17fedbd",
+  "status": "ambiguous",
+  "reference_review_needed": true,
+  "evidence_quote": "12 miles per hour - 4 miles per hour = 8 miles per hour",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If Candance walks 6 miles per hour in the old shoes and plans to hike for 4 hours, how many miles per hour can she go in the new shoes?",
+  "observed_error": "The response calculates speed after both blisters have formed, at the four-hour endpoint, rather than average speed during the hike.",
+  "violated_condition": null,
+  "error_description": null,
+  "reference_review_reason": "The reference assumes the requested quantity is average speed over the hike, but the question does not explicitly specify average speed. The response correctly computes the endpoint speed.",
+  "secondary_errors": [],
+  "uncertainty_note": "If average speed is intended, the response incorrectly applies the endpoint reduction to the requested quantity; if endpoint speed is intended, no mathematical error is observed."
+}

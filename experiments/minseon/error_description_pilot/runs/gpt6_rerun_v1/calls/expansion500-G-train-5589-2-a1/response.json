@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5589-2",
+  "response_sha256": "757f361b718faed8e95ab5cc6bbfb300399e537b6519be798be8e4a827355216",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 2: Add the cookies Michael gave to Sarah to the cupcakes she saved.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "who saved a third of her 9 cupcakes to give to Michael",
+  "observed_error": "The response counts the cupcakes Sarah gives Michael as cupcakes she retains.",
+  "violated_condition": "Sarah's final desserts equal her original cupcakes minus the cupcakes given to Michael, plus the cookies received.",
+  "error_description": "The response adds Michael's 5 cookies to the 3 cupcakes Sarah set aside to give Michael. Those cupcakes leave Sarah's possession, so her final total must use the cupcakes remaining from her original 9. The written addition is executed correctly, but it uses the outgoing quantity instead of the retained quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

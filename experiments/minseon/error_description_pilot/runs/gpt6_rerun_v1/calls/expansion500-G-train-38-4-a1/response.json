@@ -1,0 +1,17 @@
+{
+  "source_id": "train-38-4",
+  "response_sha256": "e7ee84f4c1a6cba8a369c86b1f79b9d23b0a4af76c791347699da9c9c6a0a79a",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total tea needed = 12 people * 6 ounces/person = 72 ounces.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "She knows her mom drinks an 8-ounce cup of tea and uses one ounce of tea. She will use this same ratio for the party.",
+  "observed_error": "The response treats the total cup volume as the amount of tea ingredient required.",
+  "violated_condition": "The tea ingredient required is one eighth of the total cup volume.",
+  "error_description": "The response correctly multiplies 12 people by 6 ounces per cup, but treats the resulting 72 ounces of prepared beverage as the required tea ingredient. The stated ratio requires dividing that cup volume by 8; the later multiplication by 8 continues the same quantity misidentification.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

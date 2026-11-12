@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"1,300 birds.","check":"The daily counts are 300, 300 × 2 = 600, and 600 − 200 = 400. The three-day total is 300 + 600 + 400 = 1,300.","evidence_quote":"#### 400","error_description":"The listed daily counts are correct, but the solution ends with the third-day count rather than the requested three-day total."}

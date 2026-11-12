@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"27 points","check":"The teams earn 2×12+4=28, 2×13+1=27, and 2×8+10=26 points. Their average is (28+27+26)/3=27 points.","evidence_quote":"Total points: 12 + 4 = 16","error_description":"The solution counts each win as 1 point instead of the stated 2 points for all three teams, producing an incorrect average of 16."}

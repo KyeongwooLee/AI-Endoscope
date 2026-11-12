@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"115 miles","check":"The daily distances are 5×7=35, 6×6+3×3=45, and 7×5=35 miles. The total is 35+45+35=115 miles.","evidence_quote":"Total distance = 35 miles + 36 miles","error_description":"The solution omits the 9-mile second segment from the second day's distance and omits the entire 35-mile third day from the total."}

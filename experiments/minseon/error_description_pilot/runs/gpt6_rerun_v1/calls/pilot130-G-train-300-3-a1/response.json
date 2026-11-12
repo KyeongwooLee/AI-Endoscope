@@ -1,0 +1,17 @@
+{
+  "source_id": "train-300-3",
+  "response_sha256": "49a0d1fa14a2094ac7e54fb3e16d9da4c8976f0644125c8e76408325d7e215cb",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 27.50\n#### 5.50\nJenny should get $5.50 in change.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If she pays the store with 2 twenty dollar bills, how much money should she get in change?",
+  "observed_error": "The stated $5.50 change is inconsistent with the correctly written cost and payment expressions.",
+  "violated_condition": "Change must equal 2 × $20 − ($0.10 × 25 × 7 + $1.50 × 7).",
+  "error_description": "The response states that Jenny receives $5.50 in change, although its written relations require subtracting printing and pen costs from $40. That amount does not equal its own expression, 2 × 20 − (0.10 × 25 × 7 + 1.50 × 7). No intermediate numerical calculation identifies the specific arithmetic step that failed.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The unlabeled 27.50 cannot reliably be assigned to a particular quantity, so the precise arithmetic mistake is unresolved."
+}

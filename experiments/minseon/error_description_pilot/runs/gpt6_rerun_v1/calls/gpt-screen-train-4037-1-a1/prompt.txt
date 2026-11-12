@@ -1,0 +1,11 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Susan has 21 cats and Bob has 3 cats. If Susan gives Robert 4 of her cats, how many more cats does Susan have than Bob?
+SOLUTION: Step 1: Susan initially has 21 cats.
+Step 2: Bob initially has 3 cats.
+Step 3: Susan gives 4 cats to Bob.
+Step 4: Susan's new total: 21 - 4 = 17 cats
+Step 5: Bob's new total: 3 + 4 = 7 cats
+Step 6: Difference in number of cats: 17 - 7 = 10 cats
+
+#### 10

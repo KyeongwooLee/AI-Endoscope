@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: The size of a bathroom is 96 sq ft. If the width of the bathroom is 8 feet and the owner wants to extend it by 2 feet on each side, what is the new area of the bathroom?
+SOLUTION: Step 1: Calculate the original length of the bathroom.
+The area of a rectangle is given by the formula: Area = Length × Width.
+Given the area is 96 sq ft and the width is 8 ft, we can find the length by rearranging the formula:
+Length = Area ÷ Width
+Length = 96 ÷ 8
+Length = 12 ft
+
+Step 2: Determine the new dimensions after extending by 2 feet on each side.
+The original width is 8 ft, and the owner wants to extend it by 2 ft on each side. Therefore, the new width will be:
+New Width = Original Width + 2 × Extension
+New Width = 8 + 2 × 2
+New Width = 8 + 4
+New Width = 12 ft
+
+Step 3: Calculate the new area of the bathroom.
+The new length is 12 ft, and the new width is 12 ft. Using the area formula again:
+New Area = New Length × New Width
+New Area = 12 × 12
+New Area = 144 sq ft
+
+#### 144

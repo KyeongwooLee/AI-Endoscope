@@ -1,0 +1,105 @@
+{
+  "assets": {
+    "qwen-gsm8k-self-errors-v1/errors.jsonl": {
+      "source_key": "primary",
+      "url": "https://github.com/KyeongwooLee/AI-Endoscope/releases/download/qwen-gsm8k-self-errors-v1/errors.jsonl",
+      "path": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/data/qwen-gsm8k-self-errors-v1/errors.jsonl",
+      "bytes": 12942210,
+      "sha256": "cc54b199164cdef0c42365a1b806f3dc1e99580762d3b6976dabfba3d2c1993b",
+      "verified": true
+    },
+    "qwen-gsm8k-self-errors-v1/features_meta.json": {
+      "source_key": "primary",
+      "url": "https://github.com/KyeongwooLee/AI-Endoscope/releases/download/qwen-gsm8k-self-errors-v1/features_meta.json",
+      "path": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/data/qwen-gsm8k-self-errors-v1/features_meta.json",
+      "bytes": 122120,
+      "sha256": "b0d6ba830ff66432dd118f3c0550db4d7d7a281e08111b431b225a37fbe60464",
+      "verified": true
+    },
+    "qwen-gsm8k-self-errors-v1/DATA_SCHEMA.json": {
+      "source_key": "primary",
+      "url": "https://github.com/KyeongwooLee/AI-Endoscope/releases/download/qwen-gsm8k-self-errors-v1/DATA_SCHEMA.json",
+      "path": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/data/qwen-gsm8k-self-errors-v1/DATA_SCHEMA.json",
+      "bytes": 2455,
+      "sha256": "e1a62842dbc54a74a2691e3531dcc2b1af1cc211125645c44a7b1d8b207a9a13",
+      "verified": true
+    },
+    "qwen-gsm8k-self-errors-v1/README.md": {
+      "source_key": "primary",
+      "url": "https://github.com/KyeongwooLee/AI-Endoscope/releases/download/qwen-gsm8k-self-errors-v1/README.md",
+      "path": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/data/qwen-gsm8k-self-errors-v1/README.md",
+      "bytes": 5923,
+      "sha256": "b239884f998c6724949e00bb16b090dc21434ffd2a5749a4bca2c98eca7f9316",
+      "verified": true
+    },
+    "qwen-gsm8k-self-errors-v1/SHA256SUMS.txt": {
+      "source_key": "primary",
+      "url": "https://github.com/KyeongwooLee/AI-Endoscope/releases/download/qwen-gsm8k-self-errors-v1/SHA256SUMS.txt",
+      "path": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/data/qwen-gsm8k-self-errors-v1/SHA256SUMS.txt",
+      "bytes": 728,
+      "sha256": "2b77c01a9e718b67cb74eaa07a0052f884c422bec5daef625fc16be1d461c829",
+      "verified": true
+    },
+    "qwen-gsm8k-self-errors-v1/ATTRIBUTION.md": {
+      "source_key": "primary",
+      "url": "https://github.com/KyeongwooLee/AI-Endoscope/releases/download/qwen-gsm8k-self-errors-v1/ATTRIBUTION.md",
+      "path": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/data/qwen-gsm8k-self-errors-v1/ATTRIBUTION.md",
+      "bytes": 557,
+      "sha256": "426e5d902a316d771d6620e079a3ee7d044c55611ade27e6cfae8911101ef254",
+      "verified": true
+    },
+    "qwen-gsm8k-self-errors-v1/LICENSE-GSM8K.txt": {
+      "source_key": "primary",
+      "url": "https://github.com/KyeongwooLee/AI-Endoscope/releases/download/qwen-gsm8k-self-errors-v1/LICENSE-GSM8K.txt",
+      "path": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/data/qwen-gsm8k-self-errors-v1/LICENSE-GSM8K.txt",
+      "bytes": 1063,
+      "sha256": "893951b3bf94db8df1b13e05da5cdeb499400960e4d44a3962a8b33ed0b4f28e",
+      "verified": true
+    },
+    "error-taxonomy-full-v1-draft/labels.jsonl": {
+      "source_key": "prior_annotations",
+      "url": "https://github.com/KyeongwooLee/AI-Endoscope/releases/download/error-taxonomy-full-v1-draft/labels.jsonl",
+      "path": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/data/error-taxonomy-full-v1-draft/labels.jsonl",
+      "bytes": 2938907,
+      "sha256": "6137ffc9efa9482260039b08378f8b479710753013f46857fd16b5b30c23193d",
+      "verified": true
+    },
+    "minsu-branch-d95116f/ab_labels.tsv": {
+      "source_key": "minsu_ai_review",
+      "url": "https://raw.githubusercontent.com/KyeongwooLee/AI-Endoscope/d95116f0d8a6b64a7f3eb08457af11144d6f4a7c/experiments/minsu/taxonomy_relabel/setup_ab/out/ab_labels.tsv",
+      "path": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/data/minsu-ai-review-d95116f/ab_labels.tsv",
+      "bytes": 64867,
+      "sha256": "dfa22bef79fe7396a87a159b3bc984ada1ef2cdcdc46e4c041bcb5588fdd64ae",
+      "verified": true
+    },
+    "minsu-branch-d95116f/loc_labels.tsv": {
+      "source_key": "minsu_ai_review",
+      "url": "https://raw.githubusercontent.com/KyeongwooLee/AI-Endoscope/d95116f0d8a6b64a7f3eb08457af11144d6f4a7c/experiments/minsu/taxonomy_relabel/loc_audit/out/loc_labels.tsv",
+      "path": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/data/minsu-ai-review-d95116f/loc_labels.tsv",
+      "bytes": 47319,
+      "sha256": "6f1529c454182085b8b4dbcee0b3b9fcb48445e3e8669e045ce7b3614db7dd77",
+      "verified": true
+    }
+  },
+  "verified_at": "2026-11-07T17:04:49+00:00",
+  "branches": {
+    "checked_at": "2026-11-07T17:04:49+00:00",
+    "observed": {
+      "dahyeon": "51560936fa89329e481a2c8c8f7af223df27576a",
+      "kyeongwoo": "7c4485dbc3f14e3771210fe626efe155e8eb468e",
+      "main": "51560936fa89329e481a2c8c8f7af223df27576a",
+      "minseon": "73d02635b55358c2b942c2bcd084ebb334c0db85",
+      "minsu": "d95116f0d8a6b64a7f3eb08457af11144d6f4a7c",
+      "sunghun": "99b35512ba043b0ec86d809ec700fcb4ba969889"
+    },
+    "pinned": {
+      "main": "51560936fa89329e481a2c8c8f7af223df27576a",
+      "dahyeon": "51560936fa89329e481a2c8c8f7af223df27576a",
+      "minseon": "73d02635b55358c2b942c2bcd084ebb334c0db85",
+      "minsu": "d95116f0d8a6b64a7f3eb08457af11144d6f4a7c",
+      "sunghun": "99b35512ba043b0ec86d809ec700fcb4ba969889",
+      "kyeongwoo": "7c4485dbc3f14e3771210fe626efe155e8eb468e"
+    },
+    "changed_since_pin": {}
+  }
+}

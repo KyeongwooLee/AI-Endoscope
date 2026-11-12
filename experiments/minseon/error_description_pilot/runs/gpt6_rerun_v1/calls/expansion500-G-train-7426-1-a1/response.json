@@ -1,0 +1,21 @@
+{
+  "source_id": "train-7426-1",
+  "response_sha256": "caeab722964f3c337a7a615b54b7c4e0c70e5e0810ed1a8321d016c7d4ea6ec1",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "405 kg (total) - 150 kg (used) - 60 kg (given) = 295 kg",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "90 kg were used to make fruit juice and 60 kg were given to a restaurant.",
+  "observed_error": "The response subtracts the restaurant's 60 kg twice.",
+  "violated_condition": "The 150 kg subtotal already includes both the juice allocation and the restaurant allocation; the remaining weight is 405 kg minus that subtotal.",
+  "error_description": "After correctly combining the juice and restaurant allocations into 150 kg, the response subtracts both that subtotal and another 60 kg from the harvest. This counts the restaurant allocation twice. Separately, its written subtraction evaluates to 195 kg, not the stated 295 kg.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The written subtraction 405 - 150 - 60 equals 195, not 295.",
+    "The unexplained 56 bags is inconsistent with the stated 295 kg divided into 5 kg bags.",
+    "The written division $408 ÷ 56 equals approximately $7.29 per bag, not $7.41."
+  ],
+  "uncertainty_note": "The response does not show how it obtained 56 bags."
+}

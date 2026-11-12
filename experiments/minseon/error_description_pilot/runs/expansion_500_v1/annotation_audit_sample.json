@@ -1,0 +1,25 @@
+{
+  "selection": "uniform sample 20 of 500, fixed before seeing G outputs, seed20261113; exploratory nonblind Codex spot-check, not human review",
+  "source_ids": [
+    "train-2136-4",
+    "train-1081-4",
+    "train-6861-3",
+    "train-1827-4",
+    "train-344-4",
+    "train-7430-4",
+    "train-5364-3",
+    "train-7421-3",
+    "train-1061-4",
+    "train-4085-1",
+    "train-1338-4",
+    "train-4465-3",
+    "train-1833-0",
+    "train-1627-4",
+    "train-1262-0",
+    "train-3647-3",
+    "train-1297-4",
+    "train-4704-2",
+    "train-1686-3",
+    "train-5239-1"
+  ]
+}

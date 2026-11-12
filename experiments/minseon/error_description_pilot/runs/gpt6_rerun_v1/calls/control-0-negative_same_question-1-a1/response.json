@@ -1,0 +1,1 @@
+{"case1_error":"Correct expression 15 + 5 is incorrectly evaluated as 21.","case2_error":"Uses George’s orange count instead of Amelia’s apple count as the base for adding 5.","reason":"Case 1 is a numerical evaluation error; case 2 sets up an erroneous relation using the wrong quantity.","judgment":"different"}

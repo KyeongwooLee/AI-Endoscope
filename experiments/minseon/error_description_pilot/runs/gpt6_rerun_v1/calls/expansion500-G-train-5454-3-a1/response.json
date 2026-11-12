@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5454-3",
+  "response_sha256": "c77e592bfae4b547f4cca341bb181b268df1884bce8573c35e33ab096c0b310c",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total stamps Maria wants to collect = 40 + (0.20 * 40)\n\n#### 68",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "She has collected 40 stamps so far and plans to have 20% more.",
+  "observed_error": "The reported total of 68 does not equal the correctly written expression 40 + (0.20 * 40).",
+  "violated_condition": "The desired total must equal 40 stamps plus 20% of 40 stamps.",
+  "error_description": "The response correctly expresses the desired total as 40 + (0.20 * 40), but reports 68 stamps, which does not equal that expression. The discrepancy occurs in the reported numerical result; the text does not show which arithmetic operation produced it.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The intermediate arithmetic is omitted, so the specific calculation responsible for 68 cannot be determined."
+}

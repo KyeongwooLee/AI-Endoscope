@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$50","check":"Ben has 26 − 9 = $17, and Eric has 17 − 10 = $7. Their total is 26 + 17 + 7 = $50.","evidence_quote":"Ben has $9 more than Jack.","error_description":"The solution reverses the stated relationship: Ben has $9 less than Jack. This produces incorrect amounts for Ben and Eric and an incorrect total of $86."}

@@ -1,0 +1,19 @@
+{
+  "source_id": "train-7103-0",
+  "response_sha256": "20675544d7c3d0a02a7939e53764cfdd759466c0a4db650c81e484f7ebcbfbc7",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Harry needs 14 balloons, which is 2 packs of 10 balloons (since 10 + 10 = 20, but he only needs 14).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Finally, Harry wants to bring to the party exactly 14 balloons.",
+  "observed_error": "The response assigns two ten-balloon packs to a requirement of exactly 14 balloons.",
+  "violated_condition": "The selected packs and individual balloons must together supply exactly 14 balloons.",
+  "error_description": "The response treats two packs of 10 balloons as satisfying the requirement for exactly 14, although those packs contain 20. It then adds the cost of 14 individual balloons to those packs, charging for overlapping purchase plans. The displayed arithmetic itself is correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The total adds the cost of 14 individual balloons to the cost of two ten-balloon packs, representing 34 balloons rather than a single purchase totaling 14."
+  ],
+  "uncertainty_note": null
+}

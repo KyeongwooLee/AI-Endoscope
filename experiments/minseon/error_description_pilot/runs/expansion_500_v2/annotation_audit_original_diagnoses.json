@@ -1,0 +1,102 @@
+[
+  {
+    "source_id": "train-2136-4",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "50시간 요건을50일/하루50회 이동처럼 사용했다. 하루2회 왕복의40분을 분모로 써야 한다."
+  },
+  {
+    "source_id": "train-1081-4",
+    "observable_math_error": "no",
+    "diagnosis_ko": "Qwen풀이1060은 맞다. 참조가500/1000을1000/500으로 뒤집고800마리를700으로 바꿔 잘못 계산했다."
+  },
+  {
+    "source_id": "train-6861-3",
+    "observable_math_error": "uncertain",
+    "diagnosis_ko": "둘이 게임 하나를 함께 살지 각각 하나씩 살지 문구가 모호하다. 참조는2개를 가정하지만 응답의1개 해석을 확실한 오류로 단정하기 어렵다."
+  },
+  {
+    "source_id": "train-1827-4",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "하루 아이들8개를 주간8개로 취급하고5일 배수를 누락했다."
+  },
+  {
+    "source_id": "train-344-4",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "최종20개를 첫60%손실 직후의 수로 넣어 두 번째 절반 손실을 되돌리지 않았다."
+  },
+  {
+    "source_id": "train-7430-4",
+    "observable_math_error": "no",
+    "diagnosis_ko": "서두####20은 잘못됐지만 뒤의 계산과 최종 서술120은 맞다. 표기/답 추출 충돌이며 본문 수학 오류는 없다."
+  },
+  {
+    "source_id": "train-5364-3",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "세금3000을 근거 없이 사용했다. 통상적인 세전이익5000에20%를 적용하면1000이다. 원문만으로3000의 계산 원인은 특정할 수 없다."
+  },
+  {
+    "source_id": "train-7421-3",
+    "observable_math_error": "no",
+    "diagnosis_ko": "서두####200과 달리 본문800,1600,160의 계산은 모두 맞다. 표기 충돌이다."
+  },
+  {
+    "source_id": "train-1061-4",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "맞는(3*12)/2 뒤에 개인별 비용에 다시 케이크당 비용을 곱하는 근거 없는 관계를 추가했다.18과9의 답 표기도 충돌한다."
+  },
+  {
+    "source_id": "train-4085-1",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "올바른80-16을40으로 계산했다.64가 맞다."
+  },
+  {
+    "source_id": "train-1338-4",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "대형등24개 대신 소형등22개를 대형등 전구 계산에 사용했다."
+  },
+  {
+    "source_id": "train-4465-3",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "다른 나무의3개와 앞마당의4개를 구분하지 않고4개짜리 둥지의 알을 누락했다."
+  },
+  {
+    "source_id": "train-1833-0",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "필요 도장면적1200을 갤런당 면적400으로 나누지 않고 곱했다."
+  },
+  {
+    "source_id": "train-1627-4",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "두 번째 호스를 추가한 후에도 계속 흐르는 첫 번째 호스의2시간 공급량을 누락했다."
+  },
+  {
+    "source_id": "train-1262-0",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "전체36파인트를 전체18병으로 나누고3병분을 취해야 하는데 마신3병으로 곧바로 나눴다."
+  },
+  {
+    "source_id": "train-3647-3",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "할인을 적용해4달러를 구한 후 할인액1달러를 다시 더해 취소했다."
+  },
+  {
+    "source_id": "train-1297-4",
+    "observable_math_error": "no",
+    "diagnosis_ko": "서두####16은 틀리지만 뒤의32명과8명 계산 및 최종8은 맞다. 본문 수학 오류가 아닌 답 표기 충돌이다."
+  },
+  {
+    "source_id": "train-4704-2",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "세 번째 국가의2배 기준을 첫 국가2주가 아닌 두 번째 국가4주로 사용했다."
+  },
+  {
+    "source_id": "train-1686-3",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "10*5와4주라는 올바른 절차를 쓰고 그 결과와 다른500을 출력했다. 내부 원인은 관찰 불가하다."
+  },
+  {
+    "source_id": "train-5239-1",
+    "observable_math_error": "yes",
+    "diagnosis_ko": "봉지4개를 땅콩4개로 사용하여 봉지당30개 배수를 누락했다. 끝점 포함 간격 해석과 무관하게 이 수량 오류는 명확하다."
+  }
+]

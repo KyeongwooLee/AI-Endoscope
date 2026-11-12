@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6960-4",
+  "response_sha256": "c8654c7e8b07dbb66d48bcac3fd9f224af66b8b4091176116bb50209bd184925",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total hours working for neighbors: 1 hour",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Mowing the lawn takes 1 hour and pays $15. If Jake wants to make $20/hour working for the neighbors, and planting the flowers takes 2 hours",
+  "observed_error": "The response uses 1 hour as the total working time when calculating desired total earnings.",
+  "violated_condition": "Total working time must include both mowing and planting: 1 hour + 2 hours = 3 hours.",
+  "error_description": "The response sets total working time to 1 hour and calculates desired earnings using $20/hour × 1 hour. The target hourly earnings apply across both the 1 hour of mowing and 2 hours of planting. The multiplication is executed correctly, but its time operand excludes planting.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

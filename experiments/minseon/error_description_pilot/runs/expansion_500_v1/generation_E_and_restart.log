@@ -1,0 +1,71 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:03,  1.95s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:03<00:01,  1.97s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.33s/it]
+MODEL LOADED
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+E 8 / 500 seconds 11.0 valid 8
+E 16 / 500 seconds 20.2 valid 8
+E 24 / 500 seconds 9.5 valid 8
+E 32 / 500 seconds 12.1 valid 8
+E 40 / 500 seconds 9.9 valid 8
+E 48 / 500 seconds 10.7 valid 8
+E 56 / 500 seconds 10.7 valid 8
+E 64 / 500 seconds 11.0 valid 8
+E 72 / 500 seconds 9.7 valid 8
+E 80 / 500 seconds 10.6 valid 8
+E 88 / 500 seconds 19.4 valid 8
+E 96 / 500 seconds 19.1 valid 8
+E 104 / 500 seconds 10.5 valid 8
+E 112 / 500 seconds 10.8 valid 8
+E 120 / 500 seconds 10.2 valid 8
+E 128 / 500 seconds 10.4 valid 8
+E 136 / 500 seconds 10.4 valid 8
+E 144 / 500 seconds 11.0 valid 8
+E 152 / 500 seconds 10.6 valid 8
+E 160 / 500 seconds 11.1 valid 8
+E 168 / 500 seconds 10.7 valid 8
+E 176 / 500 seconds 11.3 valid 8
+E 184 / 500 seconds 21.1 valid 8
+E 192 / 500 seconds 11.1 valid 8
+E 200 / 500 seconds 10.6 valid 8
+E 208 / 500 seconds 10.9 valid 8
+E 216 / 500 seconds 10.6 valid 8
+E 224 / 500 seconds 21.6 valid 8
+E 232 / 500 seconds 21.3 valid 8
+E 240 / 500 seconds 10.5 valid 8
+E 248 / 500 seconds 9.6 valid 8
+E 256 / 500 seconds 21.2 valid 8
+E 264 / 500 seconds 11.3 valid 8
+E 272 / 500 seconds 11.3 valid 8
+E 280 / 500 seconds 11.3 valid 8
+E 288 / 500 seconds 22.2 valid 8
+E 296 / 500 seconds 19.5 valid 7
+E 304 / 500 seconds 21.7 valid 8
+E 312 / 500 seconds 23.8 valid 8
+E 320 / 500 seconds 10.9 valid 8
+E 328 / 500 seconds 10.4 valid 8
+E 336 / 500 seconds 25.5 valid 7
+E 344 / 500 seconds 11.8 valid 8
+E 352 / 500 seconds 11.0 valid 8
+E 360 / 500 seconds 10.8 valid 8
+E 368 / 500 seconds 22.8 valid 7
+E 376 / 500 seconds 19.3 valid 8
+E 384 / 500 seconds 22.7 valid 7
+E 392 / 500 seconds 21.1 valid 8
+E 400 / 500 seconds 11.2 valid 8
+E 408 / 500 seconds 10.8 valid 8
+E 416 / 500 seconds 10.8 valid 8
+E 424 / 500 seconds 11.2 valid 8
+E 432 / 500 seconds 10.7 valid 8
+E 440 / 500 seconds 10.7 valid 8
+E 448 / 500 seconds 20.5 valid 8
+E 456 / 500 seconds 21.3 valid 8
+E 464 / 500 seconds 11.6 valid 8
+E 472 / 500 seconds 11.1 valid 8
+E 480 / 500 seconds 11.2 valid 8
+E 488 / 500 seconds 24.5 valid 8
+E 496 / 500 seconds 26.9 valid 7
+E 500 / 500 seconds 21.0 valid 3
+Traceback (most recent call last):
+  File "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/expansion_500_v1/source/generate.py", line 5, in <module>
+    from transformers import AutoModelForCausalLM,AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'

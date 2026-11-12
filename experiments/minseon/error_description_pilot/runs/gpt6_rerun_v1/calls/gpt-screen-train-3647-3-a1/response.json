@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$4.00","check":"After the coupon, the cost is $7.50 − $2.50 = $5.00. The additional 20% discount gives $5.00 × 0.80 = $4.00; step 4 incorrectly adds the discount back.","evidence_quote":"$4.00 + $1.00 = $5.00","error_description":"Step 4 reverses the correctly applied senior discount, producing an incorrect total of $5.00."}

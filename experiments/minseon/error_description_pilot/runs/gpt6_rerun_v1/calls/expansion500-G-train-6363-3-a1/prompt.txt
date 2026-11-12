@@ -1,0 +1,77 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-6363-3
+response_sha256: 1f266ee80836bfd7dc18a640c58472764e83b6bff0e2bf4a8e2beb6389756fd5
+
+=== QUESTION ===
+The rim of a standard basketball hoop is 10 feet above the ground.  Additionally, most experts will say that a player must be able to reach at least 6 inches above the rim to dunk a basketball.  Suppose a basketball player is 6 feet tall and can reach 22 inches above their head using the wingspan of their arms.  How high must this player be able to jump to reach 6 inches above the rim to dunk a basketball?
+=== MODEL SOLUTION ===
+To determine how high the player must jump to reach 6 inches above the rim, we need to follow these steps:
+
+1. Convert all measurements to the same unit. Let's use inches.
+   - The rim is 10 feet above the ground.
+   - 6 inches above the rim.
+   - 6 feet tall.
+   - 22 inches above their head.
+
+2. Calculate the total vertical distance the player needs to reach to dunk.
+   - Total vertical distance = rim height - reach above head
+   - Total vertical distance = 10 feet - 6 inches
+   - 10 feet = 120 inches
+   - 6 inches = 6 inches
+   - Total vertical distance = 120 inches - 6 inches = 114 inches
+
+3. Determine the height the player must jump to reach the total vertical distance.
+   - Player's height = 6 feet = 72 inches
+   - Reach above head = 22 inches
+   - Jump height needed = total vertical distance - player's height - reach above head
+   - Jump height needed = 114 inches - 72 inches - 22 inches = 20 inches
+
+#### 20
+The player must be able to jump 20 inches high to reach 6 inches above the rim to dunk a basketball.
+=== REFERENCE SOLUTION (fallible aid) ===
+In inches, the height of the rim is 10*12 = <<10*12=120>>120 inches.
+Thus, the height that the player needs to be able to reach is 120 + 6 = <<120+6=126>>126 inches.
+Without jumping, the player can reach their height plus an additional 22 inches, or a total of 6*12 + 22 = <<6*12+22=94>>94 inches.
+Therefore, the player needs to jump 126 - 94 = <<126-94=32>>32 inches to reach the height required to dunk a basketball.
+#### 32
+=== END ===

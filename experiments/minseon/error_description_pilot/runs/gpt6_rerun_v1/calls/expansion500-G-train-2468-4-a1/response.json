@@ -1,0 +1,19 @@
+{
+  "source_id": "train-2468-4",
+  "response_sha256": "dda62424ade76e4b511ddd8f74289a0c2a68fc769116afa9f96611bae3c9a748",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "the remaining two patients need \\( 25 - 6 = 19 \\) sessions.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "One of the patients needs 6 sessions. Another patient needs 5 more than that.",
+  "observed_error": "The response assigns the total after subtracting only the first patient's sessions to the remaining two patients.",
+  "violated_condition": "The remaining two patients' total must exclude both 6 sessions and the second patient's 6 + 5 sessions.",
+  "error_description": "The response correctly calculates 25 minus 6 as 19, but incorrectly assigns that remainder to the remaining two patients. That remainder still includes the second patient's sessions, which are 5 more than 6. Both specified patients' session counts must be subtracted from the total.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The response later adds 19 + 19 even though it previously defined 19 as the combined total for the remaining two patients, independently doubling an aggregate."
+  ],
+  "uncertainty_note": null
+}

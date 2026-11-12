@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Three adults whose average weight is 140 pounds went first in the elevator. Two children whose average weight is 64 pounds also went inside. If an elevator sign reads “Maximum weight 600 pounds.", what is the maximum weight of the next person to get in the elevator so that it will not be overloaded?
+SOLUTION: Step 1: Calculate the total weight of the three adults.
+Total weight of adults = Average weight × Number of adults
+Total weight of adults = 140 pounds/3
+Total weight of adults = 46.67 pounds
+
+Step 2: Calculate the total weight of the two children.
+Total weight of children = Average weight × Number of children
+Total weight of children = 64 pounds/2
+Total weight of children = 32 pounds
+
+Step 3: Calculate the total weight of all occupants in the elevator.
+Total weight of all occupants = Total weight of adults + Total weight of children
+Total weight of all occupants = 46.67 pounds + 32 pounds
+Total weight of all occupants = 78.67 pounds
+
+Step 4: Calculate the maximum weight allowed for the elevator.
+Maximum weight allowed = Maximum weight sign - Total weight of all occupants
+Maximum weight allowed = 600 pounds - 78.67 pounds
+Maximum weight allowed = 521.33 pounds
+
+#### 521.33

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3248-0",
+  "response_sha256": "b3234989d54a050403e88226d521c2cf73dd633c5f5aefa5ec5c217598ab41ca",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "180 - 45 - 45 - 20 = 90 students",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "and another 20 got less than a D.",
+  "observed_error": "The response incorrectly evaluates 180 - 45 - 45 - 20 as 90.",
+  "violated_condition": "The passing count must subtract all three nonpassing groups, including the additional 20 students.",
+  "error_description": "The response correctly writes the subtraction for all three nonpassing groups but evaluates 180 - 45 - 45 - 20 as 90 students. That value accounts for only the first two subtractions; the written expression also requires subtracting the additional 20 students who got less than a D.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: If Lyn donates $240 to a private organization each year where 1/3 of it goes to the community pantry project, 1/2 goes to the local crisis fund, 1/4 of the remaining goes to livelihood project funds, and the rest is for contingency funds. How much goes to contingency fund?
+SOLUTION: Step 1: Calculate the amount donated to the community pantry project.
+$240 * (1/3) = $80
+
+Step 2: Calculate the amount donated to the local crisis fund.
+$240 * (1/2) = $120
+
+Step 3: Calculate the remaining amount after donations to the community pantry and local crisis fund.
+$240 - $80 - $120 = $40
+
+Step 4: Calculate the amount donated to livelihood project funds from the remaining amount.
+$40 * (1/4) = $10
+
+Step 5: Calculate the amount donated to contingency funds.
+$240 - ($80 + $120 + $10) = $50
+
+#### 50
+The amount that goes to contingency funds is $50.

@@ -1,0 +1,11 @@
+You are comparing observable mathematical errors. Use no tools or outside resources. For each case, check its solution against its question; the reference is fallible and must not override the question. Distinguish an erroneous relation, a numerical evaluation error of a correctly written expression, an unsupported final number after a correct formula, and answering the wrong requested quantity. A contradictory leading answer marker with an otherwise correct derivation is an answer conflict, not evidence of an invented math mistake. Decide same only if BOTH cases have the same specific observable error mechanism. Different stories, numerical values, or arithmetic operators do not by themselves make mechanisms different. Decide different if both have diagnosable errors and their mechanisms differ. Decide uncertain if either case has no clear mathematical error, a materially ambiguous interpretation, or only answer-marker conflict. Never invent an unshown calculation. Return concise JSON: case1_error, case2_error, judgment (same/different/uncertain), reason. No method names, embedding scores, cluster labels or generated annotations are supplied.
+
+CASE 1
+QUESTION: Amelia has 15 apples. George has 45 oranges and 5 more apples than Amelia. How many apples does George have?
+SOLUTION: George has 45 oranges, so his apples are 45 + 5 = 50.
+REFERENCE: George has 15 + 5 = 20 apples.
+
+CASE 2
+QUESTION: Lia has 12 blue beads and 30 red beads. Tom has 7 more blue beads than Lia. How many blue beads does Tom have?
+SOLUTION: Tom has 30 + 7 = 37 blue beads.
+REFERENCE: Tom has 12 + 7 = 19 blue beads.

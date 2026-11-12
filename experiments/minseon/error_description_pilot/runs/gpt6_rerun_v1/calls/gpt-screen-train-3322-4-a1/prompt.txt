@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Tony goes on 5 rollercoasters while he is at the park. The first went 50 miles per hour. The second went 62 miles per hour. The third when 73 miles per hour. The fourth when 70 miles per hour. His average speed during the day was 59 miles per hour. How fast was the fifth coaster?
+SOLUTION: Step 1: Calculate the total distance traveled by all 5 rollercoasters.
+
+Step 2: Calculate the total time spent traveling by all 5 rollercoasters.
+
+Step 3: Calculate the total distance traveled by all 5 rollercoasters based on their average speed.
+
+Step 4: Calculate the total time spent traveling by all 5 rollercoasters based on their average speed.
+
+Step 5: Subtract the total distance traveled by the first four rollercoasters from the total distance traveled by all five rollercoasters.
+
+Step 6: The difference from step 5 is the distance traveled by the fifth rollercoaster.
+
+Step 7: Divide the distance traveled by the fifth rollercoaster by the time spent on the fifth rollercoaster to find the speed of the fifth rollercoaster.
+
+#### 74

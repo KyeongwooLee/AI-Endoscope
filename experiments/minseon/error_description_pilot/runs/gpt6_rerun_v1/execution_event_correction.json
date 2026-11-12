@@ -1,0 +1,1 @@
+{"issue":"CLI feature warning was initially mistaken for tool activity by runner guard; no model tool calls occurred.","resolution":"Allow only the known non-tool feature warning, reuse its saved successful response; preserve original logs and initial failure records."}

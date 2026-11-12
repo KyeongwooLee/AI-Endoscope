@@ -1,0 +1,27 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Robe's car broke and he used $10 from his savings to pay for the repair. Before the repair, he bought 2 kinds of spare parts. A corner light that costs twice the price of the repair fee, and two brake disks; each disk cost thrice the price of the corner light. After that, he had $480 savings left. How much money did Robe have saved before his car broke?
+SOLUTION: Let's denote the repair fee by \( x \). According to the problem, the corner light costs \( 2x \) and each brake disk costs \( 3 \times 2x = 6x \). Robe initially had $10 for the repair and then spent all his remaining money after buying the parts.
+
+Let's denote Robe's initial savings by \( y \).
+
+First, we calculate the total cost of the spare parts:
+- Cost of the corner light: \( 2x \)
+- Cost of the brake disks: \( 2 \times 6x = 12x \)
+
+The total cost of the spare parts is \( 2x + 12x = 14x \).
+
+Robe used $10 for the repair and then spent all his remaining money after buying the parts. After buying the parts, he had $480 left. Therefore, we can write the equation:
+\[ y - 10 - 14x = 480 \]
+
+Since \( x \) is the cost of the repair, and \( y \) is Robe's initial savings, we need to find the value of \( y \). We know that Robe spent the entire amount he had initially after buying the parts, so we can simplify the equation to:
+\[ y - 14x = 500 \]
+
+From the problem, we know \( x = 10 \). Substituting \( x \) into the equation:
+\[ y - 14 \times 10 = 500 \]
+\[ y - 140 = 500 \]
+\[ y = 640 \]
+
+Therefore, Robe had saved $640 before his car broke.
+
+#### 640

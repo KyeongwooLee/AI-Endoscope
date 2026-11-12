@@ -1,0 +1,20 @@
+{
+  "source_id": "train-4795-1",
+  "response_sha256": "fe6833ce666fbafadd50a8def398494a99877d14dc4fe407743df4b9ea942426",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "60 minutes (bedrooms) * 3 = 180 minutes",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "The living room takes as long as the 3 bedrooms combined.",
+  "observed_error": "The response multiplies the combined bedroom time by three to obtain the living-room time.",
+  "violated_condition": "The living-room time must equal the combined time for all three bedrooms.",
+  "error_description": "The response correctly totals the three bedrooms at 60 minutes, then multiplies that total by three to assign 180 minutes to the living room. The question makes the living-room time equal to the bedrooms’ combined time. The multiplication is executed correctly, but the relation is wrong.",
+  "reference_review_reason": "The reference includes only one bathroom’s cleaning time despite the question listing two bathrooms; its total requires review.",
+  "secondary_errors": [
+    "The response divides the work among four people, although James and his two siblings make three people.",
+    "The response uses twice the living-room time as the total for both bathrooms, omitting the additional factor of two for two bathrooms under the per-bathroom reading."
+  ],
+  "uncertainty_note": "The singular wording 'The bathroom' leaves some ambiguity about whether the stated duration applies per bathroom or collectively; both solutions omit a separate count of two bathrooms."
+}

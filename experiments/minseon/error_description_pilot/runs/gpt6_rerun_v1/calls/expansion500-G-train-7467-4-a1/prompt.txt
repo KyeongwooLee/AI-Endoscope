@@ -1,0 +1,98 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-7467-4
+response_sha256: 75d2d428fddfd7ef2c8bb49d0c4ba483eb5cdfdb69efc37f7bf4a19afb9554f7
+
+=== QUESTION ===
+Roy owns a refrigerated warehouse where he stores produce before selling it at the farmer’s market.  The fruits and vegetables he stores are very sensitive to temperature, and he must keep them all cold or they will spoil.  One day, the power went out and the air conditioner was turned off for three hours, during which time the temperature rose by 8 degrees per hour.  If Roy gets the power back on, it will activate the air conditioner to lower the temperature at the rate of 4 degrees F per hour.  What is the amount of time, in hours, it will take for the air conditioner to restore the warehouse to 43 degrees F?
+=== MODEL SOLUTION ===
+Let's break down the problem step by step.
+
+### Step 1: Initial Temperature Increase
+- The temperature initially rises by 8 degrees per hour for 3 hours.
+- Therefore, the total temperature increase is:
+  \[
+  8 \text{ degrees/hour} \times 3 \text{ hours} = 24 \text{ degrees}
+  \]
+
+### Step 2: Temperature After Power Restoration
+- The initial temperature in the warehouse is 43 degrees F.
+- After the power is restored, the temperature will decrease at a rate of 4 degrees F per hour.
+- Let \( t \) be the time in hours it takes to restore the temperature to 43 degrees F.
+
+### Step 3: Temperature Restoration Equation
+- The temperature decrease due to the air conditioner is given by:
+  \[
+  -4t \text{ degrees}
+  \]
+- The total temperature decrease is the sum of the initial increase and the decrease due to the air conditioner:
+  \[
+  24 \text{ degrees} - 4t \text{ degrees}
+  \]
+- The final temperature should be 43 degrees F:
+  \[
+  43 \text{ degrees} = 43 \text{ degrees} - 4t \text{ degrees}
+  \]
+
+### Step 4: Solving for \( t \)
+- Rearrange the equation to solve for \( t \):
+  \[
+  43 \text{ degrees} - 43 \text{ degrees} = -4t \text{ degrees}
+  \]
+  \[
+  0 = -4t \text{ degrees}
+  \]
+  \[
+  t = \frac{0}{-4} \text{ hours}
+  \]
+  \[
+  t = 0 \text{ hours}
+  \]
+
+### Step 5: Final Answer
+#### 0
+The air conditioner will restore the temperature to 43 degrees F in 0 hours.
+=== REFERENCE SOLUTION (fallible aid) ===
+At a rate of 8 degrees per hour, in three hours the temperature rose by 3*8=<<3*8=24>>24 degrees.
+At a rate of 4 degrees per hour, the air conditioner can reduce the temperature 24 degrees in 24/4=6 hours.
+#### 6
+=== END ===

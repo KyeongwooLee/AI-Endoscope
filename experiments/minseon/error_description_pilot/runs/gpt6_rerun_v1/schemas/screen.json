@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "math_error",
+        "no_math_error",
+        "answer_conflict",
+        "ambiguous"
+      ]
+    },
+    "independent_answer": {
+      "type": "string"
+    },
+    "check": {
+      "type": "string"
+    },
+    "evidence_quote": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "error_description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "independent_answer",
+    "check",
+    "evidence_quote",
+    "error_description"
+  ],
+  "additionalProperties": false
+}

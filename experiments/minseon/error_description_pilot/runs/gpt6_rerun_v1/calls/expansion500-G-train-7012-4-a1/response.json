@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7012-4",
+  "response_sha256": "8f0e04a5364054b9faf67b3d7b970cf4c6ee63996b86b8fe7c4700d854de481f",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "4. Convert Jake's weekly wage into a daily wage.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how much does Jake earn in 5 days working 8 hours a day?",
+  "observed_error": "The response introduces an unnecessary conversion to daily earnings and ultimately reports $144, the daily wage.",
+  "violated_condition": "The requested quantity is total earnings over five eight-hour workdays, not earnings for one day.",
+  "error_description": "The response adds a step converting the five-day earnings back to a daily wage and reports that daily amount. The question asks for earnings across all five days. Its multiplication is correct; the mistake is replacing the requested total with one day's earnings.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

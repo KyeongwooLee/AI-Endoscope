@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6140-4",
+  "response_sha256": "dc2a481bd634f1c71345ebe88fa12b6c81bb8f21fa3fe5e97864d03e63a7b5d1",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 120",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "calculate the total number of hours of their favorite movies together.",
+  "observed_error": "The reported total of 120 is inconsistent with the specified movie durations.",
+  "violated_condition": "The total must equal 30 + (4/5)×30 + 30/3 + (30/3 + 2) hours.",
+  "error_description": "The response reports 120 as the total after establishing only Nikki’s and Ryn’s durations. It never calculates Michael’s duration as one third of Nikki’s or Joyce’s as two hours longer than Michael’s. The reported total does not satisfy these relations.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "No calculation producing 120 is shown, so the text does not establish whether that number arose from a wrong relation or incorrectly executed arithmetic."
+}

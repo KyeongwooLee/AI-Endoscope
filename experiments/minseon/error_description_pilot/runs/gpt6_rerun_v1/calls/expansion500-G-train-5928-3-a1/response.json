@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5928-3",
+  "response_sha256": "8b825d34c938f4371d344ac78643b719700084d7c80397af5a258bd545cc6881",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 2: Calculate the total area for all 10 ad spaces\nTotal area = Area per ad x Number of ads\nTotal area = 60 sq ft x 10 = 600 sq ft",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Three companies, A, B, and C, each purchased 10 ad spaces",
+  "observed_error": "The response treats 10 ad spaces as the combined number for all three companies.",
+  "violated_condition": "The combined area must include 3 × 10 ad spaces, since each company purchased 10.",
+  "error_description": "The response uses 60 sq ft × 10 as the total area for the combined purchase, although each of three companies bought 10 spaces. The multiplication is correct for one company, but the combined area and resulting charge omit the factor of three.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Andy walks 50 meters from his house to school. After school, he comes back to the house and goes to the market. If he walks 140 meters in total, how many meters is the distance between the house and the market?
+SOLUTION: Let's break down the problem step by step:
+
+1. Andy walks from his house to school, which is 50 meters.
+2. After school, he comes back to the house, adding another 50 meters to his total.
+3. Now, the total distance he walks is 140 meters.
+4. To find the distance between the house and the market, we need to subtract the distance from his house to school (50 meters) from the total distance walked (140 meters).
+
+Calculation:
+\[ \text{Distance between house and market} = \text{Total distance walked} - \text{Distance from house to school} \]
+\[ \text{Distance between house and market} = 140 \text{ meters} - 50 \text{ meters} \]
+\[ \text{Distance between house and market} = 90 \text{ meters} \]
+
+#### 90
+The distance between the house and the market is 90 meters.

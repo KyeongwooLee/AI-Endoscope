@@ -1,0 +1,20 @@
+{
+  "source_id": "train-1430-4",
+  "response_sha256": "221aa22eb9ba1c14bda649e1916b2fd480a5466fc2f5d82116db80b3702ccb97",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\[ 50 \\div 3 = 8 \\text{ remainder } 2 \\]",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If they split into 3 equally sized playgroups, each group contains 25 people.",
+  "observed_error": "The response evaluates 50 divided by 3 as quotient 8 and remainder 2.",
+  "violated_condition": "Division with remainder requires 50 = 3 × quotient + remainder, but 3 × 8 + 2 = 26.",
+  "error_description": "After correctly calculating the total parents, the response evaluates 50 divided by 3 as 8 remainder 2. This incorrectly executes the written division: multiplying the stated quotient by 3 and adding the remainder gives 26, which does not recover the dividend of 50.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The response assumes equally sized playgroups must contain equal numbers of parents, although equal total membership does not require this.",
+    "After correcting the quotient to 16 remainder 2, the response multiplies only 16 by 3 to reconstruct the total parents, omitting the two remaining parents."
+  ],
+  "uncertainty_note": "The opening answer of 8 is unsupported on its own; the later explicit division supplies evidence of the arithmetic error."
+}

@@ -1,0 +1,15 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Three years from now, Tully will be twice as old as Kate. How old was Tully a year ago if Kate is now 29 years old?
+SOLUTION: To solve this problem, we need to set up an equation based on the information given.
+
+1. Let's denote Tully's current age as \( T \).
+2. According to the problem, in three years, Tully's age will be twice Kate's age. Since Kate is currently 29 years old, in three years Kate will be \( 29 + 3 = 32 \) years old.
+3. Therefore, in three years, Tully's age will be \( T + 3 \), and it will be twice Kate's age, so we can write the equation: \( T + 3 = 2 \times 32 \).
+4. Simplifying the equation, we get: \( T + 3 = 64 \).
+5. To find Tully's current age, we subtract 3 from both sides of the equation: \( T = 64 - 3 \).
+6. Calculating the right side, we get: \( T = 61 \).
+
+So, Tully's current age is 61.
+
+#### 61

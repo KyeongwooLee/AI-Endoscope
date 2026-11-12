@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: James gets a fleet of gas transportation vans.  He gets 6 vans.  2 of them are 8000 gallons.  1 of them is 30% less than that.  The remaining trucks are 50% larger than the 2 trucks.  How many gallons can he transport?
+SOLUTION: Step 1: Calculate the size of the third van.
+2 vans: 8000 gallons each.
+30% less than 8000 gallons = 8000 * 0.30 = 2400 gallons less.
+So, 8000 - 2400 = 5600 gallons for the third van.
+
+Step 2: Calculate the size of the remaining two vans.
+50% larger than 8000 gallons = 8000 * 1.50 = 12000 gallons.
+So, 12000 gallons for each of the remaining two vans.
+
+Step 3: Calculate the total size of all vans.
+2 vans * 8000 gallons = 16000 gallons.
+1 van * 5600 gallons = 5600 gallons.
+2 vans * 12000 gallons = 24000 gallons.
+
+Step 4: Add the sizes together.
+16000 + 5600 + 24000 = 45600 gallons.
+
+#### 45600

@@ -1,0 +1,31 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Alex was having a cookout Friday night and planned to serve burgers to his guests.  He planned to cook 3 burgers for each guest and had invited 10 friends over.  1 of his friends didn't eat meat and said they would bring their own food.  Another one of his friends didn't eat bread and would not need the buns.  The burger buns came 8 to a pack.  How many packs of buns did Alex need to buy?
+SOLUTION: To determine how many packs of buns Alex needs to buy, let's break down the problem step by step:
+
+1. **Total Guests Invited**: Alex invited 10 friends over.
+2. **Burgers Per Guest**: He planned to cook 3 burgers for each guest.
+   \[
+   \text{Total burgers} = 10 \text{ guests} \times 3 \text{ burgers/guest} = 30 \text{ burgers}
+   \]
+
+3. **Burgers Not Necessitated by Specific Needs**: 
+   - One friend doesn't eat meat, so they won't need any burgers.
+   - One friend doesn't eat bread, so they won't need buns.
+   - Therefore, the total number of burgers not needed is:
+   \[
+   30 \text{ burgers} - 1 \text{ (meatless burger)} - 1 \text{ (breadless burger)} = 28 \text{ burgers}
+   \]
+
+4. **Buns Needed**: Each pack of buns contains 8 buns.
+   \[
+   \text{Number of packs needed} = \frac{28 \text{ burgers}}{8 \text{ buns/pack}} = 3.5 \text{ packs}
+   \]
+
+5. **Rounding Up**: Since Alex can't buy half a pack, he needs to round up to the next whole number.
+   \[
+   \text{Number of packs needed} = 4 \text{ packs}
+   \]
+
+#### 4
+Therefore, Alex needs to buy 4 packs of buns.

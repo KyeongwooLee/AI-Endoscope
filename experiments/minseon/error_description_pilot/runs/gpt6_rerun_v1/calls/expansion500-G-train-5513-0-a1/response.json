@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5513-0",
+  "response_sha256": "4d7953165adf0b15488c2bcb8c2ecac74eaae7e40a69f2f2fe15ee25cf72e563",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Amount in scheme A = $300 * 30/100 = $90",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how much more money will he have in scheme A than in B after a year, provided he does not withdraw anything?",
+  "observed_error": "The response identifies scheme A's interest earnings as its total amount after a year.",
+  "violated_condition": "With no withdrawals, each scheme's year-end balance includes the original capital plus its interest.",
+  "error_description": "The response correctly computes $300 × 30/100 as $90 but labels that interest as scheme A's amount after a year, omitting the retained $300 principal. It similarly uses only scheme B's interest, so its subtraction compares earnings rather than the requested balances including capital.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,11 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Mr. Mitchell is buying pizzas for the soccer team. He buys one slice for every goal they scored on the season. A large pizza has 12 slices. If he bought 6 pizzas, and the team had 8 games, how many goals did they score per game on average?
+SOLUTION: Step 1: Calculate the total number of slices Mr. Mitchell bought.
+Total slices = Number of pizzas × Slices per pizza
+Step 2: Calculate the total number of goals scored by the team.
+Total goals = Total slices
+Step 3: Calculate the average number of goals per game.
+Average goals per game = Total goals / Number of games
+#### 1
+Explanation: Since each pizza has 12 slices and Mr. Mitchell bought 6 pizzas, the total number of slices is 6 pizzas × 12 slices/pizza = 72 slices. The team had 8 games, so the total number of goals scored by the team is 72 slices. To find the average number of goals per game, we divide the total number of goals by the number of games, which gives us 72 goals / 8 games = 9 goals per game.

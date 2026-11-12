@@ -1,0 +1,68 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-3254-3
+response_sha256: e72cb00839b44e2861ee266084438e90a49efb594c78071ebb89fe66968ecc04
+
+=== QUESTION ===
+Deborah has four letters to mail. Standard postage is $1.08 per letter, with an additional charge for international mail. Deborah is mailing two letters internationally, and she is paying $4.60 to mail four letters. How many cents is the additional charge per letter for international shipping?
+=== MODEL SOLUTION ===
+To determine the additional charge per letter for international shipping, we start by calculating the total cost of the standard postage for the four letters. Deborah is mailing four letters with standard postage costing $1.08 per letter. Therefore, the total cost for standard postage is:
+\[ 4 \times 1.08 = 4.32 \text{ dollars} \]
+
+Next, we need to find out how much Deborah paid in total, which is $4.60. To find the additional charge for the international letters, we subtract the total cost of the standard postage from the total amount paid:
+\[ 4.60 - 4.32 = 0.28 \text{ dollars} \]
+
+Since $0.28 is the total additional charge for the four letters, we need to divide this amount by 4 to find the additional charge per letter:
+\[ \frac{0.28}{4} = 0.07 \text{ dollars per letter} \]
+
+To convert this amount from dollars to cents, we multiply by 100:
+\[ 0.07 \times 100 = 7 \text{ cents} \]
+
+#### 7
+Therefore, the additional charge per letter for international shipping is 7 cents.
+=== REFERENCE SOLUTION (fallible aid) ===
+A dollar is 100 cents, so standard postage is 108 cents.
+Deborah’s four letters cost 108 * 4 = <<108*4=432>>432 cents for standard postage.
+She paid 460 - 432 = <<460-432=28>>28 cents for international shipping on two letters.
+Thus, the additional international shipping charge is 28 / 2 = <<28/2=14>>14 cents per letter.
+#### 14
+=== END ===

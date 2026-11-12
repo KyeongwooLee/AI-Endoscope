@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6914-1",
+  "response_sha256": "05b3b5a8b657a35581679a039e83468c0f2ea3b127a4337942c5ce44ce426d40",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "He watches another 15 videos in the fifth round.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He then picks the 5th show suggested on the final suggestion list.",
+  "observed_error": "The response counts all 15 videos in the final round despite the selection of the fifth video.",
+  "violated_condition": "Under the response's five-round interpretation, the final round contributes 5 watched videos, not 15.",
+  "error_description": "The response counts 15 watched videos in the fifth and final round, although Billy selects the fifth video on that list. This includes ten videos after his selection. The addition is executed correctly, but the final-round quantity does not reflect where Billy stops.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The wording '5 times before' could suggest five unsuccessful rounds followed by another list; that reading would also require accounting for videos watched on the final list."
+}

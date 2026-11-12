@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Ian used a grocery delivery app to have his groceries delivered.  His original order was $25 before delivery and tip.  He noticed that 3 items changed on his order.  A $0.99 can of tomatoes was replaced by a $2.20 can of tomatoes, his $1.00 lettuce was replaced with $1.75 head of lettuce and his $1.96 celery was replaced with celery that cost $2.00.  Delivery and tip came to a total of $8.00.  How much is his new bill now, with the food substitutes and delivery/tip?
+SOLUTION: Step 1: Calculate the total cost of the food substitutes.
+- Tomatoes: $2.20 - $0.99 = $1.21
+- Lettuce: $1.75 - $1.00 = $0.75
+- Celery: $2.00 - $1.96 = $0.04
+
+Step 2: Sum up the cost of the food substitutes.
+$1.21 + $0.75 + $0.04 = $2.00
+
+Step 3: Add the delivery and tip to the original order.
+Original order: $25
+Delivery and tip: $8.00
+New total: $25 + $8.00 = $33.00
+
+Step 4: Subtract the cost of the food substitutes from the new total.
+New total: $33.00
+Cost of food substitutes: $2.00
+New bill: $33.00 - $2.00 = $31.00
+
+#### 31.00
+This is Ian's new bill with the food substitutes and delivery/tip.

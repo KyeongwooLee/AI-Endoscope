@@ -1,0 +1,15 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Hani said she would do 3 more situps per minute than Diana would. Diana then did 40 situps at a rate of 4 situps per minute. Calculate the total number of situps they did together.
+SOLUTION: Step 1: Calculate the number of situps Diana did.
+Diana did 40 situps at a rate of 4 situps per minute.
+Total situps Diana did = 40 situps
+
+Step 2: Calculate the number of situps Hani did.
+Hani said she would do 3 more situps per minute than Diana.
+Rate at which Hani did situps = 4 + 3 = 7 situps per minute
+Total situps Hani did = 7 situps/minute * 40 minutes
+
+Step 3: Calculate the total number of situps done together.
+Total situps = Total situps Diana did + Total situps Hani did
+#### 150

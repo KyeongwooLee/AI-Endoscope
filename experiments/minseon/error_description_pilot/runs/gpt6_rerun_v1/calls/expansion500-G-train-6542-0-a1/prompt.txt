@@ -1,0 +1,81 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-6542-0
+response_sha256: 8e52db99da17e2ec24c96127ab6920770fd7f48529da4f033a7abf5ab85f264c
+
+=== QUESTION ===
+Bill is a painter who is hired to paint a client’s house. The house has three bedrooms, and twice as many other rooms as bedrooms. The client wants each bedroom painted a different color, and the other rooms painted white. Each room takes 2 gallons of paint. Color paint comes in 1-gallon paint cans, and white paint comes in 3-gallon cans. How many cans of paint will Bill need for the whole house?
+=== MODEL SOLUTION ===
+Step 1: Determine the number of other rooms.
+The house has three bedrooms and twice as many other rooms as bedrooms.
+Number of other rooms = 2 * Number of bedrooms = 2 * 3 = 6
+
+Step 2: Calculate the total number of rooms.
+Total number of rooms = Number of bedrooms + Number of other rooms = 3 + 6 = 9
+
+Step 3: Calculate the total amount of paint needed for the bedrooms.
+Each bedroom takes 2 gallons of paint.
+Total paint for bedrooms = Number of bedrooms * Paint per bedroom = 3 * 2 = 6 gallons
+
+Step 4: Calculate the total amount of paint needed for the other rooms.
+Each other room takes 2 gallons of paint.
+Total paint for other rooms = Number of other rooms * Paint per room = 6 * 2 = 12 gallons
+
+Step 5: Calculate the total amount of paint needed for the whole house.
+Total paint needed = Paint for bedrooms + Paint for other rooms = 6 + 12 = 18 gallons
+
+Step 6: Calculate the number of cans of paint needed.
+Color paint comes in 1-gallon cans.
+White paint comes in 3-gallon cans.
+Total cans needed = Total paint needed / Paint per can = 18 / 1 = 18 cans
+
+#### 18
+Bill will need 18 cans of paint for the whole house.
+=== REFERENCE SOLUTION (fallible aid) ===
+Bill needs 2 * 3 = <<2*3=6>>6 gallons of color paint for the 3 bedrooms.
+Thus, he needs 6 / 1 = <<6/1=6>>6 cans of color paint for the bedrooms.
+There are 2 * 3 = <<2*3=6>>6 other rooms in the house.
+He needs 2 * 6 = <<2*6=12>>12 gallons of white paint for the other rooms.
+Thus, he needs 12 / 3 = <<12/3=4>>4 cans of white paint.
+In all, Bill needs 4 + 6 = <<4+6=10>>10 cans of paint for the whole house.
+#### 10
+=== END ===

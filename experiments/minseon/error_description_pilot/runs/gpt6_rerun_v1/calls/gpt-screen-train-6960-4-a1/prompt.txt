@@ -1,0 +1,46 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jake's neighbors hire him to mow their lawn and plant some flowers. Mowing the lawn takes 1 hour and pays $15. If Jake wants to make $20/hour working for the neighbors, and planting the flowers takes 2 hours, how much should Jake charge (in total, not per hour) for planting the flowers?
+SOLUTION: Step 1: Calculate Jake's desired total earnings for the day.
+Jake wants to make $20/hour working for the neighbors.
+Total hours working for neighbors: 1 hour
+Jake's desired total earnings: $20/hour * 1 hour = $20
+
+Step 2: Calculate the earnings from mowing the lawn.
+Jake earns $15 for mowing the lawn.
+Total earnings from mowing: $15
+
+Step 3: Calculate the remaining amount needed to reach $20.
+Total earnings needed: $20
+Earnings from mowing: $15
+Remaining amount needed: $20 - $15 = $5
+
+Step 4: Calculate the hourly rate for planting flowers.
+Jake wants to make $20/hour working for the neighbors.
+Total hours working for neighbors: 1 hour
+Jake's desired total earnings: $20/hour * 1 hour = $20
+Total hours working for neighbors: 1 hour
+Jake's desired total earnings: $20/hour * 1 hour = $20
+Total hours working for neighbors: 1 hour
+Jake's desired total earnings: $20/hour * 1 hour = $20
+
+Step 5: Calculate the hourly rate for planting flowers.
+Jake earns $20 for planting the flowers.
+Total hours working for neighbors: 2 hours
+Jake's desired total earnings: $20/hour * 1 hour = $20
+Total hours working for neighbors: 2 hours
+Jake's desired total earnings: $20/hour * 1 hour = $20
+Total hours working for neighbors: 2 hours
+Jake's desired total earnings: $20/hour * 1 hour = $20
+
+Step 6: Calculate the amount Jake should charge for planting the flowers.
+Remaining amount needed: $5
+Total hours working for neighbors: 2 hours
+Jake's desired total earnings: $20/hour * 1 hour = $20
+Total hours working for neighbors: 2 hours
+Jake's desired total earnings: $20/hour * 1 hour = $20
+Total hours working for neighbors: 2 hours
+Jake's desired total earnings: $20/hour * 1 hour = $20
+
+#### 5
+Jake should charge $5 for planting the flowers.

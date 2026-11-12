@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"50 animals get sick.","check":"There are 26 + 40 + 34 = 100 animals, and half of 100 is 50. The solution gives the correct formula but reports 55.","evidence_quote":"The answer is 55.","error_description":"The final number 55 does not match the value 50 of the correctly stated formula."}

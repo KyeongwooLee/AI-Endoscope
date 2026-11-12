@@ -1,0 +1,33 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Dale just learned how to make homemade macaroni and cheese. He decided to make a big batch for his family reunion. The original recipe calls for 2 pounds of pasta and serves 7 people. Dale's family reunion will have 35 people. How many pounds of pasta does Dale need to buy?
+SOLUTION: To find out how many pounds of pasta Dale needs, we start by understanding the ratio of pasta to people in the original recipe. The original recipe serves 7 people with 2 pounds of pasta. 
+
+1. Calculate the amount of pasta needed per person:
+   \[
+   \text{Pasta per person} = \frac{2 \text{ pounds}}{7 \text{ people}}
+   \]
+
+2. Determine the total amount of pasta needed for 35 people:
+   \[
+   \text{Total pasta} = 35 \text{ people} \times \text{Pasta per person}
+   \]
+
+3. Substitute the value of pasta per person:
+   \[
+   \text{Total pasta} = 35 \times \frac{2}{7}
+   \]
+
+4. Simplify the multiplication:
+   \[
+   \text{Total pasta} = 35 \times \frac{2}{7} = 35 \times 0.2857
+   \]
+
+5. Perform the multiplication:
+   \[
+   \text{Total pasta} = 9.5
+   \]
+
+Therefore,
+#### 9.5
+Dale needs to buy 9.5 pounds of pasta for his family reunion.

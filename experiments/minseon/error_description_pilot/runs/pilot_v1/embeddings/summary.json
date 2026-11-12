@@ -1,0 +1,74 @@
+{
+  "dev/R": {
+    "items": 30,
+    "embedded": 30,
+    "newly_encoded_texts": 0,
+    "not_embedded": 0,
+    "blocked": 0,
+    "encode_seconds": 0.0,
+    "max_token_count": 669
+  },
+  "dev/Q": {
+    "items": 30,
+    "embedded": 30,
+    "newly_encoded_texts": 0,
+    "not_embedded": 0,
+    "blocked": 0,
+    "encode_seconds": 0.0,
+    "max_token_count": 130
+  },
+  "dev/E": {
+    "items": 30,
+    "embedded": 26,
+    "newly_encoded_texts": 0,
+    "not_embedded": 4,
+    "blocked": 0,
+    "encode_seconds": 0.0,
+    "max_token_count": 65
+  },
+  "dev/G": {
+    "items": 30,
+    "embedded": 26,
+    "newly_encoded_texts": 0,
+    "not_embedded": 4,
+    "blocked": 0,
+    "encode_seconds": 0.0,
+    "max_token_count": 71
+  },
+  "eval/R": {
+    "items": 100,
+    "embedded": 100,
+    "newly_encoded_texts": 0,
+    "not_embedded": 0,
+    "blocked": 0,
+    "encode_seconds": 0.0,
+    "max_token_count": 654
+  },
+  "eval/Q": {
+    "items": 100,
+    "embedded": 100,
+    "newly_encoded_texts": 0,
+    "not_embedded": 0,
+    "blocked": 0,
+    "encode_seconds": 0.0,
+    "max_token_count": 139
+  },
+  "eval/E": {
+    "items": 100,
+    "embedded": 94,
+    "newly_encoded_texts": 0,
+    "not_embedded": 6,
+    "blocked": 0,
+    "encode_seconds": 0.0,
+    "max_token_count": 72
+  },
+  "eval/G": {
+    "items": 100,
+    "embedded": 94,
+    "newly_encoded_texts": 0,
+    "not_embedded": 6,
+    "blocked": 0,
+    "encode_seconds": 0.0,
+    "max_token_count": 92
+  }
+}

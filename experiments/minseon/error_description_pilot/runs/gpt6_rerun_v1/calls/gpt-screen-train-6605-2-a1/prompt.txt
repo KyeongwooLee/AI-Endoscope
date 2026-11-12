@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: In preparation for the upcoming Olympics, Rita's swimming coach requires her to swim a total of 1,500 hours. Rita has already completed 50 hours of backstroke, 9 hours of breaststroke, and 121 hours of butterfly, but she is unhappy with her inconsistency. She has therefore decided to dedicate 220 hours every month practicing freestyle and sidestroke. How many months does Rita have to fulfill her coach’s requirements?
+SOLUTION: Step 1: Calculate the total hours Rita has already completed.
+50 (backstroke) + 9 (breaststroke) + 121 (butterfly) = 180 hours
+
+Step 2: Subtract the hours already completed from the total hours required.
+1500 (total hours required) - 180 (hours already completed) = 1320 hours remaining
+
+Step 3: Determine the number of months Rita needs to dedicate to freestyle and sidestroke.
+220 hours per month * 12 months = 2640 hours
+
+Step 4: Calculate the number of months Rita needs to meet her coach's requirements.
+1320 (remaining hours) / 2640 (hours per month) = 0.5 months
+
+#### 0.5
+Rita needs to dedicate 0.5 months to fulfill her coach's requirements.

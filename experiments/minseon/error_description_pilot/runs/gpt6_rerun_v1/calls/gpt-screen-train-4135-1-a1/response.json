@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"40 teeth removed.","check":"The individual counts are 32/4 = 8, 3×32/8 = 12, 32/2 = 16, and 4. Their sum is 8 + 12 + 16 + 4 = 40.","evidence_quote":"8 + 12 + 16 + 4 = 30 teeth removed","error_description":"The solution calculates each person's removed teeth correctly but incorrectly sums them as 30 instead of 40."}

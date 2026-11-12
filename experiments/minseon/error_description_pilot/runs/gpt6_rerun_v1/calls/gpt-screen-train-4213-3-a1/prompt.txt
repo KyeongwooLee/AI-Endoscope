@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Bobby has three squares of fabric that he will turn into a flag. The first square is 8 feet by 5 feet. The second one is 10 feet by 7 feet. The third one is 5 feet by 5 feet. If he wants his flag to be 15 feet long, how tall will it be?
+SOLUTION: Step 1: Calculate the total area of the fabric.
+Area of first square = 8 feet * 5 feet = 40 square feet
+Area of second square = 10 feet * 7 feet = 70 square feet
+Area of third square = 5 feet * 5 feet = 25 square feet
+Total area = 40 + 70 + 25 = 135 square feet
+
+Step 2: Determine the number of square feet per foot of height.
+Since the total area is 135 square feet and the flag is 15 feet long, the number of square feet per foot of height is 135 / 15 = 9 square feet per foot
+
+Step 3: Calculate the total height of the flag.
+Total height = Total area / Number of square feet per foot
+Total height = 135 square feet / 9 square feet per foot = 15 feet
+
+#### 15

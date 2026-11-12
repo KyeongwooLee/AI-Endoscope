@@ -1,0 +1,79 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-3968-3
+response_sha256: 03fae9beb11b8f56704ca6222ff8beeaf338a82f457ff40988ca44c044c95ae5
+
+=== QUESTION ===
+Linda was gathering eggs from her chicken coops. When she was done, she had three times as many white eggs as brown eggs. On her way back to the house, she stumbled, dropping her egg basket. Upon inspecting the damage, she found that all 5 of the brown eggs survived, but now she only had a dozen eggs left. How many eggs did Linda break?
+=== MODEL SOLUTION ===
+Let's denote the number of brown eggs as \( B \) and the number of white eggs as \( W \). According to the problem, Linda had three times as many white eggs as brown eggs, which can be written as:
+\[ W = 3B \]
+
+After dropping her basket, Linda found that all 5 brown eggs survived and she only had a dozen eggs left, which means she had 12 - 5 = 7 white eggs left.
+
+The total number of eggs she had before the accident was:
+\[ B + W = B + 3B = 4B \]
+
+Since she had 7 white eggs left, we can write:
+\[ 3B - 5 = 7 \]
+
+Now, we solve for \( B \):
+\[ 3B = 12 \]
+\[ B = 4 \]
+
+Now that we know \( B = 4 \), we can find \( W \):
+\[ W = 3B = 3 \times 4 = 12 \]
+
+The total number of eggs Linda had before the accident was:
+\[ B + W = 4 + 12 = 16 \]
+
+The number of eggs she broke is:
+\[ 16 - 7 = 9 \]
+
+#### 9
+The final answer is: 9
+=== REFERENCE SOLUTION (fallible aid) ===
+Linda has 12 eggs left, 5 of which are brown, so 12 - 5 = <<12-5=7>>7 are white.
+Linda originally had 3 times as many white eggs as brown eggs, or 3 * 5 = <<3*5=15>>15 white eggs.
+So Linda broke 15 - 7 = <<15-7=8>>8 white eggs.
+#### 8
+=== END ===

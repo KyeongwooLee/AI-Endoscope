@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "case1_error": {
+      "type": "string"
+    },
+    "case2_error": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "judgment": {
+      "type": "string",
+      "enum": [
+        "same",
+        "different",
+        "uncertain"
+      ]
+    }
+  },
+  "required": [
+    "case1_error",
+    "case2_error",
+    "reason",
+    "judgment"
+  ],
+  "additionalProperties": false
+}

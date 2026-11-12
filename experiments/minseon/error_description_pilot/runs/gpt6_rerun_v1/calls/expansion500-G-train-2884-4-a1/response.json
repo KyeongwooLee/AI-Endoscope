@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2884-4",
+  "response_sha256": "fdcb4ffd2863e85a4f4ff399affc047f83a85dea848e655f7ec872ccbe9d8b14",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "- Felix's lifting capacity = 3 * Felix's brother's weight",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Felix can lift off the ground 1.5 times more than he weighs. Felix's brother weighs twice as much as Felix and can lift three times his weight off the ground.",
+  "observed_error": "The response assigns the brother's lifting-capacity relation to Felix.",
+  "violated_condition": "The three-times-weight relation applies to the brother; Felix's weight is half his brother's, and Felix has his own stated lifting multiplier.",
+  "error_description": "After correctly finding the brother's weight as 200 pounds, the response calculates Felix's lifting capacity as three times the brother's weight. That relation describes the brother's capacity. It bypasses the condition that Felix weighs half as much and the separate lifting multiplier specified for Felix; the multiplication itself is correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The wording '1.5 times more than' permits different multiplier interpretations, but neither justifies using three times the brother's weight for Felix."
+}

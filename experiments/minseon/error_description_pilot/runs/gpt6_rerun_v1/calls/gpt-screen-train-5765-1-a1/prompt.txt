@@ -1,0 +1,13 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Lily got a new puppy for her birthday.  She was responsible for feeding the puppy 1/4 cup of food three times a day for two weeks starting tomorrow.  For the following 2 weeks, Lily will feed him 1/2 cup of food twice a day.  She has fed him 1/2 cup of food today.  Including today, how much food will the puppy eat over the next 4 weeks?
+SOLUTION: Step 1: Calculate the total food consumption for the first two weeks.
+1/4 cup/feeding * 3 feedings/day * 14 days = 14 cups of food
+
+Step 2: Calculate the total food consumption for the next two weeks.
+1/2 cup/feeding * 2 feedings/day * 14 days = 14 cups of food
+
+Step 3: Add the food consumed today to the total food consumption for the next four weeks.
+1/2 cup of food today + 14 cups of food for the first two weeks + 14 cups of food for the next two weeks = 28.5 cups of food
+
+#### 28.5

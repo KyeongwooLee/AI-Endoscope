@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1646-2",
+  "response_sha256": "257e171198aef5f199c74dda3479e7bf124ef36f995dce6b4a0ac4b9cc5db34f",
+  "status": "insufficient_evidence",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 3: The answer is 115.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "198 passengers fit into 9 buses. How many passengers fit in 5 buses?",
+  "observed_error": "The stated total of 115 passengers is incorrect, but no calculations are shown.",
+  "violated_condition": "At constant capacity per bus, the total for 5 buses must equal (198 / 9) × 5.",
+  "error_description": null,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The response does not reveal whether it used an incorrect relation or incorrectly executed arithmetic."
+}

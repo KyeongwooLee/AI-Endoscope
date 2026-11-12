@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3710-3",
+  "response_sha256": "a25dc2dfff8d6d494fda8437e0b7c6ddf4d0ebb68ffebefb3c8652f5446232ca",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 25",
+  "evidence_start": 0,
+  "evidence_end": 7,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "the average completion time of the last three students was 35 seconds, and the average completion time of all four runners was 30 seconds",
+  "observed_error": "The opening answer gives 25, contradicting the correct calculation and conclusion below it.",
+  "violated_condition": "The first finisher's time must equal 4 × 30 − 3 × 35 seconds.",
+  "error_description": "The response opens with 25 as the answer, which does not equal the difference between the four runners' total time and the last three runners' total time. Its subsequent arithmetic and concluding sentence are correct, leaving an inconsistent opening answer.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text does not establish how the opening value was obtained."
+}

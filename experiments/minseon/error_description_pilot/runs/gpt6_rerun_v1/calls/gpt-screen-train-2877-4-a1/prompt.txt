@@ -1,0 +1,32 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Stuart is going on a cross-country trip and wants to find the fastest route. On one route the total distance is 1500 miles and the average speed is 75 MPH. On the second trip, the total distance is 750 but the average speed is 25 MPH. How long does his trip take if he goes on the fastest route?
+SOLUTION: To determine the fastest route, we need to calculate the travel time for both routes and compare them.
+
+**Route 1:**
+- Total distance: 1500 miles
+- Average speed: 75 MPH
+
+\[ \text{Time for Route 1} = \frac{\text{Total distance}}{\text{Average speed}} = \frac{1500 \text{ miles}}{75 \text{ MPH}} \]
+
+\[ \text{Time for Route 1} = 20 \text{ hours} \]
+
+**Route 2:**
+- Total distance: 750 miles
+- Average speed: 25 MPH
+
+\[ \text{Time for Route 2} = \frac{\text{Total distance}}{\text{Average speed}} = \frac{750 \text{ miles}}{25 \text{ MPH}} \]
+
+\[ \text{Time for Route 2} = 30 \text{ hours} \]
+
+Comparing the two routes:
+- Route 1: 20 hours
+- Route 2: 30 hours
+
+**Conclusion:**
+The fastest route is Route 1, taking 20 hours.
+
+#### 20
+#### 30
+#### 20
+#### 30

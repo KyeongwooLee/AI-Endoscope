@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5260-3",
+  "response_sha256": "9efe2185717a3aac32090e3e88273e1f46027b170625172f3fb498f52ee2c415",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The total spending is:\n$1500 + $30 + $50 = $1580",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "After she adds up all of her spending for the month she wants to set aside 10% of it to put into savings.",
+  "observed_error": "The monthly spending total excludes the previously calculated $400 food budget.",
+  "violated_condition": "Savings must equal 10% of all monthly spending, including four weeks of food.",
+  "error_description": "The response labels rent, streaming, and cell phone costs totaling $1580 as all monthly spending, omitting the $400 food budget it already calculated for four weeks. The addition is correct, but the savings base must include food as well as the other monthly expenses.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

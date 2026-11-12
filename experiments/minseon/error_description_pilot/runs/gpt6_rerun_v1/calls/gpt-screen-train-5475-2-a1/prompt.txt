@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: The chances of making the junior high basketball team start at 10% if you're 66 inches and increase 10% for every additional inch of height. Devin starts out as 65 inches tall, then grows 3 inches. What are his chances of making the basketball team?
+SOLUTION: #### 30
+Step 1: Determine Devin's initial height and the increase in height.
+Devin starts at 65 inches and grows 3 inches.
+
+Step 2: Calculate the increase in the chance of making the team.
+The chances increase by 10% for each additional inch of height. Devin grows 3 inches, so the increase is 3 * 10% = 30%.
+
+Step 3: Determine Devin's final height.
+Final height = 65 inches + 3 inches = 68 inches
+
+Step 4: Calculate Devin's new chances of making the team.
+Chances of making the team = 10% + 30% = 40%
+
+#### 40

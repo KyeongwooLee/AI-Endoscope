@@ -1,0 +1,19 @@
+{
+  "source_id": "train-1052-2",
+  "response_sha256": "fc94a5e861fc87fe6554aa796598d9d509fce9c8bccce45dfe75fd937ab90a2a",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "Tim's age = 5 + 2 * J",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Tim is 5 years less than twice John's age.",
+  "observed_error": "The response adds 5 to twice John's age instead of subtracting 5.",
+  "violated_condition": "Tim's age must equal 2 * J - 5.",
+  "error_description": "The response represents Tim's age as five years more than twice John's age, although the question specifies five years less. Its subsequent arithmetic correctly solves the written equation, but that equation violates the stated age relation.",
+  "reference_review_reason": "The reference also reverses the five-year adjustment: it subtracts 5 from Tim's age to obtain twice John's age, whereas the question requires adding 5.",
+  "secondary_errors": [
+    "The response writes \"Jm = 35 + 23\", adding the historical ages instead of preserving their difference. James is 12 years younger than John, so his current age must be John's current age minus 12."
+  ],
+  "uncertainty_note": null
+}

@@ -1,0 +1,21 @@
+{
+  "source_id": "train-1107-0",
+  "response_sha256": "be081a01a960151fbff0073b3e605e3208ead471ef9c0dcda1ba89a171029977",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "Value of gold coins sold = Total value after selling - Value after selling",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Roman the Tavernmaster has $20 worth of gold coins.",
+  "observed_error": "The written subtraction relation uses the value after selling for both operands, although the numerical substitution uses the initial $20.",
+  "violated_condition": "Value sold equals initial gold value minus remaining gold value, assuming unchanged coin values.",
+  "error_description": "The response writes the value sold as the value after selling minus that same value after selling. The first operand should represent the initial gold value. Its subsequent $20 − $12 subtraction uses the initial amount and is arithmetically correct, but does not match the written relation.",
+  "reference_review_reason": "The question does not clearly identify $12 as payment or remaining gold value. The reference assumes Dorothy paid $12, while the response assumes $12 is remaining gold value.",
+  "secondary_errors": [
+    "The response assumes a $1 coin value without support and calculates eight coins sold despite the explicit statement that three were sold.",
+    "The response uses three as the initial coin count, although three is the number sold.",
+    "The concluding sentence changes the computed −5 coins to positive five without justification."
+  ],
+  "uncertainty_note": "The earlier interpretation of $12 as remaining gold value cannot be conclusively rejected from the question's wording alone."
+}

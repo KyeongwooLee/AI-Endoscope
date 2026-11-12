@@ -1,0 +1,38 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: In a card game, you are awarded 10 points if you win one round. While playing, Jane ends up with 60 points. If she lost 20 points, then how many rounds did she play?
+SOLUTION: To solve this problem, we need to determine how many rounds Jane played based on the given points and losses.
+
+1. **Determine the net points**: Jane ends up with 60 points, but she lost 20 points. Therefore, the net points she has after playing rounds is:
+   \[
+   60 - 20 = 40 \text{ points}
+   \]
+
+2. **Relate net points to rounds**: We know that Jane earns 10 points for each round she wins. Let \( r \) represent the number of rounds she won. Since each win gives her 10 points, the total net points from wins is:
+   \[
+   10r
+   \]
+
+3. **Set up the equation**: The net points from wins minus the net points lost equals her total points:
+   \[
+   10r - 20 = 40
+   \]
+
+4. **Solve for \( r \)**:
+   \[
+   10r = 40 + 20
+   \]
+   \[
+   10r = 60
+   \]
+   \[
+   r = \frac{60}{10}
+   \]
+   \[
+   r = 6
+   \]
+
+5. **Conclusion**: Jane played 6 rounds.
+
+#### 6
+Jane played 6 rounds.

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1061-4",
+  "response_sha256": "4ef51b001ce570cdd1ac82b09caf9219c7f91547eb8cf069a914325383b42eed",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Amount John Smith paid = Total cost per person × Amount John Smith paid per cake",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "John Smith buys 3 cakes for $12 each and splits the cost with his brother.",
+  "observed_error": "Step 3 multiplies the already calculated cost per person by an additional per-cake payment.",
+  "violated_condition": "John's payment equals half the total cake cost, (3 × $12) / 2, without an additional multiplier.",
+  "error_description": "After correctly expressing the shared cost as (3 × $12) / 2, the response multiplies that per-person cost by an amount paid per cake. John's payment is already the per-person share; the extra monetary factor violates the equal split and does not yield a dollar amount.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The final 9 is unexplained; the text does not show arithmetic producing it."
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7202-1",
+  "response_sha256": "a6b185e1715cab7e7fad885b8dc3b5a77e2ce2523d3a642d638f6a9240a49c39",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Marbles remaining = Total marbles - Marbles Ryan takes\nMarbles remaining = 40 - 10\nMarbles remaining = 30\n\n#### 30",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "then each takes away 1/4 of marbles from the pile",
+  "observed_error": "The response reports the remainder after only Ryan's withdrawal as the final remainder.",
+  "violated_condition": "The final remainder must account for both Chris and Ryan each taking one quarter of the pooled marbles.",
+  "error_description": "The response subtracts only Ryan's 10 marbles from the pooled 40 and reports that intermediate remainder as final. The question requires both Chris and Ryan to take one quarter each, so Chris's withdrawal is omitted. The written subtraction itself is correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

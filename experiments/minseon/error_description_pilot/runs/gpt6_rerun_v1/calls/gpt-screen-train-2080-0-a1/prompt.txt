@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A hairstylist charges $5 for a normal haircut, $6 for a special haircut, and $8 for a trendy haircut. If he cuts 5 normal haircuts, 3 special haircuts, and 2 trendy haircuts per day, how much money does he earn per week?
+SOLUTION: Step 1: Calculate daily earnings from normal haircuts.
+5 normal haircuts * $5 per haircut = $25
+
+Step 2: Calculate daily earnings from special haircuts.
+3 special haircuts * $6 per haircut = $18
+
+Step 3: Calculate daily earnings from trendy haircuts.
+2 trendy haircuts * $8 per haircut = $16
+
+Step 4: Calculate total daily earnings.
+$25 (normal) + $18 (special) + $16 (trendy) = $59
+
+Step 5: Calculate weekly earnings.
+5 days * $59 per day = $295
+
+#### 295
+This is the total amount of money the hairstylist earns per week.

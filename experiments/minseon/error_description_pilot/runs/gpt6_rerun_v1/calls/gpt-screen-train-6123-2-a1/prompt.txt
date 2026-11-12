@@ -1,0 +1,42 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Tobias is a tractor salesman. His salary is based on the number of tractors he sells.  For every red tractor he sells, he gets paid 10% of the sales price for each tractor.  For every green tractor he sells, he gets paid 20% of the sales price for each tractor.  This week, he sold 2 red tractors and 3 green tractors.  The price of a single red tractor is $20,000.  This week, Tobias's salary was $7000.  What is the full price of a single green tractor, in dollars?
+SOLUTION: Let's break down the problem step by step.
+
+1. **Calculate Tobias's earnings from the red tractors:**
+   - Number of red tractors sold: 2
+   - Price per red tractor: $20,000
+   - Commission rate for red tractors: 10%
+
+   Earnings from red tractors:
+   \[
+   2 \times 20,000 \times 0.10 = 4,000
+   \]
+
+2. **Determine the total earnings from green tractors:**
+   - Total earnings: $7,000
+   - Earnings from red tractors: $4,000
+
+   Earnings from green tractors:
+   \[
+   7,000 - 4,000 = 3,000
+   \]
+
+3. **Calculate the price per green tractor:**
+   - Number of green tractors sold: 3
+   - Earnings from green tractors: $3,000
+
+   Price per green tractor:
+   \[
+   \frac{3,000}{3} = 1,000
+   \]
+
+4. **Determine the full price of a single green tractor:**
+   - Price per green tractor: $1,000
+
+   Full price of a single green tractor:
+   \[
+   1,000 \times 1.20 = 1,200
+   \]
+
+#### 1,200

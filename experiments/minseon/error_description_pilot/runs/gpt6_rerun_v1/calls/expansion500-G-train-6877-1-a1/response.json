@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6877-1",
+  "response_sha256": "3da44429d440582cb5c1e2690fb0d250f42dc767ae08eddcb03c074b7ec12871",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "16 red apples + 12 green apples = 28 apples",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "There are 12 more green apples than red apples in a bowl.",
+  "observed_error": "The response uses 12 as the number of green apples.",
+  "violated_condition": "The green apple count equals the red apple count plus 12, rather than 12 alone.",
+  "error_description": "The response adds 16 red apples to 12 green apples, treating the stated excess of green over red as the entire green count. The question requires the green count to be 16 plus 12 before combining both colors. The written addition is arithmetically correct, but its green-count operand is wrong.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

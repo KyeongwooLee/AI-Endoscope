@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3214-3",
+  "response_sha256": "3746de3b4c5b95c96e9192b2cf26d61467d8b1faa969bb386f438bdecb61fdbc",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total number of chickens = Number of chickens that died + Number of chickens bought",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Carla had 400 chickens on her chicken farm. However, 40% of the chicken died due to a certain disease.",
+  "observed_error": "The response adds the 160 dead chickens to the 1600 purchased chickens instead of adding the survivors.",
+  "violated_condition": "The total after purchase equals the original chickens minus deaths plus purchased chickens.",
+  "error_description": "The response uses the 160 chickens that died as the existing flock when adding the 1600 purchased chickens. The existing flock should be the survivors, calculated by subtracting deaths from the original 400 chickens. The written addition is executed correctly, but the total uses the wrong quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,1 @@
+{"status":"answer_conflict","independent_answer":"$16","check":"Half the allowance remained, so A/2 + 6 = 14 gives A = 2(14 − 6) = 16. The worked solution is correct, but its leading answer marker conflicts with it.","evidence_quote":"#### 20","error_description":"The leading marker states 20, while the correct derivation and worked final answer state $16."}

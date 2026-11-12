@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Queenie earns $150 a day as a part-time clerk. She earns an additional $5 per hour as overtime pay. How much will Queenie receive for working 5 days with 4 hours overtime?
+SOLUTION: Step 1: Calculate Queenie's daily earnings without overtime.
+Queenie earns $150 a day as a part-time clerk.
+
+Step 2: Calculate Queenie's overtime pay.
+Queenie earns an additional $5 per hour for overtime.
+Overtime hours = 4 hours
+Overtime pay = 4 hours * $5/hour = $20
+
+Step 3: Calculate Queenie's total earnings for one day.
+Total daily earnings = Daily earnings + Overtime pay
+Total daily earnings = $150 + $20 = $170
+
+Step 4: Calculate Queenie's total earnings for 5 days.
+Total earnings for 5 days = 5 days * $170/day = $850
+
+#### 850
+This is the final answer.

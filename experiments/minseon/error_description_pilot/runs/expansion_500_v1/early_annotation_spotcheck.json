@@ -1,0 +1,47 @@
+{
+  "reviewer": "current Codex agent, AI provisional",
+  "selection": "first 8 E outputs in length-bucket order, NOT random or representative",
+  "not_used_to_change_prompts_or_outputs": true,
+  "items": [
+    {
+      "source_id": "train-2348-2",
+      "rating": "correct",
+      "reason_ko": "12+15=33의 산술 오류를 맞게 지적한다."
+    },
+    {
+      "source_id": "train-7457-1",
+      "rating": "correct_abstention",
+      "reason_ko": "질문은 Mark의 예치액이고 응답88은 맞다. 오류 없음이 타당하다."
+    },
+    {
+      "source_id": "train-1646-2",
+      "rating": "unsupported_cause",
+      "reason_ko": "풀이에는22*5 계산이 없다. 잘못된115만으로 곱셈 단계 오류를 특정할 근거가 부족하다."
+    },
+    {
+      "source_id": "train-7423-2",
+      "rating": "mostly_correct",
+      "reason_ko": "올바른 수치식과 최종30의 불일치를 짚는다. 다만 실제로60이나10을 평가한 단계는 원문에 없다."
+    },
+    {
+      "source_id": "train-4037-1",
+      "rating": "incomplete",
+      "reason_ko": "Robert에게 준 것을 Bob에게 준 것으로 바꾼 앞선 대상 혼동을 명확히 설명하지 않는다. Bob과 Robert의 이름 해석도 주의해야 한다."
+    },
+    {
+      "source_id": "train-6877-1",
+      "rating": "correct",
+      "reason_ko": "12 more라는 차이를 초록 사과 전체12개로 사용한 관계 오류를 짚는다."
+    },
+    {
+      "source_id": "train-739-2",
+      "rating": "partially_correct",
+      "reason_ko": "주간 인원을 일간 인원으로 쓰는 오류는 맞지만1갤런8파인트 변환은 맞다. 변환 오류라는 추가 주장은 근거 없다."
+    },
+    {
+      "source_id": "train-3795-3",
+      "rating": "incorrect",
+      "reason_ko": "60마일1시간이면60mph, 제한속도50mph는 맞다. 실제 문제는 첫####40과 뒤의 맞는50이 충돌하는 표기이다."
+    }
+  ]
+}

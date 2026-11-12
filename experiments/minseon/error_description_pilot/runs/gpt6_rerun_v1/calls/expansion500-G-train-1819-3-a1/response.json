@@ -1,0 +1,19 @@
+{
+  "source_id": "train-1819-3",
+  "response_sha256": "7dcf24c2c784a6c34056aba4bb9452165558dda7f3dc584c165cc066d2eccaff",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total cost = $7.75 + $4.00 + $12.00 + $2.50 + $4.00 + $2.00",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Teresa orders 2 fancy ham and cheese sandwiches for $7.75 each",
+  "observed_error": "The total includes $7.75 for the sandwiches, accounting for only one sandwich.",
+  "violated_condition": "The sandwich cost must be 2 × $7.75 because two sandwiches are ordered.",
+  "error_description": "The response includes only $7.75 for sandwiches in its total, although Teresa orders two sandwiches at $7.75 each. It uses the price of one sandwich as the entire sandwich cost, omitting the required multiplication by two.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The written sum $7.75 + $4.00 + $12.00 + $2.50 + $4.00 + $2.00 equals $32.25, but the response evaluates it as $30.25. This arithmetic error is independent of the omitted sandwich."
+  ],
+  "uncertainty_note": null
+}

@@ -1,0 +1,37 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A store is having an anniversary sale. A tub of ice cream costs $2 less than its original price of $12 and the juice is sold at $2 for 5 cans. How much will you pay if you buy two tubs of ice cream and 10 cans of juice?
+SOLUTION: Step 1: Determine the sale price of a tub of ice cream.
+- Original price of a tub of ice cream: $12
+- Discount: $2
+
+Sale price of a tub of ice cream = Original price - Discount
+= $12 - $2
+= $10
+
+Step 2: Calculate the total cost of two tubs of ice cream.
+- Cost of one tub of ice cream: $10
+- Number of tubs: 2
+
+Total cost of two tubs of ice cream = Cost per tub × Number of tubs
+= $10 × 2
+= $20
+
+Step 3: Calculate the cost of 10 cans of juice.
+- Cost per can of juice: $2
+- Number of cans: 10
+
+Total cost of 10 cans of juice = Cost per can × Number of cans
+= $2 × 10
+= $20
+
+Step 4: Calculate the total cost for two tubs of ice cream and 10 cans of juice.
+- Total cost of two tubs of ice cream: $20
+- Total cost of 10 cans of juice: $20
+
+Total cost = Cost of two tubs + Cost of 10 cans
+= $20 + $20
+= $40
+
+#### 40
+You will pay $40 for two tubs of ice cream and 10 cans of juice.

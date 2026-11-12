@@ -1,0 +1,1 @@
+{"source_id":"train-4636-4","response_sha256":"c259a27b6f3b474636d5bdfd850f9d043ae50288d6c14ea05fa904f2ca01910b","status":"supported_error","reference_review_needed":false,"explanation":"The model correctly sets up (32 + 13 + 15) − 20, but its final answer of 30 evaluates that expression incorrectly. The gifts bring the total to 60 biscuits, so subtracting 20 leaves 40."}

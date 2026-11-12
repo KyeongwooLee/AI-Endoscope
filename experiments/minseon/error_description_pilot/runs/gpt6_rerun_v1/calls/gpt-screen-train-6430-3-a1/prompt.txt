@@ -1,0 +1,28 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: On the weekend, Tony will walk to the store. On weekdays, he runs to the store. When he walks, he goes 2 MPH. When he runs he goes 10 MPH. The store is 4 miles away. If he goes on Sunday, Tuesday, and Thursday, what is the average time in minutes that he spends to get to the store?
+SOLUTION: Step 1: Calculate the time Tony spends on Sunday when he walks to the store.
+- Distance to the store: 4 miles
+- Speed on Sunday: 2 mph
+- Time on Sunday: 4 miles ÷ 2 mph = 2 hours
+
+Step 2: Calculate the time Tony spends on Tuesday when he runs to the store.
+- Distance to the store: 4 miles
+- Speed on Tuesday: 10 mph
+- Time on Tuesday: 4 miles ÷ 10 mph = 0.4 hours
+
+Step 3: Calculate the time Tony spends on Thursday when he runs to the store.
+- Distance to the store: 4 miles
+- Speed on Thursday: 10 mph
+- Time on Thursday: 4 miles ÷ 10 mph = 0.4 hours
+
+Step 4: Calculate the total time spent on all three days.
+- Total time = Time on Sunday + Time on Tuesday + Time on Thursday
+- Total time = 2 hours + 0.4 hours + 0.4 hours = 2.8 hours
+
+Step 5: Convert the total time from hours to minutes.
+- 1 hour = 60 minutes
+- Total time in minutes = 2.8 hours × 60 minutes/hour = 168 minutes
+
+Answer:
+#### 168

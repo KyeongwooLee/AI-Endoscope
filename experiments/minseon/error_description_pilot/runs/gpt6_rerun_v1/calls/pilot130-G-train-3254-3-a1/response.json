@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3254-3",
+  "response_sha256": "e72cb00839b44e2861ee266084438e90a49efb594c78071ebb89fe66968ecc04",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Since $0.28 is the total additional charge for the four letters, we need to divide this amount by 4 to find the additional charge per letter:",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Deborah is mailing two letters internationally",
+  "observed_error": "The response divides the total international surcharge by four letters instead of two international letters.",
+  "violated_condition": "The $0.28 total surcharge equals two times the additional charge per international letter.",
+  "error_description": "The response correctly calculates $0.28 in additional postage but divides it among all four letters. Only two letters are international, so the surcharge per international letter must use two as the divisor. The written division is arithmetically correct, but it uses the wrong number of chargeable letters.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

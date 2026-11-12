@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Zander collected 100 stickers. He gave some of his stickers to his two friends, Andrew and Bill. Andrew received 1/5 of Zander's stickers, while Bill received 3/10 of the remaining stickers. How many stickers did Andrew give to his two friends?
+SOLUTION: Step 1: Calculate the number of stickers Andrew received.
+Andrew received \( \frac{1}{5} \) of Zander's stickers.
+Number of stickers Andrew received = \( \frac{1}{5} \times 100 \)
+
+Step 2: Calculate the number of stickers left after Andrew received his share.
+Stickers left = Total stickers - Stickers Andrew received
+Stickers left = \( 100 - \frac{1}{5} \times 100 \)
+
+Step 3: Calculate the number of stickers Bill received.
+Bill received \( \frac{3}{10} \) of the remaining stickers.
+Stickers Bill received = \( \frac{3}{10} \times \text{Stickers left} \)
+
+Step 4: Calculate the total number of stickers Andrew gave to his friends.
+Total stickers Andrew gave = Stickers Andrew received + Stickers Bill received
+
+Step 5: Perform the calculations.
+#### 16
+After performing all the calculations, the total number of stickers Andrew gave to his friends is 16.

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-87-0",
+  "response_sha256": "f9048fe415fb62d308422e4786a69cdd5865f436f7fc33181d287fabd27bfbfb",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 200",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He is able to sell the cow for $3 per pound.  How much more is it worth after gaining the weight?",
+  "observed_error": "The final answer gives 200 despite correctly stating the relation for the increase in value.",
+  "violated_condition": "The value increase must equal (400 × 1.5 − 400) pounds multiplied by $3 per pound.",
+  "error_description": "The response states correct relations but reports 200 as the increase in worth. That number equals the weight gain in pounds and does not satisfy the stated multiplication by $3 per pound. No numerical working establishes how the incorrect final number was obtained.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The final result is incorrect, but the text does not establish whether arithmetic was executed incorrectly or the weight gain was reported instead."
+}

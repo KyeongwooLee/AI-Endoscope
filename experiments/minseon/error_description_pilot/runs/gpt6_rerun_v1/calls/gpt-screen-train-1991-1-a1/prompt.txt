@@ -1,0 +1,42 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Sally is saving up for a trip to Sea World. She already has $28 saved. It costs her $10 to park, $55 to get into the park and $25 for a meal pass. Sea World is 165 miles away and her car gets 30 miles per gallon of gas. If gas costs $3 a gallon, how much more will she have to save up?
+SOLUTION: Let's break down the costs Sally will incur for her trip to Sea World.
+
+1. **Parking Cost**: $10
+2. **Entry Fee**: $55
+3. **Meal Pass**: $25
+4. **Gas Cost**: 
+
+   First, calculate the total distance to Sea World:
+   \[
+   165 \text{ miles}
+   \]
+
+   Next, determine the total fuel needed for the trip:
+   \[
+   \text{Fuel needed} = \frac{165 \text{ miles}}{30 \text{ miles per gallon}} = 5.5 \text{ gallons}
+   \]
+
+   Then, calculate the total gas cost:
+   \[
+   \text{Gas cost} = 5.5 \text{ gallons} \times 3 \text{ dollars per gallon} = 16.5 \text{ dollars}
+   \]
+
+5. **Total Cost of the Trip**:
+   \[
+   \text{Total cost} = 10 + 55 + 25 + 16.5 = 106.5 \text{ dollars}
+   \]
+
+6. **Amount Sally has already saved**:
+   \[
+   \text{Amount saved} = 28 \text{ dollars}
+   \]
+
+7. **Additional amount Sally needs to save**:
+   \[
+   \text{Additional savings needed} = 106.5 - 28 = 78.5 \text{ dollars}
+   \]
+
+#### 78.5
+This is the amount Sally needs to save up for her trip to Sea World.

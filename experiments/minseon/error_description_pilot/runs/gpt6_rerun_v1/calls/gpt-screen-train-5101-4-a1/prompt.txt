@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Johnny is buying planks of wood to build some tables. Each table needs a plank of wood for each of the legs and 5 planks of wood for the surface. If Johnny wants to build 5 tables, how many planks of wood does he need?
+SOLUTION: To determine the total number of planks of wood Johnny needs, let's break down the requirements for one table and then multiply by the number of tables he wants to build.
+
+1. Each table needs 1 plank of wood per leg. Assuming Johnny needs 3 planks for each leg (a typical number for a table), the number of planks needed for the legs of one table is:
+   \[
+   3 \text{ planks/leg} \times 4 \text{ legs} = 12 \text{ planks}
+   \]
+
+2. Each table also needs 5 planks of wood for the surface.
+
+3. Adding the planks needed for the legs and the surface, the total number of planks needed for one table is:
+   \[
+   12 \text{ planks} + 5 \text{ planks} = 17 \text{ planks}
+   \]
+
+4. Johnny wants to build 5 tables, so the total number of planks needed for all 5 tables is:
+   \[
+   17 \text{ planks/table} \times 5 \text{ tables} = 85 \text{ planks}
+   \]
+
+#### 85
+Johnny needs 85 planks of wood to build 5 tables.

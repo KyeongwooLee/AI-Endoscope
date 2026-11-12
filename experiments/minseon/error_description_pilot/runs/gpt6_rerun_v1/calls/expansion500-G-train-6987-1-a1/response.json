@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6987-1",
+  "response_sha256": "05790c43bd1eaf0d1d7e2dde7d2af7c51ef765c4b6c62c59c80fb6a838a6eab5",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 6000",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "has increased by ten times the number initially in the river. If there were 500 salmons initially",
+  "observed_error": "The final total of 6000 contradicts the correctly stated calculation.",
+  "violated_condition": "The current total must equal 500 + 10 × 500.",
+  "error_description": "The response correctly states that the increase is ten times the initial population and that the total includes the initial population, but reports 6000 fish. This result does not equal 500 + 10 × 500; no numerical intermediate work identifies the specific execution error.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The incorrect final result is observable, but the omitted numerical calculations prevent identifying a specific arithmetic operation performed incorrectly."
+}

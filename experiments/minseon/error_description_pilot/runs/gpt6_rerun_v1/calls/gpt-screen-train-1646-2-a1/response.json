@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"110 passengers","check":"198 ÷ 9 = 22 passengers per bus; 22 × 5 = 110 passengers. The solution gives 115 without showing its calculations.","evidence_quote":"Step 3: The answer is 115.","error_description":"The stated answer 115 is incorrect; the given quantities yield 110 passengers."}

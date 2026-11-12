@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1333-0",
+  "response_sha256": "03425fdce14523b12a78364e430e545b76f3a056c9e6dba6c5b5d2b061bb33d0",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 8: Louise needs to bake 60 - 10 = 50 more cakes.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "How many more cakes does Louise need to bake?",
+  "observed_error": "Step 8 subtracts the remaining cakes from the total and labels the result as cakes still needed.",
+  "violated_condition": "The requested quantity is the remaining cakes; subtracting that remainder from the total gives cakes already baked.",
+  "error_description": "After correctly calculating the cakes left following the next day's baking, the response subtracts that remainder from the required total and calls the result the number still needed. The subtraction is executed correctly, but it gives cakes already baked rather than cakes remaining to bake.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

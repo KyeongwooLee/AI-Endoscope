@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "baseline_files_unchanged": 78,
+  "source_questions_unchanged": 500,
+  "offset_only_repairs": 77,
+  "description_changes": 0,
+  "embedded_counts": {
+    "R": 500,
+    "E": 447,
+    "G": 338,
+    "Q": 500
+  },
+  "common_n": 326,
+  "check_requests_complete": 582,
+  "unparsed_AI_outputs": 9,
+  "known_issue_quarantine_n": 7,
+  "human_ground_truth": false,
+  "automatic_accuracy_claim": false
+}

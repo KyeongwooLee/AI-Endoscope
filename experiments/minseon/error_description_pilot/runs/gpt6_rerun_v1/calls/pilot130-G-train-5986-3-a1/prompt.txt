@@ -1,0 +1,116 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-5986-3
+response_sha256: 67342c5b2575cb47aac065e26b4b88a577174f2862c2c6657721fc1c296bb746
+
+=== QUESTION ===
+Nancy wants to figure out if she can afford to apply to the University of Michigan. The tuition costs $22,000 per semester. Her parents can pay half the cost, and each semester Nancy can get a scholarship for $3,000 and a student loan for twice her scholarship amount. If Nancy can work a total of 200 hours during the semester, how many dollars does she have to make per hour to pay the rest of the tuition?
+=== MODEL SOLUTION ===
+To determine if Nancy can afford to apply to the University of Michigan, we need to calculate her total expenses and her total income.
+
+1. **Calculate the total tuition cost:**
+   \[
+   \text{Total Tuition} = \$22,000 \text{ per semester}
+   \]
+
+2. **Calculate the amount paid by Nancy's parents:**
+   \[
+   \text{Parents' Contribution} = \frac{\$22,000}{2} = \$11,000
+   \]
+
+3. **Calculate Nancy's scholarship amount:**
+   \[
+   \text{Scholarship Amount} = \$3,000
+   \]
+
+4. **Calculate the amount provided by the student loan:**
+   \[
+   \text{Loan Amount} = 2 \times \$3,000 = \$6,000
+   \]
+
+5. **Calculate the total expenses for the semester:**
+   \[
+   \text{Total Expenses} = \text{Parents' Contribution} + \text{Scholarship Amount} + \text{Loan Amount}
+   \]
+   \[
+   \text{Total Expenses} = \$11,000 + \$3,000 + \$6,000 = \$18,000
+   \]
+
+6. **Calculate Nancy's income from working:**
+   \[
+   \text{Total Hours Worked} = 200
+   \]
+   \[
+   \text{Hourly Wage} = \frac{\text{Total Income}}{\text{Total Hours Worked}}
+   \]
+   \[
+   \text{Total Income} = \text{Hourly Wage} \times 200
+   \]
+
+7. **Set up the equation to find the hourly wage:**
+   \[
+   \text{Total Income} = \text{Total Tuition} - \text{Total Expenses}
+   \]
+   \[
+   \text{Total Income} = \$22,000 - \$18,000
+   \]
+   \[
+   \text{Total Income} = \$4,000
+   \]
+
+8. **Solve for the hourly wage:**
+   \[
+   4000 = \text{Hourly Wage} \times 200
+   \]
+   \[
+   \text{Hourly Wage} = \frac{4000}{200} = \$20
+   \]
+
+#### 20
+Nancy has to make \$20 per hour to pay the rest of the tuition.
+=== REFERENCE SOLUTION (fallible aid) ===
+First figure out how much Nancy has to pay after her parents pay their half by dividing the tuition by 2: $22,000 / 2 = $<<22000/2=11000>>11,000.
+Then figure out how much Nancy's student loan is by multiplying her scholarship amount by 2: $3,000 * 2 = $<<3000*2=6000>>6,000.
+Now subtract the amounts of Nancy's scholarship and loan to find out how much tuition she has to pay by working: $11,000 - $3,000 - $6,000 = $<<11000-3000-6000=2000>>2,000.
+Now divide the remaining unpaid tuition by the number of hours Nancy works to find out how much she needs to make per hour: $2,000 / 200 hours = $<<2000/200=10>>10/hour.
+#### 10
+=== END ===

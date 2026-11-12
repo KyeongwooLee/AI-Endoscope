@@ -1,0 +1,12 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Gunner has a box of mittens with 20 fewer pairs than a box of plugs. He decides to put 30 more pairs of plugs into the box of plugs. If the box of mittens has 150 pairs of mittens, how many plugs are there?
+SOLUTION: Step 1: Determine the number of pairs of plugs initially in the box.
+Gunner has 20 fewer pairs of mittens than plugs. So, the number of pairs of plugs is:
+20 pairs of mittens + 150 pairs of mittens = 170 pairs of plugs
+
+Step 2: Add the additional pairs of plugs to the initial number.
+Gunner decides to put 30 more pairs of plugs into the box. So, the total number of pairs of plugs is:
+170 pairs of plugs + 30 pairs of plugs = 200 pairs of plugs
+
+#### 200

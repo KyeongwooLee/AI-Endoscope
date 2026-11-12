@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1241-0",
+  "response_sha256": "b4848d568072eee5ba8700bf593114d4540f8150660f0bfd8e97609cc6a011fd",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "W = 86400 \\, \\text{kg} \\times 9.81 \\, \\text{m/s}^2 = 849144 \\, \\text{N}",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "How much does it weigh?",
+  "observed_error": "The stated multiplication of 86400 by 9.81 is incorrect.",
+  "violated_condition": "With the assumed gravitational acceleration, W = mg requires correctly multiplying 86400 kg by 9.81 m/s².",
+  "error_description": "The response correctly obtains the prism’s mass but incorrectly evaluates the subsequent multiplication by gravitational acceleration. Its stated product of 86400 kg and 9.81 m/s² does not equal 849144 N. The mistake is in executing the arithmetic, rather than in the written relation W = mg.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The reference reports mass in kilograms using everyday language for weight; the response instead calculates gravitational force. That interpretation alone is not treated as an error."
+}

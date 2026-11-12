@@ -1,0 +1,13 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jose bought 20,000 square meters of land and needs to divide it equally with his four siblings. How much land, in the square meters, will Jose have after dividing it with his siblings?
+SOLUTION: To divide the land equally with his four siblings, Jose needs to divide the total land by the number of siblings.
+
+Total land = 20,000 square meters
+Number of siblings = 4
+
+Land for Jose = Total land / Number of siblings
+Land for Jose = 20,000 / 4
+Land for Jose = 5,000 square meters
+
+#### 5000

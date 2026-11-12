@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Linda is repainting her bedroom. The wall area is 600 sq. ft. If a gallon of paint can cover 400 sq. ft., how many gallon cans of paint will Linda have to buy if she wants to do two coats?
+SOLUTION: Step 1: Calculate the total area to be painted.
+Total area = Wall area * Number of coats
+Total area = 600 sq. ft. * 2
+Total area = 1200 sq. ft.
+
+Step 2: Determine the total amount of paint needed.
+Total paint needed = Total area * Coverage per gallon
+Total paint needed = 1200 sq. ft. * 400 sq. ft./gallon
+Total paint needed = 480,000 sq. ft./gallon
+
+Step 3: Calculate the number of gallons needed.
+Number of gallons = Total paint needed / Coverage per gallon
+Number of gallons = 480,000 sq. ft./gallon / 400 sq. ft./gallon
+Number of gallons = 1200 gallons
+
+#### 1200

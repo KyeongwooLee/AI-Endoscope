@@ -1,0 +1,17 @@
+{
+  "source_id": "train-317-0",
+  "response_sha256": "68bfe8db6b84205d2ca904f7ce1d943c46f57c46a4a5e58e071b8d68bdbf342c",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 5: Subtract the total hours spent on class, homework, and sleeping from the total hours in a week to find the hours left over.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "She works part-time 20 hours per week.",
+  "observed_error": "The stated subtraction for leftover hours omits part-time work.",
+  "violated_condition": "Weekly leftover hours must exclude the 20 hours spent working as well as class, homework, and sleep.",
+  "error_description": "The response defines leftover weekly hours by subtracting only class, homework, and sleeping time from the week's total. This omits Madeline's 20 hours per week of part-time work, which must also be subtracted when calculating her remaining time.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The unlabeled numbers do not establish specific arithmetic operations or additional independent mistakes."
+}

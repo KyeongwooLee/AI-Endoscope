@@ -1,0 +1,15 @@
+{
+  "fruit_group": {
+    "cluster_zero_based": 6,
+    "source_ids": [
+      "train-1066-0",
+      "train-6877-1",
+      "train-4636-4"
+    ],
+    "interpretation": "소재가 비슷하지만 잘못된 비교 대상, 차이와 총량 혼동, 올바른 식과 다른 최종값이라는 서로 다른 오류가 함께 있다."
+  },
+  "false_error_annotation": {
+    "source_id": "train-3995-2",
+    "diagnosis": "타일면적6제곱인치를 문제 그대로 사용한3456/6=576은 맞다. 참조는 한 변6인치로 바꿔96을 계산했고 G설명도 참조를 따라 오류라고 잘못 설명했다. G는 구조 검증을 통과해 임베딩에 포함됐다."
+  }
+}

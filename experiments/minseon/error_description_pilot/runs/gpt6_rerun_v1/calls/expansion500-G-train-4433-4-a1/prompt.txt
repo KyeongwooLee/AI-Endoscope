@@ -1,0 +1,69 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-4433-4
+response_sha256: 76e9a46317a7346176929c3c690bf0be2b43752fcb1a91aba1873801f9a76196
+
+=== QUESTION ===
+There is a playground that is surrounded by a square fence that has a side length of 27 yards. There is a 12 yard by 9 yard garden that has fencing around it. How many yards of fencing do the playground and garden have together?
+=== MODEL SOLUTION ===
+#### 114
+
+Step 1: Calculate the perimeter of the square playground.
+- Side length of the playground = 27 yards
+- Perimeter of the playground = 4 × side length = 4 × 27 = 108 yards
+
+Step 2: Calculate the perimeter of the garden.
+- Dimensions of the garden = 12 yards by 9 yards
+- Perimeter of the garden = 2 × (length + width) = 2 × (12 + 9) = 2 × 21 = 42 yards
+
+Step 3: Add the perimeters of the playground and the garden to find the total length of the fencing.
+- Total length of the fencing = Perimeter of the playground + Perimeter of the garden
+- Total length of the fencing = 108 + 42 = 150 yards
+
+Therefore, the playground and garden together have a total of 150 yards of fencing.
+=== REFERENCE SOLUTION (fallible aid) ===
+27 * 4 = <<27*4=108>>108 yards
+2 * (12 + 9) = <<2*(12+9)=42>>42 yards
+108 + 42 = <<108+42=150>>150 yards
+The playground and garden have a combined fence length of 150 yards.
+#### 150
+=== END ===

@@ -1,0 +1,1 @@
+{"source_id":"train-3340-1","response_sha256":"71775ad5813026dac742569d3f07a1070e819d7d9f87399c52f8637c231716b3","status":"supported_error","reference_review_needed":false,"explanation":"The model correctly calculates each person's score and the team's total of 140 points, but makes a subtraction error when it states that 140 − 85 = 45. The difference is 55 points."}

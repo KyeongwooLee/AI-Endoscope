@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1951-1",
+  "response_sha256": "16ac6c09e649e252c723f1b52704fcf7bb12b3a9986328aa2e2d830ec277c3c1",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Marnie eats 5 chips on the first day and then 5 more on the second day.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "starting on the second day she has them, Marnie eats 10 each day.",
+  "observed_error": "The response assigns the additional 5 chips to the second day.",
+  "violated_condition": "Both initial portions belong to the first day; consumption of 10 chips per day begins on the second day.",
+  "error_description": "The response places the second portion of 5 chips on the second day, spreading the initial 10 chips over two days. This contradicts the stated schedule of 10 chips daily beginning on day two and shifts that schedule to day three. The arithmetic follows the incorrectly assigned days.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

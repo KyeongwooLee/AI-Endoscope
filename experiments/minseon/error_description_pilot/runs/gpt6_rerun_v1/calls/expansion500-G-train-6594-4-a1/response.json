@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6594-4",
+  "response_sha256": "b549da30c9096f30abdaf9f2a303e141d734108e77291bf3f28b8e537be91593",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Additional plates needed = 65 - (22 + 24)\n\n#### 29",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Max needs 65 paper plates for the barbecue party.  He already has 22 green paper plates and 24 blue paper plates.",
+  "observed_error": "The reported result 29 does not equal the correctly written expression 65 - (22 + 24).",
+  "violated_condition": "Additional plates must equal 65 minus the sum of 22 and 24.",
+  "error_description": "The response correctly represents the additional plates as 65 - (22 + 24), but reports 29, which does not equal that expression. The displayed work supports an incorrect numerical evaluation, without showing which arithmetic operation produced it.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "No intermediate arithmetic is shown, so the specific faulty operation cannot be identified."
+}

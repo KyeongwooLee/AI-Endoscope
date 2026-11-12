@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Lola and Tara decide to race to the top of a 20 story building. Tara takes the elevator and Lola runs up the stairs. Lola can run up 1 story in 10 seconds. The elevator goes up a story in 8 seconds but stops for 3 seconds on every single floor. How long would it take for the slower one of Lola and Tara to reach the top floor?
+SOLUTION: To solve this problem, let's break down the time taken by each person:
+
+1. **Tara's time:**
+   - Tara takes the elevator.
+   - The elevator goes up one story in 8 seconds.
+   - There are 20 stories in total, so the elevator takes \(20 \times 8 = 160\) seconds to reach the top floor.
+   - The elevator stops for 3 seconds on every floor, but since it stops on the first floor, the total time for Tara is 163 seconds (160 seconds for going up + 3 seconds for the stop).
+
+2. **Lola's time:**
+   - Lola runs up one story in 10 seconds.
+   - Lola has to run 20 stories, so the time taken by Lola is \(20 \times 10 = 200\) seconds.
+
+Now, comparing the times:
+- Tara's total time: 163 seconds
+- Lola's total time: 200 seconds
+
+Since Lola runs the stairs and Tara takes the elevator, the slower one is Lola.
+
+#### 200
+This is the total time it would take for Lola to reach the top floor.

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6747-4",
+  "response_sha256": "fa49d0ac1056c53039e26463c99820c2b02cbe624db44aa086e3c66824965f2d",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Commute distance per day = 42 miles / 5 days = 8.4 miles per day",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Their total commute is 21 miles one way",
+  "observed_error": "The response divides the daily round-trip distance by five to obtain a daily distance.",
+  "violated_condition": "Each commuting day includes a 21-mile trip each way; five commuting days per week does not divide that daily distance.",
+  "error_description": "The response divides the 42-mile round trip by five commuting days, treating a single day's travel as a weekly distance. The division is arithmetically correct, but the relation is wrong: the 21-mile one-way commute requires 42 miles each commuting day. This understates the monthly distance and gas expense.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

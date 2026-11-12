@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4194-3",
+  "response_sha256": "7c5388cb4b319222f4d347e0608c7840d610b863188d1e10094792bdfde82a90",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total days = 42 apples / 1 apple/day = 42 days",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Henry and his brother spend eating 3 boxes of apples if they each eat 1 apple a day",
+  "observed_error": "The duration calculation uses a consumption rate of 1 apple/day for two people.",
+  "violated_condition": "Henry and his brother each eat 1 apple daily, so their combined consumption is 2 apples/day.",
+  "error_description": "The response divides 42 apples by 1 apple/day to calculate how long the supply lasts for both brothers. Their combined consumption is 2 apples/day because each eats one daily. The written division is executed correctly, but it uses the wrong consumption rate.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

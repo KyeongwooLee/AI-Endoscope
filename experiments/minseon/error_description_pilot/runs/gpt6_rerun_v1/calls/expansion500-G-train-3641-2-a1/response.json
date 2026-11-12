@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3641-2",
+  "response_sha256": "935730af19b7dcbd49a8aa063b2506c112a967cf99fe232ec296606581604fed",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Dog's pancakes = 21 - 7\nDog's pancakes = 14",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "While he ate 5 pancakes, his dog jumped up and was able to eat 7 before being caught.",
+  "observed_error": "The response subtracts the dog's consumption from the original total, then subtracts that remainder from Bobby's remainder.",
+  "violated_condition": "Both amounts eaten must be subtracted from the same batch: remaining pancakes = 21 - 5 - 7.",
+  "error_description": "After finding 16 pancakes remaining after Bobby ate, the response subtracts the dog's 7 pancakes from the original 21 instead. It then subtracts that 14-pancake remainder from 16. The arithmetic is executed correctly, but the relation fails to deduct both consumed amounts from one batch.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

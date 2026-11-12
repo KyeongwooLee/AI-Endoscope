@@ -1,0 +1,14 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Carl is having a party on Saturday and is inviting 15 guests. He would like to make sure everyone, including himself, has at least 2 glasses of punch. Each glass holds 12 ounces of punch. How many ounces of punch does he need to buy for the party?
+SOLUTION: Step 1: Calculate the total number of people attending the party, including Carl.
+Step 2: Calculate the total number of glasses needed for all attendees.
+Step 3: Calculate the total number of ounces of punch needed.
+Step 4: Present the answer.
+
+#### 360
+#### Explanation:
+Step 1: There are 15 guests invited plus Carl, making a total of 16 people.
+Step 2: Each person needs at least 2 glasses of punch, so 16 people need 16 * 2 = 32 glasses.
+Step 3: Each glass holds 12 ounces of punch, so 32 glasses need 32 * 12 = 360 ounces of punch.
+Step 4: The answer is 360 ounces of punch.

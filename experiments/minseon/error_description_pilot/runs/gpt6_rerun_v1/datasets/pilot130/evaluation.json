@@ -1,0 +1,2880 @@
+{
+  "native": {
+    "methods": {
+      "E": {
+        "queries": 20,
+        "same": 11,
+        "different": 71,
+        "uncertain": 13,
+        "unjudged": 0,
+        "returned": 95,
+        "denominator": 100,
+        "AI_same_fraction": 0.11,
+        "uncertain_as_same_upper": 0.24,
+        "query_coverage": 0.95
+      },
+      "G": {
+        "queries": 20,
+        "same": 8,
+        "different": 64,
+        "uncertain": 18,
+        "unjudged": 0,
+        "returned": 90,
+        "denominator": 100,
+        "AI_same_fraction": 0.08,
+        "uncertain_as_same_upper": 0.26,
+        "query_coverage": 0.9
+      },
+      "Q": {
+        "queries": 20,
+        "same": 1,
+        "different": 80,
+        "uncertain": 19,
+        "unjudged": 0,
+        "returned": 100,
+        "denominator": 100,
+        "AI_same_fraction": 0.01,
+        "uncertain_as_same_upper": 0.2,
+        "query_coverage": 1.0
+      },
+      "R": {
+        "queries": 20,
+        "same": 2,
+        "different": 78,
+        "uncertain": 20,
+        "unjudged": 0,
+        "returned": 100,
+        "denominator": 100,
+        "AI_same_fraction": 0.02,
+        "uncertain_as_same_upper": 0.22,
+        "query_coverage": 1.0
+      },
+      "Random": {
+        "queries": 20,
+        "same": 4,
+        "different": 75,
+        "uncertain": 21,
+        "unjudged": 0,
+        "returned": 100,
+        "denominator": 100,
+        "AI_same_fraction": 0.04,
+        "uncertain_as_same_upper": 0.25,
+        "query_coverage": 1.0
+      }
+    },
+    "contrasts": {
+      "G-E": {
+        "difference": -0.030000000000000006,
+        "ci95_low": -0.13,
+        "ci95_high": 0.05,
+        "resampling_unit": "query",
+        "draws": 2000,
+        "note": "Does not account for AI judging mistakes or all shared-gallery dependence."
+      },
+      "E-R": {
+        "difference": 0.09000000000000001,
+        "ci95_low": 0.030000000000000006,
+        "ci95_high": 0.16,
+        "resampling_unit": "query",
+        "draws": 2000,
+        "note": "Does not account for AI judging mistakes or all shared-gallery dependence."
+      },
+      "G-R": {
+        "difference": 0.06,
+        "ci95_low": 0.0,
+        "ci95_high": 0.11000000000000003,
+        "resampling_unit": "query",
+        "draws": 2000,
+        "note": "Does not account for AI judging mistakes or all shared-gallery dependence."
+      }
+    },
+    "per_query": {
+      "E": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 1,
+          "different": 3,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2685-4",
+          "same": 4,
+          "different": 1,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5612-0",
+          "same": 0,
+          "different": 0,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 0
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 1,
+          "different": 3,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 2,
+          "uncertain": 3,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "G": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2685-4",
+          "same": 0,
+          "different": 0,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 0
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 1,
+          "different": 3,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5612-0",
+          "same": 0,
+          "different": 0,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 0
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 1,
+          "different": 3,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 1,
+          "different": 3,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "Q": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2685-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5612-0",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "R": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2685-4",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5612-0",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 0,
+          "different": 3,
+          "uncertain": 2,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "Random": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2685-4",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5612-0",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 0,
+          "different": 3,
+          "uncertain": 2,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 1,
+          "different": 3,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ]
+    }
+  },
+  "common": {
+    "methods": {
+      "E": {
+        "queries": 18,
+        "same": 7,
+        "different": 70,
+        "uncertain": 13,
+        "unjudged": 0,
+        "returned": 90,
+        "denominator": 90,
+        "AI_same_fraction": 0.07777777777777778,
+        "uncertain_as_same_upper": 0.2222222222222222,
+        "query_coverage": 1.0
+      },
+      "G": {
+        "queries": 18,
+        "same": 8,
+        "different": 65,
+        "uncertain": 17,
+        "unjudged": 0,
+        "returned": 90,
+        "denominator": 90,
+        "AI_same_fraction": 0.08888888888888889,
+        "uncertain_as_same_upper": 0.2777777777777778,
+        "query_coverage": 1.0
+      },
+      "Q": {
+        "queries": 18,
+        "same": 1,
+        "different": 76,
+        "uncertain": 13,
+        "unjudged": 0,
+        "returned": 90,
+        "denominator": 90,
+        "AI_same_fraction": 0.011111111111111112,
+        "uncertain_as_same_upper": 0.15555555555555556,
+        "query_coverage": 1.0
+      },
+      "R": {
+        "queries": 18,
+        "same": 1,
+        "different": 75,
+        "uncertain": 14,
+        "unjudged": 0,
+        "returned": 90,
+        "denominator": 90,
+        "AI_same_fraction": 0.011111111111111112,
+        "uncertain_as_same_upper": 0.16666666666666666,
+        "query_coverage": 1.0
+      },
+      "Random": {
+        "queries": 18,
+        "same": 3,
+        "different": 76,
+        "uncertain": 11,
+        "unjudged": 0,
+        "returned": 90,
+        "denominator": 90,
+        "AI_same_fraction": 0.03333333333333333,
+        "uncertain_as_same_upper": 0.15555555555555556,
+        "query_coverage": 1.0
+      }
+    },
+    "contrasts": {
+      "G-E": {
+        "difference": 0.011111111111111112,
+        "ci95_low": -0.044444444444444446,
+        "ci95_high": 0.06666666666666668,
+        "resampling_unit": "query",
+        "draws": 2000,
+        "note": "Does not account for AI judging mistakes or all shared-gallery dependence."
+      },
+      "E-R": {
+        "difference": 0.06666666666666668,
+        "ci95_low": 0.022222222222222223,
+        "ci95_high": 0.1111111111111111,
+        "resampling_unit": "query",
+        "draws": 2000,
+        "note": "Does not account for AI judging mistakes or all shared-gallery dependence."
+      },
+      "G-R": {
+        "difference": 0.07777777777777778,
+        "ci95_low": 0.022222222222222223,
+        "ci95_high": 0.13333333333333336,
+        "resampling_unit": "query",
+        "draws": 2000,
+        "note": "Does not account for AI judging mistakes or all shared-gallery dependence."
+      }
+    },
+    "per_query": {
+      "E": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 1,
+          "different": 3,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 1,
+          "different": 3,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 2,
+          "uncertain": 3,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "G": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 1,
+          "different": 3,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 1,
+          "different": 3,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "Q": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "R": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 0,
+          "different": 3,
+          "uncertain": 2,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "Random": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 3,
+          "uncertain": 2,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 1,
+          "different": 3,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ]
+    }
+  },
+  "historical_common": {
+    "methods": {
+      "E": {
+        "queries": 18,
+        "same": 8,
+        "different": 70,
+        "uncertain": 12,
+        "unjudged": 0,
+        "returned": 90,
+        "denominator": 90,
+        "AI_same_fraction": 0.08888888888888889,
+        "uncertain_as_same_upper": 0.2222222222222222,
+        "query_coverage": 1.0
+      },
+      "G": {
+        "queries": 18,
+        "same": 9,
+        "different": 66,
+        "uncertain": 15,
+        "unjudged": 0,
+        "returned": 90,
+        "denominator": 90,
+        "AI_same_fraction": 0.1,
+        "uncertain_as_same_upper": 0.26666666666666666,
+        "query_coverage": 1.0
+      },
+      "Q": {
+        "queries": 18,
+        "same": 2,
+        "different": 75,
+        "uncertain": 13,
+        "unjudged": 0,
+        "returned": 90,
+        "denominator": 90,
+        "AI_same_fraction": 0.022222222222222223,
+        "uncertain_as_same_upper": 0.16666666666666666,
+        "query_coverage": 1.0
+      },
+      "R": {
+        "queries": 18,
+        "same": 2,
+        "different": 77,
+        "uncertain": 11,
+        "unjudged": 0,
+        "returned": 90,
+        "denominator": 90,
+        "AI_same_fraction": 0.022222222222222223,
+        "uncertain_as_same_upper": 0.14444444444444443,
+        "query_coverage": 1.0
+      },
+      "Random": {
+        "queries": 18,
+        "same": 3,
+        "different": 76,
+        "uncertain": 11,
+        "unjudged": 0,
+        "returned": 90,
+        "denominator": 90,
+        "AI_same_fraction": 0.03333333333333333,
+        "uncertain_as_same_upper": 0.15555555555555556,
+        "query_coverage": 1.0
+      },
+      "old_E": {
+        "queries": 18,
+        "same": 7,
+        "different": 70,
+        "uncertain": 13,
+        "unjudged": 0,
+        "returned": 90,
+        "denominator": 90,
+        "AI_same_fraction": 0.07777777777777778,
+        "uncertain_as_same_upper": 0.2222222222222222,
+        "query_coverage": 1.0
+      },
+      "old_G": {
+        "queries": 18,
+        "same": 5,
+        "different": 76,
+        "uncertain": 9,
+        "unjudged": 0,
+        "returned": 90,
+        "denominator": 90,
+        "AI_same_fraction": 0.05555555555555555,
+        "uncertain_as_same_upper": 0.15555555555555556,
+        "query_coverage": 1.0
+      }
+    },
+    "contrasts": {
+      "G-E": {
+        "difference": 0.011111111111111112,
+        "ci95_low": -0.044444444444444446,
+        "ci95_high": 0.06666666666666668,
+        "resampling_unit": "query",
+        "draws": 2000,
+        "note": "Does not account for AI judging mistakes or all shared-gallery dependence."
+      },
+      "E-R": {
+        "difference": 0.06666666666666668,
+        "ci95_low": 0.022222222222222223,
+        "ci95_high": 0.12222222222222223,
+        "resampling_unit": "query",
+        "draws": 2000,
+        "note": "Does not account for AI judging mistakes or all shared-gallery dependence."
+      },
+      "G-R": {
+        "difference": 0.07777777777777778,
+        "ci95_low": 0.022222222222222223,
+        "ci95_high": 0.13333333333333336,
+        "resampling_unit": "query",
+        "draws": 2000,
+        "note": "Does not account for AI judging mistakes or all shared-gallery dependence."
+      },
+      "E-old_E": {
+        "difference": 0.011111111111111112,
+        "ci95_low": -0.044444444444444446,
+        "ci95_high": 0.06666666666666667,
+        "resampling_unit": "query",
+        "draws": 2000,
+        "note": "Does not account for AI judging mistakes or all shared-gallery dependence."
+      },
+      "G-old_G": {
+        "difference": 0.044444444444444446,
+        "ci95_low": 0.0,
+        "ci95_high": 0.1,
+        "resampling_unit": "query",
+        "draws": 2000,
+        "note": "Does not account for AI judging mistakes or all shared-gallery dependence."
+      }
+    },
+    "per_query": {
+      "E": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 2,
+          "different": 3,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 1,
+          "different": 3,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 2,
+          "uncertain": 3,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "G": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 1,
+          "different": 3,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "Q": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "R": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 1,
+          "uncertain": 4,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "Random": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 2,
+          "uncertain": 3,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 1,
+          "different": 2,
+          "uncertain": 2,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "old_E": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 1,
+          "uncertain": 4,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ],
+      "old_G": [
+        {
+          "query_id": "train-21-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2205-1",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2520-0",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-2680-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-3393-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-366-1",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4498-3",
+          "same": 0,
+          "different": 0,
+          "uncertain": 5,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4657-3",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-4815-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5595-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-5807-3",
+          "same": 0,
+          "different": 4,
+          "uncertain": 1,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-609-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6124-2",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6145-4",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6775-3",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6914-1",
+          "same": 0,
+          "different": 2,
+          "uncertain": 3,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-6999-0",
+          "same": 1,
+          "different": 4,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        },
+        {
+          "query_id": "train-947-2",
+          "same": 0,
+          "different": 5,
+          "uncertain": 0,
+          "unjudged": 0,
+          "returned": 5
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "train-2136-4",
+  "response_sha256": "e668f10dd1b0c3375a2338fef4bb88cfed57e464a47cec3c104d13a1ec10a6f1",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total driving time for 50 days = 20 minutes/trip × 50 trips/day = 1000 minutes",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "It takes 20 minutes to drive to school. If she drives to and from school every day",
+  "observed_error": "The response uses 50 trips per day despite identifying two school trips per day.",
+  "violated_condition": "Daily driving time equals 20 minutes per trip multiplied by two trips per day; 50 specifies the required hours.",
+  "error_description": "The response calculates driving time using 50 trips per day, although Jessica makes two 20-minute trips each school day. The multiplication itself is correct, but its trip count violates the stated daily schedule and substitutes the required number of hours for a daily trip count.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The later equality “50 hours ÷ 1000 minutes/day = 50 ÷ 10” incorrectly converts 1000 minutes per day to 10 hours per day."
+  ],
+  "uncertainty_note": null
+}

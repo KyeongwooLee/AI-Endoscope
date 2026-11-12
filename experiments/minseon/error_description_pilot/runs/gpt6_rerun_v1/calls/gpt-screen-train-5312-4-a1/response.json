@@ -1,0 +1,1 @@
+{"status":"answer_conflict","independent_answer":"$10","check":"Total earnings are 5 × $1 + 5 × $3 = $20; keeping half leaves $10. The worked solution is correct, but its leading answer marker conflicts with it.","evidence_quote":"#### 5","error_description":"The leading marker states 5, while the correct worked final answer is $10."}

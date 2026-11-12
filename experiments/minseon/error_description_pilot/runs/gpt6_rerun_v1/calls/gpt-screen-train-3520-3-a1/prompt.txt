@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Haley is getting ready to watch a comet fly over her house. She spends two hours shopping for a telescope, half an hour getting everything set up in the backyard, three times the setup time making snacks, and 20 minutes watching the comet. What percentage of the total time she spent on all those activities was spent watching the comet, rounded to the nearest percent?
+SOLUTION: Step 1: Calculate the total time spent on shopping, setup, making snacks, and watching the comet.
+- Shopping: 2 hours
+- Setup: 0.5 hours
+- Making snacks: 3 times the setup time = 3 * 0.5 = 1.5 hours
+- Watching the comet: 20 minutes = 20/60 = 1/3 hours
+
+Step 2: Convert all times to hours for consistency.
+- Total time: 2 + 0.5 + 1.5 + 1/3 = 2 + 0.5 + 1.5 + 0.333 = 4.333 hours
+
+Step 3: Calculate the percentage of time spent watching the comet.
+\[ \text{Percentage} = \left( \frac{\text{Time watching the comet}}{\text{Total time}} \right) \times 100 \]
+\[ \text{Percentage} = \left( \frac{1/3}{4.333} \right) \times 100 \approx 2.31\% \]
+
+Step 4: Round to the nearest percent.
+\[ \text{Percentage} \approx 2\% \]
+
+#### 2
+The percentage of the total time Haley spent watching the comet is 2%.

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4552-4",
+  "response_sha256": "56b6686d047f21ff7d87e3dc94915ed7e375a334879a4d139bf7cef79b15d852",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total subjects = 10 + 14 + 17 = 31",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how many subjects all take altogether?",
+  "observed_error": "The response incorrectly evaluates 10 + 14 + 17 as 31.",
+  "violated_condition": "The total must equal the sum of Monica's 10, Marius's 14, and Millie's 17 subjects.",
+  "error_description": "The response correctly derives Marius's 14 subjects and Millie's 17 subjects, then evaluates the written sum 10 + 14 + 17 as 31. The addition is incorrect, although the relation used to combine all three subject counts is correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The earlier heading '#### 34' is also incorrect, but no calculation supports identifying how that number arose. The quoted addition is the first explicit faulty calculation."
+}

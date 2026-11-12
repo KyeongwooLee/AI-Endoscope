@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5347-3",
+  "response_sha256": "d5187fb1d2f2270d95854d35a2146316c8484c6c80cb65e57c6081c527b47691",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The shop earned a total of $55.5.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "One day the store was able to sell 15 bottles of cola, 25 bottles of water, and 12 bottles of juice.",
+  "observed_error": "The reported total does not equal the correctly stated sum of revenues.",
+  "violated_condition": "Total earnings must equal 3 × 15 + 1 × 25 + 1.5 × 12 dollars.",
+  "error_description": "The response correctly writes each price-times-quantity expression and the relation adding all three revenues, but reports $55.5, which does not equal that sum. It provides no intermediate evaluations identifying which arithmetic operation produced the discrepancy.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The incorrect total is observable, but the specific arithmetic operation responsible is not shown."
+}

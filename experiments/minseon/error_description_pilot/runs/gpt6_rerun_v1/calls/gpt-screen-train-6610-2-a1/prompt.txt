@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: In a week, Mortdecai collects 8 dozen  eggs every Tuesday and Thursday, and he delivers 3 dozen  eggs to the market and 5 dozen eggs to the mall. He then uses 4 dozen eggs to make a pie every Saturday. Mortdecai donates the remaining eggs to the charity by Sunday. How many  eggs does he donate to the charity?
+SOLUTION: Step 1: Calculate the total number of eggs Mortdecai collects in a week.
+- Mortdecai collects 8 dozen eggs every Tuesday and Thursday.
+- Total eggs collected = 8 dozen * 2 days = 16 dozen eggs
+
+Step 2: Calculate the total number of eggs Mortdecai delivers to the market and the mall.
+- Eggs delivered to the market = 3 dozen
+- Eggs delivered to the mall = 5 dozen
+- Total eggs delivered = 3 dozen + 5 dozen = 8 dozen
+
+Step 3: Calculate the number of eggs used to make a pie.
+- Eggs used to make a pie = 4 dozen
+
+Step 4: Calculate the number of eggs remaining after deliveries and pie-making.
+- Eggs remaining after deliveries = Total eggs collected - Eggs delivered = 16 dozen - 8 dozen = 8 dozen
+- Eggs remaining after making a pie = Eggs remaining after deliveries - Eggs used to make a pie = 8 dozen - 4 dozen = 4 dozen
+
+Step 5: Calculate the total number of eggs donated to the charity.
+- Total eggs donated = Eggs remaining after deliveries - Eggs remaining after making a pie = 8 dozen - 4 dozen = 4 dozen
+
+#### 4
+Mortdecai donates 4 dozen eggs to the charity.

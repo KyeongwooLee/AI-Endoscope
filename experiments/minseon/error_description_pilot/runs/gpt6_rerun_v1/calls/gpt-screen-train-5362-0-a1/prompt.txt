@@ -1,0 +1,27 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: While reading about the history of different towns, Jared learned that Euston had 20 more carriages than Norfolk. Norwich had 100 carriages, and Flying Scotsman had 20 more carriages than Norwich. If Euston had 130 carriages, how many carriages are there in all?
+SOLUTION: Step 1: Determine the number of carriages in Norfolk.
+Euston had 130 carriages, which is 20 more than Norfolk.
+130 = Norfolk + 20
+Norfolk = 130 - 20
+Norfolk = 110 carriages
+
+Step 2: Determine the number of carriages in Norwich.
+Norwich had 100 carriages.
+
+Step 3: Determine the number of carriages in Flying Scotsman.
+Flying Scotsman had 20 more carriages than Norwich.
+100 = Norwich + 20
+Flying Scotsman = 100 - 20
+Flying Scotsman = 80 carriages
+
+Step 4: Calculate the total number of carriages.
+Euston: 130
+Norfolk: 110
+Norwich: 100
+Flying Scotsman: 80
+Total = 130 + 110 + 100 + 80
+Total = 420 carriages
+
+#### 420

@@ -1,0 +1,58 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition E: ordinary short error explanation | prompt v1]
+Read the math question, the model's solution, and the reference solution.
+The reference is a comparison aid and may itself be ambiguous or incorrect.
+Describe the earliest observable substantive mathematical mistake in the
+model's solution in one or two English sentences, approximately 25-60 words.
+If a specific mistake cannot be supported, say so instead of inventing one.
+Do not output a fixed error-category code or a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "explanation": "<25-60 English words; required when status is supported_error, otherwise a short reason or null>",
+  "reference_review_needed": false
+}
+
+source_id: train-1894-1
+response_sha256: 87cd13dcf78ddf80c977aca56372cfb70cdd861964d9e4bdadb14e2f57f9616a
+
+=== QUESTION ===
+Charlotte is a dog walker and is creating a schedule for all of her clients this week. Each dog is walked separately. On Monday, she needs to walk 4 poodles and 2 Chihuahuas. On Tuesday, she walks the same amount of Chihuahuas but isn't sure how many poodles she should walk. On Wednesday, she walks 4 Labradors. It takes 2 hours to walk a poodle, 1 hour to walk a Chihuahua, and 3 hours to walk a Labrador. If she has time for a total of 32 hours spent in dog-walking this week, how many poodles can Charlotte walk on Tuesday?
+=== MODEL SOLUTION ===
+Step 1: Calculate the total time spent on Monday.
+- Poodles: 4 dogs * 2 hours/dog = 8 hours
+- Chihuahuas: 2 dogs * 1 hour/dog = 2 hours
+Total time on Monday = 8 hours + 2 hours = 10 hours
+
+Step 2: Calculate the total time spent on Wednesday.
+- Labradors: 4 dogs * 3 hours/dog = 12 hours
+Total time on Wednesday = 12 hours
+
+Step 3: Determine the remaining time available for Tuesday.
+Total time for the week = 32 hours
+Time spent on Monday and Wednesday = 10 hours + 12 hours = 22 hours
+Remaining time for Tuesday = 32 hours - 22 hours = 10 hours
+
+Step 4: Determine how many poodles can be walked on Tuesday.
+- Time per poodle = 2 hours
+- Remaining time for Tuesday = 10 hours
+Number of poodles on Tuesday = 10 hours / 2 hours/poodle = 5 poodles
+
+#### 5
+The answer is 5.
+=== REFERENCE SOLUTION (fallible aid) ===
+On Monday, she spends 4 poodles * 2 hours = <<4*2=8>>8 hours walking poodles.
+On Monday, she spends 2 Chihuahuas * 1 hour = <<2*1=2>>2 hours walking Chihuahuas.
+On Tuesday, she spends 2 Chihuahuas * 1 hour = <<2*1=2>>2 hours walking Chihuahuas.
+On Wednesday, she spends 4 Labradors * 3 hours = <<4*3=12>>12 hours walking Labradors.
+Over the week, this is a total of 8 + 2 + 2 + 12 = <<8+2+2+12=24>>24 hours spent dog-walking.
+This means she still has 32 maximum hours – 24 used hours = <<32-24=8>>8 hours available for dog-walking.
+Therefore, she can walk 8 hours / 2 hours per poodle = <<8/2=4>>4 poodles on Tuesday.
+#### 4
+=== END ===

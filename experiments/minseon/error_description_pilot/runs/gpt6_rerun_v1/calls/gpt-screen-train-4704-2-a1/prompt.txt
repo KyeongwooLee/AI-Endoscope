@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John visits three different countries.  He stays in the first country for 2 weeks and he spends twice as long in each of the other two countries.  How much time does he spend on the trip?
+SOLUTION: Step 1: Determine the time John spends in the second country.
+John stays in the first country for 2 weeks.
+He spends twice as long in each of the other two countries.
+Time in the second country = 2 * 2 weeks = 4 weeks
+
+Step 2: Determine the time John spends in the third country.
+He spends twice as long in each of the other two countries.
+Time in the third country = 2 * 4 weeks = 8 weeks
+
+Step 3: Calculate the total time on the trip.
+Total time = Time in first country + Time in second country + Time in third country
+Total time = 2 weeks + 4 weeks + 8 weeks = 14 weeks
+
+#### 14
+The total time John spends on the trip is 14 weeks.

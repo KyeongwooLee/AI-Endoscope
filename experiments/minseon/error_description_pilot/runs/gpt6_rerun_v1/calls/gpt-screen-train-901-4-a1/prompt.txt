@@ -1,0 +1,13 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Sandi had $600. She spent half of it at a farmer’s market. Gillian spent $150 more than three times Sandi's total. What is the total that Gillian spent at the farmer’s market?
+SOLUTION: Step 1: Calculate how much Sandi spent at the farmer’s market.
+Sandi had $600 and spent half of it at the farmer’s market.
+$$ \text{Sandi's spending at the farmer’s market} = \frac{1}{2} \times 600 $$
+Step 2: Calculate Gillian's total spending.
+Gillian spent $150 more than three times Sandi's total.
+$$ \text{Gillian's spending} = 3 \times 600 + 150 $$
+Step 3: Solve for Gillian's spending.
+#### 2100
+
+#### 2100

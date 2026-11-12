@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Grayson drives a motorboat for 1 hour at 25 mph and then 0.5 hours for 20 mph. Rudy rows in his rowboat for 3 hours at 10 mph. How much farther, in miles, does Grayson go in his motorboat compared to Rudy?
+SOLUTION: Step 1: Calculate the distance Grayson travels in the motorboat.
+Distance = Speed × Time
+Distance = 25 mph × 1 hour = 25 miles
+
+Step 2: Calculate the distance Grayson travels in the rowboat.
+Distance = Speed × Time
+Distance = 10 mph × 0.5 hours = 5 miles
+
+Step 3: Calculate the total distance Grayson travels.
+Total distance = Distance in motorboat + Distance in rowboat
+Total distance = 25 miles + 5 miles = 30 miles
+
+Step 4: Calculate the distance Rudy travels.
+Distance = Speed × Time
+Distance = 10 mph × 3 hours = 30 miles
+
+Step 5: Calculate the difference in distance between Grayson and Rudy.
+Difference = Total distance Grayson travels - Total distance Rudy travels
+Difference = 30 miles - 30 miles = 0 miles
+
+#### 0

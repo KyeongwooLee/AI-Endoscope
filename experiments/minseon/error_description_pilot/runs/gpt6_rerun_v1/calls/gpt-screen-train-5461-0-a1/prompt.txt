@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: June's mom promises to pay her 1 cent for every cloverleaf she picks from the lawn. June picks 200 clovers in total. 75% have 3 petals. 24% have two petals and 1% have four petals. How many cents does June earn?
+SOLUTION: Step 1: Calculate the number of cloverleafs with 3 petals.
+75% of 200 clovers have 3 petals.
+75/100 * 200 = 150 clovers
+
+Step 2: Calculate the number of cloverleafs with 2 petals.
+24% of 200 clovers have 2 petals.
+24/100 * 200 = 48 clovers
+
+Step 3: Calculate the number of cloverleafs with 4 petals.
+1% of 200 clovers have 4 petals.
+1/100 * 200 = 2 clovers
+
+Step 4: Calculate the total number of cloverleafs.
+150 + 48 + 2 = 200 cloverleafs
+
+Step 5: Calculate the total cents June earns.
+1 cent per cloverleaf
+200 cloverleafs * 1 cent = 200 cents
+
+#### 200

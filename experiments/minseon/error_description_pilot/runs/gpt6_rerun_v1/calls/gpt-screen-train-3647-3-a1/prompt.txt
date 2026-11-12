@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Carla's order at Mcdonald's costs $7.50, but she has a coupon for $2.50. If she gets an additional 20% discount for being a senior citizen, how much does she pay for her order in dollars total?
+SOLUTION: Step 1: Subtract the coupon value from the original order cost.
+$7.50 - $2.50 = $5.00
+
+Step 2: Calculate the additional 20% discount on the reduced cost.
+20% of $5.00 is $5.00 * 0.20 = $1.00
+
+Step 3: Subtract the additional discount from the reduced cost.
+$5.00 - $1.00 = $4.00
+
+Step 4: Add the final discount to the result from step 3.
+$4.00 + $1.00 = $5.00
+
+Final answer:
+#### 5.00

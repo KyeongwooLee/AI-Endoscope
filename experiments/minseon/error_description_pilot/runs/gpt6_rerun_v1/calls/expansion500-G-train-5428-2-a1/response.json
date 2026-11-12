@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5428-2",
+  "response_sha256": "1bb4602c8284bd7e1aaf00e04fd1252a52dd381eaa18749d453f6768fd7bcc24",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "To find the distance between the house and the market, we need to subtract the distance from his house to school (50 meters) from the total distance walked (140 meters).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "After school, he comes back to the house and goes to the market.",
+  "observed_error": "The response subtracts only one 50-meter school leg from the total.",
+  "violated_condition": "The 140-meter total includes both the 50-meter walk to school and the 50-meter return before the walk to the market.",
+  "error_description": "The response subtracts only the 50-meter house-to-school distance from the 140-meter total, omitting the return walk from school to the house. Both school legs must be deducted to isolate the house-to-market distance. The subtraction itself is executed correctly; the written relation leaves out a required 50-meter leg.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

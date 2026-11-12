@@ -1,0 +1,19 @@
+{
+  "source_id": "train-3734-1",
+  "response_sha256": "a8124bfc0bb6d7073fc60e233fc04a87393d8077f2f35378ce370a49d174dc2f",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "4500 cherries / 300 cherries/hour = 15 hours",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "It takes him 2 hours to pick 300 cherries and 3 hours to make the syrup.",
+  "observed_error": "The response uses 300 cherries/hour instead of 300 cherries per 2 hours.",
+  "violated_condition": "Picking time must use the rate 300 cherries / 2 hours = 150 cherries/hour.",
+  "error_description": "The response divides 4500 cherries by 300 cherries/hour, although picking 300 cherries takes two hours. The division is executed correctly, but the rate doubles the stated picking speed. It also independently treats the three-hour syrup-making duration as three hours per quart, multiplying it by nine without support in the question.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The response states, \"Jerry takes 3 hours to make 1 quart of syrup,\" and multiplies by nine, although the question gives three hours to make the syrup without a per-quart condition."
+  ],
+  "uncertainty_note": null
+}

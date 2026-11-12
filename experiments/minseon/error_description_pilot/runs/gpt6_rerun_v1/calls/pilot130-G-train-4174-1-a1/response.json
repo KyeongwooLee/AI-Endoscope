@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4174-1",
+  "response_sha256": "168a95e076b4333f9314487cafaa1ef19575b9eeb34f6d39c50758fc6994359b",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\[ 24000 \\text{ pounds} + 8000 \\text{ pounds} + 4000 \\text{ pounds} = 36000 \\text{ pounds} \\]",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "His train pulls 3 red boxcars, 4 blue boxcars, and 7 black boxcars.",
+  "observed_error": "The total includes only one boxcar's capacity from each color.",
+  "violated_condition": "Total capacity must be 3 × 24000 + 4 × 8000 + 7 × 4000 pounds.",
+  "error_description": "The response adds the individual capacities of one red, one blue, and one black boxcar to obtain the train's total capacity. Although that addition is executed correctly, it omits the required multiplication by the counts of 3 red, 4 blue, and 7 black boxcars.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

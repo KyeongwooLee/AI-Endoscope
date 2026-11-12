@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Austin bought his seven friends each a robot. Each robot costs $8.75.  He was charged $7.22 total for tax. He left with $11.53 in change. How much did Austin start with?
+SOLUTION: Step 1: Calculate the total cost of the robots.
+Each robot costs $8.75 and Austin bought 7 robots.
+Total cost of robots = 8.75 * 7
+
+Step 2: Add the tax to the total cost of the robots.
+Total cost of robots + tax = (8.75 * 7) + 7.22
+
+Step 3: Add the change Austin left with to the total cost to find out how much he started with.
+Total cost of robots + tax + change = amount Austin started with
+
+Let's calculate the total cost of the robots.
+#### 61.25
+Now add the tax.
+#### 68.47
+Finally, add the change.
+#### 130.72

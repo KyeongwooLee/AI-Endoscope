@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"220 oranges will be sold.","check":"There are 10 × 30 = 300 oranges. Subtracting 50 rotten oranges and 30 reserved for juice gives 300 − 50 − 30 = 220.","evidence_quote":"Total oranges to be sold = 300 - 50 = 250","error_description":"The solution omits the 30 oranges reserved for juice, so its final count is 30 too high."}

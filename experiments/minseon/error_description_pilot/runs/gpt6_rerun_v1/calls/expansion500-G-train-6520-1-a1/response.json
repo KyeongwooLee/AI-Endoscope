@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6520-1",
+  "response_sha256": "e7655e24dbaf59844bc7af8e2a5d799823b53c2ff44ef260a9a56ecb63651a4e",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "Total daily earnings: \\(\\$60 + \\$100 = \\$160\\)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "She can babysit for 3 hours every weekday and 5 hours on a Saturday.",
+  "observed_error": "The response combines weekday and Saturday earnings into a single daily earnings amount.",
+  "violated_condition": "Weekly earnings must count five $60 weekdays and one $100 Saturday.",
+  "error_description": "The response adds a weekday’s $60 earnings to Saturday’s $100 earnings and treats $160 as daily earnings. These amounts apply to different days. Multiplying that sum by five consequently counts Saturday earnings five times, violating the schedule of five weekdays and one Saturday. The addition itself is arithmetically correct.",
+  "reference_review_reason": "The reference correctly totals 20 weekly hours but then uses 24 hours and replaces the required $1200 with $1440. Its final result does not validate those intermediate calculations.",
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

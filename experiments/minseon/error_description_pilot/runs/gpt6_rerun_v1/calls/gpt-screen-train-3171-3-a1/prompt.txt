@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Brian is taping up some boxes. Each box needs three pieces of tape, one as long as the long side and two as long as the short side. If Brian tapes up 5 boxes that measure 15 inches by 30 inches and 2 boxes that measure 40 inches square, how much tape does he need?
+SOLUTION: Step 1: Calculate the tape needed for one box of 15 inches by 30 inches.
+- Each box requires one piece of tape as long as the long side (30 inches).
+- Each box requires two pieces of tape as long as the short side (15 inches).
+- Tape needed for one box = 30 + 2 * 15 = 70 inches.
+
+Step 2: Calculate the tape needed for the 5 boxes of 15 inches by 30 inches.
+- Tape needed for 5 boxes = 5 * 70 = 350 inches.
+
+Step 3: Calculate the tape needed for one box of 40 inches square.
+- Each box requires one piece of tape as long as the long side (40 inches).
+- Each box requires two pieces of tape as long as the short side (40 inches).
+- Tape needed for one box = 40 + 2 * 40 = 120 inches.
+
+Step 4: Calculate the tape needed for the 2 boxes of 40 inches square.
+- Tape needed for 2 boxes = 2 * 120 = 240 inches.
+
+Step 5: Calculate the total tape needed.
+- Total tape needed = Tape for 5 boxes + Tape for 2 boxes = 350 + 240 = 590 inches.
+
+#### 590

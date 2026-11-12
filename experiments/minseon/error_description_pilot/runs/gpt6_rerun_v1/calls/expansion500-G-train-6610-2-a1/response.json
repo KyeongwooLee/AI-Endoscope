@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6610-2",
+  "response_sha256": "75ef69557743f0e1ef04b1722732686992590612854f485da8829bbca52a29ca",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "- Total eggs donated = Eggs remaining after deliveries - Eggs remaining after making a pie = 8 dozen - 4 dozen = 4 dozen",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Mortdecai donates the remaining eggs to the charity by Sunday.",
+  "observed_error": "Step 5 defines donated eggs as the decrease in eggs during pie-making.",
+  "violated_condition": "The donation equals the eggs remaining after pie-making, not the difference between the amounts before and after pie-making.",
+  "error_description": "Step 5 subtracts the eggs remaining after pie-making from those remaining after deliveries to calculate the donation. That difference measures eggs used for the pie, whereas the donation consists of eggs left afterward. The arithmetic is correct and coincidentally gives the same quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

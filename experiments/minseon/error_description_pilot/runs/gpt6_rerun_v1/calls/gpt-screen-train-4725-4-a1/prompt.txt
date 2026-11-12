@@ -1,0 +1,45 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: In Canada, for every moose there are two beavers, and for every beaver there are 19 humans.  If there are 38 million people in Canada, what is the moose population of Canada, in millions?
+SOLUTION: To solve this problem, we'll use the given ratios and the total population of humans.
+
+1. **Determine the number of beavers per human:**
+   - For every beaver, there are 19 humans.
+
+2. **Determine the number of moose per beaver:**
+   - For every moose, there are two beavers.
+
+3. **Calculate the number of humans per beaver:**
+   \[
+   \text{Number of humans per beaver} = \frac{\text{Number of humans}}{\text{Number of beavers}}
+   \]
+   \[
+   \text{Number of humans per beaver} = \frac{38}{2} = 19
+   \]
+
+4. **Calculate the number of beavers per human:**
+   \[
+   \text{Number of beavers per human} = \frac{\text{Number of beavers}}{\text{Number of humans}}
+   \]
+   \[
+   \text{Number of beavers per human} = \frac{2}{19}
+   \]
+
+5. **Calculate the number of moose per human:**
+   \[
+   \text{Number of moose per human} = \frac{\text{Number of moose}}{\text{Number of beavers per human}}
+   \]
+   \[
+   \text{Number of moose per human} = \frac{1}{\frac{2}{19}} = \frac{19}{2} = 9.5
+   \]
+
+6. **Calculate the total moose population:**
+   \[
+   \text{Total moose population} = \text{Number of moose per human} \times \text{Number of humans}
+   \]
+   \[
+   \text{Total moose population} = 9.5 \times 38 = 361
+   \]
+
+#### 361
+The moose population in Canada is 361 million.

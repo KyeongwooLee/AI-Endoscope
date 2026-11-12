@@ -1,0 +1,19 @@
+{
+  "source_id": "train-4030-1",
+  "response_sha256": "f24ad824113e84651612e9683cdbf4ff3e077114461744e643af9a863bace911",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 2: According to the problem, Bailey had \\( y - 2 \\) rubber bands in the beginning.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Justine had 10 more rubber bands than Bailey but 2 fewer bands than Ylona.",
+  "observed_error": "The response assigns y - 2 to Bailey instead of Justine.",
+  "violated_condition": "Justine initially had y - 2 bands, and Bailey had 10 fewer than Justine.",
+  "error_description": "The response states that Bailey initially had y - 2 rubber bands, although the two-band deficit relative to Ylona belongs to Justine. Since Justine also had 10 more bands than Bailey, Bailey’s initial quantity must be 10 below y - 2.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The equation (y - 2) - 2 + 2 = 8 adds the second two-band gift instead of subtracting it, although Bailey gave away two bands to each recipient."
+  ],
+  "uncertainty_note": null
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3515-0",
+  "response_sha256": "37505817cad2b4a1f1c8463030ee975a660fd904c1d65c38601c0d5f440558b8",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total time = Time for Hugo to fold small boxes + Time for Hugo to fold medium boxes + Time for Tom to fold small boxes + Time for Tom to fold medium boxes",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If Hugo and Tom want to leave as early as possible, how long (in seconds) will it take them to fold 2400 small boxes and 1800 medium boxes?",
+  "observed_error": "The response sums both workers' times for individually completing the entire order.",
+  "violated_condition": "The order must be divided between workers to minimize elapsed time; simultaneous completion time is the maximum of their assigned workloads' durations.",
+  "error_description": "The response adds the times for each worker to fold all 2400 small and 1800 medium boxes, duplicating the required workload and treating the durations as sequential. The earliest departure requires dividing the boxes between workers operating simultaneously and minimizing their completion time. The written addition itself is correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-794-4",
+  "response_sha256": "ddfd4e247b79bd9fd23a6a59f5cf30b3db822ee78bf1c3ece62ee86a0c1505d8",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total candies = 40 + 100 + 50 = 190\n#### 190",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If Carlos ate all of the yellow candies, how many candies remained?",
+  "observed_error": "The reported remaining total includes the 100 yellow candies Carlos ate.",
+  "violated_condition": "The remaining total must exclude all yellow candies eaten by Carlos.",
+  "error_description": "The response adds 40 red, 100 yellow, and 50 blue candies and reports that sum as the amount remaining, despite stating that Carlos left zero yellow candies. The arithmetic is correct, but the requested total after eating must exclude the consumed yellow candies.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "train-3359-3",
+  "response_sha256": "12d5819b0b0d6011fc1a08fbdc5c8800b55a9679b78aaef2bb397b5152358ae9",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "2 brothers * 12 slices/brother = 24 slices",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Ben has two brothers. They can each eat 12 slices of pizza.",
+  "observed_error": "The total counts only the two brothers, omitting Ben.",
+  "violated_condition": "The pizza must feed Ben and his two brothers, with 12 slices per person.",
+  "error_description": "The response calculates total demand using only the two brothers, omitting Ben from the group eating pizza. The multiplication is executed correctly, but the required relation includes three people, each eating 12 slices.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Even using its stated remaining demand of 16 slices, the response selects one 14-slice large pizza, which cannot supply enough slices; the required pizza count must be rounded up."
+  ],
+  "uncertainty_note": null
+}

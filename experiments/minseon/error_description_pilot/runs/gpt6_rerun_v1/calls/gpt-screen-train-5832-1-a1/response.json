@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"17 steaks","check":"Harvey first sold 25 − 12 = 13 steaks, then sold 4 more, for 13 + 4 = 17 steaks. The price does not affect the count.","evidence_quote":"#### 19","error_description":"The final answer gives 19 steaks, but the stated quantities yield 17. The solution lists steps without showing calculations that support 19."}

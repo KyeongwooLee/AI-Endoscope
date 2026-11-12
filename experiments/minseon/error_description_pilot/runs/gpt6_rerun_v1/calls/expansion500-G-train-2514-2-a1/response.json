@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2514-2",
+  "response_sha256": "df530b84d1e0fca41e4c8d866af330206766cb7c2ec5f77f5baa79d23698f045",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Boris needs to climb his mountain 40 times to have climbed the same number of feet as Hugo.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how many times would Boris need to climb his mountain to have climbed the same number of feet as Hugo?",
+  "observed_error": "The stated 40 climbs contradict the correctly established distances.",
+  "violated_condition": "Boris' climb count multiplied by 7,500 feet must equal Hugo's 30,000 feet.",
+  "error_description": "The response concludes that Boris needs 40 climbs after correctly establishing 7,500 feet per climb and Hugo's total of 30,000 feet. Forty climbs would cover 300,000 feet, violating the requirement that their total climbing distances match.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "No final calculation is shown, so the text does not establish whether the incorrect count arose from a wrong operation or incorrectly executed arithmetic."
+}

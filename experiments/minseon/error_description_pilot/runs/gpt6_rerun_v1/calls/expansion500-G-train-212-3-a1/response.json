@@ -1,0 +1,20 @@
+{
+  "source_id": "train-212-3",
+  "response_sha256": "fbb33aa73d0df9263fc1de6d42a9f7b6e784ff32de80bc71a1665988cb64c12f",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total vacation days = 2 weeks/year * 2 years = 4 days.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "takes two weeks off for vacation each year",
+  "observed_error": "The response multiplies the annual vacation allowance by two years and labels the resulting four weeks as four days.",
+  "violated_condition": "Vacation is two weeks each year; multiplying weeks/year by years yields weeks, not days, and the practice horizon is eight years.",
+  "error_description": "The response calculates vacation as 2 weeks/year × 2 years = 4 days, then subtracts those four days from each year's calendar days. This uses an unsupported two-year interval and changes weeks into days without conversion, violating the stated allowance of two vacation weeks each year.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The practice-day calculation uses all 365 calendar days minus vacation, ignoring the Monday–Friday restriction.",
+    "The written division 10,000 / 2888 is approximately 3.46, not 34.72; this is an independent arithmetic error."
+  ],
+  "uncertainty_note": null
+}

@@ -1,0 +1,26 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A river is to be used for a boat race. If each boat is 3 feet across and they must have at least 2 feet between them or the riverbank, how many boats can race in a river that is 42 feet across?
+SOLUTION: To determine how many boats can race in a river that is 42 feet across, we need to consider the space required for each boat and the space between them or the riverbank.
+
+1. Each boat is 3 feet across.
+2. There must be at least 2 feet between each boat and the riverbank.
+
+Let's calculate the total space required for one boat and the space between it and the next boat:
+- Space for one boat: 3 feet
+- Space between the boat and the next boat: 2 feet
+
+Total space for two boats:
+\[ 3 \text{ feet} + 2 \text{ feet} = 5 \text{ feet} \]
+
+Now, we need to find out how many such groups of two boats can fit into the 42-foot river:
+\[ \frac{42 \text{ feet}}{5 \text{ feet/group}} = 8.4 \text{ groups} \]
+
+Since we can't have a fraction of a group, we take the integer part of the division:
+\[ \lfloor 8.4 \rfloor = 8 \text{ groups} \]
+
+Each group consists of 2 boats, so the total number of boats is:
+\[ 8 \text{ groups} \times 2 \text{ boats/group} = 16 \text{ boats} \]
+
+#### 16
+This is the final answer.

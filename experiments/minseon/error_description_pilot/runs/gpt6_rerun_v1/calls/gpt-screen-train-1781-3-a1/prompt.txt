@@ -1,0 +1,26 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A salesman bought a case of 48 backpacks for $576. He sold 17 of them for $18 at the swap meet, 10 were sold to a department store for $25 each. If the remainder were sold for $22 each. How much was the salesman's profit?
+SOLUTION: Step 1: Calculate the total revenue from the 17 backpacks sold at the swap meet.
+17 backpacks * $18/backpack = $306
+
+Step 2: Calculate the total revenue from the 10 backpacks sold to a department store.
+10 backpacks * $25/backpack = $250
+
+Step 3: Calculate the number of backpacks left to be sold.
+48 backpacks - 17 backpacks - 10 backpacks = 11 backpacks
+
+Step 4: Calculate the total revenue from the 11 backpacks sold at $22 each.
+11 backpacks * $22/backpack = $242
+
+Step 5: Calculate the total revenue from all sales.
+$306 (swap meet) + $250 (department store) + $242 (remainder) = $798
+
+Step 6: Calculate the total cost of the backpacks.
+48 backpacks * $12/backpack = $576
+
+Step 7: Calculate the profit by subtracting the total cost from the total revenue.
+$798 (total revenue) - $576 (total cost) = $222
+
+#### 222
+The salesman's profit was $222.

@@ -1,0 +1,87 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-851-4
+response_sha256: 893b4d0f858d2b14fc332d9c8da39fd6eb97838796f8f97492b5a5251c50cfc3
+
+=== QUESTION ===
+In a card game, you are awarded 10 points if you win one round. While playing, Jane ends up with 60 points. If she lost 20 points, then how many rounds did she play?
+=== MODEL SOLUTION ===
+To solve this problem, we need to determine how many rounds Jane played based on the given points and losses.
+
+1. **Determine the net points**: Jane ends up with 60 points, but she lost 20 points. Therefore, the net points she has after playing rounds is:
+   \[
+   60 - 20 = 40 \text{ points}
+   \]
+
+2. **Relate net points to rounds**: We know that Jane earns 10 points for each round she wins. Let \( r \) represent the number of rounds she won. Since each win gives her 10 points, the total net points from wins is:
+   \[
+   10r
+   \]
+
+3. **Set up the equation**: The net points from wins minus the net points lost equals her total points:
+   \[
+   10r - 20 = 40
+   \]
+
+4. **Solve for \( r \)**:
+   \[
+   10r = 40 + 20
+   \]
+   \[
+   10r = 60
+   \]
+   \[
+   r = \frac{60}{10}
+   \]
+   \[
+   r = 6
+   \]
+
+5. **Conclusion**: Jane played 6 rounds.
+
+#### 6
+Jane played 6 rounds.
+=== REFERENCE SOLUTION (fallible aid) ===
+If Jane got 60 points and lost 20 points then the total number of points she accumulated in all the rounds was 60+20 = <<60+20=80>>80 points.
+If each round is awarded 10 points, then the number of rounds will be 80/10 = <<80/10=8>>8 rounds.
+#### 8
+=== END ===

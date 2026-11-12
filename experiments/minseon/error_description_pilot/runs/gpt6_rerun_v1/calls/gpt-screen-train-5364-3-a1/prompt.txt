@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jenna runs a wholesale business. She pays $3 for each widget and resells it for $8. Every month she has to pay $10,000 in rent, 20% of her total profit in taxes, and $2,500 each to four workers. If Jenna sells 5000 widgets one month, how much is her total profit or loss?
+SOLUTION: Step 1: Calculate the total revenue from selling widgets.
+Revenue = Selling price per widget × Number of widgets sold
+Step 2: Calculate the total cost of purchasing widgets.
+Cost = Cost per widget × Number of widgets sold
+Step 3: Calculate the total expenses.
+Total expenses = Rent + Workers' salary + Taxes
+Step 4: Calculate the profit.
+Profit = Revenue - Cost - Total expenses
+Step 5: Calculate the loss.
+Loss = Profit if Profit < 0
+Now let's perform the calculations:
+
+Revenue = $8 × 5000 = $40,000
+Cost = $3 × 5000 = $15,000
+Total expenses = $10,000 + $2,500 × 4 + $3,000 = $10,000 + $10,000 + $3,000 = $23,000
+Profit = $40,000 - $15,000 - $23,000 = $2,000
+
+#### 2000

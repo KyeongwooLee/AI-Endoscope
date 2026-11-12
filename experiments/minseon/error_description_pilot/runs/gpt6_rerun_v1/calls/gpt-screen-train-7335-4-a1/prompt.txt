@@ -1,0 +1,32 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Sophie does 4 loads of laundry a week and uses 1 dryer sheet per load.  A box of dryer sheets costs $5.50 and has 104 dryer sheets in a box.  On her birthday, she was given wool dryer balls to use instead of dryer sheets.  How much money does she save in a year not buying dryer sheets?
+SOLUTION: Step 1: Calculate the number of dryer sheets Sophie uses in a week.
+Sophie does 4 loads of laundry a week, and she uses 1 dryer sheet per load.
+Number of dryer sheets per week = 4
+
+Step 2: Calculate the number of dryer sheets Sophie uses in a year.
+There are 52 weeks in a year.
+Number of dryer sheets per year = 4 * 52
+
+Step 3: Calculate the number of dryer sheets Sophie gets for free from her birthday gift.
+She was given 104 dryer sheets in a box.
+Number of dryer sheets from gift = 104
+
+Step 4: Calculate the total number of dryer sheets Sophie uses in a year.
+Total number of dryer sheets used = Number of dryer sheets per year + Number of dryer sheets from gift
+
+Step 5: Calculate the total cost of dryer sheets Sophie uses in a year.
+Each box of dryer sheets costs $5.50, and there are 104 dryer sheets per box.
+Total cost per year = (Total number of dryer sheets used / 104) * $5.50
+
+Step 6: Calculate the total savings in a year.
+Total savings = (Number of dryer sheets per week * 52) * $5.50 - Total cost per year
+
+Step 7: Calculate the final savings.
+Final savings = Total savings
+
+#### 104
+#### 2208
+#### 2208
+#### 174.07

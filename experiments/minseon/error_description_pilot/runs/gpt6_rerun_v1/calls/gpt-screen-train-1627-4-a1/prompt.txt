@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Grace is filling her pool in the backyard with a hose that sprays 50 gallons/hour. She waited for 3 hours but the pool wasn't full, so she decides to add another hose that sprays 70 gallons/hour, and after 2 more hours the pool is full. How much water can Grace’s pool contain?
+SOLUTION: Step 1: Determine the amount of water added in the first 3 hours.
+- Grace's first hose sprays 50 gallons per hour.
+- In 3 hours, the first hose adds \( 50 \text{ gallons/hour} \times 3 \text{ hours} = 150 \text{ gallons} \).
+
+Step 2: Determine the remaining capacity of the pool after the first 3 hours.
+- Let \( P \) be the total capacity of the pool.
+- After 3 hours, the pool is filled with 150 gallons, so \( P - 150 \text{ gallons} \) is the remaining capacity.
+
+Step 3: Determine the amount of water added in the next 2 hours.
+- Grace's second hose sprays 70 gallons per hour.
+- In 2 hours, the second hose adds \( 70 \text{ gallons/hour} \times 2 \text{ hours} = 140 \text{ gallons} \).
+
+Step 4: Determine the total capacity of the pool.
+- The pool is full after 5 hours (3 hours with the first hose and 2 hours with the second hose).
+- Therefore, the total capacity \( P \) is the sum of the remaining capacity after the first 3 hours and the water added in the next 2 hours.
+- \( P = 150 \text{ gallons} + 140 \text{ gallons} = 290 \text{ gallons} \).
+
+#### 290
+The pool can contain 290 gallons of water.

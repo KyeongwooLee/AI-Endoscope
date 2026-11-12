@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"50 water jugs.","check":"The students need 200 × 10 = 2,000 cups per day. At 40 cups per jug, 2,000 ÷ 40 = 50 jugs.","evidence_quote":"The custodian will fill 20 water jugs","error_description":"The solution gives 20 jugs instead of 50. It lists calculation steps but shows no arithmetic supporting its final number."}

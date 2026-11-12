@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Austin and Jake start descending from the 9th floor of a building at the same time. Austin uses the elevator and Jake uses the stairs, descending 3 steps every second. The stairs have 30 steps across each floor. If the elevator will take a minute to get to ground level, how many seconds later will Jake get to the ground floor?
+SOLUTION: To solve this problem, let's break it down into steps:
+
+1. **Calculate the time it takes for Jake to descend the stairs:**
+   - Jake descends 3 steps every second.
+   - There are 30 steps per floor.
+   - There are 8 floors from the 9th to the ground floor.
+   - Total steps to descend: 30 steps/floor × 8 floors = 240 steps.
+   - Time to descend = Total steps / Steps per second = 240 steps / 3 steps/second = 80 seconds.
+
+2. **Calculate the time it takes for Austin to descend the elevator:**
+   - The elevator takes 60 seconds to get from the 9th floor to the ground floor.
+   - Time for Austin = 60 seconds.
+
+3. **Determine the difference in time:**
+   - Jake takes 80 seconds to descend the stairs.
+   - Austin takes 60 seconds to descend the elevator.
+   - Difference in time = Jake's time - Austin's time = 80 seconds - 60 seconds = 20 seconds.
+
+### Final Answer:
+#### 20
+#### 20

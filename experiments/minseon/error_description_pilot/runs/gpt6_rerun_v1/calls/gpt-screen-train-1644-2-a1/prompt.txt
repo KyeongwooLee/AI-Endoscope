@@ -1,0 +1,13 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John has taken 10 pictures every day for the past 3 years.  He saves them in raw format so each memory card can store 50 images.  Each memory card costs $60.  How much does he spend on memory cards?
+SOLUTION: Step 1: Calculate the total number of pictures taken.
+10 pictures/day * 365 days/year * 3 years = 109,500 pictures
+
+Step 2: Determine how many memory cards are needed.
+109,500 pictures / 50 pictures/memory card = 2,190 memory cards
+
+Step 3: Calculate the total cost of the memory cards.
+2,190 memory cards * $60/memory card = $131,400
+
+#### 131400

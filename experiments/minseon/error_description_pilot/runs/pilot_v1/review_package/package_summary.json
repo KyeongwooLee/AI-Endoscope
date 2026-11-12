@@ -1,0 +1,52 @@
+{
+  "items": 100,
+  "item_descriptions": 200,
+  "pairs_before_dedup": 490,
+  "pairs_unique": 319,
+  "max_possible_pairs": 500,
+  "second_review_items": 36,
+  "second_review_pairs": 64,
+  "files": [
+    {
+      "file": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/pilot_v1/review_package/templates/reviewer_1/items_stage1.csv",
+      "action": "unchanged"
+    },
+    {
+      "file": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/pilot_v1/review_package/templates/reviewer_1/items_stage2.csv",
+      "action": "unchanged"
+    },
+    {
+      "file": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/pilot_v1/review_package/templates/reviewer_1/pairs.csv",
+      "action": "unchanged"
+    },
+    {
+      "file": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/pilot_v1/review_package/templates/reviewer_2/items_stage1.csv",
+      "action": "unchanged"
+    },
+    {
+      "file": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/pilot_v1/review_package/templates/reviewer_2/items_stage2.csv",
+      "action": "unchanged"
+    },
+    {
+      "file": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/pilot_v1/review_package/templates/reviewer_2/pairs.csv",
+      "action": "unchanged"
+    },
+    {
+      "file": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/pilot_v1/review_package/templates/reviewer_1/reviewer.json",
+      "action": "unchanged"
+    },
+    {
+      "file": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/pilot_v1/review_package/templates/reviewer_2/reviewer.json",
+      "action": "unchanged"
+    },
+    {
+      "file": "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/pilot_v1/review_package/adjudication_template.csv",
+      "action": "unchanged"
+    }
+  ],
+  "package_sha256": {
+    "items_stage1.csv": "15432afac0d1b25386c379b88a9a1a3b3192b152bf86f7c09df902760364f0a6",
+    "items_stage2.csv": "27fd634dd9e802ce7fe50c273445e8e12aec3b764cf728dd49921fc142058d33",
+    "pairs.csv": "6d103e853034328c92178e3d43477a1227e9bd500783c396db497692af244e25"
+  }
+}

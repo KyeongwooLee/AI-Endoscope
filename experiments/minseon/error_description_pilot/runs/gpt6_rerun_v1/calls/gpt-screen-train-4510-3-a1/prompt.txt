@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Mark is 18 years old. He has a little brother, John, who is 10 years younger. If John and Mark's parents are currently 5 times older than John, how old were they when Mark was born?
+SOLUTION: Step 1: Determine John's current age.
+John is 10 years younger than Mark, so:
+\[ \text{John's age} = \text{Mark's age} - 10 = 18 - 10 = 8 \]
+
+Step 2: Calculate the current age of Mark's parents.
+Mark's parents are currently 5 times older than John:
+\[ \text{Parents' current age} = 5 \times \text{John's age} = 5 \times 8 = 40 \]
+
+Step 3: Determine the age difference between Mark and his parents.
+The age difference between Mark and his parents is:
+\[ \text{Age difference} = \text{Parents' current age} - \text{Mark's age} = 40 - 18 = 22 \]
+
+Step 4: Calculate the age of Mark's parents when Mark was born.
+Since the age difference between Mark and his parents is 22 years, their parents were:
+\[ \text{Parents' age when Mark was born} = \text{Parents' current age} - \text{Age difference} = 40 - 22 = 18 \]
+
+Answer: #### 18

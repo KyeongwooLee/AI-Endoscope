@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Kobe and Pau went to a restaurant. Kobe ordered five pieces of fried chicken, and Pau ordered twice as much fried chicken as Kobe did. If they order another set of fried chicken, how many pieces of fried chicken will Pau have eaten in all?
+SOLUTION: Step 1: Determine the number of pieces of fried chicken Pau originally ordered.
+Kobe ordered 5 pieces, and Pau ordered twice as much.
+5 * 2 = 10 pieces
+
+Step 2: Calculate the total pieces of fried chicken Pau has eaten so far.
+Pau originally ordered 10 pieces.
+To get the total, add the 10 pieces to the 5 pieces that Kobe ordered.
+10 + 5 = 15 pieces
+
+Step 3: Calculate the total pieces of fried chicken Pau will have eaten if they order another set.
+If they order another set, Pau will get another 10 pieces.
+To find the total, add the 10 pieces to the 15 pieces Pau already ate.
+10 + 15 = 25 pieces
+
+#### 25

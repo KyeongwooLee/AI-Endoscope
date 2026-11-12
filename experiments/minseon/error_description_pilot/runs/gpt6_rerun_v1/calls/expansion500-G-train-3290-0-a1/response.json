@@ -1,0 +1,20 @@
+{
+  "source_id": "train-3290-0",
+  "response_sha256": "1ddaec4e70c188c9cb67a5ca22ebea3499bde3e385b3825f057c72b339d18fd4",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "15 pugs would take \\( \\frac{1 \\text{ house}}{15 \\times (4 \\times 45) \\text{ minutes}} \\).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "In how many minutes will 15 pugs working together be able to clean their house?",
+  "observed_error": "The response divides the single-pug rate by 15 and presents the resulting rate expression as a duration.",
+  "violated_condition": "The combined rate must be 15 times the single-pug rate, and cleaning time must be the house quantity divided by that combined rate.",
+  "error_description": "After correctly establishing that one pug takes 4 × 45 minutes, the response puts the factor 15 in the denominator of the single-pug rate and calls this a time. Fifteen pugs working together multiply the cleaning rate by 15, while duration has units of minutes, not houses per minute.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Step 7 equates a rate in houses per minute with a duration in hours, which is not a valid unit conversion.",
+    "Step 9 labels 0.22 minutes as rounding 0.22222 minutes to the nearest minute; it rounds to hundredths instead."
+  ],
+  "uncertainty_note": null
+}

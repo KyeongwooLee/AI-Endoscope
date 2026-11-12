@@ -1,0 +1,19 @@
+{
+  "source_id": "train-6974-2",
+  "response_sha256": "57fd4455f5434d59ed3c93f989bc6f8da20e45284fea81c57cde8db9e7655034",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "One loaf lasts for 12 days.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "A loaf of bread has 12 slices.",
+  "observed_error": "The response asserts that one loaf lasts 12 days.",
+  "violated_condition": "A loaf's duration equals its 12 slices divided by the household's consumption of 20 slices per day.",
+  "error_description": "The response assigns one loaf a duration of 12 days, although 12 is the number of slices per loaf. With household consumption already calculated as 20 slices per day, the duration must come from dividing slices per loaf by slices consumed per day.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The final duration calculation uses 8.33 loaves, the computed requirement for five days, instead of the five loaves actually available."
+  ],
+  "uncertainty_note": null
+}

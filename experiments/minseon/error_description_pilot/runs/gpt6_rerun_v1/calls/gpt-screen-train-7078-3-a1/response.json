@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"100 pieces of bread.","check":"The equation T/2 + 13 + 7 + 30 = T gives T/2 + 50 = T, so T = 100. The solution incorrectly combines 13 + 7 + 30 as 40.","evidence_quote":"\\[ \\frac{T}{2} + 40 = T \\]","error_description":"The constant terms sum to 50, not 40. This incorrect simplification leads to 80 instead of 100."}

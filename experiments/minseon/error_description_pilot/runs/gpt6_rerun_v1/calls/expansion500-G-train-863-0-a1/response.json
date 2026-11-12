@@ -1,0 +1,17 @@
+{
+  "source_id": "train-863-0",
+  "response_sha256": "498d05237a4b6f7ca62b031eee186ab16560aff92fe75d283fd9fe5d2672ead1",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "15 + 10 - 6 = 29",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "15 students said they like French fries and 10 said they like burgers, with these statistics including the responses of 6 students who said they like both French fries and burgers.",
+  "observed_error": "The response evaluates 15 + 10 - 6 as 29 instead of 19.",
+  "violated_condition": "The union count is 15 + 10 - 6, which equals 19 students.",
+  "error_description": "The response writes the correct inclusion-exclusion relation but incorrectly evaluates 15 + 10 - 6 as 29 students. This arithmetic error inflates the count liking at least one food beyond the class size and leads it to incorrectly declare the supplied data inconsistent.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

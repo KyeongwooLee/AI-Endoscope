@@ -1,0 +1,19 @@
+{
+  "source_id": "train-3907-3",
+  "response_sha256": "42ca0050830a1b96f566a860e2c4204acf1a68f8413d8fa2ffd16bba0e66c729",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Remaining feet = Perimeter - Money left",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If one foot of wire mesh is sold at $30, and she had $120000, how many feet of the field will not be fenced?",
+  "observed_error": "The response subtracts money left from a perimeter to obtain an unfenced length.",
+  "violated_condition": "Unfenced length equals perimeter minus purchased mesh length; dollars cannot be subtracted directly from feet.",
+  "error_description": "The response defines the unfenced length as the perimeter minus money left after purchasing mesh. This subtracts dollars from feet. The quantity to subtract from the perimeter is the length of mesh affordable with $120000 at $30 per foot, not a monetary balance.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The written expression 4 * 5000 - (4 * 5000 - 120000 / 30) evaluates to 4000, whereas the response reports 10000."
+  ],
+  "uncertainty_note": "The wording '5000 feet square field' leaves the intended geometric quantity unclear. The identified subtraction error holds regardless of that interpretation."
+}

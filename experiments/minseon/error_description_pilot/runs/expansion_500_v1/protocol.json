@@ -1,0 +1,62 @@
+{
+  "date_kst": "2026-11-12",
+  "seed": 20261112,
+  "sample_questions": 500,
+  "queries": 100,
+  "gallery": 400,
+  "eligible_questions": 2040,
+  "exclusion_question_keys": 1436,
+  "overlap_previous_130": 0,
+  "prior_audited_questions_excluded": true,
+  "sampling": "uniform question sample then uniform response within question, finish=stop; union of old SAE partitions; NOT an untouched SAE confirmation set",
+  "annotation_model": {
+    "route": "local_transformers_causal_lm",
+    "provider": "Qwen",
+    "model_identifier": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "decoding_settings": {
+      "do_sample": false,
+      "max_new_tokens": 1000,
+      "dtype": "float16"
+    },
+    "condition_context_isolated": true,
+    "note": "Each item and condition receives a fresh prompt; no other outputs in context. Model differs from pilot_v1."
+  },
+  "embedding": {
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "library": "sentence-transformers",
+    "output": "dense only (CLS pooling per model's 1_Pooling config), L2-normalized, cosine",
+    "max_tokens": 8192,
+    "precision": "float32",
+    "batch_size": 8,
+    "device": "auto"
+  },
+  "clustering": {
+    "k": [
+      4,
+      6,
+      8,
+      10,
+      15,
+      20
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "display_k": 10,
+    "display_seed": 42,
+    "algorithms": [
+      "KMeans n_init=10",
+      "average-link cosine"
+    ],
+    "fit_on_original_1024_dimensions": true
+  },
+  "limits": [
+    "Annotator changed; no causal sample-size comparison with pilot.",
+    "Local judge will be AI provisional; no human truth claims."
+  ],
+  "status": "prepared"
+}

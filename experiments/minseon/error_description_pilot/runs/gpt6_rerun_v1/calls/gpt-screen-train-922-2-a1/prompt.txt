@@ -1,0 +1,16 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Cadence has worked for her new company five months longer than she worked for her old company. If she worked at her old company for 3 years earning $5000 per month, and she's now earning 20% more in the new company, calculate the total amount of money she's earned in both companies in the period she's worked for them?
+SOLUTION: Step 1: Calculate the total earnings from the old company.
+Cadence worked at her old company for 3 years at $5000 per month.
+- Convert years to months: 3 years * 12 months/year = 36 months
+- Total earnings = 36 months * $5000/month = $180,000
+
+Step 2: Determine the earnings from the new company.
+Cadence has worked for her new company for 5 months longer than her old company.
+- New company earnings = Old company earnings + 5 months * $5000/month = $180,000 + $25,000 = $205,000
+
+Step 3: Calculate the total earnings from both companies.
+- Total earnings = Old company earnings + New company earnings = $180,000 + $205,000 = $385,000
+
+#### 385000

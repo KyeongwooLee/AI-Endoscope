@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-11-07T17:04:53+00:00",
+  "python": "3.10.12",
+  "executable": "/home/coder/yaicon-errorprobe/AI-Endoscope/../.venv-edp/bin/python",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.35",
+  "cpu_count": 72,
+  "cpu_affinity": 4,
+  "memory": {
+    "MemTotal": "196642804 kB",
+    "MemFree": "22683516 kB",
+    "MemAvailable": "148276568 kB"
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 3090",
+    "cuda": "13.0",
+    "memory_gb": 23.6
+  },
+  "disk_free_gb": 87.2,
+  "packages": {
+    "numpy": "1.23.5",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.10.1",
+    "torch": "2.12.1",
+    "transformers": "4.57.1",
+    "sentence-transformers": "5.1.2",
+    "huggingface-hub": "0.36.0"
+  }
+}

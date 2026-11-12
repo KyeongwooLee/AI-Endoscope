@@ -1,0 +1,43 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John and his two brothers decide to split the cost of an apartment.  It is 40% more expensive than John's old apartment which costs $1200 per month.  How much does John save per year by splitting the apartment compared to living alone?
+SOLUTION: Let's break down the problem step by step:
+
+1. **Calculate the cost of the new apartment:**
+   - John's old apartment costs $1200 per month.
+   - The new apartment is 40% more expensive than John's old apartment.
+   - To find the cost increase, we calculate 40% of $1200.
+     \[
+     40\% \text{ of } \$1200 = 0.40 \times 1200 = \$480
+     \]
+   - Add this increase to the cost of John's old apartment to find the cost of the new apartment.
+     \[
+     \text{Cost of new apartment} = \$1200 + \$480 = \$1680 \text{ per month}
+     \]
+
+2. **Calculate the total cost for John if he lived alone:**
+   - If John lived alone, he would pay the full cost of the new apartment.
+   - Therefore, the total cost for John would be $1680 per month.
+
+3. **Calculate the total cost if John splits the cost with his brothers:**
+   - John and his two brothers split the cost equally.
+   - The total cost for three people would be three times the cost for one person.
+   - Therefore, the total cost per month for John with his brothers would be:
+     \[
+     \text{Total cost per month} = \frac{\$1680}{3} = \$560 \text{ per month}
+     \]
+
+4. **Calculate the monthly savings for John:**
+   - Subtract the monthly cost with his brothers from the monthly cost if he lived alone.
+     \[
+     \text{Monthly savings} = \$1680 - \$560 = \$1120
+     \]
+
+5. **Calculate the annual savings for John:**
+   - There are 12 months in a year, so multiply the monthly savings by 12.
+     \[
+     \text{Annual savings} = \$1120 \times 12 = \$13440
+     \]
+
+#### 13440
+Therefore, John saves $13,440 per year by splitting the apartment with his brothers.

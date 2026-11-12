@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2769-4",
+  "response_sha256": "519811e5e455cfc31dda011a85b22579901450c05b431574ee1b631e9923a5bf",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 5",
+  "evidence_start": 0,
+  "evidence_end": 6,
+  "evidence_occurrence": null,
+  "question_evidence_quote": "she sold 4 necklaces and 8 rings for a total of $80. If each necklace costs $12",
+  "observed_error": "The initial answer states 5, contradicting the correctly calculated ring price in the body.",
+  "violated_condition": "The ring price r must satisfy 4 × $12 + 8r = $80.",
+  "error_description": "The opening answer gives a ring price of $5, which does not satisfy the stated $80 total for four $12 necklaces and eight rings. The subsequent arithmetic and concluding price are internally correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text does not establish how the incorrect opening number arose."
+}

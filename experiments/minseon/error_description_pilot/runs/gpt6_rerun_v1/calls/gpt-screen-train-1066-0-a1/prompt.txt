@@ -1,0 +1,13 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: George and Amelia are picking oranges and apples at an orchard. George picks 45 oranges and 5 more apples than Amelia. Amelia picks 18 fewer oranges than George and 15 apples. How many fruits do they pick altogether?
+SOLUTION: Step 1: Let's denote the number of apples Amelia picks as A.
+Step 2: According to the problem, George picks 45 oranges and 5 more apples than Amelia. So, George picks 45 + 5 = 50 apples.
+Step 3: Amelia picks 18 fewer oranges than George, so Amelia picks 45 - 18 = 27 oranges.
+Step 4: Amelia also picks 15 apples.
+Step 5: Now, let's calculate the total number of fruits picked by George and Amelia.
+- George's total fruits: 45 oranges + 50 apples = 95 fruits
+- Amelia's total fruits: 27 oranges + 15 apples = 42 fruits
+Step 6: The total number of fruits picked by both George and Amelia is 95 + 42 = 137 fruits
+
+#### 137

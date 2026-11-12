@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Earl has $90; Fred has $48; Greg has $36. Earl owes Fred $28. Fred owes Greg $32. Greg owes Earl $40. When all debts are paid, how much will Greg and Earl have together in dollars?
+SOLUTION: Step 1: Calculate the net amount each person owes.
+Earl owes Fred $28, Fred owes Greg $32, Greg owes Earl $40.
+Earl owes a total of $28 + $40 = $68.
+Fred owes a total of $32.
+Greg owes a total of $40.
+
+Step 2: Determine how much each person has after paying off the debts.
+Earl starts with $90 and owes $68, so Earl will have $90 - $68 = $22.
+Fred starts with $48 and owes $32, so Fred will have $48 - $32 = $16.
+Greg starts with $36 and owes $40, so Greg will have $36 - $40 = -$4 (he is in debt by $4).
+
+Step 3: Calculate the combined amount of Greg and Earl.
+Greg has -$4 and Earl has $22, so together they have -$4 + $22 = $18.
+
+#### 18

@@ -1,0 +1,1 @@
+{"case1_error":"Correct total expression, but 16 + 28 is evaluated as 40 instead of 44.","case2_error":"Treats 12 more green apples as 12 green apples, using an incorrect quantity relation.","reason":"Case 1 is a numerical evaluation error; case 2 misinterprets the comparative quantity.","judgment":"different"}

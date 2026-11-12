@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"61 cups were used.","check":"Each set contains 2 × 12 = 24 cups, so four sets contain 96 cups. Subtracting damaged and unused cups gives 96 − 5 − 30 = 61.","evidence_quote":"4 sets * 12 cups/set = 48 cups","error_description":"The solution counts each 2-dozen set as 12 cups instead of 24, yielding an incorrect total and final answer."}

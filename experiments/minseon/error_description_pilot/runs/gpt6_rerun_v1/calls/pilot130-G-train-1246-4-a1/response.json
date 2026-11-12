@@ -1,0 +1,21 @@
+{
+  "source_id": "train-1246-4",
+  "response_sha256": "aeb02c7fade49cf738c720c3dd4b1045688d7eb7b6eb4bb078b197c2f48c7a75",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "This pattern repeats every 14 hours (10 + 3 + 10 + 1 = 14).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "After this, the spaceship would take an hour’s break after every 11 hours of traveling and maintained this routine until the end of its journey.",
+  "observed_error": "The response treats the initial sequence as recurring and incorrectly evaluates its duration as 14 hours.",
+  "violated_condition": "The initial sequence lasts 10 + 3 + 10 + 1 = 24 hours; subsequent cycles consist of 11 hours traveling and 1 hour stopped.",
+  "error_description": "The response repeats the initial travel-and-break sequence even though the question switches to 11 hours traveling followed by a one-hour break. It also evaluates the explicitly written sum 10 + 3 + 10 + 1 as 14 hours, although those durations total 24 hours.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "After allocating five 14-hour cycles within 72 hours, it states that 14 hours remain; 72 − 70 is 2 hours.",
+    "It counts only 3 hours of stops in its proposed cycle, omitting the explicitly included 1-hour stop.",
+    "It labels the entire proposed cycle duration, including stops, as travel time."
+  ],
+  "uncertainty_note": null
+}

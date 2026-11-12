@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Johny traveled South 40 miles, then turned East and traveled for 20 more miles than the distance he took to travel to the south. If he turned North and traveled twice the distance he had traveled to the East, calculate the total distance his journey took.
+SOLUTION: Step 1: Determine the distance traveled to the East.
+Johny traveled 20 miles more to the East than he did to the South. Since he traveled 40 miles to the South, the distance to the East is:
+40 miles + 20 miles = 60 miles
+
+Step 2: Calculate the total distance traveled to the East and South.
+The total distance to the East and South is:
+40 miles (South) + 60 miles (East) = 100 miles
+
+Step 3: Determine the distance traveled North.
+Johny traveled twice the distance he had traveled to the East. Since he traveled 60 miles to the East, the distance to the North is:
+2 * 60 miles = 120 miles
+
+Step 4: Calculate the total distance of the journey.
+The total distance of the journey is the sum of the distances traveled to the South, East, and North:
+100 miles (South) + 60 miles (East) + 120 miles (North) = 280 miles
+
+#### 280
+The total distance of Johny's journey is 280 miles.

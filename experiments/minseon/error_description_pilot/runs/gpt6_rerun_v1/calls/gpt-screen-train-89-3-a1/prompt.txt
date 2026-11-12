@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Krystian works in the library. He borrows an average of 40 books every day. Every Friday, his number of borrowed books is about 40% higher than the daily average. How many books does he borrow in a week if the library is open from Monday to Friday?
+SOLUTION: Step 1: Calculate the number of books borrowed on a Friday.
+Krystian borrows an average of 40 books every day. On Friday, he borrows 40% more than the daily average.
+40 books * 40% = 40 books * 0.40 = 16 books
+
+Step 2: Calculate the total number of books borrowed in a week.
+There are 5 weekdays (Monday to Friday) and 1 weekend day (Saturday and Sunday).
+Total books borrowed in a week = (40 books * 5 days) + (40 books * 15% on Friday)
+
+Step 3: Perform the calculation.
+Total books borrowed in a week = (40 books * 5 days) + (40 books * 0.15 * 5 days)
+Total books borrowed in a week = (40 * 5) + (40 * 0.15 * 5)
+Total books borrowed in a week = 200 + (6 * 5)
+Total books borrowed in a week = 200 + 30
+Total books borrowed in a week = 230
+
+#### 230
+The answer is 230.

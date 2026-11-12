@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"9 apples","check":"Tuesday = 4, Friday = 1, and Thursday = 4 apples. Thus Wednesday = 20 − (2 + 4 + 1 + 4) = 9.","evidence_quote":"20 - (2 + 4 + 1 + 4) = 11 apples on Wednesday.","error_description":"The subtraction is incorrect: the known amounts total 11, leaving 9 apples, not 11."}

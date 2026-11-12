@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6185-2",
+  "response_sha256": "13b856d24f1c380dcbd672a4d4bc66c83c2e5be13029c7f169577c3e405e9a7a",
+  "status": "insufficient_evidence",
+  "reference_review_needed": false,
+  "evidence_quote": "The factory produced 6300 products in 5 days.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "How many products did the factory produce for 5 days if it works 9 hours a day?",
+  "observed_error": "The final total is inconsistent with the correctly written relations, but no numerical calculations support it.",
+  "violated_condition": "Total production must equal [90 + (90 + 70)] × 9 × 5 products.",
+  "error_description": null,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The unexplained final number does not establish whether the response incorrectly executed arithmetic or used a different, unwritten relation."
+}

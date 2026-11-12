@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Tim decides to start selling necklaces he makes.  He uses 10 charms to make each necklace.  Each charm cost $15.  He sells the necklace for $200.  How much profit does he make if he sells 30?
+SOLUTION: Step 1: Calculate the total cost for 10 charms.
+Cost of one charm = $15
+Number of charms = 10
+Total cost = 15 * 10 = $150
+
+Step 2: Calculate the total revenue from selling 30 necklaces.
+Selling price per necklace = $200
+Number of necklaces sold = 30
+Total revenue = 200 * 30 = $6000
+
+Step 3: Calculate the profit.
+Profit = Total revenue - Total cost
+Profit = 6000 - 150 = $5850
+
+#### 5850

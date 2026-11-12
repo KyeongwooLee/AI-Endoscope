@@ -1,0 +1,9 @@
+{
+  "reviewer_id": "minseon",
+  "reviewer_type": "human",
+  "initials": "MS",
+  "review_dates": "",
+  "independent_of_other_reviewer": true,
+  "saw_method_key_or_scores": true,
+  "notes": "검수 시작 전 준비된 파일입니다. 검수 전에 대화에서 일부 실제 오류 설명과 방법별 검색 결과·유사도 점수 예시를 읽었습니다. 아직 사람 판정은 작성하지 않았습니다. review_dates는 실제 검수한 날짜로 입력해야 합니다. independent_of_other_reviewer는 실제 검수 과정에서 다른 검수자의 판정을 보았는지에 따라 확인·수정해야 합니다. 현재 평가 코드는 saw_method_key_or_scores=true인 human 검수를 독립 주 평가로 수용하지 않습니다."
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4205-1",
+  "response_sha256": "3b2dbec63e6f6131157096a856a8e6e5cebc65b3965c83c73057b15c7501c161",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 2: Calculate the total number of birds seen over the three days.\n#### 300\n#### 600\n#### 400",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "How many fish-eater birds did Cohen see in the three days?",
+  "observed_error": "The response lists the three daily counts but omits their total.",
+  "violated_condition": "The requested three-day total requires adding 300, 600, and 400 birds.",
+  "error_description": "The response announces a calculation of the three-day total but supplies only the daily counts of 300, 600, and 400 birds. These counts satisfy the daily changes, but the requested quantity requires their sum, which the response never provides.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

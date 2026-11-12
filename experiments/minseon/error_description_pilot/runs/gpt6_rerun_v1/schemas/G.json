@@ -1,0 +1,107 @@
+{
+  "type": "object",
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "response_sha256": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "supported_error",
+        "insufficient_evidence",
+        "no_error_observed",
+        "ambiguous"
+      ]
+    },
+    "reference_review_needed": {
+      "type": "boolean"
+    },
+    "evidence_quote": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_start": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "evidence_end": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "evidence_occurrence": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "question_evidence_quote": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observed_error": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "violated_condition": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "error_description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reference_review_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "secondary_errors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "uncertainty_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "source_id",
+    "response_sha256",
+    "status",
+    "reference_review_needed",
+    "evidence_quote",
+    "evidence_start",
+    "evidence_end",
+    "evidence_occurrence",
+    "question_evidence_quote",
+    "observed_error",
+    "violated_condition",
+    "error_description",
+    "reference_review_reason",
+    "secondary_errors",
+    "uncertainty_note"
+  ],
+  "additionalProperties": false
+}

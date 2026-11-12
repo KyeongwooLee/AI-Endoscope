@@ -1,0 +1,3 @@
+2026-11-11T21:10:21.137481Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-11-11T21:10:22.519170Z  WARN sqlx::query: slow statement: execution time exceeded alert threshold summary="PRAGMA wal_checkpoint(PASSIVE)" db.statement="" rows_affected=0 rows_returned=1 elapsed=1.447317619s elapsed_secs=1.447317619 slow_threshold=1s
+2026-11-11T21:10:38.489208Z  WARN codex_core::shell_snapshot: Failed to delete shell snapshot at AbsolutePathBuf("/home/coder/.codex/shell_snapshots/01a1cc72-8acb-7473-9d77-415e80d3a971.1794431421135222528.sh"): Os { code: 2, kind: NotFound, message: "No such file or directory" }

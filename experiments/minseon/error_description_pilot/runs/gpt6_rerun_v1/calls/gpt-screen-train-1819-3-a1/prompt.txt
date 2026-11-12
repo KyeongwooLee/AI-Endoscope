@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Teresa orders 2 fancy ham and cheese sandwiches for $7.75 each at a local shop.  While there, she decides to pick up some salami for $4.00, more brie which is three times the price of the salami,  a 1/4 pound of olives that are $10.00 per pound, 1/2 pound of feta cheese that’s $8.00 a pound and another loaf of french bread that is $2.00.  How much does she spend at the local shop?
+SOLUTION: Step 1: Calculate the cost of the salami
+Cost of salami = $4.00
+
+Step 2: Calculate the cost of the brie
+Cost of brie = 3 * Cost of salami = 3 * $4.00 = $12.00
+
+Step 3: Calculate the cost of the olives
+Cost of olives = 1/4 * Cost of olives per pound = 1/4 * $10.00 = $2.50
+
+Step 4: Calculate the cost of the feta cheese
+Cost of feta cheese = 1/2 * Cost of feta cheese per pound = 1/2 * $8.00 = $4.00
+
+Step 5: Calculate the cost of the french bread
+Cost of french bread = $2.00
+
+Step 6: Sum up all the costs
+Total cost = Cost of fancy ham and cheese + Cost of salami + Cost of brie + Cost of olives + Cost of feta cheese + Cost of french bread
+Total cost = $7.75 + $4.00 + $12.00 + $2.50 + $4.00 + $2.00
+Total cost = $30.25
+
+#### 30.25

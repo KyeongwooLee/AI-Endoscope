@@ -1,0 +1,13 @@
+{
+  "reason": "The custom expansion scripts used the correct new sampling, clustering and bootstrap settings from the outset, but config.json retained unused defaults copied from pilot_v1. These metadata fields were aligned to the actual code. Initial protocol.json already recorded correct500/100/400, seeds and clustering choices. No input, annotation, embedding or judgment was changed.",
+  "fields": [
+    "protocol_name",
+    "protocol_version",
+    "sampling",
+    "split",
+    "retrieval",
+    "bootstrap",
+    "clustering",
+    "embedding.batch_size"
+  ]
+}

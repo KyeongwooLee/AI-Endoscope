@@ -1,0 +1,75 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-5364-3
+response_sha256: 16d062f3fb9199d84dd46d2fa536b2ba973bc8f39243007e2ff93d580ccc378d
+
+=== QUESTION ===
+Jenna runs a wholesale business. She pays $3 for each widget and resells it for $8. Every month she has to pay $10,000 in rent, 20% of her total profit in taxes, and $2,500 each to four workers. If Jenna sells 5000 widgets one month, how much is her total profit or loss?
+=== MODEL SOLUTION ===
+Step 1: Calculate the total revenue from selling widgets.
+Revenue = Selling price per widget × Number of widgets sold
+Step 2: Calculate the total cost of purchasing widgets.
+Cost = Cost per widget × Number of widgets sold
+Step 3: Calculate the total expenses.
+Total expenses = Rent + Workers' salary + Taxes
+Step 4: Calculate the profit.
+Profit = Revenue - Cost - Total expenses
+Step 5: Calculate the loss.
+Loss = Profit if Profit < 0
+Now let's perform the calculations:
+
+Revenue = $8 × 5000 = $40,000
+Cost = $3 × 5000 = $15,000
+Total expenses = $10,000 + $2,500 × 4 + $3,000 = $10,000 + $10,000 + $3,000 = $23,000
+Profit = $40,000 - $15,000 - $23,000 = $2,000
+
+#### 2000
+=== REFERENCE SOLUTION (fallible aid) ===
+First calculate how much Jenna spends on salaries: $2,500 * 4 = $<<2500*4=10000>>10,000
+Next find Jenna's total fixed costs by adding the cost of salaries and rent: $10,000 + $10,000 = $<<10000+10000=20000>>20,000
+Next calculate how much profit Jenna makes on each widget by subtracting the cost from the sale price: $8 - $3 = $<<8-3=5>>5
+Now multiply the profit per widget by the number of widgets sold: $5 * 5000 = $<<5*5000=25000>>25,000
+Now subtract Jenna's costs from her sales to find her total profit before taxes: $25,000 - $20,000 = $<<25000-20000=5000>>5,000
+Now multiply Jenna's profit by her 20% tax rate to find how much she owe in taxes: $5,000 * .2 = $<<5000*.2=1000>>1,000
+Now subtract Jenna's taxes from her profit before taxes to find her total profit: $5,000 - $1,000 = $<<5000-1000=4000>>4,000
+#### 4000
+=== END ===

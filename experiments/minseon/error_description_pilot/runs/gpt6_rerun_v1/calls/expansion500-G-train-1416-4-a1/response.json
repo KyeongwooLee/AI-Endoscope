@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1416-4",
+  "response_sha256": "f7cdd8124689163ed6605b80376a3b9963c6e961d38fb75a7aba7acbdd250cfc",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\( \\frac{4000 \\text{ words}}{5 \\text{ employees}} = 800 \\text{ words per minute} \\)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "What is the team's average typed words per minute?",
+  "observed_error": "The response labels the average word count over 10 minutes as a per-minute rate.",
+  "violated_condition": "A word count accumulated over 10 minutes must also be divided by 10 minutes to obtain a per-minute rate.",
+  "error_description": "The response correctly divides 4000 words by 5 employees but labels the result as words per minute. Those 4000 words were calculated over 10 minutes, so dividing only by the employee count gives an average 10-minute word count, not the requested per-minute rate.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

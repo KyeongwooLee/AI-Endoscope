@@ -1,0 +1,49 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Roy owns a refrigerated warehouse where he stores produce before selling it at the farmer’s market.  The fruits and vegetables he stores are very sensitive to temperature, and he must keep them all cold or they will spoil.  One day, the power went out and the air conditioner was turned off for three hours, during which time the temperature rose by 8 degrees per hour.  If Roy gets the power back on, it will activate the air conditioner to lower the temperature at the rate of 4 degrees F per hour.  What is the amount of time, in hours, it will take for the air conditioner to restore the warehouse to 43 degrees F?
+SOLUTION: Let's break down the problem step by step.
+
+### Step 1: Initial Temperature Increase
+- The temperature initially rises by 8 degrees per hour for 3 hours.
+- Therefore, the total temperature increase is:
+  \[
+  8 \text{ degrees/hour} \times 3 \text{ hours} = 24 \text{ degrees}
+  \]
+
+### Step 2: Temperature After Power Restoration
+- The initial temperature in the warehouse is 43 degrees F.
+- After the power is restored, the temperature will decrease at a rate of 4 degrees F per hour.
+- Let \( t \) be the time in hours it takes to restore the temperature to 43 degrees F.
+
+### Step 3: Temperature Restoration Equation
+- The temperature decrease due to the air conditioner is given by:
+  \[
+  -4t \text{ degrees}
+  \]
+- The total temperature decrease is the sum of the initial increase and the decrease due to the air conditioner:
+  \[
+  24 \text{ degrees} - 4t \text{ degrees}
+  \]
+- The final temperature should be 43 degrees F:
+  \[
+  43 \text{ degrees} = 43 \text{ degrees} - 4t \text{ degrees}
+  \]
+
+### Step 4: Solving for \( t \)
+- Rearrange the equation to solve for \( t \):
+  \[
+  43 \text{ degrees} - 43 \text{ degrees} = -4t \text{ degrees}
+  \]
+  \[
+  0 = -4t \text{ degrees}
+  \]
+  \[
+  t = \frac{0}{-4} \text{ hours}
+  \]
+  \[
+  t = 0 \text{ hours}
+  \]
+
+### Step 5: Final Answer
+#### 0
+The air conditioner will restore the temperature to 43 degrees F in 0 hours.

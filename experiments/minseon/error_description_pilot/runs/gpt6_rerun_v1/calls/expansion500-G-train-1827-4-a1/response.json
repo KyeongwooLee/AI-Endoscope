@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1827-4",
+  "response_sha256": "6a093b898d3514e090cfe2cb905067ff4f138dd8d23ca4e80e331147de3bc9b5",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Weekly eggs for children = 4 children × 2 eggs/child/week = 8 eggs/week.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Lisa makes breakfast for her family every morning, Monday through Friday. She makes 2 eggs for each of her 4 children",
+  "observed_error": "The response labels the children's daily egg total as a weekly total, omitting the five breakfasts per week.",
+  "violated_condition": "Weekly eggs for the children must equal 4 children × 2 eggs per child per breakfast × 5 breakfasts per week.",
+  "error_description": "The response treats each child's 2 eggs per breakfast as 2 eggs per week and labels 4 × 2 = 8 as a weekly total. The multiplication is correct, but the weekly relation omits the five Monday-through-Friday breakfasts. This missing factor carries into the annual calculation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

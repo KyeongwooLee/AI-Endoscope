@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: In one day, Ella's dog eats 4 pounds of food for every one pound of food that Ella eats. How much food do Ella and her dog in 10 days if Ella eat 20 pounds of food each day?
+SOLUTION: To find out how much food Ella and her dog eat in 10 days, we need to follow these steps:
+
+1. **Calculate Ella's food consumption in 10 days:**
+   - Ella eats 20 pounds of food each day.
+   - In 10 days, Ella will eat: \( 20 \, \text{pounds/day} \times 10 \, \text{days} = 200 \, \text{pounds} \).
+
+2. **Calculate the dog's food consumption in 10 days:**
+   - Ella's dog eats 4 pounds of food for every 1 pound of food that Ella eats.
+   - Since Ella eats 20 pounds of food in 10 days, the dog will eat: \( 4 \times 20 = 80 \, \text{pounds} \).
+
+3. **Calculate the total food consumption for Ella and her dog in 10 days:**
+   - Total food = Ella's food + Dog's food
+   - Total food = \( 200 \, \text{pounds} + 80 \, \text{pounds} = 280 \, \text{pounds} \).
+
+#### 280
+Ella and her dog will eat a total of 280 pounds of food in 10 days.

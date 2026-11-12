@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Stella and Twinkle are filling up a truck with a capacity of 6000 stone blocks at the rate of 250 blocks per hour per person. They work for four hours and are then joined by 6 other people who also work at the same rate. How many hours did filling the truck take?
+SOLUTION: Step 1: Calculate the number of blocks Stella and Twinkle can fill in the first 4 hours.
+Stella's rate: 250 blocks per hour
+Twinkle's rate: 250 blocks per hour
+Total rate for Stella and Twinkle: 250 + 250 = 500 blocks per hour
+Number of blocks in 4 hours: 500 * 4 = 2000 blocks
+
+Step 2: Calculate the total number of blocks that can be filled by Stella, Twinkle, and the additional 6 people in the remaining time.
+Total number of people: Stella + Twinkle + 6 others = 2 + 6 = 8 people
+Rate of all people together: 250 blocks per hour per person * 8 people = 2000 blocks per hour
+Number of blocks in the remaining time: 4 hours * 2000 blocks per hour = 8000 blocks
+
+Step 3: Calculate the total number of blocks filled.
+Total blocks filled: 2000 blocks (first 4 hours) + 8000 blocks (remaining time) = 10000 blocks
+
+Step 4: Calculate the total time taken to fill the truck.
+Total capacity of the truck: 6000 blocks
+Total time: 10000 blocks / 6000 blocks per hour = 1.67 hours
+
+#### 1.67

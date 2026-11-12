@@ -1,0 +1,26 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: On Monday, Sydney sends 5 texts each to Allison and Brittney. On Tuesday, she sends 15 texts to each of them. In total, how many texts did Sydney send to Allison and Brittney on both days?
+SOLUTION: Let's break down the problem step by step:
+
+1. **Calculate texts sent on Monday:**
+   - Sydney sends 5 texts to Allison each day.
+   - Sydney sends 5 texts to Brittney each day.
+   - Total texts to Allison on Monday: \( 5 \) texts.
+   - Total texts to Brittney on Monday: \( 5 \) texts.
+   - Total texts to Allison and Brittney on Monday: \( 5 + 5 = 10 \) texts.
+
+2. **Calculate texts sent on Tuesday:**
+   - Sydney sends 15 texts to Allison each day.
+   - Sydney sends 15 texts to Brittney each day.
+   - Total texts to Allison on Tuesday: \( 15 \) texts.
+   - Total texts to Brittney on Tuesday: \( 15 \) texts.
+   - Total texts to Allison and Brittney on Tuesday: \( 15 + 15 = 30 \) texts.
+
+3. **Calculate total texts sent over both days:**
+   - Total texts to Allison: \( 10 \) (Monday) + \( 15 \) (Tuesday) = \( 25 \) texts.
+   - Total texts to Brittney: \( 5 \) (Monday) + \( 15 \) (Tuesday) = \( 20 \) texts.
+   - Total texts sent to both Allison and Brittney: \( 25 + 20 = 45 \) texts.
+
+Therefore, the total number of texts Sydney sent to Allison and Brittney on both days is:
+#### 45

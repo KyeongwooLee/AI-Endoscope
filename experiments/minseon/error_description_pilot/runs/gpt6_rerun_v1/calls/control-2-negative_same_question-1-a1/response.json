@@ -1,0 +1,1 @@
+{"case1_error":"Uses addition instead of subtraction to represent pencils sold.","case2_error":"Correctly writes 80 - 16 but evaluates it as 40 instead of 64.","reason":"Case 1 uses an erroneous relation; case 2 makes a numerical evaluation error in a correct expression.","judgment":"different"}

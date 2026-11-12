@@ -1,0 +1,1 @@
+{"measured_at": "2026-11-07", "command": "run.py --stage embed (first run, empty cache)", "device": "NVIDIA GeForce RTX 3090", "wall_seconds_including_model_load": 18.7, "peak_process_rss_gb": 3.32, "peak_gpu_allocated_gb": 2.36, "texts_encoded": 500, "max_token_count": 669, "note": "Measured by wrapping run.py with resource.getrusage and torch.cuda.max_memory_allocated."}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-922-2",
+  "response_sha256": "88a6e82541687640e04df780e73c5da619471102d29a218a6a24270fbea422d2",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "New company earnings = Old company earnings + 5 months * $5000/month = $180,000 + $25,000 = $205,000",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "she's now earning 20% more in the new company",
+  "observed_error": "The response uses the old monthly salary for the entire new-company tenure.",
+  "violated_condition": "New-company earnings must use 41 months at 120% of the old $5000 monthly salary.",
+  "error_description": "The response calculates new-company earnings by adding five months at $5000 per month to the old-company earnings, effectively paying all 41 months at the old rate. This omits the stated 20% salary increase throughout the new-company tenure. The displayed arithmetic is correct, but the earnings relation is wrong.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

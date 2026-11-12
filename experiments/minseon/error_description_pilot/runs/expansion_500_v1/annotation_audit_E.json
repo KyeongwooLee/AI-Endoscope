@@ -1,0 +1,122 @@
+[
+  {
+    "source_id": "train-2136-4",
+    "rating": "correct",
+    "reason_ko": "첫50회 이동이라는 잘못된 양과 시간단위 불일치를 지적한다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1081-4",
+    "rating": "incorrect",
+    "reason_ko": "참조의 역수 오류를 그대로 따라 맞는0.5리터/마리를 틀렸다고 했다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-6861-3",
+    "rating": "overconfident_ambiguous",
+    "reason_ko": "함께게임1개를 살 수 있는 문구를 배제하고 참조의2개 가정을 확정했다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1827-4",
+    "rating": "partially_correct",
+    "reason_ko": "하루와 주간 양 혼동을 짚지만 가장 먼저 나온 아이들8개에서도 같은 실수가 있다는 점을 놓쳤다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-344-4",
+    "rating": "partially_correct",
+    "reason_ko": "0.4y=20이 잘못된 것은 맞지만 두 번째 절반 손실을 누락했다는 구체적 이유가 빠지고 참조 정답에 의존한다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-7430-4",
+    "rating": "appropriate_abstention",
+    "reason_ko": "뒤의 풀이와 최종120은 맞으므로 수학 오류 없음이 타당하다. 첫20 표기 충돌은 별도이다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-5364-3",
+    "rating": "correct",
+    "reason_ko": "세금3000이 세전5000의20%가 아니라는 점을 짚는다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-7421-3",
+    "rating": "appropriate_abstention",
+    "reason_ko": "본문계산160은 맞다. 서두200은 답 표기 충돌이다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1061-4",
+    "rating": "correct",
+    "reason_ko": "개인별 비용에 다시 케이크당 비용을 곱하는 관계 오류를 짚는다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-4085-1",
+    "rating": "partially_correct",
+    "reason_ko": "실제는80-16의 산술 실행 오류다.20%감소를 잘못 적용했다는 표현은 관계 설정과 실행을 구분하지 못한다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1338-4",
+    "rating": "correct",
+    "reason_ko": "대형등계산에 소형등수22를 넣은 오류를 짚는다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-4465-3",
+    "rating": "correct",
+    "reason_ko": "앞마당의4개 누락을 짚는다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1833-0",
+    "rating": "partially_correct",
+    "reason_ko": "나눗셈 대신곱셈은 맞게 지적했다. 단 제시한 곱의 실제 단위는면적제곱/갤런이며 sq.ft./gallon이라는 설명은 부정확하다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1627-4",
+    "rating": "correct",
+    "reason_ko": "둘째호스140 자체는 맞지만 첫째호스의계속공급을누락한 핵심을설명한다. 문장 첫머리는 혼동 여지가 있다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1262-0",
+    "rating": "partially_correct",
+    "reason_ko": "3으로 나눈 오류는 맞지만 그뒤3을곱했다고 읽히는서술은 실제풀이에 없다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-3647-3",
+    "rating": "correct",
+    "reason_ko": "적용한 할인액을 다시 더한 오류를 짚는다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1297-4",
+    "rating": "appropriate_abstention",
+    "reason_ko": "뒤의32명/8명 계산은맞고 첫16 표기만충돌한다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-4704-2",
+    "rating": "correct",
+    "reason_ko": "기준을 첫나라에서 직전나라로바꾼 오류를명확히짚는다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1686-3",
+    "rating": "partially_correct",
+    "reason_ko": "올바른절차와500의모순은맞다. 원문에계산한50*4=500은없으므로 산술실행단정은과도하다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-5239-1",
+    "rating": "correct",
+    "reason_ko": "봉지수를땅콩수로쓴수량오류를짚는다.",
+    "reviewer": "Codex AI spot-check, not human"
+  }
+]

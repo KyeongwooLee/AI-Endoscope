@@ -1,0 +1,1 @@
+{"status":"answer_conflict","independent_answer":"120 available spaces","check":"The total capacity is 50 × 4 = 200 people, leaving 200 − 80 = 120 spaces. The worked solution is correct, but its leading answer marker conflicts with it.","evidence_quote":"#### 20","error_description":"The leading marker states 20, while the correct derivation and worked final answer state 120."}

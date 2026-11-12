@@ -1,0 +1,20 @@
+{
+  "source_id": "train-2364-1",
+  "response_sha256": "c5f84ca7c96aca4b5df66b1f5e870ce37c7b1aea57bb4617cbf7204dce56a188",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "The total score of all 25 students should be 75% or more.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "if the average score on their quiz is higher than 75%",
+  "observed_error": "The response applies the average threshold to the total score and permits equality.",
+  "violated_condition": "The total of the 25 percentage scores must exceed 25 × 75%, because the class average must strictly exceed 75%.",
+  "error_description": "The response treats 75% as the required total score for all 25 students and allows equality. The question instead requires their average to be strictly higher than 75%, so the total must exceed 25 × 75%. Its subsequent inequality preserves both incorrect conditions.",
+  "reference_review_reason": "The reference gives 27%, which produces an average of exactly 75% and fails the strict threshold. A lowest qualifying grade requires a specified grade increment.",
+  "secondary_errors": [
+    "The response evaluates 77% × 24 as 184.8%; the written product equals 1848%.",
+    "The final answer 109.8 drops the negative sign from the preceding bound without justification."
+  ],
+  "uncertainty_note": "The question does not specify whether grades must be whole percentages; with continuous grades, the strict threshold has no attained minimum."
+}

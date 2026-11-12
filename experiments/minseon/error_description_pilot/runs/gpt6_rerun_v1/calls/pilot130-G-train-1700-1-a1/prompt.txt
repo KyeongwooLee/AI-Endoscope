@@ -1,0 +1,71 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-1700-1
+response_sha256: 3b1682224a93a295d0dae974900d098027e6ca1dcc87fc6af02189cfa00cdf11
+
+=== QUESTION ===
+Mike wants to buy a new car. He has chosen a red car for $35000. To be able to pay this price, he needs to loan part of the money from the bank, at a rate of 15%. How much money in total will Mike need to pay for the car, if he has to take $20000 from the bank?
+=== MODEL SOLUTION ===
+Step 1: Calculate the amount Mike needs to pay to the bank.
+Mike needs to loan $20000 from the bank at a rate of 15%.
+
+Amount to be paid to the bank = $20000
+
+Step 2: Calculate the interest on the loan.
+Interest rate = 15%
+
+Interest = Amount to be paid to the bank * Interest rate
+Interest = $20000 * 0.15
+Interest = $3000
+
+Step 3: Calculate the total amount Mike needs to pay.
+Total amount = Amount to be paid to the bank + Interest
+Total amount = $20000 + $3000
+Total amount = $23000
+
+#### 23000
+Mike will need a total of $23000 to buy the car.
+=== REFERENCE SOLUTION (fallible aid) ===
+The rate of the loan is 15%, which means Mike needs to give the bank an additional 20000 * 15/100 = $<<20000*15/100=3000>>3000.
+So the car will cost him 35000 + 3000 = $<<35000+3000=38000>>38000.
+#### 38000
+=== END ===

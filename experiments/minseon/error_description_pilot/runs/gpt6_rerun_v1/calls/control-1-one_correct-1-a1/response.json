@@ -1,0 +1,1 @@
+{"case1_error":"No error: 28 green apples and 44 apples altogether are correct.","case2_error":"Treats the 12 additional green apples as the entire green-apple count, yielding 28 instead of 44.","reason":"Case 1 has no mathematical error, so the two cases cannot be classified as sharing or differing in error mechanisms.","judgment":"uncertain"}

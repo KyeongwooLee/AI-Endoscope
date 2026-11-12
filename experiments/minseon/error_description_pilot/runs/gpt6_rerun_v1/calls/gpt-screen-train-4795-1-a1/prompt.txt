@@ -1,0 +1,33 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: James does chores around the class.  There are 3 bedrooms, 1 living room, and 2 bathrooms to clean.  The bedrooms each take 20 minutes to clean.  The living room takes as long as the 3 bedrooms combined.  The bathroom takes twice as long as the living room.  He also cleans the outside which takes twice as long as cleaning the house.  He splits the chores with his 2 siblings who are just as fast as him.  How long, in hours, does he work?
+SOLUTION: Step 1: Calculate the time to clean all the bedrooms.
+3 bedrooms * 20 minutes per bedroom = 60 minutes
+
+Step 2: Calculate the time to clean the living room.
+Living room takes as long as the 3 bedrooms combined.
+60 minutes (bedrooms) * 3 = 180 minutes
+
+Step 3: Calculate the time to clean the bathrooms.
+Bathroom takes twice as long as the living room.
+180 minutes (living room) * 2 = 360 minutes
+
+Step 4: Calculate the total time to clean the house.
+60 minutes (bedrooms) + 180 minutes (living room) + 360 minutes (bathrooms) = 600 minutes
+
+Step 5: Calculate the time to clean the outside.
+Outside takes twice as long as cleaning the house.
+600 minutes (house) * 2 = 1200 minutes
+
+Step 6: Calculate the total time to clean everything.
+600 minutes (house) + 1200 minutes (outside) = 1800 minutes
+
+Step 7: Calculate the time per person.
+1800 minutes / 4 people = 450 minutes
+
+Step 8: Convert minutes to hours.
+450 minutes / 60 minutes per hour = 7.5 hours
+
+Answer:
+#### 7.5
+#### 7.5

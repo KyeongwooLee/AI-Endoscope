@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5158-0",
+  "response_sha256": "7a59b7c3ef6e656e78de19ab5f8b48e3436eb48e266d312474d8cc189eb3e999",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 2: Subtract the number of movies watched together from the total number of movies.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "They all watched 2 movies together, but every other movie they watched was different.",
+  "observed_error": "The response subtracts only 2 to remove duplicates from the sum of three individual movie counts.",
+  "violated_condition": "Each shared movie is counted three times in the sum and must be counted once, requiring removal of two extra counts per shared movie.",
+  "error_description": "The response subtracts the two shared movies only once from the combined individual counts. Each shared movie appears in all three people's totals, so two extra counts per shared movie must be removed. The subtraction is executed correctly, but the duplicate-removal relation is wrong.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

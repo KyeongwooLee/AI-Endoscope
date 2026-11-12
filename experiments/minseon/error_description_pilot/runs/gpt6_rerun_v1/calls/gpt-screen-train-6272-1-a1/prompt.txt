@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: There are 5 green candies, 3 blue candies, and 4 red candies in a bag. If Violet randomly picks a candy from the bag, how likely is it that it's blue?
+SOLUTION: Step 1: Determine the total number of candies in the bag.
+Total candies = Green candies + Blue candies + Red candies
+Total candies = 5 + 3 + 4
+
+Step 2: Calculate the probability of picking a blue candy.
+Probability of picking a blue candy = (Number of blue candies) / (Total number of candies)
+Probability of picking a blue candy = 3 / (5 + 3 + 4)
+
+Step 3: Simplify the fraction.
+Probability of picking a blue candy = 3 / 12
+
+Step 4: Simplify the fraction further.
+Probability of picking a blue candy = 1 / 4
+
+#### 1/4

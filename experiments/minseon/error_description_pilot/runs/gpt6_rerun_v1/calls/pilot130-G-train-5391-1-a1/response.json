@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5391-1",
+  "response_sha256": "ebec424093acf775c4eeba8d66ce188c09716bd78a7035186acbacd89d68f8b9",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "Therefore, the total number of marbles bet is 100 * 10 = 1000 marbles.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "After 9 games, Reggie has 90 marbles.",
+  "observed_error": "The response multiplies the friend's marble inventory by the per-game stake to calculate total wagers.",
+  "violated_condition": "Total wagers depend on the number of games and the stake per game, not the friend's starting inventory.",
+  "error_description": "The response calculates total wagers by multiplying the friend's 100 marbles by the 10-marble stake. The multiplier should represent games played, for which the question specifies nine, rather than a marble inventory. The multiplication itself is correct, but the relation used to define total wagers is invalid.",
+  "reference_review_reason": "The reference subtracts Reggie's final holdings from his friend's starting holdings without justification. Reggie's starting holdings are unspecified, so the number of losses is not uniquely determined.",
+  "secondary_errors": [],
+  "uncertainty_note": "The wording leaves the stake convention unclear, but neither interpretation justifies multiplying the friend's inventory by the stake."
+}

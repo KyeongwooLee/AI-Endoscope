@@ -1,0 +1,9 @@
+# Versions used for pilot_v1 (Python 3.10.12). torch must match your CUDA; CPU works too.
+# The environment was a venv created with --system-site-packages to reuse the system torch.
+numpy==1.23.5
+scipy==1.10.1
+scikit-learn==1.7.2
+torch==2.12.1
+transformers==4.57.1
+sentence-transformers==5.1.2
+huggingface-hub==0.36.0

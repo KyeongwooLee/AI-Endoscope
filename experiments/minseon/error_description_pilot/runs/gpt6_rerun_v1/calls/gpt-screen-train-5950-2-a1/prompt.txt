@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: During the Mardi Gras parade, Latch caught four less than three times as many necklaces as did Rhonda.  If Rhonda caught half as many necklaces as did Boudreaux, and Boudreaux caught twelve necklaces, how many necklaces did Latch catch?
+SOLUTION: #### 26
+
+Let's break down the problem step by step:
+
+1. **Boudreaux's Necklaces**: Boudreaux caught 12 necklaces.
+2. **Rhonda's Necklaces**: Rhonda caught half as many necklaces as Boudreaux. So:
+   \[
+   \text{Rhonda's necklaces} = \frac{1}{2} \times 12 = 6
+   \]
+3. **Latch's Necklaces**: Latch caught four less than three times as many necklaces as Rhonda. So:
+   \[
+   \text{Latch's necklaces} = 3 \times 6 - 4 = 18 - 4 = 14
+   \]
+
+Therefore, Latch caught 26 necklaces.

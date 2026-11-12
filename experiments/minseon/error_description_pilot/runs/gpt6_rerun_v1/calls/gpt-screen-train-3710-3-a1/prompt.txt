@@ -1,0 +1,16 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: 4 students participated in a 200m race. If the average completion time of the last three students was 35 seconds, and the average completion time of all four runners was 30 seconds, how long (in seconds) did it take the student who came first to finish the race?
+SOLUTION: #### 25
+To find the time it took the first student to finish the race, we start by using the information given:
+
+1. The average completion time of the last three students is 35 seconds. Since there are 3 students, the total time for these three students is:
+   3 * 35 = 105 seconds
+
+2. The average completion time of all four runners is 30 seconds. Therefore, the total time for all four students is:
+   4 * 30 = 120 seconds
+
+3. The total time for the last three students is 105 seconds. The time for the first student is the total time minus the time for the last three students:
+   120 - 105 = 15 seconds
+
+So, the time it took the student who came first to finish the race is 15 seconds.

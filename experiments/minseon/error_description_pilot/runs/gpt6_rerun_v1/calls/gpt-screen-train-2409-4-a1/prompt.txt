@@ -1,0 +1,27 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Vivian plays 10 Spotify songs every day. Her best friend Clara plays 2 fewer songs each day. If in June they didn't play any song during the weekends only, and there were 8 weekend days in June, what's the total number of songs they both listened to in that month?
+SOLUTION: Step 1: Calculate the number of songs Vivian plays in a week.
+Vivian plays 10 songs every day. There are 7 days in a week.
+
+Step 2: Calculate the number of songs Vivian plays in a month (June).
+June has 30 days. We need to calculate the number of songs she plays from Monday to Friday (4 weeks and 2 extra days).
+
+10 songs/day * 4 weeks = 40 songs
+10 songs/day * 2 extra days = 20 songs
+Total for the first 4 weeks = 40 songs + 20 songs = 60 songs
+
+Step 3: Calculate the number of songs Clara plays in a week.
+Clara plays 2 fewer songs than Vivian, so she plays 8 songs every day.
+
+Step 4: Calculate the number of songs Clara plays in a month (June).
+June has 30 days. We need to calculate the number of songs she plays from Monday to Friday (4 weeks and 2 extra days).
+
+8 songs/day * 4 weeks = 32 songs
+8 songs/day * 2 extra days = 16 songs
+Total for the first 4 weeks = 32 songs + 16 songs = 48 songs
+
+Step 5: Calculate the number of songs Vivian and Clara play together in a month (June).
+60 songs (Vivian) + 48 songs (Clara) = 108 songs
+
+#### 108

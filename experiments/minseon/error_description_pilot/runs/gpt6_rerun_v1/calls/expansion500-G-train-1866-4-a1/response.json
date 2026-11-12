@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1866-4",
+  "response_sha256": "91d8acf897fad623bd89f2693ee94570caee9b7fe4783ff689f4f6eef618e7eb",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total stitches: \\( 3000 + 540 + 1340 = 4880 \\) stitches.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Godzilla crushing 3 unicorns and 50 flowers",
+  "observed_error": "The total counts the three unicorns twice.",
+  "violated_condition": "Each requested design must contribute its stitches exactly once; the 1340-stitch subtotal already includes the unicorns' 540 stitches.",
+  "error_description": "The response adds 540 unicorn stitches separately to a 1340-stitch subtotal that already includes Godzilla and the same three unicorns. This counts six unicorns instead of the requested three. The addition is executed correctly, but the total-stitches relation duplicates 540 stitches.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

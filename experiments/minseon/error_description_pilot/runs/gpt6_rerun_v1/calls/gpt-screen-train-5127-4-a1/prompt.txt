@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: The Early Bird Dinner offered dinner meals at half off the menu price if you eat between 2-4 pm.  Curtis ordered the Salisbury Steak that costs $16.00 and Rob ordered the Chicken Fried Steak at $18.00.  If they ate at 3 pm, what was the cost of their total bill?
+SOLUTION: Step 1: Determine the discount Curtis and Rob are eligible for.
+Curtis and Rob are eligible for the half-off deal because they are eating between 2-4 pm.
+
+Step 2: Calculate the discount amount for each meal.
+Curtis' meal cost: $16.00
+Discount amount for Curtis: 50% of $16.00 = $16.00 * 0.50 = $8.00
+Rob's meal cost: $18.00
+Discount amount for Rob: 50% of $18.00 = $18.00 * 0.50 = $9.00
+
+Step 3: Calculate the total cost before discount.
+Total cost before discount: $16.00 + $18.00 = $34.00
+
+Step 4: Apply the discounts to the total cost.
+Total cost after discount: $34.00 - $8.00 (Curtis) - $9.00 (Rob) = $27.00
+
+#### 27.00

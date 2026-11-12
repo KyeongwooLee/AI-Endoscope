@@ -1,0 +1,12 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A machine fills 150 cans of paint every 8 minutes. How many minutes does it take this machine to fill 675 cans?
+SOLUTION: Step 1: Determine the rate at which the machine fills cans.
+The machine fills 150 cans in 8 minutes.
+
+Step 2: Calculate the time it takes to fill 675 cans using the rate.
+To find the time for 675 cans, we divide 675 by 150.
+
+\( \frac{675}{150} = 4.5 \) minutes
+
+#### 4.5

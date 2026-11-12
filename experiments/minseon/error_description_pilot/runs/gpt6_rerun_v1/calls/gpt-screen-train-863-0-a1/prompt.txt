@@ -1,0 +1,38 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: In a class of 25 students, students were asked if they like French fries, burgers, or neither. 15 students said they like French fries and 10 said they like burgers, with these statistics including the responses of 6 students who said they like both French fries and burgers. How many students do not like either food?
+SOLUTION: To find the number of students who do not like either French fries or burgers, we can use the principle of inclusion-exclusion.
+
+1. Let \( A \) be the set of students who like French fries.
+2. Let \( B \) be the set of students who like burgers.
+3. We know:
+   - \( |A| = 15 \) (students who like French fries)
+   - \( |B| = 10 \) (students who like burgers)
+   - \( |A \cap B| = 6 \) (students who like both French fries and burgers)
+
+Using the principle of inclusion-exclusion:
+\[ |A \cup B| = |A| + |B| - |A \cap B| \]
+\[ |A \cup B| = 15 + 10 - 6 = 29 \]
+
+This means 29 students like either French fries or burgers or both.
+
+Since there are 25 students in total:
+\[ \text{Number of students who do not like either food} = 25 - |A \cup B| \]
+\[ \text{Number of students who do not like either food} = 25 - 29 \]
+
+However, this calculation results in a negative number, which is not possible. This indicates an error in the problem setup or given data. Let's re-evaluate the problem:
+
+Given that 6 students like both, and 15 like French fries, and 10 like burgers, it's possible that some students are counted twice. Let's assume the correct setup is:
+- 15 students like French fries (including those who like both).
+- 10 students like burgers (including those who like both).
+- 6 students like both.
+
+Now, let's find the number of students who like either French fries or burgers:
+\[ |A \cup B| = 15 + 10 - 6 = 29 \]
+
+This still results in a positive number, so let's recheck the total number of students:
+\[ \text{Total students} = 25 \]
+
+Since 29 students like either French fries or burgers or both, and there are only 25 students, it's clear that the problem setup is incorrect. The correct number of students who do not like either food is:
+#### 0
+This indicates that all students like at least one of the foods.

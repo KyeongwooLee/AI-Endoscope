@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Barry and his friend, Jim, went horseback riding across central Texas. They traveled at 5 miles per hour for 7 hours, and then stopped for the evening.  The next day, they traveled at 6 miles per hour for 6 hours, and then at half that speed for another three hours, before stopping to rest for the night.  On the third and final day, they traveled for 5 hours at 7 miles per hour.  In total, how far did they travel, in miles, during their horseback riding trip?
+SOLUTION: Step 1: Calculate the distance traveled on the first day.
+Distance = Speed × Time
+Distance = 5 miles/hour × 7 hours
+Distance = 35 miles
+
+Step 2: Calculate the distance traveled on the second day.
+First part of the second day: 6 miles/hour × 6 hours
+Second part of the second day: 3 miles/hour × 3 hours
+Distance = 36 miles
+
+Step 3: Calculate the total distance traveled.
+Total distance = Distance on the first day + Distance on the second day
+Total distance = 35 miles + 36 miles
+Total distance = 71 miles
+
+#### 71

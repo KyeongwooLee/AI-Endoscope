@@ -1,0 +1,122 @@
+{
+  "checked": [
+    "error-taxonomy-full-v1-draft/labels.jsonl",
+    "minsu@d95116f:ab_labels.tsv",
+    "minsu@d95116f:loc_labels.tsv",
+    "local records (question text only): /home/coder/yaicon-errorprobe/runs/20261012_followup/records",
+    "local records (question text only): /home/coder/yaicon-errorprobe/runs/20261012_AB/records",
+    "local artifact: /home/coder/yaicon-errorprobe/runs/20261012_followup/manual_adjudications.json",
+    "local artifact: /home/coder/yaicon-errorprobe/runs/20261012_followup/manual_audit_sample.json",
+    "local artifact: /home/coder/yaicon-errorprobe/runs/20261012_followup/PILOT_EXAMPLES.md",
+    "local artifact: /home/coder/yaicon-errorprobe/runs/20261012_followup/ERROR_CASES.md",
+    "local artifact: /home/coder/yaicon-errorprobe/runs/20261012_AB/REPORT.md",
+    "local artifact: /home/coder/yaicon-errorprobe/runs/20261012_AB/EXAMPLES.md",
+    "local artifact: /home/coder/yaicon-errorprobe/runs/20261009T0542Z/REPORT_KO.md",
+    "local artifact: /home/coder/yaicon-errorprobe/results/20261010_meeting/YAICON_1010_ErrorProbe_회의자료.md"
+  ],
+  "not_checked": [
+    "Team-discussion explanation attempts not present as runnable artifacts in the inspected branches.",
+    "Dahyeon annotation work (branch tip equals main; not reconstructable).",
+    "Sunghun's qwen-extra-errors / posthoc-transfer releases (different responses; not used as corpus)."
+  ],
+  "error_taxonomy_full_v1_draft": {
+    "annotation_rows": 1100,
+    "datasets": {
+      "gsm8k": 896,
+      "svamp": 204
+    },
+    "overlap_questions": 201,
+    "overlap_primary_rows": 467,
+    "exact_normalized_question_and_unchanged_response_pairs": 1,
+    "stored_response_sha256_disagreements": 0,
+    "match_rule": "NFC + whitespace-collapsed question SHA256; exact response UTF-8 SHA256",
+    "note": "AI drafts, human-unreviewed; legacy explanations are never passed to annotators."
+  },
+  "minsu_ai_review": {
+    "ab_labels.tsv": {
+      "rows": 814,
+      "matched_primary_ids": 814,
+      "unmatched_ids": 0,
+      "unmatched_examples": [],
+      "questions": 814
+    },
+    "loc_labels.tsv": {
+      "rows": 513,
+      "matched_primary_ids": 513,
+      "unmatched_ids": 0,
+      "unmatched_examples": [],
+      "questions": 513
+    }
+  },
+  "local_generation_records": {
+    "train_records": 1760,
+    "questions_overlapping_primary": 846,
+    "note": "Different Qwen generations used for A/B detection/repair; not error annotations. Informational only."
+  },
+  "local_reviewed_artifacts": {
+    "/home/coder/yaicon-errorprobe/runs/20261012_followup/manual_adjudications.json": {
+      "train_ids_found": 26,
+      "matched_primary_questions": 17,
+      "pid_index_consistent": true,
+      "unverified_ids_without_question_text": []
+    },
+    "/home/coder/yaicon-errorprobe/runs/20261012_followup/manual_audit_sample.json": {
+      "train_ids_found": 26,
+      "matched_primary_questions": 17,
+      "pid_index_consistent": true,
+      "unverified_ids_without_question_text": []
+    },
+    "/home/coder/yaicon-errorprobe/runs/20261012_followup/PILOT_EXAMPLES.md": {
+      "train_ids_found": 7,
+      "matched_primary_questions": 4,
+      "pid_index_consistent": true,
+      "unverified_ids_without_question_text": []
+    },
+    "/home/coder/yaicon-errorprobe/runs/20261012_followup/ERROR_CASES.md": {
+      "train_ids_found": 0,
+      "matched_primary_questions": 0,
+      "pid_index_consistent": true,
+      "unverified_ids_without_question_text": []
+    },
+    "/home/coder/yaicon-errorprobe/runs/20261012_AB/REPORT.md": {
+      "train_ids_found": 1,
+      "matched_primary_questions": 0,
+      "pid_index_consistent": true,
+      "unverified_ids_without_question_text": []
+    },
+    "/home/coder/yaicon-errorprobe/runs/20261012_AB/EXAMPLES.md": {
+      "train_ids_found": 0,
+      "matched_primary_questions": 0,
+      "pid_index_consistent": true,
+      "unverified_ids_without_question_text": []
+    },
+    "/home/coder/yaicon-errorprobe/runs/20261009T0542Z/REPORT_KO.md": {
+      "train_ids_found": 4,
+      "matched_primary_questions": 0,
+      "pid_index_consistent": true,
+      "unverified_ids_without_question_text": [
+        "1025",
+        "2155",
+        "2812",
+        "6378"
+      ]
+    },
+    "/home/coder/yaicon-errorprobe/results/20261010_meeting/YAICON_1010_ErrorProbe_회의자료.md": {
+      "train_ids_found": 2,
+      "matched_primary_questions": 0,
+      "pid_index_consistent": true,
+      "unverified_ids_without_question_text": [
+        "1025",
+        "2155"
+      ]
+    }
+  },
+  "excluded_question_groups_total": 1306,
+  "excluded_question_groups_by_reason": {
+    "prior_ai_review_question:minsu": 1327,
+    "prior_annotation_question:error-taxonomy-full-v1-draft": 201,
+    "local_reviewed_example_question:manual_adjudications.json": 17,
+    "local_reviewed_example_question:manual_audit_sample.json": 17,
+    "local_reviewed_example_question:PILOT_EXAMPLES.md": 4
+  }
+}

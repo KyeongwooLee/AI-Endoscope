@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$198","check":"Total budgeted spending is $400 + $1500 + $30 + $50 = $1980. Savings are 10% × $1980 = $198.","evidence_quote":"$1500 + $30 + $50 = $1580","error_description":"The solution omits the $400 food budget from total monthly spending, so it calculates savings from an incomplete total."}

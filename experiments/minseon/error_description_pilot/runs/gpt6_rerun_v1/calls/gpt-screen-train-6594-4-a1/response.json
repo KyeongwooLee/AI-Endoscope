@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"19 more paper plates.","check":"Max has 22 + 24 = 46 plates, so he needs 65 - 46 = 19 more. The solution gives the correct formula but reports 29.","evidence_quote":"#### 29","error_description":"The final number 29 does not match the value 19 of the stated expression 65 - (22 + 24)."}

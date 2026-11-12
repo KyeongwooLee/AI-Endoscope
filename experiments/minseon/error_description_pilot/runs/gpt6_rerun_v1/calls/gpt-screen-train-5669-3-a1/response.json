@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$600 profit","check":"Food cost is $20 × 40 = $800; total cost is $600 + $800 + $500 = $1900. Profit is $2500 − $1900 = $600.","evidence_quote":"Total cost = Food cost + Vaccine and deworming cost","error_description":"The solution omits the $600 purchase price from total cost, overstating profit by $600."}

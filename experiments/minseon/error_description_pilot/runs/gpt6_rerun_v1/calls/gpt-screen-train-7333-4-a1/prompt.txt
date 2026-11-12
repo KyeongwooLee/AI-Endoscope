@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John buys a lightsaber toy.  It is twice as expensive as all his other Star Wars toys combined.  If his other Star Wars toys cost $1000, how much money has he spent in all after buying the lightsaber?
+SOLUTION: To find out how much money John has spent in all, we need to follow these steps:
+
+1. Determine the cost of the lightsaber toy.
+2. Calculate the total cost of all Star Wars toys, including the lightsaber.
+3. Add the cost of the lightsaber to the total cost of all other toys.
+
+Step 1: Determine the cost of the lightsaber toy.
+The lightsaber toy is twice as expensive as all his other Star Wars toys combined. His other Star Wars toys cost $1000, so the lightsaber is:
+2 * $1000 = $2000
+
+Step 2: Calculate the total cost of all Star Wars toys, including the lightsaber.
+The total cost of all Star Wars toys, including the lightsaber, is the sum of the cost of the other toys and the cost of the lightsaber:
+$1000 + $2000 = $3000
+
+Step 3: Add the cost of the lightsaber to the total cost of all other toys.
+The total amount of money John has spent in all after buying the lightsaber is:
+$3000 + $2000 = $5000
+
+#### 5000

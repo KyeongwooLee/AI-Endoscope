@@ -1,0 +1,12 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Susan loves chairs. In her house there are red chairs, yellow chairs, and blue chairs. There are 5 red chairs. There are 4 times as many yellow chairs as red chairs, and there are 2 fewer blue chairs than yellow chairs. How many chairs are there in Susan's house?
+SOLUTION: #### 41
+Step 1: Susan has 5 red chairs.
+Step 2: There are 4 times as many yellow chairs as red chairs.
+   4 * 5 = 20 yellow chairs
+Step 3: There are 2 fewer blue chairs than yellow chairs.
+   20 - 2 = 18 blue chairs
+Step 4: To find the total number of chairs, add the number of each color:
+   5 (red) + 20 (yellow) + 18 (blue) = 41 chairs
+#### 41

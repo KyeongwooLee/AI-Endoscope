@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"20 apples remain.","check":"The daily picks are 200/5 = 40, 2 × 40 = 80, and 40 + 20 = 60 apples. Thus 200 − (40 + 80 + 60) = 20 apples remain.","evidence_quote":"#### 140","error_description":"The final answer of 140 is incorrect. The solution lists a valid procedure but supplies no worked calculations supporting that number."}

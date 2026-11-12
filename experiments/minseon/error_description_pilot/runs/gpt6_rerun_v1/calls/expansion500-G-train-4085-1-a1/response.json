@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4085-1",
+  "response_sha256": "126f49641e9787d352173e4b754bc9b927c1b685f1cd90e1552793b3e63dacb0",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "80 - 16 = 40 ants",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "in each next anthill, there are 20% fewer ants than in the previous one.",
+  "observed_error": "The response incorrectly evaluates 80 minus 16 as 40.",
+  "violated_condition": "The third anthill's count must equal 80 minus 20% of 80.",
+  "error_description": "The response correctly finds 80 ants in the second anthill and a reduction of 16 ants for the third, but incorrectly evaluates the written subtraction 80 − 16 as 40. The percentage relation is correct; the subtraction is executed incorrectly.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

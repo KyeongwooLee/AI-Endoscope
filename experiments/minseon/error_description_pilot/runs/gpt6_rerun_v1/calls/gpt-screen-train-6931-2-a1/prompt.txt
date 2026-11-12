@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Max can mow the lawn in 40 minutes. If it takes him twice that long to fertilize the lawn, how long will it take him to both mow and fertilize the lawn?
+SOLUTION: Step 1: Determine the time it takes Max to fertilize the lawn.
+Max takes 40 minutes to mow the lawn. It takes him twice as long to fertilize the lawn.
+Time to fertilize = 2 × Time to mow
+Time to fertilize = 2 × 40 minutes
+Time to fertilize = 80 minutes
+
+Step 2: Calculate the total time to mow and fertilize the lawn.
+Total time = Time to mow + Time to fertilize
+Total time = 40 minutes + 80 minutes
+Total time = 120 minutes
+
+Step 3: Convert the total time to hours.
+1 hour = 60 minutes
+Total time in hours = Total time / 60
+Total time in hours = 120 minutes / 60
+Total time in hours = 2 hours
+
+#### 2
+Max will take 2 hours to both mow and fertilize the lawn.

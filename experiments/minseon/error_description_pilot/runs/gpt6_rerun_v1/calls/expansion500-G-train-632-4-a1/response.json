@@ -1,0 +1,17 @@
+{
+  "source_id": "train-632-4",
+  "response_sha256": "672a1e5e30ada3ef38df5eb348108456c3f7b61453b72e74a5e000d2f9b33e92",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 5: Write the final answer.\n#### 1020\n\nYeon has 1020 seeds.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how many seeds do they have together?",
+  "observed_error": "The final answer gives Yeon's seed count instead of the combined count for all three people.",
+  "violated_condition": "The requested total must include Bom's 300 seeds, Gwi's 340 seeds, and Yeon's seed count.",
+  "error_description": "The response correctly calculates Gwi's count and identifies Yeon's count, but reports Yeon's 1020 seeds as the final answer. The question asks for all three people's seeds together, so Bom's 300 seeds and Gwi's 340 seeds must also be included.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

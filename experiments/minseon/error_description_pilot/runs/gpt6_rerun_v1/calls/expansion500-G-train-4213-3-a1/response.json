@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4213-3",
+  "response_sha256": "4cdba878c20624d006f4bb105f4a099492582b012b455850694bd7048163628b",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Since the total area is 135 square feet and the flag is 15 feet long, the number of square feet per foot of height is 135 / 15 = 9 square feet per foot",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If he wants his flag to be 15 feet long, how tall will it be?",
+  "observed_error": "The response labels area divided by length as area per foot of height, then divides the area by that quotient again.",
+  "violated_condition": "For a rectangular flag, area equals length times height; area divided by the given length yields height.",
+  "error_description": "The response correctly computes 135 / 15 but misidentifies this quotient as square feet per foot of height. Dividing area by the specified 15-foot length already yields the height in feet. Its subsequent division of 135 by that quotient therefore returns the length rather than the requested height.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

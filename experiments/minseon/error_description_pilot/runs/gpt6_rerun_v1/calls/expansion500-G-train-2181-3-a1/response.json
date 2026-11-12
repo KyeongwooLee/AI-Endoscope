@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2181-3",
+  "response_sha256": "fe74f8efb2badaf329fe4d23a16a048c3f3cb8661abc30fe07992cb8b8317c13",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "John's share = Total rental fee * 40% = $2000 * 0.40 = $800",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "His friend who was there when it broke agreed to pay 40% of the rental fee.",
+  "observed_error": "The response assigns the friend's 40% contribution to John.",
+  "violated_condition": "John pays the remaining 60% after his friend pays 40% of the rental fee.",
+  "error_description": "The response calculates John's share as 40% of the $2000 rental fee, although the question assigns that percentage to his friend. John owes the remaining 60%. The multiplication $2000 × 0.40 = $800 is correct, but it calculates the friend's contribution rather than John's payment.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

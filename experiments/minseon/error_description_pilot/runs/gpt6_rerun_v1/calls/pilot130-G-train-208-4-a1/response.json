@@ -1,0 +1,17 @@
+{
+  "source_id": "train-208-4",
+  "response_sha256": "86990fa63e82b36462d5acdeb88609b3429786adc03ec611e5f5659a4222ebc7",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "- Subtract the $400 spent from the remaining savings after step 3.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He had to spend $400 from his piggy bank savings last week to repair his car.",
+  "observed_error": "Step 4 instructs subtracting the same $400 expense again after step 3 already subtracts it.",
+  "violated_condition": "The remaining balance equals 25 × 12 × 2 dollars minus the single $400 expense.",
+  "error_description": "Step 4 subtracts the $400 car repair expense from the remaining savings after step 3 has already deducted that expense from total savings. The question specifies only one $400 withdrawal, so this instruction counts the same expense twice.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The reported 1100 does not follow the written operations; no displayed arithmetic establishes how it was obtained."
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-344-4",
+  "response_sha256": "8677f0dc99d914ba35c535ebcae3d82bec8a002275568c4b4b86dd34aa4bc41a",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "After losing 60%, he retains 40%, so \\( 0.4y = 20 \\).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Of the remaining ones, he loses half down a sewer. If he has 20 left",
+  "observed_error": "The response equates the marbles remaining after the street loss with the final 20 marbles.",
+  "violated_condition": "The final 20 equals half of the 40% remaining after the street loss: 0.5 × 0.4y = 20.",
+  "error_description": "The response sets 0.4y equal to the final 20 marbles, although 0.4y represents the amount before the sewer loss. The question says half of that remainder is subsequently lost, so the final amount must include both successive reductions. The division by 0.4 correctly executes the incorrectly stated equation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

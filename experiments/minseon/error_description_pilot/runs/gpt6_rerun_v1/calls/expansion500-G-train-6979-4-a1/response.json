@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6979-4",
+  "response_sha256": "a4d0f1a8be2ec5846696acd40e3630fe52bc61c3e9c9148fcf94ba47fa91a2e6",
+  "status": "ambiguous",
+  "reference_review_needed": true,
+  "evidence_quote": "The yellow bus driver can see the entire length of the red bus if they are sitting next to the red bus.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If the yellow bus and red bus are sitting next to each other, what length of the red bus may the yellow bus driver see if the red bus is 48 feet long?",
+  "observed_error": "The response assumes the entire red bus is visible; the preceding length calculations are correct.",
+  "violated_condition": null,
+  "error_description": null,
+  "reference_review_reason": "The reference treats visible length as the difference between bus lengths, but the question does not specify alignment, obstruction, or viewing direction that establishes this relation.",
+  "secondary_errors": [],
+  "uncertainty_note": "Being next to each other does not uniquely determine the visible length. Neither the response's visibility assumption nor the reference's subtraction is compelled by the supplied conditions."
+}

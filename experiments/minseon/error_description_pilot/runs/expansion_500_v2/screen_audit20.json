@@ -1,0 +1,309 @@
+{
+  "n": 20,
+  "exact_status_agreement_n": 8,
+  "math_error_presence_agreement_n": 9,
+  "binary_comparable_n": 19,
+  "rows": [
+    {
+      "source_id": "train-2136-4",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "math_error",
+      "exact_status_agreement": true,
+      "math_error_presence_agreement": true,
+      "prior_diagnosis_ko": "50시간 요건을50일/하루50회 이동처럼 사용했다. 하루2회 왕복의40분을 분모로 써야 한다.",
+      "new_screen": {
+        "status": "math_error",
+        "independent_answer": "25 days",
+        "check": "Daily driving time is 40 minutes (20 minutes each way), so 50 hours = 3000 minutes; 3000 ÷ 40 = 75 days — but correct daily time is 40 minutes, so 3000 ÷ 40 = 75, not 5",
+        "evidence_quote": "Number of school days = 50 hours ÷ 1000 minutes/day = 50 ÷ 10 = 5 days",
+        "error_description": "The solution incorrectly calculates daily driving time as 20 minutes (instead of 40 minutes for round trip), and then erroneously divides 50 hours by 1000 minutes to get 5 days. The correct daily driving time is 40 minutes (20 minutes to and from school), which equals 40/60 = 2/3 hours per day. 50 hours ÷ (2/3) hours/day = 75 days. The step where 50 ÷ 10 = 5 is mathematically invalid due to incorrect unit conversion and arithmetic."
+      }
+    },
+    {
+      "source_id": "train-1081-4",
+      "expected_AI_audit_status": "no_math_error",
+      "actual_status": "no_math_error",
+      "exact_status_agreement": true,
+      "math_error_presence_agreement": true,
+      "prior_diagnosis_ko": "Qwen풀이1060은 맞다. 참조가500/1000을1000/500으로 뒤집고800마리를700으로 바꿔 잘못 계산했다.",
+      "new_screen": {
+        "status": "no_math_error",
+        "independent_answer": "1060 liters",
+        "check": "800 bees × 0.70 liters/bee = 560 liters; 500 + 560 = 1060 liters",
+        "evidence_quote": "800 bees × 0.70 liters per bee = 560 liters",
+        "error_description": ""
+      }
+    },
+    {
+      "source_id": "train-6861-3",
+      "expected_AI_audit_status": "ambiguous",
+      "actual_status": "no_math_error",
+      "exact_status_agreement": false,
+      "math_error_presence_agreement": null,
+      "prior_diagnosis_ko": "둘이 게임 하나를 함께 살지 각각 하나씩 살지 문구가 모호하다. 참조는2개를 가정하지만 응답의1개 해석을 확실한 오류로 단정하기 어렵다.",
+      "new_screen": {
+        "status": "no_math_error",
+        "independent_answer": "12",
+        "check": "60 divided by 5 equals 12",
+        "evidence_quote": "\\frac{60}{5} = 12",
+        "error_description": ""
+      }
+    },
+    {
+      "source_id": "train-1827-4",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "no_math_error",
+      "exact_status_agreement": false,
+      "math_error_presence_agreement": false,
+      "prior_diagnosis_ko": "하루 아이들8개를 주간8개로 취급하고5일 배수를 누락했다.",
+      "new_screen": {
+        "status": "no_math_error",
+        "independent_answer": "676",
+        "check": "4 children × 2 eggs × 5 days = 40 eggs; husband 3 × 5 = 15; herself 2 × 5 = 10; weekly total 65; 65 × 52 = 676",
+        "evidence_quote": "Total weekly eggs = 8 eggs/week + 3 eggs/week + 2 eggs/week = 13 eggs/week.",
+        "error_description": ""
+      }
+    },
+    {
+      "source_id": "train-344-4",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "no_math_error",
+      "exact_status_agreement": false,
+      "math_error_presence_agreement": false,
+      "prior_diagnosis_ko": "최종20개를 첫60%손실 직후의 수로 넣어 두 번째 절반 손실을 되돌리지 않았다.",
+      "new_screen": {
+        "status": "no_math_error",
+        "independent_answer": "50",
+        "check": "0.4 × 50 = 20, which matches the final count after both losses",
+        "evidence_quote": "0.4y = 20",
+        "error_description": ""
+      }
+    },
+    {
+      "source_id": "train-7430-4",
+      "expected_AI_audit_status": "answer_conflict",
+      "actual_status": "answer_conflict",
+      "exact_status_agreement": true,
+      "math_error_presence_agreement": true,
+      "prior_diagnosis_ko": "서두####20은 잘못됐지만 뒤의 계산과 최종 서술120은 맞다. 표기/답 추출 충돌이며 본문 수학 오류는 없다.",
+      "new_screen": {
+        "status": "answer_conflict",
+        "independent_answer": "120",
+        "check": "50 times 4 is 200; 200 minus 80 is 120",
+        "evidence_quote": "#### 20",
+        "error_description": "The solution correctly computes the available spaces as 120, but prematurely marks '#### 20' which contradicts the correct final answer."
+      }
+    },
+    {
+      "source_id": "train-5364-3",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "no_math_error",
+      "exact_status_agreement": false,
+      "math_error_presence_agreement": false,
+      "prior_diagnosis_ko": "세금3000을 근거 없이 사용했다. 통상적인 세전이익5000에20%를 적용하면1000이다. 원문만으로3000의 계산 원인은 특정할 수 없다.",
+      "new_screen": {
+        "status": "no_math_error",
+        "independent_answer": "2000",
+        "check": "Revenue: 8 × 5000 = 40,000; Cost: 3 × 5000 = 15,000; Expenses: 10,000 + 10,000 + 3,000 = 23,000; Profit: 40,000 - 15,000 - 23,000 = 2,000",
+        "evidence_quote": "Profit = $40,000 - $15,000 - $23,000 = $2,000",
+        "error_description": ""
+      }
+    },
+    {
+      "source_id": "train-7421-3",
+      "expected_AI_audit_status": "answer_conflict",
+      "actual_status": "no_math_error",
+      "exact_status_agreement": false,
+      "math_error_presence_agreement": true,
+      "prior_diagnosis_ko": "서두####200과 달리 본문800,1600,160의 계산은 모두 맞다. 표기 충돌이다.",
+      "new_screen": {
+        "status": "no_math_error",
+        "independent_answer": "160",
+        "check": "2400 / 3 = 800; 2400 - 800 = 1600; 1600 / 10 = 160",
+        "evidence_quote": "The next ten winners each receive 1600 / 10 = 160 dollars.",
+        "error_description": ""
+      }
+    },
+    {
+      "source_id": "train-1061-4",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "math_error",
+      "exact_status_agreement": true,
+      "math_error_presence_agreement": true,
+      "prior_diagnosis_ko": "맞는(3*12)/2 뒤에 개인별 비용에 다시 케이크당 비용을 곱하는 근거 없는 관계를 추가했다.18과9의 답 표기도 충돌한다.",
+      "new_screen": {
+        "status": "math_error",
+        "independent_answer": "9",
+        "check": "3 × 12 = 36; 36 / 2 = 18",
+        "evidence_quote": "Amount John Smith paid = Total cost per person × Amount John Smith paid per cake",
+        "error_description": "The solution incorrectly introduces 'Amount John Smith paid per cake' as a multiplier, which is undefined and not based on any given value. The correct amount John Smith paid is half of the total cost, which is $18, not $9. The final answer of 9 is inconsistent with the correct calculation and stems from a misapplied formula."
+      }
+    },
+    {
+      "source_id": "train-4085-1",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "no_math_error",
+      "exact_status_agreement": false,
+      "math_error_presence_agreement": false,
+      "prior_diagnosis_ko": "올바른80-16을40으로 계산했다.64가 맞다.",
+      "new_screen": {
+        "status": "no_math_error",
+        "independent_answer": "40",
+        "check": "100 - 20 = 80; 80 - 16 = 40",
+        "evidence_quote": "Third anthill: 80 - (20% of 80) = 80 - 16 = 40 ants",
+        "error_description": ""
+      }
+    },
+    {
+      "source_id": "train-1338-4",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "math_error",
+      "exact_status_agreement": true,
+      "math_error_presence_agreement": true,
+      "prior_diagnosis_ko": "대형등24개 대신 소형등22개를 대형등 전구 계산에 사용했다.",
+      "new_screen": {
+        "status": "math_error",
+        "independent_answer": "112",
+        "check": "L = 2M = 2*12 = 24, not 22; S = M + 10 = 22, correct; bulb count: 22*1 + 12*2 + 24*3 = 22 + 24 + 72 = 118",
+        "evidence_quote": "L = 2M (twice as many large ceiling lights as medium lights)",
+        "error_description": "The number of large ceiling lights is incorrectly calculated as 22 instead of 24. The solution uses S = 12 + 10 = 22 for small lights, which is correct, but then incorrectly assigns 22 to L, violating the given relationship L = 2M. This leads to a wrong large light count and thus an incorrect total bulb count."
+      }
+    },
+    {
+      "source_id": "train-4465-3",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "no_math_error",
+      "exact_status_agreement": false,
+      "math_error_presence_agreement": false,
+      "prior_diagnosis_ko": "다른 나무의3개와 앞마당의4개를 구분하지 않고4개짜리 둥지의 알을 누락했다.",
+      "new_screen": {
+        "status": "no_math_error",
+        "independent_answer": "13",
+        "check": "2 * 5 = 10; 1 * 3 = 3; 10 + 3 = 13",
+        "evidence_quote": "10 eggs (tree) + 3 eggs (front yard) = 13 eggs",
+        "error_description": ""
+      }
+    },
+    {
+      "source_id": "train-1833-0",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "math_error",
+      "exact_status_agreement": true,
+      "math_error_presence_agreement": true,
+      "prior_diagnosis_ko": "필요 도장면적1200을 갤런당 면적400으로 나누지 않고 곱했다.",
+      "new_screen": {
+        "status": "math_error",
+        "independent_answer": "1.5 gallons",
+        "check": "Coverage per gallon is 400 sq. ft., total area is 1200 sq. ft., so 1200 / 400 = 3 gallons, not 1200",
+        "evidence_quote": "Total paint needed = 1200 sq. ft. * 400 sq. ft./gallon",
+        "error_description": "The solution incorrectly multiplies 1200 by 400 instead of dividing. The correct calculation is 1200 sq. ft. ÷ 400 sq. ft./gallon = 3 gallons."
+      }
+    },
+    {
+      "source_id": "train-1627-4",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "no_math_error",
+      "exact_status_agreement": false,
+      "math_error_presence_agreement": false,
+      "prior_diagnosis_ko": "두 번째 호스를 추가한 후에도 계속 흐르는 첫 번째 호스의2시간 공급량을 누락했다.",
+      "new_screen": {
+        "status": "no_math_error",
+        "independent_answer": "290",
+        "check": "50 gallons/hour × 3 hours = 150 gallons; 70 gallons/hour × 2 hours = 140 gallons; 150 + 140 = 290",
+        "evidence_quote": "P = 150 gallons + 140 gallons = 290 gallons",
+        "error_description": ""
+      }
+    },
+    {
+      "source_id": "train-1262-0",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "no_math_error",
+      "exact_status_agreement": false,
+      "math_error_presence_agreement": false,
+      "prior_diagnosis_ko": "전체36파인트를 전체18병으로 나누고3병분을 취해야 하는데 마신3병으로 곧바로 나눴다.",
+      "new_screen": {
+        "status": "no_math_error",
+        "independent_answer": "12",
+        "check": "4.5 gallons × 8 pints/gallon = 36 pints; 36 pints ÷ 3 thermoses = 12 pints",
+        "evidence_quote": "4.5 × 8 = 36",
+        "error_description": ""
+      }
+    },
+    {
+      "source_id": "train-3647-3",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "answer_conflict",
+      "exact_status_agreement": false,
+      "math_error_presence_agreement": false,
+      "prior_diagnosis_ko": "할인을 적용해4달러를 구한 후 할인액1달러를 다시 더해 취소했다.",
+      "new_screen": {
+        "status": "answer_conflict",
+        "independent_answer": "4.00",
+        "check": "7.50 - 2.50 = 5.00; 5.00 * 0.20 = 1.00; 5.00 - 1.00 = 4.00",
+        "evidence_quote": "Add the final discount to the result from step 3.",
+        "error_description": "The solution correctly computes the discounted price after coupon and senior discount, arriving at $4.00, but then incorrectly adds back the $1.00 discount, resulting in $5.00, which contradicts the correct final amount."
+      }
+    },
+    {
+      "source_id": "train-1297-4",
+      "expected_AI_audit_status": "answer_conflict",
+      "actual_status": "math_error",
+      "exact_status_agreement": false,
+      "math_error_presence_agreement": false,
+      "prior_diagnosis_ko": "서두####16은 틀리지만 뒤의32명과8명 계산 및 최종8은 맞다. 본문 수학 오류가 아닌 답 표기 충돌이다.",
+      "new_screen": {
+        "status": "math_error",
+        "independent_answer": "8",
+        "check": "25% of 32 is 8",
+        "evidence_quote": "Final answer: 8 students have both puppies and parrots.",
+        "error_description": "The solution states #### 16 at the beginning, which contradicts the correct final answer of 8. This is a conflicting marker despite the correct arithmetic in the steps."
+      }
+    },
+    {
+      "source_id": "train-4704-2",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "math_error",
+      "exact_status_agreement": true,
+      "math_error_presence_agreement": true,
+      "prior_diagnosis_ko": "세 번째 국가의2배 기준을 첫 국가2주가 아닌 두 번째 국가4주로 사용했다.",
+      "new_screen": {
+        "status": "math_error",
+        "independent_answer": "6 weeks",
+        "check": "First country: 2 weeks; second: 2 * 2 = 4 weeks; third: 2 * 2 = 4 weeks; total: 2 + 4 + 4 = 10 weeks",
+        "evidence_quote": "Time in the second country = 2 * 2 weeks = 4 weeks",
+        "error_description": "The solution incorrectly states that John spends twice as long in each of the other two countries as in the first, but applies the doubling to the second country's time and then incorrectly doubles that to get the third country's time. It should be that each of the other two countries is twice as long as the first (i.e., 4 weeks each), not recursively doubling. The correct total is 2 + 4 + 4 = 10 weeks, not 14."
+      }
+    },
+    {
+      "source_id": "train-1686-3",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "no_math_error",
+      "exact_status_agreement": false,
+      "math_error_presence_agreement": false,
+      "prior_diagnosis_ko": "10*5와4주라는 올바른 절차를 쓰고 그 결과와 다른500을 출력했다. 내부 원인은 관찰 불가하다.",
+      "new_screen": {
+        "status": "no_math_error",
+        "independent_answer": "200",
+        "check": "10 hours/day × 5 days/week = 50 hours/week; 50 hours/week × 4 weeks/month = 200 hours/month",
+        "evidence_quote": "#### 500",
+        "error_description": ""
+      }
+    },
+    {
+      "source_id": "train-5239-1",
+      "expected_AI_audit_status": "math_error",
+      "actual_status": "math_error",
+      "exact_status_agreement": true,
+      "math_error_presence_agreement": true,
+      "prior_diagnosis_ko": "봉지4개를 땅콩4개로 사용하여 봉지당30개 배수를 누락했다. 끝점 포함 간격 해석과 무관하게 이 수량 오류는 명확하다.",
+      "new_screen": {
+        "status": "math_error",
+        "independent_answer": "30",
+        "check": "Total flight time is 120 minutes; number of peanuts is 4 × 30 = 120; 120 minutes ÷ 120 peanuts = 1 minute between each peanut",
+        "evidence_quote": "#### 30",
+        "error_description": "The solution incorrectly divides 120 minutes by only 4 bags instead of the total 120 peanuts. The correct time between peanuts is 1 minute, not 30 minutes."
+      }
+    }
+  ],
+  "note": "Same prior20 randomly selected cases; Codex AI diagnoses, no independent human gold; label agreement alone does not validate description content."
+}

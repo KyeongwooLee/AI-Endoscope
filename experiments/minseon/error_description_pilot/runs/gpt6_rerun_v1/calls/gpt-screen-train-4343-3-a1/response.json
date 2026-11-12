@@ -1,0 +1,1 @@
+{"status":"answer_conflict","independent_answer":"21 pancakes per day","check":"Daily expenses are $30 + $12 = $42, requiring 42 ÷ 2 = 21 pancakes. The worked solution is correct, but its leading answer marker conflicts with it.","evidence_quote":"#### 15","error_description":"The leading marker gives 15, while the correct derivation and worked final answer give 21."}

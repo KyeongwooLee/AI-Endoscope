@@ -1,0 +1,70 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-7329-4
+response_sha256: bd76278922a516a2bf3072e1952c7ea564275227e95c415f5faa59de92787f91
+
+=== QUESTION ===
+Tara has a shoebox that is 4 inches tall and 6 inches wide. She puts a square block inside that is 4 inches per side. How many square inches of the box are left uncovered?
+=== MODEL SOLUTION ===
+To find the uncovered area, we first need to calculate the total area of the shoebox and then the area occupied by the square block.
+
+1. Calculate the total area of the shoebox:
+   - The shoebox is 4 inches tall and 6 inches wide.
+   - The area of the base (length times width) is 4 inches * 6 inches = 24 square inches.
+   - The area of the two sides (each 4 inches tall and 6 inches wide) is 2 * (4 inches * 6 inches) = 48 square inches.
+   - The total area of the shoebox is 24 square inches + 48 square inches = 72 square inches.
+
+2. Calculate the area of the square block:
+   - The square block is 4 inches per side.
+   - The area of a square is side length squared, so 4 inches * 4 inches = 16 square inches.
+
+3. Subtract the area of the square block from the total area of the shoebox to find the uncovered area:
+   - 72 square inches - 16 square inches = 56 square inches.
+
+#### 56
+This is the final answer.
+=== REFERENCE SOLUTION (fallible aid) ===
+The shoebox is 24 square inches because 4 x 6 = <<4*6=24>>24
+The block is 16 square inches because 4 x 4 = <<4*4=16>>16
+There are 8 square inches uncovered because 24 - 16 = <<24-16=8>>8
+#### 8
+=== END ===

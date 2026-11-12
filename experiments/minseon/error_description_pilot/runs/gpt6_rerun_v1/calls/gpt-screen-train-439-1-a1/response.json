@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"21 pieces of key chains.","check":"Timothy has $50 − 2×$8 − 2×$10 = $14 left. At 3 pieces for $2, he can buy ($14 ÷ $2) × 3 = 21 pieces.","evidence_quote":"$14 ÷ $2 per 3 pieces = 2 pieces","error_description":"Step 4 incorrectly gives 2 pieces. The remaining $14 buys 7 groups of 3 key chains, totaling 21 pieces."}

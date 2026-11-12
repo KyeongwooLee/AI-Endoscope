@@ -1,0 +1,19 @@
+{
+  "source_id": "train-4569-3",
+  "response_sha256": "815bb6fac2316d0231358ed1a607b246127b76de1ec0609446fef6c840e71066",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total bags of feed corn needed = 120 acres/year (cattle) / 1 acre/cow/month = 120 bags for cattle",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Additionally, a bag of feed corn can feed each cow for 1 month and each sheep for 2 months.",
+  "observed_error": "The response converts annual cattle grass acreage into corn bags using an unsupported acreage divisor.",
+  "violated_condition": "Corn bags must be calculated from animal counts and months requiring corn, using one bag per cow-month.",
+  "error_description": "The response divides 120 acres of annual cattle grazing demand by an unsupported 1 acre/cow/month and labels the result as bags. This is an invalid conversion, not incorrectly executed division: corn requirements depend on cow-months requiring purchased feed and the stated one-bag-per-cow-month rate.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The response calculates purchased feed from full-year demand without accounting for the 144 acres of pasture that must be consumed before corn is needed."
+  ],
+  "uncertainty_note": null
+}

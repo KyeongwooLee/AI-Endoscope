@@ -1,0 +1,1 @@
+{"source_id":"train-7078-3","response_sha256":"273c7eb812e0e9aa4b974da76c4587ed74b319b25053ab33f6bcb0d0055dea86","status":"supported_error","reference_review_needed":false,"explanation":"The model correctly sets up the equation but then incorrectly simplifies 13 + 7 + 30 to 40 instead of 50. This arithmetic error leads to the incorrect total of 80 pieces."}

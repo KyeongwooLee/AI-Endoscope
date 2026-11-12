@@ -1,0 +1,1 @@
+{"case1_error":"Treats the daily amount as the weekly total, ignoring the 5 school days.","case2_error":"Correctly writes 8 * 5 but evaluates it as 35 instead of 40.","reason":"Case 1 uses an erroneous daily-to-weekly relation; case 2 makes a numerical evaluation error in the correct expression.","judgment":"different"}

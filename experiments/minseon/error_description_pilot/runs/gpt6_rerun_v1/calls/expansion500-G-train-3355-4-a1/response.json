@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3355-4",
+  "response_sha256": "eedb51a0e7f8f63e6130426454675ad3816d53d1564bce84b295bed3b15a834d",
+  "status": "insufficient_evidence",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 34000",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Calculate the final volume of water in the tank.",
+  "observed_error": "The response gives correct symbolic relations but ends with unexplained numbers; the last number is inconsistent with those relations.",
+  "violated_condition": "The final volume must equal the remaining volume after emptying plus 30% of that remaining volume.",
+  "error_description": null,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The numbers are not assigned to calculation steps, so the text does not establish the earliest faulty operation or distinguish arithmetic execution from an unsupported numerical output."
+}

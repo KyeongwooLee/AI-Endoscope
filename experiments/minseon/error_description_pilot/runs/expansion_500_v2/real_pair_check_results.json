@@ -1,0 +1,137 @@
+{
+  "rows": [
+    {
+      "pair_id": "pair-0100",
+      "previous_Codex_AI_label": "different",
+      "previous_Codex_AI_reason": "첫 풀이는 나눌 인원에서 본인을 빠뜨려4로 나눴다. 둘째는 높이9를 구한 뒤 면적을9로 다시 나누어 길이15를 답했다.",
+      "original_Qwen": "different",
+      "revised_Qwen": {
+        "case1_error": "none",
+        "case2_error": "none",
+        "judgment": "different",
+        "reason": "Case 1 correctly divides 20,000 by 5 (Jose + 4 siblings) to get 4,000 square meters for Jose, but the solution incorrectly states 20,000 / 4 = 5,000, which is wrong because Jose is not dividing with only 4 siblings — he is dividing the land with his four siblings, meaning 5 people total. The solution mistakenly treats the number of siblings as the divisor without including Jose. This is a clear error in the mechanism: it divides by 4 instead of 5. Case 2 correctly computes total area and then divides by length to find height, correctly using area per foot. The mechanism in Case 1 is flawed (dividing by number of siblings only), while Case 2 correctly uses area and length to find height. The mechanisms differ: one misapplies division (by siblings only), the other correctly applies area-to-length ratio. Thus, the observable mathematical mechanisms are different."
+      },
+      "label_agrees": true
+    },
+    {
+      "pair_id": "pair-2036",
+      "previous_Codex_AI_label": "different",
+      "previous_Codex_AI_reason": "첫 풀이의 가장 이른 오류는 실제 지출300 대신 보유액600에3배를 적용한 것이다. 둘째는 올바른32*12를360으로 계산한 실행 오류다.",
+      "original_Qwen": "different",
+      "revised_Qwen": {
+        "case1_error": "Case 1 incorrectly interprets 'three times Sandi's total' as three times her initial amount ($600), when the question states she spent half of it. The correct interpretation should be three times what she spent, not her total. The solution uses $3 \times 600 + 150 = 2100$, which is wrong because Sandi's spending is $300, not $600. The mechanism of using Sandi's initial amount instead of her actual spending is an error.",
+        "case2_error": "None",
+        "judgment": "different",
+        "reason": "Case 1 uses Sandi's initial amount ($600) instead of her actual spending ($300) in the calculation of Gillian's spending, which is a clear and observable error in mechanism. Case 2 correctly computes the total number of people, glasses, and ounces with proper arithmetic and logical steps. The mechanisms differ: Case 1 misapplies the quantity used in a multiplicative relationship, while Case 2 correctly applies the given relationships. Thus, the errors are distinct and diagnosable."
+      },
+      "label_agrees": true
+    },
+    {
+      "pair_id": "pair-0986",
+      "previous_Codex_AI_label": "different",
+      "previous_Codex_AI_reason": "첫 풀이에는 올바른 저축식과 다른 최종12000이 있다. 둘째는 현재 나이61을 맞게 구하고 질문의 작년 나이로 한 번 더 이동하지 않았다.",
+      "original_Qwen": "different",
+      "revised_Qwen": {
+        "case1_error": "none",
+        "case2_error": "none",
+        "judgment": "different",
+        "reason": "Case 1 correctly calculates monthly savings over 4 years, adds initial and family contributions, and performs the arithmetic (276 * 48 = 13248; 3000 + 13248 + 7000 = 23248), but the solution shows '12000' repeatedly — a clear answer inconsistency. However, the mechanism is correct: it models the total savings as initial + monthly savings + family addition. Case 2 correctly sets up and solves the equation for Tully's current age, leading to 61, which is consistent with the question. The mechanism is different: one involves compound saving over time with a time-based accumulation, the other involves solving a linear age equation. The mechanisms are not the same, even though both involve algebraic or arithmetic reasoning."
+      },
+      "label_agrees": true
+    },
+    {
+      "pair_id": "pair-0528",
+      "previous_Codex_AI_label": "different",
+      "previous_Codex_AI_reason": "첫 풀이는 이미3명분인150을 개인별 금액으로 보고3을 다시 곱했다. 둘째는 맞는 월간 계산 절차를 쓰고 근거 없는500을 답했다.",
+      "original_Qwen": "different",
+      "revised_Qwen": {
+        "case1_error": "none",
+        "case2_error": "incorrectly assumes 4 weeks per month and computes 10 × 5 × 4 = 200, but reports 500; the calculation 10 × 5 × 4 = 200, not 500, so the final answer is wrong due to arithmetic error",
+        "judgment": "different",
+        "reason": "Case 1 correctly calculates total earnings: 5 hours total work time × 3 men × $10/hour = $150 per man, totaling $450. Case 2 incorrectly computes total hours as 500 when the correct calculation (10 hours/day × 5 days/week × 4 weeks/month) is 200. The mechanism differs: Case 1 correctly applies time and rate to find total earnings, while Case 2 miscomputes the total hours with a wrong arithmetic result. The error in Case 2 is a concrete arithmetic mistake, not a conceptual flaw or unshown step."
+      },
+      "label_agrees": true
+    },
+    {
+      "pair_id": "pair-2070",
+      "previous_Codex_AI_label": "different",
+      "previous_Codex_AI_reason": "첫 풀이는 Ted가 먹은4개를 누락했다. 둘째는 한 시점의 달리기 능력을 여러 달 거리의 합계로 바꿨다.",
+      "original_Qwen": "different",
+      "revised_Qwen": {
+        "case1_error": "none",
+        "case2_error": "none",
+        "judgment": "different",
+        "reason": "Case 1 correctly calculates total cookies baked, subtracts Frank's and Ted's consumption, and arrives at 138 cookies left. Case 2 correctly models exponential growth and determines that 4 months are needed to exceed 26.3 miles, but the question asks for the number of months to train to reach the marathon distance, and the solution correctly identifies 4 months as sufficient. The mechanisms differ: Case 1 involves arithmetic subtraction of consumption from total production, while Case 2 involves exponential growth and cumulative sum to reach a threshold. These are distinct observable mechanisms."
+      },
+      "label_agrees": true
+    },
+    {
+      "pair_id": "pair-1983",
+      "previous_Codex_AI_label": "uncertain",
+      "previous_Codex_AI_reason": "첫 풀이의 계산과 마지막4개는 맞고 앞의48 표기만 충돌한다. 둘째는 남은 사과 수를 사람 수처럼 쓰는 관계와 최종값 문제가 있다.",
+      "original_Qwen": "different",
+      "revised_Qwen": {
+        "case1_error": "none",
+        "case2_error": "none",
+        "judgment": "different",
+        "reason": "Case 1 correctly calculates total meatballs (4 ÷ 1/8 = 32), divides by 8 family members to get 4 per person, and concludes Antonio eats 4 meatballs. Case 2 correctly computes children's apple consumption (33 × 10 = 330), subtracts to get 120 apples for adults, then divides by 3 to get 40 adults. The solution in Case 2 contains a calculation error: (450 - (33 × 10)) = 120, not 110. The final answer is 120 ÷ 3 = 40, not 110. The repeated '110' is incorrect; it misrepresents the remaining apples. Thus, Case 2 has a concrete arithmetic error in the intermediate step (33×10=330, 450−330=120, not 110), making the mechanism different from Case 1, which has no such error."
+      },
+      "label_agrees": false
+    },
+    {
+      "pair_id": "pair-0262",
+      "previous_Codex_AI_label": "uncertain",
+      "previous_Codex_AI_reason": "첫 풀이의 본문과 마지막400은 맞고 서두600 표기만 충돌한다. 둘째는 반려동물 집단과 전체 주민 집단을 혼동한다. 첫 풀이의 수학 오류를 확정할 수 없다.",
+      "original_Qwen": "different",
+      "revised_Qwen": {
+        "case1_error": "none",
+        "case2_error": "none",
+        "judgment": "different",
+        "reason": "Case 1 correctly calculates the number of dogs (100) and their legs (400) based on two-thirds being cats and 300 total animals. Case 2 correctly solves for total citizens (60) using the given pet ownership percentages and fixed cat count, but the mechanism—solving for total population using a sum of dog and cat owners—is distinct from Case 1's mechanism of computing legs from a known number of dogs. The questions and required outputs differ in target quantity (legs of dogs vs. total citizens), and the mathematical mechanisms (proportion of animals → count → legs vs. equation from ownership shares) are not the same."
+      },
+      "label_agrees": false
+    },
+    {
+      "pair_id": "pair-0968",
+      "previous_Codex_AI_label": "different",
+      "previous_Codex_AI_reason": "첫 풀이는 현재 연료14를 만충량처럼 사용하고 다시 트럭 연료를 뺐다. 둘째는 두 탱크 배수를 이미 반영하고 다시2를 곱했다.",
+      "original_Qwen": "different",
+      "revised_Qwen": {
+        "case1_error": "none",
+        "case2_error": "none",
+        "judgment": "different",
+        "reason": "Case 1 correctly calculates the amount of gas to add by finding the difference between full capacity and current fill levels, using proper fractions and arithmetic. Case 2 incorrectly interprets the problem: doubling fuel capacity does not mean doubling the cost per tank; instead, the cost should increase by 20% on the original cost, and the new capacity means only one tank is now needed (not two). The solution assumes a doubling of cost and then again applies a 20% increase, leading to an incorrect mechanism. The error is in treating the doubled capacity as requiring two tanks, when the question only asks for the cost to refill the new tank (which now holds double the original capacity)."
+      },
+      "label_agrees": true
+    },
+    {
+      "pair_id": "pair-1760",
+      "previous_Codex_AI_label": "different",
+      "previous_Codex_AI_reason": "첫 풀이는110+310+215+560+780을2175로 잘못 합산했다. 둘째는 빈 타이어2개에 이미1000의 공기가 있다고 취급했다. 참조 마지막 나눗셈의1550 표기는 오타지만 이 진단에는 영향을 주지 않는다.",
+      "original_Qwen": "different",
+      "revised_Qwen": {
+        "case1_error": "none",
+        "case2_error": "none",
+        "judgment": "different",
+        "reason": "Case 1 correctly computes total caloric intake and subtracts from daily limit to find remaining calories using proper arithmetic. Case 2 correctly calculates total air needed, current air volume, deficit, and divides by pump size to find number of pumps. Both solutions follow valid, step-by-step mechanisms, but the problems differ in type (calorie deficit vs. air volume pumping), and the requested quantities (remaining calories vs. number of pumps) are distinct. The mechanisms—summing known quantities, subtracting from a target, and dividing by a unit rate—are not the same; one is about remaining capacity, the other about filling via discrete units. Thus, the observable mathematical mechanisms differ."
+      },
+      "label_agrees": true
+    },
+    {
+      "pair_id": "pair-1792",
+      "previous_Codex_AI_label": "different",
+      "previous_Codex_AI_reason": "첫 풀이는14개 낱개와20개 묶음을 함께 사는 것으로 비용을 더해 수량을 이중 계산했다. 둘째는 필요한 전체 예산5700을 모금액2850+잡비3000으로 바꿨다. 넓은 비용 오류만으로 같은 오류로 묶지 않는다.",
+      "original_Qwen": "different",
+      "revised_Qwen": {
+        "case1_error": "none",
+        "case2_error": "none",
+        "judgment": "different",
+        "reason": "Case 1 correctly calculates the cost of 14 balloons by combining individual and pack purchases, with accurate arithmetic and appropriate reasoning. Case 2 correctly computes the total needed, money raised, and per-person shortfall, with correct arithmetic. The mechanisms differ: Case 1 optimizes balloon purchase cost by mixing individual and pack options, while Case 2 tracks cumulative fundraising and distributes a remaining deficit across individuals. The specific mathematical operations and problem structures are distinct and not interchangeable."
+      },
+      "label_agrees": true
+    }
+  ],
+  "label_agreement": 8,
+  "n": 10,
+  "note": "Existing10 AI-reviewed real pairs, dominated by different labels. Agreement is not correctness of reasons, nor independent human accuracy."
+}

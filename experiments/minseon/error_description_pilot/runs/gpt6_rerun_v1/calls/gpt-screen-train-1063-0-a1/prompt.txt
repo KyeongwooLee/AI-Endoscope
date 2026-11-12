@@ -1,0 +1,26 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Nina made a two-layer cake and a dozen cupcakes for her friend’s birthday party. Each layer of cake takes the same amount of sugar to make as a dozen cupcakes. Nina used 720 grams of sugar to bake everything. How many grams of sugar are in one cupcake?
+SOLUTION: To solve this problem, let's break it down step by step:
+
+1. **Identify the total sugar used**: Nina used 720 grams of sugar in total.
+
+2. **Understand the relationship between cake layers and cupcakes**: Each layer of cake takes the same amount of sugar as a dozen cupcakes.
+
+3. **Calculate the sugar used for the cake**: Since there are two layers of cake, the sugar used for the cake is:
+   \[
+   \frac{720 \text{ grams}}{2} = 360 \text{ grams}
+   \]
+
+4. **Calculate the sugar used for the cupcakes**: The remaining sugar is used for the cupcakes. Since there are 12 cupcakes, the sugar used for the cupcakes is:
+   \[
+   720 \text{ grams} - 360 \text{ grams} = 360 \text{ grams}
+   \]
+
+5. **Determine the sugar per cupcake**: There are 12 cupcakes, so the sugar per cupcake is:
+   \[
+   \frac{360 \text{ grams}}{12} = 30 \text{ grams}
+   \]
+
+#### 30
+This is the amount of sugar in one cupcake.

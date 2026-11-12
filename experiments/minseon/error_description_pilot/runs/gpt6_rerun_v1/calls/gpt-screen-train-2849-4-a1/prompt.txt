@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: For breakfast, Anna bought a bagel for $0.95 and a glass of orange juice for $0.85. At lunch, Anna spent $4.65 on a sandwich and $1.15 on a carton of milk. How much more money did Anna spend on lunch than on breakfast?
+SOLUTION: Step 1: Calculate the total cost of breakfast.
+Cost of bagel = $0.95
+Cost of orange juice = $0.85
+Total cost of breakfast = $0.95 + $0.85
+
+Step 2: Calculate the total cost of lunch.
+Cost of sandwich = $4.65
+Cost of milk = $1.15
+Total cost of lunch = $4.65 + $1.15
+
+Step 3: Subtract the total cost of breakfast from the total cost of lunch to find out how much more Anna spent on lunch than on breakfast.
+Difference = Total cost of lunch - Total cost of breakfast
+
+Step 4: Calculate the final answer.
+#### (4.65 + 1.15 - (0.95 + 0.85))
+#### 5.00
+#### 5.00
+#### 5.00

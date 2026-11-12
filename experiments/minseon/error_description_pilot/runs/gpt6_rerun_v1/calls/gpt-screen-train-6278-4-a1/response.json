@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"15 pies","check":"56 / 8 = 7 apple pies and 48 / 6 = 8 peach pies, totaling 15 pies. The solution gives the correct formula but reports 22 pies.","evidence_quote":"Explanation: Milton sold 22 pies during the weekend.","error_description":"The final number 22 conflicts with the value 15 of the correctly stated formula."}

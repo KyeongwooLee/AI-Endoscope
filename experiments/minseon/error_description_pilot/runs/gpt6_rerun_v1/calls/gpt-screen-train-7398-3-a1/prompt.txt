@@ -1,0 +1,15 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A boy squirrel gathers 6 walnuts and carries them to his burrow in the tree, adding to the 12 already there, and dropping 1 on the way. The girl squirrel brings 5 more walnuts to their burrow and eats 2.  How many walnuts are left?
+SOLUTION: Step 1: Start with the initial number of walnuts in the burrow.
+Step 2: Add the walnuts gathered by the boy squirrel.
+Step 3: Subtract the walnut dropped by the boy squirrel.
+Step 4: Add the walnuts brought by the girl squirrel.
+Step 5: Subtract the walnuts eaten by the girl squirrel.
+Step 6: Calculate the final number of walnuts left.
+
+Calculation:
+12 walnuts (initial) + 6 walnuts (gathered) - 1 walnut (dropped) + 5 walnuts (brought) - 2 walnuts (eaten) = 18 walnuts
+
+#### 18
+The final answer is 18 walnuts.

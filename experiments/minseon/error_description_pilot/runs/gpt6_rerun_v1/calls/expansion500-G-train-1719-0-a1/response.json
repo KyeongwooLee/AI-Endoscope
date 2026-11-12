@@ -1,0 +1,19 @@
+{
+  "source_id": "train-1719-0",
+  "response_sha256": "02c6ac33a73c6fadc13e30c47406b92aafc1e00c1fd3b2556e9b4267052f379a",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Interest = 20% of $150.00",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If she leaves any balance on her card at the end of the month, she is charged 20% interest.",
+  "observed_error": "The response calculates interest on the initial $150 balance before applying the $50 payment.",
+  "violated_condition": "Interest applies to the balance remaining after the payment: 20% of ($150 − $50).",
+  "error_description": "The response applies 20% interest to the initial $150 balance before deducting the $50 payment. The interest should apply to the balance left after payment. Its multiplication is correct, but it uses the wrong interest base.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The response independently subtracts the interest charge in “Balance after interest = $150.00 - $30.00”; charged interest increases the amount owed. The subtraction itself is executed correctly."
+  ],
+  "uncertainty_note": null
+}

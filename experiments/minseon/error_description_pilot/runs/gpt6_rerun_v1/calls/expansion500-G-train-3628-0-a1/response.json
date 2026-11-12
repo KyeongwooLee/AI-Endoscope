@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3628-0",
+  "response_sha256": "b0aa24e13b3c2792970ca13130a980794a8f850ca2826e1fc7e35f73f1c6b332",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Extra chores = 56 chores - 12 chores = 44 chores",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He normally has to do 12 chores a week.",
+  "observed_error": "The response subtracts only one week's normal chores from the two-week total.",
+  "violated_condition": "Normal chores over two weeks equal 2 × 12 chores.",
+  "error_description": "The response subtracts 12 normal chores from 56 chores performed over two weeks. The 12-chore requirement applies each week, so the subtraction must account for both weeks. The written subtraction is arithmetically correct, but its normal-chore quantity understates the unpaid baseline and overstates paid extra chores.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

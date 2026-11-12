@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John has 2 hives of bees.  One of the hives has 1000 bees and produces 500 liters of honey.  The second has 20% fewer bees but each bee produces 40% more honey.  How much honey does he produce?
+SOLUTION: Step 1: Determine the number of bees in the second hive.
+20% fewer bees means:
+\(1000 \times 0.20 = 200\) bees fewer
+\(1000 - 200 = 800\) bees in the second hive
+
+Step 2: Calculate the honey production per bee in the second hive.
+\(500 \text{ liters} \div 1000 \text{ bees} = 0.5 \text{ liters per bee}\)
+
+Step 3: Calculate the increased honey production per bee in the second hive.
+\(0.5 \text{ liters per bee} \times 1.40 = 0.70 \text{ liters per bee}\)
+
+Step 4: Determine the total honey production from the second hive.
+\(800 \text{ bees} \times 0.70 \text{ liters per bee} = 560 \text{ liters}\)
+
+Step 5: Calculate the total honey production from both hives.
+\(500 \text{ liters} + 560 \text{ liters} = 1060 \text{ liters}\)
+
+#### 1060
+The total honey production from both hives is 1060 liters.

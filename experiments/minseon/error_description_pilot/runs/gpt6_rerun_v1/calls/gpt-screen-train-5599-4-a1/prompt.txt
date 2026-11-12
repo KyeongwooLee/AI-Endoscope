@@ -1,0 +1,33 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: When doing her exercises, Mairead runs for 40 miles, walks for 3/5 times as many miles as she ran, and walks for five times the number of miles she jogged. Calculate the total distance Mairead has covered while doing her exercises.
+SOLUTION: To solve the problem, we need to calculate the total distance covered by Mairead. 
+
+1. **Determine the distance walked:**
+   - Mairead runs for 40 miles.
+   - She walks for \( \frac{3}{5} \) times as many miles as she ran.
+   \[
+   \text{Distance walked} = \frac{3}{5} \times 40 = 24 \text{ miles}
+   \]
+
+2. **Determine the distance jogged:**
+   - She walks for five times the number of miles she jogged.
+   \[
+   \text{Distance walked} = 5 \times \text{Distance jogged}
+   \]
+   \[
+   24 = 5 \times \text{Distance jogged}
+   \]
+   \[
+   \text{Distance jogged} = \frac{24}{5} = 4.8 \text{ miles}
+   \]
+
+3. **Calculate the total distance covered:**
+   \[
+   \text{Total distance} = \text{Distance ran} + \text{Distance walked} + \text{Distance jogged}
+   \]
+   \[
+   \text{Total distance} = 40 + 24 + 4.8 = 68.8 \text{ miles}
+   \]
+
+#### 68.8

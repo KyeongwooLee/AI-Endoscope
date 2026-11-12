@@ -1,0 +1,39 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Tricia is a third of Amilia’s age and Amilia is a quarter of Yorick’s age. Yorick is twice Eugene’s age and Khloe is a third of Eugene’s age. Rupert is 10 years older than Khloe but 2 years younger than Vincent who is 22 years old. How old, in years, is Tricia?
+SOLUTION: Step 1: Let Eugene's age be \( E \).
+Step 2: Yorick's age is twice Eugene's age, so Yorick's age is \( 2E \).
+Step 3: Khloe's age is a third of Eugene's age, so Khloe's age is \( \frac{E}{3} \).
+Step 4: Rupert is 10 years older than Khloe, so Rupert's age is \( \frac{E}{3} + 10 \).
+Step 5: Rupert is 2 years younger than Vincent who is 22 years old, so Vincent's age is \( 22 + 2 = 24 \).
+Step 6: Therefore, Rupert's age is also \( 24 \).
+Step 7: Set Rupert's age equal to \( \frac{E}{3} + 10 \):
+\[
+\frac{E}{3} + 10 = 24
+\]
+Step 8: Solve for \( E \):
+\[
+\frac{E}{3} = 14 \implies E = 42
+\]
+Step 9: Calculate Yorick's age:
+\[
+Yorick = 2E = 2 \times 42 = 84
+\]
+Step 10: Calculate Khloe's age:
+\[
+Khloe = \frac{E}{3} = \frac{42}{3} = 14
+\]
+Step 11: Calculate Rupert's age:
+\[
+Rupert = \frac{E}{3} + 10 = \frac{42}{3} + 10 = 14 + 10 = 24
+\]
+Step 12: Calculate Vincent's age:
+\[
+Vincent = 24
+\]
+Step 13: Calculate Tricia's age:
+\[
+Tricia = \frac{1}{3}Yorick = \frac{1}{3} \times 84 = 28
+\]
+
+#### 28

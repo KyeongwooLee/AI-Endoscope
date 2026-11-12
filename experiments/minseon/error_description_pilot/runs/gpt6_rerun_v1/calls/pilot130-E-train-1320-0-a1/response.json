@@ -1,0 +1,1 @@
+{"source_id":"train-1320-0","response_sha256":"b87200c51ea16a51a2ffc5351325ea9a917098a345e0b8d0b3d92e03bcfb5a31","status":"supported_error","reference_review_needed":false,"explanation":"The setup is correct, but the final answer incorrectly evaluates (12 × 8) + (25 × 5) as 280. The two products are 96 and 125, whose sum is 221."}

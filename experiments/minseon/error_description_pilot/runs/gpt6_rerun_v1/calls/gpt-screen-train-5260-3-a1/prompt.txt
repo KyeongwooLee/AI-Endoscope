@@ -1,0 +1,16 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Celia is creating a budget for the next 4 weeks. She wants to spend no more than $100 a week on food. For rent for her apartment, she plans to spend $1500. She has $30 set aside for video streaming services for the month. She also has $50 planned for one month of cell phone usage. After she adds up all of her spending for the month she wants to set aside 10% of it to put into savings. How much money is Celia going to put into her savings account?
+SOLUTION: Step 1: Calculate the total food budget for 4 weeks
+Celia wants to spend no more than $100 a week on food. For 4 weeks, the total food budget is:
+$100/week × 4 weeks = $400
+
+Step 2: Add up all of her spending for the month
+She plans to spend $1500 on rent, $30 on video streaming services, and $50 on cell phone usage. The total spending is:
+$1500 + $30 + $50 = $1580
+
+Step 3: Calculate 10% of the total spending for savings
+10% of $1580 is:
+$1580 × 10% = $158
+
+#### 158

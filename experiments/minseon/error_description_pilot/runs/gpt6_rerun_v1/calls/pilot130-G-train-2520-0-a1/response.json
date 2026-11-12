@@ -1,0 +1,22 @@
+{
+  "source_id": "train-2520-0",
+  "response_sha256": "6f2ba83791e2261b05166dcf8db2b9efcc11ab4f7e113c13cf8bbd540bfc048b",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Therefore, the number of war tractors at Rockefeller is \\( 3G - 400 \\).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "400 less than thrice as many war tractors as Grenada Army Base",
+  "observed_error": "The response applies the tractor multiplier to G, which it defined as Grenada's total war supplies.",
+  "violated_condition": "Rockefeller's tractor count is three times Grenada's tractor count minus 400; Grenada's tractor count is one-third of its total supplies.",
+  "error_description": "The response defines G as Grenada's total war supplies, then writes Rockefeller's tractor count as 3G − 400. The multiplier applies to Grenada's war tractors alone. Because Grenada's supplies are equally divided among three types, its tractor count is G/3.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The total for Rockefeller omits guns entirely.",
+    "The response divides Grenada's 6000 supplies between two bases, although the equal division concerns Grenada's three supply types.",
+    "The response equates the two bases' total supplies without a supporting condition.",
+    "The final calculation changes 309.09 to 3090.9, then evaluates 3090.9 + 3090.9 − 400 as 6181.8, omitting the subtraction."
+  ],
+  "uncertainty_note": null
+}

@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"384 ounces of punch.","check":"Including Carl gives 15 + 1 = 16 people, requiring 16 × 2 = 32 glasses. At 12 ounces per glass, 32 × 12 = 384 ounces.","evidence_quote":"32 * 12 = 360 ounces of punch","error_description":"The solution incorrectly multiplies 32 by 12 to get 360; the correct product is 384."}

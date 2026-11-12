@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: On the first day of the journey, the Skipper sailed his ship halfway to the destination by traveling due east for 20 hours at a speed of 30 kilometers per hour, and then turned the ship's engines off to let them cool down. But while the engines were off, a wind storm blew his vessel backward in a westward direction.  After the storm, the Skipper used his GPS device to determine the new location of the ship, and he discovered that he was only one-third of the way to his destination.  How many kilometers had the ship been blown in a westward direction by the storm?
+SOLUTION: On the first day, the ship traveled 20 hours at a speed of 30 kilometers per hour. So, the distance covered by the ship is:
+\[ \text{Distance}_1 = 20 \times 30 = 600 \text{ kilometers} \]
+
+After the engines were turned off, the ship was blown backward by a wind storm. After the storm, the Skipper discovered that the ship was only one-third of the way to the destination. Let's denote the total distance to the destination as \( D \). Then, the distance covered by the ship after the storm is \( \frac{D}{3} \).
+
+Since the ship had already covered 600 kilometers and then was blown backward by \( D - 600 \) kilometers, the remaining distance is one-third of the total distance \( D \):
+\[ D - 600 = \frac{D}{3} \]
+
+To solve for \( D \), we multiply both sides by 3:
+\[ 3(D - 600) = D \]
+\[ 3D - 1800 = D \]
+\[ 2D = 1800 \]
+\[ D = 900 \text{ kilometers} \]
+
+So, the total distance to the destination is 900 kilometers. The distance covered by the ship before the storm was 600 kilometers, and it was blown backward by one-third of the total distance, which is:
+\[ \frac{900}{3} = 300 \text{ kilometers} \]
+
+Therefore, the ship was blown in a westward direction by the storm for:
+#### 300

@@ -1,0 +1,6943 @@
+{
+  "native": {
+    "methods": {
+      "R": {
+        "query_n": 100,
+        "returned": 500,
+        "same": 0,
+        "uncertain": 0,
+        "missing": 0,
+        "same_at_5": 0.0,
+        "uncertain_as_same_bound": 0.0,
+        "coverage": 1.0,
+        "per_query": [
+          {
+            "query_id": "train-2468-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6333-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4343-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2422-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-361-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-653-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-596-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7030-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2783-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-790-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5029-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-901-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1819-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7025-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6140-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2729-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3923-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-340-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2188-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6363-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4155-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4626-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2432-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-837-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2635-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-427-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-39-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3939-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1194-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4446-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3109-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-982-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1671-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4528-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5613-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6877-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6864-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-988-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5475-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1833-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3322-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5928-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6662-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7203-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7396-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4612-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1102-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1781-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5158-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3259-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-842-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6737-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-230-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-38-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3557-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3063-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1373-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1413-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3795-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6061-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7003-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5239-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-813-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5395-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2951-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2167-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-922-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1505-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2411-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5406-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5389-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4725-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-87-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6278-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1591-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3302-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-501-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3809-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2867-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-262-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2969-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2557-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5832-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7103-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5346-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1893-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5259-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7202-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1010-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1861-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4704-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-459-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2715-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-504-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4145-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4085-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4156-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7128-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5364-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1319-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          }
+        ]
+      },
+      "E": {
+        "query_n": 100,
+        "returned": 450,
+        "same": 1,
+        "uncertain": 0,
+        "missing": 0,
+        "same_at_5": 0.002,
+        "uncertain_as_same_bound": 0.002,
+        "coverage": 0.9,
+        "per_query": [
+          {
+            "query_id": "train-2468-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6333-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4343-3",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2422-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-361-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-653-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-596-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7030-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2783-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-790-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5029-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-901-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1819-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7025-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6140-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2729-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3923-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-340-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2188-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6363-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4155-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4626-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2432-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-837-0",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2635-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-427-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-39-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3939-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1194-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4446-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3109-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-982-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1671-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4528-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5613-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6877-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6864-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-988-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5475-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1833-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3322-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5928-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6662-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7203-4",
+            "returned": 5,
+            "same": 1,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.2
+          },
+          {
+            "query_id": "train-7396-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4612-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1102-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1781-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5158-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3259-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-842-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6737-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-230-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-38-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3557-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3063-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1373-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1413-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3795-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6061-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7003-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5239-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-813-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5395-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2951-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2167-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-922-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1505-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2411-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5406-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5389-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4725-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-87-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6278-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1591-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3302-0",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-501-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3809-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2867-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-262-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2969-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2557-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5832-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7103-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5346-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1893-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5259-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7202-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1010-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1861-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4704-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-459-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2715-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-504-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4145-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4085-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4156-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7128-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5364-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1319-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          }
+        ]
+      },
+      "G": {
+        "query_n": 100,
+        "returned": 260,
+        "same": 1,
+        "uncertain": 0,
+        "missing": 0,
+        "same_at_5": 0.002,
+        "uncertain_as_same_bound": 0.002,
+        "coverage": 0.52,
+        "per_query": [
+          {
+            "query_id": "train-2468-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6333-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4343-3",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2422-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-361-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-653-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-596-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7030-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2783-3",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-790-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5029-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-901-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1819-3",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7025-0",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6140-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2729-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3923-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-340-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2188-0",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6363-3",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4155-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4626-3",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2432-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-837-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2635-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-427-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-39-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3939-0",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1194-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4446-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3109-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-982-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1671-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4528-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5613-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6877-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6864-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-988-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5475-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1833-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3322-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5928-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6662-3",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7203-4",
+            "returned": 5,
+            "same": 1,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.2
+          },
+          {
+            "query_id": "train-7396-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4612-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1102-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1781-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5158-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3259-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-842-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6737-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-230-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-38-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3557-0",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3063-1",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1373-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1413-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3795-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6061-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7003-3",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5239-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-813-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5395-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2951-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2167-1",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-922-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1505-3",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2411-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5406-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5389-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4725-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-87-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6278-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1591-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3302-0",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-501-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3809-1",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2867-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-262-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2969-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2557-1",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5832-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7103-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5346-1",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1893-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5259-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7202-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1010-2",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1861-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4704-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-459-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2715-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-504-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4145-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4085-1",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4156-0",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7128-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5364-3",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1319-4",
+            "returned": 0,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "abstained_or_invalid",
+            "yield": 0.0
+          }
+        ]
+      },
+      "Q": {
+        "query_n": 100,
+        "returned": 500,
+        "same": 0,
+        "uncertain": 0,
+        "missing": 0,
+        "same_at_5": 0.0,
+        "uncertain_as_same_bound": 0.0,
+        "coverage": 1.0,
+        "per_query": [
+          {
+            "query_id": "train-2468-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6333-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4343-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2422-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-361-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-653-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-596-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7030-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2783-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-790-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5029-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-901-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1819-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7025-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6140-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2729-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3923-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-340-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2188-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6363-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4155-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4626-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2432-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-837-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2635-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-427-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-39-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3939-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1194-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4446-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3109-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-982-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1671-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4528-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5613-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6877-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6864-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-988-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5475-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1833-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3322-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5928-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6662-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7203-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7396-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4612-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1102-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1781-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5158-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3259-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-842-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6737-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-230-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-38-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3557-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3063-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1373-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1413-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3795-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6061-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7003-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5239-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-813-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5395-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2951-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2167-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-922-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1505-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2411-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5406-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5389-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4725-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-87-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6278-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1591-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3302-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-501-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3809-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2867-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-262-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2969-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2557-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5832-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7103-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5346-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1893-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5259-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7202-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1010-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1861-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4704-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-459-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2715-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-504-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4145-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4085-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4156-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7128-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5364-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1319-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          }
+        ]
+      },
+      "Random": {
+        "query_n": 100,
+        "returned": 500,
+        "same": 0,
+        "uncertain": 0,
+        "missing": 0,
+        "same_at_5": 0.0,
+        "uncertain_as_same_bound": 0.0,
+        "coverage": 1.0,
+        "per_query": [
+          {
+            "query_id": "train-2468-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6333-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4343-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2422-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-361-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-653-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-596-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7030-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2783-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-790-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5029-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-901-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1819-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7025-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6140-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2729-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3923-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-340-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2188-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6363-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4155-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4626-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2432-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-837-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2635-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-427-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-39-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3939-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1194-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4446-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3109-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-982-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1671-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4528-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5613-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6877-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6864-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-988-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5475-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1833-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3322-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5928-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6662-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7203-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7396-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4612-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1102-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1781-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5158-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3259-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-842-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6737-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-230-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-38-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3557-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3063-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1373-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1413-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3795-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6061-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7003-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5239-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-813-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5395-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2951-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2167-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-922-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1505-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2411-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5406-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5389-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4725-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-87-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6278-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1591-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3302-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-501-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3809-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2867-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-262-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2969-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2557-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5832-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7103-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5346-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1893-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5259-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7202-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1010-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1861-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4704-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-459-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2715-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-504-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4145-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4085-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4156-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7128-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5364-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1319-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          }
+        ]
+      }
+    },
+    "paired_query_bootstrap": {
+      "G-E": {
+        "difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "draws": 2000,
+        "level": 0.95,
+        "resampling_unit": "query question (same draw for both methods)"
+      },
+      "G-R": {
+        "difference": 0.002,
+        "ci_low": 0.0,
+        "ci_high": 0.006000000000000001,
+        "draws": 2000,
+        "level": 0.95,
+        "resampling_unit": "query question (same draw for both methods)"
+      },
+      "E-R": {
+        "difference": 0.002,
+        "ci_low": 0.0,
+        "ci_high": 0.006000000000000001,
+        "draws": 2000,
+        "level": 0.95,
+        "resampling_unit": "query question (same draw for both methods)"
+      }
+    }
+  },
+  "common": {
+    "methods": {
+      "R": {
+        "query_n": 50,
+        "returned": 250,
+        "same": 0,
+        "uncertain": 0,
+        "missing": 0,
+        "same_at_5": 0.0,
+        "uncertain_as_same_bound": 0.0,
+        "coverage": 1.0,
+        "per_query": [
+          {
+            "query_id": "train-6333-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-596-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3923-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-340-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2432-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-427-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1194-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4446-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3109-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-982-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4528-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5613-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6877-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6864-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-988-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5475-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1833-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5928-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7203-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7396-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4612-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1102-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1781-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5158-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3259-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-230-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-38-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1373-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3795-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5239-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-813-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2951-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2411-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5406-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5389-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-87-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6278-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1591-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-501-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2867-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-262-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2969-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5832-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7103-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7202-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4704-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-459-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2715-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-504-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7128-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          }
+        ]
+      },
+      "E": {
+        "query_n": 50,
+        "returned": 250,
+        "same": 1,
+        "uncertain": 0,
+        "missing": 0,
+        "same_at_5": 0.004,
+        "uncertain_as_same_bound": 0.004,
+        "coverage": 1.0,
+        "per_query": [
+          {
+            "query_id": "train-6333-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-596-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3923-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-340-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2432-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-427-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1194-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4446-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3109-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-982-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4528-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5613-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6877-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6864-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-988-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5475-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1833-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5928-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7203-4",
+            "returned": 5,
+            "same": 1,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.2
+          },
+          {
+            "query_id": "train-7396-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4612-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1102-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1781-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5158-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3259-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-230-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-38-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1373-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3795-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5239-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-813-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2951-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2411-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5406-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5389-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-87-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6278-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1591-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-501-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2867-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-262-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2969-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5832-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7103-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7202-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4704-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-459-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2715-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-504-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7128-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          }
+        ]
+      },
+      "G": {
+        "query_n": 50,
+        "returned": 250,
+        "same": 1,
+        "uncertain": 0,
+        "missing": 0,
+        "same_at_5": 0.004,
+        "uncertain_as_same_bound": 0.004,
+        "coverage": 1.0,
+        "per_query": [
+          {
+            "query_id": "train-6333-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-596-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3923-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-340-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2432-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-427-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1194-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4446-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3109-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-982-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4528-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5613-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6877-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6864-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-988-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5475-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1833-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5928-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7203-4",
+            "returned": 5,
+            "same": 1,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.2
+          },
+          {
+            "query_id": "train-7396-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4612-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1102-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1781-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5158-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3259-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-230-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-38-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1373-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3795-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5239-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-813-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2951-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2411-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5406-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5389-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-87-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6278-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1591-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-501-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2867-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-262-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2969-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5832-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7103-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7202-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4704-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-459-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2715-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-504-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7128-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          }
+        ]
+      },
+      "Q": {
+        "query_n": 50,
+        "returned": 250,
+        "same": 0,
+        "uncertain": 0,
+        "missing": 0,
+        "same_at_5": 0.0,
+        "uncertain_as_same_bound": 0.0,
+        "coverage": 1.0,
+        "per_query": [
+          {
+            "query_id": "train-6333-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-596-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3923-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-340-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2432-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-427-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1194-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4446-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3109-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-982-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4528-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5613-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6877-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6864-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-988-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5475-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1833-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5928-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7203-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7396-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4612-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1102-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1781-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5158-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3259-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-230-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-38-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1373-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3795-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5239-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-813-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2951-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2411-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5406-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5389-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-87-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6278-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1591-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-501-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2867-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-262-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2969-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5832-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7103-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7202-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4704-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-459-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2715-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-504-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7128-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          }
+        ]
+      },
+      "Random": {
+        "query_n": 50,
+        "returned": 250,
+        "same": 0,
+        "uncertain": 0,
+        "missing": 0,
+        "same_at_5": 0.0,
+        "uncertain_as_same_bound": 0.0,
+        "coverage": 1.0,
+        "per_query": [
+          {
+            "query_id": "train-6333-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-596-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3923-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-340-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2432-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-427-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1194-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4446-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3109-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-982-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4528-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5613-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6877-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6864-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-988-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5475-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1833-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5928-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7203-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7396-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4612-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1102-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1781-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5158-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3259-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-230-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-38-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1373-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-3795-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5239-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-813-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2951-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2411-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5406-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5389-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-87-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-6278-4",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-1591-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-501-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2867-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-262-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2969-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-5832-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7103-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7202-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-4704-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-459-2",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-2715-1",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-504-0",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          },
+          {
+            "query_id": "train-7128-3",
+            "returned": 5,
+            "same": 0,
+            "uncertain": 0,
+            "missing": 0,
+            "status": "ranked",
+            "yield": 0.0
+          }
+        ]
+      }
+    },
+    "paired_query_bootstrap": {
+      "G-E": {
+        "difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "draws": 2000,
+        "level": 0.95,
+        "resampling_unit": "query question (same draw for both methods)"
+      },
+      "G-R": {
+        "difference": 0.004,
+        "ci_low": 0.0,
+        "ci_high": 0.012000000000000002,
+        "draws": 2000,
+        "level": 0.95,
+        "resampling_unit": "query question (same draw for both methods)"
+      },
+      "E-R": {
+        "difference": 0.004,
+        "ci_low": 0.0,
+        "ci_high": 0.012000000000000002,
+        "draws": 2000,
+        "level": 0.95,
+        "resampling_unit": "query question (same draw for both methods)"
+      }
+    }
+  },
+  "judge": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "same_model_as_annotator": true,
+    "inputs": "raw questions, model solutions, references only; fresh contexts; no generated descriptions/methods/scores",
+    "counts": {
+      "different": 2108,
+      "same": 1
+    },
+    "limitations": "AI provisional only. Same model family as solver and exact same model as annotator, no independent ground truth. Bootstrap excludes judge uncertainty."
+  }
+}

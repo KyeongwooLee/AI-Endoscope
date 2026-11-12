@@ -1,0 +1,43 @@
+{
+  "model": "gpt-6-astra",
+  "authorization": "user explicitly approved separate Codex GPT-6-astra sessions",
+  "reasoning_effort": "medium",
+  "route": "Codex CLI ChatGPT login; not OpenAI API key",
+  "exact_model_snapshot": "not exposed; record requested model alias and CLI version",
+  "sample": "original130 plus same expansion500, no replacement or resampling",
+  "unique_questions": 630,
+  "annotation_requests": 1260,
+  "annotation_prompt_policy": "original E/G text retained; JSON output schema and no-tools execution wrapper added; unique exact quote offsets recomputed in code; raw model output also validated and preserved",
+  "max_annotation_attempts": 2,
+  "context_isolation": "one case, one condition, one fresh ephemeral session per attempt; no previous outputs or other cases",
+  "concurrency": 4,
+  "embedding": "same BAAI/bge-m3 revision5617a9f61b028005a4858fdac845db406aefb181; dense1024 CLS normalized",
+  "primary_clusters": "pilot evaluation100 only; expansion500; separate native and E/G common cohorts; k4,6,8,10,15,20 seeds42,43,44; primary display10 seed42",
+  "retrieval": "pilot20queries80gallery; expansion100queries400gallery; top5 plus random; unique pairs judged once, original questions/solutions/references only",
+  "judge_gate": "36 controls (18 underlying pairs in both orders); at least10/12 each class and at least16/18 both orders agree, no invalid judgment output; fail => do not publish automated retrieval accuracy",
+  "judge_is_independent_model": false,
+  "human_ground_truth": false,
+  "historical_comparison_limits": "different serving route, structured output enforcement, isolation for old pilot; cannot attribute every difference solely to model weights",
+  "stage": "prepared",
+  "historical_comparison": "Also cluster/retrieve on exact intersection of GPT E/G and previous E/G eligible evaluation questions. Previous500 baseline is offset-corrected v2, same descriptions as v1.",
+  "native_baselines": "Reuse R/Q/Random top5 exactly from each old run; no new source generation.",
+  "judge_batch_execution": {
+    "pairs_per_request": 5,
+    "independent_fresh_session_per_batch": true,
+    "within_batch_context_shared": true,
+    "ordering_seed": 20261112,
+    "labels_hidden_by_blind_ids": true,
+    "same_format_controls_before_use": true,
+    "reason": "reduce repeated session overhead; all methods share one judgment per unique pair; report shared-context limitation"
+  },
+  "reference_free_diagnosis": {
+    "cases": 500,
+    "model": "gpt-6-astra",
+    "same_questions_solutions_as_v2": true,
+    "reference_hidden": true,
+    "fresh_session_per_case": true,
+    "original_v2_screen_prompt_preserved_with_no_tools_wrapper": true,
+    "structured_output_schema_added": true,
+    "not_used_for_primary_embeddings": true
+  }
+}

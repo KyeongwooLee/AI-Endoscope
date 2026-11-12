@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2969-1",
+  "response_sha256": "9d8c450e76b731f3fa21dc3b8841adede9827e0a32b79d807af6fcff4a2be081",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total number of loads = 80 loads",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Frank's laundry detergent is double concentrated and will wash 80 loads of laundry.",
+  "observed_error": "The response assigns only 80 loads to the two bottles combined.",
+  "violated_condition": "Two bottles supply 2 × 80 loads, since each bottle washes 80 loads.",
+  "error_description": "The response uses 80 loads as the combined capacity of two bottles, although 80 loads is the capacity of one bottle. It therefore divides the two-bottle cost of $40.00 by a one-bottle load count. The division and conversion to cents correctly execute the written arithmetic, but the denominator is wrong.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

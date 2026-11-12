@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3694-2",
+  "response_sha256": "acb32df90e007730ed748a6f36475978dd4a6e3bfc836998fe1f6651a367b466",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Since the number of sharks is twice the number of Pelicans in Shark Bite Cove, we have \\( 2 \\times \\frac{2}{3}P = 60 \\).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "For many years, the number of sharks in Pelican Bay has been twice the number of Pelicans in Shark Bite Cove.",
+  "observed_error": "Step 5 applies the historical twice-as-many relation to the pelicans remaining after migration.",
+  "violated_condition": "The unchanged 60 sharks equal twice the original pelican population P, so 2P = 60, rather than twice the remaining population.",
+  "error_description": "Step 5 equates 60 sharks to twice the pelican population remaining after one-third moved. The stated historical ratio applies to the original population P, requiring 2P = 60. The subsequent arithmetic correctly executes the written equation, but that equation applies the ratio to the wrong time.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

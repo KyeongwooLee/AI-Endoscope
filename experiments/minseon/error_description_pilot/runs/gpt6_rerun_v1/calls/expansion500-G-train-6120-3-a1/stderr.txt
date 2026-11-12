@@ -1,0 +1,3 @@
+2026-11-11T20:12:13.733632Z ERROR codex_models_manager::manager: failed to load models cache: EOF while parsing a value at line 1 column 0
+2026-11-11T20:12:14.310258Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-11-11T20:12:21.598403Z  WARN codex_core::shell_snapshot: Failed to delete shell snapshot at AbsolutePathBuf("/home/coder/.codex/shell_snapshots/01a1cc3d-4e8c-7f60-9247-d93065375a10.1794427934308064731.sh"): Os { code: 2, kind: NotFound, message: "No such file or directory" }

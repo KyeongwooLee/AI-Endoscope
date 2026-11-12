@@ -1,0 +1,47 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Andrew installed hardwood flooring in his house. His bedroom took eight wooden planks, his living room took twenty planks, and his kitchen took eleven planks. The guest bedroom took two fewer planks than Andrew’s bedroom, and each of his two hallways took four planks. He accidentally ruined three planks in each bedroom by dragging furniture over them and had to replace them. He ended up with six leftover planks at the end. How many wooden planks did Andrew buy to start with?
+SOLUTION: To find the total number of wooden planks Andrew bought, let's break down the problem step by step:
+
+1. **Bedroom Planks**:
+   - Andrew's bedroom took 8 planks.
+   - Guest bedroom took 2 fewer planks than Andrew’s bedroom.
+   - Hallways each took 4 planks, and there are two hallways.
+
+   Total planks for bedrooms and hallways:
+   \[
+   8 + (8 - 2) + 2 \times 4 = 8 + 6 + 8 = 22
+   \]
+
+2. **Living Room Planks**:
+   - Living room took 20 planks.
+
+3. **Kitchen Planks**:
+   - Kitchen took 11 planks.
+
+4. **Repaired Planks**:
+   - Andrew ruined 3 planks in each bedroom.
+
+   Total planks ruined:
+   \[
+   3 \times 3 = 9
+   \]
+
+5. **Leftover Planks**:
+   - Andrew ended up with 6 leftover planks.
+
+6. **Initial Planks Calculation**:
+   - We need to find the initial number of planks Andrew bought.
+
+   Total planks used initially:
+   \[
+   22 + 20 + 11 = 53
+   \]
+
+   Adding the leftover planks:
+   \[
+   53 + 6 = 59
+   \]
+
+Therefore, the answer is:
+#### 59

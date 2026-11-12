@@ -1,0 +1,66 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-7430-4
+response_sha256: b1d52dbc482d566a9c496c6ee21c27bd3c1e1f8fb8520b800bb741f8ba8fb9dc
+
+=== QUESTION ===
+A park has 50 benches with a capacity of 4 people each. On a Sunday afternoon, 80 people were sitting on the benches. What's the number of available spaces on the benches that other people can sit on before the carrying capacity of the benches is full?
+=== MODEL SOLUTION ===
+#### 20
+To determine the number of available spaces on the benches, we first need to calculate the total capacity of the benches. Given that there are 50 benches with a capacity of 4 people each:
+
+Total capacity = Number of benches × Capacity per bench
+Total capacity = 50 benches × 4 people/bench
+Total capacity = 200 people
+
+Next, we know that on a Sunday afternoon, 80 people were sitting on the benches. To find the number of available spaces, we subtract the number of people sitting from the total capacity:
+
+Available spaces = Total capacity - Number of people sitting
+Available spaces = 200 people - 80 people
+Available spaces = 120 people
+
+Thus, there are 120 available spaces on the benches that other people can sit on before the carrying capacity is full.
+=== REFERENCE SOLUTION (fallible aid) ===
+In the park, 50 benches with a capacity of four people each have a total capacity of 50*4 = <<50*4=200>>200 sitting spaces.
+If 80 people are already using spaces, the number of empty spaces is 200-80 =120
+#### 120
+=== END ===

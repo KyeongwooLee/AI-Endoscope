@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"43 chairs","check":"There are 4 × 5 = 20 yellow chairs and 20 − 2 = 18 blue chairs. The total is 5 + 20 + 18 = 43, not 41.","evidence_quote":"5 (red) + 20 (yellow) + 18 (blue) = 41 chairs","error_description":"The solution correctly finds each color's count but incorrectly sums them as 41 instead of 43."}

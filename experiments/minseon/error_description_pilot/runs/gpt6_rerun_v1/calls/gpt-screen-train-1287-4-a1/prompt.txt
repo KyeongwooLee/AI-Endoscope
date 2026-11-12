@@ -1,0 +1,41 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Pete walks backwards three times faster than Susan walks forwards, and Tracy does one-handed cartwheels twice as fast as Susan walks forwards.  But Pete can walk on his hands only one quarter the speed that Tracy can do cartwheels.  If Pete walks on his hands at 2 miles per hour, how fast can Pete walk backwards, in miles per hour?
+SOLUTION: To solve this problem, we need to establish relationships between the speeds of Pete, Susan, and Tracy.
+
+1. **Pete's walking speed on hands**: Given as 2 miles per hour.
+2. **Pete's walking speed backwards**: Pete walks backwards three times faster than Susan walks forwards.
+3. **Susan's walking speed forwards**: We need to express Susan's speed in terms of Pete's walking speed on hands.
+4. **Tracy's cartwheel speed**: Tracy does one-handed cartwheels twice as fast as Susan walks forwards.
+5. **Tracy's walking speed on hands**: Tracy can walk on her hands one quarter the speed that Tracy can do cartwheels.
+
+Let's denote:
+- \( S_f \) as Susan's walking speed forwards.
+- \( T_w \) as Tracy's walking speed on hands.
+- \( T_c \) as Tracy's cartwheel speed.
+- \( P_h \) as Pete's walking speed on hands.
+- \( P_b \) as Pete's walking speed backwards.
+
+Given:
+- \( P_h = 2 \) miles per hour
+- \( P_b = 3 \times S_f \)
+- \( T_c = 2 \times S_f \)
+- \( T_w = \frac{1}{4} \times T_c \)
+
+From \( T_w = \frac{1}{4} \times T_c \), we get:
+\[ T_w = \frac{1}{4} \times 2S_f = \frac{1}{2} S_f \]
+
+We know \( S_f = P_h \) because Pete walks backwards three times faster than Susan walks forwards:
+\[ S_f = 2 \text{ miles per hour} \]
+
+Now, calculate \( T_c \):
+\[ T_c = 2 \times S_f = 2 \times 2 = 4 \text{ miles per hour} \]
+
+Next, calculate \( T_w \):
+\[ T_w = \frac{1}{2} S_f = \frac{1}{2} \times 2 = 1 \text{ mile per hour} \]
+
+Finally, calculate \( P_b \):
+\[ P_b = 3 \times S_f = 3 \times 2 = 6 \text{ miles per hour} \]
+
+Therefore, Pete can walk backwards at:
+#### 6

@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Yun had 20 paperclips initially, but then lost 12. Marion has 1/4 more than what Yun currently has, plus 7. How many paperclips does Marion have?
+SOLUTION: Step 1: Determine how many paperclips Yun has after losing 12.
+Yun initially had 20 paperclips. After losing 12:
+20 - 12 = 8 paperclips
+
+Step 2: Calculate how many paperclips Marion has.
+Marion has 1/4 more than what Yun currently has, plus 7. This means:
+Yun's paperclips + (1/4) * Yun's paperclips + 7 = Marion's paperclips
+8 + (1/4) * 8 + 7
+
+Step 3: Simplify the expression.
+8 + 2 + 7 = 17
+
+Final answer:
+#### 17
+#### 17

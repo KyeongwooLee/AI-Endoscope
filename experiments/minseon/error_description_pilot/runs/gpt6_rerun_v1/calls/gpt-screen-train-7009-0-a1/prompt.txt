@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Pablo’s mother agrees to pay him one cent for every page he reads. He plans to save the money for some candy. Pablo always checks out books that are exactly 150 pages. After reading his books, he went to the store and bought $15 worth of candy and had $3 leftover. How many books did Pablo read?
+SOLUTION: To find out how many books Pablo read, we need to follow these steps:
+
+1. Determine how much money Pablo earned from reading the books.
+2. Calculate how many books he read based on the amount of money he earned.
+
+Step 1: Calculate the total money Pablo earned from reading the books.
+Pablo bought $15 worth of candy and had $3 leftover. So, the total money he earned is:
+$15 (candy) + $3 (leftover) = $18
+
+Step 2: Calculate how many books Pablo read.
+Pablo earns 1 cent for every page he reads. Since each book is 150 pages, the number of books he read is:
+$18 (total money earned) / $0.01 (cost per book) = 1800 books
+
+#### 1800
+Pablo read 1800 books.

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1365-3",
+  "response_sha256": "ca06b022458e2af051558d6d4b021ed64972626b6f008825c4cfc35da6213b49",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The total storage space is 2000 kilobytes, so:",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "A portable computer drive has enough kilobytes of storage space to store 2000 photos. Each photo is 1.5 kilobytes in size.",
+  "observed_error": "The response treats a capacity of 2000 photos as 2000 kilobytes.",
+  "violated_condition": "Total storage in kilobytes equals 2000 photos multiplied by 1.5 kilobytes per photo.",
+  "error_description": "The response assigns the drive a total capacity of 2000 kilobytes, although 2000 is the number of photos it can hold. Capacity must multiply that photo count by 1.5 kilobytes per photo. The subsequent subtraction and division correctly execute their written operands but use this incorrect capacity.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

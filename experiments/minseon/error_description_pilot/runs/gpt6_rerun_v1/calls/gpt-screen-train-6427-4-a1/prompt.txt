@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John ends up serving on jury duty.  Jury selection takes 2 days.  The trial itself lasts 4 times as long as jury selection  It is a complicated trial.  The number of hours spent in jury deliberation was the equivalent of 6 full days.  They spend 16 hours a day in deliberation.  How many days does John spend on jury duty?
+SOLUTION: Step 1: Calculate the duration of the trial.
+The trial lasts 4 times as long as jury selection.
+Jury selection takes 2 days.
+Trial duration = 4 * 2 days = 8 days
+
+Step 2: Calculate the total time spent in deliberation.
+The number of hours spent in deliberation was the equivalent of 6 full days.
+Time spent in deliberation = 6 days * 16 hours/day = 96 hours
+
+Step 3: Calculate the total days John spends on jury duty.
+Total days = Time in jury selection + Trial duration + Time in deliberation
+Total days = 2 days + 8 days + 6 days = 16 days
+
+#### 16
+This problem demonstrates the importance of combining and comparing different durations to find the total time spent on jury duty. It involves basic multiplication, addition, and understanding of equivalent time periods.

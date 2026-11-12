@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$40","check":"Tina saved 27 + 14 + 21 = $62 and spent 5 + 17 = $22, leaving $40. The solution gives the correct formula but reports $34.","evidence_quote":"#### 34","error_description":"The final answer of $34 conflicts with the $40 obtained from the stated formula; no evaluated intermediate arithmetic is shown."}

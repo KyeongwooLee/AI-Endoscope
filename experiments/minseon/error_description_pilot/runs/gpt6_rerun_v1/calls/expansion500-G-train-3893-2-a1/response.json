@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3893-2",
+  "response_sha256": "8cfd2e7cc756331e5d418a077a693ed4aaf0a844b273fc260cfbfcc2d374cf9c",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "- Quarters: \\(4 \\times 0.25 = 1\\) dollar",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Rocco stores his coins in piles of 10 coins each.",
+  "observed_error": "The quarter-value calculation uses the number of piles as the number of coins.",
+  "violated_condition": "Each denomination's value equals its pile count multiplied by 10 coins per pile and its coin value.",
+  "error_description": "The response calculates the quarters' value as 4 × $0.25, omitting the 10 coins in each pile. The written multiplication is correct, but it values only four quarters instead of four piles. The same missing factor carries through the other denominations and the total.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

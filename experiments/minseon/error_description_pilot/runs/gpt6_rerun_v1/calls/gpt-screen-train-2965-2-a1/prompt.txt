@@ -1,0 +1,31 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Bertha plays tennis. Every ten games, one of her tennis balls wears out. Every five games, she loses a ball. Every four games, she buys a canister of three balls. She started with two balls and gave one to her partner. After twenty games, how many tennis balls does she have?
+SOLUTION: Bertha starts with 2 balls and gives 1 to her partner, so she has 1 ball initially. Let's calculate the number of balls she has after each game based on the given conditions.
+
+**Step 1:** After 1 game, she has 1 ball.
+**Step 2:** After 2 games, she has 1 ball.
+**Step 3:** After 3 games, she has 1 ball.
+**Step 4:** After 4 games, she has 1 ball.
+**Step 5:** After 5 games, she has 1 ball.
+**Step 6:** After 6 games, she has 1 ball.
+**Step 7:** After 7 games, she has 1 ball.
+**Step 8:** After 8 games, she has 1 ball.
+**Step 9:** After 9 games, she has 1 ball.
+**Step 10:** After 10 games, she has 1 ball. (Bertha's first ball wears out.)
+
+**Step 11:** After 11 games, she has 2 balls.
+**Step 12:** After 12 games, she has 2 balls.
+**Step 13:** After 13 games, she has 2 balls.
+**Step 14:** After 14 games, she has 2 balls.
+**Step 15:** After 15 games, she has 2 balls.
+**Step 16:** After 16 games, she has 2 balls.
+**Step 17:** After 17 games, she has 2 balls.
+**Step 18:** After 18 games, she has 2 balls.
+**Step 19:** After 19 games, she has 2 balls.
+**Step 20:** After 20 games, she has 2 balls.
+
+Bertha has 2 balls after 20 games.
+
+#### 2
+Bertha has 2 tennis balls after 20 games.

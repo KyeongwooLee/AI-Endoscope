@@ -1,0 +1,19 @@
+{
+  "source_id": "train-4156-0",
+  "response_sha256": "27cb4f92af33f141e6402a6f566131304bf3d57828c595b51e22bac3895239d0",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total amount of gas needed = Current amount in truck's tank + Current amount in car's tank",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If she fills them both up completely, how many gallons does she add?",
+  "observed_error": "The response uses the sum of current contents as the total required for full tanks.",
+  "violated_condition": "The full-tank total is the sum of the 20-gallon and 12-gallon capacities; gas added equals capacity minus current contents.",
+  "error_description": "The response identifies 10 + 4 gallons, the gas already present, as the total needed for two full tanks. That total must instead come from the 20- and 12-gallon capacities before subtracting existing gas. The addition itself is correct; the quantities assigned to the relation are wrong.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Step 4 subtracts only the truck's current gas from the stated total, omitting the car's current gas; both existing amounts must be subtracted from combined capacity."
+  ],
+  "uncertainty_note": null
+}

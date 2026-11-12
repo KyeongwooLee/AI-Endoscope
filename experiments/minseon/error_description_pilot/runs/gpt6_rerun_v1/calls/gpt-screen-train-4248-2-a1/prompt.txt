@@ -1,0 +1,14 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Albert has to run 99 meters in gym class. The track is 9 meters around. He has already run 6 times around it. Once he finishes, how many more complete laps will he have made around the track?
+SOLUTION: Step 1: Determine the total distance Albert has already run.
+Albert has run 6 laps around the track.
+Distance per lap = 9 meters
+Total distance run = 6 laps × 9 meters/lap
+Step 2: Calculate the remaining distance Albert needs to run.
+Total distance to run = 99 meters
+Distance already run = 6 × 9 meters
+Remaining distance = Total distance to run - Distance already run
+Step 3: Calculate the number of additional complete laps Albert will make.
+Remaining distance ÷ Distance per lap = Number of additional complete laps
+#### 6

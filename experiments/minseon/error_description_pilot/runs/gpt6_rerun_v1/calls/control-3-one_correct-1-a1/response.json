@@ -1,0 +1,1 @@
+{"case1_error":"No mathematical error; 10 × 5 × 4 = 200 hours.","case2_error":"Unsupported final number of 500 hours after a correct formula; the formula gives 200 hours.","reason":"Case 1 is correct, so both cases do not have diagnosable errors to compare.","judgment":"uncertain"}

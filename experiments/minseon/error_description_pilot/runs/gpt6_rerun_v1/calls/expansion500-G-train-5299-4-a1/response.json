@@ -1,0 +1,19 @@
+{
+  "source_id": "train-5299-4",
+  "response_sha256": "81e16bb6225e21d07ea6a04e9c350748ecf4e9f125e0d58a7b2b206c4068e4cc",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The total revenue from all customers is the same as the total revenue from returns in this case because every returning customer is buying a new book.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "37% of her 1000 customers end up returning their books.  Her books all cost 15 dollars apiece.",
+  "observed_error": "The response equates total sales revenue with the return amount and introduces unsupported replacement purchases.",
+  "violated_condition": "Gross sales cover all 1000 customers at $15 each; returns cover only 37% of those customers.",
+  "error_description": "The response correctly calculates the return amount, then equates it with revenue from all customers, claiming every returning customer buys a new book. The question supplies no replacement purchases: gross revenue must use all 1000 customers at $15 each, while the return amount covers only 370 customers.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The response reports $5550 as retained sales without performing the stated subtraction; even its own equal gross-sales and returns figures would subtract to zero."
+  ],
+  "uncertainty_note": null
+}

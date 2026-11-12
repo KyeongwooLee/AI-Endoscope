@@ -1,0 +1,926 @@
+[
+  {
+    "source_id": "train-4085-1",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 108,
+    "old_end": 144,
+    "new_start": 88,
+    "new_end": 139,
+    "evidence_quote": "Third anthill: 80 - (20% of 80) = 80 - 16 = 40 ants",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-4535-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 248,
+    "old_end": 264,
+    "new_start": 453,
+    "new_end": 505,
+    "evidence_quote": "Number of animals that get sick = (26 + 40 + 34) / 2",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-5227-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 87,
+    "old_end": 137,
+    "new_start": 226,
+    "new_end": 279,
+    "evidence_quote": "Total legos needed = 240 legos/airplane * 2 airplanes",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-6912-1",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 348,
+    "old_end": 478,
+    "new_start": 183,
+    "new_end": 352,
+    "evidence_quote": "The total cost of the tuna was $14.50 - $1.25 = $13.25. To find the cost per can, we divide the total cost by the number of cans: $13.25 / 9 = $1.47222222 cents per can.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3416-0",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 87,
+    "old_end": 114,
+    "new_start": 210,
+    "new_end": 276,
+    "evidence_quote": "Total temperature = 40 + 50 + 65 + 36 + 82 + 72 + 26 = 361 degrees",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-1505-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 138,
+    "old_end": 168,
+    "new_start": 119,
+    "new_end": 203,
+    "evidence_quote": "Mary had 6 lambs, 4 baby lambs, and 2 original lambs, totaling 6 + 4 + 2 = 12 lambs.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-5950-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 248,
+    "old_end": 255,
+    "new_start": 436,
+    "new_end": 473,
+    "evidence_quote": "Therefore, Latch caught 26 necklaces.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-1434-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 108,
+    "old_end": 134,
+    "new_start": 63,
+    "new_end": 145,
+    "evidence_quote": "4 rounds * 8 games/round + 4 games/round + 2 games/round + 1 game/round = 41 games",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-5127-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 448,
+    "old_end": 508,
+    "new_start": 539,
+    "new_end": 612,
+    "evidence_quote": "Total cost after discount: $34.00 - $8.00 (Curtis) - $9.00 (Rob) = $27.00",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3198-1",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 248,
+    "old_end": 268,
+    "new_start": 289,
+    "new_end": 385,
+    "evidence_quote": "the total number of questions asked in the competition is 20 (Drew) + 26 (Carla) = 30 questions.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-7025-0",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 108,
+    "old_end": 174,
+    "new_start": 167,
+    "new_end": 236,
+    "evidence_quote": "Total calories consumed = 110 + 310 + 215 + 560 + 780 = 2175 calories",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-7456-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 247,
+    "old_end": 260,
+    "new_start": 254,
+    "new_end": 292,
+    "evidence_quote": "Number of sets of 5 fruits = 5 / 5 = 1",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-5568-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 448,
+    "old_end": 558,
+    "new_start": 467,
+    "new_end": 625,
+    "evidence_quote": "The only even number that divides 60 evenly is 60 itself (since 60 is already even). Therefore, she should make 60 chocolate cupcakes and 60 vanilla cupcakes.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-2557-1",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 348,
+    "old_end": 400,
+    "new_start": 442,
+    "new_end": 556,
+    "evidence_quote": "30 precious stones in agate + 35 precious stones in olivine + 46 precious stones in diamond = 101 precious stones.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-1333-0",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 588,
+    "old_end": 600,
+    "new_start": 433,
+    "new_end": 478,
+    "evidence_quote": "Louise needs to bake 60 - 10 = 50 more cakes.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-6097-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 348,
+    "old_end": 368,
+    "new_start": 401,
+    "new_end": 473,
+    "evidence_quote": "Each bag contains half a ton of food, which is equivalent to 500 pounds.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-6630-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 384,
+    "old_end": 404,
+    "new_start": 471,
+    "new_end": 502,
+    "evidence_quote": "$240 - ($80 + $120 + $10) = $50",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3946-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 384,
+    "old_end": 395,
+    "new_start": 386,
+    "new_end": 407,
+    "evidence_quote": "12 + 48 = 60 brownies",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-7463-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 248,
+    "old_end": 264,
+    "new_start": 325,
+    "new_end": 355,
+    "evidence_quote": "New women = 100 - 30 + 10 = 80",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-289-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 348,
+    "old_end": 378,
+    "new_start": 510,
+    "new_end": 545,
+    "evidence_quote": "301 = 4(2C + 3) + (2C + 3) + 2C + 3",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-7329-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 188,
+    "old_end": 240,
+    "new_start": 445,
+    "new_end": 533,
+    "evidence_quote": "The total area of the shoebox is 24 square inches + 48 square inches = 72 square inches.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-1224-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 448,
+    "old_end": 550,
+    "new_start": 410,
+    "new_end": 539,
+    "evidence_quote": "Portfolio after 2 years = Portfolio after 1 year + Additional amount * (1 + Growth) = $120 + $28 * 1.10 = $120 + $30.80 = $150.80",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-5369-1",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 348,
+    "old_end": 378,
+    "new_start": 310,
+    "new_end": 384,
+    "evidence_quote": "Total grams of peanut butter = 12,500,000 grams / 20 grams = 625,000 grams",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-5513-0",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 0,
+    "old_end": 54,
+    "new_start": 114,
+    "new_end": 154,
+    "evidence_quote": "Amount in scheme A = $300 * 30/100 = $90",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-7286-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 187,
+    "old_end": 218,
+    "new_start": 311,
+    "new_end": 352,
+    "evidence_quote": "P = 2G - 4 = 2 \\cdot 12 - 4 = 24 - 4 = 20",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-89-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 448,
+    "old_end": 538,
+    "new_start": 472,
+    "new_end": 553,
+    "evidence_quote": "Total books borrowed in a week = (40 books * 5 days) + (40 books * 0.15 * 5 days)",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-6736-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 398,
+    "old_end": 408,
+    "new_start": 527,
+    "new_end": 563,
+    "evidence_quote": "Total cost = $7.00 + $20.00 = $27.00",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3547-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 387,
+    "old_end": 428,
+    "new_start": 239,
+    "new_end": 298,
+    "evidence_quote": "50% larger than 8000 gallons = 8000 * 1.50 = 12000 gallons.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-4731-0",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 448,
+    "old_end": 468,
+    "new_start": 655,
+    "new_end": 701,
+    "evidence_quote": "20 - (2 + 4 + 1 + 4) = 11 apples on Wednesday.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3968-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 448,
+    "old_end": 500,
+    "new_start": 329,
+    "new_end": 363,
+    "evidence_quote": "she had 12 - 5 = 7 white eggs left",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-548-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 448,
+    "old_end": 508,
+    "new_start": 456,
+    "new_end": 507,
+    "evidence_quote": "200000 cents/day * 7 days/week = 1400000 cents/week",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3373-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 148,
+    "old_end": 164,
+    "new_start": 329,
+    "new_end": 362,
+    "evidence_quote": "Total people: 2 + 10 + 7 + 7 = 26",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-790-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 448,
+    "old_end": 512,
+    "new_start": 260,
+    "new_end": 336,
+    "evidence_quote": "Total area of houses made by Zion and his friends = 2 * Area of Zion's house",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-4820-0",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 348,
+    "old_end": 414,
+    "new_start": 537,
+    "new_end": 640,
+    "evidence_quote": "Total soda left = 0.9 bottles (drank) + 0.7 bottles (given to friends) + 0.7 bottles (given to friends)",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-4495-1",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 188,
+    "old_end": 268,
+    "new_start": 221,
+    "new_end": 345,
+    "evidence_quote": "Net change in population = Increase in population due to birth - (2000 people leave per year - 2500 people come in per year)",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3248-0",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 498,
+    "old_end": 510,
+    "new_start": 535,
+    "new_end": 567,
+    "evidence_quote": "180 - 45 - 45 - 20 = 90 students",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-6605-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 387,
+    "old_end": 414,
+    "new_start": 379,
+    "new_end": 423,
+    "evidence_quote": "220 hours per month * 12 months = 2640 hours",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-6895-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 547,
+    "old_end": 612,
+    "new_start": 434,
+    "new_end": 519,
+    "evidence_quote": "James danced another 1/3 times more hours than the total time John danced and rested.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-1413-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 587,
+    "old_end": 614,
+    "new_start": 517,
+    "new_end": 567,
+    "evidence_quote": "Total earnings: 116 * 2 + 76 * 3 = 232 + 228 = 460",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-6979-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 398,
+    "old_end": 438,
+    "new_start": 657,
+    "new_end": 760,
+    "evidence_quote": "The yellow bus driver can see the entire length of the red bus if they are sitting next to the red bus.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3718-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 587,
+    "old_end": 608,
+    "new_start": 815,
+    "new_end": 900,
+    "evidence_quote": "Total days to make back the money = Number of days to break even + Initial investment",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-2136-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 847,
+    "old_end": 878,
+    "new_start": 703,
+    "new_end": 773,
+    "evidence_quote": "Number of school days = 50 hours ÷ 1000 minutes/day = 50 ÷ 10 = 5 days",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-4923-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 187,
+    "old_end": 205,
+    "new_start": 204,
+    "new_end": 256,
+    "evidence_quote": "There are 8 floors from the 9th to the ground floor.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-6379-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 387,
+    "old_end": 438,
+    "new_start": 582,
+    "new_end": 667,
+    "evidence_quote": "It takes twice as long per page as a regular letter, so 20 * 2 = 40 minutes per page.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-408-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 47,
+    "old_end": 64,
+    "new_start": 115,
+    "new_end": 152,
+    "evidence_quote": "Total weight of adults = 140 pounds/3",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-5144-0",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 567,
+    "old_end": 608,
+    "new_start": 745,
+    "new_end": 812,
+    "evidence_quote": "100 miles (South) + 60 miles (East) + 120 miles (North) = 280 miles",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-6539-1",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 248,
+    "old_end": 274,
+    "new_start": 402,
+    "new_end": 456,
+    "evidence_quote": "Remaining cars: 5,650,000 - 2,500,000 = 3,150,000 cars",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-2389-1",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 387,
+    "old_end": 418,
+    "new_start": 476,
+    "new_end": 567,
+    "evidence_quote": "There are 3 red cards for each number divisible by 3. Thus, there are 3 * 3 = 9 such cards.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-2422-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 348,
+    "old_end": 438,
+    "new_start": 595,
+    "new_end": 768,
+    "evidence_quote": "Fish given to sister = 1/2 * 25 = 12.5 fish (since we can't have half a fish, we'll consider 12 or 13, but for simplicity in this calculation, we'll assume he gives 12 fish)",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-4169-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 187,
+    "old_end": 204,
+    "new_start": 250,
+    "new_end": 318,
+    "evidence_quote": "The number of plums on the plum tree remains the same, which is 180.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3733-0",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 448,
+    "old_end": 508,
+    "new_start": 455,
+    "new_end": 532,
+    "evidence_quote": "Total yield from clay-rich soil = 40 acres * 200 bushels/acre = 8,000 bushels",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-212-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 187,
+    "old_end": 204,
+    "new_start": 221,
+    "new_end": 275,
+    "evidence_quote": "Total vacation days = 2 weeks/year * 2 years = 4 days.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-337-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 448,
+    "old_end": 460,
+    "new_start": 920,
+    "new_end": 932,
+    "evidence_quote": "38 - 17 = 21",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-1819-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 587,
+    "old_end": 658,
+    "new_start": 506,
+    "new_end": 641,
+    "evidence_quote": "Total cost = Cost of fancy ham and cheese + Cost of salami + Cost of brie + Cost of olives + Cost of feta cheese + Cost of french bread",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3809-1",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 468,
+    "old_end": 488,
+    "new_start": 560,
+    "new_end": 609,
+    "evidence_quote": "Number of T-shirts found = 3 × Number of T-shirts",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-5299-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 547,
+    "old_end": 668,
+    "new_start": 783,
+    "new_end": 933,
+    "evidence_quote": "The total revenue from all customers is the same as the total revenue from returns in this case because every returning customer is buying a new book.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-5364-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 248,
+    "old_end": 318,
+    "new_start": 529,
+    "new_end": 614,
+    "evidence_quote": "Total expenses = $10,000 + $2,500 × 4 + $3,000 = $10,000 + $10,000 + $3,000 = $23,000",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-1893-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 567,
+    "old_end": 598,
+    "new_start": 821,
+    "new_end": 889,
+    "evidence_quote": "Profit per mile = (Total earnings) - (Total cost of gas) / 600 miles",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-2965-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 138,
+    "old_end": 155,
+    "new_start": 575,
+    "new_end": 639,
+    "evidence_quote": "After 10 games, she has 1 ball. (Bertha's first ball wears out.)",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-2507-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 448,
+    "old_end": 465,
+    "new_start": 609,
+    "new_end": 657,
+    "evidence_quote": "Time for Sarah = 4.5 hours - 2 hours = 2.5 hours",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-922-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 268,
+    "old_end": 338,
+    "new_start": 380,
+    "new_end": 480,
+    "evidence_quote": "New company earnings = Old company earnings + 5 months * $5000/month = $180,000 + $25,000 = $205,000",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-4626-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 587,
+    "old_end": 614,
+    "new_start": 1280,
+    "new_end": 1306,
+    "evidence_quote": "60,000 - 100,000 = -40,000",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-6363-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 278,
+    "old_end": 298,
+    "new_start": 376,
+    "new_end": 431,
+    "evidence_quote": "Total vertical distance = rim height - reach above head",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3140-0",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 248,
+    "old_end": 265,
+    "new_start": 691,
+    "new_end": 743,
+    "evidence_quote": "Chairs for students = 150 - 15 - 30 - 30 = 85 chairs",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-6123-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 387,
+    "old_end": 400,
+    "new_start": 757,
+    "new_end": 788,
+    "evidence_quote": "Price per green tractor: $1,000",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-1894-1",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 398,
+    "old_end": 414,
+    "new_start": 486,
+    "new_end": 545,
+    "evidence_quote": "Remaining time for Tuesday = 32 hours - 22 hours = 10 hours",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-6542-0",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 587,
+    "old_end": 608,
+    "new_start": 987,
+    "new_end": 1060,
+    "evidence_quote": "Total cans needed = Total paint needed / Paint per can = 18 / 1 = 18 cans",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-4156-0",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 448,
+    "old_end": 504,
+    "new_start": 1214,
+    "new_end": 1294,
+    "evidence_quote": "Amount of gas to be added = Total amount needed - Current amount in truck's tank",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3171-3",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 138,
+    "old_end": 160,
+    "new_start": 229,
+    "new_end": 279,
+    "evidence_quote": "Tape needed for one box = 30 + 2 * 15 = 70 inches.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-7451-1",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 138,
+    "old_end": 168,
+    "new_start": 143,
+    "new_end": 200,
+    "evidence_quote": "Profit per car = Selling price - Cost = $50 - $100 = -$50",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-760-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 147,
+    "old_end": 164,
+    "new_start": 236,
+    "new_end": 275,
+    "evidence_quote": "Batches required = 15 / 2 = 7.5 batches",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-121-1",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 448,
+    "old_end": 474,
+    "new_start": 579,
+    "new_end": 663,
+    "evidence_quote": "Number of blocks in the remaining time: 4 hours * 2000 blocks per hour = 8000 blocks",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-6685-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 667,
+    "old_end": 688,
+    "new_start": 426,
+    "new_end": 477,
+    "evidence_quote": "Heather made 60 - 20 = 40 pizzas on the second day.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-2291-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 498,
+    "old_end": 508,
+    "new_start": 948,
+    "new_end": 1005,
+    "evidence_quote": "Therefore, she walks more than 10 times further on Day 4.",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-1817-4",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 847,
+    "old_end": 865,
+    "new_start": 1167,
+    "new_end": 1238,
+    "evidence_quote": "Number of pumps = 450 cubic inches / 50 cubic inches per pump = 9 pumps",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3515-0",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 348,
+    "old_end": 478,
+    "new_start": 816,
+    "new_end": 970,
+    "evidence_quote": "Total time = Time for Hugo to fold small boxes + Time for Hugo to fold medium boxes + Time for Tom to fold small boxes + Time for Tom to fold medium boxes",
+    "description_unchanged": true
+  },
+  {
+    "source_id": "train-3856-2",
+    "old_errors": [
+      "evidence span invalid: response[start:end] != evidence_quote"
+    ],
+    "old_start": 187,
+    "old_end": 238,
+    "new_start": 252,
+    "new_end": 332,
+    "evidence_quote": "Caps collected in the subsequent years = 5 caps/month * 12 months/year * 4 years",
+    "description_unchanged": true
+  }
+]

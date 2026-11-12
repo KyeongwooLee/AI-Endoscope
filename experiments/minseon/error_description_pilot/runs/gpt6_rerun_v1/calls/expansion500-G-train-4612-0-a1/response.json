@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4612-0",
+  "response_sha256": "368f700db77ec0ecba740ca07bd58da35ceb380bb11ebcfa9bfc7740ebe3e0b3",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Number of eggs needed = $5 / $0.1667 per egg ≈ 30 eggs.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "sell each egg for 20 cents",
+  "observed_error": "The response divides the capital by the purchase cost per egg instead of the selling price.",
+  "violated_condition": "Capital recovered equals eggs sold multiplied by $0.20 per egg.",
+  "error_description": "The response uses the purchase cost of $0.1667 per egg to calculate how many sales recover the $5 capital. Recovery must use the stated selling price of 20 cents per egg. The division is approximately consistent with its written operands, but the denominator represents the wrong quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

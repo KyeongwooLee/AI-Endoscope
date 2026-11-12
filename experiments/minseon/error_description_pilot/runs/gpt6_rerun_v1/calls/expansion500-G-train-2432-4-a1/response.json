@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2432-4",
+  "response_sha256": "be1001b02f40e2425fbe14f742cc3a4598560336fbdc0a2c514625080ecb0e09",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "6. The brownies she has left are:\n   5 (to Carl) + 2 (to Simon) = 7 brownies",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Of the remaining brownies, she gave half to her best friend, Carl, and another two to her friend, Simon.  How many brownies did she have left?",
+  "observed_error": "The response identifies the sum given to Carl and Simon as the brownies left.",
+  "violated_condition": "Brownies left must equal the 10 remaining after the administrator's share minus the 5 given to Carl and the 2 given to Simon.",
+  "error_description": "The response adds the 5 brownies given to Carl and the 2 given to Simon and labels that total as brownies left. The addition is executed correctly, but those gifts must be subtracted from the 10 brownies remaining after the administrator's share.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

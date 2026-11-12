@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Hans reserved a table at a fine dining restaurant for twelve people. He has to pay a deposit for the reservation, and the deposit is a flat $20 plus an extra $3 per adult but only $1 per child. Two of the people in Hans’s party are his kid cousins, and the rest are adults. How many dollars does Hans have to pay as a deposit for the restaurant reservation?
+SOLUTION: Step 1: Determine the number of adults in Hans's party.
+- Total number of people: 12
+- Number of kids: 2
+- Number of adults: 12 - 2 = 10
+
+Step 2: Calculate the deposit for the adults.
+- Deposit per adult: $3
+- Total deposit for adults: 10 * $3 = $30
+
+Step 3: Calculate the deposit for the kids.
+- Deposit per kid: $1
+- Total deposit for kids: 2 * $1 = $2
+
+Step 4: Calculate the total deposit.
+- Total deposit: Deposit for adults + Deposit for kids
+- Total deposit: $30 + $2 = $32
+
+#### 32
+Hans has to pay a deposit of $32 for the restaurant reservation.

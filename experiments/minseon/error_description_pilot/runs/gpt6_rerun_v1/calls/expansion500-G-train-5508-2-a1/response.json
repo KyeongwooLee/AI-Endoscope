@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5508-2",
+  "response_sha256": "09b41543fbd8945817d3e018a8cb648750511dad91e0f711d5a8ac62b5b2c3da",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Cost = Total beads × Cost per 10 beads\nCost = 1800 × (10/10) = 1800 × 1 = $1800",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If beads cost $1 per 10 beads, how much do all the beads she bought cost?",
+  "observed_error": "The cost calculation multiplies 1800 beads by 1 instead of the per-bead rate of $1/10.",
+  "violated_condition": "Total cost equals the number of beads multiplied by $1 per 10 beads, or the number of ten-bead groups multiplied by $1.",
+  "error_description": "The response correctly totals 1800 beads but multiplies that count directly by the cost per ten beads. Its factor 10/10 treats each bead as costing $1, violating the stated rate of $1 for ten beads. The written multiplication is executed correctly; the pricing relation is wrong.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

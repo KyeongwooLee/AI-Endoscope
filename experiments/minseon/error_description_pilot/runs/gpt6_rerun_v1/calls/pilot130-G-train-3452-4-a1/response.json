@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3452-4",
+  "response_sha256": "1f823d3a653c1ad002e7e897e0108175584b1532d1a2adca370f92f57f1d1fb4",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "So, Mrs. Merril will allow her child to use his gadget for 2 hours and 0 minutes in the evening.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "if he already used his gadget for 45 minutes in the morning?",
+  "observed_error": "The response assigns the full daily allowance to the evening without deducting the morning usage.",
+  "violated_condition": "Evening allowance must equal the 120-minute daily allowance minus the 45 minutes already used.",
+  "error_description": "The response correctly writes the subtraction relation and converts 2 hours to 120 minutes, but then reports the entire daily allowance as available in the evening. It never applies the 45-minute morning deduction, so the stated evening allowance violates the daily screen-time limit.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

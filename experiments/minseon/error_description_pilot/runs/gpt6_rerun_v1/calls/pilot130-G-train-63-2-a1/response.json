@@ -1,0 +1,17 @@
+{
+  "source_id": "train-63-2",
+  "response_sha256": "78b6e2fb4ba04bd98d2a7447581a868e6e015157c79993e1c78554e2991499ee",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "30 (goal) - 31 (so far) = -1 situps",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "How many situps would Shawna have to do on Wednesday to meet her minimum goal and make up for the ones she didn't do?",
+  "observed_error": "The response subtracts two days' completed situps from a single day's goal.",
+  "violated_condition": "Wednesday must cover its own 30-situp minimum plus the shortfalls from Monday and Tuesday.",
+  "error_description": "The response treats 30 situps as a cumulative goal, subtracting Monday and Tuesday's combined 31 situps from it. Wednesday must instead include its own minimum and both earlier days' shortfalls. The subtraction is executed correctly, but it compares completed situps against the wrong target.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

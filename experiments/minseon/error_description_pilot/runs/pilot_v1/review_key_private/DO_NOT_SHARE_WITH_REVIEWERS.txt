@@ -1,0 +1,1 @@
+This directory maps blinded codes to methods, ranks and source IDs. Reviewers must not see it.

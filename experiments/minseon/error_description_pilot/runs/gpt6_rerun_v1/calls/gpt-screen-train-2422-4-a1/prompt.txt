@@ -1,0 +1,25 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Hershel has 10 betta fish and 15 goldfish in a bowl. His friend Bexley brings him 2/5 times as many betta fish and 1/3 times as many goldfish. If Hershel gifts his sister 1/2 of the fish, calculate the total number of fish he has remaining in the bowl.
+SOLUTION: Step 1: Calculate the number of betta fish Bexley brings.
+Bexley brings 2/5 times as many betta fish as Hershel originally has.
+Bexley brings 2/5 * 10 = 4 betta fish.
+
+Step 2: Calculate the number of goldfish Bexley brings.
+Bexley brings 1/3 times as many goldfish as Hershel originally has.
+Bexley brings 1/3 * 15 = 5 goldfish.
+
+Step 3: Calculate the total number of fish before gifting.
+Total fish before gifting = betta fish + goldfish
+Total fish before gifting = 10 + 15 = 25 fish
+
+Step 4: Calculate the number of fish given to Hershel's sister.
+Hershel gives 1/2 of the fish to his sister.
+Fish given to sister = 1/2 * 25 = 12.5 fish (since we can't have half a fish, we'll consider 12 or 13, but for simplicity in this calculation, we'll assume he gives 12 fish)
+
+Step 5: Calculate the total number of fish remaining.
+Total fish remaining = total fish before gifting - fish given to sister
+Total fish remaining = 25 - 12 = 13 fish
+
+#### 13
+Hershel has 13 fish remaining in the bowl.

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7243-1",
+  "response_sha256": "d37670ae86abc374a2404963ca54165fe93ed7ddbb628b0527ece000bacac770",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 90",
+  "evidence_start": 0,
+  "evidence_end": 7,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "the number of students who ordered burgers was 30, twice the number of students who called for a hot dog",
+  "observed_error": "The opening answer reports 90 students, contradicting the correctly calculated total later in the response.",
+  "violated_condition": "The total must equal 30 + 30/2 students.",
+  "error_description": "The opening answer gives 90 students, although the total must combine 30 burger orders with half that many hot dog orders. The subsequent equations correctly apply this relation, so the observable mistake is the inconsistent opening answer.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text does not show how the opening value was obtained; no specific arithmetic or relational mistake supports it."
+}

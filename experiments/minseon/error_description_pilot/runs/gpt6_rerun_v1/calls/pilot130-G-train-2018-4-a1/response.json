@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2018-4",
+  "response_sha256": "6bae0e610062c9ae928324a1b50ec90739d1efc0e93fdcd4b3fa4ea571a27f87",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "- Total cost: $12 + $9 = $21 per month",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Jessica has a basic cable television service for $15 per month.",
+  "observed_error": "The total includes only the movie and sports charges, omitting the basic service charge.",
+  "violated_condition": "The total monthly payment must include the $15 basic service plus both channel additions.",
+  "error_description": "The response adds the $12 movie charge and $9 sports charge and labels their sum the total monthly payment, omitting the $15 monthly basic cable charge. The written addition is correct, but it computes only the added channel costs rather than the entire monthly bill.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

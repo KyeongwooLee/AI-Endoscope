@@ -1,0 +1,2 @@
+2026-11-11T19:20:00.463306Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-11-11T19:20:01.449645Z  WARN codex_core_plugins::loader: failed to parse plugin MCP server plugin=/home/coder/.codex/plugins/cache/openai-curated-remote/miricanvas/1.0.2 server="miricanvas" path=/home/coder/.codex/plugins/cache/openai-curated-remote/miricanvas/1.0.2/mcp.json error="unknown field `extensions`, expected `url` or `headers`"

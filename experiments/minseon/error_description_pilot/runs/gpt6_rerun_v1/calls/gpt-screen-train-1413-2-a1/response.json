@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$420","check":"Total tulips: 30 + 60 + 6 = 96; total roses: 20 + 40 + 16 = 76. Earnings are 96 × $2 + 76 × $3 = $420.","evidence_quote":"Tulips: 50 + 60 + 6 = 116","error_description":"The solution uses 50 as the first day's tulip count, although only 30 tulips were sold. This overcounts tulips by 20 and earnings by $40."}

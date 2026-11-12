@@ -1,0 +1,65 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-1842-2
+response_sha256: f78e722937b1da3530eacb17e5064136f310fdd1f5ee7126bddc846674d6df5b
+
+=== QUESTION ===
+Carmen is counting the cars that pass by her window. All the cars are either white, black, or red. She sees 50 trucks and 40 cars. Half the trucks are red, and another 20% are black. If she picks one car at random, what is the percentage chance it's a white truck, rounded to the nearest integer?
+=== MODEL SOLUTION ===
+To find the percentage chance of picking a white truck, we need to determine the number of white trucks and then calculate the probability.
+
+1. Total number of vehicles: 50 trucks + 40 cars = 90 vehicles
+2. Half of the trucks are red: \( \frac{50}{2} = 25 \) red trucks
+3. Another 20% of the trucks are black: \( 0.20 \times 50 = 10 \) black trucks
+4. The rest are white trucks: \( 50 - 25 - 10 = 15 \) white trucks
+5. Probability of picking a white truck: \( \frac{15}{90} \approx 0.1667 \)
+
+#### 16.67
+Final answer: 16.67
+=== REFERENCE SOLUTION (fallible aid) ===
+First find the total number of vehicles Carmen counted: 50 trucks + 40 cars = <<50+40=90>>90 vehicles
+Then find the number of trucks that were red: 50 trucks / 2 = <<50/2=25>>25 trucks
+Then find the number of trucks that were black: 50 trucks * .2 = <<50*.2=10>>10 trucks
+Then subtract the red and black trucks from the total number of trucks to find the number of white trucks: 50 trucks - 25 trucks - 10 trucks = <<50-25-10=15>>15 trucks
+Then divide the number of white trucks by the number of vehicles and multiply by 100% to find the percentage of vehicles that are white trucks: 15 trucks / 90 vehicles * 100% = 16.66...%, which rounds up to 17%.
+#### 17
+=== END ===

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5105-3",
+  "response_sha256": "9443b1d931a485220ed67afb8b8d5893e6a374b697239480068527b4c10c9c66",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total logs = (8 * 80) + (3 * 60) + (4 * 100)\n\n#### 680",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If Jerry cuts up 8 pine trees, 3 maple trees, and 4 walnut trees, how many logs does he get?",
+  "observed_error": "The reported total of 680 does not equal the correctly written sum.",
+  "violated_condition": "Total logs must equal (8 × 80) + (3 × 60) + (4 × 100).",
+  "error_description": "The response correctly multiplies each tree count by its logs per tree and writes the required sum, but reports 680 logs, which does not equal that expression. The error is in the reported numerical evaluation; the text does not reveal which arithmetic operation produced it.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

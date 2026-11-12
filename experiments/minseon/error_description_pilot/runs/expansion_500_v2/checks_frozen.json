@@ -1,0 +1,10 @@
+{
+  "controls_sha256": "880d302bfc152ae774561f05e4536bcb4a2ea76e3213068f16274ec46efec5a9",
+  "prompts_sha256": "f3b9df292cc19f74c8631abb4a3894ee0f7554a6f1f67690d520913c5dace860",
+  "control_base_pairs": 18,
+  "control_ordered_pairs": 36,
+  "control_methods": 2,
+  "real_pair_checks": 10,
+  "reference_free_screens": 500,
+  "note": "No tuning against control outputs; all packets fixed before inference; constructed controls are not held-out natural-data ground truth."
+}

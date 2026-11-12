@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7454-2",
+  "response_sha256": "52de89de83f9551e36979ea067c9607323beb70c06d5f5d260cf153b28e7e7e5",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 3: Convert the total time from minutes to hours.\nThere are 60 minutes in one hour, so divide the total minutes by 60.\n600 minutes / 60 minutes/hour = 10 hours",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "It takes Jennifer 20 minutes to groom each of her 2 long hair dachshunds.",
+  "observed_error": "The response presents the 30-day grooming time for one dog as the total for both dogs.",
+  "violated_condition": "Total grooming time must include 2 dogs: 20 minutes per dog per day × 2 dogs × 30 days.",
+  "error_description": "The response correctly calculates 600 minutes for one dog over 30 days, then converts that subtotal to hours and presents it as Jennifer’s total grooming time. It omits the factor of 2 for her two dogs; the written multiplication and division are executed correctly.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-808-2",
+  "response_sha256": "977643ccd112a6871458e5d85399f9c58f49f9330eeadb83172ccf874b1e4923",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total students in the classroom = Number of occupied desks + Number of students in the restroom",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "including the ones in and out of the classroom",
+  "observed_error": "The response includes restroom students in the classroom subtotal, then adds them again in the total.",
+  "violated_condition": "The occupied classroom desks, restroom students, and absent students must each contribute once to the total.",
+  "error_description": "The response defines the classroom count as 16 occupied desks plus 2 restroom students, although the restroom students are outside the classroom. It then adds those same 2 students again when calculating the overall total. The additions are executed correctly, but the counting relation includes the restroom students twice.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

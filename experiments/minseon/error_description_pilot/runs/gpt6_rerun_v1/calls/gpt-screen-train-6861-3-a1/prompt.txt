@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Ronald and his friend Max want to buy a new video game that was just released. The game costs $60. To earn money, they started selling ice cream in their yard, and they sell each ice cream for $5. How many ice creams will they need to sell for both to be able to afford to buy the game?
+SOLUTION: To determine how many ice creams Ronald and Max need to sell, we first need to find out how much money they need together to buy the game.
+
+The cost of the video game is $60. So, they need to earn $60 in total.
+
+Each ice cream is sold for $5. Let's calculate how many ice creams they need to sell to earn $60.
+
+\[
+\text{Number of ice creams} = \frac{\text{Total cost of the game}}{\text{Price per ice cream}} = \frac{60}{5}
+\]
+
+Now, let's do the division:
+
+\[
+\frac{60}{5} = 12
+\]
+
+So, Ronald and Max will need to sell 12 ice creams for both of them to be able to afford to buy the game.
+
+#### 12
+The answer is 12 ice creams.

@@ -1,0 +1,11 @@
+{
+  "reviewer_id": "ai_codex_v1",
+  "reviewer_type": "ai_provisional",
+  "initials": "AI",
+  "review_dates": [
+    "2026-11-11"
+  ],
+  "independent_of_other_reviewer": false,
+  "saw_method_key_or_scores": true,
+  "notes": "Codex 인공지능 단독 탐색 검수. 정확한 모델 snapshot은 이 세션에서 확인 불가. 100개 원문을 먼저 진단하고 200개 설명 슬롯과 319개 쌍을 검토함. 이전 대화의 방법별 예시를 알고 있으며, 쌍 판정 저장 전 군집 및 방법 대응을 열었으므로 눈가림 평가가 아님. 사람 검수나 민선 본인 판정으로 사용하지 말 것. 보조 표면 유사성 3열은 사용자 요청에 따라 공란. 기존 독립 사람 평가 지표는 변경하지 않음."
+}

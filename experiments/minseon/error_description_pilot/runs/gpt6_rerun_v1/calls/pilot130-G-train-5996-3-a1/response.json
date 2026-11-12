@@ -1,0 +1,19 @@
+{
+  "source_id": "train-5996-3",
+  "response_sha256": "5d0c771d66bfb6eda345b747023461df40903efb6a25e5dc4e113fd19f504464",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "8 * (40 * 2) + 8 = 88",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "8 more than double the amount of apples that it produced the first year",
+  "observed_error": "The second-year expression includes an extra factor of 8 and does not equal its stated result.",
+  "violated_condition": "Second-year production is 2 × 40 + 8; the written expression 8 × (40 × 2) + 8 evaluates to 648, not 88.",
+  "error_description": "The response multiplies twice the first-year production by an additional 8 before adding 8, although the question requires only doubling 40 apples and adding 8 apples. Its stated result of 88 matches the required relation but does not equal the expression it writes.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The final sum is executed incorrectly: 40 + 88 + 66 equals 194, not 294."
+  ],
+  "uncertainty_note": "The opening 168 is unexplained and unsupported; it does not establish a specific mathematical error type."
+}

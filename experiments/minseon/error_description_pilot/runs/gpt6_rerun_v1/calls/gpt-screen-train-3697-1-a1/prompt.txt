@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Opal won $100.00 betting on a horse race.  She put half of her winnings into savings and bet the other half of her winnings.  This time, she made a 60% profit and again, put half of her earnings into savings.  How much did she put into her savings?
+SOLUTION: Step 1: Calculate how much Opal put into savings after the first bet.
+Opal won $100.00. She put half of her winnings into savings.
+$100.00 / 2 = $50.00
+
+Step 2: Calculate how much Opal had left after the first bet.
+$100.00 - $50.00 = $50.00
+
+Step 3: Calculate how much Opal made from her second bet.
+She made a 60% profit on her $50.00 bet.
+$50.00 * 0.60 = $30.00
+
+Step 4: Calculate how much Opal had after the second bet.
+$50.00 + $30.00 = $80.00
+
+Step 5: Calculate how much Opal put into savings after the second bet.
+$80.00 / 2 = $40.00
+
+#### 40.00
+Opal put $40.00 into savings.

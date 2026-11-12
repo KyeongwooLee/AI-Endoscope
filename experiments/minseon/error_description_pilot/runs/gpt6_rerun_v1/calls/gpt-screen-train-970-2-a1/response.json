@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"98 pieces of mail","check":"Johann's friends deliver 41 × 2 = 82 pieces, leaving 180 − 82 = 98. The solution gives the correct formula but ends with 107.","evidence_quote":"#### 107","error_description":"The final number 107 does not match the value 98 of the stated formula."}

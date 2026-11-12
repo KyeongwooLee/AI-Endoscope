@@ -1,0 +1,25 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: There are 120 cards in a box. If 2/5 of the cards are red, exactly 5/9 of the remainder are black, and the rest are green, calculate the number of green cards in the box?
+SOLUTION: #### 24
+
+Let's break down the problem step by step:
+
+1. **Total number of cards**: 
+   - There are 120 cards in the box.
+
+2. **Red cards**:
+   - 2/5 of the cards are red.
+   - Calculation: \( \frac{2}{5} \times 120 = 48 \) red cards.
+
+3. **Remaining cards after red cards**:
+   - Total cards - Red cards = 120 - 48 = 72 remaining cards.
+
+4. **Black cards**:
+   - Exactly 5/9 of the remaining cards are black.
+   - Calculation: \( \frac{5}{9} \times 72 = 40 \) black cards.
+
+5. **Green cards**:
+   - Total cards - Red cards - Black cards = 120 - 48 - 40 = 32 green cards.
+
+Therefore, the number of green cards in the box is 32.

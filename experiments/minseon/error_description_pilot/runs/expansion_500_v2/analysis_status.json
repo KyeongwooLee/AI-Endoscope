@@ -1,0 +1,9 @@
+{
+  "experiment_complete": true,
+  "offset_repair_complete": true,
+  "clustering_and_retrieval_complete": true,
+  "reference_screening_complete": true,
+  "control_checks_complete": true,
+  "full_new_retrieval_judging": "not_run_because_basic_controls_failed",
+  "report_complete": true
+}

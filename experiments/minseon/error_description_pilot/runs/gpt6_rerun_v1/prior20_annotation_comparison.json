@@ -1,0 +1,628 @@
+{
+  "source": "existing20 randomly selected expansion cases with previous Codex AI diagnosis",
+  "not_human_gold": true,
+  "cases": [
+    {
+      "source_id": "train-2136-4",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "50시간 요건을50일/하루50회 이동처럼 사용했다. 하루2회 왕복의40분을 분모로 써야 한다.",
+      "GPT_E": {
+        "source_id": "train-2136-4",
+        "response_sha256": "e668f10dd1b0c3375a2338fef4bb88cfed57e464a47cec3c104d13a1ec10a6f1",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The first substantive error occurs in Step 2, where the model uses 50 trips per day despite correctly identifying two trips per day earlier. This confuses the 50-hour requirement with a trip count and omits the round-trip factor, so 1,000 minutes is not the driving time for 50 school days."
+      },
+      "GPT_G": {
+        "source_id": "train-2136-4",
+        "response_sha256": "e668f10dd1b0c3375a2338fef4bb88cfed57e464a47cec3c104d13a1ec10a6f1",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Total driving time for 50 days = 20 minutes/trip × 50 trips/day = 1000 minutes",
+        "evidence_start": 284,
+        "evidence_end": 362,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "It takes 20 minutes to drive to school. If she drives to and from school every day",
+        "observed_error": "The response uses 50 trips per day despite identifying two school trips per day.",
+        "violated_condition": "Daily driving time equals 20 minutes per trip multiplied by two trips per day; 50 specifies the required hours.",
+        "error_description": "The response calculates driving time using 50 trips per day, although Jessica makes two 20-minute trips each school day. The multiplication itself is correct, but its trip count violates the stated daily schedule and substitutes the required number of hours for a daily trip count.",
+        "reference_review_reason": null,
+        "secondary_errors": [
+          "The later equality “50 hours ÷ 1000 minutes/day = 50 ÷ 10” incorrectly converts 1000 minutes per day to 10 hours per day."
+        ],
+        "uncertainty_note": null
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-1081-4",
+      "observable_math_error": "no",
+      "diagnosis_ko": "Qwen풀이1060은 맞다. 참조가500/1000을1000/500으로 뒤집고800마리를700으로 바꿔 잘못 계산했다.",
+      "GPT_E": {
+        "source_id": "train-1081-4",
+        "response_sha256": "008e41520472bee58b08316fd027ead042966cfe7b9e333a1cdc194529d54196",
+        "status": "no_error_observed",
+        "reference_review_needed": true,
+        "explanation": "The model correctly calculates 800 bees producing 0.70 liters each, giving 1060 liters overall. The reference incorrectly reverses the per-bee division and later uses 700 bees instead of 800."
+      },
+      "GPT_G": {
+        "source_id": "train-1081-4",
+        "response_sha256": "008e41520472bee58b08316fd027ead042966cfe7b9e333a1cdc194529d54196",
+        "status": "no_error_observed",
+        "reference_review_needed": true,
+        "evidence_quote": null,
+        "evidence_start": null,
+        "evidence_end": null,
+        "evidence_occurrence": null,
+        "question_evidence_quote": null,
+        "observed_error": null,
+        "violated_condition": null,
+        "error_description": null,
+        "reference_review_reason": "The reference reverses the per-bee honey ratio: 500 liters divided by 1000 bees is 0.5 liters per bee. It also uses 700 bees after correctly deriving 800. The model solution correctly applies both percentage changes and adds the two hives' production.",
+        "secondary_errors": [],
+        "uncertainty_note": null
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-6861-3",
+      "observable_math_error": "uncertain",
+      "diagnosis_ko": "둘이 게임 하나를 함께 살지 각각 하나씩 살지 문구가 모호하다. 참조는2개를 가정하지만 응답의1개 해석을 확실한 오류로 단정하기 어렵다.",
+      "GPT_E": {
+        "source_id": "train-6861-3",
+        "response_sha256": "b0a344b28a7fd51777b5dc7a419a69ffe7b45273cacbe83574c70da4bd82123c",
+        "status": "ambiguous",
+        "reference_review_needed": true,
+        "explanation": "The model assumes Ronald and Max will buy one shared game, whereas the reference assumes each buys a separate copy. The question does not clearly specify which interpretation is intended, and the model’s arithmetic is correct for one shared copy."
+      },
+      "GPT_G": {
+        "source_id": "train-6861-3",
+        "response_sha256": "b0a344b28a7fd51777b5dc7a419a69ffe7b45273cacbe83574c70da4bd82123c",
+        "status": "ambiguous",
+        "reference_review_needed": true,
+        "evidence_quote": "So, they need to earn $60 in total.",
+        "evidence_start": 175,
+        "evidence_end": 210,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "How many ice creams will they need to sell for both to be able to afford to buy the game?",
+        "observed_error": "The response assumes one shared game costing $60; its division by $5 is correct.",
+        "violated_condition": null,
+        "error_description": null,
+        "reference_review_reason": "The reference assumes two games, but the question does not explicitly require separate copies. A shared purchase supports the model's interpretation.",
+        "secondary_errors": [],
+        "uncertainty_note": "Whether both friends need individual copies or jointly purchase one game is unresolved by the wording."
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-1827-4",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "하루 아이들8개를 주간8개로 취급하고5일 배수를 누락했다.",
+      "GPT_E": {
+        "source_id": "train-1827-4",
+        "response_sha256": "6a093b898d3514e090cfe2cb905067ff4f138dd8d23ca4e80e331147de3bc9b5",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The first mistake occurs when the model labels 4 × 2 = 8 eggs as the children’s weekly total, although each child receives two eggs per day. It omits the five breakfast days per week, and repeats this omission for the husband and Lisa."
+      },
+      "GPT_G": {
+        "source_id": "train-1827-4",
+        "response_sha256": "6a093b898d3514e090cfe2cb905067ff4f138dd8d23ca4e80e331147de3bc9b5",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Weekly eggs for children = 4 children × 2 eggs/child/week = 8 eggs/week.",
+        "evidence_start": 254,
+        "evidence_end": 326,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "Lisa makes breakfast for her family every morning, Monday through Friday. She makes 2 eggs for each of her 4 children",
+        "observed_error": "The response labels the children's daily egg total as a weekly total, omitting the five breakfasts per week.",
+        "violated_condition": "Weekly eggs for the children must equal 4 children × 2 eggs per child per breakfast × 5 breakfasts per week.",
+        "error_description": "The response treats each child's 2 eggs per breakfast as 2 eggs per week and labels 4 × 2 = 8 as a weekly total. The multiplication is correct, but the weekly relation omits the five Monday-through-Friday breakfasts. This missing factor carries into the annual calculation.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-344-4",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "최종20개를 첫60%손실 직후의 수로 넣어 두 번째 절반 손실을 되돌리지 않았다.",
+      "GPT_E": {
+        "source_id": "train-344-4",
+        "response_sha256": "8677f0dc99d914ba35c535ebcae3d82bec8a002275568c4b4b86dd34aa4bc41a",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The first substantive mistake is setting 0.4y = 20 in step 3. The 20 marbles are the amount left after the additional sewer loss, whereas 0.4y represents the amount before that loss, so the equation omits losing half of the remaining marbles."
+      },
+      "GPT_G": {
+        "source_id": "train-344-4",
+        "response_sha256": "8677f0dc99d914ba35c535ebcae3d82bec8a002275568c4b4b86dd34aa4bc41a",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "After losing 60%, he retains 40%, so \\( 0.4y = 20 \\).",
+        "evidence_start": 522,
+        "evidence_end": 575,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "Of the remaining ones, he loses half down a sewer. If he has 20 left",
+        "observed_error": "The response equates the marbles remaining after the street loss with the final 20 marbles.",
+        "violated_condition": "The final 20 equals half of the 40% remaining after the street loss: 0.5 × 0.4y = 20.",
+        "error_description": "The response sets 0.4y equal to the final 20 marbles, although 0.4y represents the amount before the sewer loss. The question says half of that remainder is subsequently lost, so the final amount must include both successive reductions. The division by 0.4 correctly executes the incorrectly stated equation.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-7430-4",
+      "observable_math_error": "no",
+      "diagnosis_ko": "서두####20은 잘못됐지만 뒤의 계산과 최종 서술120은 맞다. 표기/답 추출 충돌이며 본문 수학 오류는 없다.",
+      "GPT_E": {
+        "source_id": "train-7430-4",
+        "response_sha256": "b1d52dbc482d566a9c496c6ee21c27bd3c1e1f8fb8520b800bb741f8ba8fb9dc",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The opening answer states 20 available spaces, which contradicts the total capacity of 200 minus 80 occupied spaces. The subsequent calculations and concluding answer correctly give 120, so the observable error is confined to the initial answer."
+      },
+      "GPT_G": {
+        "source_id": "train-7430-4",
+        "response_sha256": "b1d52dbc482d566a9c496c6ee21c27bd3c1e1f8fb8520b800bb741f8ba8fb9dc",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "#### 20",
+        "evidence_start": 0,
+        "evidence_end": 7,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "A park has 50 benches with a capacity of 4 people each. On a Sunday afternoon, 80 people were sitting on the benches.",
+        "observed_error": "The opening answer gives 20, contradicting the correctly calculated result in the body.",
+        "violated_condition": "Available spaces must equal 50 × 4 − 80.",
+        "error_description": "The opening answer states 20 available spaces, which does not equal the total capacity of 50 benches holding 4 people each minus the 80 occupied spaces. The subsequent calculation correctly applies and evaluates this relation, making the heading inconsistent with the worked solution.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": "The text does not establish how the incorrect opening number was obtained."
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-5364-3",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "세금3000을 근거 없이 사용했다. 통상적인 세전이익5000에20%를 적용하면1000이다. 원문만으로3000의 계산 원인은 특정할 수 없다.",
+      "GPT_E": {
+        "source_id": "train-5364-3",
+        "response_sha256": "16d062f3fb9199d84dd46d2fa536b2ba973bc8f39243007e2ff93d580ccc378d",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest substantive mistake is inserting $3,000 for taxes without applying the stated 20% rate to profit. Revenue minus widget costs, rent, and salaries gives $5,000 before taxes, so the tax expense should be $1,000; the unsupported tax amount understates Jenna’s profit."
+      },
+      "GPT_G": {
+        "source_id": "train-5364-3",
+        "response_sha256": "16d062f3fb9199d84dd46d2fa536b2ba973bc8f39243007e2ff93d580ccc378d",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Total expenses = $10,000 + $2,500 × 4 + $3,000 = $10,000 + $10,000 + $3,000 = $23,000",
+        "evidence_start": 529,
+        "evidence_end": 614,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "20% of her total profit in taxes",
+        "observed_error": "The response inserts $3,000 in taxes without deriving it.",
+        "violated_condition": "Taxes must equal 20% of profit before taxes, which is $5,000 after purchasing widgets, rent, and wages.",
+        "error_description": "The response includes $3,000 in taxes in total expenses, although revenue minus widget costs, rent, and wages leaves $5,000 before taxes. That tax amount does not satisfy the stated 20% rate. The displayed addition and subtraction are correct; the unsupported tax amount causes the incorrect profit.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": "The response does not show how it obtained $3,000, so its tax calculation method cannot be determined."
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-7421-3",
+      "observable_math_error": "no",
+      "diagnosis_ko": "서두####200과 달리 본문800,1600,160의 계산은 모두 맞다. 표기 충돌이다.",
+      "GPT_E": {
+        "source_id": "train-7421-3",
+        "response_sha256": "8b233b2f608a7284372d651bbb5dd30f63c9c4367af662166fab1141fa02e49e",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The model’s stated answer of $200 contradicts its own correct calculation that each of the next ten winners receives $160. The substantive mistake is the reported answer; the subsequent arithmetic correctly divides the $1,600 remainder among ten winners."
+      },
+      "GPT_G": {
+        "source_id": "train-7421-3",
+        "response_sha256": "8b233b2f608a7284372d651bbb5dd30f63c9c4367af662166fab1141fa02e49e",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "#### 200",
+        "evidence_start": 0,
+        "evidence_end": 8,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "The next ten winners will each receive a 10th of the remaining amount.",
+        "observed_error": "The headline states 200 dollars, contradicting the correctly calculated per-winner amount in the response.",
+        "violated_condition": "Each subsequent winner must receive one tenth of the money remaining after the first prize: (2400 - 2400 / 3) / 10.",
+        "error_description": "The response reports 200 dollars in its answer heading, although its working correctly divides the remaining 1,600 dollars among ten winners. The reported amount violates the requirement that each subsequent winner receive one tenth of the remainder.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": "The arithmetic shown is correct; the text does not establish how the incorrect headline was obtained."
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-1061-4",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "맞는(3*12)/2 뒤에 개인별 비용에 다시 케이크당 비용을 곱하는 근거 없는 관계를 추가했다.18과9의 답 표기도 충돌한다.",
+      "GPT_E": {
+        "source_id": "train-1061-4",
+        "response_sha256": "4ef51b001ce570cdd1ac82b09caf9219c7f91547eb8cf069a914325383b42eed",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The first mistake occurs in Step 3: the cost per person already equals John's payment, so multiplying it by an additional amount paid per cake is unjustified. The subsequent answer of 9 also contradicts the correctly established calculation of (3 × $12) / 2."
+      },
+      "GPT_G": {
+        "source_id": "train-1061-4",
+        "response_sha256": "4ef51b001ce570cdd1ac82b09caf9219c7f91547eb8cf069a914325383b42eed",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Amount John Smith paid = Total cost per person × Amount John Smith paid per cake",
+        "evidence_start": 300,
+        "evidence_end": 380,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "John Smith buys 3 cakes for $12 each and splits the cost with his brother.",
+        "observed_error": "Step 3 multiplies the already calculated cost per person by an additional per-cake payment.",
+        "violated_condition": "John's payment equals half the total cake cost, (3 × $12) / 2, without an additional multiplier.",
+        "error_description": "After correctly expressing the shared cost as (3 × $12) / 2, the response multiplies that per-person cost by an amount paid per cake. John's payment is already the per-person share; the extra monetary factor violates the equal split and does not yield a dollar amount.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": "The final 9 is unexplained; the text does not show arithmetic producing it."
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-4085-1",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "올바른80-16을40으로 계산했다.64가 맞다.",
+      "GPT_E": {
+        "source_id": "train-4085-1",
+        "response_sha256": "126f49641e9787d352173e4b754bc9b927c1b685f1cd90e1552793b3e63dacb0",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The model correctly calculates 80 ants in the second anthill and a reduction of 16 ants for the third, but incorrectly evaluates 80 − 16 as 40. That subtraction equals 64, so its final answer is incorrect."
+      },
+      "GPT_G": {
+        "source_id": "train-4085-1",
+        "response_sha256": "126f49641e9787d352173e4b754bc9b927c1b685f1cd90e1552793b3e63dacb0",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "80 - 16 = 40 ants",
+        "evidence_start": 122,
+        "evidence_end": 139,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "in each next anthill, there are 20% fewer ants than in the previous one.",
+        "observed_error": "The response incorrectly evaluates 80 minus 16 as 40.",
+        "violated_condition": "The third anthill's count must equal 80 minus 20% of 80.",
+        "error_description": "The response correctly finds 80 ants in the second anthill and a reduction of 16 ants for the third, but incorrectly evaluates the written subtraction 80 − 16 as 40. The percentage relation is correct; the subtraction is executed incorrectly.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-1338-4",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "대형등24개 대신 소형등22개를 대형등 전구 계산에 사용했다.",
+      "GPT_E": {
+        "source_id": "train-1338-4",
+        "response_sha256": "a7505206ffc7514ae1ec59905638f4d80b576cf0ae261069aba5a0e5bfe67b6b",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The first substantive mistake occurs in Step 4, where the model uses 22 as the number of large lights, although its equation L = 2M gives 24. It therefore calculates 66 bulbs for the large lights instead of 72."
+      },
+      "GPT_G": {
+        "source_id": "train-1338-4",
+        "response_sha256": "a7505206ffc7514ae1ec59905638f4d80b576cf0ae261069aba5a0e5bfe67b6b",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "- Large lights: 3 bulbs each, so 22 * 3 = 66 bulbs",
+        "evidence_start": 699,
+        "evidence_end": 749,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "twice as many large ceiling lights as medium ceiling lights",
+        "observed_error": "The response uses 22 as the number of large lights when calculating their bulb requirement.",
+        "violated_condition": "The large-light count must equal twice the medium-light count: L = 2 × 12 = 24.",
+        "error_description": "The response uses 22 large lights in the bulb calculation, although the question requires twice the 12 medium lights, giving 24 large lights. The multiplication 22 × 3 = 66 is executed correctly; the error is the large-light count used as its operand, despite the earlier correct relation L = 2M.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-4465-3",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "다른 나무의3개와 앞마당의4개를 구분하지 않고4개짜리 둥지의 알을 누락했다.",
+      "GPT_E": {
+        "source_id": "train-4465-3",
+        "response_sha256": "ce91948168e1cec9433369814ad8d00572d9b539b6f001edf2b3cb5826004e58",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The first substantive mistake occurs in Step 3: the model labels the 3 eggs from the second tree as front-yard eggs and omits the actual front-yard nest containing 4 eggs. Consequently, its sum counts only the eggs from the two trees."
+      },
+      "GPT_G": {
+        "source_id": "train-4465-3",
+        "response_sha256": "ce91948168e1cec9433369814ad8d00572d9b539b6f001edf2b3cb5826004e58",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "10 eggs (tree) + 3 eggs (front yard) = 13 eggs",
+        "evidence_start": 311,
+        "evidence_end": 357,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "1 nest with 3 eggs in another tree.  There was also a nest with 4 eggs in her front yard.",
+        "observed_error": "The response labels the 3 eggs as front-yard eggs and omits the separate 4-egg nest from the total.",
+        "violated_condition": "The total must include 10 eggs in the first tree, 3 in the other tree, and 4 in the front yard.",
+        "error_description": "The response adds 10 and 3 correctly but labels the 3 eggs as belonging to the front yard. Those eggs belong to another tree; the front-yard nest contains 4 additional eggs. Its total therefore omits an entire nest's eggs instead of including all the eggs June found.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-1833-0",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "필요 도장면적1200을 갤런당 면적400으로 나누지 않고 곱했다.",
+      "GPT_E": {
+        "source_id": "train-1833-0",
+        "response_sha256": "0067b63cd38861792202cde49df922ff9b46f36b33315c66e98714bb82474f7b",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest mistake is in Step 2, where the model multiplies the total area by coverage per gallon instead of dividing. Coverage measures area painted per gallon, so this multiplication does not yield an amount of paint, and the stated units are also incorrect."
+      },
+      "GPT_G": {
+        "source_id": "train-1833-0",
+        "response_sha256": "0067b63cd38861792202cde49df922ff9b46f36b33315c66e98714bb82474f7b",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Total paint needed = Total area * Coverage per gallon",
+        "evidence_start": 197,
+        "evidence_end": 250,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "a gallon of paint can cover 400 sq. ft.",
+        "observed_error": "The response multiplies the required area by coverage per gallon to calculate paint needed.",
+        "violated_condition": "Gallons needed equal total area divided by coverage in square feet per gallon.",
+        "error_description": "After correctly finding 1200 sq. ft. for two coats, the response multiplies that area by 400 sq. ft. per gallon to determine paint needed. Coverage must divide the area to yield gallons. The multiplication is executed correctly numerically, but the written relation is wrong.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-1627-4",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "두 번째 호스를 추가한 후에도 계속 흐르는 첫 번째 호스의2시간 공급량을 누락했다.",
+      "GPT_E": {
+        "source_id": "train-1627-4",
+        "response_sha256": "be13da3cb01f4baaed83fde73b08688bfd0efecf5646d1919e6f87f722c490bd",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "In Step 3, the model counts only the second hose’s contribution during the final two hours, although adding another hose means the first hose continues running. This omits 100 gallons supplied by the first hose and leads to the incorrect total."
+      },
+      "GPT_G": {
+        "source_id": "train-1627-4",
+        "response_sha256": "be13da3cb01f4baaed83fde73b08688bfd0efecf5646d1919e6f87f722c490bd",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "The pool is full after 5 hours (3 hours with the first hose and 2 hours with the second hose).",
+        "evidence_start": 747,
+        "evidence_end": 841,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "she decides to add another hose that sprays 70 gallons/hour, and after 2 more hours the pool is full.",
+        "observed_error": "The response excludes the first hose's contribution during the final 2 hours.",
+        "violated_condition": "Adding the second hose means both hoses supply water during the final 2 hours.",
+        "error_description": "The response treats the final 2 hours as supplied only by the second hose, omitting the first hose's continuing 50 gallons/hour contribution. Adding another hose requires combining both rates during that interval. The written multiplications and addition are correct, but the total excludes water.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-1262-0",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "전체36파인트를 전체18병으로 나누고3병분을 취해야 하는데 마신3병으로 곧바로 나눴다.",
+      "GPT_E": {
+        "source_id": "train-1262-0",
+        "response_sha256": "5485bb2186c295e065e03793d70de58a50edf0486b3947f0117886baf5973fe5",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The first mistake occurs in step 2, where the model divides all 36 pints by the 3 thermoses Genevieve drank instead of the 18 thermoses receiving the coffee. This confuses her consumed thermoses with the total number used to determine the amount per thermos."
+      },
+      "GPT_G": {
+        "source_id": "train-1262-0",
+        "response_sha256": "5485bb2186c295e065e03793d70de58a50edf0486b3947f0117886baf5973fe5",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "So, the total pints of coffee she drank is \\( \\frac{36}{3} = 12 \\) pints.",
+        "evidence_start": 335,
+        "evidence_end": 408,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "4.5 gallons of coffee were divided among 18 thermoses. Genevieve drank 3 thermoses.",
+        "observed_error": "The response divides the total 36 pints by the 3 thermoses consumed.",
+        "violated_condition": "The consumed quantity must be 3 times the amount per thermos, with each thermos containing 36/18 pints.",
+        "error_description": "The response divides all 36 pints by the 3 thermoses Genevieve drank, instead of dividing by the 18 thermoses filled and multiplying by 3. The arithmetic 36/3 = 12 is correct, but this relation does not represent the quantity she consumed.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-3647-3",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "할인을 적용해4달러를 구한 후 할인액1달러를 다시 더해 취소했다.",
+      "GPT_E": {
+        "source_id": "train-3647-3",
+        "response_sha256": "c70f7f85d305bac9b6e579e9df7c909a4008e73feb04a914b5b3d2f1f597ab6e",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The first mistake occurs in Step 4, where the model adds the $1.00 senior discount back to the amount payable. Step 3 already accounts for both discounts, so this addition incorrectly cancels the senior discount and produces the wrong final total."
+      },
+      "GPT_G": {
+        "source_id": "train-3647-3",
+        "response_sha256": "c70f7f85d305bac9b6e579e9df7c909a4008e73feb04a914b5b3d2f1f597ab6e",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Step 4: Add the final discount to the result from step 3.\n$4.00 + $1.00 = $5.00",
+        "evidence_start": 279,
+        "evidence_end": 358,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "If she gets an additional 20% discount for being a senior citizen",
+        "observed_error": "Step 4 adds back the $1.00 senior discount after correctly subtracting it.",
+        "violated_condition": "The additional senior discount must reduce the coupon-adjusted cost, not be added back to the amount payable.",
+        "error_description": "After correctly subtracting the coupon and the 20% senior discount, the response adds the $1.00 discount back to the amount payable in Step 4. This reverses the required additional reduction. The written addition is arithmetically correct, but adding back the discount violates the pricing condition.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-1297-4",
+      "observable_math_error": "no",
+      "diagnosis_ko": "서두####16은 틀리지만 뒤의32명과8명 계산 및 최종8은 맞다. 본문 수학 오류가 아닌 답 표기 충돌이다.",
+      "GPT_E": {
+        "source_id": "train-1297-4",
+        "response_sha256": "a24e91b113528f725ab9d693b5b0ee89f4830e23bc615f556bcec4161710fec1",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The opening answer, 16, is incorrect and contradicts the model’s own calculation. The subsequent steps correctly find 32 students with puppies and then calculate 25% of 32 as 8, which matches the final answer."
+      },
+      "GPT_G": {
+        "source_id": "train-1297-4",
+        "response_sha256": "a24e91b113528f725ab9d693b5b0ee89f4830e23bc615f556bcec4161710fec1",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "#### 16",
+        "evidence_start": 0,
+        "evidence_end": 7,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "Of those who have puppies, 25% also have parrots.",
+        "observed_error": "The opening answer states 16, contradicting the correctly calculated count and final answer below it.",
+        "violated_condition": "The number with both pets must equal 25% of the 80% of 40 students who have puppies.",
+        "error_description": "The response opens with 16 as the answer, although the requested count must be 25% of the puppy owners. Its subsequent calculations correctly apply both percentages, so the observable mistake is the contradictory opening answer, with no demonstrated arithmetic error.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": "The opening number is unexplained; the text does not establish how it was obtained."
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-4704-2",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "세 번째 국가의2배 기준을 첫 국가2주가 아닌 두 번째 국가4주로 사용했다.",
+      "GPT_E": {
+        "source_id": "train-4704-2",
+        "response_sha256": "8600b7f85337ae484023cef55cb4292243ee671c78d378f5978e6945a98d048f",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest mistake is in Step 2, where the model doubles the second country's four-week stay to obtain eight weeks in the third country. “Twice as long in each of the other two countries” compares both stays with the first country's two weeks, so the third stay is also four weeks."
+      },
+      "GPT_G": {
+        "source_id": "train-4704-2",
+        "response_sha256": "8600b7f85337ae484023cef55cb4292243ee671c78d378f5978e6945a98d048f",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Time in the third country = 2 * 4 weeks = 8 weeks",
+        "evidence_start": 340,
+        "evidence_end": 389,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "He stays in the first country for 2 weeks and he spends twice as long in each of the other two countries.",
+        "observed_error": "The third-country stay is calculated as twice the second-country stay.",
+        "violated_condition": "Each of the other two stays is twice the first-country stay of 2 weeks.",
+        "error_description": "The response calculates the third-country stay by doubling the second-country stay of 4 weeks. The question makes both other-country stays twice the first-country stay of 2 weeks. The multiplication is executed correctly, but it uses the wrong comparison duration and inflates the total trip time.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-1686-3",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "10*5와4주라는 올바른 절차를 쓰고 그 결과와 다른500을 출력했다. 내부 원인은 관찰 불가하다.",
+      "GPT_E": {
+        "source_id": "train-1686-3",
+        "response_sha256": "d12584bdb285cc150ded7c8d38fa22a594a591f6bbdb416b6d5fe99411e7baf8",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The first substantive mistake is the reported total of 500 hours, which does not follow from the model’s stated calculation. Under its explicit four-week assumption, 10 × 5 gives 50 hours per week, and multiplying by four gives 200 hours."
+      },
+      "GPT_G": {
+        "source_id": "train-1686-3",
+        "response_sha256": "d12584bdb285cc150ded7c8d38fa22a594a591f6bbdb416b6d5fe99411e7baf8",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Bob logs a total of 500 hours in a month.",
+        "evidence_start": 420,
+        "evidence_end": 461,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "Every day, Bob logs 10 hours of work in his office. If he works for five days a week",
+        "observed_error": "The reported 500 hours does not equal the product specified by the response.",
+        "violated_condition": "Under the stated four-week assumption, monthly hours must equal 10 × 5 × 4.",
+        "error_description": "The response states the correct multiplication relation but reports 500 monthly hours, which is inconsistent with 10 hours per day, five days per week, and its assumed four weeks per month. No intermediate arithmetic is shown to locate the particular calculation that produced this total.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": "The month length is unspecified; the response explicitly assumes four weeks. The reported total is inconsistent even under that assumption."
+      },
+      "E_valid": true,
+      "G_valid": true
+    },
+    {
+      "source_id": "train-5239-1",
+      "observable_math_error": "yes",
+      "diagnosis_ko": "봉지4개를 땅콩4개로 사용하여 봉지당30개 배수를 누락했다. 끝점 포함 간격 해석과 무관하게 이 수량 오류는 명확하다.",
+      "GPT_E": {
+        "source_id": "train-5239-1",
+        "response_sha256": "016f1016675303fcb3128c553008eb99846aa305b332e1ab4b3c7138ee5b8089",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The model incorrectly states that the number of peanuts is 4, confusing the number of bags with the total number of peanuts. Each bag contains 30 peanuts, so there are 120 peanuts; using 4 as the divisor produces the erroneous 30-minute interval."
+      },
+      "GPT_G": {
+        "source_id": "train-5239-1",
+        "response_sha256": "016f1016675303fcb3128c553008eb99846aa305b332e1ab4b3c7138ee5b8089",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Number of peanuts = 4",
+        "evidence_start": 164,
+        "evidence_end": 185,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "Uncle Lou was given four bags of peanuts to eat on his 2-hour plane flight.  Each bag contains 30 peanuts.",
+        "observed_error": "The response uses the four bags as the total number of peanuts.",
+        "violated_condition": "Total peanuts must equal 4 bags × 30 peanuts per bag.",
+        "error_description": "The response sets the number of peanuts to 4, although four is the number of bags and each bag contains 30 peanuts. It therefore divides the 120-minute flight by the bag count instead of the peanut count. The resulting 30 follows that incorrect divisor; it is not an arithmetic execution error.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      },
+      "E_valid": true,
+      "G_valid": true
+    }
+  ]
+}

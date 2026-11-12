@@ -1,0 +1,19 @@
+{
+  "source_id": "train-3968-3",
+  "response_sha256": "03fae9beb11b8f56704ca6222ff8beeaf338a82f457ff40988ca44c044c95ae5",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\[ 3B - 5 = 7 \\]",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "all 5 of the brown eggs survived",
+  "observed_error": "The equation subtracts the five surviving brown eggs from the original white-egg count to obtain the surviving white-egg count.",
+  "violated_condition": "All brown eggs survived, so B = 5; the decrease from 3B to seven white eggs is the unknown number broken.",
+  "error_description": "The response writes 3B − 5 = 7, using the five surviving brown eggs as the decrease in white eggs. Those five eggs instead establish the original brown-egg count, B = 5. The arithmetic solving the written equation is correct, but the equation misrepresents the quantities.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The final subtraction 16 − 7 subtracts only surviving white eggs from the purported original total, instead of subtracting all 12 surviving eggs. This is independent of the incorrect original total."
+  ],
+  "uncertainty_note": null
+}

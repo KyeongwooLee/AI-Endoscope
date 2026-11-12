@@ -1,0 +1,29 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A party of 4 order 3 dozen oysters on the half shell for $15.00 a dozen, 2 pounds of steamed shrimp for $14.00 a pound and 2 pounds of fried clams for $13.50 a pound.  If they split the bill equally, how much will they each owe?
+SOLUTION: Step 1: Calculate the total cost of the oysters.
+- Oysters cost $15.00 per dozen.
+- They ordered 3 dozen.
+- Total cost of oysters = 3 * $15.00
+
+Step 2: Calculate the total cost of the steamed shrimp.
+- Steamed shrimp cost $14.00 per pound.
+- They ordered 2 pounds.
+- Total cost of steamed shrimp = 2 * $14.00
+
+Step 3: Calculate the total cost of the fried clams.
+- Fried clams cost $13.50 per pound.
+- They ordered 2 pounds.
+- Total cost of fried clams = 2 * $13.50
+
+Step 4: Calculate the total bill by summing up the costs from Step 1, Step 2, and Step 3.
+- Total bill = Total cost of oysters + Total cost of steamed shrimp + Total cost of fried clams
+
+Step 5: Divide the total bill by 4 to find out how much each person will owe.
+- Amount each person owes = Total bill / 4
+
+Let's perform these calculations.
+#### 75.00
+#### 18.75
+#### 13.75
+#### 37.50

@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: George donated half his monthly income to charity and spent $20 from the other half on groceries. If he now has $100 left, how much was his monthly income?
+SOLUTION: Step 1: Let's denote George's monthly income as \( I \).
+
+Step 2: George donated half of his income to charity, so he donated \( \frac{I}{2} \).
+
+Step 3: He spent $20 on groceries from the other half of his income, so he spent \( \frac{I}{2} - 20 \).
+
+Step 4: After these expenditures, he has $100 left. Therefore, we can write the equation:
+\[ I - \left( \frac{I}{2} - 20 \right) = 100 \]
+
+Step 5: Simplify the equation:
+\[ I - \frac{I}{2} + 20 = 100 \]
+\[ \frac{I}{2} = 100 - 20 \]
+\[ \frac{I}{2} = 80 \]
+
+Step 6: Solve for \( I \):
+\[ I = 80 \times 2 \]
+\[ I = 160 \]
+
+#### 160
+George's monthly income was $160.

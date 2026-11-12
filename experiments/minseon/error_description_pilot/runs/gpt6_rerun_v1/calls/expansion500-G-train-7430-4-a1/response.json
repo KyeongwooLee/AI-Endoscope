@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7430-4",
+  "response_sha256": "b1d52dbc482d566a9c496c6ee21c27bd3c1e1f8fb8520b800bb741f8ba8fb9dc",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 20",
+  "evidence_start": 0,
+  "evidence_end": 7,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "A park has 50 benches with a capacity of 4 people each. On a Sunday afternoon, 80 people were sitting on the benches.",
+  "observed_error": "The opening answer gives 20, contradicting the correctly calculated result in the body.",
+  "violated_condition": "Available spaces must equal 50 × 4 − 80.",
+  "error_description": "The opening answer states 20 available spaces, which does not equal the total capacity of 50 benches holding 4 people each minus the 80 occupied spaces. The subsequent calculation correctly applies and evaluates this relation, making the heading inconsistent with the worked solution.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text does not establish how the incorrect opening number was obtained."
+}

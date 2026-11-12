@@ -1,0 +1,21 @@
+{
+  "source_id": "train-6000-4",
+  "response_sha256": "8105002a249283baa95bae80db0be62214eda6315b23da31df116e518ce61b70",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "So, the work rate of 3 builders is 1 cottage / (3 builders * 8 days).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "it takes 8 days for 3 builders to build a cottage",
+  "observed_error": "The response labels a per-builder work rate as the combined rate of three builders.",
+  "violated_condition": "The three-builder team's rate is one cottage divided by eight days; dividing additionally by three gives the rate per builder.",
+  "error_description": "The response divides one cottage by both three builders and eight days, then identifies this as the work rate of the three-builder team. That expression measures output per builder per day, whereas the team's combined daily output is one cottage divided by eight days.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Step 5 writes time as half the three-builder work rate instead of the reciprocal of twice that rate.",
+    "Step 7 simplifies (1/2) × (1/(3 × 8)) to 1/16, although the written product is 1/48.",
+    "The final answer states 16 days despite Step 7 stating 1/16 days."
+  ],
+  "uncertainty_note": null
+}

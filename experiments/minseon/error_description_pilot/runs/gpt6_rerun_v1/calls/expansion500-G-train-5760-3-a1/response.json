@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5760-3",
+  "response_sha256": "06083e824ba88b550a89531d6ead9c560de376ac81c024c09b46e208fce10e5e",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "- Cost per can of juice: $2",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "the juice is sold at $2 for 5 cans",
+  "observed_error": "The response assigns the $2 price to one can instead of five cans.",
+  "violated_condition": "Juice costs $2 per five cans, so the cost of 10 cans is (10/5) × $2.",
+  "error_description": "The response treats the $2 price for five cans of juice as the price per can, then multiplies $2 by 10 cans. This violates the stated group price. The multiplication itself is correct, but its price basis overstates the juice cost and consequently the total payment.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

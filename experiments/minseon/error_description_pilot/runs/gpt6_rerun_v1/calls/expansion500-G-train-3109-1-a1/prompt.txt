@@ -1,0 +1,63 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-3109-1
+response_sha256: fba830d009b3704665545e6017c5c302861534c107972286d6ead2caf5caeb53
+
+=== QUESTION ===
+Lou Senior took 3 cookies out of the cookie jar and ate them.  Since he didn't get caught by his wife, he went back the next day and took another 3 cookies out of the jar.  But after eating just one of the cookies, he felt guilty about it and put the other two cookies back.  His son, Louie Junior saw that his Dad was eating cookies.  So, Louie Junior took seven cookies out of the jar and hid them in his bedroom for later.  The next morning, Debra, Lou's wife looked into the cookie jar and reacted by accusing her husband of eating half of the cookies out of the cookie jar.  How many cookies remained in the jar?
+=== MODEL SOLUTION ===
+Step 1: Start with 0 cookies in the jar.
+Step 2: Lou Senior takes 3 cookies, leaving 3 cookies.
+Step 3: Lou Senior takes another 3 cookies, leaving 0 cookies.
+Step 4: Lou Senior eats 1 cookie, leaving 0 cookies.
+Step 5: Louie Junior takes 7 cookies, leaving 0 cookies.
+Step 6: Debra accuses Lou of eating half of the cookies.
+Step 7: Half of 0 cookies is 0 cookies.
+Final Answer:
+#### 0
+#### 0
+=== REFERENCE SOLUTION (fallible aid) ===
+Lou Sr 3 cookies from the jar, then another three, but then put two back, for a total of 3+3-2=<<3+3-2=4>>4 cookies removed.
+Louie Jr took seven more out of the jar, for a total of 4+7=<<4+7=11>>11 cookies removed.
+If Debra thought half were gone, then the number of missing cookies would equal the number of cookies that remain, or 11 missing=11 remaining cookies
+#### 11
+=== END ===

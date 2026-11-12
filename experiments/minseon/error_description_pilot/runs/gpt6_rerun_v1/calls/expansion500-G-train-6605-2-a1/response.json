@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6605-2",
+  "response_sha256": "3a05bbe161eae6f198c3095febe101281804be0dde83db5407588457e78d6dcc",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "1320 (remaining hours) / 2640 (hours per month) = 0.5 months",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "dedicate 220 hours every month practicing freestyle and sidestroke",
+  "observed_error": "The response uses a twelve-month total of 2640 hours as the monthly practice rate.",
+  "violated_condition": "Months required equals remaining hours divided by the stated rate of 220 hours per month.",
+  "error_description": "The response multiplies 220 hours per month by 12 months, then treats the resulting 2640 hours as hours per month when dividing the remaining 1320 hours. The arithmetic is correct, but the denominator replaces the stated monthly rate with a twelve-month total.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

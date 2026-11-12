@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2067-3",
+  "response_sha256": "2d6dc1e1ffdbf13f17b58c59ec898eb990afc7aeb438fb28827bca9cf22f91fc",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total needed = Total raised after 7 days + Miscellaneous expenses",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "each of them needs at least $450. On top of that, they need $3000 for their miscellaneous collective expenses.",
+  "observed_error": "Step 5 replaces the correctly calculated $5700 goal with funds already raised plus miscellaneous expenses.",
+  "violated_condition": "The minimum goal is 6 × $450 + $3000; the remaining shortfall is that goal minus funds raised.",
+  "error_description": "Step 5 redefines the fundraising goal as $2850 already raised plus $3000 in collective expenses, replacing the $2700 required for six students with receipts. The goal depends on required expenses, not receipts. The addition is executed correctly, but the written relation makes the subsequent shortfall incorrect.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

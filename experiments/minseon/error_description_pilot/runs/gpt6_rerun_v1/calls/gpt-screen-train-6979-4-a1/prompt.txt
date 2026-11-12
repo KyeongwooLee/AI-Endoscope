@@ -1,0 +1,31 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: The length of a red bus is four times the length of an orange car. The length of the orange car is also 3.5 times shorter than the length of a yellow bus. If the yellow bus and red bus are sitting next to each other, what length of the red bus may the yellow bus driver see if the red bus is 48 feet long?
+SOLUTION: To solve this problem, let's break it down step by step:
+
+1. **Determine the length of the orange car:**
+   - Let the length of the red bus be \( R \).
+   - Given \( R = 48 \) feet.
+   - The length of the orange car is \( \frac{R}{4} \).
+
+   \[
+   \text{Length of orange car} = \frac{48}{4} = 12 \text{ feet}
+   \]
+
+2. **Determine the length of the yellow bus:**
+   - Let the length of the yellow bus be \( Y \).
+   - The length of the yellow bus is 3.5 times longer than the length of the orange car.
+
+   \[
+   Y = 3.5 \times \text{Length of orange car} = 3.5 \times 12 = 42 \text{ feet}
+   \]
+
+3. **Compare lengths to determine the visible length:**
+   - The yellow bus driver can see the entire length of the red bus if they are sitting next to the red bus.
+
+   \[
+   \text{Visible length} = R = 48 \text{ feet}
+   \]
+
+Therefore,
+#### 48

@@ -1,0 +1,19 @@
+{
+  "source_id": "train-2589-4",
+  "response_sha256": "33cd17ecbe08a62c113f5dfbaf3779ea0a7b7e734d12a92f847cfcf4cc5dcdba44",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Apples eaten by adults = 3 * (remaining apples)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If every adult ate 3 apples apiece, how many adults are in his family?",
+  "observed_error": "The response equates adults' apple consumption with three times the remaining apples.",
+  "violated_condition": "Adults consume the remaining apples; the factor of 3 apples per adult multiplies the number of adults.",
+  "error_description": "The response multiplies the remaining apple count by 3 to represent apples eaten by adults. Those remaining apples already represent adult consumption. The stated rate of 3 apples per adult must multiply the adult count, not the remaining apple count.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The reported 110 does not equal the displayed expression (450 - (33 * 10)) / 3, independently of the earlier incorrect relation."
+  ],
+  "uncertainty_note": null
+}

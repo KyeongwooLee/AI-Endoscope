@@ -1,0 +1,25 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Fabian went to a park to get some fresh air. He decided to walk there for 3 hours. Every hour he covers 5 kilometers. How many more hours did Fabian need to walk to reach a total of 30 kilometers?
+SOLUTION: Step 1: Calculate the distance Fabian has already walked.
+- Distance per hour = 5 kilometers
+- Total hours = 3 hours
+- Distance walked = 5 kilometers/hour * 3 hours = 15 kilometers
+
+Step 2: Calculate the remaining distance Fabian needs to walk to reach 30 kilometers.
+- Total distance = 30 kilometers
+- Distance already walked = 15 kilometers
+- Remaining distance = 30 kilometers - 15 kilometers = 15 kilometers
+
+Step 3: Calculate the additional hours Fabian needs to walk to cover the remaining distance.
+- Distance remaining = 15 kilometers
+- Distance covered per hour = 5 kilometers/hour
+- Additional hours needed = 15 kilometers / 5 kilometers/hour = 3 hours
+
+Step 4: Determine the total number of hours Fabian needs to walk to reach 30 kilometers.
+- Initial hours walked = 3 hours
+- Additional hours needed = 3 hours
+- Total hours needed = 3 hours + 3 hours = 6 hours
+
+#### 6
+Fabian needs to walk for a total of 6 more hours to reach a total of 30 kilometers.

@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"36 brownies","check":"Two dozen is 24, leaving 24 - 8 - 4 = 12 brownies. Adding the new batch gives 12 + 24 = 36.","evidence_quote":"There are 24 + 24 = 48 brownies.","error_description":"Step 4 incorrectly counts the new batch as 48 brownies instead of 24. Step 5 adds those 48 to the remaining 12, producing an incorrect total of 60."}

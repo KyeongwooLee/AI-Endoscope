@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5406-0",
+  "response_sha256": "41399eeea377d0825c13f3878d9dc5fe8e1da89c69324399dfa5430dca14b672",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "5x + 5(x + 6) = 77",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Mr. and Mrs. Boyden take their 3 children to a leisure park. They buy tickets for the whole family.",
+  "observed_error": "The equation charges for five child tickets and five adult tickets.",
+  "violated_condition": "The $77 total covers three child tickets and two adult tickets, requiring 3x + 2(x + 6) = 77.",
+  "error_description": "The response writes 5x + 5(x + 6) = 77, counting five children and five adults instead of three children and two adults. This assigns the $77 total to ten tickets rather than the family's five tickets. The subsequent arithmetic correctly follows the incorrect equation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"48 stamps","check":"20% of 40 is 8, so Maria wants 40 + 8 = 48 stamps. The solution gives the correct formula but reports 68.","evidence_quote":"#### 68","error_description":"The final number 68 conflicts with the value 48 of the stated formula."}

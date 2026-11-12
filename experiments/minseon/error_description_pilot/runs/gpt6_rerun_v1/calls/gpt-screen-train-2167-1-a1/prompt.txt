@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A truck driver has to spend $2 per gallon of gas. She can drive 10 miles per gallon. She drives at a rate of 30 miles per hour. If she is paid $.50 per mile, how much money does she make if she drives for 10 hours?
+SOLUTION: Step 1: Calculate the total distance driven.
+Distance = Speed × Time
+Distance = 30 miles per hour × 10 hours = 300 miles
+
+Step 2: Calculate the total money earned from driving.
+Money earned = Distance × Rate per mile
+Money earned = 300 miles × $0.50 per mile = $150
+
+Step 3: Calculate the total money spent on gas.
+Money spent = Distance × Cost per gallon
+Money spent = 300 miles × $2 per gallon = $600
+
+Step 4: Calculate the net money made.
+Net money = Money earned - Money spent
+Net money = $150 - $600 = -$450
+
+#### -450
+The truck driver loses money by driving for 10 hours.

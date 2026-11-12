@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4495-1",
+  "response_sha256": "c5f6c816aeae013f12431e52197ec784430212e75248bca509d0ee3d90634714",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Net change in population = Increase in population due to birth - (2000 people leave per year - 2500 people come in per year)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "In that same time, 2000 people leave per year from emigration and 2500 people come in per year from immigration.",
+  "observed_error": "The ten-year population change includes only one year's net migration.",
+  "violated_condition": "Annual immigration and emigration must be multiplied by 10 years before combining them with ten-year births.",
+  "error_description": "The response combines the 60,000 births over ten years with only one year's net migration of 500 people. Both migration rates are stated per year and must accumulate over the same ten-year period. The written arithmetic is correct, but the relation omits the ten-year multiplier.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

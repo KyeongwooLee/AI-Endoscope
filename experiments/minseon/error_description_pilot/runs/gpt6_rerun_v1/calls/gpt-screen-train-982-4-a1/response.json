@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"134 cookies","check":"Frank bakes 2 × 6 × 12 = 144 cookies. After Frank eats 6 and Ted eats 4, 144 − 6 − 4 = 134 remain.","evidence_quote":"Frank has 138 cookies left when Ted leaves.","error_description":"The solution correctly finds 138 cookies after Frank eats, but omits the 4 cookies Ted eats before leaving."}

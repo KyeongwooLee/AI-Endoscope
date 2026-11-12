@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Out of the 200 students in a class, thirty percent like the color blue. Among the remaining students who don't like the color blue, 40% like the color red, and the rest like the color yellow. Calculate the combined number of students who like the color yellow and the color blue.
+SOLUTION: Step 1: Calculate the number of students who like the color blue.
+30% of 200 students like the color blue.
+\( 30\% \times 200 = 0.30 \times 200 = 60 \) students
+
+Step 2: Calculate the number of students who don't like the color blue.
+\( 200 - 60 = 140 \) students
+
+Step 3: Calculate the number of students who like the color red among the remaining students.
+40% of 140 students like the color red.
+\( 40\% \times 140 = 0.40 \times 140 = 56 \) students
+
+Step 4: Calculate the number of students who like the color yellow.
+Total students - students who like blue - students who like red
+\( 200 - 60 - 56 = 184 \) students
+
+Step 5: Calculate the combined number of students who like the color yellow and the color blue.
+\( 60 + 184 = 244 \) students
+
+#### 244
+The combined number of students who like the color yellow and the color blue is 244.

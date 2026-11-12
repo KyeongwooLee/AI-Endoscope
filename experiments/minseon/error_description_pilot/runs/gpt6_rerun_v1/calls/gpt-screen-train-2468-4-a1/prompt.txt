@@ -1,0 +1,28 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A psychiatrist has 4 patients that need 25 sessions in total. One of the patients needs 6 sessions. Another patient needs 5 more than that. How many sessions would the remaining patients need?
+SOLUTION: Let's start by defining the variables:
+- Let \( x \) be the number of sessions needed by the patient who needs 6 sessions.
+- The patient who needs 5 more sessions than \( x \) is \( x + 5 \).
+- The remaining two patients need a total of \( 25 - (x + (x + 5)) = 25 - 2x - 5 = 20 - 2x \) sessions.
+
+Since the total number of sessions needed is 25 and one patient needs 6 sessions, the remaining two patients need \( 25 - 6 = 19 \) sessions. Therefore, we have:
+\[ 20 - 2x = 19 \]
+
+Now, let's solve for \( x \):
+\[ 20 - 2x = 19 \]
+\[ -2x = 19 - 20 \]
+\[ -2x = -1 \]
+\[ x = \frac{-1}{-2} \]
+\[ x = \frac{1}{2} \]
+
+So, the patient who needs 6 sessions is \( x = \frac{1}{2} \).
+
+Now we calculate the sessions needed by the remaining two patients:
+\[ 20 - 2x = 20 - 2 \left( \frac{1}{2} \right) = 20 - 1 = 19 \]
+
+Finally, we add the sessions needed by the remaining two patients:
+\[ 19 + 19 = 38 \]
+
+#### 38
+The answer is 38.

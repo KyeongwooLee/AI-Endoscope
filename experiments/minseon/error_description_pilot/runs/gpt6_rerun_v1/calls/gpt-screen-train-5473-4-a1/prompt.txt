@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jill likes to do small jobs online.  She makes $10 a day for her first month working online, and double that per day in her second month.  Her third month she makes the same amount per day as the previous month, but only works every other day.  How much did she make over three months, assuming each month is 30 days long?
+SOLUTION: Step 1: Calculate Jill's earnings for her first month.
+Jill earns $10 per day for 30 days.
+Earnings for first month = $10/day * 30 days
+
+Step 2: Calculate Jill's earnings for her second month.
+Jill earns double her first month's earnings per day for 30 days.
+Earnings for second month = 2 * $10/day * 30 days
+
+Step 3: Calculate Jill's earnings for her third month.
+Jill earns the same amount per day as the previous month, but only works every other day.
+Days worked in third month = 30 / 2 = 15 days
+Earnings for third month = $20/day * 15 days
+
+Step 4: Sum up Jill's earnings for all three months.
+Total earnings = Earnings for first month + Earnings for second month + Earnings for third month
+
+#### 1350
+#### 1350
+#### 1350

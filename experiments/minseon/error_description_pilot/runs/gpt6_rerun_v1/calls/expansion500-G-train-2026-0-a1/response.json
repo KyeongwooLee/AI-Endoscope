@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2026-0",
+  "response_sha256": "bfdd568a4f0d5152b2a9122c0dcb2d2ac87bb8eb37bc4d30ada6b9efd2a1b909",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "75 + 25 = 100\nInez spent a total of $100.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If Inez has $25 remaining",
+  "observed_error": "The response adds the skate cost to the remaining money and labels the sum total spending.",
+  "violated_condition": "Total spending equals the initial $150 minus the $25 remaining.",
+  "error_description": "The response adds the $75 skate cost to the $25 remaining and calls the resulting $100 total spending. The addition is executed correctly, but total spending must equal the initial $150 minus the remaining $25. The later pad calculation uses this incorrect total.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

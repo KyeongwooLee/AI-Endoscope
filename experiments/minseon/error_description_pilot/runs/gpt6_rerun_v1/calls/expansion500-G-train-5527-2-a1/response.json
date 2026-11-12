@@ -1,0 +1,19 @@
+{
+  "source_id": "train-5527-2",
+  "response_sha256": "d7b451b369759c3b432c8aed1fc510574bf097825c5eadab0dff436f341adf29",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "He fell past David after 4 meters, meaning David was 4 meters above the eighth platform.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Walter fell from the eighth platform of some scaffolding and fell past David after falling 4 meters.",
+  "observed_error": "The response places David 4 meters above Walter's starting platform.",
+  "violated_condition": "Passing David after falling 4 meters places David 4 meters below the eighth platform.",
+  "error_description": "The response reverses David's vertical position relative to the eighth platform, placing him 4 meters above it. Walter encounters David after falling 4 meters from that platform, so the displacement to David must be downward.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The later assignment to the fifth platform is inconsistent with the correctly calculated 12-meter height and the 2-meter spacing implied by the eighth platform's 16-meter height. No numerical denominator is supplied to establish an arithmetic execution error."
+  ],
+  "uncertainty_note": null
+}

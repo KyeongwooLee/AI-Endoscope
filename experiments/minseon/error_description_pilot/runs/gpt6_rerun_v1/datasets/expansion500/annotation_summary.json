@@ -1,0 +1,40 @@
+{
+  "E": {
+    "total": 500,
+    "statuses": {
+      "supported_error": 474,
+      "no_error_observed": 16,
+      "ambiguous": 10
+    },
+    "valid": 500,
+    "reference_review_needed": 35,
+    "required_second_attempt": 2,
+    "raw_last_attempt_errors": {},
+    "eval_statuses": {
+      "supported_error": 474,
+      "no_error_observed": 16,
+      "ambiguous": 10
+    }
+  },
+  "G": {
+    "total": 500,
+    "statuses": {
+      "supported_error": 464,
+      "no_error_observed": 17,
+      "insufficient_evidence": 10,
+      "ambiguous": 9
+    },
+    "valid": 500,
+    "reference_review_needed": 39,
+    "required_second_attempt": 1,
+    "raw_last_attempt_errors": {
+      "evidence span invalid: response[start:end] != evidence_quote": 3
+    },
+    "eval_statuses": {
+      "supported_error": 464,
+      "no_error_observed": 17,
+      "insufficient_evidence": 10,
+      "ambiguous": 9
+    }
+  }
+}

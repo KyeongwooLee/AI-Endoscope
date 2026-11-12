@@ -1,0 +1,28 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: There are 10 rows of 15 chairs set up for the award ceremony. The first row is reserved for the awardees while the second and third rows are for the administrators and teachers. The last two rows are then reserved for the parents and the rest of the rows are for the students. If only 4/5 of the seats reserved for the students are occupied, how many vacant seats from the students can be given to the parents?
+SOLUTION: Step 1: Calculate the total number of chairs.
+Total chairs = 10 rows * 15 chairs/row = 150 chairs
+
+Step 2: Calculate the number of chairs reserved for the awardees.
+Chairs for awardees = 1 row * 15 chairs/row = 15 chairs
+
+Step 3: Calculate the number of chairs reserved for the administrators and teachers.
+Chairs for administrators and teachers = 2 rows * 15 chairs/row = 30 chairs
+
+Step 4: Calculate the number of chairs reserved for the parents.
+Chairs for parents = 2 rows * 15 chairs/row = 30 chairs
+
+Step 5: Calculate the number of chairs reserved for the students.
+Chairs for students = Total chairs - Chairs for awardees - Chairs for administrators and teachers - Chairs for parents
+Chairs for students = 150 - 15 - 30 - 30 = 85 chairs
+
+Step 6: Calculate the number of occupied seats for the students.
+Occupied seats for students = 4/5 * Chairs for students
+Occupied seats for students = 4/5 * 85 = 68 seats
+
+Step 7: Calculate the number of vacant seats for the students.
+Vacant seats for students = Chairs for students - Occupied seats for students
+Vacant seats for students = 85 - 68 = 17 seats
+
+#### 17

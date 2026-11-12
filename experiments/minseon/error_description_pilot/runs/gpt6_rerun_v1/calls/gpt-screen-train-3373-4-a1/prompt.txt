@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Shonda is throwing an Easter egg hunt for her 2 kids and their 10 friends. She is also supplying enough eggs for herself and the 7 other adults there to find eggs as well. If there are 15 Easter egg baskets for everyone to share and each ends up holding 12 Easter eggs, when they equally distribute all of the Easter eggs to everyone, how many eggs does each person get?
+SOLUTION: To solve this problem, we need to determine the total number of Easter eggs and then divide that by the total number of people to find out how many eggs each person gets.
+
+1. Calculate the total number of Easter eggs:
+   - Number of kids: 2
+   - Number of friends: 10
+   - Number of adults: 7
+   - Number of other adults: 7
+   - Total people: 2 + 10 + 7 + 7 = 26
+   - Each person gets 12 Easter eggs: 26 people * 12 eggs/person = 312 eggs
+
+2. Divide the total number of Easter eggs by the total number of people to find out how many eggs each person gets:
+   - Total eggs: 312
+   - Total people: 26
+   - Eggs per person: 312 eggs / 26 people = 12 eggs/person
+
+#### 12
+Each person gets 12 eggs.

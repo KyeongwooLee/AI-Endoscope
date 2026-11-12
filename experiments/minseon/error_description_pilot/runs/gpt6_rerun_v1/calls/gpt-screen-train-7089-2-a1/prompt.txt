@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Zach rented a car for $150 plus 50 cents for each mile. He drove 620 miles on Monday and another 744 miles on Thursday. How much did he spend?
+SOLUTION: To find out how much Zach spent, we need to calculate the total cost based on the given rates.
+
+1. Calculate the cost for Monday:
+   - Miles driven: 620
+   - Cost per mile: $0.50
+   - Total cost for Monday: \(620 \times 0.50 = 310\) dollars
+
+2. Calculate the cost for Thursday:
+   - Miles driven: 744
+   - Cost per mile: $0.50
+   - Total cost for Thursday: \(744 \times 0.50 = 372\) dollars
+
+3. Calculate the total cost for both days:
+   - Total cost: \(310 + 372 = 682\) dollars
+
+Therefore, the total amount Zach spent is:
+#### 682

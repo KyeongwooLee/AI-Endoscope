@@ -1,0 +1,27 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Anna can read 1 page in 1 minute. Carole can read as fast as Anna but at half the speed of Brianna. How long does it take Brianna to read a 100-page book?
+SOLUTION: To solve this problem, let's break it down step by step:
+
+1. **Anna's Reading Speed:**
+   - Anna can read 1 page in 1 minute.
+
+2. **Carole's Reading Speed:**
+   - Carole reads as fast as Anna.
+   - Therefore, Carole reads 1 page in 1 minute.
+
+3. **Brianna's Reading Speed:**
+   - Carole reads at half the speed of Brianna.
+   - This means Brianna reads twice as fast as Carole.
+
+4. **Calculating Brianna's Reading Time for 100 Pages:**
+   - Since Brianna reads twice as fast as Carole, it will take Brianna half the time to read 100 pages.
+   - Time taken by Brianna to read 1 page = 1 minute.
+   - Time taken by Brianna to read 100 pages = \( \frac{1}{2} \times 1 \) minute.
+
+5. **Final Calculation:**
+   - Time taken by Brianna to read 100 pages = \( \frac{1}{2} \times 1 \) minute.
+   - \( \frac{1}{2} \) minute = 0.5 minutes.
+
+#### 0.5
+Therefore, the time it takes Brianna to read a 100-page book is 0.5 minutes.

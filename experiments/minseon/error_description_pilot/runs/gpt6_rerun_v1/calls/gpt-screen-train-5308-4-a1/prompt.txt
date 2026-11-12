@@ -1,0 +1,25 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Trace has five shopping bags that weigh the same amount as Gordon’s two shopping bags. One of Gordon’s shopping bags weighs three pounds and the other weighs seven. Trace’s shopping bags all weigh the same amount. How many pounds does one of Trace’s bags weigh?
+SOLUTION: To solve this problem, let's denote the weight of one of Gordon's shopping bags as \( G \) and the weight of one of Trace's shopping bags as \( T \).
+
+From the problem, we know:
+1. \( G = 3 \) pounds
+2. \( G = 7 \) pounds
+3. \( T + T + T + T + T = G + G \)
+4. \( 5T = 2G \)
+
+Now, substituting the value of \( G \) into the equation:
+\[ 5T = 2 \times 3 \]
+
+Calculate the right-hand side:
+\[ 5T = 6 \]
+
+To find \( T \), divide both sides by 5:
+\[ T = \frac{6}{5} \]
+
+So,
+\[ T = 1.2 \]
+
+#### 1.2
+Final line is formatted as: #### 1.2

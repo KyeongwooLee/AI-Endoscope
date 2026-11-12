@@ -1,0 +1,39 @@
+GPT 재실험 결과 읽기
+
+analysis_report.html을 브라우저에서 여세요. 그림 파일은 같은 폴더에 유지하세요.
+datasets/pilot130/와 datasets/expansion500/에 각각 CSV, 임베딩 입력·벡터, 군집, 검색 결과가 있습니다.
+annotations_E.csv는 일반 오류 설명, annotations_G.csv는 근거 기반 오류 설명입니다.
+pair_reviews.csv에는 검색쌍의 실제 GPT 판정과 이유가 있습니다.
+screen_outputs.jsonl은 참조 답을 숨긴500개 GPT 진단이며 주 분석 임베딩에 사용하지 않았습니다.
+
+어떤 모델로 실행했는지
+- 원래 풀이: 민수님 데이터의 Qwen/Qwen2.5-1.5B-Instruct 저장 응답
+- 새 주석·평가·참조 없는 진단: gpt-6-astra, reasoning_effort=medium, ChatGPT 로그인 기반 Codex exec
+- 정확한 제공 모델 스냅샷은 노출되지 않음. 모델명과 호출 설정 및 CLI 버전을 기록함.
+- 임베딩: BAAI/bge-m3, revision5617a9f61b028005a4858fdac845db406aefb181, 1,024차원 정규화 밀집벡터
+- 원래630개 문제·풀이 그대로 사용. 원래 풀이를 다시 생성하거나 모델을 학습하지 않음.
+
+실행 재현
+원래 error_description_pilot 저장소의 edp 패키지와 .venv-edp 환경, 이전 runs/pilot_v1 및 expansion_500_v1/v2 결과가 필요합니다.
+ZIP은 모델 가중치, 인증 정보, 가상환경, 원래 저장소 전체를 포함하지 않습니다.
+GPT 실행에는 사용자가 명시적으로 허용한 로그인된 Codex 환경이 필요합니다.
+
+1. source/prepare.py: 새 빈 실험 폴더에서만 실행. 입력과 과거 파일 해시를 고정함.
+2. source/run_gpt.py controls: 기본18쌍을 두 순서로 제시한36입력 시험.
+3. source/run_gpt.py annotation:630개×2조건, 각 요청 새 세션.4개 요청 동시 처리. 출력 검증 실패 시 한 번 재요청.
+4. source/analyze.py pilot130 또는 expansion500: 해당 데이터의 모든 주석이 있어야 함.
+5. source/build_judge_batches.py controls → source/run_gpt.py controls_batch → source/control_gate.py
+6. 두 데이터 분석 후 source/build_judge_batches.py pairs → source/run_gpt.py pairs_batch
+   pairs_batch 실행이 끝나면 같은 실행기가 real_audit(실제20쌍 추가 점검)과 screen(참조 없는500개 진단)을 이어서 실행함.
+7. source/evaluate.py → source/report.py → source/validate_and_package.py
+source/pipeline.py는3번과 함께 실행하면 완료된 표본부터 후속 작업을 연결합니다. 일부 준비 스키마와 추가 진단 입력은 이 패키지에 고정된 파일을 사용합니다.
+실행기는 이미 성공적으로 저장된 요청을 건너뜁니다. calls/에 프롬프트, 실제 응답, 이벤트, 모델 설정, 사용량을 보존했습니다.
+
+해석 주의
+- 한 쌍씩 평가한 기본 시험과 최대5쌍 단위 평가의 기본 시험을 모두 저장했습니다. 주 검색 평가는5쌍 단위입니다.
+- 주석은 한 사례·한 조건마다 새 세션이며 E/G 문맥을 공유하지 않습니다. 평가5쌍은 한 세션 안의 문맥을 공유합니다.
+- 기본 시험 통과는 실제 데이터 정확도 인증이 아닙니다. 설명과 평가가 같은 GPT 모델이며 독립 사람 정답은 없습니다.
+- 이전 설명과 GPT 설명의 비교는 네 설명 모두 있는 동일 사례 집합도 별도로 계산했습니다. 이전500개 비교 기준은 위치만 보정한 v2입니다.
+- 기존130개의 이전 모델은 기록상 Claude 실행 에이전트이며 정확한 버전은 확인되지 않았습니다. 이전 모델과 새 모델의 모든 차이를 모델 가중치 효과만으로 해석하지 마세요.
+- 답안 표기 불일치를 설명하는 주석과 본문 수학 오류를 구분해야 합니다. 평가 지침은 답안 표기만 충돌하는 경우 판정을 보류합니다.
+- 군집 분리도는 오류 유형 정확도가 아닙니다. 묶음 수를10개로 정했다고 오류 유형10개를 발견한 것은 아닙니다.

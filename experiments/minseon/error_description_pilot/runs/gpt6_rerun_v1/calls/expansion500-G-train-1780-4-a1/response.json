@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1780-4",
+  "response_sha256": "ee7aa4d588cae8490fa10889133c07f3cb650c472057f5161337f408b100b8ca",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 322.5",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Faith is getting paid $13.50 per hour. She normally works 8 hours a day, 5 days a week, plus 2 hours of overtime per day.",
+  "observed_error": "The final weekly earnings contradict the response's correctly written pay relations.",
+  "violated_condition": "Weekly earnings must equal $13.50 × (8 + 2) × 5.",
+  "error_description": "The response reports weekly earnings of $322.50, which does not equal the stated hourly rate multiplied by 10 daily hours over five days. Its written pay relations are correct, but the unexplained numerical conclusion does not follow from them; no specific arithmetic operation causing the discrepancy is shown.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The intermediate numbers are unlabeled, so the text does not establish which calculation first produced an incorrect value."
+}

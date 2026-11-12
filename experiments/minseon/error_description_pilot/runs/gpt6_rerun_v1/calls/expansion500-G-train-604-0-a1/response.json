@@ -1,0 +1,17 @@
+{
+  "source_id": "train-604-0",
+  "response_sha256": "17870f830e5155fb8a943b7aaa7efe3600e695c2713a9c8dceb732d7d77c0a2c",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total presents for the first half: \\(7 \\times 2 = 14\\).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "3 of them have birthdays in March, 1 of them has a birthday in October, 1 has a birthday in November, and another 2 of them were born in December.",
+  "observed_error": "The response assigns all seven birthday presents and all seven Christmas presents to the first half of the year.",
+  "violated_condition": "Only the three March birthdays fall in January through June; the remaining birthdays and Christmas fall in July through December.",
+  "error_description": "The response counts two presents for every brother in the first half, assigning the entire annual gift total to January through June. Only three March birthday presents belong in that half; Christmas and the other birthdays occur in the second half. The multiplication itself is correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

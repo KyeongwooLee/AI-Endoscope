@@ -1,0 +1,44 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Carol is an aviation engineer deciding how much fuel to put in a jet. The empty plane needs 20 gallons of fuel per mile. Each person on the plane increases this amount by 3 gallons per mile, and each bag increases it by 2 gallons per mile. If there are 30 passengers and 5 flight crew, and each person brought two bags, how many gallons of fuel does the plane need for a 400-mile trip?
+SOLUTION: To calculate the total fuel needed for the trip, we'll break it down into steps:
+
+1. **Fuel needed for the plane itself:** The empty plane needs 20 gallons per mile. For a 400-mile trip:
+   \[
+   20 \, \text{gallons/mile} \times 400 \, \text{miles} = 8000 \, \text{gallons}
+   \]
+
+2. **Fuel needed for passengers:** There are 30 passengers and each brings 2 bags. Each person's fuel needs increase by 3 gallons per mile. Each bag increases it by 2 gallons per mile. So, each person's fuel needs for a mile:
+   \[
+   3 \, \text{gallons/mile (passenger)} + 2 \, \text{gallons/mile (bag)} = 5 \, \text{gallons/mile (person)}
+   \]
+   Therefore, for 30 passengers:
+   \[
+   5 \, \text{gallons/mile (person)} \times 30 \, \text{people} = 150 \, \text{gallons/mile}
+   \]
+   For a 400-mile trip:
+   \[
+   150 \, \text{gallons/mile} \times 400 \, \text{miles} = 60000 \, \text{gallons}
+   \]
+
+3. **Fuel needed for flight crew:** There are 5 flight crew, each person's fuel needs increase by 3 gallons per mile. Each bag increases it by 2 gallons per mile. So, each person's fuel needs for a mile:
+   \[
+   3 \, \text{gallons/mile (passenger)} + 2 \, \text{gallons/mile (bag)} = 5 \, \text{gallons/mile (person)}
+   \]
+   Therefore, for 5 flight crew:
+   \[
+   5 \, \text{gallons/mile (person)} \times 5 \, \text{people} = 25 \, \text{gallons/mile}
+   \]
+   For a 400-mile trip:
+   \[
+   25 \, \text{gallons/mile} \times 400 \, \text{miles} = 10000 \, \text{gallons}
+   \]
+
+4. **Total fuel needed:** Sum up all the fuel needs:
+   \[
+   8000 \, \text{gallons} + 60000 \, \text{gallons} + 10000 \, \text{gallons} = 78000 \, \text{gallons}
+   \]
+
+#### 78000
+Final answer:
+#### 78000

@@ -1,0 +1,37 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: From March to August, Sam made $460 doing 23 hours of yard work. However, from September to February, Sam was only able to work for 8 hours. If Sam is saving up to buy a video game console that costs $600 and has already spent $340 to fix his car, how many more hours does he need to work before he can buy the video game console?
+SOLUTION: Step 1: Calculate Sam's hourly wage.
+Total earnings from March to August = $460
+Total hours worked from March to August = 23 hours
+Hourly wage = Total earnings / Total hours
+Hourly wage = $460 / 23 hours
+Hourly wage = $20 per hour
+
+Step 2: Calculate Sam's earnings from September to February.
+Total hours worked from September to February = 8 hours
+Earnings from September to February = Hourly wage * Total hours
+Earnings from September to February = $20 * 8 hours
+Earnings from September to February = $160
+
+Step 3: Calculate Sam's total earnings.
+Total earnings = Earnings from March to August + Earnings from September to February
+Total earnings = $460 + $160
+Total earnings = $620
+
+Step 4: Calculate the remaining amount needed to buy the video game console.
+Cost of video game console = $600
+Amount already spent = $340
+Remaining amount needed = Cost of video game console - Amount already spent
+Remaining amount needed = $600 - $340
+Remaining amount needed = $260
+
+Step 5: Calculate the number of hours Sam needs to work to earn the remaining amount.
+Total earnings needed = $260
+Hourly wage = $20 per hour
+Number of hours needed = Total earnings needed / Hourly wage
+Number of hours needed = $260 / $20
+Number of hours needed = 13 hours
+
+#### 13
+Sam needs to work 13 more hours before he can buy the video game console.

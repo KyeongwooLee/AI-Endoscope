@@ -1,0 +1,73 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-4446-1
+response_sha256: ae5adc01bb3d4c0463af95995f8f89ad7ae882e04530401d29ce307c12c5973b
+
+=== QUESTION ===
+Hans reserved a table at a fine dining restaurant for twelve people. He has to pay a deposit for the reservation, and the deposit is a flat $20 plus an extra $3 per adult but only $1 per child. Two of the people in Hans’s party are his kid cousins, and the rest are adults. How many dollars does Hans have to pay as a deposit for the restaurant reservation?
+=== MODEL SOLUTION ===
+Step 1: Determine the number of adults in Hans's party.
+- Total number of people: 12
+- Number of kids: 2
+- Number of adults: 12 - 2 = 10
+
+Step 2: Calculate the deposit for the adults.
+- Deposit per adult: $3
+- Total deposit for adults: 10 * $3 = $30
+
+Step 3: Calculate the deposit for the kids.
+- Deposit per kid: $1
+- Total deposit for kids: 2 * $1 = $2
+
+Step 4: Calculate the total deposit.
+- Total deposit: Deposit for adults + Deposit for kids
+- Total deposit: $30 + $2 = $32
+
+#### 32
+Hans has to pay a deposit of $32 for the restaurant reservation.
+=== REFERENCE SOLUTION (fallible aid) ===
+Hans’s party includes 12 - 2 = <<12-2=10>>10 adults and 2 children.
+The adults will cost 3 * 10 = $<<3*10=30>>30 for the deposit.
+The children will cost 2 * 1 = $<<2*1=2>>2 for the deposit.
+Thus, Hans has to pay 30 + 2 + 20 = $<<30+2+20=52>>52 as a deposit for the restaurant reservation.
+#### 52
+=== END ===

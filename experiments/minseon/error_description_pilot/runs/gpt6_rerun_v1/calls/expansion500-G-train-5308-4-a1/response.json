@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5308-4",
+  "response_sha256": "009be21def431354348d8c9b44758e545ef77cc016ace20de03b9b75ec2aa552",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "1. \\( G = 3 \\) pounds\n2. \\( G = 7 \\) pounds\n3. \\( T + T + T + T + T = G + G \\)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "One of Gordon’s shopping bags weighs three pounds and the other weighs seven.",
+  "observed_error": "The response assigns both distinct Gordon bag weights to one variable and represents their total as twice that variable.",
+  "violated_condition": "The five Trace bags must equal the combined weight of Gordon’s unequal bags: 5T = 3 + 7.",
+  "error_description": "The response represents Gordon’s two unequal bags with the same variable, assigning it both three and seven pounds, then uses twice three pounds as their combined weight. The required total is three plus seven pounds; the subsequent arithmetic correctly executes the wrong relation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

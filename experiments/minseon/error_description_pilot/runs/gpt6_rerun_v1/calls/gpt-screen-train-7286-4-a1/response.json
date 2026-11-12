@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"50 hours","check":"Greg has 18 − 6 = 12 hours, and Patrick has 2 × 12 − 4 = 20 hours. All three have 18 + 12 + 20 = 50 hours total.","evidence_quote":"G + P = 12 + 20 = 32","error_description":"The total omits Jacob’s 18 hours. The stated 32 hours includes only Greg and Patrick."}

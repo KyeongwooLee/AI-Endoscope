@@ -1,0 +1,815 @@
+id	loc	code	group	conf	reason
+train-1002-4	y	FC	B	m	re-derives Carmen as Jethro+7, ignoring 'twice'; both Carmen values summed; alt=CO
+train-1021-0	y	UN	UN	m	alt=UC; 0.5 hours equals gold's 30 minutes; only unit differs
+train-1023-1	y	UN	UN	m	correct formula 20*5*2*4 mis-evaluated as 40*2*4; arithmetic slip; alt=MS
+train-1024-2	y	OP	B	h	subtracts 18 from 20 hours left instead of adding them
+train-1027-4	y	TG	B	m	reports colored cost per square unit instead of drawing cost; alt=FC
+train-1028-3	y	CO	A	m	20 copper bars left out of the container total; alt=MS
+train-1032-2	y	OP	B	h	twice as many reversed: Britney gets 11/2 instead of 11x2
+train-1037-4	y	FC	B	m	savings modeled as cost minus sale price, inventing old card cost; alt=HA
+train-1050-0	y	MS	B	h	subtracts only Paul's photos, omits Tim's 52 from the total
+train-1060-4	y	PS	C	h	adds received 12 to total 36 that already includes them
+train-1074-3	n	FC	B	h	adds tile-strip areas of width and length instead of length x width
+train-1076-3	y	CV	A	m	uses selling revenue $65 as cost instead of stated $40; alt=FC
+train-1093-2	y	CV	A	m	alt=FC; multiplies boards by 30 remaining instead of 3 cans
+train-11-4	y	OP	B	m	subtracts change from shoe cost instead of adding; alt=MS
+train-1103-1	n	MS	B	m	$540 for lilies taken as 540 lilies; division by $15 skipped; alt=UC
+train-1115-0	n	FC	B	m	reads 8 scallops per pound as 1 pound per scallop; alt=CV
+train-1122-4	n	PS	C	m	multiplies days by old weekly hours 6 instead of daily 2; alt=FC
+train-1126-3	n	HA	A	m	assumes A and B make up all 150 bricks; alt=FC
+train-1134-2	y	CO	A	h	Henry's 90 lollipops left out of total
+train-1140-4	y	FC	B	h	60% win target taken of remaining 10 games instead of all 50
+train-116-3	y	MS	B	m	computed 5 rebates and electric's extra stamp dropped from total; alt=CO
+train-1164-3	y	MS	B	h	ignores the 2-gallon hourly loss in hours three and four
+train-1165-3	y	CV	A	m	uses 2 roofs instead of the stated 3; alt=CO
+train-117-3	y	MS	B	m	uses total 100 as blowfish count, skips halving; alt=CV
+train-1170-1	y	UC	D	m	subtracts clock hour 8 from minutes, ignores 7:15 departure; alt=CV
+train-1171-4	y	CV	A	m	Jack's tenfold based on Michael's future 130 instead of current 30; alt=PS
+train-1175-3	y	TG	B	h	finds jeans $30 but reports total of all three items
+train-1178-3	y	MS	B	m	Oula's pay taken as $100; x96 deliveries skipped; alt=CV
+train-1184-4	y	CO	A	m	counts one large and one medium bed instead of two each; alt=MS
+train-1191-2	n	FC	B	m	uses 50-cent discount as price of additional bears; alt=CV
+train-1196-2	n	OP	B	h	four times older applied in reverse, Twin Valley made older
+train-1221-3	y	CO	A	m	ducklings 82 added twice, 17 ducks left out; alt=PS
+train-1249-2	y	OP	B	m	alt=FC; time computed as charge times rate instead of divided
+train-1263-2	y	PS	C	m	alt=MS; quarter lost taken from 100, before later additions
+train-1270-0	n	UC	D	h	divides 240k by 1000 again though already in thousands
+train-1276-4	y	OP	B	h	reverses relation: Eli is older than Freyja, model subtracts 9
+train-13-2	y	FC	B	m	halves per-pound price $5 instead of cheddar's $10 price; alt=PS
+train-1306-2	y	OP	B	h	money left computed as 10 + 9 instead of 10 - 9
+train-1309-2	n	MS	B	h	weekly deaths of 5 omitted after first week
+train-1328-2	y	HA	A	h	invents yarn deliveries equal to fabric and adds yarn earnings
+train-134-4	y	MS	B	m	10-year-old wrongly denied under-12 discount; one discount skipped; alt=CO
+train-1340-2	y	CO	A	h	leaves the two 1.5-hour days out of the total
+train-1343-4	y	FC	B	m	alt=MS; purple taken as total minus green, ignoring green=purple
+train-1345-2	y	MS	B	h	omits Skechers $3000 from total sneaker spending
+train-1367-4	n	OP	B	m	level order reversed: highest set to 10x, second to 100x; alt=FC
+train-1375-3	y	CV	A	m	alt=MS; 12 months used for all pigs, 16 months ignored
+train-138-3	n	CV	A	m	alt=HA; uses 5 boxes as cereal's original price
+train-1381-4	y	MS	B	m	removed 3 buckets taken as bath water; 14-3 skipped; alt=CV
+train-1396-1	y	CO	A	m	omits this morning's 50 gallons from total milk; alt=MS
+train-1403-3	n	PS	C	h	substitutes 2a again into a sum already containing it
+train-1408-3	y	CV	A	m	second half of year given 52 weeks instead of 26; alt=MS
+train-1436-1	n	OP	B	h	reverses twice relation: Carli's flutes taken as half of Charlie's
+train-144-3	n	FC	B	m	ignores 4-pound packages; derives weight per package from 17; alt=MS
+train-1464-1	y	FC	B	m	"three times more" taken as 3x rather than original plus 3x; alt=UN
+train-1472-4	y	OP	B	h	halves repaid $60 though $60 is already half the loan
+train-1477-0	y	CV	A	m	uses 12 months instead of 3-month hunting season; alt=MS
+train-1479-2	y	OP	B	h	adds bags already made to order instead of subtracting
+train-1487-4	n	CV	A	m	alt=FC; 15 more hens taken as 15 total (5 new)
+train-1502-4	y	CO	A	m	alt=MS; gives cupcakes only to students, teacher and aide left out
+train-1508-1	y	MS	B	m	ignores Dorothy's half price, uses $5; alt=CV
+train-1518-3	y	PS	C	m	non-vegan computed as 80 minus own 28, not minus 24 vegan; alt=FC
+train-1531-1	y	UC	D	h	adds years and months together without converting
+train-1533-3	y	PS	C	m	day-three 8 used instead of own day-two 16; alt=MS
+train-1539-4	y	OP	B	m	alt=TG; difference taken in wrong order, negative result
+train-1546-4	n	MS	B	m	final 10 minutes to reach interview left out of plane time; alt=CO
+train-1549-4	n	UN	UN	h	all conversions correct; final sum 7 miscomputed as 6
+train-1551-3	y	MS	B	h	'five times' ignored: food-throwing as 5-1 instead of 5x5-1
+train-1553-3	n	CO	A	m	starting 11 players counted again in second half; alt=FC
+train-1554-2	y	FC	B	m	multiplies cans by cans per trip as seconds; alt=OP
+train-1557-3	y	TG	B	h	reports 80/200 fraction instead of 80 minutes remaining
+train-1564-4	n	OP	B	h	adds Friday's 88 minutes instead of subtracting
+train-1566-1	n	FC	B	h	treats $757 as part of $1214; other share = 1214 - 757
+train-1567-2	y	UN	UN	m	alt=CO; three thirds summed as 1/3, arithmetic slip not setup
+train-157-4	n	MS	B	m	ignores the doubling in the bead equation; alt=FC
+train-1570-0	n	MS	B	h	64-ounce purchase left out of the start-amount equation
+train-158-0	n	FC	B	m	12 miles per day read as 12 miles total over 12 days; alt=CV
+train-1583-2	n	FC	B	m	adds yearly cost times lifetime to price, counting cost twice; alt=PS
+train-1588-2	n	UN	UN	h	arithmetic slip: (3x4)/2 computed as 12; no setup error
+train-160-0	y	FC	B	h	alcohol John alone bought is included in the four-way split
+train-1603-3	y	OP	B	h	divides 13 cookies by 3 instead of multiplying
+train-1617-4	y	CO	A	m	alt=MS; one bread slice counted instead of two
+train-1651-4	y	CO	A	m	height reduced by one wall instead of two; alt=HA
+train-1652-4	y	CV	A	m	adds Ashton's sheets to Tommy instead of Jimmy; alt=FC
+train-1653-4	y	OP	B	m	multiplies chapters by rate instead of dividing; alt=FC
+train-1665-4	y	PS	C	h	uses 48 balls before losing 6 red instead of 42 after
+train-1681-1	n	MS	B	m	ignores one bottle lasting 4 washes, buys 20 bottles; alt=FC
+train-1689-2	y	UN	UN	h	arithmetic slip: 2 x 4800 written as 8000; no setup error
+train-1696-1	y	FC	B	h	tip taken as 10% of remaining $75, not whole $150
+train-1713-2	y	PS	C	h	sets up June as 21,122+3,922 but then uses 21,122
+train-1731-3	y	CV	A	h	uses Ricciana's 20-foot run instead of Margarita's 18
+train-1746-2	n	PS	C	m	multiplies by 500 employees again though hours already include them; alt=FC
+train-175-1	n	FC	B	m	weights speeds by 1/3 then divides by 3 again; alt=PS
+train-1751-3	n	UN	UN	m	slip: 1000 times 24 written as 240000; alt=CV
+train-1759-0	y	CO	A	m	omits the 6-mile first-to-second store segment; alt=MS
+train-1773-3	y	PS	C	m	adds second roll's 5 gifts to third roll's 4; alt=CO
+train-1790-0	y	MS	B	m	'four times more' taken as 4x300; base 300 not added; alt=FC
+train-1791-3	y	FC	B	m	no-badge count as with-badge minus hand-written; alt=PS
+train-1803-3	y	CV	A	m	3 used for students going inside instead of 1/3 x 30 = 10; alt=OP
+train-1815-4	y	CO	A	m	counts only one new row from age 10 to 15; alt=MS
+train-1826-2	y	TG	B	m	alt=OP; reports 39+39 week total instead of Friday's 39
+train-1829-4	y	MS	B	m	5 gold x 9 converts one spellbook; x5 books skipped; alt=FC
+train-1834-1	y	MS	B	h	cabin cost not split among 3 people
+train-1837-4	y	TG	B	m	alt=MS; adds first 40 minutes, reports whole journey not station-to-work
+train-184-3	n	CV	A	h	third-day recoveries taken as 50 instead of 200
+train-1853-4	y	CO	A	m	alt=FC; 2 shirts for Mon/Sun and 6 other days counted
+train-1869-4	y	MS	B	m	halves only the $36; first 8 weeks' $40 dropped; alt=PS
+train-1873-4	n	CV	A	m	Sebastian's future age written as S+3, Sophia's variable; alt=PS
+train-1875-1	y	FC	B	m	divides head-start gap by rabbit speed instead of relative speed; alt=MS
+train-1882-1	y	CV	A	m	alt=MS; tree's remaining 100 used as taken, basket 140 omitted
+train-1884-1	y	FC	B	m	adds sand weight to filling weight that replaces it; alt=PS
+train-191-4	n	PS	C	h	first week's catch subtracted again inside the 3-week total
+train-1948-0	n	MS	B	m	sets 11+24+L=50 without $3 price, reports dollars as cups; alt=TG
+train-1957-4	y	FC	B	h	"75% less" cost computed as price divided by 0.75
+train-1965-2	y	CV	A	h	fourth year doubles the 12 added instead of the 3 broken
+train-1978-2	y	MS	B	m	12-mile walk home counted once, not every day; alt=CO
+train-198-4	y	UN	UN	h	only rounding of 17/6 hours; no setup error
+train-1990-1	y	OP	B	h	second car is 10 years later, model subtracts 10 from 1970
+train-2005-4	n	FC	B	m	equation x = 18 + x/2 omits given-away and drunk cups; alt=MS
+train-2010-0	y	UC	D	h	40 minutes multiplied by 15 ounces per hour
+train-2011-3	n	OP	B	h	multiplies tokens by 30 tokens per dollar instead of dividing
+train-2014-3	y	TG	B	h	reports total tanks including built ones instead of additional tanks
+train-2027-3	y	CO	A	m	week counted as 5 days instead of 7; alt=CV
+train-2028-3	y	FC	B	m	mother's 300 added before the 3/4 sale, event order wrong; alt=PS
+train-2033-1	y	MS	B	h	skips dividing 425 among 5 levels
+train-2034-3	y	MS	B	h	6-hour train ride not subtracted from total trip time
+train-2040-3	n	CO	A	m	counts 9 eaten slices once instead of for both people; alt=CV
+train-2057-0	n	FC	B	h	needed weight set as 60+40 total, giving 40 lb not 20 lb difference
+train-2062-0	y	UC	D	h	answer left in hours (0.45) instead of minutes
+train-2071-4	y	FC	B	h	treats 10 seconds as time per push-up, not per 5
+train-2098-3	y	HA	A	m	subtracts roosters from eggs collected, an invented condition; alt=CV
+train-2117-4	y	FC	B	h	combines paces as joint work rate instead of summing separate times
+train-2119-1	n	PS	C	m	no-throwaway share computed from post-removal 72 instead of 108; alt=CV
+train-2125-1	y	UC	D	m	alt=FC; adds human years to dog years
+train-2142-4	y	FC	B	h	takes 75% of the full 400 instead of remaining 200
+train-2147-3	y	CV	A	m	alt=OP; newborn elephants = 125-20 uses herd's 20 instead of +10
+train-2150-3	n	FC	B	m	2 eggs treated as per person (x2 people); also no x7 days; alt=MS
+train-2153-4	y	PS	C	m	8 scoops for 2 cups used as per-cup rate, doubling again; alt=UC
+train-2154-0	y	PS	C	m	subtracts 100 from full 1200 instead of computed one-third 400; alt=MS
+train-2166-3	y	OP	B	m	divides by 2 instead of multiplying for turns per minute; alt=UC
+train-2170-1	y	PS	C	m	multiplies barrette-plus-comb $4 by 3 instead of barrette $3; alt=FC
+train-2172-2	y	OP	B	h	twice relation reversed: living room = 2*20 instead of 20/2
+train-2193-1	y	PS	C	m	snack fee multiplied by 6 members, then by 6 members again; alt=FC
+train-2198-3	n	CO	A	m	alt=FC; pairs of pants counted as two items each
+train-220-0	y	MS	B	h	ignores back and forth, uses one-way 600 miles
+train-2206-3	n	CO	A	h	2 eggplant plants left out of surviving plants
+train-2218-0	y	OP	B	m	alt=TG; difference taken as 6-8, negative percentage
+train-2220-4	y	CV	A	h	Paula's bus home taken as Luke's 70 min instead of her 42
+train-2224-0	n	FC	B	m	takes half of the 6 pan boxes instead of remaining 20; alt=CV
+train-2245-2	n	OP	B	h	net change adds deaths to births instead of subtracting
+train-225-4	y	CO	A	m	two heavy washes left out; bleach loads also costed wrongly; alt=MS
+train-2255-3	y	UN	UN	h	pure arithmetic slip: 3/4 of 52 computed as 41.5; no setup error
+train-2256-0	n	MS	B	h	divides full 240 minutes by 15 without subtracting other rides' time
+train-2269-3	n	FC	B	m	alt=CV; 1/7 sick fraction applied to present students instead of absent
+train-2270-4	y	CV	A	m	doubles the 15 girls instead of the 6 boys who dislike basketball; alt=PS
+train-2298-4	y	FC	B	m	fills all four pots with 3; fourth pot gets the remainder; alt=CO
+train-2300-3	n	MS	B	m	monthly pay uses 4 weeks of days, x5 days skipped; alt=UC
+train-2309-4	n	MS	B	h	labor cost omits $5 per shirt piece pay ($2000)
+train-231-2	y	UC	D	m	subtracts 8 beakers from 45 drops without dividing drops by 3; alt=MS
+train-2315-3	n	FC	B	m	Samir's current age treated as age 10 years ago, extra 5 added; alt=PS
+train-2316-1	y	CO	A	h	total students omits Mary herself
+train-2317-0	y	CO	A	h	omits the mom's $25.50 lobster from the meal total
+train-2320-4	n	MS	B	m	alt=CO; pizza base $14 counted once for two pizzas
+train-2322-3	y	MS	B	m	computes touchdowns to tie (89), not to beat (90); alt=TG
+train-2327-4	y	MS	B	h	omits the $150 adoption fee
+train-2340-0	n	OP	B	h	adds the 4 found books to shelved count instead of subtracting
+train-2346-4	y	OP	B	h	adds trade-in value to new cost instead of subtracting
+train-2361-3	y	FC	B	m	treats 32 as Martha's future age and subtracts 6; alt=HA
+train-2371-3	y	FC	B	h	area modeled as total path length squared
+train-2372-2	y	CO	A	h	family counted as 3 adults and 3 seniors instead of 2 and 2
+train-2374-1	y	FC	B	m	alt=CV; "of the rest, 40" read as all 100 remaining earn $14
+train-2386-1	n	MS	B	m	alt=CO; drops the 12 newly taken cats, starts from 6
+train-2387-3	y	FC	B	h	faire's 10% taken of profit instead of revenue
+train-2406-3	y	MS	B	m	subtracts one cylinder's rooms from station total, x3 skipped; alt=FC
+train-2407-3	y	MS	B	h	omits Jane's 45 pieces of bread from the total
+train-2419-2	n	FC	B	m	alt=MS; subtracts bear's own 210 lb from total need
+train-2457-3	y	MS	B	m	divides target 20000 by rate, skips computing bees lost; alt=FC
+train-2463-4	y	PS	C	h	uses original 300 instead of remaining 188 for second night
+train-2469-1	y	MS	B	h	4 green crayons not subtracted before pink
+train-247-0	y	PS	C	m	halves two-day total 12 instead of daily 6; alt=FC
+train-2516-0	y	MS	B	m	red count left at 2, ignoring the 2 new red balloons; alt=PS
+train-2517-4	n	OP	B	m	subtracts broker's commission instead of adding it to price; alt=UN
+train-2519-0	n	FC	B	m	alt=PS; subtracts $25 leftover from $100 earnings again
+train-2533-1	n	HA	A	m	invents sister, younger brother and wife; drops brother's 4 kids; alt=CO
+train-2538-2	n	PS	C	m	gives Randi all 18 given nickels, Peter Ray's remainder; alt=FC
+train-2541-3	y	FC	B	m	distance computed without speed, mixing hours and seconds; alt=UC
+train-2546-4	n	UC	D	h	converts 96 ounces to 1.6 gallons instead of 0.75
+train-256-0	y	MS	B	m	counts quarter-inch units 13.5 but never multiplies by 8 miles; alt=UC
+train-2564-1	y	OP	B	h	adds repair cost to winnings instead of subtracting it
+train-2583-1	y	TG	B	m	monthly pay for all 4 courses reported instead of one; alt=MS
+train-2609-1	n	MS	B	m	20 more pearl beads read as 20 pearl beads; alt=UN
+train-2611-3	y	CV	A	h	uses brother's age 20 instead of Trevor's 11 for 'three times'
+train-2644-0	y	OP	B	h	subtracts 24 given away instead of adding to sales goal
+train-2691-4	y	FC	B	m	assigns Kyle+Tasha total 28 to Tasha alone instead of halving; alt=PS
+train-27-1	y	MS	B	m	second-round 400 downloads never added before deleting; alt=FC
+train-2706-4	n	CO	A	m	counts each back-blow as a gust; only 6 gusts simulated; alt=FC
+train-2713-1	y	CO	A	h	counts each tree's width once though there are two trees
+train-2721-4	y	HA	A	m	invents 40 lollipops per store trip instead of one; alt=CV
+train-2722-4	y	FC	B	m	alt=MS; 2/3 remaining fraction used as gas used
+train-2732-1	n	PS	C	m	weekday 100 loaves/day reused for 2-hour weekend days; alt=CV
+train-2735-4	n	MS	B	m	40-hour regular threshold ignored; overtime set to 0 or all; alt=FC
+train-2736-4	y	MS	B	h	uses one 10-foot story per trip, ignores 5 stories
+train-2759-2	y	MS	B	m	bus taken three times a week counted once (40 not 120); alt=CO
+train-2767-0	y	MS	B	h	40 minutes of 10-minute dinners left out of total
+train-2771-3	y	PS	C	m	alt=UC; divides 120 minutes by 8 instead of own 24 points
+train-2774-3	y	CO	A	h	rest of May counted as 15 days instead of 16
+train-2775-1	y	MS	B	m	'half the circumference' ignored; uses 12 instead of 6; alt=OP
+train-2787-4	y	FC	B	m	two one-time spills subtracted every day; alt=HA
+train-2798-4	y	MS	B	m	hourly $20 treated as daily pay; 12 hours per day skipped; alt=UC
+train-2801-4	y	UN	UN	m	alt=HA; chimps given 2 legs vs gold's 4; world-knowledge disagreement
+train-2807-3	y	CV	A	m	replaces given old average 3 with this week's 13/4; alt=FC
+train-2816-2	y	FC	B	h	70% eaten taken of the remaining 720 instead of all 800
+train-2823-2	y	UC	D	h	subtracts 30 apples from 75 boxes, mixing units
+train-2826-3	y	OP	B	h	subtracts down payment instead of adding it to payments
+train-2827-0	y	MS	B	m	equation uses hospital's current age, not its age in five years; alt=TG
+train-2834-4	n	FC	B	m	alt=PS; Arvin today doubled from his yesterday, not Marvin's today
+train-2844-4	n	FC	B	h	equation x+2=0.25x; increase should equal 25% of x
+train-2852-0	n	MS	B	m	alt=FC; whole 200 mg target assigned to cheese, salt's 100 ignored
+train-2855-4	y	CO	A	h	Mon/Wed/Fri counted as 2 days instead of 3
+train-2856-0	n	UN	UN	m	alt=MS; listed terms sum to 180 but written 150; arithmetic slip
+train-2858-2	y	CO	A	h	adds men and women again to the 60 total guests
+train-2859-1	y	OP	B	h	change computed as paid minus $100, subtraction reversed
+train-287-1	y	OP	B	h	adds job earnings to remaining fee instead of subtracting
+train-290-4	y	CV	A	m	uses girls' count 7 as number of boys; alt=HA
+train-2916-4	y	PS	C	m	multiplies 3 pounds by 1/2 again; per-person factor applied twice; alt=FC
+train-2926-4	y	OP	B	h	subtracts Apple's time from Mac's, giving negative difference
+train-2927-4	y	UC	D	m	subtracts monthly 4000 from yearly goal without converting; alt=MS
+train-293-3	y	MS	B	h	tantrum time (5 per minute) omitted from total
+train-2948-3	y	FC	B	m	multiplies each level's legos by its level number; alt=HA
+train-2962-4	y	MS	B	h	omits the $51 gas reimbursement
+train-297-3	y	UC	D	m	alt=FC; two weeks turned into 2/7 puzzle instead of 14 days
+train-2975-4	y	CV	A	m	halves Tanya's total 20 instead of her 10 red erasers; alt=MS
+train-2985-1	y	OP	B	m	divides 4 minutes by 2 sides instead of multiplying; alt=FC
+train-2989-1	y	CV	A	m	assumes Tonya gives all 13 stamps instead of the 10 traded; alt=HA
+train-299-4	y	CV	A	m	alt=CO; half cookie taken as 1 cookie each morning and night
+train-2993-3	y	MS	B	m	final cost omits the undiscounted first $1000; alt=PS
+train-2995-3	y	MS	B	m	cut trees never subtracted before adding new ones; alt=PS
+train-2997-1	y	OP	B	h	double speed multiplies time instead of halving it
+train-3008-3	y	PS	C	m	alt=FC; subtracts head again from body already excluding head
+train-3010-4	y	OP	B	m	"4 shirts weigh 1 pound" read as 4 pounds per shirt; alt=FC
+train-3012-0	y	OP	B	h	adds slices needed to slices baked instead of subtracting
+train-3014-3	y	MS	B	h	omits the $100 flat fee from Travis's payment
+train-3017-4	y	OP	B	h	subtraction reversed, Mandy minus sister gives negative
+train-3019-2	y	PS	C	m	alt=CO; own 86 already includes blue, adds 60 blue again
+train-3023-1	y	FC	B	m	alt=MS; $2 per box treated as total sticker cost, then misdivided
+train-3027-2	y	CO	A	h	omits the daughter's birthday book from the additions
+train-3029-4	y	CV	A	m	uses 10 cuts per month instead of 3 for October-March; alt=HA
+train-3044-4	y	OP	B	h	adds noodles already owned instead of subtracting
+train-3053-4	y	PS	C	m	treats its 70 as post-gift total, subtracts savings 100 again; alt=FC
+train-3060-0	n	UN	UN	m	10000/(10*10) evaluated as 1000, arithmetic slip; alt=MS
+train-3069-4	y	FC	B	m	adds age gap 12 to years elapsed instead of to Bella's age; alt=PS
+train-3071-1	n	MS	B	m	8 hours of sleep not subtracted from the day; alt=CO
+train-3079-0	y	OP	B	h	subtracts $10 when reversing discount instead of adding
+train-3093-0	y	MS	B	m	alt=FC; 1.6 packs not rounded up to 2 whole packs
+train-3103-0	y	MS	B	m	divides all 10 tickets by 5 games; 5 floor tickets not removed; alt=FC
+train-311-4	n	PS	C	m	alt=FC; subtracts all 35 riders from 64 already reduced by 28
+train-3111-4	n	CV	A	h	uses old $2 per sqft rent instead of new $2800 rent
+train-3113-2	y	MS	B	m	kept 16 taken as given, ignoring 'remainder'; alt=CV
+train-3116-3	y	OP	B	h	net passenger losses added to initial count instead of subtracted
+train-3120-2	y	PS	C	h	multiplies by 2 boxes again after already counting both boxes
+train-3121-4	y	CV	A	h	3/2 slices each taken as 3 slices each
+train-3125-4	n	FC	B	h	earnings equation V+W=105 ignores per-head prices
+train-3139-3	y	CV	A	h	black beads fraction 1/6 miscopied as 1/3
+train-3147-4	y	MS	B	h	finch intake not halved; "half of parakeet" ignored
+train-3155-2	n	HA	A	m	alt=FC; invents friend taking back the 5 returned bars
+train-3157-0	y	CV	A	m	100 GB allowance used as GB over; given $0.25 rate ignored; alt=FC
+train-3163-4	n	OP	B	m	leftovers subtracted from eaten slices instead of added; alt=FC
+train-3166-4	n	FC	B	h	horizontal pictures set to half of V instead of half of 30
+train-3184-4	y	CO	A	h	Rick's 30 guppies counted as clowns and again as guppies
+train-3187-3	y	UN	UN	m	counts 261 weekdays in a year; defensible, no clear error; alt=HA
+train-3188-4	y	CO	A	h	Tom, parents and 3 siblings miscounted as 7 instead of 6
+train-3202-3	y	HA	A	h	adds scream fee to old babysitter who has none
+train-3203-2	y	MS	B	h	ignores the 3/5 weight factor for new bags
+train-323-0	y	CO	A	h	omits flags for Jay and Gloria themselves
+train-3230-4	y	HA	A	h	invents a jade cost deducted from selling price
+train-3233-4	y	FC	B	m	pools kernels across bags instead of averaging the three percentages; alt=UN
+train-3277-0	y	MS	B	m	uses Dara's age in six years, skips the 6-year offset; alt=PS
+train-3279-3	y	MS	B	m	divides boards by rate per 20 minutes, forgets times 20; alt=UC
+train-3295-0	y	CO	A	h	children counted twice; total people 20 instead of 14
+train-3299-2	y	UC	D	m	subtracts 2 hours directly from minutes; alt=UN
+train-333-0	n	PS	C	m	adds sister's chocolate again to the 3 already including it; alt=CO
+train-3331-1	y	FC	B	m	subtracts plate count 38 from 320 ounces capacity; alt=UC
+train-3337-1	n	CV	A	h	red mushrooms given blue's half fraction instead of two-thirds
+train-3341-3	y	FC	B	m	'2000 more cases' read as 2000 more than week two; alt=HA
+train-3346-0	n	FC	B	h	takes October's 1/4 of remaining instead of 1/4 of original
+train-3358-3	y	FC	B	h	misreads buy-one-get-one-free as paying for 20 sprays
+train-3366-4	y	OP	B	h	subtraction reversed, Simon minus Peter gives negative
+train-3367-3	y	FC	B	m	adult count computed as children plus adults, giving 162; alt=UN
+train-3370-2	n	MS	B	m	three-melon buyers counted as 3 melons, x3 skipped; alt=FC
+train-338-3	y	CO	A	m	alt=FC; farm leg 6 counted twice plus extra 2-mile leg
+train-3390-1	y	FC	B	m	buy-2-get-1 group priced at $5 instead of $10; alt=CV
+train-3391-1	y	UC	D	m	three weeks taken as 105 days; also stays subtracted twice; alt=CO
+train-3397-1	y	MS	B	m	alt=OP; Leo's $7 debt applied to Ryan, not deducted from Leo
+train-3406-0	n	MS	B	m	baths set equal to rooms, couples' second person skipped; alt=FC
+train-3411-1	y	CO	A	m	73-second door crank left out of total; alt=MS
+train-3420-2	y	CV	A	m	all 5 figures priced at $15; $20 figure's value ignored; alt=MS
+train-3424-3	y	FC	B	m	lunch cost read as money left; backward reasoning wrong; alt=CV
+train-3429-2	y	PS	C	m	Saturday = 3 x weekly 150 min instead of 3 x 30; alt=FC
+train-343-2	y	UC	D	h	watt-hours treated as kilowatt-hours, no division by 1000
+train-3433-2	y	MS	B	m	gap taken as 8 miles; 8-7 subtraction skipped; alt=CV
+train-3438-4	y	CO	A	m	sums only day 1 and day 5, omitting days 2-4; alt=FC
+train-3444-3	n	PS	C	h	original $4 milk price used after computing half-off $2
+train-3451-0	n	HA	A	h	invents 10 kg loss of green beans; only rice and sugar lost
+train-3457-4	y	MS	B	m	does not divide bronze coins across 5 chests; alt=PS
+train-3469-1	y	OP	B	h	reverses half relation: Junior taken as half of Rayman
+train-3490-4	n	OP	B	m	2 minutes per question inverted to 2 questions per minute; alt=FC
+train-3492-0	y	MS	B	m	$50 in tens counted as 1 bill; 50/10 conversion skipped; alt=CV
+train-3499-4	y	UC	D	m	alt=TG; mixes months with years; answer left in years
+train-3506-2	y	FC	B	m	greedy coin choice wrong: claims zero quarters fit in 56 cents; alt=UC
+train-3509-3	y	PS	C	m	doubles own Mon-Wed total 9 instead of Monday's 3; alt=CV
+train-351-4	y	CV	A	m	total Wednesdays and Fridays taken as 2 instead of 36 each; alt=HA
+train-3517-2	y	OP	B	h	coupon added to bag price instead of subtracted
+train-3519-3	y	FC	B	m	uses box price $7.50 as price per bar; alt=CV
+train-3530-0	n	CV	A	h	uses 5 hours per day instead of the stated 4
+train-3555-4	y	CO	A	m	alt=FC; doubles four times though week one already has 4 pens
+train-3576-1	n	MS	B	h	30-second winning margin ignored; final lap from full 10 minutes
+train-359-4	y	UN	UN	h	arithmetic slip 30/60=10; setup itself correct
+train-3603-4	n	TG	B	h	reports total contributions instead of each person's $900 profit share
+train-3605-3	y	FC	B	m	time = 1/2 hour; ignores 2-hour base and 3x distance; alt=MS
+train-3610-2	y	FC	B	m	alt=CO; compares Mary to whole firm including herself, not the rest
+train-3623-4	n	MS	B	m	daily 8 min parking/walking not multiplied by 5 workdays; alt=FC
+train-3627-1	y	OP	B	m	net progress per cycle taken as 3+2 instead of 3-2; alt=FC
+train-3633-1	y	OP	B	m	alt=FC; divides sips by minutes per sip instead of multiplying
+train-3640-1	y	MS	B	m	alt=FC; fractional comic books not rounded down to whole books
+train-3644-1	y	MS	B	m	alt=CO; Twitter's 370 followers left out of the total
+train-365-4	y	MS	B	m	runner counts 5 and 3 dropped; per-runner times summed; alt=FC
+train-3666-2	y	MS	B	m	Luka's age on Aubrey's 8th never computed, 4 reused; alt=CV
+train-367-3	y	FC	B	m	reduction taken as current employee payroll instead of $150,000 raise; alt=CV
+train-3676-1	y	FC	B	m	nonsense servings x cups x 16 oz gives ounces per night; alt=CV
+train-3689-2	y	UN	UN	h	arithmetic slip 18+12=27; setup correct
+train-3692-1	y	FC	B	m	counts the 2 surplus students twice via negative male difference; alt=PS
+train-3714-0	y	CO	A	m	$500 from each of two sisters counted once; alt=MS
+train-3723-0	n	OP	B	m	divides Danielle's time by 6 instead of multiplying for slower Chase; alt=FC
+train-3744-3	y	OP	B	h	adds pancake rum to allowance instead of subtracting
+train-3749-4	y	UC	D	m	finds 7 bottles, then multiplies 42 servings by $3 per bottle; alt=PS
+train-3779-0	n	MS	B	h	pattern repeats per bracelet and necklace ignored; one pattern used
+train-3790-3	y	TG	B	m	alt=FC; adds friend's 100 jars, reports total not James's purchase
+train-3797-4	y	OP	B	m	adds remaining money and leftover instead of subtracting; alt=FC
+train-3813-3	y	MS	B	h	2 hours per night ignored; candle still lasts 8 nights
+train-3832-4	y	FC	B	h	divides each color separately with floor; bouquets can mix colors
+train-3835-1	y	PS	C	m	alt=FC; uses own total 392 instead of 56 adults for eating
+train-3848-3	y	FC	B	h	divides investment by total value instead of per-coin value
+train-3849-4	y	MS	B	m	$5 cone not treated as a quarter of money left; alt=FC
+train-386-3	y	MS	B	h	computes discounts but never subtracts them from prices
+train-3869-1	n	CV	A	h	ideal sleep computed with actual 5 and 6 hours instead of 8
+train-3904-0	y	FC	B	m	one eraser per class instead of per 6 pencils; alt=CV
+train-3909-1	y	PS	C	m	sells 15 wigs, reusing its 15 acts count; one play has 10; alt=CV
+train-3922-4	y	TG	B	h	reports new monthly rate 150 instead of the added 50
+train-3934-0	n	CV	A	m	alt=HA; Friday/Tuesday assigned Monday's 1.5 hours, ignores 5-hour total
+train-3940-0	y	UN	UN	m	390 minutes correct; only converted to 6.5 hours, equivalent answer; alt=UC
+train-3947-4	y	OP	B	h	reverses times relation: Bill taken as Harry divided by 6
+train-3951-4	y	CV	A	m	Kelsey's birth year taken as 1996 instead of 1999-25=1974; alt=UN
+train-3957-3	y	FC	B	m	alt=UN; $16 hourly wage read as daily earnings
+train-3970-4	n	FC	B	m	alt=MS; "50% more than beans" computed as 50% of beans
+train-3996-4	y	FC	B	h	treats 8 as total ratio; waiter share 3/8 instead of 8/13
+train-4002-0	y	MS	B	m	one 1000 mg dose per day; 4 doses per day (every 6 h) skipped; alt=FC
+train-4005-2	n	MS	B	m	alt=CO; second $4 book not subtracted from $20
+train-4016-1	y	FC	B	h	double-counted 7 sheep corrected by subtracting 5 instead of 7
+train-4019-1	n	UN	UN	m	alt=UC; 1200/30 computed as 4, arithmetic slip
+train-4031-2	y	MS	B	h	skips dividing 300 among 5 buckets before subtracting 20
+train-4034-3	y	TG	B	m	adds the two passing groups and reports it as failing count; alt=FC
+train-4040-4	y	FC	B	m	has each adult eat 1/3 and treats fraction as cookie count; alt=HA
+train-4041-4	y	TG	B	h	reports oranges the boy keeps instead of the friend's share
+train-4047-1	y	PS	C	m	pants after sale written as $60, the pre-sale cost, not $45; alt=UN
+train-406-0	y	TG	B	m	reports movie time only, drops computed cooking time; alt=MS
+train-4068-2	y	MS	B	m	ankle cheap handcuffs time omitted per friend; alt=CO
+train-4093-4	y	FC	B	h	removes delayed case before taking 2/3; wrong base for fraction
+train-4100-3	n	FC	B	m	alt=MS; circular equation for D, never uses 26-mile total
+train-4108-1	y	PS	C	h	2 hours subtracted twice from 8 pm
+train-412-4	n	MS	B	h	fridge = 256 - 38, Anna's 30 cookies never subtracted
+train-4137-3	y	CO	A	m	Donald's 4 cakes left out of the total; alt=MS
+train-4149-3	y	OP	B	h	adds 100 parked cars instead of subtracting from capacity
+train-415-4	y	HA	A	h	adds an extra doubling at one year not in the problem
+train-4153-3	y	MS	B	m	July's past age 3 used as current, skipping +20 years; alt=PS
+train-4158-4	y	FC	B	m	treats lamps with 2 burnt bulbs as fully dead; alt=MS
+train-4175-3	y	FC	B	m	failures counted as dropping one snack each (5 x 1); alt=HA
+train-4182-4	y	MS	B	h	treats melons remaining after losses as sold, skips end leftovers
+train-4186-2	y	CV	A	m	uses $40 spent as number of loot boxes; alt=MS
+train-4204-4	y	PS	C	h	four-year growth of 24 inches re-added every year
+train-4228-4	y	OP	B	h	subtracts exception-day savings instead of adding them
+train-4250-2	y	CO	A	h	Kingsley herself left out; four students instead of five
+train-4259-0	n	CV	A	m	alt=FC; eldest's 8 sweets assigned to the youngest child
+train-4265-2	y	FC	B	m	adds 10 once to total instead of 10 per coin type; alt=MS
+train-4272-0	y	UC	D	h	converts 24 ounces again by dividing by 16
+train-430-2	y	FC	B	m	plums excluded from the fruit that was halved; alt=CO
+train-4304-0	n	FC	B	m	adds age gap 35 to father's current age instead of Rachel's 25; alt=PS
+train-431-4	y	CO	A	m	two dogs given 4 legs total, counted as one dog; alt=MS
+train-4324-1	y	TG	B	h	reports Carmela's money after giving instead of amount per cousin
+train-4327-4	y	MS	B	h	omits Kevin's $14 ticket from his spending
+train-4342-0	y	PS	C	h	lost page subtracted again after already using 11 pages
+train-4345-1	y	CV	A	m	uses adults' count 2 as number of children; alt=HA
+train-4346-3	y	FC	B	m	adds Mateo's soda into Julio's totals; alt=OP
+train-4356-2	y	MS	B	h	slices per pizza not multiplied by number of pizzas
+train-4358-4	y	FC	B	m	slices-per-pizza options used as slices per child; alt=CV
+train-436-0	y	MS	B	m	ignores equal pencils and pens, starts pencils at 0; alt=HA
+train-4364-0	y	FC	B	m	computes total weekly miles then average per day, not final daily; alt=TG
+train-437-4	n	OP	B	m	alt=MS; feed cost added to price instead of subtracted
+train-4378-3	n	MS	B	m	alt=UN; 120/5*25 written as 24 words, multiplication by 25 dropped
+train-4381-4	y	FC	B	h	folds as area difference over one blanket area
+train-4385-4	n	OP	B	m	alt=TG; difference taken as 36-42 giving negative value
+train-4389-4	y	HA	A	h	invents a 5% interest rate not in the problem
+train-4400-1	y	UN	UN	h	rounding 2/3 hour to 0.67 gives 130.2; setup correct
+train-4413-4	y	CO	A	h	Billy counted among his own siblings
+train-4415-1	y	CV	A	m	2pm-4pm taken as 4 hours instead of 2; alt=CO
+train-4441-1	y	MS	B	m	balance computed without the withdrawal; $16 condition never used; alt=FC
+train-4442-4	y	FC	B	m	alt=TG; buys whole 96-lb target though he already has 60 lb
+train-4448-4	n	CV	A	m	coach bottles use 11 players instead of 4 coaches; alt=PS
+train-4460-2	y	MS	B	h	ignores the $100 discount on the 200-pound vest
+train-4480-2	y	CV	A	m	last period taken as 10 minutes instead of remaining 5; alt=MS
+train-4483-2	n	FC	B	m	alt=HA; subtracts Sammy's $4 as cost already in 100*(6-4)
+train-4494-1	n	MS	B	m	$35 weekly spending subtracted only in year 2, not year 1; alt=CO
+train-4500-4	y	PS	C	m	converts the $700 remainder into $50 bills instead of $300; alt=CV
+train-4505-4	n	MS	B	h	full 14-day sentence used, "half of" ignored
+train-4508-1	y	CV	A	h	uses 1000 instead of 100 in '100 more than half'
+train-4517-2	n	CV	A	h	uses 12 strawberries instead of 24 when costing strawberries
+train-4520-2	y	CV	A	m	alt=FC; Madeline's 63 equated to Cyrus's C/3 instead of C/2
+train-4522-1	n	CV	A	m	3 keys per lock also used as 3 locks per apartment; alt=HA
+train-4524-2	y	OP	B	h	subtracts the 5 returned oranges instead of adding
+train-4541-2	y	PS	C	m	doubles the already doubled 240 for the second rise; alt=FC
+train-4549-4	n	MS	B	m	alt=CV; car given bus's per-mile time, "5 fewer minutes" ignored
+train-4550-4	y	FC	B	h	computes differences between days instead of summing earnings
+train-4559-2	y	MS	B	h	Lazlo taken as 64 ounces, ignoring "6 ounces less than"
+train-4563-2	y	CO	A	m	sharks' own 4 buckets left out of daily total; alt=MS
+train-4578-1	n	FC	B	m	reads 300 per week as 300 per two-week payment; alt=CV
+train-4582-2	n	MS	B	h	20 cards in given-away boxes computed but left out of total
+train-4593-1	n	TG	B	m	reports fractional 3.27 bottles instead of rounding up to bottles needed; alt=UN
+train-461-0	y	MS	B	h	copying cost for one manuscript, not multiplied by 10 copies
+train-4611-3	y	PS	C	h	20 new students added again to the already-updated 180
+train-4613-0	y	HA	A	m	assumes 5 Fridays per week; alt=UC
+train-462-4	n	CV	A	h	Valerie's 80 skips/minute used for Roberto
+train-4624-4	y	FC	B	h	after correct 68, sets up wrong equation 2x=25 for per-tractor rate
+train-463-2	y	FC	B	m	oven loads taken as dough batches (4), ignoring 2-pizza oven capacity; alt=PS
+train-4631-3	y	CV	A	h	multiplies by 3 stories instead of 4 hours for total words
+train-4641-3	n	FC	B	m	all 3000 remaining treated as women, ignoring children; alt=CV
+train-4645-1	y	CV	A	h	red count used in place of white in the difference
+train-4662-1	y	MS	B	h	$5 Friday allowance left out of earnings
+train-4664-3	y	FC	B	m	counts 2 friends as 2 slices, ignores 2 slices each; alt=MS
+train-467-1	y	PS	C	m	alt=CO; own cumulative 3 already includes grocery 2 miles, added again
+train-4676-4	y	FC	B	h	adds 40% to donations instead of dividing by 0.4
+train-4695-1	n	MS	B	m	'otherwise' days taken as 7, not 7-3-2=2; alt=CO
+train-470-3	n	HA	A	h	assumes 50 total hours instead of solving from pay
+train-4727-4	y	CO	A	h	40 days counted as 39
+train-4757-4	n	MS	B	h	Wendi's flour ignores twice as much as Katy
+train-4758-2	y	FC	B	m	paying students cover only 40% of $210 instead of all of it; alt=CV
+train-4766-4	y	TG	B	h	reports total elapsed hours instead of additional hours needed
+train-4769-4	y	CV	A	m	alt=MS; lost episodes computed for 2 seasons instead of 26
+train-477-2	y	PS	C	m	combined 40 couples reused as each side's couples; alt=CO
+train-4785-4	y	FC	B	m	3 miles taken as 4 laps, miles-per-lap speed nonsense; alt=HA
+train-4787-0	y	UC	D	m	multiplies gallons by caps per lizard, skips lizard conversion; alt=MS
+train-4789-1	y	TG	B	m	reports total burgers, not guests excluding Maurice; alt=CO
+train-4793-2	n	CV	A	m	second tree's 2 m/day multiplied by 2 days instead of 4; alt=FC
+train-4821-2	y	FC	B	m	one-time down payment treated as recurring each year; alt=HA
+train-4832-4	y	UC	D	m	keeps percent form, reports 0.84 instead of 84 questions; alt=TG
+train-4844-4	y	PS	C	h	5 lollipops subtracted again after already using 6 left
+train-4847-4	y	CO	A	h	counts 11 people though the 10 already include Lucy
+train-4855-1	y	FC	B	m	alt=OP; subtracts 12 though 36 is already second-house-to-work leg
+train-486-2	y	CO	A	h	leaves Thursday's 1 inch out of Monday-Thursday total
+train-4864-2	n	CV	A	m	one mitten's hour taken as a whole pair's time; alt=CO
+train-4865-4	n	FC	B	m	twins fraction 1/4 taken of whole population, not pregnant women; alt=PS
+train-4868-2	n	CV	A	m	third-trip females set to 28 males instead of 56 females; alt=PS
+train-4877-4	y	PS	C	m	alt=FC; subtracts 2*12 again instead of own 20 new books
+train-4879-2	n	MS	B	m	five Martians given one Martian's limbs, x5 skipped; alt=PS
+train-4880-0	y	CO	A	h	one shared cheese-fries order counted twice
+train-4883-1	n	MS	B	h	$150 fee for being seen left out of total
+train-4890-2	y	MS	B	m	tank filled twice ignored; only 20 gallons used; alt=CO
+train-4899-3	y	CO	A	m	counts Patrice as 8 letters instead of 7; alt=CV
+train-4902-4	y	OP	B	h	adds locker pens to remainder instead of subtracting
+train-4907-0	y	PS	C	m	building values shifted; 20% increase applied twice; alt=FC
+train-4910-3	n	FC	B	h	nonsense per-device savings $60 - $40 x 5/10 times 50 devices
+train-4924-2	y	FC	B	m	loss computed as 165-100-50 instead of 165+50; alt=OP
+train-4925-3	y	OP	B	h	adds the 9 sold postcards instead of subtracting
+train-4928-4	y	CO	A	m	doubles nine times instead of five two-year periods; alt=FC
+train-4929-0	n	FC	B	m	writes James in 6 years as (J-3)+6; wrong time relation; alt=PS
+train-4932-0	y	PS	C	m	halves the 65 popcorn buyers again; 'half' applied twice; alt=FC
+train-4934-2	y	OP	B	m	difference taken as Emma minus Briana, giving negative; alt=UN
+train-494-4	y	MS	B	m	subtracts only smaller house from new total, omits larger house; alt=FC
+train-4968-1	y	CV	A	m	alt=PS; uses carrot's 51 calories instead of broccoli's 17
+train-4969-1	n	CO	A	h	counts 1 skirt, leaves out the two petticoats
+train-4970-1	n	MS	B	m	sets 36 = 2x with x as current age; 5-year shift skipped; alt=FC
+train-4976-3	n	TG	B	h	reports water already in glasses, not water needed to fill
+train-4985-2	y	PS	C	m	alt=CV; uses own width 10 for length instead of computed 20
+train-4998-4	y	FC	B	m	age = 15 - 5 colors; wrong relation, should add years since 15; alt=OP
+train-50-4	n	MS	B	m	uses 12 months instead of 8 non-season months; alt=CO
+train-5000-3	y	CO	A	m	crackers $3.50 omitted from the items summed; alt=MS
+train-5010-4	n	UC	D	h	15 months turned into 180 days, then paid twice per day
+train-5015-3	y	MS	B	h	return ride of both to the store left out
+train-5025-1	y	MS	B	h	second applicant's 1% hiring bonus left out
+train-5027-3	y	OP	B	m	'three times as many' taken as 12 + 3x12; home cans double counted; alt=CO
+train-5030-1	y	MS	B	h	5 tickets per minute ignored; one ticket per minute used
+train-5047-3	n	CV	A	m	Alina's day-3 messages taken as Lucia's 120 instead of 100; alt=PS
+train-5051-0	y	FC	B	m	alt=HA; third day read as 100 more than second day
+train-5068-2	y	MS	B	m	Andy's 6 eaten slices left out of the original loaf; alt=CO
+train-5075-0	y	FC	B	h	gives discount for partial $100, should count full increments only
+train-5087-3	y	UN	UN	h	arithmetic slip: 6+5+8 taken as 21 instead of 19
+train-5096-1	y	FC	B	m	per-day pages used as weekly totals, ignoring 5 weekdays and 2 weekend days; alt=MS
+train-5100-4	y	PS	C	h	adds the 5 remaining lights a second time
+train-5106-2	y	OP	B	h	reverses relation: Clyde taken as 8 times Grace's tower
+train-5112-3	y	OP	B	m	three folds give 1/8 piece per sheet instead of 8 pieces; alt=FC
+train-5116-4	y	FC	B	m	fifth taken of remaining 3002, not of $1000 savings; alt=PS
+train-5118-3	n	FC	B	m	reads 25 more as 25 more than day one, giving 39; alt=CV
+train-5119-4	y	CO	A	m	spare tire counted as one of the 4 wheels, 4 tires not 5; alt=FC
+train-5139-2	y	OP	B	m	multiplies 16 by 16 instead of adding the two sides; alt=FC
+train-5154-0	y	CV	A	m	'his current age' taken as Thomas's 6 instead of James's 24; alt=TG
+train-5155-3	y	FC	B	m	'2 of each added' treated as doubling each type's count; alt=OP
+train-5160-2	n	FC	B	m	adds Lily's ducks and geese to Rayden's counts; alt=TG
+train-5161-1	y	PS	C	h	total gold value 2400 multiplied again by 100 coins
+train-5178-2	y	FC	B	m	shared half apple taken as half apple total per day; alt=UN
+train-5179-1	y	MS	B	h	80% fill ignored; uses full 200-gallon weight
+train-5181-4	n	FC	B	m	Jenny's distance taken as 1/2 mile, ignoring speed times time; alt=HA
+train-5184-1	n	MS	B	m	fabric needed for 1 pair only; 7 pairs ignored; alt=CV
+train-5186-3	y	PS	C	m	alt=MS; Janet's age 8 years ago (7) used as current age
+train-5190-3	n	UN	UN	h	arithmetic slip: 2/5 of 200 computed as 40; no setup error
+train-52-0	y	OP	B	h	subtracts kept pencils from shared instead of adding
+train-5201-4	y	CO	A	h	counts 3 two-hour gaps between 3 stations instead of 2
+train-5205-0	n	FC	B	m	80% pace taken as 0.8 hours per mile, rate misread; alt=UC
+train-5207-4	y	OP	B	h	sets J+3=7, reversing give-away direction; Jessa had 7+3
+train-5222-0	y	CV	A	h	Costco gallon price $8 used as 16-oz bottle price
+train-5224-3	y	FC	B	m	adds discarded marble back, statue total 80 not 58; alt=OP
+train-5246-4	y	PS	C	m	one-dog total $30 reused as per-dog base charge; alt=CV
+train-5252-4	y	CO	A	m	60% Very Satisfactory group never removed from remaining; alt=MS
+train-5282-1	n	FC	B	m	5/7 applied to euros per dollar, rate direction inverted; alt=OP
+train-529-4	y	HA	A	m	assumes 30 rides a month; one-way cost per ride set to $2/30; alt=FC
+train-5300-4	y	CV	A	m	alt=MS; season total uses 10 remaining games instead of 30
+train-5305-2	y	CO	A	h	only one cheesecake counted though two were bought
+train-5314-4	y	MS	B	m	uses one basket's 20 balls as total, skips 5 baskets; alt=CO
+train-5316-0	n	HA	A	m	assumes 2 ham slices per sandwich; alt=CV
+train-5318-2	y	UC	D	m	weekly rate times 3 months; weeks-per-month conversion missing; alt=MS
+train-5320-3	y	UC	D	h	multiplies ml/hour rate by minutes
+train-5340-4	n	FC	B	h	96 m divided by 1 s called 96 seconds; nonsense time model
+train-5361-1	y	CO	A	m	mango salsa (3) and jelly (1) dishes left out; alt=MS
+train-5368-0	y	OP	B	h	multiplies by 6 slices instead of dividing
+train-5371-2	y	PS	C	h	uses starting 20 apples instead of remaining 8
+train-5373-4	y	OP	B	h	adds deductions to gross pay instead of subtracting
+train-5376-4	y	CV	A	h	uses maths' 80 as second-semester arts mark instead of 90
+train-5393-4	y	MS	B	m	omits bathroom area from remaining space, mixes dollars and sqft; alt=UC
+train-5396-4	y	FC	B	m	doubles previous day instead of constant twice first day; alt=PS
+train-54-0	y	OP	B	h	'all but $1' shredded: adds 1 to 12 instead of subtracting
+train-5410-1	y	OP	B	h	difference reversed: 4 - 5 = -1 instead of 5 - 4
+train-5415-2	n	OP	B	m	picks $0.50 box as cheaper than $0.33 box; alt=UN
+train-5432-4	n	UN	UN	m	average step writes 10+26/2 but reports sum 36; alt=TG
+train-5435-0	y	OP	B	m	multiplies by 80% instead of dividing; alt=FC
+train-5436-3	y	CO	A	m	counts 4 waiting periods instead of 5; fencepost reading; alt=UN
+train-5447-1	y	MS	B	m	alt=TG; 57-minute boiling time left out of total
+train-5459-2	y	CO	A	m	alt=PS; whole-week 10 hours used for Mon-Wed and Thu-Fri each
+train-5469-0	y	CO	A	h	third and fourth bag counted as one 8
+train-5476-1	y	FC	B	m	alt=UN; $2 delivery charge applied once, not per pizza
+train-5478-4	n	HA	A	m	assumes tank full before day 3, reports 0 despite finding 25; alt=TG
+train-5489-3	y	FC	B	m	alt=OP; multiplies savings by new price before dividing by it
+train-549-3	y	PS	C	m	remaining chair count 48 used for tables instead of 20; alt=CV
+train-5494-4	y	MS	B	m	pays one child ticket but does not count that child; alt=FC
+train-5502-1	y	OP	B	h	halves novels for writing books instead of doubling
+train-5503-4	y	CO	A	m	total biscuits taken as 40, afternoon batch left out; alt=MS
+train-5511-1	y	FC	B	m	takes 14 years to pass instead of 14-7=7 years; alt=MS
+train-5523-4	y	FC	B	h	games bought as (240-50)/30; net $20 monthly loss never modeled
+train-5528-0	y	FC	B	h	60% taken of 50 males instead of total herd 125
+train-5545-1	y	MS	B	m	uses 1 jenny and 1 geranium per pot instead of 4 each; alt=FC
+train-5561-2	y	MS	B	m	each pair of islands computed as one island; x2 skipped; alt=CO
+train-5567-4	y	MS	B	m	per-person amounts not multiplied by 6 and 4 people
+train-5573-0	y	MS	B	m	Tuesday given 1 muffin, ignoring one more than Monday; alt=CO
+train-5577-4	y	CV	A	m	alt=OP; uses 60 servings as cheese-ball count and divides by 12
+train-5578-1	y	OP	B	h	multiplies 60 episodes by 2 per day instead of dividing
+train-5579-4	y	CO	A	m	Maths 63 left out of total (M reused for Music); alt=PS
+train-5603-4	y	CV	A	m	15% weight cut applied as 15% speed gain instead of 10 mph; alt=FC
+train-5609-2	y	FC	B	m	takes 40% of the 56 hours instead of 56 as 40% of total; alt=OP
+train-5614-3	y	CV	A	m	multiplies 20 dogs by per-block charge; dogs used as blocks; alt=FC
+train-5615-0	y	OP	B	h	adds repaired phones instead of subtracting
+train-5621-4	n	CO	A	h	counts 4 working days, Friday left out
+train-5623-0	y	FC	B	h	English fraction taken of remaining 24 instead of all 30
+train-5635-0	y	FC	B	h	divides tuna supply by total demand to get customers served
+train-5650-3	n	UN	UN	h	75/60 evaluated as 25 and 24/60 as 4, arithmetic slip
+train-5656-0	n	UN	UN	h	31/7 rounded to 4.4286 causes rounding error; setup equivalent
+train-5692-0	y	MS	B	m	sister's age not reduced by 5 years; alt=PS
+train-5694-1	y	FC	B	m	50% of 2 hours taken as 0.5 hours, percent not applied; alt=UN
+train-5700-4	y	CV	A	m	removes half of 70 instead of the stated 30 eaters; alt=FC
+train-5703-2	y	FC	B	m	treats "2 people purchased 4" as 4 each instead of 4 total; alt=UN
+train-5709-3	n	CV	A	m	alt=CO; creature counts/rates swapped; bats get wights' 3-per-3 rate
+train-571-4	y	CO	A	h	Anthony's 12 added along with his 8 cats and 4 dogs
+train-5713-4	y	OP	B	h	three times as fast gives Tom triple time instead of a third
+train-5716-4	y	OP	B	h	2 cups per tablespoon inverted: multiplies 16 by 2 instead of dividing
+train-572-3	y	UC	D	h	subtracts pounds picked from dollar goal
+train-5721-0	y	MS	B	h	ignores the 4 extra candies; divides only the 10
+train-5725-0	y	FC	B	h	adds 50% of learned words instead of learned words being 50% of original
+train-5729-0	y	CV	A	h	uses boa's 200 feathers instead of flamingo's 20
+train-5738-2	y	MS	B	m	computed 20 midfielders left out of the subtraction; alt=CO
+train-5751-1	y	TG	B	h	reports total chores over 10 weeks, not weekly average
+train-5763-2	y	UN	UN	h	2 x 147 computed as 299, arithmetic slip
+train-5778-4	y	CV	A	m	6 extra weekly hours used as 6 days per week; alt=OP
+train-5783-2	n	PS	C	m	doubles Leah's rate twice, Megan $2 per day; alt=CV
+train-5788-0	n	UC	D	m	subtracts 4 min/km from a speed in km/min; alt=FC
+train-5793-2	n	FC	B	h	makes three toys half off instead of every second toy
+train-5804-2	y	UN	UN	h	arithmetic slip: 15+5+5+2+1 summed as 30 instead of 28
+train-5811-4	y	PS	C	h	October mowing earnings copied as September total $124
+train-5813-3	y	FC	B	m	10 phones for two machines read as 10 per machine; alt=CV
+train-5824-1	y	UC	D	h	adds 2 dimes as 2 dollars, mixing coins count with dollars
+train-5826-1	n	PS	C	m	uses running total 5 as cat count, counting the dog twice; alt=CO
+train-5827-0	y	FC	B	h	total 2100 pages treated as pages per book
+train-5837-2	y	CV	A	h	uses XL count 12 for shirt boxes instead of 20
+train-5864-3	y	PS	C	h	adds the 5 a second time after already adding it
+train-5872-4	y	FC	B	m	reads 20% as far as 20% less; alt=OP
+train-5880-0	y	MS	B	m	8 packs read as Mon-Thu total, x4 days skipped; alt=UN
+train-5881-2	y	MS	B	h	20 miles each way; return leg omitted
+train-591-1	y	OP	B	m	inverts 20 cherries per 10 minutes into 2 minutes per cherry; alt=FC
+train-5913-1	n	MS	B	m	mixing time omitted from total cake time; alt=CO
+train-5914-4	y	FC	B	h	treats 50% shares as tree counts 0.5, ignores 55 equation
+train-593-4	y	MS	B	m	new snow 24 taken as depth; 34-24 subtraction skipped; alt=CV
+train-5931-1	y	UC	D	h	15 minutes used as 15 hours in distance
+train-594-2	y	PS	C	m	adds Jacob's 15 shells a second time; alt=CO
+train-5946-1	y	MS	B	m	alt=CV; Wallace's full 40 gallons used, 3/4 full ignored
+train-5947-2	y	OP	B	h	brother's age subtracted from birth year instead of added
+train-5971-2	n	FC	B	m	alt=UC; per-keychain price multiplied by number of packs
+train-5978-1	y	FC	B	m	pools all 528 beads, ignoring equal large/small split limit; alt=MS
+train-5992-4	y	PS	C	m	0.1 lb for 100 leaves reused as per-leaf weight, 100 applied twice; alt=FC
+train-6001-2	y	UN	UN	h	arithmetic slip in temperature sum (693.2 vs 693); no setup error
+train-6017-4	y	CV	A	m	uses 2 trips instead of 10 round trips; alt=FC
+train-602-3	y	PS	C	h	subtracts top 3 again from already-reduced 15 places
+train-6027-3	y	CV	A	h	uses 2 eggs per chicken instead of stated 3
+train-6042-4	y	OP	B	h	Allison's paper computed as 30 x 6 instead of 30 / 6
+train-6058-1	n	OP	B	h	all but 4 guests computed as 28 + 4 instead of 28 - 4
+train-6066-0	y	CV	A	m	uses The Dark price for 90s CDs, ignores 40% relation; alt=FC
+train-6078-4	y	CO	A	h	fourth day's 10 pages left out of pages written
+train-6080-4	y	MS	B	m	'half of a pizza' taken as whole 12 slices; half ignored; alt=OP
+train-6085-3	y	HA	A	h	invents 14 gallons of filling during the fifth hour
+train-6092-1	y	MS	B	m	6 bathrooms ignored; 1 roll per day in total; alt=CO
+train-6093-4	y	CO	A	h	day after tomorrow counted as Day 5 instead of Day 4
+train-611-4	y	MS	B	h	skips dividing 40 pepperoni among the four slices
+train-6111-3	y	FC	B	m	assumes one 12-gallon fill per day, charges 24 gallons at each station; alt=CO
+train-6115-4	n	CV	A	m	ice maker run 10 hours (cubes per hour) instead of 16; alt=FC
+train-6128-2	n	OP	B	m	20% not taken treated as 20% taken; alt=MS
+train-6150-2	y	UC	D	m	uses 4.34 weeks per month instead of problem's 4-week convention; alt=UN
+train-6160-3	y	MS	B	h	omits the $3000 deposit from total installment cost
+train-6168-0	y	MS	B	h	charges for all fruit, ignoring the 10 apples and 6 oranges left
+train-617-0	y	FC	B	m	doubles only the extra penalty, then adds base and penalty again; alt=MS
+train-6175-2	y	FC	B	m	alt=TG; average divided by 4 games instead of 2 players
+train-6186-2	y	PS	C	m	alt=UN; adds the +5 twice when computing Jim's past age
+train-619-4	y	PS	C	h	adds Tuesday and Thursday again after already summing to 42
+train-6208-4	y	PS	C	m	uses combined 5.5-cup amount as both flour and sugar; alt=FC
+train-6220-0	y	CO	A	m	alt=FC; applies 2/3 six times instead of five for 6th doll
+train-6222-4	y	MS	B	h	30 extra teddies from mom omitted in final sum
+train-6226-4	y	CV	A	m	second hour uses 3 eggs though those customers ordered 4-egg; alt=CO
+train-6235-3	y	OP	B	h	multiplies distance by km per liter instead of dividing
+train-6248-2	y	TG	B	m	adds then subtracts adults, ending at total pups not difference; alt=FC
+train-6251-1	n	PS	C	m	rewrites x + x + x/2 as 2x + x; alt=UN
+train-6256-2	y	MS	B	m	record total not multiplied by 4 players
+train-6271-2	n	FC	B	m	computes tip on post-tax total instead of lunch price; alt=UN
+train-6275-1	y	FC	B	m	adds costs of both rope options instead of choosing cheaper one; alt=TG
+train-6291-4	y	CV	A	m	alt=CO; uses n=4 instead of the 8 players
+train-6300-3	y	CV	A	m	February doubled from March's 8800 instead of derived from January; alt=OP
+train-6303-4	n	FC	B	m	labels red-plus-green 42 as non-red, subtracts wrong complement; alt=PS
+train-6306-4	n	FC	B	h	equal number treated as equal weight; splits 49 oz in half
+train-6321-0	n	CV	A	h	potatoes multiplied by 2 kg though only 1 kg bought
+train-6323-2	y	CO	A	m	refill is half of Shelby's 12 only, Samantha's 24 left out; alt=MS
+train-6332-4	y	PS	C	m	adds back the 9 safe already removed from 23; alt=FC
+train-6346-0	y	CO	A	h	April 1 to 12 counted as 11 days instead of 12
+train-6355-3	y	CV	A	m	total $141 taken as pattern cost; $15 pattern never subtracted; alt=MS
+train-636-2	y	CO	A	m	alt=MS; adds all 15 keys plus remaining 14; assignment time omitted
+train-6360-2	y	CO	A	h	divides by 2 people instead of 3, Elisa left out
+train-6369-1	y	OP	B	h	multiplies 2 by 50 instead of halving each piece
+train-637-4	n	CV	A	m	alt=FC; uses 6 years as age gap instead of 12
+train-6392-4	y	MS	B	h	first bill's 10% interest declared zero; bill principals also dropped
+train-6397-0	y	OP	B	h	$6/hour subsidy added to cost instead of subtracted
+train-6402-4	y	OP	B	m	alt=FC; 2 tbsp per lime inverted to 2 limes per day
+train-6404-3	y	PS	C	m	candy bar cost $1.50 used as the 1/6 amount, not $2.50; alt=CV
+train-6407-4	n	FC	B	m	nougats computed as caramels plus twice caramels; alt=OP
+train-6409-4	y	UN	UN	m	alt=UC; counts individual socks (180) while gold counts pairs; defensible reading
+train-6411-0	n	UC	D	m	4 sets treated as 4 earrings instead of 8; alt=MS
+train-6416-0	y	MS	B	m	the 2 steps back omitted from the net sum; alt=CO
+train-6428-0	n	MS	B	m	daily 2 hours not multiplied by 5 school days; alt=FC
+train-6431-0	y	OP	B	h	adds PlayStation sale money to costs instead of subtracting it
+train-6439-3	y	CO	A	m	counts 5 workout days instead of 3 per week
+train-6457-1	y	CO	A	m	forgets the original room, counts only 3 new rooms; alt=MS
+train-647-4	y	CO	A	m	alt=MS; four adults given 1 cupcake in total instead of 4
+train-6473-4	y	OP	B	m	36 is candies for two packets but model multiplies by 2; alt=FC
+train-6474-2	y	OP	B	h	subtraction reversed, A minus B gives negative
+train-648-1	y	PS	C	h	divides by 2 sets a second time after already averaging
+train-6511-4	y	HA	A	h	invents 2 feet per being, ignoring the stated 4 or 5 hands
+train-6522-4	y	OP	B	m	third throw doubled from fourth instead of fourth plus 3; alt=FC
+train-6548-0	y	MS	B	m	round-trip fare for one person only, x2 people skipped; alt=CO
+train-6552-1	y	OP	B	h	strawberry set to twice grape; relation reversed
+train-6556-3	y	MS	B	h	divides full $10 by $2; $4 already spent on molds/sticks ignored
+train-6561-4	y	CV	A	h	"a 5th" miscopied as 5/10
+train-6571-3	n	OP	B	h	Steve receives 3 marbles but model subtracts 3 twice
+train-6595-0	y	MS	B	m	halves Peter's current age, skipping +2 years for Peter; alt=PS
+train-6597-3	y	HA	A	m	adds Alex's 23 lost fish to Jacob's count; alt=OP
+train-66-2	y	MS	B	h	omits the additional $20 down payment
+train-6604-4	y	CO	A	m	alt=FC; cannoneers counted separately though already among the men
+train-6614-3	y	CO	A	m	regular snakes counted as 4 instead of 5 in earnings; alt=PS
+train-6625-4	y	HA	A	m	alt=FC; counts 48 full-pie apples as used though no full pies made
+train-6637-2	n	FC	B	m	claims 1 liter is 10%, divides 8 by 0.1 not 0.2; alt=CV
+train-6647-4	y	OP	B	h	subtraction reversed, today minus yesterday gives negative
+train-6666-3	y	CO	A	m	two three-hour classes counted as one; alt=MS
+train-6676-3	y	CV	A	m	alt=CO; counts 3 painting wings as 3 paintings instead of 1 large
+train-6677-0	y	MS	B	h	ignores the 3 lost flowers when computing flowers still needed
+train-668-2	y	FC	B	m	fixes one block orientation, floor 8/3, instead of fitting 40; alt=UN
+train-6688-3	y	PS	C	m	own total 49 labeled additional and added to 41; alt=FC
+train-6701-2	n	CO	A	h	adds six extra 6-hour nights, double counting weeknights
+train-6704-3	y	OP	B	h	divides vertical distance by 2 instead of multiplying
+train-6713-0	n	MS	B	m	alt=CO; crust cost $2 omits sugar and eggs/butter
+train-6728-4	y	MS	B	m	brother's own $17 dropped; brother taken to have only $21; alt=PS
+train-6734-3	n	CO	A	m	afternoon's 16 cookies left out of total sold; alt=MS
+train-6738-0	y	FC	B	m	one supplemental tank added to primary time, then not counted; alt=CO
+train-6755-2	n	CO	A	m	signature pencils for 5 galleries, original exhibition left out; alt=MS
+train-6757-2	y	UN	UN	h	arithmetic slip 1.5M+0.2M+5.1M=7.8M; setup correct
+train-6759-0	y	CO	A	m	alt=PS; 5-minute rewind counted in viewing sum and again later
+train-6760-3	y	FC	B	m	Luke's twice taken of sisters' total, not each sister; alt=UN
+train-6762-4	y	OP	B	h	reverses fraction: spotted taken as a quarter of fluffy
+train-6772-4	y	PS	C	m	divides the 9 pineapple glasses by $6 a second time; alt=FC
+train-6773-3	n	HA	A	h	invents 4 weeks of work; only five nights relevant
+train-6799-4	y	MS	B	m	defective iPhone not subtracted from iPhones sold; alt=CO
+train-681-4	y	FC	B	m	alt=HA; multiplies 2 hours/day by 6 books in bogus check
+train-6812-3	y	MS	B	h	sells all 52 bracelets, ignores 8 given away
+train-6821-2	y	MS	B	h	walk to work and home: return trip ignored, 6 not 12 per day
+train-6831-3	y	CV	A	m	average uses 200 (difference) instead of second guess 800; alt=CO
+train-6834-4	y	CO	A	m	February's 9 letters left out of total; alt=MS
+train-6851-3	y	TG	B	h	finds 5 large glasses but reports total glasses 13
+train-6852-4	y	OP	B	h	subtracts in wrong direction, cheaper minus discounted price
+train-687-2	y	PS	C	m	24 candles relabeled as cupcakes then doubled again; alt=CV
+train-6879-3	n	CO	A	m	teddy price x applied to all 48 toys; 28 toys counted twice; alt=PS
+train-6897-4	y	PS	C	m	converts 1 hour instead of its computed 5 hours to minutes; alt=TG
+train-6899-4	n	FC	B	h	splits 'sum plus product = 131' into sum=131 and product=131
+train-691-4	y	HA	A	m	invents time-zone differences and sums them as flight time; alt=UN
+train-6918-3	n	MS	B	m	5 times more ignored; why-texts taken as 5 not 25; alt=CV
+train-692-4	y	UC	D	h	weekly pay from monthly divided by 12 months instead of 4 weeks
+train-6927-4	n	CO	A	h	kiddie scoops counted twice, as Mrs. Martin's and children's
+train-6929-1	y	CV	A	m	subtracts value of all 8 cards instead of the 2 traded; alt=FC
+train-6938-1	y	UC	D	m	multiplies stops by 6 miles and calls it minutes; alt=FC
+train-6953-3	n	FC	B	m	10% applied to one 20 oz candle, not to total wax; alt=CV
+train-6970-4	y	TG	B	h	reports sister's plus Joel's toys (33) instead of Joel's 22
+train-6978-4	y	CV	A	m	divides deer by all 20 wolves, not the 4 hunters; alt=FC
+train-6996-4	n	TG	B	m	alt=HA; had net gain 5, then reports 20-5=15 benefit cut
+train-6998-1	y	CV	A	m	pages read so far taken as 30 (last hour) instead of 90; alt=PS
+train-7-2	y	MS	B	m	skips the tripling, adds 2 pounds to 2; alt=PS
+train-7004-0	y	PS	C	h	doubles the already doubled counts again
+train-7006-0	n	MS	B	m	buys 0.857 packets; rounding up to whole packet skipped; alt=FC
+train-7008-4	y	CO	A	m	counts only one of three square paintings; alt=MS
+train-7015-4	y	FC	B	m	adds 6 to two-years-ago 14 instead of to current count; alt=OP
+train-7032-4	y	MS	B	m	3 eaten donuts taken as donuts left, skipping 30-3; alt=PS
+train-7035-1	y	TG	B	m	reports total points needed, ignores Ahmed's current 819 points; alt=MS
+train-7037-2	y	CV	A	h	uses Twilight's 12 votes for The Art of the Deal's 20
+train-7044-4	y	CV	A	h	first knife charged $4 instead of $5
+train-7075-3	y	FC	B	m	reads 20 grams left as per pack, multiplies by 12; alt=UN
+train-7086-3	y	MS	B	m	cotton candy $150 not multiplied by 5 days; alt=FC
+train-7101-0	y	OP	B	h	adds returned pints instead of subtracting them
+train-7115-3	y	TG	B	m	reports trip-and-not-drop 30%, omitting non-trip mornings; alt=MS
+train-7120-4	y	FC	B	h	compounds interest although interest is withdrawn; wrong interest model
+train-7125-2	y	OP	B	m	alt=FC; multiplies needed $10 by $0.50 instead of dividing
+train-7129-4	y	MS	B	m	first return of 3 and last checkout of 7 dropped; alt=CO
+train-7137-4	n	MS	B	m	one bag's weight uses all 12 macaroons, skips dividing by 4 bags; alt=CV
+train-7146-4	y	UC	D	h	adds tablespoons and teaspoons without converting
+train-7152-2	y	CO	A	m	adds Rose's 11 blue pieces into Dorothy's total; alt=FC
+train-7156-1	y	PS	C	m	36 minutes added twice: 3*60+36 written as 216+36; alt=UN
+train-716-0	y	MS	B	m	Guy's dime listed but left out of the sum; alt=CO
+train-7163-3	y	UN	UN	m	one third of 18 evaluated as 2, likely arithmetic slip; alt=MS
+train-7181-4	y	CV	A	m	business capacity 30 used as occupancy and added to economy; alt=FC
+train-7184-4	n	PS	C	m	solving takes profit 40 as total cost S; alt=FC
+train-7192-4	y	PS	C	m	adds 100 to original 300 instead of computed 750; alt=MS
+train-7194-3	y	FC	B	m	per-day 20 extra meters added once to weekly total; alt=MS
+train-7215-3	y	FC	B	h	revenue as (sum of counts) x (sum of prices)
+train-7228-2	y	OP	B	h	multiplies 75 by 1.5 instead of dividing to get prior year
+train-7241-3	y	MS	B	h	sells all 200 red roses, ignores selling only half
+train-7263-4	n	TG	B	m	reports 7 cans on hand instead of 42-7 needed; alt=MS
+train-7265-0	y	PS	C	m	Michael's 30 subtracted again from the 30 remainder; alt=OP
+train-727-0	y	CO	A	h	6 shells from the fourth day left out
+train-7274-1	y	CV	A	m	alt=FC; 70% day-shift share used as night-shift share
+train-7283-3	y	FC	B	h	beds computed as rows divided by half the rows
+train-7287-4	n	OP	B	m	alt=FC; "needs 5 more" set as 16 = 3K+5 instead of 16+5 = 3K
+train-729-4	y	HA	A	m	invents dog speed 4 mph and adds it to John's 6 mph; alt=FC
+train-7294-1	y	HA	A	m	invents 'exactly 5 pounds' envelope group, reusing light-envelope 12 stamps; alt=PS
+train-7299-2	y	OP	B	h	adds dropped leaves to initial count instead of subtracting
+train-7304-1	n	TG	B	m	reports pollywogs gone in 20 days (1200) instead of number of days; alt=MS
+train-7311-1	n	MS	B	m	speed written as (10/4)*60 but taken as 15, dropping 10-mile factor; alt=UN
+train-7323-4	n	UC	D	h	converts 180 minutes to 1 hour 30 minutes
+train-7324-4	y	CV	A	m	uses winning margin 37-23 instead of Seahawks' 37 points; alt=FC
+train-7328-0	y	CO	A	m	counts 2 teachers per class instead of 2 total; alt=CV
+train-7339-4	n	PS	C	m	milk revenue uses leftover 12 gallons instead of 36 sold; alt=CV
+train-734-3	n	CV	A	h	sweet and sour percentages swapped, 25% assigned to sweet
+train-7365-1	y	PS	C	h	pizza cost subtracted again from Frank's already-reduced $9
+train-7373-0	y	FC	B	m	doubles whole weekly time instead of adding doubled weekend days; alt=PS
+train-7379-4	y	MS	B	m	uses profit of one 750 m2 plot, skips 5 plots per son; alt=TG
+train-7406-3	n	PS	C	m	class totals 51 mislabeled as boys, girls wrong; alt=FC
+train-7422-2	y	MS	B	m	Sally's 2 gallons never added back when working backwards; alt=OP
+train-7438-0	y	MS	B	h	needed income ignores the $33,000 expenses
+train-7440-2	y	CO	A	h	divides by 19, leaving out the daughter
+train-7460-2	y	FC	B	h	10% discount taken of one seat's $30, not a 10-seat group
+train-757-4	n	MS	B	m	Frank's total taken as late-evening 2 cups, afternoon cup dropped; alt=CO
+train-759-4	y	UN	UN	h	arithmetic slip 200+2+1000=1022; setup itself correct
+train-767-0	y	PS	C	m	halves the 5 rafters again; 'half' applied twice; alt=FC
+train-770-4	y	CV	A	h	uses 7 days per week instead of the stated 4 days
+train-777-4	n	MS	B	m	Ferris wheel cost for one person only, x2 skipped; alt=CO
+train-78-0	y	CO	A	h	Manny, 24 classmates and Mr. Keith counted as 25, not 26
+train-783-3	y	OP	B	m	alt=TG; difference taken as zebras minus monkeys, negative result
+train-799-4	y	CO	A	h	the 3 three-legged tables left out
+train-801-1	y	MS	B	h	$55 water bill left out of deductions
+train-803-4	n	FC	B	m	alt=UC; one 5-bag pack per student instead of per 5 students
+train-805-4	y	OP	B	h	multiplies hours by hours per movie instead of dividing
+train-824-4	n	CV	A	h	takes 1/3 of 30 desks instead of 1/3 of 15 classrooms
+train-83-0	y	CO	A	m	Paityn's 24 blue hats left out of total; alt=CV
+train-838-0	y	HA	A	m	invents dog drownings (14 - 6) though all dogs survived; alt=CV
+train-84-1	y	UC	D	m	alt=MS; subtracts 1 floor as 1 room instead of 10 rooms
+train-849-3	y	CV	A	h	1/5 of balloons read as half
+train-862-3	y	FC	B	m	subtracts total collected from per-squirrel need; alt=MS
+train-870-1	y	CO	A	m	alt=PS; usual 1.5-hour bake counted alongside the actual 3 hours
+train-884-4	y	FC	B	m	5 per vampire used as 5 new vampires in total; alt=MS
+train-886-4	y	CV	A	m	cheese priced for 1 pound instead of half a pound; alt=MS
+train-915-0	y	TG	B	h	computes yearly bill instead of June's monthly bill
+train-919-2	y	MS	B	m	drops the existing 1000 songs, uses added 2000 as total; alt=FC
+train-932-4	y	FC	B	m	multiplies requests received by requests worked per day; alt=OP
+train-946-3	y	FC	B	m	charges all 13 classes at extra-class price, ignoring $75 pack; alt=MS
+train-95-4	n	UC	D	m	quarter-to-nickel conversion inverted: 20/4=5 nickels instead of 100; alt=OP
+train-951-3	y	CO	A	m	uses 6 and 12 separately, leaving out friends and guests; alt=CV
+train-958-2	y	PS	C	m	alt=FC; solved S is already today's age, adds 5 again
+train-967-3	y	OP	B	h	subtracts original from new temperature, reversing the decrease
+train-98-3	n	UN	UN	h	setup correct; final sum 4+8+27+6 miscomputed as 47
+train-981-0	y	CV	A	m	each person given 3 shoes instead of a pair of 2; alt=CO
+train-985-1	n	TG	B	h	reports pages crumpled or blurred, not pages that are neither
+train-991-0	y	FC	B	h	multiplies step length by unicorns instead of flowers by unicorns

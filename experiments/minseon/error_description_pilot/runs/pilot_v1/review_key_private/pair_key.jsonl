@@ -1,0 +1,319 @@
+{"pair_code": "P-930731", "query_id": "train-4657-3", "gallery_id": "train-7220-4", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 4}]}
+{"pair_code": "P-939341", "query_id": "train-2205-1", "gallery_id": "train-4567-4", "response_1_is_query": false, "returned_by": [{"method": "R", "rank": 4}]}
+{"pair_code": "P-571822", "query_id": "train-366-1", "gallery_id": "train-2596-0", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-613777", "query_id": "train-4815-4", "gallery_id": "train-7135-1", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 3}, {"method": "R", "rank": 5}]}
+{"pair_code": "P-491477", "query_id": "train-6914-1", "gallery_id": "train-7429-0", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 4}]}
+{"pair_code": "P-827009", "query_id": "train-3393-4", "gallery_id": "train-1530-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 1}]}
+{"pair_code": "P-352776", "query_id": "train-21-3", "gallery_id": "train-3454-0", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-602859", "query_id": "train-2520-0", "gallery_id": "train-2523-4", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 1}]}
+{"pair_code": "P-150914", "query_id": "train-2680-2", "gallery_id": "train-3734-1", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 1}]}
+{"pair_code": "P-025931", "query_id": "train-6775-3", "gallery_id": "train-4352-2", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 3}]}
+{"pair_code": "P-866754", "query_id": "train-5595-2", "gallery_id": "train-2540-1", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 2}, {"method": "Q", "rank": 2}, {"method": "R", "rank": 4}]}
+{"pair_code": "P-332036", "query_id": "train-6775-3", "gallery_id": "train-4525-4", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 3}]}
+{"pair_code": "P-890250", "query_id": "train-6914-1", "gallery_id": "train-665-4", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 3}, {"method": "R", "rank": 5}]}
+{"pair_code": "P-786508", "query_id": "train-6914-1", "gallery_id": "train-6705-3", "response_1_is_query": true, "returned_by": [{"method": "R", "rank": 4}]}
+{"pair_code": "P-494620", "query_id": "train-4657-3", "gallery_id": "train-3464-0", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 5}, {"method": "Q", "rank": 2}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-215975", "query_id": "train-5807-3", "gallery_id": "train-4428-0", "response_1_is_query": true, "returned_by": [{"method": "R", "rank": 4}]}
+{"pair_code": "P-986563", "query_id": "train-21-3", "gallery_id": "train-3734-1", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 5}]}
+{"pair_code": "P-130636", "query_id": "train-2205-1", "gallery_id": "train-4428-0", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-371468", "query_id": "train-6775-3", "gallery_id": "train-786-0", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-254773", "query_id": "train-21-3", "gallery_id": "train-6314-2", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 1}, {"method": "R", "rank": 4}]}
+{"pair_code": "P-710866", "query_id": "train-21-3", "gallery_id": "train-1207-2", "response_1_is_query": false, "returned_by": [{"method": "R", "rank": 5}]}
+{"pair_code": "P-646926", "query_id": "train-6914-1", "gallery_id": "train-5220-0", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 2}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-452227", "query_id": "train-947-2", "gallery_id": "train-598-1", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 4}, {"method": "G", "rank": 3}]}
+{"pair_code": "P-765943", "query_id": "train-5807-3", "gallery_id": "train-5391-1", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 3}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-646350", "query_id": "train-366-1", "gallery_id": "train-786-0", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 4}]}
+{"pair_code": "P-429916", "query_id": "train-6999-0", "gallery_id": "train-6314-2", "response_1_is_query": false, "returned_by": [{"method": "R", "rank": 3}]}
+{"pair_code": "P-211498", "query_id": "train-4498-3", "gallery_id": "train-786-0", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 4}]}
+{"pair_code": "P-201688", "query_id": "train-5595-2", "gallery_id": "train-122-1", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-306161", "query_id": "train-6999-0", "gallery_id": "train-786-0", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 1}, {"method": "G", "rank": 1}, {"method": "Q", "rank": 3}, {"method": "R", "rank": 5}]}
+{"pair_code": "P-082350", "query_id": "train-6775-3", "gallery_id": "train-665-4", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 4}]}
+{"pair_code": "P-053861", "query_id": "train-5612-0", "gallery_id": "train-4567-4", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 4}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-783135", "query_id": "train-609-2", "gallery_id": "train-3706-3", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 4}, {"method": "G", "rank": 1}, {"method": "Q", "rank": 1}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-776127", "query_id": "train-6999-0", "gallery_id": "train-4314-3", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 4}]}
+{"pair_code": "P-979325", "query_id": "train-2520-0", "gallery_id": "train-5220-0", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 5}]}
+{"pair_code": "P-922195", "query_id": "train-21-3", "gallery_id": "train-229-4", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 2}]}
+{"pair_code": "P-646701", "query_id": "train-609-2", "gallery_id": "train-7135-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 3}]}
+{"pair_code": "P-207560", "query_id": "train-5612-0", "gallery_id": "train-432-2", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 1}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-998014", "query_id": "train-2520-0", "gallery_id": "train-3046-3", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 3}]}
+{"pair_code": "P-690468", "query_id": "train-5807-3", "gallery_id": "train-3558-3", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 3}]}
+{"pair_code": "P-415529", "query_id": "train-366-1", "gallery_id": "train-4525-4", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 3}, {"method": "R", "rank": 4}]}
+{"pair_code": "P-336556", "query_id": "train-3393-4", "gallery_id": "train-5220-0", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 1}]}
+{"pair_code": "P-294983", "query_id": "train-6124-2", "gallery_id": "train-2929-3", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-844035", "query_id": "train-3393-4", "gallery_id": "train-1187-2", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-233165", "query_id": "train-2520-0", "gallery_id": "train-7197-3", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 2}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-794541", "query_id": "train-2680-2", "gallery_id": "train-3464-0", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 4}]}
+{"pair_code": "P-247533", "query_id": "train-2520-0", "gallery_id": "train-1530-1", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 3}]}
+{"pair_code": "P-210568", "query_id": "train-5612-0", "gallery_id": "train-3553-1", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-916733", "query_id": "train-366-1", "gallery_id": "train-519-3", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-113399", "query_id": "train-2520-0", "gallery_id": "train-3128-3", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-781726", "query_id": "train-4657-3", "gallery_id": "train-1842-2", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 5}]}
+{"pair_code": "P-228868", "query_id": "train-5807-3", "gallery_id": "train-1246-4", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 1}, {"method": "G", "rank": 1}, {"method": "Q", "rank": 1}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-357559", "query_id": "train-6914-1", "gallery_id": "train-1530-1", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 1}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-817793", "query_id": "train-609-2", "gallery_id": "train-1320-0", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 3}, {"method": "Random", "rank": 4}]}
+{"pair_code": "P-809768", "query_id": "train-3393-4", "gallery_id": "train-5174-3", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 4}]}
+{"pair_code": "P-583123", "query_id": "train-21-3", "gallery_id": "train-4525-4", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 1}]}
+{"pair_code": "P-063999", "query_id": "train-2680-2", "gallery_id": "train-4352-2", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-697983", "query_id": "train-6914-1", "gallery_id": "train-3128-3", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-938008", "query_id": "train-6124-2", "gallery_id": "train-4525-4", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 5}, {"method": "Q", "rank": 4}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-475954", "query_id": "train-2520-0", "gallery_id": "train-6049-3", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 4}]}
+{"pair_code": "P-319979", "query_id": "train-6124-2", "gallery_id": "train-4428-0", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 2}, {"method": "G", "rank": 1}]}
+{"pair_code": "P-570110", "query_id": "train-6775-3", "gallery_id": "train-868-0", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-356260", "query_id": "train-6999-0", "gallery_id": "train-5220-0", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-893188", "query_id": "train-2685-4", "gallery_id": "train-7454-2", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 5}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-464186", "query_id": "train-4498-3", "gallery_id": "train-2929-3", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-892642", "query_id": "train-21-3", "gallery_id": "train-6413-4", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-672195", "query_id": "train-6775-3", "gallery_id": "train-5220-0", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 2}, {"method": "Random", "rank": 1}]}
+{"pair_code": "P-206030", "query_id": "train-4498-3", "gallery_id": "train-4428-0", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 2}]}
+{"pair_code": "P-130611", "query_id": "train-4815-4", "gallery_id": "train-6049-3", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 2}, {"method": "Q", "rank": 1}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-794250", "query_id": "train-5595-2", "gallery_id": "train-1700-1", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 3}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-358221", "query_id": "train-2680-2", "gallery_id": "train-1246-4", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 5}, {"method": "G", "rank": 3}, {"method": "R", "rank": 5}]}
+{"pair_code": "P-692229", "query_id": "train-4815-4", "gallery_id": "train-432-2", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 3}, {"method": "G", "rank": 1}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-362645", "query_id": "train-3393-4", "gallery_id": "train-4064-1", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 4}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-849853", "query_id": "train-947-2", "gallery_id": "train-1700-1", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-706492", "query_id": "train-6775-3", "gallery_id": "train-1847-1", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 2}]}
+{"pair_code": "P-137498", "query_id": "train-2685-4", "gallery_id": "train-5220-0", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-173911", "query_id": "train-609-2", "gallery_id": "train-2353-1", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-181199", "query_id": "train-6145-4", "gallery_id": "train-6663-1", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-234397", "query_id": "train-2520-0", "gallery_id": "train-4064-1", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-434119", "query_id": "train-3393-4", "gallery_id": "train-5043-4", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-823673", "query_id": "train-2520-0", "gallery_id": "train-328-1", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 3}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-981568", "query_id": "train-6124-2", "gallery_id": "train-633-2", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 2}]}
+{"pair_code": "P-223720", "query_id": "train-2205-1", "gallery_id": "train-1187-2", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 2}, {"method": "Q", "rank": 1}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-121193", "query_id": "train-6145-4", "gallery_id": "train-3553-1", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 5}, {"method": "G", "rank": 4}, {"method": "Q", "rank": 1}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-070404", "query_id": "train-4815-4", "gallery_id": "train-1187-2", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 4}]}
+{"pair_code": "P-215280", "query_id": "train-947-2", "gallery_id": "train-2523-4", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-025253", "query_id": "train-6999-0", "gallery_id": "train-519-3", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 3}]}
+{"pair_code": "P-333224", "query_id": "train-5595-2", "gallery_id": "train-7149-3", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-525338", "query_id": "train-947-2", "gallery_id": "train-3454-0", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-574997", "query_id": "train-6124-2", "gallery_id": "train-4352-2", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 3}, {"method": "R", "rank": 1}, {"method": "Random", "rank": 2}]}
+{"pair_code": "P-156392", "query_id": "train-6999-0", "gallery_id": "train-3734-1", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 4}]}
+{"pair_code": "P-855102", "query_id": "train-2520-0", "gallery_id": "train-6663-1", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 2}]}
+{"pair_code": "P-810709", "query_id": "train-5612-0", "gallery_id": "train-1530-1", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 2}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-479310", "query_id": "train-5612-0", "gallery_id": "train-4568-0", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-147505", "query_id": "train-6145-4", "gallery_id": "train-6573-1", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 1}]}
+{"pair_code": "P-115907", "query_id": "train-2520-0", "gallery_id": "train-4504-2", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-970485", "query_id": "train-2685-4", "gallery_id": "train-6049-3", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 4}, {"method": "G", "rank": 3}]}
+{"pair_code": "P-084861", "query_id": "train-4498-3", "gallery_id": "train-868-0", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 1}, {"method": "G", "rank": 1}]}
+{"pair_code": "P-120451", "query_id": "train-4498-3", "gallery_id": "train-6705-3", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 3}, {"method": "R", "rank": 5}]}
+{"pair_code": "P-837168", "query_id": "train-6775-3", "gallery_id": "train-1711-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 5}, {"method": "G", "rank": 1}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-447846", "query_id": "train-6775-3", "gallery_id": "train-4552-4", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 4}, {"method": "G", "rank": 4}, {"method": "Q", "rank": 5}]}
+{"pair_code": "P-123943", "query_id": "train-3393-4", "gallery_id": "train-5172-2", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 3}]}
+{"pair_code": "P-978321", "query_id": "train-5595-2", "gallery_id": "train-519-3", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 5}, {"method": "G", "rank": 4}]}
+{"pair_code": "P-908043", "query_id": "train-2520-0", "gallery_id": "train-4174-1", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 4}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-903250", "query_id": "train-6999-0", "gallery_id": "train-665-4", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-365869", "query_id": "train-6999-0", "gallery_id": "train-6705-3", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 5}, {"method": "G", "rank": 5}, {"method": "Q", "rank": 2}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-147968", "query_id": "train-609-2", "gallery_id": "train-6747-4", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 5}, {"method": "R", "rank": 5}]}
+{"pair_code": "P-173748", "query_id": "train-6914-1", "gallery_id": "train-1847-1", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 1}, {"method": "Random", "rank": 3}]}
+{"pair_code": "P-182691", "query_id": "train-4498-3", "gallery_id": "train-1264-3", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 5}, {"method": "R", "rank": 4}]}
+{"pair_code": "P-379825", "query_id": "train-4657-3", "gallery_id": "train-1530-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 5}]}
+{"pair_code": "P-517877", "query_id": "train-2685-4", "gallery_id": "train-1187-2", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-876460", "query_id": "train-4657-3", "gallery_id": "train-868-0", "response_1_is_query": false, "returned_by": [{"method": "R", "rank": 5}]}
+{"pair_code": "P-363809", "query_id": "train-2205-1", "gallery_id": "train-7135-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 4}, {"method": "G", "rank": 4}]}
+{"pair_code": "P-367594", "query_id": "train-21-3", "gallery_id": "train-5220-0", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-356145", "query_id": "train-6124-2", "gallery_id": "train-5043-4", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 4}, {"method": "G", "rank": 2}, {"method": "R", "rank": 5}]}
+{"pair_code": "P-173062", "query_id": "train-5612-0", "gallery_id": "train-1246-4", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-053155", "query_id": "train-947-2", "gallery_id": "train-3046-3", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 1}]}
+{"pair_code": "P-362055", "query_id": "train-6124-2", "gallery_id": "train-2018-4", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-330574", "query_id": "train-4498-3", "gallery_id": "train-7149-3", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-477334", "query_id": "train-21-3", "gallery_id": "train-5172-2", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 5}]}
+{"pair_code": "P-062397", "query_id": "train-4498-3", "gallery_id": "train-2353-1", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-302446", "query_id": "train-6145-4", "gallery_id": "train-3734-1", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 2}, {"method": "R", "rank": 4}]}
+{"pair_code": "P-929923", "query_id": "train-5807-3", "gallery_id": "train-3254-3", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-763428", "query_id": "train-366-1", "gallery_id": "train-2353-1", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 3}]}
+{"pair_code": "P-104643", "query_id": "train-2205-1", "gallery_id": "train-1847-1", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 5}]}
+{"pair_code": "P-513380", "query_id": "train-366-1", "gallery_id": "train-229-4", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 4}, {"method": "Q", "rank": 3}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-066929", "query_id": "train-2520-0", "gallery_id": "train-2018-4", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-376388", "query_id": "train-2685-4", "gallery_id": "train-7220-4", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 3}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-011445", "query_id": "train-609-2", "gallery_id": "train-4525-4", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-620260", "query_id": "train-4657-3", "gallery_id": "train-208-4", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 2}]}
+{"pair_code": "P-696319", "query_id": "train-5595-2", "gallery_id": "train-432-2", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-764411", "query_id": "train-6145-4", "gallery_id": "train-3254-3", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-086754", "query_id": "train-2680-2", "gallery_id": "train-1711-1", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-266593", "query_id": "train-366-1", "gallery_id": "train-6705-3", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-780748", "query_id": "train-4657-3", "gallery_id": "train-786-0", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-951144", "query_id": "train-4815-4", "gallery_id": "train-2196-3", "response_1_is_query": true, "returned_by": [{"method": "R", "rank": 4}]}
+{"pair_code": "P-443797", "query_id": "train-6914-1", "gallery_id": "train-229-4", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 3}, {"method": "G", "rank": 1}]}
+{"pair_code": "P-700721", "query_id": "train-6914-1", "gallery_id": "train-1711-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 5}]}
+{"pair_code": "P-481011", "query_id": "train-947-2", "gallery_id": "train-229-4", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-743572", "query_id": "train-4498-3", "gallery_id": "train-229-4", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 2}, {"method": "G", "rank": 3}, {"method": "Q", "rank": 2}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-159345", "query_id": "train-2680-2", "gallery_id": "train-786-0", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 3}, {"method": "G", "rank": 5}, {"method": "Q", "rank": 2}]}
+{"pair_code": "P-927023", "query_id": "train-3393-4", "gallery_id": "train-6314-2", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 3}, {"method": "Q", "rank": 3}]}
+{"pair_code": "P-788441", "query_id": "train-2520-0", "gallery_id": "train-6959-4", "response_1_is_query": true, "returned_by": [{"method": "R", "rank": 4}]}
+{"pair_code": "P-431653", "query_id": "train-5807-3", "gallery_id": "train-4504-2", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 3}, {"method": "G", "rank": 5}]}
+{"pair_code": "P-557389", "query_id": "train-2205-1", "gallery_id": "train-1749-4", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 3}, {"method": "R", "rank": 3}, {"method": "Random", "rank": 5}]}
+{"pair_code": "P-353287", "query_id": "train-4657-3", "gallery_id": "train-1207-2", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-874566", "query_id": "train-6145-4", "gallery_id": "train-4504-2", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 4}, {"method": "G", "rank": 3}, {"method": "Q", "rank": 5}, {"method": "R", "rank": 5}]}
+{"pair_code": "P-960728", "query_id": "train-6145-4", "gallery_id": "train-183-1", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-442986", "query_id": "train-366-1", "gallery_id": "train-633-2", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 5}]}
+{"pair_code": "P-896133", "query_id": "train-609-2", "gallery_id": "train-208-4", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 1}, {"method": "Q", "rank": 3}, {"method": "R", "rank": 4}]}
+{"pair_code": "P-752885", "query_id": "train-2685-4", "gallery_id": "train-6413-4", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-737620", "query_id": "train-4498-3", "gallery_id": "train-7429-0", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 4}, {"method": "Random", "rank": 2}]}
+{"pair_code": "P-275840", "query_id": "train-2680-2", "gallery_id": "train-4568-0", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-855805", "query_id": "train-6999-0", "gallery_id": "train-63-2", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 3}]}
+{"pair_code": "P-704876", "query_id": "train-6775-3", "gallery_id": "train-633-2", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-068359", "query_id": "train-5807-3", "gallery_id": "train-63-2", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 4}, {"method": "G", "rank": 2}]}
+{"pair_code": "P-249868", "query_id": "train-5595-2", "gallery_id": "train-7135-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 4}, {"method": "G", "rank": 5}, {"method": "Q", "rank": 4}]}
+{"pair_code": "P-586901", "query_id": "train-5595-2", "gallery_id": "train-4064-1", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 5}]}
+{"pair_code": "P-084057", "query_id": "train-5612-0", "gallery_id": "train-1847-1", "response_1_is_query": false, "returned_by": [{"method": "R", "rank": 4}]}
+{"pair_code": "P-786108", "query_id": "train-4657-3", "gallery_id": "train-3098-4", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-531047", "query_id": "train-6775-3", "gallery_id": "train-122-1", "response_1_is_query": false, "returned_by": [{"method": "R", "rank": 2}]}
+{"pair_code": "P-380797", "query_id": "train-4815-4", "gallery_id": "train-1530-1", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-218775", "query_id": "train-6775-3", "gallery_id": "train-1204-2", "response_1_is_query": true, "returned_by": [{"method": "R", "rank": 5}]}
+{"pair_code": "P-007352", "query_id": "train-2680-2", "gallery_id": "train-1530-1", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 1}, {"method": "G", "rank": 2}, {"method": "Q", "rank": 5}]}
+{"pair_code": "P-873688", "query_id": "train-2205-1", "gallery_id": "train-208-4", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-418029", "query_id": "train-947-2", "gallery_id": "train-7454-2", "response_1_is_query": false, "returned_by": [{"method": "R", "rank": 3}]}
+{"pair_code": "P-677992", "query_id": "train-2685-4", "gallery_id": "train-208-4", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 1}, {"method": "G", "rank": 1}, {"method": "Q", "rank": 2}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-484430", "query_id": "train-6999-0", "gallery_id": "train-598-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 2}, {"method": "G", "rank": 2}, {"method": "Q", "rank": 1}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-542956", "query_id": "train-366-1", "gallery_id": "train-868-0", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 2}, {"method": "G", "rank": 2}]}
+{"pair_code": "P-964028", "query_id": "train-21-3", "gallery_id": "train-142-0", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 4}, {"method": "G", "rank": 3}]}
+{"pair_code": "P-001137", "query_id": "train-6914-1", "gallery_id": "train-5391-1", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 4}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-228714", "query_id": "train-2205-1", "gallery_id": "train-519-3", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 1}, {"method": "G", "rank": 5}]}
+{"pair_code": "P-012762", "query_id": "train-2205-1", "gallery_id": "train-5172-2", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-630750", "query_id": "train-3393-4", "gallery_id": "train-3046-3", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 5}]}
+{"pair_code": "P-745613", "query_id": "train-366-1", "gallery_id": "train-1749-4", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 4}, {"method": "Random", "rank": 5}]}
+{"pair_code": "P-445989", "query_id": "train-5807-3", "gallery_id": "train-997-0", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 5}]}
+{"pair_code": "P-159926", "query_id": "train-609-2", "gallery_id": "train-7220-4", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 5}, {"method": "Q", "rank": 2}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-912859", "query_id": "train-6914-1", "gallery_id": "train-598-1", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 2}]}
+{"pair_code": "P-095856", "query_id": "train-6914-1", "gallery_id": "train-4352-2", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 2}, {"method": "Random", "rank": 4}]}
+{"pair_code": "P-970972", "query_id": "train-4657-3", "gallery_id": "train-5220-0", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 4}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-696235", "query_id": "train-3393-4", "gallery_id": "train-334-1", "response_1_is_query": false, "returned_by": [{"method": "R", "rank": 4}]}
+{"pair_code": "P-527317", "query_id": "train-6145-4", "gallery_id": "train-6705-3", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 3}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-552715", "query_id": "train-6124-2", "gallery_id": "train-229-4", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 3}, {"method": "Q", "rank": 1}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-189118", "query_id": "train-6775-3", "gallery_id": "train-3098-4", "response_1_is_query": false, "returned_by": [{"method": "R", "rank": 4}]}
+{"pair_code": "P-505694", "query_id": "train-5807-3", "gallery_id": "train-3464-0", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 4}, {"method": "R", "rank": 5}, {"method": "Random", "rank": 1}]}
+{"pair_code": "P-608227", "query_id": "train-609-2", "gallery_id": "train-2018-4", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 4}]}
+{"pair_code": "P-234775", "query_id": "train-2205-1", "gallery_id": "train-665-4", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 2}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-777726", "query_id": "train-6145-4", "gallery_id": "train-598-1", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 5}]}
+{"pair_code": "P-037897", "query_id": "train-2520-0", "gallery_id": "train-3039-4", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 1}]}
+{"pair_code": "P-046440", "query_id": "train-2205-1", "gallery_id": "train-6314-2", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 5}]}
+{"pair_code": "P-943297", "query_id": "train-4657-3", "gallery_id": "train-4314-3", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 3}, {"method": "R", "rank": 4}]}
+{"pair_code": "P-564276", "query_id": "train-5612-0", "gallery_id": "train-328-1", "response_1_is_query": true, "returned_by": [{"method": "R", "rank": 5}]}
+{"pair_code": "P-806506", "query_id": "train-4815-4", "gallery_id": "train-5391-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 2}]}
+{"pair_code": "P-026968", "query_id": "train-6145-4", "gallery_id": "train-5220-0", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 4}]}
+{"pair_code": "P-883572", "query_id": "train-5807-3", "gallery_id": "train-428-4", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 2}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-452511", "query_id": "train-947-2", "gallery_id": "train-6413-4", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 2}]}
+{"pair_code": "P-689504", "query_id": "train-3393-4", "gallery_id": "train-786-0", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-894815", "query_id": "train-6145-4", "gallery_id": "train-6747-4", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-522064", "query_id": "train-4815-4", "gallery_id": "train-1320-0", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 3}, {"method": "Random", "rank": 5}]}
+{"pair_code": "P-187916", "query_id": "train-5807-3", "gallery_id": "train-4314-3", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 2}]}
+{"pair_code": "P-404856", "query_id": "train-4657-3", "gallery_id": "train-7149-3", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-686333", "query_id": "train-5595-2", "gallery_id": "train-6747-4", "response_1_is_query": false, "returned_by": [{"method": "R", "rank": 2}]}
+{"pair_code": "P-161468", "query_id": "train-2680-2", "gallery_id": "train-6705-3", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 4}]}
+{"pair_code": "P-283645", "query_id": "train-947-2", "gallery_id": "train-3464-0", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 5}]}
+{"pair_code": "P-995577", "query_id": "train-2680-2", "gallery_id": "train-142-0", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-253321", "query_id": "train-5807-3", "gallery_id": "train-4174-1", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-375073", "query_id": "train-947-2", "gallery_id": "train-7220-4", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 3}]}
+{"pair_code": "P-780466", "query_id": "train-21-3", "gallery_id": "train-1204-2", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 4}, {"method": "Random", "rank": 5}]}
+{"pair_code": "P-206599", "query_id": "train-366-1", "gallery_id": "train-4428-0", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 2}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-617936", "query_id": "train-2680-2", "gallery_id": "train-4428-0", "response_1_is_query": false, "returned_by": [{"method": "R", "rank": 3}, {"method": "Random", "rank": 5}]}
+{"pair_code": "P-337966", "query_id": "train-2685-4", "gallery_id": "train-2196-3", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 2}, {"method": "G", "rank": 2}]}
+{"pair_code": "P-438982", "query_id": "train-6775-3", "gallery_id": "train-2353-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 2}, {"method": "G", "rank": 3}]}
+{"pair_code": "P-186410", "query_id": "train-2685-4", "gallery_id": "train-4428-0", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-037026", "query_id": "train-4498-3", "gallery_id": "train-5043-4", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 5}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-615944", "query_id": "train-4815-4", "gallery_id": "train-2523-4", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 5}, {"method": "G", "rank": 5}, {"method": "Q", "rank": 4}]}
+{"pair_code": "P-819059", "query_id": "train-6775-3", "gallery_id": "train-2373-1", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 1}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-005287", "query_id": "train-4815-4", "gallery_id": "train-6663-1", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-920808", "query_id": "train-6914-1", "gallery_id": "train-3454-0", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 4}]}
+{"pair_code": "P-974028", "query_id": "train-4815-4", "gallery_id": "train-1749-4", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 2}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-601080", "query_id": "train-609-2", "gallery_id": "train-2540-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 5}]}
+{"pair_code": "P-266615", "query_id": "train-4657-3", "gallery_id": "train-229-4", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 3}, {"method": "G", "rank": 1}, {"method": "Q", "rank": 1}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-852294", "query_id": "train-5595-2", "gallery_id": "train-208-4", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 3}]}
+{"pair_code": "P-022455", "query_id": "train-2685-4", "gallery_id": "train-2353-1", "response_1_is_query": false, "returned_by": [{"method": "R", "rank": 4}]}
+{"pair_code": "P-477315", "query_id": "train-366-1", "gallery_id": "train-5174-3", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 5}, {"method": "Q", "rank": 1}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-835214", "query_id": "train-947-2", "gallery_id": "train-63-2", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 5}, {"method": "R", "rank": 5}]}
+{"pair_code": "P-243216", "query_id": "train-6124-2", "gallery_id": "train-3464-0", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 5}, {"method": "R", "rank": 4}]}
+{"pair_code": "P-922106", "query_id": "train-2685-4", "gallery_id": "train-4352-2", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 4}]}
+{"pair_code": "P-053375", "query_id": "train-609-2", "gallery_id": "train-1700-1", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 4}]}
+{"pair_code": "P-462934", "query_id": "train-2205-1", "gallery_id": "train-2596-0", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-034012", "query_id": "train-4657-3", "gallery_id": "train-598-1", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 1}, {"method": "G", "rank": 3}]}
+{"pair_code": "P-114379", "query_id": "train-3393-4", "gallery_id": "train-1847-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 5}, {"method": "Q", "rank": 2}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-590592", "query_id": "train-5612-0", "gallery_id": "train-1207-2", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 5}]}
+{"pair_code": "P-782328", "query_id": "train-6145-4", "gallery_id": "train-1847-1", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 3}]}
+{"pair_code": "P-099775", "query_id": "train-6999-0", "gallery_id": "train-4184-0", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-192338", "query_id": "train-4498-3", "gallery_id": "train-4525-4", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 4}]}
+{"pair_code": "P-690280", "query_id": "train-6145-4", "gallery_id": "train-4314-3", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 2}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-376474", "query_id": "train-3393-4", "gallery_id": "train-519-3", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 5}, {"method": "Random", "rank": 1}]}
+{"pair_code": "P-453797", "query_id": "train-3393-4", "gallery_id": "train-2196-3", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 2}]}
+{"pair_code": "P-119957", "query_id": "train-5807-3", "gallery_id": "train-1187-2", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-218311", "query_id": "train-5612-0", "gallery_id": "train-6705-3", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 3}]}
+{"pair_code": "P-985652", "query_id": "train-3393-4", "gallery_id": "train-6747-4", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-330302", "query_id": "train-2520-0", "gallery_id": "train-432-2", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 2}]}
+{"pair_code": "P-535921", "query_id": "train-6145-4", "gallery_id": "train-2018-4", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-287967", "query_id": "train-21-3", "gallery_id": "train-997-0", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 2}]}
+{"pair_code": "P-983257", "query_id": "train-6145-4", "gallery_id": "train-1246-4", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 1}, {"method": "G", "rank": 2}]}
+{"pair_code": "P-677461", "query_id": "train-2680-2", "gallery_id": "train-2523-4", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 3}, {"method": "R", "rank": 4}]}
+{"pair_code": "P-942527", "query_id": "train-5807-3", "gallery_id": "train-519-3", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-667292", "query_id": "train-2680-2", "gallery_id": "train-5174-3", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 2}]}
+{"pair_code": "P-043297", "query_id": "train-947-2", "gallery_id": "train-208-4", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 4}, {"method": "R", "rank": 4}]}
+{"pair_code": "P-226548", "query_id": "train-6999-0", "gallery_id": "train-3128-3", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-475639", "query_id": "train-4657-3", "gallery_id": "train-334-1", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 4}]}
+{"pair_code": "P-607351", "query_id": "train-21-3", "gallery_id": "train-598-1", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 5}, {"method": "R", "rank": 2}, {"method": "Random", "rank": 3}]}
+{"pair_code": "P-265957", "query_id": "train-2520-0", "gallery_id": "train-4352-2", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 5}]}
+{"pair_code": "P-448344", "query_id": "train-4498-3", "gallery_id": "train-63-2", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-237974", "query_id": "train-947-2", "gallery_id": "train-1530-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 1}, {"method": "G", "rank": 4}]}
+{"pair_code": "P-508511", "query_id": "train-5807-3", "gallery_id": "train-1530-1", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 5}]}
+{"pair_code": "P-282575", "query_id": "train-4815-4", "gallery_id": "train-229-4", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 1}]}
+{"pair_code": "P-268747", "query_id": "train-6775-3", "gallery_id": "train-7429-0", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 1}, {"method": "G", "rank": 5}, {"method": "Random", "rank": 5}]}
+{"pair_code": "P-347796", "query_id": "train-4815-4", "gallery_id": "train-4568-0", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 4}, {"method": "Q", "rank": 5}]}
+{"pair_code": "P-781404", "query_id": "train-6914-1", "gallery_id": "train-3558-3", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 5}]}
+{"pair_code": "P-980852", "query_id": "train-2520-0", "gallery_id": "train-5043-4", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 4}, {"method": "R", "rank": 5}]}
+{"pair_code": "P-465692", "query_id": "train-2205-1", "gallery_id": "train-229-4", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 2}, {"method": "G", "rank": 3}, {"method": "Q", "rank": 4}, {"method": "R", "rank": 5}]}
+{"pair_code": "P-014802", "query_id": "train-2685-4", "gallery_id": "train-1320-0", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 5}, {"method": "Random", "rank": 4}]}
+{"pair_code": "P-964097", "query_id": "train-5612-0", "gallery_id": "train-2596-0", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-836846", "query_id": "train-947-2", "gallery_id": "train-2540-1", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 5}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-313708", "query_id": "train-21-3", "gallery_id": "train-183-1", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 1}, {"method": "Q", "rank": 2}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-520119", "query_id": "train-2685-4", "gallery_id": "train-3706-3", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 3}, {"method": "G", "rank": 4}, {"method": "R", "rank": 5}]}
+{"pair_code": "P-365548", "query_id": "train-2205-1", "gallery_id": "train-7220-4", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 3}, {"method": "G", "rank": 1}]}
+{"pair_code": "P-956848", "query_id": "train-6124-2", "gallery_id": "train-1530-1", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-094737", "query_id": "train-2680-2", "gallery_id": "train-519-3", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 1}]}
+{"pair_code": "P-716857", "query_id": "train-2685-4", "gallery_id": "train-1700-1", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 1}]}
+{"pair_code": "P-837957", "query_id": "train-4498-3", "gallery_id": "train-1749-4", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 1}, {"method": "R", "rank": 2}]}
+{"pair_code": "P-374160", "query_id": "train-6999-0", "gallery_id": "train-1749-4", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 4}, {"method": "R", "rank": 4}]}
+{"pair_code": "P-608038", "query_id": "train-3393-4", "gallery_id": "train-6705-3", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 2}]}
+{"pair_code": "P-468834", "query_id": "train-6999-0", "gallery_id": "train-1530-1", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 5}]}
+{"pair_code": "P-676089", "query_id": "train-947-2", "gallery_id": "train-6314-2", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-611093", "query_id": "train-6914-1", "gallery_id": "train-6747-4", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-892856", "query_id": "train-5595-2", "gallery_id": "train-2523-4", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 3}]}
+{"pair_code": "P-547462", "query_id": "train-5612-0", "gallery_id": "train-6573-1", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-587699", "query_id": "train-947-2", "gallery_id": "train-6705-3", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 3}, {"method": "Q", "rank": 1}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-485427", "query_id": "train-6999-0", "gallery_id": "train-6747-4", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-834510", "query_id": "train-947-2", "gallery_id": "train-428-4", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 2}, {"method": "G", "rank": 2}]}
+{"pair_code": "P-782159", "query_id": "train-2680-2", "gallery_id": "train-4314-3", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 4}]}
+{"pair_code": "P-752167", "query_id": "train-6124-2", "gallery_id": "train-1264-3", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 3}]}
+{"pair_code": "P-439815", "query_id": "train-4657-3", "gallery_id": "train-4174-1", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-795797", "query_id": "train-609-2", "gallery_id": "train-3046-3", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 3}]}
+{"pair_code": "P-247640", "query_id": "train-5807-3", "gallery_id": "train-3046-3", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 4}]}
+{"pair_code": "P-181649", "query_id": "train-6124-2", "gallery_id": "train-6663-1", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-525418", "query_id": "train-2685-4", "gallery_id": "train-5172-2", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 5}]}
+{"pair_code": "P-837192", "query_id": "train-6124-2", "gallery_id": "train-868-0", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 1}, {"method": "G", "rank": 5}]}
+{"pair_code": "P-777858", "query_id": "train-5595-2", "gallery_id": "train-1711-1", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 1}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-912368", "query_id": "train-6124-2", "gallery_id": "train-7429-0", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 4}]}
+{"pair_code": "P-158821", "query_id": "train-6914-1", "gallery_id": "train-4525-4", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-643241", "query_id": "train-366-1", "gallery_id": "train-3558-3", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 5}]}
+{"pair_code": "P-753143", "query_id": "train-4498-3", "gallery_id": "train-6573-1", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 5}]}
+{"pair_code": "P-471720", "query_id": "train-609-2", "gallery_id": "train-2196-3", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 2}, {"method": "G", "rank": 2}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-170918", "query_id": "train-4498-3", "gallery_id": "train-1530-1", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 3}]}
+{"pair_code": "P-302010", "query_id": "train-3393-4", "gallery_id": "train-6573-1", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 4}, {"method": "Q", "rank": 1}, {"method": "R", "rank": 1}]}
+{"pair_code": "P-357981", "query_id": "train-21-3", "gallery_id": "train-4384-1", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 3}]}
+{"pair_code": "P-888675", "query_id": "train-2680-2", "gallery_id": "train-208-4", "response_1_is_query": true, "returned_by": [{"method": "R", "rank": 2}]}
+{"pair_code": "P-650479", "query_id": "train-4815-4", "gallery_id": "train-665-4", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-412327", "query_id": "train-366-1", "gallery_id": "train-3454-0", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-494408", "query_id": "train-2520-0", "gallery_id": "train-208-4", "response_1_is_query": false, "returned_by": [{"method": "G", "rank": 5}]}
+{"pair_code": "P-883108", "query_id": "train-2520-0", "gallery_id": "train-4568-0", "response_1_is_query": true, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-287113", "query_id": "train-6914-1", "gallery_id": "train-1320-0", "response_1_is_query": false, "returned_by": [{"method": "Q", "rank": 5}]}
+{"pair_code": "P-852180", "query_id": "train-21-3", "gallery_id": "train-428-4", "response_1_is_query": true, "returned_by": [{"method": "Q", "rank": 3}, {"method": "R", "rank": 3}]}
+{"pair_code": "P-690811", "query_id": "train-4815-4", "gallery_id": "train-3706-3", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 4}]}
+{"pair_code": "P-056412", "query_id": "train-5595-2", "gallery_id": "train-6413-4", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 1}, {"method": "G", "rank": 1}]}
+{"pair_code": "P-183019", "query_id": "train-2520-0", "gallery_id": "train-3558-3", "response_1_is_query": false, "returned_by": [{"method": "E", "rank": 1}]}
+{"pair_code": "P-258703", "query_id": "train-4657-3", "gallery_id": "train-142-0", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 2}]}
+{"pair_code": "P-767509", "query_id": "train-3393-4", "gallery_id": "train-598-1", "response_1_is_query": true, "returned_by": [{"method": "R", "rank": 5}]}
+{"pair_code": "P-761911", "query_id": "train-609-2", "gallery_id": "train-3558-3", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 5}]}
+{"pair_code": "P-584944", "query_id": "train-5595-2", "gallery_id": "train-3128-3", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 2}]}
+{"pair_code": "P-326265", "query_id": "train-5595-2", "gallery_id": "train-6049-3", "response_1_is_query": false, "returned_by": [{"method": "Random", "rank": 1}]}
+{"pair_code": "P-171062", "query_id": "train-21-3", "gallery_id": "train-432-2", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 4}]}
+{"pair_code": "P-270502", "query_id": "train-2680-2", "gallery_id": "train-2540-1", "response_1_is_query": true, "returned_by": [{"method": "R", "rank": 1}]}
+{"pair_code": "P-062939", "query_id": "train-5595-2", "gallery_id": "train-229-4", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 2}]}
+{"pair_code": "P-342257", "query_id": "train-6914-1", "gallery_id": "train-6314-2", "response_1_is_query": true, "returned_by": [{"method": "G", "rank": 3}]}
+{"pair_code": "P-626802", "query_id": "train-366-1", "gallery_id": "train-3464-0", "response_1_is_query": true, "returned_by": [{"method": "E", "rank": 1}, {"method": "G", "rank": 1}, {"method": "R", "rank": 5}]}
+{"pair_code": "P-224826", "query_id": "train-5595-2", "gallery_id": "train-2373-1", "response_1_is_query": true, "returned_by": [{"method": "R", "rank": 5}]}

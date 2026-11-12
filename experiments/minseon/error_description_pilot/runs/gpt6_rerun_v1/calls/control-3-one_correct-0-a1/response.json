@@ -1,0 +1,1 @@
+{"case1_error":"Unsupported final number of 500 hours after a correct formula; the formula yields 200 hours.","case2_error":"No mathematical error; 200 hours is correct.","reason":"Case 1 has an unsupported final number, but case 2 has no clear error, so a shared error mechanism cannot be established.","judgment":"uncertain"}

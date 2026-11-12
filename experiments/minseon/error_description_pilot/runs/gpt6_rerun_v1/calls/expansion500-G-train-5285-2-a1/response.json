@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5285-2",
+  "response_sha256": "2cd78250e3c11ee3387574fce7053d661bccdf5a3d33b3532b6f1c67810eea60",
+  "status": "ambiguous",
+  "reference_review_needed": true,
+  "evidence_quote": "Number of trees = 3 times the number of stones",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "The number of trees is three times more than the number of stones in the courtyard.",
+  "observed_error": "The response uses trees = 3 × stones; the reference uses trees = stones + 3 × stones.",
+  "violated_condition": "Whether “three times more than” specifies three times as many or an increase of three times the original quantity is ambiguous.",
+  "error_description": "The response interprets “three times more than” as three times as many trees as stones. The reference instead treats it as an increase equal to three times the stones. The response’s subsequent arithmetic and bird relation are consistent with its interpretation, so the wording prevents an unambiguous error finding.",
+  "reference_review_reason": "The reference adopts the additive interpretation of an ambiguous multiplicative comparison without acknowledging the alternative reading.",
+  "secondary_errors": [],
+  "uncertainty_note": "Under the reference’s interpretation, the earliest mistake is the tree relation; under the common alternative interpretation, no mathematical error is observed."
+}

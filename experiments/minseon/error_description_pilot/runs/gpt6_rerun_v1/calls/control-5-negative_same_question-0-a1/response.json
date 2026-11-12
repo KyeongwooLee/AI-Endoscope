@@ -1,0 +1,1 @@
+{"case1_error":"Answers Tully’s current age instead of his age one year ago.","case2_error":"Correctly writes 61 - 1 but incorrectly evaluates it as 59 instead of 60.","reason":"Case 1 answers the wrong requested quantity; case 2 makes a numerical evaluation error in a correct expression.","judgment":"different"}

@@ -1,0 +1,1 @@
+{"source_id":"train-6915-3","response_sha256":"b7f2eb6b75b0520e6a488a4d6df8891a96850da1d8ea3d51d5af69ed71db9aeb","status":"supported_error","reference_review_needed":false,"explanation":"The model correctly calculates the two older age groups as 400 and 375 players, but makes an arithmetic error when evaluating 1000 − 400 − 375. This subtraction equals 225, not the stated 200."}

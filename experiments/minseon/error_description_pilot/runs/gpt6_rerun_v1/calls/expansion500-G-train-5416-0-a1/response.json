@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5416-0",
+  "response_sha256": "7600133d1347e62be3b4d7becc3e576a9b72e11c4dede2d90b53662729099ad1",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "The new length is 12 ft, and the new width is 12 ft.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "the owner wants to extend it by 2 feet on each side",
+  "observed_error": "The response leaves the length unchanged while extending the width.",
+  "violated_condition": "Extending the bathroom on each side requires increasing both dimensions.",
+  "error_description": "The response retains the original 12-foot length as the new length, although extending the bathroom on each side requires a length increase as well as a width increase. Its multiplication is correct for the stated dimensions, but those dimensions omit the required length extension.",
+  "reference_review_reason": "The reference adds 2 feet to each dimension, whereas moving each boundary outward by 2 feet would add 4 feet to each dimension. The wording does not clearly establish the reference's interpretation.",
+  "secondary_errors": [],
+  "uncertainty_note": "The intended amount added to each dimension is ambiguous; retaining the original length is unsupported under either interpretation of extending all sides."
+}

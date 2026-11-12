@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Last year, Jorge planted corn on all of his 60 acres of property.  Typically, corn grown on good soil yields 400 bushels per acre, but in clay-rich soil, the yield is only half as much per acre as in good soil.  One-third of Jorge's 60 acres of land is clay-rich soil and the rest is good soil.  How many bushels of corn did Jorge's land yield last year?
+SOLUTION: Step 1: Calculate the total yield from good soil.
+Jorge has 60 acres of land, with one-third being clay-rich soil. Therefore, the remaining two-thirds are good soil.
+Total good soil acres = 60 acres * (2/3) = 40 acres
+Yield per acre in good soil = 400 bushels
+Total yield from good soil = 40 acres * 400 bushels/acre = 16,000 bushels
+
+Step 2: Calculate the total yield from clay-rich soil.
+Yield per acre in clay-rich soil = 400 bushels / 2 = 200 bushels
+Total yield from clay-rich soil = 40 acres * 200 bushels/acre = 8,000 bushels
+
+Step 3: Calculate the total yield from all the land.
+Total yield = Yield from good soil + Yield from clay-rich soil
+Total yield = 16,000 bushels + 8,000 bushels = 24,000 bushels
+
+#### 24000
+This is the total number of bushels of corn Jorge's land yielded last year.

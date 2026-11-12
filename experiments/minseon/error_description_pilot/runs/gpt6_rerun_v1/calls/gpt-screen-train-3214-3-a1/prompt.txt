@@ -1,0 +1,27 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Carla had 400 chickens on her chicken farm. However, 40% of the chicken died due to a certain disease. How many chickens were there if she bought ten times as many chickens as the number that died due to disease?
+SOLUTION: Step 1: Calculate the number of chickens that died.
+- Total chickens = 400
+- Percentage that died = 40%
+
+Number of chickens that died = 40% of 400
+Number of chickens that died = 0.40 * 400
+Number of chickens that died = 160
+
+Step 2: Determine the number of chickens Carla bought.
+- Number of chickens that died = 160
+- Carla bought ten times as many chickens as the number that died.
+
+Number of chickens Carla bought = 160 * 10
+Number of chickens Carla bought = 1600
+
+Step 3: Calculate the total number of chickens after the purchase.
+- Number of chickens that died = 160
+- Number of chickens bought = 1600
+
+Total number of chickens = Number of chickens that died + Number of chickens bought
+Total number of chickens = 160 + 1600
+Total number of chickens = 1760
+
+#### 1760

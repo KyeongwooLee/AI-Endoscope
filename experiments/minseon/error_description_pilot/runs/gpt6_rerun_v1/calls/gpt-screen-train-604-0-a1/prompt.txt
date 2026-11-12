@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Santana has 7 brothers. 3 of them have birthdays in March, 1 of them has a birthday in October, 1 has a birthday in November, and another 2 of them were born in December. If Santana always buys each of her brothers a birthday present and a Christmas present, how many more presents does she have to buy in the second half of the year than the first half of the year?
+SOLUTION: To determine how many more presents Santana has to buy in the second half of the year than the first half, we need to calculate the total number of presents for each half of the year.
+
+1. **First half of the year (January to June):**
+   - Santana has 7 brothers.
+   - Each brother gets 2 presents (birthday and Christmas).
+   - Total presents for the first half: \(7 \times 2 = 14\).
+
+2. **Second half of the year (July to December):**
+   - Santana has 7 brothers.
+   - Each brother gets 2 presents (birthday and Christmas).
+   - Total presents for the second half: \(7 \times 2 = 14\).
+
+3. **Difference between the second half and the first half:**
+   - Total presents in the second half: 14.
+   - Total presents in the first half: 14.
+   - Difference: \(14 - 14 = 0\).
+
+#### 0
+This calculation shows that Santana has to buy the same number of presents in the second half of the year as in the first half of the year.

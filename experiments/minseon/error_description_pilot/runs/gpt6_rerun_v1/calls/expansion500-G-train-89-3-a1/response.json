@@ -1,0 +1,20 @@
+{
+  "source_id": "train-89-3",
+  "response_sha256": "eca549bac1985ece1ecc13d5fa5b44a6cb0c221148b97bc3e5ba54dd65af0aa0",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total books borrowed in a week = (40 books * 5 days) + (40 books * 15% on Friday)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Every Friday, his number of borrowed books is about 40% higher than the daily average.",
+  "observed_error": "The weekly-total expression substitutes 15% for Friday's stated 40% increase.",
+  "violated_condition": "Friday's additional borrowing is 40% of 40 books, applied once per Monday-to-Friday week.",
+  "error_description": "After correctly calculating 40% of 40 books as 16 books, the response uses 15% in its weekly-total expression. This changes the specified Friday increase. It subsequently multiplies that Friday increment by five days, although the increase applies only on Friday; the displayed arithmetic itself is executed correctly.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Step 3 independently multiplies the Friday increment by five days, although it occurs only once per week.",
+    "The earlier statement that Saturday and Sunday constitute '1 weekend day' is incorrect, but does not enter the weekly-total calculation."
+  ],
+  "uncertainty_note": null
+}

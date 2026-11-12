@@ -1,0 +1,23 @@
+EMBED expansion500 R 500
+EMBED expansion500 E 474
+EMBED expansion500 G 464
+EMBED expansion500 Q 500
+CLUSTER expansion500 native R 500
+CLUSTER expansion500 native E 474
+CLUSTER expansion500 native G 464
+CLUSTER expansion500 native Q 500
+CLUSTER expansion500 common R 463
+CLUSTER expansion500 common E 463
+CLUSTER expansion500 common G 463
+CLUSTER expansion500 common Q 463
+CLUSTER expansion500 historical_common R 306
+CLUSTER expansion500 historical_common E 306
+CLUSTER expansion500 historical_common G 306
+CLUSTER expansion500 historical_common Q 306
+CLUSTER expansion500 historical_common old_E 306
+CLUSTER expansion500 historical_common old_G 306
+CLUSTER expansion500 known_issue_excluded_common R 459
+CLUSTER expansion500 known_issue_excluded_common E 459
+CLUSTER expansion500 known_issue_excluded_common G 459
+CLUSTER expansion500 known_issue_excluded_common Q 459
+ANALYSIS COMPLETE expansion500 3178

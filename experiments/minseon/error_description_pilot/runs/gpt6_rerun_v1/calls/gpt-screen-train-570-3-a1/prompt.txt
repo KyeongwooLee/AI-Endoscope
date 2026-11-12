@@ -1,0 +1,29 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Cindy tosses 5 dimes into the wishing pond.  Eric flips 3 quarters into the pond.  Garrick throws in 8 nickels.  Ivy then drops 60 pennies in.  If Eric dips his hands into the water and pulls out a quarter, how much money, in cents, did they put into the pond?
+SOLUTION: To solve this problem, we need to calculate the total amount of money each person put into the pond and then sum these amounts.
+
+1. Cindy tosses 5 dimes into the pond.
+   - 1 dime = 10 cents
+   - 5 dimes = 5 * 10 = 50 cents
+
+2. Eric flips 3 quarters into the pond.
+   - 1 quarter = 25 cents
+   - 3 quarters = 3 * 25 = 75 cents
+
+3. Garrick throws in 8 nickels into the pond.
+   - 1 nickel = 5 cents
+   - 8 nickels = 8 * 5 = 40 cents
+
+4. Ivy drops 60 pennies into the pond.
+   - 1 penny = 1 cent
+   - 60 pennies = 60 * 1 = 60 cents
+
+Now, let's sum up the total amount of money they put into the pond:
+
+Total = Cindy's money + Eric's money + Garrick's money + Ivy's money
+Total = 50 cents + 75 cents + 40 cents + 60 cents
+Total = 225 cents
+
+#### 225
+The total amount of money they put into the pond is 225 cents.

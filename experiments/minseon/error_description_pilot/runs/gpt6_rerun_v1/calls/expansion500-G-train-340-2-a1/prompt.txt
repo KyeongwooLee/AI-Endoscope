@@ -1,0 +1,70 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-340-2
+response_sha256: 03d4b61d103d59aa3c8c70dcdf1ef606bfca057a559dc43d9c1c9e91f0a27ca3
+
+=== QUESTION ===
+Tom needs to lower a rope down 6 stories.   One story is 10 feet.  The only rope being sold is 20 feet long but you lose 25% when lashing them together.  How many pieces of rope will he need to buy?
+=== MODEL SOLUTION ===
+Step 1: Calculate the total length of rope needed
+Total length needed = Number of stories * Length of one story
+Total length needed = 6 * 10 = 60 feet
+
+Step 2: Calculate the length of rope after losing 25%
+Length of rope after losing 25% = Total length needed * (1 - 0.25)
+Length of rope after losing 25% = 60 * 0.75 = 45 feet
+
+Step 3: Calculate the number of pieces needed
+Number of pieces needed = Length of rope after losing 25% / Length of one piece
+Number of pieces needed = 45 / 20 = 2.25
+
+Since Tom cannot buy a fraction of a piece of rope, he needs to round up to the nearest whole number.
+
+#### 3
+Tom will need to buy 3 pieces of rope.
+=== REFERENCE SOLUTION (fallible aid) ===
+He needs 10*6=<<10*6=60>>60 feet
+He loses 20*.25=<<20*.25=5>>5 feet each time
+So he gets 20-5=<<20-5=15>>15 feet from each piece
+That means he needs 60/15=<<60/15=4>>4 pieces of rope
+#### 4
+=== END ===

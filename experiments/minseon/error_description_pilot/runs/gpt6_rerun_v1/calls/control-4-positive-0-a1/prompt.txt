@@ -1,0 +1,11 @@
+You are comparing observable mathematical errors. Use no tools or outside resources. For each case, check its solution against its question; the reference is fallible and must not override the question. Distinguish an erroneous relation, a numerical evaluation error of a correctly written expression, an unsupported final number after a correct formula, and answering the wrong requested quantity. A contradictory leading answer marker with an otherwise correct derivation is an answer conflict, not evidence of an invented math mistake. Decide same only if BOTH cases have the same specific observable error mechanism. Different stories, numerical values, or arithmetic operators do not by themselves make mechanisms different. Decide different if both have diagnosable errors and their mechanisms differ. Decide uncertain if either case has no clear mathematical error, a materially ambiguous interpretation, or only answer-marker conflict. Never invent an unshown calculation. Return concise JSON: case1_error, case2_error, judgment (same/different/uncertain), reason. No method names, embedding scores, cluster labels or generated annotations are supplied.
+
+CASE 1
+QUESTION: Children eat 8 biscuits every school day. There are 5 school days this week. How many biscuits do the children eat this week?
+SOLUTION: They eat 8 biscuits per day, so they eat 8 biscuits this week.
+REFERENCE: 8 * 5 = 40 biscuits this week.
+
+CASE 2
+QUESTION: Every packet contains 30 peanuts. I buy 4 packets. How many peanuts do I buy?
+SOLUTION: There are 4 packets, so I buy 4 peanuts.
+REFERENCE: 30 * 4 = 120 peanuts.

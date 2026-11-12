@@ -1,0 +1,79 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-5860-4
+response_sha256: 5576b42a9106ec403b660f02985c731a53b4d2eca8da4f11707d592b6b535d99
+
+=== QUESTION ===
+Robe's car broke and he used $10 from his savings to pay for the repair. Before the repair, he bought 2 kinds of spare parts. A corner light that costs twice the price of the repair fee, and two brake disks; each disk cost thrice the price of the corner light. After that, he had $480 savings left. How much money did Robe have saved before his car broke?
+=== MODEL SOLUTION ===
+Let's denote the repair fee by \( x \). According to the problem, the corner light costs \( 2x \) and each brake disk costs \( 3 \times 2x = 6x \). Robe initially had $10 for the repair and then spent all his remaining money after buying the parts.
+
+Let's denote Robe's initial savings by \( y \).
+
+First, we calculate the total cost of the spare parts:
+- Cost of the corner light: \( 2x \)
+- Cost of the brake disks: \( 2 \times 6x = 12x \)
+
+The total cost of the spare parts is \( 2x + 12x = 14x \).
+
+Robe used $10 for the repair and then spent all his remaining money after buying the parts. After buying the parts, he had $480 left. Therefore, we can write the equation:
+\[ y - 10 - 14x = 480 \]
+
+Since \( x \) is the cost of the repair, and \( y \) is Robe's initial savings, we need to find the value of \( y \). We know that Robe spent the entire amount he had initially after buying the parts, so we can simplify the equation to:
+\[ y - 14x = 500 \]
+
+From the problem, we know \( x = 10 \). Substituting \( x \) into the equation:
+\[ y - 14 \times 10 = 500 \]
+\[ y - 140 = 500 \]
+\[ y = 640 \]
+
+Therefore, Robe had saved $640 before his car broke.
+
+#### 640
+=== REFERENCE SOLUTION (fallible aid) ===
+The corner light cost $10 x 2 = $<<10*2=20>>20.
+Each brake disk costs $20 x 3 = $<<20*3=60>>60.
+So, the total price of the brake disks is $60x 2 = $<<60*2=120>>120.
+He spent $10 + $20 + $120 = $<<10+20+120=150>>150 for the repair.
+Therefore, Robe has saved $480 + 150 = $<<480+150=630>>630 before his car broke.
+#### 630
+=== END ===

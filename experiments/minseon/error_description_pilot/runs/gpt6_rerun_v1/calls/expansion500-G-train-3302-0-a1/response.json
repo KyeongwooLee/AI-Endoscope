@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3302-0",
+  "response_sha256": "64b3e6afcd804574cec3203b41defeb66ebe7a298b82ed23c644ef13d533b91c",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 200",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how many plugs are there?",
+  "observed_error": "The final answer reports the number of pairs as the number of individual plugs.",
+  "violated_condition": "The requested count of individual plugs equals twice the number of pairs.",
+  "error_description": "The response correctly calculates 200 pairs after adding 30 pairs, but gives that pair count as its final answer to a question asking for individual plugs. It omits the conversion of two plugs per pair; the written additions are correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

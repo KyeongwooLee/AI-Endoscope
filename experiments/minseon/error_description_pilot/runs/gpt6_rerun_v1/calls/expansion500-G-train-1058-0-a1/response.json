@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1058-0",
+  "response_sha256": "521832b491544727e7cc5d99335d8eaca05c17121c45d229811457ba59e3b584",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total hours = 10 hours/day * 7 days = 70 hours",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Tom reads 10 hours over 5 days.",
+  "observed_error": "The response treats 10 hours over five days as 10 hours per day.",
+  "violated_condition": "Equal daily reading requires a daily duration of 10/5 hours.",
+  "error_description": "The response uses 10 hours per day when calculating reading time for seven days, although the question gives 10 hours total over five days. The daily duration must be 10/5 hours. The multiplication by seven is executed correctly, but its daily-rate operand is incorrect.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

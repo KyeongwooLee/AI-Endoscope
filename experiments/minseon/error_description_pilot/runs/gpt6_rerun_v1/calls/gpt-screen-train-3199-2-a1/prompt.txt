@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Horatio is a poet composing sonnets for his lady fair. He believes it will take many of his sonnets to win her over. Each sonnet is fourteen lines long. His lady fair tells him to leave her alone after he reads her only seven sonnets, and Horatio is heartbroken over the 70 romantic lines he wrote that she never heard. How many sonnets did Horatio write in all?
+SOLUTION: Let's break down the problem step by step:
+
+1. **Total Romantic Lines Written:**
+   - Horatio wrote 70 romantic lines.
+
+2. **Romantic Lines Per Sonnet:**
+   - Each sonnet is 14 lines long.
+
+3. **Number of Sonnets Written:**
+   - To find the total number of sonnets, we divide the total number of romantic lines by the number of lines per sonnet.
+   \[
+   \text{Number of Sonnets} = \frac{\text{Total Romantic Lines}}{\text{Lines per Sonnet}} = \frac{70}{14}
+   \]
+
+4. **Calculation:**
+   \[
+   \frac{70}{14} = 5
+   \]
+
+#### 5
+Therefore, Horatio wrote 5 sonnets in all.

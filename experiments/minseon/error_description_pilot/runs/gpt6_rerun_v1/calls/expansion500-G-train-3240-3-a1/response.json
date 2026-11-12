@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3240-3",
+  "response_sha256": "8f5a6f13a411c6a05ed03281a8df2dc60f5c19edb7f58648473e2895bc8604d2",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "160 - 20 = 140",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Leila spent $40 which is 1/4 of her money on a sweater. She was then left with $20 after spending the rest of her money on buying pieces of jewelry.",
+  "observed_error": "The jewelry calculation subtracts only the $20 balance from the initial $160, omitting the $40 sweater expenditure.",
+  "violated_condition": "Jewelry spending equals initial money minus sweater spending minus the final balance.",
+  "error_description": "The response calculates jewelry spending as $160 minus $20, without deducting the $40 already spent on the sweater. The subtraction itself is correct, but jewelry spending must come from the money remaining after the sweater purchase and leave a final balance of $20.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

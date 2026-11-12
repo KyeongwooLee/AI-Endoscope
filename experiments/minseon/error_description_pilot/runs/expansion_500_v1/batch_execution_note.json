@@ -1,0 +1,6 @@
+{
+  "E_initial_batch_size": 8,
+  "G_batch_size": 16,
+  "oom_split": true,
+  "note": "Resume after all E outputs saved, no accepted outputs overwritten. Same model/prompt/greedy decoding."
+}

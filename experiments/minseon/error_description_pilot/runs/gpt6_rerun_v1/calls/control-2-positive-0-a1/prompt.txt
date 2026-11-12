@@ -1,0 +1,11 @@
+You are comparing observable mathematical errors. Use no tools or outside resources. For each case, check its solution against its question; the reference is fallible and must not override the question. Distinguish an erroneous relation, a numerical evaluation error of a correctly written expression, an unsupported final number after a correct formula, and answering the wrong requested quantity. A contradictory leading answer marker with an otherwise correct derivation is an answer conflict, not evidence of an invented math mistake. Decide same only if BOTH cases have the same specific observable error mechanism. Different stories, numerical values, or arithmetic operators do not by themselves make mechanisms different. Decide different if both have diagnosable errors and their mechanisms differ. Decide uncertain if either case has no clear mathematical error, a materially ambiguous interpretation, or only answer-marker conflict. Never invent an unshown calculation. Return concise JSON: case1_error, case2_error, judgment (same/different/uncertain), reason. No method names, embedding scores, cluster labels or generated annotations are supplied.
+
+CASE 1
+QUESTION: A shop has 80 pencils and sells 16. How many remain?
+SOLUTION: 80 - 16 = 40 pencils remain.
+REFERENCE: 80 - 16 = 64 pencils remain.
+
+CASE 2
+QUESTION: There are 32 guests and each gets 12 ounces of punch. How many ounces are needed?
+SOLUTION: 32 * 12 = 360 ounces are needed.
+REFERENCE: 32 * 12 = 384 ounces are needed.

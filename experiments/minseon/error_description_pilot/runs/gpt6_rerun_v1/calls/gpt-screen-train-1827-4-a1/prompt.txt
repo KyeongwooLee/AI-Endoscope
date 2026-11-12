@@ -1,0 +1,31 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Lisa makes breakfast for her family every morning, Monday through Friday. She makes 2 eggs for each of her 4 children and 3 eggs for her husband. Then, she makes 2 eggs for herself. How many eggs does Lisa cook for her family for breakfast in a year?
+SOLUTION: To find out how many eggs Lisa cooks for her family in a year, let's break it down step by step:
+
+1. **Calculate the number of eggs for her children:**
+   - Each child gets 2 eggs per day.
+   - Lisa has 4 children.
+   - She cooks for 5 days a week.
+   - Weekly eggs for children = 4 children × 2 eggs/child/week = 8 eggs/week.
+
+2. **Calculate the number of eggs for her husband:**
+   - Her husband gets 3 eggs per day.
+   - She cooks for 5 days a week.
+   - Weekly eggs for husband = 3 eggs/week.
+
+3. **Calculate the number of eggs for herself:**
+   - She gets 2 eggs per day.
+   - She cooks for 5 days a week.
+   - Weekly eggs for herself = 2 eggs/week.
+
+4. **Calculate the total weekly eggs:**
+   - Total weekly eggs = Eggs for children + Eggs for husband + Eggs for herself
+   - Total weekly eggs = 8 eggs/week + 3 eggs/week + 2 eggs/week = 13 eggs/week.
+
+5. **Calculate the total annual eggs:**
+   - There are 52 weeks in a year.
+   - Total annual eggs = 13 eggs/week × 52 weeks/year = 676 eggs/year.
+
+#### 676
+This is the total number of eggs Lisa cooks for her family for breakfast in a year.

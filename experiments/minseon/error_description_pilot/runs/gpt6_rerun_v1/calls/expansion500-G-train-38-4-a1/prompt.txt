@@ -1,0 +1,68 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-38-4
+response_sha256: e7ee84f4c1a6cba8a369c86b1f79b9d23b0a4af76c791347699da9c9c6a0a79a
+
+=== QUESTION ===
+Artemis is making tea for a party. She knows her mom drinks an 8-ounce cup of tea and uses one ounce of tea. She will use this same ratio for the party. The party has 12 people there and each of them wants a 6-ounce cup of tea. How many ounces of tea does she need?
+=== MODEL SOLUTION ===
+Step 1: Determine the ratio of tea to water in Artemis's mom's tea.
+- 1 ounce of tea for 8 ounces of water.
+
+Step 2: Calculate the total amount of tea needed for the party.
+- Each person wants a 6-ounce cup of tea.
+- There are 12 people at the party.
+- Total tea needed = 12 people * 6 ounces/person = 72 ounces.
+
+Step 3: Verify if the ratio matches the total amount needed.
+- The ratio is 1:8 (tea to water).
+- For 72 ounces of tea, the total volume of water needed would be 72 ounces * 8 = 576 ounces.
+- This calculation is not necessary for the problem, but it shows the consistency of the ratio.
+
+Final Answer:
+#### 72
+#### 72
+=== REFERENCE SOLUTION (fallible aid) ===
+She is making 72 ounces of water because 12 x 6 = <<12*6=72>>72
+She needs 9 ounces of tea because 72 / 8 = <<72/8=9>>9
+#### 9
+=== END ===

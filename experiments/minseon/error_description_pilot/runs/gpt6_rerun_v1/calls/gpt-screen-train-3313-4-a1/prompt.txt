@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Marco uses a fifth of an ounce of dry tea leaves to brew his morning cup of tea each day. He buys tea leaves in boxes of 28 ounces. How many weeks of daily tea does Marco get from a box?
+SOLUTION: #### 8
+Marco uses 1/5 of an ounce of tea leaves per cup of tea.
+He buys tea leaves in boxes of 28 ounces.
+
+To find out how many weeks of tea Marco gets from a box, we first calculate how many cups of tea he can brew from one box:
+\[ \text{Cups per box} = \frac{28 \text{ ounces}}{1/5 \text{ ounces per cup}} \]
+
+\[ \text{Cups per box} = 28 \times 5 \]
+
+\[ \text{Cups per box} = 140 \text{ cups} \]
+
+Since Marco uses one cup of tea per day, we divide the total number of cups by the number of days in a week to find out how many weeks of tea he can get from the box:
+\[ \text{Weeks of tea} = \frac{140 \text{ cups}}{7 \text{ days per week}} \]
+
+\[ \text{Weeks of tea} = 20 \]
+
+Therefore, Marco gets 20 weeks of daily tea from a box.

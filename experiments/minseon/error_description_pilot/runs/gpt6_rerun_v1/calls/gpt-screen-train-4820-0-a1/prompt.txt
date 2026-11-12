@@ -1,0 +1,25 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Danny has 3 bottles of soda. He drinks 90% of one bottle and gives 70% of the other two bottles to his friends. How much soda does Danny have left, expressed as a percentage of a bottle?
+SOLUTION: Step 1: Calculate the amount of soda Danny drinks from the first bottle.
+Danny drinks 90% of one bottle.
+90% of 1 bottle = 0.9 bottles
+
+Step 2: Calculate the amount of soda Danny gives to his friends from the second bottle.
+Danny gives 70% of the second bottle to his friends.
+70% of 1 bottle = 0.7 bottles
+
+Step 3: Calculate the amount of soda Danny gives to his friends from the third bottle.
+Danny gives 70% of the third bottle to his friends.
+70% of 1 bottle = 0.7 bottles
+
+Step 4: Calculate the total amount of soda Danny has left.
+Total soda left = 0.9 bottles (drank) + 0.7 bottles (given to friends) + 0.7 bottles (given to friends)
+Total soda left = 2.3 bottles
+
+Step 5: Calculate the percentage of a bottle Danny has left.
+Percentage of a bottle = (Total soda left / 1 bottle) * 100
+Percentage of a bottle = (2.3 / 1) * 100
+Percentage of a bottle = 230%
+
+#### 230

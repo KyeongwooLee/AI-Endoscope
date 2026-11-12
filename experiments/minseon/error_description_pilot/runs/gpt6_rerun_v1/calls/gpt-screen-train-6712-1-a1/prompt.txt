@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Candace is trying to decide whether to wear her old shoes or new high-tech shoes for a hike. The high-tech shoes will help Candace walk twice as fast, but they're not broken in yet, so she'll get 1 blister after every 2 hours she spends walking in them. Each blister slows Candance down by 2 miles per hour. If Candance walks 6 miles per hour in the old shoes and plans to hike for 4 hours, how many miles per hour can she go in the new shoes?
+SOLUTION: Step 1: Calculate Candace's walking speed in the new shoes.
+Since the new shoes will help her walk twice as fast, her speed in the new shoes will be:
+6 miles per hour * 2 = 12 miles per hour
+
+Step 2: Calculate the number of blisters Candace will get in the new shoes.
+Since she gets 1 blister every 2 hours, in 4 hours she will get:
+4 hours / 2 hours = 2 blisters
+
+Step 3: Calculate the total reduction in speed due to blisters.
+Each blister slows her down by 2 miles per hour, so in 2 blisters, the total reduction will be:
+2 blisters * 2 miles per hour per blister = 4 miles per hour
+
+Step 4: Calculate her new walking speed after accounting for blisters.
+Subtract the total reduction in speed from her speed in the new shoes:
+12 miles per hour - 4 miles per hour = 8 miles per hour
+
+#### 8
+This is the final answer.

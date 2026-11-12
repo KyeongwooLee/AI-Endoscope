@@ -1,0 +1,17 @@
+{
+  "source_id": "train-427-4",
+  "response_sha256": "82cd5c68034410d0af2853038b41951a789bda829087551279b92b2811212513",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 12000",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "she has decided to continue saving $276 per month, for 4 years.",
+  "observed_error": "The reported final amount does not equal the correctly written expression $3,000 + ($276 * 48) + $7,000.",
+  "violated_condition": "The final balance must include the initial $3,000, 48 monthly deposits of $276, and the family's $7,000 addition.",
+  "error_description": "The response correctly converts four years to 48 months and writes the required sum, but reports $12,000, which does not equal $3,000 + ($276 × 48) + $7,000. The discrepancy occurs in the reported result; no intermediate arithmetic identifies which operation was executed incorrectly.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text supports an incorrect final result but does not establish a specific multiplication or addition mistake."
+}

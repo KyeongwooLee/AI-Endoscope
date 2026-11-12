@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$2,100","check":"This month's earnings are $1,000 + $100 = $1,100. The two-month total is $1,000 + $1,100 = $2,100.","evidence_quote":"Total earnings = Original earnings + Raise amount","error_description":"The solution counts only this month's earnings as the two-month total, omitting last month's $1,000."}

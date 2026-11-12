@@ -1,0 +1,122 @@
+[
+  {
+    "source_id": "train-2136-4",
+    "rating": "invalid",
+    "reason_ko": "인용 위치가 실제 구간과 맞지 않아 주 분석에서 제외됐다. 설명에 일일 시간1000 대신40이라는 지적은 있지만 최초50회 사용 단계보다 뒤를 인용했다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1081-4",
+    "rating": "invalid",
+    "reason_ko": "인용 위치 검증에 실패했다. 내용도 참조의 역수 오류를 따라 맞는0.5리터/마리를 틀렸다고 주장한다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-6861-3",
+    "rating": "overconfident_ambiguous",
+    "reason_ko": "게임을 함께1개 살 수 있는 문구를 배제하고2개가 필요하다고 단정했다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1827-4",
+    "rating": "partially_correct",
+    "reason_ko": "하루13개를 주간13개로 사용한 메커니즘은 잘 설명한다. 다만 인용은 연간합계 단계이며 최초 아이들 수의 기간 혼동 단계가 아니다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-344-4",
+    "rating": "invalid",
+    "reason_ko": "출력 파싱 실패로 설명을 사용할 수 없다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-7430-4",
+    "rating": "appropriate_abstention",
+    "reason_ko": "본문120의 계산은 맞다. 서두20은 표기 충돌이다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-5364-3",
+    "rating": "invalid",
+    "reason_ko": "인용 위치 검증 실패. 내용도3000의 근거 부족을 넘어 세금을 별도비용항목으로 두면 안 된다고 과도하게 주장한다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-7421-3",
+    "rating": "appropriate_abstention",
+    "reason_ko": "본문160의 계산은 맞다. 서두200은 표기 충돌이다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1061-4",
+    "rating": "correct",
+    "reason_ko": "개인별 비용에 케이크당 비용을 다시 곱하는 관계 오류를 짚는다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-4085-1",
+    "rating": "invalid",
+    "reason_ko": "내용은 산술 결과의 오류를 지적하지만 인용 위치가 잘못되어 주 분석에서 제외됐다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1338-4",
+    "rating": "correct",
+    "reason_ko": "대형등수로24가아닌22를사용한수량대입오류를지적한다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-4465-3",
+    "rating": "correct",
+    "reason_ko": "앞마당둥지4개알의누락을지적한다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1833-0",
+    "rating": "correct",
+    "reason_ko": "면적을갤런당면적으로나눌관계를곱셈으로바꾼오류를지적한다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1627-4",
+    "rating": "invalid",
+    "reason_ko": "두호스합산누락이라는핵심은설명하지만인용위치검증에실패했다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1262-0",
+    "rating": "invalid",
+    "reason_ko": "JSON구문오류로설명을사용할수없다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-3647-3",
+    "rating": "partially_correct",
+    "reason_ko": "할인액을다시더한문제는맞지만4달러에서추가로빼야한다는표현은부정확하다.이미할인을적용했으므로더하지않아야한다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1297-4",
+    "rating": "appropriate_abstention",
+    "reason_ko": "본문32명과8명계산은맞다.서두16은표기충돌이다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-4704-2",
+    "rating": "partially_correct",
+    "reason_ko": "두나라모두4주여야한다는조건은맞다.하지만실제오류는직전나라기준으로세번째도두배한것이며두번째에만두배를적용한것이아니다.인용한두번째나라4주는옳은단계다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-1686-3",
+    "rating": "partially_correct",
+    "reason_ko": "절차와500의불일치는맞다.실제계산을보이지않았으므로산술실행오류로확정하는것은과도하다.",
+    "reviewer": "Codex AI spot-check, not human"
+  },
+  {
+    "source_id": "train-5239-1",
+    "rating": "correct",
+    "reason_ko": "총땅콩수120을쓰지않은수량오류를지적한다.",
+    "reviewer": "Codex AI spot-check, not human"
+  }
+]

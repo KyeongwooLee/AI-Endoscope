@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jay has decided to save money from his paycheck every week. He has decided that he will increase the amount he saves each week by 10 dollars. If he started by saving 20 dollars this week, how much will he have saved in a month from now?
+SOLUTION: Let's solve this step by step:
+
+1. **Identify the initial savings and the weekly increase:**
+   - Initial savings this week: $20
+   - Weekly increase: $10
+
+2. **Calculate the savings for each week:**
+   - Week 1: $20
+   - Week 2: $20 + $10 = $30
+   - Week 3: $30 + $10 = $40
+   - Week 4: $40 + $10 = $50
+
+3. **Determine the savings for the month:**
+   - We are asked about the month from now, which means 4 weeks.
+   - Total savings in 4 weeks: $20 + $30 + $40 + $50 = $140
+
+Final answer: 
+#### 140
+This is the total amount Jay will have saved in a month from now.

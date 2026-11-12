@@ -1,0 +1,66 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-5765-1
+response_sha256: 1b51e84991dfff74462a8399c8e1483ba45f7dfeddcfd3b9cda11f9573d869ff
+
+=== QUESTION ===
+Lily got a new puppy for her birthday.  She was responsible for feeding the puppy 1/4 cup of food three times a day for two weeks starting tomorrow.  For the following 2 weeks, Lily will feed him 1/2 cup of food twice a day.  She has fed him 1/2 cup of food today.  Including today, how much food will the puppy eat over the next 4 weeks?
+=== MODEL SOLUTION ===
+Step 1: Calculate the total food consumption for the first two weeks.
+1/4 cup/feeding * 3 feedings/day * 14 days = 14 cups of food
+
+Step 2: Calculate the total food consumption for the next two weeks.
+1/2 cup/feeding * 2 feedings/day * 14 days = 14 cups of food
+
+Step 3: Add the food consumed today to the total food consumption for the next four weeks.
+1/2 cup of food today + 14 cups of food for the first two weeks + 14 cups of food for the next two weeks = 28.5 cups of food
+
+#### 28.5
+=== REFERENCE SOLUTION (fallible aid) ===
+1 week has 7 days so 2 weeks will have 2*7 = <<7*2=14>>14 days
+The puppy will eat 1/4c three times a day so .25*3= <<.25*3=.75>>.75 cups per day
+The puppy will eat .75 cups of food a day for 14 days for a total of .75*14 =<<.75*14=10.5>>10.5 cups
+The puppy will then eat `.5 cup of food twice a day so .5*2 = <<.5*2=1>>1 cup per day
+The puppy will eat 1 cup of food a day for 14 days for a total of 1*14 = <<1*14=14>>14 cups per day
+She has already fed him .5 cup of food and he will eat 10.5 cups and another 14 cups for a total of .5+10.5+14 = <<.5+10.5+14=25>>25 cups of food
+#### 25
+=== END ===

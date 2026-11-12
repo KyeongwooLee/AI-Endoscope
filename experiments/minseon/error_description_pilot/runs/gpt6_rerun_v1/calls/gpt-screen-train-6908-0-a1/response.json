@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"10:1","check":"The new lifting total is 2200 × 1.15 = 2530 pounds, and bodyweight is 245 + 8 = 253 pounds. Their ratio is 2530/253 = 10, not 11/2.","evidence_quote":"The final answer is 11/2.","error_description":"The stated formulas are correct, but the final value 11/2 does not match their result of 10."}

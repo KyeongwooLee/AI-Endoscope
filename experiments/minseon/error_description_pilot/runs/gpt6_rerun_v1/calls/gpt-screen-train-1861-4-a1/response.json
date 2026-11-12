@@ -1,0 +1,1 @@
+{"status":"answer_conflict","independent_answer":"400 dog legs.","check":"Dogs make up 1/3 of 300 animals, so there are 100 dogs and 100 × 4 = 400 legs. The worked solution is correct, but its leading answer marker conflicts with it.","evidence_quote":"#### 600","error_description":"The leading marker gives 600, while the correct derivation and worked final answer give 400."}

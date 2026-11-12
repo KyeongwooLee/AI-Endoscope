@@ -1,0 +1,11 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jasmine gets off of work at 4:00 pm.  After that, it will take her 30 minutes to commute home, 30 minutes to grocery shop, 10 minutes to pick up the dry cleaning, 20 minutes to pick up the dog from the groomers and 90 minutes to cook dinner when she returns home.  What time will she eat dinner?
+SOLUTION: Step 1: Jasmine gets off work at 4:00 pm.
+Step 2: Commute home takes 30 minutes, so she will arrive home at 4:30 pm.
+Step 3: Grocery shopping takes 30 minutes, so she will arrive home at 5:00 pm.
+Step 4: Picking up the dry cleaning takes 10 minutes, so she will arrive home at 5:10 pm.
+Step 5: Picking up the dog from the groomers takes 20 minutes, so she will arrive home at 5:30 pm.
+Step 6: Cooking dinner takes 90 minutes, so she will arrive home at 6:30 pm.
+
+#### 6:30pm

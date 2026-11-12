@@ -1,0 +1,17 @@
+{
+  "source_id": "train-331-2",
+  "response_sha256": "d2208535fc29b74afa0fd657f7cc5d90523b6585b0476651f8e4cdab503a327e",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The number of barrels of pitch needed is five times the number of bags of gravel used, so \\(30 \\times 5 = 150\\) barrels of pitch.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "five times as many bags of gravel as it does barrels of pitch",
+  "observed_error": "The response reverses the gravel-to-pitch ratio and multiplies 30 bags of gravel by five.",
+  "violated_condition": "The number of gravel bags equals five times the number of pitch barrels, so pitch barrels equal gravel bags divided by five.",
+  "error_description": "The response treats pitch barrels as five times the gravel bags, reversing the stated relation that gravel bags are five times pitch barrels. It therefore multiplies the required 30 bags by five instead of dividing by five. The written multiplication is executed correctly; the conversion relation is wrong.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,87 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-4569-3
+response_sha256: 815bb6fac2316d0231358ed1a607b246127b76de1ec0609446fef6c840e71066
+
+=== QUESTION ===
+A rancher owns a mixture of 8 sheep and 5 cattle that graze on his land.  In a typical year, the rancher will allow his animals to feed off his pastures for as long as possible before they run out of grass.  After the pastures run out of grass, he must buy feed corn for $10 per bag.  Each cow eats 2 acres of grass per month, and each sheep eats 1 acre of grass per month.  Additionally, a bag of feed corn can feed each cow for 1 month and each sheep for 2 months.   If the rancher's pasture contains 144 acres of grass, how much will the rancher need to spend on feed corn to feed his animals each year?
+=== MODEL SOLUTION ===
+To determine how much the rancher will need to spend on feed corn, we first need to calculate the total amount of grass the animals will eat in a year.
+
+1. Calculate the total amount of grass the cattle will eat in a year:
+   - Each cow eats 2 acres of grass per month.
+   - There are 12 months in a year.
+   - There are 5 cattle.
+   - Total grass eaten by cattle per year = 2 acres/month * 12 months/year * 5 cattle = 120 acres/year
+
+2. Calculate the total amount of grass the sheep will eat in a year:
+   - Each sheep eats 1 acre of grass per month.
+   - There are 8 sheep.
+   - There are 12 months in a year.
+   - Total grass eaten by sheep per year = 1 acre/month * 12 months/year * 8 sheep = 96 acres/year
+
+3. Calculate the total amount of grass eaten by both cattle and sheep in a year:
+   - Total grass eaten by animals per year = 120 acres/year (cattle) + 96 acres/year (sheep) = 216 acres/year
+
+4. Calculate the total amount of feed corn needed:
+   - Each cow can be fed for 1 month with 1 bag of feed corn.
+   - Each sheep can be fed for 2 months with 1 bag of feed corn.
+   - Total bags of feed corn needed = 120 acres/year (cattle) / 1 acre/cow/month = 120 bags for cattle
+   - Total bags of feed corn needed = 96 acres/year (sheep) / 1/2 acre/sheep/month = 192 bags for sheep
+   - Total bags of feed corn needed = 120 bags (cattle) + 192 bags (sheep) = 312 bags
+
+5. Calculate the total cost of feed corn:
+   - Feed corn costs $10 per bag.
+   - Total cost = 312 bags * $10/bag = $3120
+
+#### 3120
+The rancher will need to spend $3120 on feed corn to feed his animals each year.
+=== REFERENCE SOLUTION (fallible aid) ===
+First, the 144 acres of grass will be eaten according to the equation 5*2*T + 8*1*T = 144.
+Solving this equation for T, we find 18*T = 144, or T = 8 months of food are covered by the animals grazing on the rancher's pasture.
+This means the farmer must buy feed corn for the remaining 12 - 8 = <<12-8=4>>4 months.
+Next, the rancher's 8 sheep will require 4/2 = 2 bags of feed corn each, or 8*2 = <<8*2=16>>16 bags of feed corn in total for the 4 month period.
+The rancher's 5 cows will require 4/1 = 4 bags of feed corn each, or 5*4 = <<5*4=20>>20 bags of feed corn in total for the month.
+Therefore, the rancher needs 16+20 = <<16+20=36>>36 bags of feed corn for all of his animals.
+So, the rancher will need to spend 36*10 = $<<36*10=360>>360 per year on feed corn.
+#### 360
+=== END ===

@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"15 vacant seats","check":"Students have 10 - 1 - 2 - 2 = 5 rows, or 75 seats. The vacant fifth is 75 × 1/5 = 15 seats.","evidence_quote":"150 - 15 - 30 - 30 = 85 chairs","error_description":"The subtraction equals 75, not 85. This incorrect student-seat total leads to 17 vacant seats instead of 15."}

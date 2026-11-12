@@ -1,0 +1,22 @@
+EXECUTION FAILURE pilot130-E-train-633-2 Unexpected tool activity for pilot130-E-train-633-2; do not accept experimental output
+EXECUTION FAILURE pilot130-E-train-2293-2 Unexpected tool activity for pilot130-E-train-2293-2; do not accept experimental output
+EXECUTION FAILURE pilot130-E-train-2196-3 Unexpected tool activity for pilot130-E-train-2196-3; do not accept experimental output
+EXECUTION FAILURE pilot130-E-train-2373-1 Unexpected tool activity for pilot130-E-train-2373-1; do not accept experimental output
+Traceback (most recent call last):
+  File "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/gpt6_rerun_v1/source/run_gpt.py", line 70, in <module>
+    run(phase)
+  File "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/gpt6_rerun_v1/source/run_gpt.py", line 64, in run
+    if fatal:raise fatal
+  File "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/gpt6_rerun_v1/source/run_gpt.py", line 56, in run
+    try:r=future.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/gpt6_rerun_v1/source/run_gpt.py", line 29, in annotate
+    obj,meta,raw=call(p['job_id'],prompt,p['condition'],attempt);rawerr,rawwarn,_=validate_output(p['condition'],obj,p,cfg);fixed=json.loads(json.dumps(obj));corrected=False
+  File "/home/coder/yaicon-errorprobe/AI-Endoscope/experiments/minseon/error_description_pilot/runs/gpt6_rerun_v1/source/run_gpt.py", line 23, in call
+    if toolitems:raise RuntimeError(f'Unexpected tool activity for {job_id}; do not accept experimental output')
+RuntimeError: Unexpected tool activity for pilot130-E-train-2373-1; do not accept experimental output

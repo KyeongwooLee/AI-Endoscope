@@ -1,0 +1,1 @@
+{"case1_error":"Unsupported final number of 500 after the correct formula (10 * 5) * 4, which gives 200.","case2_error":"Incorrect relation: adds 4 weeks to 50 weekly hours instead of multiplying.","reason":"Case 1 gives an unsupported result after a correct formula; case 2 explicitly uses an erroneous relation and evaluates it correctly.","judgment":"different"}

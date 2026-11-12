@@ -1,0 +1,35 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Frank needs to meet a quota at work for his sales. It’s the beginning of the month and in 30 days he needs to have 50 cars sold. The first three days he sold 5 cars each day. Then the next 4 days he sold 3 cars each day. If the month is 30 days long how many cars does he need to sell for the remaining days to meet his quota?
+SOLUTION: To find out how many cars Frank needs to sell for the remaining days, let's break down the problem step by step.
+
+1. **Total Cars Sold in the First 30 Days:**
+   - For the first 3 days: \(5 \text{ cars/day} \times 3 \text{ days} = 15 \text{ cars}\)
+   - For the next 4 days: \(3 \text{ cars/day} \times 4 \text{ days} = 12 \text{ cars}\)
+
+   Total cars sold in the first 7 days:
+   \[
+   15 \text{ cars} + 12 \text{ cars} = 27 \text{ cars}
+   \]
+
+2. **Remaining Cars Needed to Meet the Quota:**
+   Frank's quota for the month is 50 cars. After the first 7 days, he has sold 27 cars.
+   \[
+   50 \text{ cars} - 27 \text{ cars} = 23 \text{ cars}
+   \]
+
+3. **Remaining Days to Meet the Quota:**
+   The month is 30 days long, and Frank has already sold cars for the first 7 days.
+   \[
+   30 \text{ days} - 7 \text{ days} = 23 \text{ days}
+   \]
+
+4. **Cars Needed per Day for the Remaining 23 Days:**
+   Frank needs to sell 23 cars in the remaining 23 days to meet his quota.
+   \[
+   \frac{23 \text{ cars}}{23 \text{ days}} = 1 \text{ car/day}
+   \]
+
+So, Frank needs to sell **1** car per day for the remaining 23 days to meet his quota.
+
+#### 1

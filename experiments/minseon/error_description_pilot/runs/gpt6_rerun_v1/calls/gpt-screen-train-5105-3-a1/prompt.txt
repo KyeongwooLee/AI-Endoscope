@@ -1,0 +1,26 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jerry is cutting up wood for his wood-burning stove. Each pine tree makes 80 logs, each maple tree makes 60 logs, and each walnut tree makes 100 logs. If Jerry cuts up 8 pine trees, 3 maple trees, and 4 walnut trees, how many logs does he get?
+SOLUTION: Step 1: Calculate the number of logs from pine trees.
+Number of pine trees = 8
+Logs per pine tree = 80
+Total logs from pine trees = 8 * 80
+
+Step 2: Calculate the number of logs from maple trees.
+Number of maple trees = 3
+Logs per maple tree = 60
+Total logs from maple trees = 3 * 60
+
+Step 3: Calculate the number of logs from walnut trees.
+Number of walnut trees = 4
+Logs per walnut tree = 100
+Total logs from walnut trees = 4 * 100
+
+Step 4: Sum up the total logs from all types of trees.
+Total logs = Logs from pine trees + Logs from maple trees + Logs from walnut trees
+
+Final Calculation:
+Total logs = (8 * 80) + (3 * 60) + (4 * 100)
+
+#### 680
+#### 680

@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: In Grade 4, there are two sections -- Diligence and Industry. The two sections have an equal number of students after 2 students were transferred from section Industry to Diligence. How many students were there in section Diligence before the transfer if, in both sections combined, there are a total of 50 students?
+SOLUTION: To solve this problem, let's denote the number of students in section Diligence before the transfer as \( x \).
+
+Given that after transferring 2 students from Industry to Diligence, the number of students in both sections becomes equal, we can set up the following equation:
+
+\[ x + 2 = 50 - 2 \]
+
+Let's solve for \( x \):
+
+\[ x + 2 = 48 \]
+\[ x = 48 - 2 \]
+\[ x = 46 \]
+
+Therefore, the number of students in section Diligence before the transfer is:
+#### 46

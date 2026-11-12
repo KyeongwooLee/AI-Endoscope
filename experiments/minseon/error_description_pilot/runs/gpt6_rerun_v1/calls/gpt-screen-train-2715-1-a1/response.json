@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"9 birds","check":"The total is 7 + 11 + 9 = 27 birds, so the average is 27 / 3 = 9 birds. The stated method is correct, but the final number is 13.","evidence_quote":"#### 13","error_description":"The final answer 13 does not match the result of the stated formula. No correct worked final answer is shown."}

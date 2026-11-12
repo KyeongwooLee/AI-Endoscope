@@ -1,0 +1,27 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Mr. Johnson has a prescription with enough pills for 30 days. After four-fifths of the days, he has 12 pills left. How many pills is Mr. Johnson supposed to take a day if he takes the same dose daily?
+SOLUTION: To solve this problem, let's break it down step by step:
+
+1. **Determine the total number of pills Mr. Johnson has:**
+   - Mr. Johnson's prescription lasts for 30 days.
+   - After 4/5 of the days, he has 12 pills left.
+   - This means he has taken pills for 1/5 of the days.
+   - Let \( x \) be the number of pills Mr. Johnson takes per day.
+   - In 1/5 of the 30 days, he takes \( \frac{1}{5} \times 30 = 6 \) days.
+   - Therefore, the total number of pills he has is \( 6x \).
+
+2. **Set up an equation to find \( x \):**
+   - The total number of pills Mr. Johnson has is equal to the number of pills he has left plus the number of pills he has taken.
+   - So, \( 6x = 12 + x \).
+
+3. **Solve the equation for \( x \):**
+   - Subtract \( x \) from both sides: \( 6x - x = 12 \).
+   - Simplify: \( 5x = 12 \).
+   - Divide by 5: \( x = \frac{12}{5} \).
+
+4. **Calculate the value of \( x \):**
+   - \( x = \frac{12}{5} = 2.4 \).
+
+#### 2.4
+This is the number of pills Mr. Johnson is supposed to take daily.

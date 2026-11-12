@@ -1,0 +1,31 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: James gets paid $0.50/mile to drive a truck carrying hazardous waste. He has to pay $4.00/gallon for gas and his truck gets 20 miles per gallon. How much profit does he make from a 600 mile trip?
+SOLUTION: Step 1: Calculate the total amount James earns from driving the trip.
+James earns $0.50 per mile, and he drives 600 miles.
+Total earnings = Earnings per mile * Miles driven
+Total earnings = $0.50/mile * 600 miles
+
+Step 2: Calculate the total amount James spends on gas for the trip.
+The cost of gas is $4.00 per gallon, and his truck gets 20 miles per gallon.
+Total gallons of gas used = Miles driven / Miles per gallon
+Total gallons of gas used = 600 miles / 20 miles per gallon
+
+Total cost of gas = Total gallons of gas used * Cost per gallon
+Total cost of gas = (600 miles / 20 miles per gallon) * $4.00/gallon
+
+Step 3: Calculate James's profit.
+Profit = Total earnings - Total cost of gas
+Profit = (Total earnings) - (Total cost of gas)
+
+Step 4: Calculate the profit per mile.
+Profit per mile = Profit / Miles driven
+Profit per mile = (Total earnings) - (Total cost of gas) / 600 miles
+
+Step 5: Calculate the profit from the 600 mile trip.
+Profit from 600 mile trip = Profit per mile * Miles driven
+Profit from 600 mile trip = (Profit per mile) * 600 miles
+
+Final Answer:
+#### 100.0
+James makes a profit of $100.00 from a 600 mile trip.

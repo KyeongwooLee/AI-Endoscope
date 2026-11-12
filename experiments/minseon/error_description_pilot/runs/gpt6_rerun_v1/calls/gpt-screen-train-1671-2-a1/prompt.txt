@@ -1,0 +1,50 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Rodney and Todd are rowing down a river that is 50 yards wide at one end. If the river's width increases from this end uniformly by 2 yards every 10 meters along, and they row along the river at a rate of 5 m/s, how long (in seconds) will it take them to get to the point where the river is 80 yards wide?
+SOLUTION: To solve this problem, we need to determine the distance Rodney and Todd need to row to reach the point where the river is 80 yards wide.
+
+1. **Determine the distance along the river where the river is 80 yards wide:**
+   - The river's width increases uniformly by 2 yards every 10 meters.
+   - We need to find the distance where the width reaches 80 yards.
+   - Let \( x \) be the distance in meters where the river is 80 yards wide.
+   - The width of the river can be expressed as:
+     \[
+     \text{Width} = 2 \cdot \left(\frac{x}{10}\right)
+     \]
+   - Set the width equal to 80 yards:
+     \[
+     80 = 2 \cdot \left(\frac{x}{10}\right)
+     \]
+   - Solve for \( x \):
+     \[
+     80 = \frac{2x}{10}
+     \]
+     \[
+     80 \cdot 10 = 2x
+     \]
+     \[
+     800 = 2x
+     \]
+     \[
+     x = \frac{800}{2}
+     \]
+     \[
+     x = 400 \text{ meters}
+     \]
+
+2. **Calculate the time to row 400 meters:**
+   - Rodney and Todd row at a rate of 5 m/s.
+   - Time \( t \) can be calculated using the formula:
+     \[
+     t = \frac{\text{Distance}}{\text{Speed}}
+     \]
+   - Substitute the values:
+     \[
+     t = \frac{400 \text{ meters}}{5 \text{ m/s}}
+     \]
+     \[
+     t = 80 \text{ seconds}
+     \]
+
+#### 80
+Rodney and Todd will take 80 seconds to get to the point where the river is 80 yards wide.

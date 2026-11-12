@@ -1,0 +1,82 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-6747-4
+response_sha256: fa49d0ac1056c53039e26463c99820c2b02cbe624db44aa086e3c66824965f2d
+
+=== QUESTION ===
+Carson runs a carpool for five of his friends. The five of them cover all the gas expenses to compensate Carson for his time. Their total commute is 21 miles one way, gas costs $2.50/gallon, Carson's car gets 30 miles/gallon, and they commute to work 5 days a week, 4 weeks a month. How much does each person pay toward gas monthly?
+=== MODEL SOLUTION ===
+To determine how much each person pays toward gas monthly, let's follow these steps:
+
+1. **Calculate the total commute distance per day:**
+   - Total commute distance one way = 21 miles
+   - Total commute distance round trip = 21 miles * 2 = 42 miles
+   - Commute distance per day = 42 miles / 5 days = 8.4 miles per day
+
+2. **Calculate the total commute distance per month:**
+   - Commute distance per day = 8.4 miles
+   - Commute days per month = 5 days * 4 weeks = 20 days
+   - Total commute distance per month = 8.4 miles/day * 20 days = 168 miles
+
+3. **Calculate the total gas consumption per month:**
+   - Car gets 30 miles/gallon
+   - Total gas consumption per month = 168 miles / 30 miles/gallon = 5.6 gallons
+
+4. **Calculate the total gas expense per month:**
+   - Gas cost per gallon = $2.50
+   - Total gas expense per month = 5.6 gallons * $2.50/gallon = $14.00
+
+5. **Calculate the amount each person pays toward gas monthly:**
+   - Number of people in the carpool = 5
+   - Amount each person pays = $14.00 / 5 people = $2.80
+
+#### 2.80
+Each person pays $2.80 toward gas monthly.
+=== REFERENCE SOLUTION (fallible aid) ===
+First find the total number of monthly commutes: 5 days/week * 4 weeks/month = <<5*4=20>>20 days/month
+Then multiply the distance of the commute one way by the two ways: 21 miles * 2 = <<21*2=42>>42 miles
+Then multiply the number of commutes by the number of miles per commute: 42 miles/commute * 20 commutes = <<42*20=840>>840 miles
+Then divide the number of miles by the car's gas mileage: 840 miles / 30 miles/gallon = <<840/30=28>>28 gallons
+Then multiply that number by the cost of each gallon to find the total cost: 28 gallons * $2.50/gallon = $<<28*2.5=70>>70
+Then divide the total cost by the number of friends to find the cost per person: $70 / 5 people = $<<70/5=14>>14/person
+#### 14
+=== END ===

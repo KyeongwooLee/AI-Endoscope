@@ -1,0 +1,19 @@
+{
+  "source_id": "train-7030-4",
+  "response_sha256": "7383e7de590904d82dd5abecb5a08f47847c0999bd84f774f95716c404c27f83",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "O = 0.25(T - 72)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Then she gets a scoop of orange sours, and they make up 25% of the sours in the bag.",
+  "observed_error": "The response replaces O = 0.25T with O = 0.25(T - 72).",
+  "violated_condition": "Orange sours constitute 25% of the total after they are added, so O = 0.25T.",
+  "error_description": "The response subtracts the 72 cherry and lemon sours from the total before applying 25%. This makes the orange count equal to 25% of the orange count itself, whereas the question specifies 25% of all sours in the bag after the orange sours are added.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The subsequent step from O = 0.25O to O = 2 is independently invalid: that written equation implies O = 0."
+  ],
+  "uncertainty_note": null
+}

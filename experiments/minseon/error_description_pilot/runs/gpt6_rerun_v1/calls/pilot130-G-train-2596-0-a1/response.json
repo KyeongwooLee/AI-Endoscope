@@ -1,0 +1,19 @@
+{
+  "source_id": "train-2596-0",
+  "response_sha256": "7f7bb4f8e4700acb15aafb042b9f0478712d16c3afc89fce4bfce70c6a3acd30",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 2: Add the History score to the average to get the total score across all 4 subjects.\nTotal score = Average + History score",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "what was his total score across all 4 subjects?",
+  "observed_error": "The response adds the History score to the average of the other three scores instead of their sum.",
+  "violated_condition": "The total must equal 50 + 70 + 66 + History score.",
+  "error_description": "The response defines the four-subject total as the three-test average plus the History score. This replaces the combined Geography, Math, and English scores with their average, violating the requirement to sum all four subject scores. The error is in the written relation.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The reported 200 also disagrees with the written final expression, which evaluates to 124; no calculation explains that discrepancy."
+  ],
+  "uncertainty_note": null
+}

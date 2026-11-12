@@ -1,0 +1,87 @@
+{
+  "status": "two_AI_judges_not_human_ground_truth",
+  "sample_n": 10,
+  "agreement_n": 8,
+  "rows": [
+    {
+      "pair_id": "pair-0262",
+      "codex_judgment": "uncertain",
+      "qwen_judgment": "different",
+      "agreement": false,
+      "codex_reason_ko": "첫 풀이의 본문과 마지막400은 맞고 서두600 표기만 충돌한다. 둘째는 반려동물 집단과 전체 주민 집단을 혼동한다. 첫 풀이의 수학 오류를 확정할 수 없다.",
+      "qwen_reason": "CASE 1 correctly calculates dog legs using proper fractions and multiplication; CASE 2 incorrectly infers total citizens from cat ownership and pet ownership ratio without validating the assumption that all pet owners have either a dog or cat, leading to a mismatched base (applying ratio to wrong population segment)."
+    },
+    {
+      "pair_id": "pair-0986",
+      "codex_judgment": "different",
+      "qwen_judgment": "different",
+      "agreement": true,
+      "codex_reason_ko": "첫 풀이에는 올바른 저축식과 다른 최종12000이 있다. 둘째는 현재 나이61을 맞게 구하고 질문의 작년 나이로 한 번 더 이동하지 않았다.",
+      "qwen_reason": "CASE 1 incorrectly omits the initial $3,000 and family addition in the saving calculation, treating them as separate when they should be combined. CASE 2 correctly computes Tully's current age but then incorrectly subtracts 1 year to find 'a year ago' when the question asks for current age. The error mechanisms are distinct: one is misapplying addition of savings components, the other is misinterpreting the target quantity (current vs. past age)."
+    },
+    {
+      "pair_id": "pair-1983",
+      "codex_judgment": "uncertain",
+      "qwen_judgment": "different",
+      "agreement": false,
+      "codex_reason_ko": "첫 풀이의 계산과 마지막4개는 맞고 앞의48 표기만 충돌한다. 둘째는 남은 사과 수를 사람 수처럼 쓰는 관계와 최종값 문제가 있다.",
+      "qwen_reason": "CASE 1 correctly computes meatballs as 4 per person after 32 total, using proper division. CASE 2 incorrectly calculates remaining apples as 120 (should be 120), then divides by 3 to get 40 adults, but the reference shows 40, not 110—indicating a misapplication of the arithmetic step (110 is the intermediate value, not the final answer). The error mechanism is a mismatch in final interpretation, not a shared pattern like reversing a relation or wrong ratio base."
+    },
+    {
+      "pair_id": "pair-2070",
+      "codex_judgment": "different",
+      "qwen_judgment": "different",
+      "agreement": true,
+      "codex_reason_ko": "첫 풀이는 Ted가 먹은4개를 누락했다. 둘째는 한 시점의 달리기 능력을 여러 달 거리의 합계로 바꿨다.",
+      "qwen_reason": "CASE 1 incorrectly subtracts 4 cookies for Ted but the reference shows 144 - 6 - 4 = 134, indicating a mismatch in final calculation. CASE 2 correctly identifies the month when distance exceeds 26.3 miles (month 5), while the solution states 4 months, showing a failure to recognize that 24 < 26.3. The errors are distinct: one omits Ted's consumption in the final step, the other misidentifies the threshold month."
+    },
+    {
+      "pair_id": "pair-0528",
+      "codex_judgment": "different",
+      "qwen_judgment": "different",
+      "agreement": true,
+      "codex_reason_ko": "첫 풀이는 이미3명분인150을 개인별 금액으로 보고3을 다시 곱했다. 둘째는 맞는 월간 계산 절차를 쓰고 근거 없는500을 답했다.",
+      "qwen_reason": "Case 1 incorrectly multiplies total hours by number of men twice, inflating earnings; Case 2 incorrectly assumes 4 weeks/month and multiplies 50 by 4 to get 200 but reports 500, showing a multiplication error (50×10 instead of 50×4). The error mechanisms differ: one is double-counting labor, the other is applying wrong weekly-to-monthly ratio."
+    },
+    {
+      "pair_id": "pair-2036",
+      "codex_judgment": "different",
+      "qwen_judgment": "different",
+      "agreement": true,
+      "codex_reason_ko": "첫 풀이의 가장 이른 오류는 실제 지출300 대신 보유액600에3배를 적용한 것이다. 둘째는 올바른32*12를360으로 계산한 실행 오류다.",
+      "qwen_reason": "Case 1 incorrectly uses Sandi's original amount (600) instead of her spending (300) in the ratio for Gillian's spending, applying 3×600+150. Case 2 misapplies the per-person punch amount by using 2 cups × 12 ounces = 24 ounces per person instead of 2 glasses (each 12 oz), leading to 16×24=384 instead of 16×24=384 — but the error is in unit misapplication, not the same mechanism."
+    },
+    {
+      "pair_id": "pair-0100",
+      "codex_judgment": "different",
+      "qwen_judgment": "different",
+      "agreement": true,
+      "codex_reason_ko": "첫 풀이는 나눌 인원에서 본인을 빠뜨려4로 나눴다. 둘째는 높이9를 구한 뒤 면적을9로 다시 나누어 길이15를 답했다.",
+      "qwen_reason": "Case 1 incorrectly divides by 4 only (siblings) instead of 5 (including Jose), omitting self in the partition. Case 2 correctly computes height as 9 feet by dividing total area by length, but the reference wrongly states '70 feet' (should be square feet), a unit error, not a structural relation reversal."
+    },
+    {
+      "pair_id": "pair-1792",
+      "codex_judgment": "different",
+      "qwen_judgment": "different",
+      "agreement": true,
+      "codex_reason_ko": "첫 풀이는14개 낱개와20개 묶음을 함께 사는 것으로 비용을 더해 수량을 이중 계산했다. 둘째는 필요한 전체 예산5700을 모금액2850+잡비3000으로 바꿨다. 넓은 비용 오류만으로 같은 오류로 묶지 않는다.",
+      "qwen_reason": "CASE 1 incorrectly assumes Harry buys 2 packs of 10 balloons (20 total) when only 14 are needed, overcounting by 6 balloons; it then adds individual and pack costs without adjusting for excess. CASE 2 correctly calculates total needs and raises but misapplies the final division: it computes $2850/6 = $475, not $3000/6 = $500, showing an error in the final allocation step—specifically, failing to subtract the correct total raised from the total needed before dividing."
+    },
+    {
+      "pair_id": "pair-0968",
+      "codex_judgment": "different",
+      "qwen_judgment": "different",
+      "agreement": true,
+      "codex_reason_ko": "첫 풀이는 현재 연료14를 만충량처럼 사용하고 다시 트럭 연료를 뺐다. 둘째는 두 탱크 배수를 이미 반영하고 다시2를 곱했다.",
+      "qwen_reason": "CASE 1 incorrectly subtracts only the truck's current gas from total needed, omitting the car's required addition; it applies the wrong operation (subtraction instead of addition of deficits). CASE 2 correctly computes the price increase and doubling of capacity, but misapplies the doubling to total cost instead of just the tank capacity. The error mechanisms are distinct: one omits a required contribution (car's deficit), the other misapplies a ratio to the wrong base (doubling cost instead of capacity)."
+    },
+    {
+      "pair_id": "pair-1760",
+      "codex_judgment": "different",
+      "qwen_judgment": "different",
+      "agreement": true,
+      "codex_reason_ko": "첫 풀이는110+310+215+560+780을2175로 잘못 합산했다. 둘째는 빈 타이어2개에 이미1000의 공기가 있다고 취급했다. 참조 마지막 나눗셈의1550 표기는 오타지만 이 진단에는 영향을 주지 않는다.",
+      "qwen_reason": "CASE 1 incorrectly uses the reference to subtract only the snack calories, missing breakfast and lunch in the reference calculation, leading to a wrong total consumed. CASE 2's reference wrongly computes air needed as 1450 instead of 450, and divides by 50 to get 29 instead of 9, showing a fundamental error in interpreting 'air needed' as deficit rather than total volume to add. The mechanisms differ: one misapplies a missing component (breakfast/lunch), the other miscomputes the deficit and applies wrong ratio logic."
+    }
+  ]
+}

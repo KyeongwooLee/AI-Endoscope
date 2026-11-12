@@ -1,0 +1,88 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-3762-3
+response_sha256: 51d8dd7f3d353184944e036b826d9d6853148fe47337ce70f137de8ad88fff57
+
+=== QUESTION ===
+Between them, Mark and Sarah have 24 traffic tickets. Mark has twice as many parking tickets as Sarah, and they each have an equal number of speeding tickets. If Sarah has 6 speeding tickets, how many parking tickets does Mark have?
+=== MODEL SOLUTION ===
+Let's break down the problem step by step.
+
+1. **Total Tickets**: Mark and Sarah have 24 tickets in total.
+2. **Speeding Tickets**: Sarah has 6 speeding tickets.
+3. **Speeding Tickets for Both**: Since they have the same number of speeding tickets, both have 6 speeding tickets.
+
+4. **Total Speeding Tickets**: 
+   \[
+   \text{Total Speeding Tickets} = 6 (\text{Sarah}) + 6 (\text{Mark}) = 12
+   \]
+
+5. **Remaining Tickets**: Subtract the total speeding tickets from the total tickets:
+   \[
+   \text{Remaining Tickets} = 24 - 12 = 12
+   \]
+
+6. **Parking Tickets**: Mark has twice as many parking tickets as Sarah.
+
+7. **Sarah's Parking Tickets**:
+   \[
+   \text{Sarah's Parking Tickets} = \frac{\text{Remaining Tickets}}{2} = \frac{12}{2} = 6
+   \]
+
+8. **Mark's Parking Tickets**:
+   \[
+   \text{Mark's Parking Tickets} = 2 \times \text{Sarah's Parking Tickets} = 2 \times 6 = 12
+   \]
+
+9. **Final Answer**: Mark has 12 parking tickets.
+#### 12
+This completes the problem and the solution.
+=== REFERENCE SOLUTION (fallible aid) ===
+First figure out how many total speeding tickets the two people got by adding the 6 speeding tickets Sarah got to the equal number (6) that Mark got: 6 + 6 = <<6+6=12>>12
+Now subtract the combined number of speeding tickets from the total number of tickets to find the combined number of parking tickets: 24 - 12 = <<24-12=12>>12
+Now express Mark's number of parking tickets in terms of the number of parking tickets Sarah got: m = <<2=2>>2s
+We know that m + s = 12, so substitute in the value of m from the previous step to get 2s + s = 12
+Combine like terms to get 3s = 12
+Divide both sides of the equation to get s = <<4=4>>4
+Now multiply the number of parking tickets Sarah got by 2 to find the number Mark got: 4 * 2 = <<4*2=8>>8
+#### 8
+=== END ===

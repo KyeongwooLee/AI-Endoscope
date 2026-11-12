@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John reads his bible every day.  He reads for 2 hours a day and reads at a rate of 50 pages an hour.  If the bible is 2800 pages long how many weeks will it take him to read it all?
+SOLUTION: Step 1: Calculate the total number of pages John reads per day.
+John reads 2 hours a day and reads at a rate of 50 pages per hour.
+Total pages per day = 2 hours/day * 50 pages/hour
+
+Step 2: Calculate the total number of days required to read the entire bible.
+Total pages in the bible = 2800 pages
+Total days required = Total pages in the bible / Total pages per day
+
+Step 3: Convert the total days required into weeks.
+There are 7 days in a week.
+Total weeks required = Total days required / 7
+
+Final answer:
+#### 80
+#### 80
+#### 80
+#### 80

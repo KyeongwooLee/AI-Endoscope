@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Annie brought 20 brownies to school.  She gave half of them to the school administrator to put in the faculty lounge.  Of the remaining brownies, she gave half to her best friend, Carl, and another two to her friend, Simon.  How many brownies did she have left?
+SOLUTION: Let's solve this step by step:
+
+1. Annie brought 20 brownies to school.
+2. She gave half of them to the school administrator:
+   20 / 2 = 10 brownies given to the administrator
+3. The remaining brownies are:
+   20 - 10 = 10 brownies left
+4. Of the remaining brownies, she gave half to her best friend Carl:
+   10 / 2 = 5 brownies given to Carl
+5. She gave another 2 brownies to her friend Simon
+6. The brownies she has left are:
+   5 (to Carl) + 2 (to Simon) = 7 brownies
+
+#### 7
+Therefore, Annie has 7 brownies left.

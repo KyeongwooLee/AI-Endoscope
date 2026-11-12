@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$18.00","check":"Lyft costs $22 − $3 = $19, so the taxi costs $19 − $4 = $15. Including a 20% tip gives $15 × 1.20 = $18.","evidence_quote":"The Lyft ride costs $4 more than the Uber ride.","error_description":"The solution misstates the price relationship: Lyft costs $3 less than Uber. This leads to an incorrect taxi fare and total."}

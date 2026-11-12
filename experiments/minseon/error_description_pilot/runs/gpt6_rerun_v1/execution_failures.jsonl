@@ -1,0 +1,8 @@
+{"phase": "controls", "job_id": "control-2-one_correct-0", "error": "Unexpected tool activity for control-2-one_correct-0; do not accept experimental output"}
+{"phase": "controls", "job_id": "control-2-one_correct-1", "error": "Unexpected tool activity for control-2-one_correct-1; do not accept experimental output"}
+{"phase": "controls", "job_id": "control-2-negative_same_question-1", "error": "Unexpected tool activity for control-2-negative_same_question-1; do not accept experimental output"}
+{"phase": "controls", "job_id": "control-2-negative_same_question-0", "error": "Unexpected tool activity for control-2-negative_same_question-0; do not accept experimental output"}
+{"phase": "annotation", "job_id": "pilot130-E-train-633-2", "error": "Unexpected tool activity for pilot130-E-train-633-2; do not accept experimental output"}
+{"phase": "annotation", "job_id": "pilot130-E-train-2293-2", "error": "Unexpected tool activity for pilot130-E-train-2293-2; do not accept experimental output"}
+{"phase": "annotation", "job_id": "pilot130-E-train-2196-3", "error": "Unexpected tool activity for pilot130-E-train-2196-3; do not accept experimental output"}
+{"phase": "annotation", "job_id": "pilot130-E-train-2373-1", "error": "Unexpected tool activity for pilot130-E-train-2373-1; do not accept experimental output"}

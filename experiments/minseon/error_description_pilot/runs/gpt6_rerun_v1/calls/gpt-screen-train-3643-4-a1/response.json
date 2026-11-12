@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"60 chairs","check":"Indoor chairs: 8 × 3 = 24; outdoor chairs: 12 × 3 = 36. The total is 24 + 36 = 60, whereas the solution gives 48.","evidence_quote":"#### 48","error_description":"The final answer of 48 conflicts with the correct formulas shown, which yield 60. No correct worked final total is supplied."}

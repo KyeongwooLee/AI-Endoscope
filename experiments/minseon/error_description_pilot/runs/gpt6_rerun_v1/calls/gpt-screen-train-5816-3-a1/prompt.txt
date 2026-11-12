@@ -1,0 +1,16 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: If eight movie tickets cost 2 times as much as one football game ticket, and each movie ticket is sold at $30, calculate the total amount of money Chandler will pay if he buys eight movie tickets and five football game tickets.
+SOLUTION: #### 300
+
+Step 1: Calculate the cost of one football game ticket.
+Each movie ticket costs $30 and eight movie tickets cost 2 times as much as one football game ticket. Therefore, one football game ticket costs \( \frac{30 \times 8}{2} = 120 \) dollars.
+
+Step 2: Calculate the total amount for eight movie tickets.
+Chandler buys eight movie tickets, so the total cost for movie tickets is \( 8 \times 30 = 240 \) dollars.
+
+Step 3: Calculate the total amount for five football game tickets.
+Chandler buys five football game tickets, so the total cost for football game tickets is \( 5 \times 120 = 600 \) dollars.
+
+Step 4: Calculate the total amount of money Chandler will pay.
+The total amount Chandler will pay is the sum of the cost of movie tickets and football game tickets, which is \( 240 + 600 = 840 \) dollars.

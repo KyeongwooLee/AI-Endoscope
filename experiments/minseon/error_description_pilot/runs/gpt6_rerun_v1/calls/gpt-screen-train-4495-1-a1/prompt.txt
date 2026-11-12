@@ -1,0 +1,16 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: The population of an area starts at 100,000 people.  It increases by 60% over 10 years due to birth.  In that same time, 2000 people leave per year from emigration and 2500 people come in per year from immigration.  How many people are in the area at the end of 10 years?
+SOLUTION: Step 1: Calculate the increase in population due to birth over 10 years.
+Increase in population due to birth = 100,000 * 60% = 100,000 * 0.60 = 60,000 people
+
+Step 2: Calculate the net change in population over 10 years.
+Net change in population = Increase in population due to birth - (2000 people leave per year - 2500 people come in per year)
+Net change in population = 60,000 - (2000 - 2500) = 60,000 - (-500) = 60,000 + 500 = 60,500 people
+
+Step 3: Calculate the population at the end of 10 years.
+Population at the end of 10 years = Initial population + Net change in population
+Population at the end of 10 years = 100,000 + 60,500 = 160,500 people
+
+#### 160500
+The population of the area at the end of 10 years is 160,500 people.

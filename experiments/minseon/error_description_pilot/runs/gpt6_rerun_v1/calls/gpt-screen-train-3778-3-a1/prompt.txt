@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A highway is being extended from its current length of 200 miles up to 650 miles. 50 miles are built on the first day, and three times this amount are built on the second day.  How many miles still need to be added to the highway to finish extending it?
+SOLUTION: Step 1: Calculate the total miles built in the first two days.
+- Miles built on the first day: 50 miles
+- Miles built on the second day: 3 * 50 miles = 150 miles
+
+Total miles built in the first two days: 50 miles + 150 miles = 200 miles
+
+Step 2: Calculate the total miles still needed to be built to reach the new length.
+- New length of the highway: 650 miles
+- Total miles already built: 200 miles
+
+Miles still needed: 650 miles - 200 miles = 450 miles
+
+#### 450
+The highway still needs to be extended by 450 miles to complete the extension.

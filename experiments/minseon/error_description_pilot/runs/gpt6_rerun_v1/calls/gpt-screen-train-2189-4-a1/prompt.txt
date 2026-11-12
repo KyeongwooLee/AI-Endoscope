@@ -1,0 +1,12 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Tom weighs 150 kg.  He manages to hold 1.5 times his weight in each hand while wearing a weight vest weighing half his weight.  How much total weight was he moving with?
+SOLUTION: Tom's weight is 150 kg.
+He holds 1.5 times his weight in each hand, which is \( 1.5 \times 150 = 225 \) kg.
+
+He wears a vest weighing half his weight, which is \( \frac{150}{2} = 75 \) kg.
+
+Total weight moving is the sum of the weight in his hands and the weight of the vest: \( 225 + 75 = 300 \) kg.
+
+#### 300
+The total weight Tom was moving with is 300 kg.

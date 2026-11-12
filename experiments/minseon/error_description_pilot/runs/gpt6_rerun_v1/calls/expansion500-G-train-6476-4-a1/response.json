@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6476-4",
+  "response_sha256": "7df93c55c1f1754dcc2b34caea35dbdb3f16ab5a8bb661d68ed7f959bf80892a",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Geoff spent $60 on Tuesday which is equally between the two pairs of sneakers.\n$$\n\\text{Amount spent on Monday} = \\frac{\\text{Total spent on Tuesday}}{2} = \\frac{60}{2} = 30 \\text{ dollars}",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Today Geoff bought 2 pairs of sneakers and spent $60 equally between the two.",
+  "observed_error": "The response assigns today's $60 to Tuesday and divides it by the number of pairs to obtain Monday's spending.",
+  "violated_condition": "The $60 is the total for today's purchase; dividing by two gives the cost per pair, not another day's spending.",
+  "error_description": "The response labels the $60 purchase as Tuesday's spending and calculates Monday's spending as $60 divided by two pairs. Although the division is arithmetically correct, its result is a per-pair price, not Monday's total. The three-day sequence uses today's full purchase total as the Monday baseline.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

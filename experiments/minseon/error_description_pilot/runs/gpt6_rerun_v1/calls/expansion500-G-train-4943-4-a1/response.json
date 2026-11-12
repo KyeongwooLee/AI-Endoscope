@@ -1,0 +1,19 @@
+{
+  "source_id": "train-4943-4",
+  "response_sha256": "1b4cf5ae021785a1b11f626b8223dacd77a4c062a30aad37e4cdf40110cfc8b5",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "- For 200 dozen cookies, we need \\( \\frac{200}{12} \\times 600 \\) half-gallons.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "How many half-gallons of milk does Juan need to bake 200 dozen cookies?",
+  "observed_error": "Step 3 multiplies the milk amount already calculated for 200 dozen cookies by an additional 200/12.",
+  "violated_condition": "200 dozen equals 2400 cookies, so the milk quantity calculated for 2400 cookies already covers the requested batch.",
+  "error_description": "After converting 200 dozen to 2400 cookies and calculating the milk required for that batch, the response multiplies that same milk quantity by 200/12. This additional scaling changes the batch size even though the preceding calculation already applies to the requested 200 dozen cookies.",
+  "reference_review_reason": "The reference calculates milk for 200 cookies, omitting the question's dozen unit.",
+  "secondary_errors": [
+    "The subsequent simplification incorrectly equates (200/12) × 600 with 500 × 600; 200/12 does not equal 500."
+  ],
+  "uncertainty_note": null
+}

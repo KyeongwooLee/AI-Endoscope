@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5986-3",
+  "response_sha256": "67342c5b2575cb47aac065e26b4b88a577174f2862c2c6657721fc1c296bb746",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\text{Total Expenses} = \\$11,000 + \\$3,000 + \\$6,000 = \\$18,000",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Her parents can pay half the cost, and each semester Nancy can get a scholarship for $3,000 and a student loan for twice her scholarship amount.",
+  "observed_error": "The response evaluates $11,000 + $3,000 + $6,000 as $18,000 instead of $20,000.",
+  "violated_condition": "The combined tuition funding must equal the sum of the parents' contribution, scholarship, and student loan.",
+  "error_description": "The response correctly determines the three funding amounts but incorrectly adds $11,000, $3,000, and $6,000 to obtain $18,000. This arithmetic error understates the available tuition funding and consequently overstates the remaining tuition and required hourly wage.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

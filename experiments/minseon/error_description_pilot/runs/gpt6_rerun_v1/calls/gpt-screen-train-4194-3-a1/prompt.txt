@@ -1,0 +1,14 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Henry believes in the famous phrase, "An apple a day, keeps the doctor away." If a box contains 14 apples, how many weeks can Henry and his brother spend eating 3 boxes of apples if they each eat 1 apple a day?
+SOLUTION: #### 21
+Step 1: Calculate the total number of apples in 3 boxes.
+Total apples in 3 boxes = 3 boxes * 14 apples/box = 42 apples
+
+Step 2: Determine the total number of days they can eat 42 apples if each eats 1 apple a day.
+Total days = 42 apples / 1 apple/day = 42 days
+
+Step 3: Convert the total number of days into weeks.
+Total weeks = 42 days / 7 days/week = 6 weeks
+
+#### 6

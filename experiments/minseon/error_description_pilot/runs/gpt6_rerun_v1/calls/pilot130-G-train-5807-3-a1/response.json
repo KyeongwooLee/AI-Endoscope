@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5807-3",
+  "response_sha256": "4928a0ed6d1deeacc9c8acb576df108560fe905e89d8c79006e9677d8ecc87d9",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "They completed 1 round on Saturday.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "They completed 10 more round that day and then went home.",
+  "observed_error": "The response counts only the initial Saturday round, omitting the 10 additional rounds.",
+  "violated_condition": "Saturday's round count is 1 + 10, with each round taking 30 minutes.",
+  "error_description": "The response treats Saturday's initial round as the entire day's activity, omitting the 10 more rounds completed after regrouping. Saturday's time must include both the initial round and those additional rounds at 30 minutes each. The written multiplication is correct for its operand, but that operand understates Saturday's round count.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

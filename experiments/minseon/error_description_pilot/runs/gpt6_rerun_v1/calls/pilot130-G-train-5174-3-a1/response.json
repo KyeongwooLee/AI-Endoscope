@@ -1,0 +1,20 @@
+{
+  "source_id": "train-5174-3",
+  "response_sha256": "864dcfd474cbae2c70bf0e4188f079a6b33fc48dc348f6a627e0a79a23bb14c6",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Additional growth needed = Total growth needed - Normal growth per month",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Normally he grows 1/3 of an inch per month.",
+  "observed_error": "The response subtracts one month's normal growth from the entire year's height deficit.",
+  "violated_condition": "Growth quantities must cover the same interval: the annual deficit requires subtracting 12 months of normal growth.",
+  "error_description": "The response subtracts one month's normal growth, 1/3 inch, from the 6-inch growth needed by next year. This mixes monthly and annual quantities. It must account for twelve months of normal growth before converting the remaining annual growth requirement into average monthly hanging hours.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The written subtraction 6 inches - 1/3 inch is evaluated as 1/3 inch; it equals 17/3 inches, independently of the interval error.",
+    "The hours calculation labels the hanging growth rate as 1/12 hour rather than 1/12 inch per hour."
+  ],
+  "uncertainty_note": null
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7039-2",
+  "response_sha256": "f2a8b25bc1289cba1247506a32eb7d3db027d1b1ce2a97828d61bb56ca939966",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "1. Calculate the total distance Carson runs in 15 minutes:\n   - Jerry's round trip distance: \\(2 \\times 4\\) miles\n   - Total distance Carson runs: \\(2 \\times 4 = 8\\) miles",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Jerry can run from his house to his school and back in the time it takes his brother Carson to run to the school.",
+  "observed_error": "The response assigns Jerry's 8-mile round-trip distance and 15-minute one-way time to Carson.",
+  "violated_condition": "Carson runs the 4-mile one-way distance in Jerry's round-trip time, which is twice 15 minutes.",
+  "error_description": "The response treats Carson as running Jerry's 8-mile round-trip distance in Jerry's 15-minute one-way time. The question instead equates Carson's one-way travel time with Jerry's round-trip travel time. Thus both the distance and time used for Carson's speed are wrong; the displayed arithmetic itself is correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

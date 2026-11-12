@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3643-4",
+  "response_sha256": "9d197e6b25cb1ffd1ca6cb5feb55f2965dccfbecbd3025fbfe6a714b55fae7df",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 48\n#### 48",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "The bakery has 8 indoor tables and 12 outdoor tables. Each indoor table has 3 chairs and each outdoor table has 3 chairs.",
+  "observed_error": "The final total of 48 chairs contradicts the correctly written expression 8 × 3 + 12 × 3.",
+  "violated_condition": "Total chairs must equal 8 × 3 + 12 × 3.",
+  "error_description": "The response reports 48 chairs after correctly setting up 8 × 3 indoor chairs plus 12 × 3 outdoor chairs. That total does not equal the stated sum; the omitted numerical calculations do not reveal which arithmetic operation produced the discrepancy.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The final numerical error is observable, but its specific arithmetic source is not shown."
+}

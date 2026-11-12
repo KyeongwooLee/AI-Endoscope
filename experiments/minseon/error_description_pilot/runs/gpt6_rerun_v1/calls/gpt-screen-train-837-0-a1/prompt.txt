@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Mariel is a dog walker.  While walking her pack of dogs, she gets tangled up in the leashes of another dog walker and their 3 dogs.  There are 36 legs tangled up in leashes.  How many dogs is Mariel walking?
+SOLUTION: Let's denote the number of dogs Mariel is walking as \( x \).
+
+Each dog has 4 legs, and each person has 2 legs. Mariel and the other dog walker each have 2 legs.
+
+The total number of legs is given by:
+\[ 4x + 2 + 2 + 3 \times 2 = 36 \]
+
+Simplifying the equation:
+\[ 4x + 2 + 2 + 6 = 36 \]
+\[ 4x + 10 = 36 \]
+
+Subtract 10 from both sides:
+\[ 4x = 26 \]
+
+Divide by 4:
+\[ x = 6.5 \]
+
+Since the number of dogs must be a whole number, we need to re-evaluate the problem. The total number of legs (36) is an even number, and each dog and person has an even number of legs. This suggests a possible error in the problem statement or a need to recheck the interpretation. However, based on the given information and assuming no errors in the problem statement, the closest whole number solution would be:
+
+#### 7
+This is the closest whole number solution to the problem as stated.

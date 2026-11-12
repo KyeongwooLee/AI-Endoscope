@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Dianne runs a store that sells books.  37% of her 1000 customers end up returning their books.  Her books all cost 15 dollars apiece.  How much money does she keep in sales after subtracting the returns?
+SOLUTION: To find out how much money Dianne keeps in sales after subtracting the returns, we need to follow these steps:
+
+1. Calculate the total number of customers who return their books.
+2. Determine the total revenue from the returns.
+3. Subtract the revenue from returns from the total revenue from all customers.
+
+Step 1: Calculate the total number of customers who return their books.
+37% of 1000 customers return their books.
+\[ 37\% \text{ of } 1000 = \frac{37}{100} \times 1000 = 370 \text{ customers} \]
+
+Step 2: Determine the total revenue from the returns.
+Each book costs $15, and 370 customers return their books.
+\[ \text{Total revenue from returns} = 370 \times 15 = 5550 \text{ dollars} \]
+
+Step 3: Subtract the revenue from returns from the total revenue from all customers.
+The total revenue from all customers is the same as the total revenue from returns in this case because every returning customer is buying a new book.
+\[ \text{Total revenue from all customers} = 5550 \text{ dollars} \]
+
+Therefore, the amount of money Dianne keeps in sales after subtracting the returns is:
+#### 5550

@@ -1,0 +1,82 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-4239-3
+response_sha256: 7fc567a88771cc479aac38468e9ce94746c238d382b8561811217d0bdfb4f5d3
+
+=== QUESTION ===
+Alex was having a cookout Friday night and planned to serve burgers to his guests.  He planned to cook 3 burgers for each guest and had invited 10 friends over.  1 of his friends didn't eat meat and said they would bring their own food.  Another one of his friends didn't eat bread and would not need the buns.  The burger buns came 8 to a pack.  How many packs of buns did Alex need to buy?
+=== MODEL SOLUTION ===
+To determine how many packs of buns Alex needs to buy, let's break down the problem step by step:
+
+1. **Total Guests Invited**: Alex invited 10 friends over.
+2. **Burgers Per Guest**: He planned to cook 3 burgers for each guest.
+   \[
+   \text{Total burgers} = 10 \text{ guests} \times 3 \text{ burgers/guest} = 30 \text{ burgers}
+   \]
+
+3. **Burgers Not Necessitated by Specific Needs**: 
+   - One friend doesn't eat meat, so they won't need any burgers.
+   - One friend doesn't eat bread, so they won't need buns.
+   - Therefore, the total number of burgers not needed is:
+   \[
+   30 \text{ burgers} - 1 \text{ (meatless burger)} - 1 \text{ (breadless burger)} = 28 \text{ burgers}
+   \]
+
+4. **Buns Needed**: Each pack of buns contains 8 buns.
+   \[
+   \text{Number of packs needed} = \frac{28 \text{ burgers}}{8 \text{ buns/pack}} = 3.5 \text{ packs}
+   \]
+
+5. **Rounding Up**: Since Alex can't buy half a pack, he needs to round up to the next whole number.
+   \[
+   \text{Number of packs needed} = 4 \text{ packs}
+   \]
+
+#### 4
+Therefore, Alex needs to buy 4 packs of buns.
+=== REFERENCE SOLUTION (fallible aid) ===
+He invited 10 friends but he didn't need to cook for 1 of his friends so that left 10-1 = <<10-1=9>>9 friends to cook for.
+He was cooking 3 burgers per 9 guests so 3*9 = <<3*9=27>>27 burgers
+He needed 27 burger buns but 1 guest wouldn't eat the buns so now he needs 27-3 = <<27-3=24>>24
+He will need to buy 24 buns and they come 8 to a pack so he needs 24/8 = <<24/8=3>>3 packs of buns
+#### 3
+=== END ===

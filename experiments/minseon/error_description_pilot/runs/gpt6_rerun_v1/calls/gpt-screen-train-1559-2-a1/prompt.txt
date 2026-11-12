@@ -1,0 +1,30 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Maci is planning for the new school year and goes to the store to buy pens. She needs ten blue pens and 15 red pens. If a blue pen costs ten cents each and a red pen costs twice as much as the blue pen, how much money does Maci pay for the pens?
+SOLUTION: To calculate the total cost of the pens, we'll follow these steps:
+
+1. Determine the cost of one red pen.
+2. Calculate the total cost for the blue pens.
+3. Calculate the total cost for the red pens.
+4. Sum the costs to get the total amount Maci pays.
+
+Step 1: Cost of one red pen
+Cost of one blue pen = 10 cents
+Cost of one red pen = 2 * 10 cents = 20 cents
+
+Step 2: Total cost for the blue pens
+Number of blue pens = 10
+Cost per blue pen = 10 cents
+Total cost for blue pens = 10 * 10 cents = 100 cents
+
+Step 3: Total cost for the red pens
+Number of red pens = 15
+Cost per red pen = 20 cents
+Total cost for red pens = 15 * 20 cents = 300 cents
+
+Step 4: Total amount Maci pays
+Total cost for blue pens + Total cost for red pens
+= 100 cents + 300 cents = 400 cents
+
+#### 400
+Maci pays 400 cents for the pens.

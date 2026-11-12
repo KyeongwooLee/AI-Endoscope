@@ -1,0 +1,17 @@
+{
+  "source_id": "train-230-1",
+  "response_sha256": "6698c2a74d87a2c72c1f15e3ba023ed8a6935b7e531cd2024161ae214b07b98a",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\( \\frac{120}{2} = 60 \\div 2 = 30 \\)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "what's the average number of days the two take to read the book?",
+  "observed_error": "The response evaluates 120/2 by dividing the resulting 60 by two again.",
+  "violated_condition": "The arithmetic mean requires dividing the total 120 days by the two readers exactly once.",
+  "error_description": "The response correctly obtains a total of 120 days and writes the appropriate average, 120/2, but then equates that quotient to 60 divided by two. This introduces an extra division while executing the arithmetic for the two readers’ mean.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The opening and final answer of 15 are unexplained; the first explicit faulty calculation occurs in step 6."
+}

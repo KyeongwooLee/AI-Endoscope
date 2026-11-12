@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2869-2",
+  "response_sha256": "0c04be95d6e700f804a9a51f57c320fb8b59bb3221d6ee4fde7295e7ad1f9af9",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 90\nThis is the number of pages that remain in the pad.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "and another 10 pages for his math homework.",
+  "observed_error": "The response reports the remainder after science as the final remainder, omitting the math pages.",
+  "violated_condition": "The remaining pages must equal 120 minus the science pages minus another 10 math pages.",
+  "error_description": "The response correctly computes 30 pages for science and subtracts them from 120, but treats the resulting 90 pages as the final remainder. It omits the additional 10 pages used for math homework, so its subtraction does not account for both uses specified in the question.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

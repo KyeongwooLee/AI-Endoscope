@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3718-4",
+  "response_sha256": "cc8e34d2ec27018517422451985fe79e5e5f0f962013132f17f11dd6e1bda487",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "To find out how long it will take to make back his money, we add the initial investment to the daily profit:",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "How long will it take to make back his money?",
+  "observed_error": "After correctly calculating the recovery time, the response introduces an additional sum, subsequently adding the initial investment in dollars to the calculated days.",
+  "violated_condition": "Recovery time equals initial investment divided by daily net profit; dollars cannot be added to days.",
+  "error_description": "After correctly dividing the initial investment by daily net profit, the response introduces an extra addition to determine recovery time. It then adds the $100,000 investment to a duration in days, mixing incompatible units and counting the investment again after it was already included in the division.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

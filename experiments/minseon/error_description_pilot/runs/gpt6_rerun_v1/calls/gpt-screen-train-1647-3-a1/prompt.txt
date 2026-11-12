@@ -1,0 +1,26 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Ellie went to visit a circus with Sarah and they both got lost in the house of mirrors. They have to travel through the house of mirrors a few times before they finally get out and when they leave, they discuss how many times they've seen their own reflections. Sarah says that every time they were in the room with tall mirrors, she saw her reflection 10 times and every time they were in the room with wide mirrors, she saw her reflection 5 times. Ellie says that every time they were in the room with tall mirrors, she saw her reflection 6 times and every time they were in the room with wide mirrors she saw her reflection 3 times. They both passed through the room with tall mirrors 3 times each and they both passed through the room with wide mirrors 5 times each. In total, how many times did Sarah and Ellie see their reflections?
+SOLUTION: To solve this problem, let's break down the reflections Sarah and Ellie saw in each type of room.
+
+1. **Sarah's Reflections:**
+   - Tall mirrors: Sarah saw her reflection 10 times each time they were in the room.
+   - Wide mirrors: Sarah saw her reflection 5 times each time they were in the room.
+   - Total reflections in tall mirrors: \(3 \times 10 = 30\)
+   - Total reflections in wide mirrors: \(3 \times 5 = 15\)
+   - Sarah's total reflections: \(30 + 15 = 45\)
+
+2. **Ellie's Reflections:**
+   - Tall mirrors: Ellie saw her reflection 6 times each time they were in the room.
+   - Wide mirrors: Ellie saw her reflection 3 times each time they were in the room.
+   - Total reflections in tall mirrors: \(5 \times 6 = 30\)
+   - Total reflections in wide mirrors: \(5 \times 3 = 15\)
+   - Ellie's total reflections: \(30 + 15 = 45\)
+
+3. **Total Reflections:**
+   - Sarah's total reflections: 45
+   - Ellie's total reflections: 45
+   - Combined total reflections: \(45 + 45 = 90\)
+
+#### 90
+Ellie and Sarah together saw their reflections a total of 90 times.

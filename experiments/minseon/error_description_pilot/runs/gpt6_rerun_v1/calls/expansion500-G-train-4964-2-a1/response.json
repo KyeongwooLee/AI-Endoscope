@@ -1,0 +1,19 @@
+{
+  "source_id": "train-4964-2",
+  "response_sha256": "1ec12c4b29222d231d1d88c2a86c7216906b246edfbb38240e2c44b530faa658",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 1: Calculate the total number of messages posted by all members in a day.\n20 members * 50 messages/member = 1000 messages/day",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "the number of members in the group was 150 before the admin removed some",
+  "observed_error": "The response uses the 20 removed members to calculate a daily total labeled as belonging to all members.",
+  "violated_condition": "The original group contained 150 members; 20 is the removed subset, not the total membership.",
+  "error_description": "The response labels 20 × 50 as the daily message total for all members, although 20 counts only the removed members and the original group contained 150. The multiplication is executed correctly, but the selected membership count does not match the stated quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "After correctly finding 130 remaining members, the response calculates 130 × 7 as messages per week, omitting the rate of 50 messages per member per day. The written multiplication is correct, but it does not calculate weekly messages."
+  ],
+  "uncertainty_note": null
+}

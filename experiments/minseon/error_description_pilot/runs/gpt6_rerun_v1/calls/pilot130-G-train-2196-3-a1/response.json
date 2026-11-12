@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2196-3",
+  "response_sha256": "e5eac66c9c7ca61f430c359adaff7eb6a46acb14393795c3cd099facaa188dc4",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 260",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "John buys a pair of earbuds that cost $200.  If tax was 15%, how much did he pay after tax?",
+  "observed_error": "The final total of $260 is inconsistent with the correctly written tax and total-cost relations.",
+  "violated_condition": "The after-tax payment must equal $200 + ($200 × 0.15).",
+  "error_description": "The response reports an after-tax total of $260, which does not equal its written expression $200 + ($200 × 0.15). Its tax and addition relations are correct, but the omitted intermediate evaluations leave the specific arithmetic operation responsible for the discrepancy undetermined.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text supports an incorrect final total but does not establish whether multiplication, addition, or reporting produced it."
+}

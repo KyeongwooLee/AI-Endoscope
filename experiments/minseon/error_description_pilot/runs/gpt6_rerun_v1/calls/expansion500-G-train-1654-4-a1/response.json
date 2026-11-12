@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1654-4",
+  "response_sha256": "1e973ec41536e6b7c68f0f57ef9368851099c6839e60a54d93c56c8e1d641b2a",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Each gate is 3 feet wide",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "a small 3-foot wide gate to walk through and a larger 10-foot wide gate",
+  "observed_error": "The response counts two 3-foot gates before adding the 10-foot gate.",
+  "violated_condition": "There are exactly two gates, with widths 3 feet and 10 feet.",
+  "error_description": "The response treats both gates as 3 feet wide and then adds a separate 10-foot gate, counting an extra 3-foot opening. The question specifies only one 3-foot gate and one 10-foot gate. Its arithmetic follows the written operands correctly, but those operands overstate the gate width subtracted from the perimeter.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

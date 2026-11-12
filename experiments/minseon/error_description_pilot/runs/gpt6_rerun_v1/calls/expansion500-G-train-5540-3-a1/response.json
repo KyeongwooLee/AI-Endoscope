@@ -1,0 +1,19 @@
+{
+  "source_id": "train-5540-3",
+  "response_sha256": "cdf76a9f1009ff5d39c7156dedb33fe4bfbef1e7024dd597d3efaaa8e05ce3e6",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "Edna ran \\( \\frac{2}{3} \\) of the distance Mary ran.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Edna ran 2/3 of the distance of Edna",
+  "observed_error": "The response replaces Edna's own distance with Mary's distance as the basis for the two-thirds relation.",
+  "violated_condition": "As written, the question states E = (2/3)E, not E = (2/3)M.",
+  "error_description": "The response calculates Edna’s distance as two-thirds of Mary’s distance, although the question specifies two-thirds of Edna’s own distance. This changes the stated relation before any arithmetic is performed, and the subsequent expression for Lucy’s distance uses that unsupported replacement.",
+  "reference_review_reason": "The reference also substitutes Mary's distance for Edna's own distance, apparently repairing a possible question typo without stating the assumption.",
+  "secondary_errors": [
+    "The final value 4.5 does not equal the displayed difference expression. No intermediate numerical calculation identifies how this discrepancy arose."
+  ],
+  "uncertainty_note": "The question may contain a typo; under the apparent intended wording, the response's setup would be valid, but its final number would still disagree with its expression."
+}

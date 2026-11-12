@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7128-3",
+  "response_sha256": "fdda7fae0ec539088ff64c47b8d672ee4d1a8cdd5a31de20b796ba8cabea9744",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total primer cost: \\( 5 \\text{ gallons} \\times $30.00 \\text{ per gallon} = $150.00 \\).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Currently the primer is $30.00 a gallon and they are offering 20% off.",
+  "observed_error": "The response uses the undiscounted $150.00 primer cost in the total.",
+  "violated_condition": "The cost of five gallons of primer must include the 20% discount: 5 × $30.00 × (1 − 0.20).",
+  "error_description": "The response calculates five gallons of primer at the full $30.00 per gallon and carries that amount into the combined cost without applying the stated 20% discount. The multiplication is correct, but the primer spending must reflect the sale price.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

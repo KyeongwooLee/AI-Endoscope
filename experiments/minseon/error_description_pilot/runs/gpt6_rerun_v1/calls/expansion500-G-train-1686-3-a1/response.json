@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1686-3",
+  "response_sha256": "d12584bdb285cc150ded7c8d38fa22a594a591f6bbdb416b6d5fe99411e7baf8",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Bob logs a total of 500 hours in a month.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Every day, Bob logs 10 hours of work in his office. If he works for five days a week",
+  "observed_error": "The reported 500 hours does not equal the product specified by the response.",
+  "violated_condition": "Under the stated four-week assumption, monthly hours must equal 10 × 5 × 4.",
+  "error_description": "The response states the correct multiplication relation but reports 500 monthly hours, which is inconsistent with 10 hours per day, five days per week, and its assumed four weeks per month. No intermediate arithmetic is shown to locate the particular calculation that produced this total.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The month length is unspecified; the response explicitly assumes four weeks. The reported total is inconsistent even under that assumption."
+}

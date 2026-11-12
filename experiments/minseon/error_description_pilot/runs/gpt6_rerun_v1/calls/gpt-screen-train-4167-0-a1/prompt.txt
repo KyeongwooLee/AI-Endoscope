@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Andrew is having two of his friends over for a sleepover. For one friend, Brian, he asks his mother to buy 3 donuts. He asks for his other friend, Samuel, to get the same. A day before the sleepover Andrew ends up inviting two more friends and asks his mother to buy them the same amount of donuts. Just in case, Andrew’s mother wants to buy one more donut for each of Andrew’s friends. Andrew’s mother is going to buy the same amount of donuts for Andrew as everybody else. How many donuts will Andrew’s mother need to buy?
+SOLUTION: Step 1: Calculate the number of donuts for Brian and Samuel.
+Andrew asks for 3 donuts for Brian and 3 donuts for Samuel.
+3 + 3 = 6 donuts
+
+Step 2: Calculate the number of donuts for the two new friends.
+Andrew invites two more friends, so he asks for 6 donuts for each of them.
+6 + 6 = 12 donuts
+
+Step 3: Calculate the number of donuts for Andrew.
+Andrew's mother wants to buy one more donut for each of Andrew's friends.
+12 + 1 = 13 donuts
+
+Step 4: Calculate the total number of donuts for Andrew's mother.
+Andrew's mother needs to buy the same amount of donuts for Andrew as for the other friends.
+13 + 1 = 14 donuts
+
+#### 14
+Andrew's mother will need to buy 14 donuts.

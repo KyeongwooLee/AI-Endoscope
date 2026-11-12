@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3140-0",
+  "response_sha256": "32f29676a0ef62c22bbd949c154bbac6c79514741ca00cfe7cc15f9094f8a569",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Chairs for students = 150 - 15 - 30 - 30 = 85 chairs",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "The last two rows are then reserved for the parents and the rest of the rows are for the students.",
+  "observed_error": "The response evaluates 150 - 15 - 30 - 30 as 85 instead of 75.",
+  "violated_condition": "Student chairs equal the total chairs minus chairs reserved for awardees, administrators and teachers, and parents.",
+  "error_description": "The response correctly subtracts the three nonstudent allocations from 150 chairs, but incorrectly evaluates 150 - 15 - 30 - 30 as 85 chairs rather than 75. The subsequent occupied and vacant seat calculations propagate this arithmetic error in the student allocation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

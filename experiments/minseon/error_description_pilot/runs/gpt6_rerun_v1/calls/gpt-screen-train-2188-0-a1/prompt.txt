@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jerry takes 2 antacids that weigh 2 grams each and are 5% zinc by weight. Then he takes three more smaller antacids that weigh 1 gram each and have 15% zinc. How many milligrams of zinc does he eat?
+SOLUTION: Step 1: Calculate the total weight of the first 2 antacids.
+2 grams each * 2 = 4 grams
+
+Step 2: Calculate the amount of zinc in the first 2 antacids.
+4 grams * 5% = 0.2 grams
+
+Step 3: Calculate the total weight of the next 3 antacids.
+3 grams each * 3 = 9 grams
+
+Step 4: Calculate the amount of zinc in the next 3 antacids.
+9 grams * 15% = 1.35 grams
+
+Step 5: Calculate the total amount of zinc Jerry eats.
+0.2 grams + 1.35 grams = 1.55 grams
+
+Step 6: Convert grams to milligrams.
+1.55 grams * 1000 = 1550 milligrams
+
+#### 1550
+Jerry eats 1550 milligrams of zinc.

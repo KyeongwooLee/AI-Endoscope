@@ -1,0 +1,1 @@
+{"status":"answer_conflict","independent_answer":"8 students","check":"80% of 40 is 32, and 25% of 32 is 8. The worked solution and final sentence are correct, but the leading answer marker conflicts with them.","evidence_quote":"#### 16","error_description":"The leading marker gives 16, while the correct worked final answer is 8."}

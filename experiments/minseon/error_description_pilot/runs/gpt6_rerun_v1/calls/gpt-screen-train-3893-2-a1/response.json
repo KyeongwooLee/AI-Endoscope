@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$21.00","check":"Each pile contains 10 coins, so the total is 40×$0.25 + 60×$0.10 + 90×$0.05 + 50×$0.01 = $21.00. The solution omits the factor of 10 for every coin type.","evidence_quote":"4 \\times 0.25 = 1","error_description":"The solution treats pile counts as coin counts, producing $2.10 instead of $21.00."}

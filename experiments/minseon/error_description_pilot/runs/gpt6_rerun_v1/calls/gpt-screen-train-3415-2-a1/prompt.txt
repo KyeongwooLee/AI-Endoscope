@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jose owns a swimming pool. He charges $3 for kids and twice that amount for adults. If 8 kids and 10 adults swim in his swimming pool per day, how much money will he earn per week?
+SOLUTION: Step 1: Calculate the daily earnings from kids.
+Jose charges $3 for kids. Therefore, the daily earnings from kids are:
+\[ 3 \times 8 = 24 \]
+
+Step 2: Calculate the daily earnings from adults.
+Jose charges twice the amount for adults, so the daily earnings from adults are:
+\[ 2 \times 3 = 6 \]
+
+Step 3: Calculate the total daily earnings.
+The total daily earnings from both kids and adults are:
+\[ 24 + 6 = 30 \]
+
+Step 4: Calculate the weekly earnings.
+There are 7 days in a week, so the weekly earnings are:
+\[ 30 \times 7 = 210 \]
+
+#### 210
+The total amount of money Jose will earn per week is $210.

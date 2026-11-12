@@ -1,0 +1,15 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jame's buys 100 head of cattle for $40,000.  It cost 20% more than that to feed them.  They each weigh 1000 pounds and sell for $2 per pound.  How much profit did he make?
+SOLUTION: Step 1: Calculate the total cost of feeding the cattle.
+Cost per head = $40,000 / 100 = $400
+Total cost of feeding = $400 * 100 = $40,000
+Step 2: Calculate the total cost of buying and feeding the cattle.
+Total cost = $40,000 + $40,000 = $80,000
+Step 3: Calculate the total weight of the cattle.
+Total weight = 100 * 1000 = 100,000 pounds
+Step 4: Calculate the total revenue from selling the cattle.
+Total revenue = 100,000 * $2 = $200,000
+Step 5: Calculate the profit.
+Profit = Total revenue - Total cost = $200,000 - $80,000 = $120,000
+#### 120000

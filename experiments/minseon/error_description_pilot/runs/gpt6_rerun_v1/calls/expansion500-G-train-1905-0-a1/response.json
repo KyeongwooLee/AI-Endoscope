@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1905-0",
+  "response_sha256": "306f42e260c0accef752c0130061ac674d27ed2120f1365364fe8dbcf3bf6be6",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "16 washers used - 20 washers bought = -4 washers",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "After he completes the bathroom job, how many washers will be remaining in the bag?",
+  "observed_error": "The response subtracts washers bought from washers used to calculate the remaining washers.",
+  "violated_condition": "Washers remaining equal washers bought minus washers used.",
+  "error_description": "The response calculates washers remaining as 16 used minus 20 bought, reversing the required subtraction of usage from the initial supply. The written arithmetic is correct, but the relation produces a negative remainder and an unsupported shortage claim. The final sentence contradicts that negative result.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

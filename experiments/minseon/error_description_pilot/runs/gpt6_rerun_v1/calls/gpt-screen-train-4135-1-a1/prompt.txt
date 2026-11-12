@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Four adults with 32 teeth went to the dentist for a checkup after realizing they were having severe tooth pain. They were found to have different numbers of damaged teeth, and each person had some teeth removed. The first person had 1/4 of all his teeth removed, and the second person had 3/8 of his teeth removed, the third person had half of his teeth removed, while the last person only had 4 teeth removed. What's the total number of teeth removed at the dental clinic?
+SOLUTION: Step 1: Calculate the number of teeth removed by the first person.
+First person had 1/4 of all teeth removed.
+1/4 * 32 = 8 teeth removed
+
+Step 2: Calculate the number of teeth removed by the second person.
+Second person had 3/8 of all teeth removed.
+3/8 * 32 = 12 teeth removed
+
+Step 3: Calculate the number of teeth removed by the third person.
+Third person had half of all teeth removed.
+1/2 * 32 = 16 teeth removed
+
+Step 4: The fourth person had 4 teeth removed.
+
+Step 5: Add up all the teeth removed.
+8 + 12 + 16 + 4 = 30 teeth removed
+
+#### 30
+The total number of teeth removed at the dental clinic is 30.

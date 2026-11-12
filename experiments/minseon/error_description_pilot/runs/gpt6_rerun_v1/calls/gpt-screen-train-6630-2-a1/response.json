@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$30 goes to contingency funds.","check":"The pantry and crisis fund receive $80 and $120, leaving $40. Livelihood receives $10, so contingency receives $40 − $10 = $30.","evidence_quote":"$240 - ($80 + $120 + $10) = $50","error_description":"Step 5 incorrectly evaluates the subtraction: $240 − $210 equals $30, not $50."}

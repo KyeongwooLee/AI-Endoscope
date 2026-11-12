@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"Angela has 75 insects.","check":"Jacob has 5 × 30 = 150 insects, so Angela has 150 ÷ 2 = 75. The solution gives correct formulas but reports 15 as its final answer.","evidence_quote":"Final answer: 15","error_description":"The final number 15 conflicts with the value 75 obtained from the solution's stated formulas."}

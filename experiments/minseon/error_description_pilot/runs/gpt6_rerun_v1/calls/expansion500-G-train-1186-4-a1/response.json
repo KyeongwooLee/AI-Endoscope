@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1186-4",
+  "response_sha256": "b7da0ef5b9b62bd34ffdade270f011e3ad59ab08fde8aaf9360dd136d95a8c00",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The inspector is paid 80% less than the regular rate, which is $150 per hour.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He also pays an inspector 80% less to make sure it is OK.",
+  "observed_error": "The response applies the inspector's reduction to the contractor's hourly rate and treats the result as the inspector's total charge.",
+  "violated_condition": "The inspector's total payment is 20% of the contractor's total payment, not 20% of the contractor's hourly rate.",
+  "error_description": "The response bases the inspector's 80% reduction on $150 per hour instead of the contractor's $2250 total charge. It then adds the resulting $30 as a complete inspection cost. The subtraction is correct, but the percentage uses the wrong comparison quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

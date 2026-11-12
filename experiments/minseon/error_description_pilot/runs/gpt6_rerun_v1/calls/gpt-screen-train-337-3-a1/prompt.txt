@@ -1,0 +1,39 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: At a gathering, it was reported that 26 people took wine, 22 people took soda, and 17 people took both drinks. If each person could have taken one or more drinks regardless of what was reported, how many people altogether were at the gathering?
+SOLUTION: To find the total number of people at the gathering, we need to consider the overlap between those who took wine and those who took soda. Here’s the step-by-step reasoning:
+
+1. **Identify the given numbers:**
+   - People who took wine = 26
+   - People who took soda = 22
+   - People who took both drinks = 17
+
+2. **Use the principle of inclusion-exclusion to find the total number of people:**
+   - Let \( W \) be the set of people who took wine.
+   - Let \( S \) be the set of people who took soda.
+   - We need to find \( |W \cup S| \), the number of people who took either wine or soda or both.
+
+3. **Apply the formula for the union of two sets:**
+   \[
+   |W \cup S| = |W| + |S| - |W \cap S|
+   \]
+   where:
+   - \( |W| = 26 \)
+   - \( |S| = 22 \)
+   - \( |W \cap S| = 17 \)
+
+4. **Substitute the values into the formula:**
+   \[
+   |W \cup S| = 26 + 22 - 17
+   \]
+
+5. **Calculate the result:**
+   \[
+   |W \cup S| = 38 - 17 = 21
+   \]
+
+6. **Conclusion:**
+   The total number of people at the gathering is 21.
+
+#### 21
+The final answer is 21.

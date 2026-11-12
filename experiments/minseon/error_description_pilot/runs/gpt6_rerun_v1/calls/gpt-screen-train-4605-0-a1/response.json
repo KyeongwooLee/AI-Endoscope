@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$20","check":"In 2 weeks, Jane gets 10 × 6 × 2 = 120 eggs, or 10 dozen. Selling them at $2 per dozen earns $20.","evidence_quote":"120 eggs * $2/dozen = $240","error_description":"The solution fails to convert 120 eggs into 10 dozen before applying the price per dozen, producing $240 instead of $20."}

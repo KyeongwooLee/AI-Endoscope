@@ -1,0 +1,29 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: If it takes 8 days for 3 builders to build a cottage. How long will it take 6 builders to build the same size cottage working at the same rate?
+SOLUTION: Step 1: Determine the total amount of work done by the builders in one day.
+Since 3 builders can build the cottage in 8 days, we can say that 3 builders can complete the cottage in 8 days.
+
+Step 2: Calculate the work rate of 3 builders.
+The total amount of work is 1 cottage, and it's done by 3 builders in 8 days.
+So, the work rate of 3 builders is 1 cottage / (3 builders * 8 days).
+
+Step 3: Calculate the total work done by 3 builders in 1 day.
+To find the work done by 3 builders in one day, we divide the total work by the number of builders:
+\[ \text{Work done by 3 builders in 1 day} = \frac{1}{(3 builders * 8 days)} \]
+
+Step 4: Calculate the work rate of 6 builders.
+Since 6 builders work at the same rate as 3 builders, the work rate of 6 builders is twice the work rate of 3 builders.
+
+Step 5: Calculate the time it takes for 6 builders to complete the cottage.
+To find the time it takes for 6 builders to complete the cottage, we take the reciprocal of the work rate of 6 builders:
+\[ \text{Time for 6 builders} = \frac{1}{2} \times \text{Work rate of 3 builders in 1 day} \]
+
+Step 6: Substitute the work rate of 3 builders in 1 day from Step 2 into Step 5.
+\[ \text{Time for 6 builders} = \frac{1}{2} \times \frac{1}{(3 builders * 8 days)} \]
+
+Step 7: Simplify the expression.
+\[ \text{Time for 6 builders} = \frac{1}{16} \text{ days} \]
+
+#### 16
+The answer is 16 days.

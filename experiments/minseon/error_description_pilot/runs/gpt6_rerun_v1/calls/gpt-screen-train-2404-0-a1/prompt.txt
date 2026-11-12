@@ -1,0 +1,11 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Tommy has 3 toy cars. His neighbor, Jessie, has 3 cars too. Jessie's older brother has 5 more cars than Tommy and Jessie. How many cars do the three of them have altogether?
+SOLUTION: Step 1: Tommy has 3 toy cars.
+Step 2: Jessie has 3 toy cars.
+Step 3: Jessie's older brother has 5 more cars than Tommy and Jessie combined.
+Step 4: Calculate the total number of cars Tommy and Jessie have together: 3 + 3 = 6 cars.
+Step 5: Add the number of cars Jessie's older brother has: 6 + 5 = 11 cars.
+Step 6: The total number of cars the three of them have altogether is 11.
+
+#### 11

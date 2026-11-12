@@ -1,0 +1,33 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Walter fell from the eighth platform of some scaffolding and fell past David after falling 4 meters. If he fell for an additional three more times that depth before hitting the ground, and the platforms are evenly spaced out in height, what platform was David on?
+SOLUTION: Let's break down the problem step by step:
+
+1. **Total distance fallen by Walter:**
+   - Walter fell 4 meters past David.
+   - He then fell an additional three times that depth before hitting the ground.
+   - Therefore, the total distance Walter fell is:
+     \[
+     4 \text{ meters} + 3 \times 4 \text{ meters} = 4 \text{ meters} + 12 \text{ meters} = 16 \text{ meters}
+     \]
+
+2. **Distance to David:**
+   - Walter fell past David, indicating that David was at a lower level than the eighth platform.
+   - Walter fell 16 meters in total.
+   - He fell past David after 4 meters, meaning David was 4 meters above the eighth platform.
+
+3. **Platform calculation:**
+   - Walter fell 16 meters in total.
+   - He fell past David after 4 meters.
+   - Therefore, David was on the 5th platform because:
+     \[
+     16 \text{ meters} - 4 \text{ meters} = 12 \text{ meters}
+     \]
+     - Since the platforms are evenly spaced:
+     \[
+     12 \text{ meters} \div \text{distance between platforms} = 5 \text{ platforms}
+     \]
+
+Final Answer:
+#### 5
+David was on the 5th platform.

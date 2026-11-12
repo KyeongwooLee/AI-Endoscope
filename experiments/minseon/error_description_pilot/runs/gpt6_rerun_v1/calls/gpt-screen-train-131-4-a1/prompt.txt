@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Studying for her test, Mitchell had read ten chapters of a book before 4 o'clock. When it clocked 4, Mitchell had read 20 pages of the 11th chapter of the book she was studying from. After 4 o'clock, she didn't read the remaining pages of chapter eleven but proceeded and read 2 more chapters of the book. If each chapter in the book had 40 pages, calculate the total number of pages that Mitchell had read altogether?
+SOLUTION: #### 198
+
+Step 1: Calculate the number of pages read before 4 o'clock.
+Mitchell read 10 chapters, each with 40 pages.
+10 chapters * 40 pages/chapter = 400 pages
+
+Step 2: Calculate the number of pages read from the 11th chapter.
+Mitchell read 20 pages from the 11th chapter.
+
+Step 3: Calculate the total number of pages read before 4 o'clock.
+400 pages + 20 pages = 420 pages
+
+Step 4: Calculate the number of pages read after 4 o'clock.
+Mitchell read 2 more chapters.
+2 chapters * 40 pages/chapter = 80 pages
+
+Step 5: Calculate the total number of pages read altogether.
+420 pages + 80 pages = 500 pages
+
+Step 6: The total number of pages Mitchell had read altogether is 500.

@@ -1,0 +1,19 @@
+{
+  "source_id": "train-4725-4",
+  "response_sha256": "897a943114407aaf3f3ad1cc33dd2c1f3e7a272a39a6f30083f067c6704b1f38",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\text{Number of beavers per human} = \\frac{2}{19}",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "for every beaver there are 19 humans.",
+  "observed_error": "Step 4 assigns 2/19 to the beavers-per-human ratio.",
+  "violated_condition": "One beaver per 19 humans requires a beavers-per-human ratio of 1/19.",
+  "error_description": "The response sets the number of beavers per human to 2/19, although the question specifies 19 humans for each single beaver. The numerator must represent one beaver when the denominator represents 19 humans. This is an incorrect ratio, rather than an arithmetic evaluation error.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Step 5 independently uses the reciprocal of beavers per human to obtain moose per human; the required relation multiplies beavers per human by one moose per two beavers."
+  ],
+  "uncertainty_note": null
+}

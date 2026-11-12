@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$600 more","check":"The new weight is 400 × 1.5 = 600 pounds, so the gain is 200 pounds. The increase in value is 200 × $3 = $600.","evidence_quote":"#### 200","error_description":"The solution gives correct formulas but reports 200 as the final answer, conflicting with the $600 increase in value those formulas yield."}

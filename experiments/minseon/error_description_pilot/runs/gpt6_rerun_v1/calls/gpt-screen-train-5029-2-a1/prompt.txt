@@ -1,0 +1,26 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Maria found a store that sells handmade sweaters for $30 and a handmade scarf for $20. She wants to buy one for everyone in her family. She will buy 6 sweaters and 6 scarves. If she has saved $500, how much will be left in her savings after buying all these?
+SOLUTION: Step 1: Calculate the total cost of the sweaters.
+Cost of one sweater = $30
+Number of sweaters = 6
+Total cost of sweaters = $30 × 6
+
+Step 2: Calculate the total cost of the scarves.
+Cost of one scarf = $20
+Number of scarves = 6
+Total cost of scarves = $20 × 6
+
+Step 3: Calculate the total cost of all items.
+Total cost = Total cost of sweaters + Total cost of scarves
+
+Step 4: Subtract the total cost from Maria's savings.
+Maria's savings = $500
+Remaining savings = Maria's savings - Total cost
+
+Step 5: Calculate the final amount left in her savings.
+Final amount left = Remaining savings
+
+#### 300
+Explanation:
+Maria will spend $180 on the sweaters and $120 on the scarves, totaling $300. Subtracting this from her $500 savings, she will have $200 left.

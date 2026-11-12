@@ -1,0 +1,38 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Ben spends 20% of his after-tax income on his car. If his car payment is $400 and he pays 1/3 of his gross income in taxes, how much does he make per month before taxes?
+SOLUTION: To solve this problem, let's break it down step by step.
+
+1. **Identify the given information:**
+   - Ben's car payment: $400
+   - This amount represents 20% of his after-tax income.
+   - Ben pays 1/3 of his gross income in taxes.
+
+2. **Calculate Ben's gross income before taxes:**
+   - Since 20% of his gross income equals his car payment of $400, we can set up the equation:
+     \[
+     0.20 \times \text{Gross Income} = 400
+     \]
+   - To find the gross income, we divide both sides by 0.20:
+     \[
+     \text{Gross Income} = \frac{400}{0.20} = 2000
+     \]
+
+3. **Calculate Ben's after-tax income:**
+   - Ben pays 1/3 of his gross income in taxes, so his after-tax income is:
+     \[
+     \text{After-Tax Income} = \text{Gross Income} - \text{Taxes}
+     \]
+   - We know the taxes paid are 1/3 of the gross income, so:
+     \[
+     \text{Taxes} = \frac{1}{3} \times 2000 = 666.67 \text{ (approximately)}
+     \]
+   - Therefore, after-tax income:
+     \[
+     \text{After-Tax Income} = 2000 - 666.67 = 1333.33 \text{ (approximately)}
+     \]
+
+4. **Conclusion:**
+   - Ben's monthly gross income before taxes is $2000.
+
+#### 2000

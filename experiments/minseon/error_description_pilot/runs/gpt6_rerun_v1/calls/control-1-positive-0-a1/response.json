@@ -1,0 +1,1 @@
+{"case1_error":"Treats 12 more green apples as 12 green apples, omitting the 16-apple baseline.","case2_error":"Treats 8 more seniors as 8 seniors, omitting the 20-member baseline.","reason":"Both mistake a comparative increase for the second group's total; their subsequent additions are correct.","judgment":"same"}

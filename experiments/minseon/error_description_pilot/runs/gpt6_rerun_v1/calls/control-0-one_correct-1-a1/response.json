@@ -1,0 +1,1 @@
+{"case1_error":"No error: 15 + 5 = 20 apples correctly answers the question.","case2_error":"Uses George’s orange count instead of Amelia’s apple count as the base for adding 5.","reason":"Case 1 has no mathematical error; case 2 uses an erroneous relation, although its arithmetic is correct.","judgment":"uncertain"}

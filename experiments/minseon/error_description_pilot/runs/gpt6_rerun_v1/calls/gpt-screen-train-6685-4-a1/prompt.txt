@@ -1,0 +1,28 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Heather made four times as many pizzas as Craig made on their first day at work at Mr. Pizza Inns. On their second day, Heather made 20 fewer pizzas than Craig's number. If Craig made 40 pizzas on their first day and 60 more pizzas on their second day than their first day, calculate the total number of pizzas the two made together in the two days.
+SOLUTION: Step 1: Determine the number of pizzas Heather made on the first day.
+Heather made four times as many pizzas as Craig.
+Craig made 40 pizzas on the first day.
+Heather made 4 * 40 = 160 pizzas on the first day.
+
+Step 2: Determine the number of pizzas Heather made on the second day.
+Heather made 20 fewer pizzas than Craig.
+Craig made 60 more pizzas on the second day than his first day.
+Craig made 60 pizzas on the second day.
+Heather made 60 - 20 = 40 pizzas on the second day.
+
+Step 3: Calculate the total number of pizzas Heather made.
+Heather made 160 pizzas on the first day and 40 pizzas on the second day.
+Total number of pizzas Heather made = 160 + 40 = 200
+
+Step 4: Calculate the total number of pizzas Craig made.
+Craig made 40 pizzas on the first day and 60 more on the second day than the first.
+Craig made 40 + 60 = 100 pizzas on the second day.
+Total number of pizzas Craig made = 40 + 100 = 140
+
+Step 5: Calculate the total number of pizzas made by both Heather and Craig.
+Total number of pizzas made by both = 200 (Heather) + 140 (Craig) = 340
+
+#### 340
+This is the total number of pizzas made by both Heather and Craig together in the two days.

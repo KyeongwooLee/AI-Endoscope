@@ -1,0 +1,122 @@
+{
+  "frozen_at": "2026-11-07T16:34:00+00:00",
+  "protocol": {
+    "prompts": {
+      "E": {
+        "file": "prompts/E_v1.txt",
+        "sha256": "c80af30d6932927ea055f448925f4b49c8eb81962b6ae76bb3e86ee0b796afa0"
+      },
+      "G": {
+        "file": "prompts/G_v1.txt",
+        "sha256": "1ea5a31502156d2d826df1d68d17084aeec0ac6b5da1bc6886c3f9bc616ab49e"
+      }
+    },
+    "annotation": {
+      "schema_version": "edp-annotation-v1",
+      "language": "en",
+      "word_range": [
+        25,
+        60
+      ],
+      "max_attempts": 2,
+      "statuses": [
+        "supported_error",
+        "insufficient_evidence",
+        "no_error_observed",
+        "ambiguous"
+      ],
+      "annotator": {
+        "route": "native_agent_direct_file_annotation",
+        "provider": "Anthropic",
+        "interface": "Claude Code (VS Code extension), executing coding agent",
+        "model_identifier": "claude-opus-5-5",
+        "model_identifier_source": "exposed in the executing agent's own system context",
+        "snapshot_version_known": false,
+        "exact_model_version_known": false,
+        "decoding_settings": "not exposed to the agent",
+        "api_request_log": "none (no API endpoint; file-based packet export/import)",
+        "condition_context_isolated": false,
+        "isolation_note": "E and G were written by the same agent in one continuing session context. Exporting separate files does not create isolated model contexts, so the G-E contrast is an exploratory direct-annotation pilot, not the protocol-compliant primary result. Packets are preserved for a later isolated run."
+      }
+    },
+    "embedding": {
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "library": "sentence-transformers",
+      "output": "dense only (CLS pooling per model's 1_Pooling config), L2-normalized, cosine",
+      "max_tokens": 8192,
+      "precision": "float32",
+      "batch_size": 8,
+      "device": "auto"
+    },
+    "retrieval": {
+      "k": 5,
+      "random_seed": 20261108,
+      "methods": [
+        "R",
+        "E",
+        "G",
+        "Q",
+        "Random"
+      ]
+    },
+    "review": {
+      "assignment_seed": 20261108,
+      "second_review_fraction": 0.2
+    },
+    "bootstrap": {
+      "draws": 2000,
+      "seed": 20261108,
+      "level": 0.95,
+      "contrasts": [
+        [
+          "G",
+          "E"
+        ],
+        [
+          "G",
+          "R"
+        ]
+      ]
+    },
+    "clustering": {
+      "k_values": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "n_init": 10,
+      "representations": [
+        "R",
+        "E",
+        "G",
+        "Q"
+      ]
+    },
+    "sample_manifest_sha256": "4c5fd9b26e66fb09d1d0286209b5822efc2956cf2ede46c9af8af3a22740cd13",
+    "split_manifest_sha256": "bb7d4c510043fe6806531a2f5e7a69b06b846ebcb4f35d3eb61940854bd3b9c7",
+    "metrics": {
+      "primary": "mean over the 20 frozen queries of (#independently human-reviewed SAME neighbors among top-5)/5; abstained/missing slots = 0; adjudicated uncertain = 0 (conservative), 1 in optimistic bound; unreviewed = missing -> no score",
+      "primary_contrast": "G - E",
+      "secondary_contrast": "G - R",
+      "uncertainty": "2000 paired bootstrap draws over query questions; 95% percentile interval",
+      "retrieval": "cosine on L2-normalized BGE-M3 dense vectors, no PCA/clustering, ties by source_id; abstaining E/G gallery entries excluded; abstaining query -> empty list"
+    },
+    "embedding_inputs": {
+      "R": "Question: {question}\\nSolution: {response}",
+      "Q": "{question}",
+      "E": "explanation (supported_error only)",
+      "G": "error_description (supported_error only)"
+    },
+    "reviewer_guide_sha256": "8de0fff098947addfb1b87d26255ae74c145ffbd08aa0388d720f57cf210e937",
+    "prompt_history_sha256": "5a7ec694445e326fc215f11197a9c696ce0ab1eb7639f0def10bebf3845b5fa2",
+    "development_phase_used": "dev"
+  },
+  "protocol_sha256": "57917ca59b00f225fdd78c8c623c4f2757d640625ea5924cf47ce8f8ddc43e88"
+}

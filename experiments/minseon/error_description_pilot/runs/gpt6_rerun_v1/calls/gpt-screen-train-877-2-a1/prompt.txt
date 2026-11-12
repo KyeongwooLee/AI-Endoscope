@@ -1,0 +1,28 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Kimberly went strawberry picking with her family over the weekend. She picked 8 times the amount of strawberries her brother picked and her parents picked 93 strawberries less than her. If her brother picked 3 baskets each containing 15 strawberries, how many strawberries would they each have if they divide the total number of strawberries equally amongst them?
+SOLUTION: Let's break down the problem step by step:
+
+1. **Brother's Strawberries:**
+   - Brother picked 3 baskets each containing 15 strawberries.
+   - Number of strawberries the brother picked = 3 * 15 = 45 strawberries.
+
+2. **Kimberly's Strawberries:**
+   - Kimberly picked 8 times the amount of strawberries her brother picked.
+   - Number of strawberries Kimberly picked = 8 * 45 = 360 strawberries.
+
+3. **Parents' Strawberries:**
+   - Parents picked 93 strawberries less than Kimberly.
+   - Number of strawberries the parents picked = 360 - 93 = 267 strawberries.
+
+4. **Total Strawberries:**
+   - Total strawberries = Brother's strawberries + Kimberly's strawberries + Parents' strawberries.
+   - Total strawberries = 45 + 360 + 267 = 672 strawberries.
+
+5. **Equal Division:**
+   - Total number of people = Kimberly + Brother + Parents = 3 + 1 + 1 = 5 people.
+   - Number of strawberries each person would have = Total strawberries / Number of people.
+   - Number of strawberries each person would have = 672 / 5 = 134.4 strawberries.
+
+#### 134.4
+Kimberly and her family would each have 134.4 strawberries.

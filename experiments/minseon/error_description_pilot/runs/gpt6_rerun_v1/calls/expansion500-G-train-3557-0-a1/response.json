@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3557-0",
+  "response_sha256": "992ef81bffd949a567b7953aef8ba6efd181be1f2bafd6c7bf00dc14a3dc6625",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The number of jumps required to reach 80% full is:\n   \\[\n   \\frac{1,600,000 \\text{ ml}}{400 \\text{ ml/jump}} = 4,000 \\text{ jumps}\n   \\]",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Jim has to get everyone out of the pool, clean, and refill it when it gets below 80% full.",
+  "observed_error": "The response divides the water remaining at 80% capacity by the water lost per jump.",
+  "violated_condition": "Jumps to reach 80% full equal the loss from full capacity to 80% capacity divided by 400 ml per jump.",
+  "error_description": "The response uses 1,600,000 ml, the water remaining at 80% full, as the amount splashed out when calculating jumps. It should use the decrease from full capacity to that level. The division is executed correctly, but its numerator represents the wrong quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

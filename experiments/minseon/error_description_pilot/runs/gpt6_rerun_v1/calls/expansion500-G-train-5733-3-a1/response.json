@@ -1,0 +1,19 @@
+{
+  "source_id": "train-5733-3",
+  "response_sha256": "d02b5d614b8b6fcfb894a141075cece5c762981d1098b7a2db0865987ce2b71c",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "So, \\( 2 \\cdot \\frac{1}{4}x = 5 \\).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "multiples the number of remaining marbles by 2, he gets his age five years from now.",
+  "observed_error": "The response equates twice the remaining marbles to 5.",
+  "violated_condition": "Twice the remaining marbles equals Gideon's current age plus five years, not five.",
+  "error_description": "The response sets twice the remaining marbles equal to 5, treating the five-year interval as the future age itself. The question instead makes that product Gideon's age five years from now, so it must equal his current age plus five. The subsequent arithmetic correctly follows the incorrectly written equation.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Step 6 independently identifies Gideon's age as 100 because a century has 100 years, although the century comparison specifies his initial marble count, not his age."
+  ],
+  "uncertainty_note": null
+}

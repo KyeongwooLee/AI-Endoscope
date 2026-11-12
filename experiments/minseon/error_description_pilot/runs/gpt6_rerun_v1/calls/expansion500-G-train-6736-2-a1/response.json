@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6736-2",
+  "response_sha256": "3da132e0599834d874b71dd74ed871626218247d7e427cd844c4fd3de3b9bcc1",
+  "status": "ambiguous",
+  "reference_review_needed": true,
+  "evidence_quote": "Total cost for friends = 14 * $0.50 = $7.00",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "They also had a special where you could buy one dozen carnations for $4.00.",
+  "observed_error": "The response prices all 14 friends' carnations individually; the written multiplication is correct.",
+  "violated_condition": "This exceeds the cheapest available purchase cost, but the question does not explicitly require minimizing expenditure or automatically applying the dozen price.",
+  "error_description": null,
+  "reference_review_reason": "The reference assumes Georgia buys an additional discounted dozen for her friends. The question permits that purchase but does not explicitly require it, so the response describes a feasible, more expensive purchase.",
+  "secondary_errors": [],
+  "uncertainty_note": "Whether this is an error depends on interpreting the question as asking for the minimum available cost."
+}

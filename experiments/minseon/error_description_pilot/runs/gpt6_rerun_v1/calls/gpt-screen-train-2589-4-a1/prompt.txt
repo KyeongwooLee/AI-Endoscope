@@ -1,0 +1,25 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Bob picked 450 apples for his entire family to eat. There are 33 children in his family, and each of them ate 10 apples. If every adult ate 3 apples apiece, how many adults are in his family?
+SOLUTION: Step 1: Calculate the total number of apples eaten by children.
+Number of children = 33
+Apples eaten by each child = 10
+Total apples eaten by children = 33 * 10
+
+Step 2: Subtract the number of apples eaten by children from the total number of apples to find out how many apples were eaten by adults.
+Total apples = 450
+Apples eaten by children = (33 * 10)
+Remaining apples = 450 - (33 * 10)
+
+Step 3: Calculate the number of adults in the family.
+Apples eaten by adults = 3 * (number of adults)
+Apples eaten by adults = 3 * (remaining apples)
+
+Step 4: Solve for the number of adults.
+Apples eaten by adults = 3 * (remaining apples)
+Number of adults = (remaining apples) / 3
+
+#### (450 - (33 * 10)) / 3
+#### 110
+#### 110
+#### 110

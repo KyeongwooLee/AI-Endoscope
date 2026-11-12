@@ -1,0 +1,1916 @@
+[
+  {
+    "index": 0,
+    "pair_code": "P-930731",
+    "left": 29,
+    "right": 94
+  },
+  {
+    "index": 1,
+    "pair_code": "P-939341",
+    "left": 56,
+    "right": 49
+  },
+  {
+    "index": 2,
+    "pair_code": "P-571822",
+    "left": 26,
+    "right": 52
+  },
+  {
+    "index": 3,
+    "pair_code": "P-613777",
+    "left": 21,
+    "right": 40
+  },
+  {
+    "index": 4,
+    "pair_code": "P-491477",
+    "left": 38,
+    "right": 4
+  },
+  {
+    "index": 5,
+    "pair_code": "P-827009",
+    "left": 64,
+    "right": 80
+  },
+  {
+    "index": 6,
+    "pair_code": "P-352776",
+    "left": 83,
+    "right": 3
+  },
+  {
+    "index": 7,
+    "pair_code": "P-602859",
+    "left": 95,
+    "right": 45
+  },
+  {
+    "index": 8,
+    "pair_code": "P-150914",
+    "left": 76,
+    "right": 35
+  },
+  {
+    "index": 9,
+    "pair_code": "P-025931",
+    "left": 88,
+    "right": 54
+  },
+  {
+    "index": 10,
+    "pair_code": "P-866754",
+    "left": 91,
+    "right": 47
+  },
+  {
+    "index": 11,
+    "pair_code": "P-332036",
+    "left": 62,
+    "right": 54
+  },
+  {
+    "index": 12,
+    "pair_code": "P-890250",
+    "left": 38,
+    "right": 44
+  },
+  {
+    "index": 13,
+    "pair_code": "P-786508",
+    "left": 38,
+    "right": 37
+  },
+  {
+    "index": 14,
+    "pair_code": "P-494620",
+    "left": 29,
+    "right": 11
+  },
+  {
+    "index": 15,
+    "pair_code": "P-215975",
+    "left": 97,
+    "right": 73
+  },
+  {
+    "index": 16,
+    "pair_code": "P-986563",
+    "left": 83,
+    "right": 35
+  },
+  {
+    "index": 17,
+    "pair_code": "P-130636",
+    "left": 73,
+    "right": 49
+  },
+  {
+    "index": 18,
+    "pair_code": "P-371468",
+    "left": 59,
+    "right": 54
+  },
+  {
+    "index": 19,
+    "pair_code": "P-254773",
+    "left": 83,
+    "right": 28
+  },
+  {
+    "index": 20,
+    "pair_code": "P-710866",
+    "left": 36,
+    "right": 83
+  },
+  {
+    "index": 21,
+    "pair_code": "P-646926",
+    "left": 38,
+    "right": 84
+  },
+  {
+    "index": 22,
+    "pair_code": "P-452227",
+    "left": 57,
+    "right": 8
+  },
+  {
+    "index": 23,
+    "pair_code": "P-765943",
+    "left": 97,
+    "right": 42
+  },
+  {
+    "index": 24,
+    "pair_code": "P-646350",
+    "left": 59,
+    "right": 26
+  },
+  {
+    "index": 25,
+    "pair_code": "P-429916",
+    "left": 28,
+    "right": 32
+  },
+  {
+    "index": 26,
+    "pair_code": "P-211498",
+    "left": 59,
+    "right": 99
+  },
+  {
+    "index": 27,
+    "pair_code": "P-201688",
+    "left": 91,
+    "right": 30
+  },
+  {
+    "index": 28,
+    "pair_code": "P-306161",
+    "left": 59,
+    "right": 32
+  },
+  {
+    "index": 29,
+    "pair_code": "P-082350",
+    "left": 44,
+    "right": 54
+  },
+  {
+    "index": 30,
+    "pair_code": "P-053861",
+    "left": 56,
+    "right": 33
+  },
+  {
+    "index": 31,
+    "pair_code": "P-783135",
+    "left": 16,
+    "right": 81
+  },
+  {
+    "index": 32,
+    "pair_code": "P-776127",
+    "left": 85,
+    "right": 32
+  },
+  {
+    "index": 33,
+    "pair_code": "P-979325",
+    "left": 84,
+    "right": 95
+  },
+  {
+    "index": 34,
+    "pair_code": "P-922195",
+    "left": 83,
+    "right": 15
+  },
+  {
+    "index": 35,
+    "pair_code": "P-646701",
+    "left": 16,
+    "right": 21
+  },
+  {
+    "index": 36,
+    "pair_code": "P-207560",
+    "left": 33,
+    "right": 9
+  },
+  {
+    "index": 37,
+    "pair_code": "P-998014",
+    "left": 6,
+    "right": 95
+  },
+  {
+    "index": 38,
+    "pair_code": "P-690468",
+    "left": 97,
+    "right": 72
+  },
+  {
+    "index": 39,
+    "pair_code": "P-415529",
+    "left": 26,
+    "right": 62
+  },
+  {
+    "index": 40,
+    "pair_code": "P-336556",
+    "left": 64,
+    "right": 84
+  },
+  {
+    "index": 41,
+    "pair_code": "P-294983",
+    "left": 68,
+    "right": 17
+  },
+  {
+    "index": 42,
+    "pair_code": "P-844035",
+    "left": 75,
+    "right": 64
+  },
+  {
+    "index": 43,
+    "pair_code": "P-233165",
+    "left": 95,
+    "right": 43
+  },
+  {
+    "index": 44,
+    "pair_code": "P-794541",
+    "left": 11,
+    "right": 76
+  },
+  {
+    "index": 45,
+    "pair_code": "P-247533",
+    "left": 80,
+    "right": 95
+  },
+  {
+    "index": 46,
+    "pair_code": "P-210568",
+    "left": 33,
+    "right": 34
+  },
+  {
+    "index": 47,
+    "pair_code": "P-916733",
+    "left": 86,
+    "right": 26
+  },
+  {
+    "index": 48,
+    "pair_code": "P-113399",
+    "left": 95,
+    "right": 67
+  },
+  {
+    "index": 49,
+    "pair_code": "P-781726",
+    "left": 29,
+    "right": 60
+  },
+  {
+    "index": 50,
+    "pair_code": "P-228868",
+    "left": 97,
+    "right": 78
+  },
+  {
+    "index": 51,
+    "pair_code": "P-357559",
+    "left": 80,
+    "right": 38
+  },
+  {
+    "index": 52,
+    "pair_code": "P-817793",
+    "left": 16,
+    "right": 58
+  },
+  {
+    "index": 53,
+    "pair_code": "P-809768",
+    "left": 64,
+    "right": 31
+  },
+  {
+    "index": 54,
+    "pair_code": "P-583123",
+    "left": 83,
+    "right": 62
+  },
+  {
+    "index": 55,
+    "pair_code": "P-063999",
+    "left": 88,
+    "right": 76
+  },
+  {
+    "index": 56,
+    "pair_code": "P-697983",
+    "left": 38,
+    "right": 67
+  },
+  {
+    "index": 57,
+    "pair_code": "P-938008",
+    "left": 62,
+    "right": 68
+  },
+  {
+    "index": 58,
+    "pair_code": "P-475954",
+    "left": 95,
+    "right": 70
+  },
+  {
+    "index": 59,
+    "pair_code": "P-319979",
+    "left": 73,
+    "right": 68
+  },
+  {
+    "index": 60,
+    "pair_code": "P-570110",
+    "left": 19,
+    "right": 54
+  },
+  {
+    "index": 61,
+    "pair_code": "P-356260",
+    "left": 84,
+    "right": 32
+  },
+  {
+    "index": 62,
+    "pair_code": "P-893188",
+    "left": 71,
+    "right": 10
+  },
+  {
+    "index": 63,
+    "pair_code": "P-464186",
+    "left": 99,
+    "right": 17
+  },
+  {
+    "index": 64,
+    "pair_code": "P-892642",
+    "left": 83,
+    "right": 46
+  },
+  {
+    "index": 65,
+    "pair_code": "P-672195",
+    "left": 84,
+    "right": 54
+  },
+  {
+    "index": 66,
+    "pair_code": "P-206030",
+    "left": 99,
+    "right": 73
+  },
+  {
+    "index": 67,
+    "pair_code": "P-130611",
+    "left": 40,
+    "right": 70
+  },
+  {
+    "index": 68,
+    "pair_code": "P-794250",
+    "left": 24,
+    "right": 91
+  },
+  {
+    "index": 69,
+    "pair_code": "P-358221",
+    "left": 76,
+    "right": 78
+  },
+  {
+    "index": 70,
+    "pair_code": "P-692229",
+    "left": 9,
+    "right": 40
+  },
+  {
+    "index": 71,
+    "pair_code": "P-362645",
+    "left": 63,
+    "right": 64
+  },
+  {
+    "index": 72,
+    "pair_code": "P-849853",
+    "left": 24,
+    "right": 8
+  },
+  {
+    "index": 73,
+    "pair_code": "P-706492",
+    "left": 69,
+    "right": 54
+  },
+  {
+    "index": 74,
+    "pair_code": "P-137498",
+    "left": 84,
+    "right": 10
+  },
+  {
+    "index": 75,
+    "pair_code": "P-173911",
+    "left": 16,
+    "right": 55
+  },
+  {
+    "index": 76,
+    "pair_code": "P-181199",
+    "left": 51,
+    "right": 61
+  },
+  {
+    "index": 77,
+    "pair_code": "P-234397",
+    "left": 95,
+    "right": 63
+  },
+  {
+    "index": 78,
+    "pair_code": "P-434119",
+    "left": 64,
+    "right": 23
+  },
+  {
+    "index": 79,
+    "pair_code": "P-823673",
+    "left": 7,
+    "right": 95
+  },
+  {
+    "index": 80,
+    "pair_code": "P-981568",
+    "left": 68,
+    "right": 53
+  },
+  {
+    "index": 81,
+    "pair_code": "P-223720",
+    "left": 75,
+    "right": 49
+  },
+  {
+    "index": 82,
+    "pair_code": "P-121193",
+    "left": 34,
+    "right": 61
+  },
+  {
+    "index": 83,
+    "pair_code": "P-070404",
+    "left": 75,
+    "right": 40
+  },
+  {
+    "index": 84,
+    "pair_code": "P-215280",
+    "left": 8,
+    "right": 45
+  },
+  {
+    "index": 85,
+    "pair_code": "P-025253",
+    "left": 32,
+    "right": 86
+  },
+  {
+    "index": 86,
+    "pair_code": "P-333224",
+    "left": 91,
+    "right": 25
+  },
+  {
+    "index": 87,
+    "pair_code": "P-525338",
+    "left": 8,
+    "right": 3
+  },
+  {
+    "index": 88,
+    "pair_code": "P-574997",
+    "left": 88,
+    "right": 68
+  },
+  {
+    "index": 89,
+    "pair_code": "P-156392",
+    "left": 32,
+    "right": 35
+  },
+  {
+    "index": 90,
+    "pair_code": "P-855102",
+    "left": 51,
+    "right": 95
+  },
+  {
+    "index": 91,
+    "pair_code": "P-810709",
+    "left": 80,
+    "right": 33
+  },
+  {
+    "index": 92,
+    "pair_code": "P-479310",
+    "left": 33,
+    "right": 96
+  },
+  {
+    "index": 93,
+    "pair_code": "P-147505",
+    "left": 61,
+    "right": 12
+  },
+  {
+    "index": 94,
+    "pair_code": "P-115907",
+    "left": 50,
+    "right": 95
+  },
+  {
+    "index": 95,
+    "pair_code": "P-970485",
+    "left": 10,
+    "right": 70
+  },
+  {
+    "index": 96,
+    "pair_code": "P-084861",
+    "left": 99,
+    "right": 19
+  },
+  {
+    "index": 97,
+    "pair_code": "P-120451",
+    "left": 37,
+    "right": 99
+  },
+  {
+    "index": 98,
+    "pair_code": "P-837168",
+    "left": 54,
+    "right": 90
+  },
+  {
+    "index": 99,
+    "pair_code": "P-447846",
+    "left": 54,
+    "right": 2
+  },
+  {
+    "index": 100,
+    "pair_code": "P-123943",
+    "left": 64,
+    "right": 93
+  },
+  {
+    "index": 101,
+    "pair_code": "P-978321",
+    "left": 91,
+    "right": 86
+  },
+  {
+    "index": 102,
+    "pair_code": "P-908043",
+    "left": 95,
+    "right": 41
+  },
+  {
+    "index": 103,
+    "pair_code": "P-903250",
+    "left": 32,
+    "right": 44
+  },
+  {
+    "index": 104,
+    "pair_code": "P-365869",
+    "left": 32,
+    "right": 37
+  },
+  {
+    "index": 105,
+    "pair_code": "P-147968",
+    "left": 92,
+    "right": 16
+  },
+  {
+    "index": 106,
+    "pair_code": "P-173748",
+    "left": 69,
+    "right": 38
+  },
+  {
+    "index": 107,
+    "pair_code": "P-182691",
+    "left": 98,
+    "right": 99
+  },
+  {
+    "index": 108,
+    "pair_code": "P-379825",
+    "left": 29,
+    "right": 80
+  },
+  {
+    "index": 109,
+    "pair_code": "P-517877",
+    "left": 75,
+    "right": 10
+  },
+  {
+    "index": 110,
+    "pair_code": "P-876460",
+    "left": 19,
+    "right": 29
+  },
+  {
+    "index": 111,
+    "pair_code": "P-363809",
+    "left": 49,
+    "right": 21
+  },
+  {
+    "index": 112,
+    "pair_code": "P-367594",
+    "left": 83,
+    "right": 84
+  },
+  {
+    "index": 113,
+    "pair_code": "P-356145",
+    "left": 23,
+    "right": 68
+  },
+  {
+    "index": 114,
+    "pair_code": "P-173062",
+    "left": 78,
+    "right": 33
+  },
+  {
+    "index": 115,
+    "pair_code": "P-053155",
+    "left": 6,
+    "right": 8
+  },
+  {
+    "index": 116,
+    "pair_code": "P-362055",
+    "left": 0,
+    "right": 68
+  },
+  {
+    "index": 117,
+    "pair_code": "P-330574",
+    "left": 25,
+    "right": 99
+  },
+  {
+    "index": 118,
+    "pair_code": "P-477334",
+    "left": 93,
+    "right": 83
+  },
+  {
+    "index": 119,
+    "pair_code": "P-062397",
+    "left": 55,
+    "right": 99
+  },
+  {
+    "index": 120,
+    "pair_code": "P-302446",
+    "left": 61,
+    "right": 35
+  },
+  {
+    "index": 121,
+    "pair_code": "P-929923",
+    "left": 97,
+    "right": 48
+  },
+  {
+    "index": 122,
+    "pair_code": "P-763428",
+    "left": 55,
+    "right": 26
+  },
+  {
+    "index": 123,
+    "pair_code": "P-104643",
+    "left": 69,
+    "right": 49
+  },
+  {
+    "index": 124,
+    "pair_code": "P-513380",
+    "left": 26,
+    "right": 15
+  },
+  {
+    "index": 125,
+    "pair_code": "P-066929",
+    "left": 95,
+    "right": 0
+  },
+  {
+    "index": 126,
+    "pair_code": "P-376388",
+    "left": 10,
+    "right": 94
+  },
+  {
+    "index": 127,
+    "pair_code": "P-011445",
+    "left": 62,
+    "right": 16
+  },
+  {
+    "index": 128,
+    "pair_code": "P-620260",
+    "left": 29,
+    "right": 89
+  },
+  {
+    "index": 129,
+    "pair_code": "P-696319",
+    "left": 91,
+    "right": 9
+  },
+  {
+    "index": 130,
+    "pair_code": "P-764411",
+    "left": 48,
+    "right": 61
+  },
+  {
+    "index": 131,
+    "pair_code": "P-086754",
+    "left": 76,
+    "right": 90
+  },
+  {
+    "index": 132,
+    "pair_code": "P-266593",
+    "left": 26,
+    "right": 37
+  },
+  {
+    "index": 133,
+    "pair_code": "P-780748",
+    "left": 29,
+    "right": 59
+  },
+  {
+    "index": 134,
+    "pair_code": "P-951144",
+    "left": 40,
+    "right": 20
+  },
+  {
+    "index": 135,
+    "pair_code": "P-443797",
+    "left": 15,
+    "right": 38
+  },
+  {
+    "index": 136,
+    "pair_code": "P-700721",
+    "left": 38,
+    "right": 90
+  },
+  {
+    "index": 137,
+    "pair_code": "P-481011",
+    "left": 15,
+    "right": 8
+  },
+  {
+    "index": 138,
+    "pair_code": "P-743572",
+    "left": 99,
+    "right": 15
+  },
+  {
+    "index": 139,
+    "pair_code": "P-159345",
+    "left": 59,
+    "right": 76
+  },
+  {
+    "index": 140,
+    "pair_code": "P-927023",
+    "left": 28,
+    "right": 64
+  },
+  {
+    "index": 141,
+    "pair_code": "P-788441",
+    "left": 95,
+    "right": 87
+  },
+  {
+    "index": 142,
+    "pair_code": "P-431653",
+    "left": 97,
+    "right": 50
+  },
+  {
+    "index": 143,
+    "pair_code": "P-557389",
+    "left": 49,
+    "right": 77
+  },
+  {
+    "index": 144,
+    "pair_code": "P-353287",
+    "left": 29,
+    "right": 36
+  },
+  {
+    "index": 145,
+    "pair_code": "P-874566",
+    "left": 61,
+    "right": 50
+  },
+  {
+    "index": 146,
+    "pair_code": "P-960728",
+    "left": 1,
+    "right": 61
+  },
+  {
+    "index": 147,
+    "pair_code": "P-442986",
+    "left": 26,
+    "right": 53
+  },
+  {
+    "index": 148,
+    "pair_code": "P-896133",
+    "left": 89,
+    "right": 16
+  },
+  {
+    "index": 149,
+    "pair_code": "P-752885",
+    "left": 46,
+    "right": 10
+  },
+  {
+    "index": 150,
+    "pair_code": "P-737620",
+    "left": 99,
+    "right": 4
+  },
+  {
+    "index": 151,
+    "pair_code": "P-275840",
+    "left": 96,
+    "right": 76
+  },
+  {
+    "index": 152,
+    "pair_code": "P-855805",
+    "left": 32,
+    "right": 14
+  },
+  {
+    "index": 153,
+    "pair_code": "P-704876",
+    "left": 53,
+    "right": 54
+  },
+  {
+    "index": 154,
+    "pair_code": "P-068359",
+    "left": 14,
+    "right": 97
+  },
+  {
+    "index": 155,
+    "pair_code": "P-249868",
+    "left": 91,
+    "right": 21
+  },
+  {
+    "index": 156,
+    "pair_code": "P-586901",
+    "left": 63,
+    "right": 91
+  },
+  {
+    "index": 157,
+    "pair_code": "P-084057",
+    "left": 69,
+    "right": 33
+  },
+  {
+    "index": 158,
+    "pair_code": "P-786108",
+    "left": 29,
+    "right": 13
+  },
+  {
+    "index": 159,
+    "pair_code": "P-531047",
+    "left": 30,
+    "right": 54
+  },
+  {
+    "index": 160,
+    "pair_code": "P-380797",
+    "left": 80,
+    "right": 40
+  },
+  {
+    "index": 161,
+    "pair_code": "P-218775",
+    "left": 54,
+    "right": 74
+  },
+  {
+    "index": 162,
+    "pair_code": "P-007352",
+    "left": 80,
+    "right": 76
+  },
+  {
+    "index": 163,
+    "pair_code": "P-873688",
+    "left": 89,
+    "right": 49
+  },
+  {
+    "index": 164,
+    "pair_code": "P-418029",
+    "left": 71,
+    "right": 8
+  },
+  {
+    "index": 165,
+    "pair_code": "P-677992",
+    "left": 89,
+    "right": 10
+  },
+  {
+    "index": 166,
+    "pair_code": "P-484430",
+    "left": 32,
+    "right": 57
+  },
+  {
+    "index": 167,
+    "pair_code": "P-542956",
+    "left": 19,
+    "right": 26
+  },
+  {
+    "index": 168,
+    "pair_code": "P-964028",
+    "left": 83,
+    "right": 18
+  },
+  {
+    "index": 169,
+    "pair_code": "P-001137",
+    "left": 42,
+    "right": 38
+  },
+  {
+    "index": 170,
+    "pair_code": "P-228714",
+    "left": 49,
+    "right": 86
+  },
+  {
+    "index": 171,
+    "pair_code": "P-012762",
+    "left": 93,
+    "right": 49
+  },
+  {
+    "index": 172,
+    "pair_code": "P-630750",
+    "left": 6,
+    "right": 64
+  },
+  {
+    "index": 173,
+    "pair_code": "P-745613",
+    "left": 26,
+    "right": 77
+  },
+  {
+    "index": 174,
+    "pair_code": "P-445989",
+    "left": 27,
+    "right": 97
+  },
+  {
+    "index": 175,
+    "pair_code": "P-159926",
+    "left": 16,
+    "right": 94
+  },
+  {
+    "index": 176,
+    "pair_code": "P-912859",
+    "left": 57,
+    "right": 38
+  },
+  {
+    "index": 177,
+    "pair_code": "P-095856",
+    "left": 38,
+    "right": 88
+  },
+  {
+    "index": 178,
+    "pair_code": "P-970972",
+    "left": 29,
+    "right": 84
+  },
+  {
+    "index": 179,
+    "pair_code": "P-696235",
+    "left": 22,
+    "right": 64
+  },
+  {
+    "index": 180,
+    "pair_code": "P-527317",
+    "left": 37,
+    "right": 61
+  },
+  {
+    "index": 181,
+    "pair_code": "P-552715",
+    "left": 15,
+    "right": 68
+  },
+  {
+    "index": 182,
+    "pair_code": "P-189118",
+    "left": 13,
+    "right": 54
+  },
+  {
+    "index": 183,
+    "pair_code": "P-505694",
+    "left": 11,
+    "right": 97
+  },
+  {
+    "index": 184,
+    "pair_code": "P-608227",
+    "left": 16,
+    "right": 0
+  },
+  {
+    "index": 185,
+    "pair_code": "P-234775",
+    "left": 44,
+    "right": 49
+  },
+  {
+    "index": 186,
+    "pair_code": "P-777726",
+    "left": 57,
+    "right": 61
+  },
+  {
+    "index": 187,
+    "pair_code": "P-037897",
+    "left": 79,
+    "right": 95
+  },
+  {
+    "index": 188,
+    "pair_code": "P-046440",
+    "left": 49,
+    "right": 28
+  },
+  {
+    "index": 189,
+    "pair_code": "P-943297",
+    "left": 85,
+    "right": 29
+  },
+  {
+    "index": 190,
+    "pair_code": "P-564276",
+    "left": 33,
+    "right": 7
+  },
+  {
+    "index": 191,
+    "pair_code": "P-806506",
+    "left": 40,
+    "right": 42
+  },
+  {
+    "index": 192,
+    "pair_code": "P-026968",
+    "left": 61,
+    "right": 84
+  },
+  {
+    "index": 193,
+    "pair_code": "P-883572",
+    "left": 65,
+    "right": 97
+  },
+  {
+    "index": 194,
+    "pair_code": "P-452511",
+    "left": 8,
+    "right": 46
+  },
+  {
+    "index": 195,
+    "pair_code": "P-689504",
+    "left": 64,
+    "right": 59
+  },
+  {
+    "index": 196,
+    "pair_code": "P-894815",
+    "left": 92,
+    "right": 61
+  },
+  {
+    "index": 197,
+    "pair_code": "P-522064",
+    "left": 40,
+    "right": 58
+  },
+  {
+    "index": 198,
+    "pair_code": "P-187916",
+    "left": 97,
+    "right": 85
+  },
+  {
+    "index": 199,
+    "pair_code": "P-404856",
+    "left": 29,
+    "right": 25
+  },
+  {
+    "index": 200,
+    "pair_code": "P-686333",
+    "left": 92,
+    "right": 91
+  },
+  {
+    "index": 201,
+    "pair_code": "P-161468",
+    "left": 76,
+    "right": 37
+  },
+  {
+    "index": 202,
+    "pair_code": "P-283645",
+    "left": 8,
+    "right": 11
+  },
+  {
+    "index": 203,
+    "pair_code": "P-995577",
+    "left": 18,
+    "right": 76
+  },
+  {
+    "index": 204,
+    "pair_code": "P-253321",
+    "left": 97,
+    "right": 41
+  },
+  {
+    "index": 205,
+    "pair_code": "P-375073",
+    "left": 94,
+    "right": 8
+  },
+  {
+    "index": 206,
+    "pair_code": "P-780466",
+    "left": 83,
+    "right": 74
+  },
+  {
+    "index": 207,
+    "pair_code": "P-206599",
+    "left": 73,
+    "right": 26
+  },
+  {
+    "index": 208,
+    "pair_code": "P-617936",
+    "left": 73,
+    "right": 76
+  },
+  {
+    "index": 209,
+    "pair_code": "P-337966",
+    "left": 20,
+    "right": 10
+  },
+  {
+    "index": 210,
+    "pair_code": "P-438982",
+    "left": 54,
+    "right": 55
+  },
+  {
+    "index": 211,
+    "pair_code": "P-186410",
+    "left": 73,
+    "right": 10
+  },
+  {
+    "index": 212,
+    "pair_code": "P-037026",
+    "left": 99,
+    "right": 23
+  },
+  {
+    "index": 213,
+    "pair_code": "P-615944",
+    "left": 45,
+    "right": 40
+  },
+  {
+    "index": 214,
+    "pair_code": "P-819059",
+    "left": 54,
+    "right": 66
+  },
+  {
+    "index": 215,
+    "pair_code": "P-005287",
+    "left": 51,
+    "right": 40
+  },
+  {
+    "index": 216,
+    "pair_code": "P-920808",
+    "left": 38,
+    "right": 3
+  },
+  {
+    "index": 217,
+    "pair_code": "P-974028",
+    "left": 77,
+    "right": 40
+  },
+  {
+    "index": 218,
+    "pair_code": "P-601080",
+    "left": 16,
+    "right": 47
+  },
+  {
+    "index": 219,
+    "pair_code": "P-266615",
+    "left": 15,
+    "right": 29
+  },
+  {
+    "index": 220,
+    "pair_code": "P-852294",
+    "left": 91,
+    "right": 89
+  },
+  {
+    "index": 221,
+    "pair_code": "P-022455",
+    "left": 55,
+    "right": 10
+  },
+  {
+    "index": 222,
+    "pair_code": "P-477315",
+    "left": 26,
+    "right": 31
+  },
+  {
+    "index": 223,
+    "pair_code": "P-835214",
+    "left": 8,
+    "right": 14
+  },
+  {
+    "index": 224,
+    "pair_code": "P-243216",
+    "left": 68,
+    "right": 11
+  },
+  {
+    "index": 225,
+    "pair_code": "P-922106",
+    "left": 10,
+    "right": 88
+  },
+  {
+    "index": 226,
+    "pair_code": "P-053375",
+    "left": 16,
+    "right": 24
+  },
+  {
+    "index": 227,
+    "pair_code": "P-462934",
+    "left": 52,
+    "right": 49
+  },
+  {
+    "index": 228,
+    "pair_code": "P-034012",
+    "left": 57,
+    "right": 29
+  },
+  {
+    "index": 229,
+    "pair_code": "P-114379",
+    "left": 64,
+    "right": 69
+  },
+  {
+    "index": 230,
+    "pair_code": "P-590592",
+    "left": 33,
+    "right": 36
+  },
+  {
+    "index": 231,
+    "pair_code": "P-782328",
+    "left": 61,
+    "right": 69
+  },
+  {
+    "index": 232,
+    "pair_code": "P-099775",
+    "left": 32,
+    "right": 39
+  },
+  {
+    "index": 233,
+    "pair_code": "P-192338",
+    "left": 99,
+    "right": 62
+  },
+  {
+    "index": 234,
+    "pair_code": "P-690280",
+    "left": 61,
+    "right": 85
+  },
+  {
+    "index": 235,
+    "pair_code": "P-376474",
+    "left": 86,
+    "right": 64
+  },
+  {
+    "index": 236,
+    "pair_code": "P-453797",
+    "left": 64,
+    "right": 20
+  },
+  {
+    "index": 237,
+    "pair_code": "P-119957",
+    "left": 97,
+    "right": 75
+  },
+  {
+    "index": 238,
+    "pair_code": "P-218311",
+    "left": 33,
+    "right": 37
+  },
+  {
+    "index": 239,
+    "pair_code": "P-985652",
+    "left": 92,
+    "right": 64
+  },
+  {
+    "index": 240,
+    "pair_code": "P-330302",
+    "left": 9,
+    "right": 95
+  },
+  {
+    "index": 241,
+    "pair_code": "P-535921",
+    "left": 0,
+    "right": 61
+  },
+  {
+    "index": 242,
+    "pair_code": "P-287967",
+    "left": 83,
+    "right": 27
+  },
+  {
+    "index": 243,
+    "pair_code": "P-983257",
+    "left": 61,
+    "right": 78
+  },
+  {
+    "index": 244,
+    "pair_code": "P-677461",
+    "left": 76,
+    "right": 45
+  },
+  {
+    "index": 245,
+    "pair_code": "P-942527",
+    "left": 97,
+    "right": 86
+  },
+  {
+    "index": 246,
+    "pair_code": "P-667292",
+    "left": 31,
+    "right": 76
+  },
+  {
+    "index": 247,
+    "pair_code": "P-043297",
+    "left": 89,
+    "right": 8
+  },
+  {
+    "index": 248,
+    "pair_code": "P-226548",
+    "left": 32,
+    "right": 67
+  },
+  {
+    "index": 249,
+    "pair_code": "P-475639",
+    "left": 22,
+    "right": 29
+  },
+  {
+    "index": 250,
+    "pair_code": "P-607351",
+    "left": 57,
+    "right": 83
+  },
+  {
+    "index": 251,
+    "pair_code": "P-265957",
+    "left": 95,
+    "right": 88
+  },
+  {
+    "index": 252,
+    "pair_code": "P-448344",
+    "left": 14,
+    "right": 99
+  },
+  {
+    "index": 253,
+    "pair_code": "P-237974",
+    "left": 8,
+    "right": 80
+  },
+  {
+    "index": 254,
+    "pair_code": "P-508511",
+    "left": 97,
+    "right": 80
+  },
+  {
+    "index": 255,
+    "pair_code": "P-282575",
+    "left": 15,
+    "right": 40
+  },
+  {
+    "index": 256,
+    "pair_code": "P-268747",
+    "left": 4,
+    "right": 54
+  },
+  {
+    "index": 257,
+    "pair_code": "P-347796",
+    "left": 96,
+    "right": 40
+  },
+  {
+    "index": 258,
+    "pair_code": "P-781404",
+    "left": 38,
+    "right": 72
+  },
+  {
+    "index": 259,
+    "pair_code": "P-980852",
+    "left": 23,
+    "right": 95
+  },
+  {
+    "index": 260,
+    "pair_code": "P-465692",
+    "left": 15,
+    "right": 49
+  },
+  {
+    "index": 261,
+    "pair_code": "P-014802",
+    "left": 58,
+    "right": 10
+  },
+  {
+    "index": 262,
+    "pair_code": "P-964097",
+    "left": 52,
+    "right": 33
+  },
+  {
+    "index": 263,
+    "pair_code": "P-836846",
+    "left": 47,
+    "right": 8
+  },
+  {
+    "index": 264,
+    "pair_code": "P-313708",
+    "left": 83,
+    "right": 1
+  },
+  {
+    "index": 265,
+    "pair_code": "P-520119",
+    "left": 81,
+    "right": 10
+  },
+  {
+    "index": 266,
+    "pair_code": "P-365548",
+    "left": 94,
+    "right": 49
+  },
+  {
+    "index": 267,
+    "pair_code": "P-956848",
+    "left": 68,
+    "right": 80
+  },
+  {
+    "index": 268,
+    "pair_code": "P-094737",
+    "left": 76,
+    "right": 86
+  },
+  {
+    "index": 269,
+    "pair_code": "P-716857",
+    "left": 24,
+    "right": 10
+  },
+  {
+    "index": 270,
+    "pair_code": "P-837957",
+    "left": 99,
+    "right": 77
+  },
+  {
+    "index": 271,
+    "pair_code": "P-374160",
+    "left": 32,
+    "right": 77
+  },
+  {
+    "index": 272,
+    "pair_code": "P-608038",
+    "left": 37,
+    "right": 64
+  },
+  {
+    "index": 273,
+    "pair_code": "P-468834",
+    "left": 32,
+    "right": 80
+  },
+  {
+    "index": 274,
+    "pair_code": "P-676089",
+    "left": 28,
+    "right": 8
+  },
+  {
+    "index": 275,
+    "pair_code": "P-611093",
+    "left": 38,
+    "right": 92
+  },
+  {
+    "index": 276,
+    "pair_code": "P-892856",
+    "left": 91,
+    "right": 45
+  },
+  {
+    "index": 277,
+    "pair_code": "P-547462",
+    "left": 12,
+    "right": 33
+  },
+  {
+    "index": 278,
+    "pair_code": "P-587699",
+    "left": 8,
+    "right": 37
+  },
+  {
+    "index": 279,
+    "pair_code": "P-485427",
+    "left": 32,
+    "right": 92
+  },
+  {
+    "index": 280,
+    "pair_code": "P-834510",
+    "left": 65,
+    "right": 8
+  },
+  {
+    "index": 281,
+    "pair_code": "P-782159",
+    "left": 76,
+    "right": 85
+  },
+  {
+    "index": 282,
+    "pair_code": "P-752167",
+    "left": 68,
+    "right": 98
+  },
+  {
+    "index": 283,
+    "pair_code": "P-439815",
+    "left": 29,
+    "right": 41
+  },
+  {
+    "index": 284,
+    "pair_code": "P-795797",
+    "left": 6,
+    "right": 16
+  },
+  {
+    "index": 285,
+    "pair_code": "P-247640",
+    "left": 6,
+    "right": 97
+  },
+  {
+    "index": 286,
+    "pair_code": "P-181649",
+    "left": 68,
+    "right": 51
+  },
+  {
+    "index": 287,
+    "pair_code": "P-525418",
+    "left": 93,
+    "right": 10
+  },
+  {
+    "index": 288,
+    "pair_code": "P-837192",
+    "left": 19,
+    "right": 68
+  },
+  {
+    "index": 289,
+    "pair_code": "P-777858",
+    "left": 91,
+    "right": 90
+  },
+  {
+    "index": 290,
+    "pair_code": "P-912368",
+    "left": 68,
+    "right": 4
+  },
+  {
+    "index": 291,
+    "pair_code": "P-158821",
+    "left": 38,
+    "right": 62
+  },
+  {
+    "index": 292,
+    "pair_code": "P-643241",
+    "left": 26,
+    "right": 72
+  },
+  {
+    "index": 293,
+    "pair_code": "P-753143",
+    "left": 99,
+    "right": 12
+  },
+  {
+    "index": 294,
+    "pair_code": "P-471720",
+    "left": 16,
+    "right": 20
+  },
+  {
+    "index": 295,
+    "pair_code": "P-170918",
+    "left": 80,
+    "right": 99
+  },
+  {
+    "index": 296,
+    "pair_code": "P-302010",
+    "left": 12,
+    "right": 64
+  },
+  {
+    "index": 297,
+    "pair_code": "P-357981",
+    "left": 5,
+    "right": 83
+  },
+  {
+    "index": 298,
+    "pair_code": "P-888675",
+    "left": 76,
+    "right": 89
+  },
+  {
+    "index": 299,
+    "pair_code": "P-650479",
+    "left": 44,
+    "right": 40
+  },
+  {
+    "index": 300,
+    "pair_code": "P-412327",
+    "left": 26,
+    "right": 3
+  },
+  {
+    "index": 301,
+    "pair_code": "P-494408",
+    "left": 89,
+    "right": 95
+  },
+  {
+    "index": 302,
+    "pair_code": "P-883108",
+    "left": 95,
+    "right": 96
+  },
+  {
+    "index": 303,
+    "pair_code": "P-287113",
+    "left": 58,
+    "right": 38
+  },
+  {
+    "index": 304,
+    "pair_code": "P-852180",
+    "left": 83,
+    "right": 65
+  },
+  {
+    "index": 305,
+    "pair_code": "P-690811",
+    "left": 81,
+    "right": 40
+  },
+  {
+    "index": 306,
+    "pair_code": "P-056412",
+    "left": 46,
+    "right": 91
+  },
+  {
+    "index": 307,
+    "pair_code": "P-183019",
+    "left": 72,
+    "right": 95
+  },
+  {
+    "index": 308,
+    "pair_code": "P-258703",
+    "left": 29,
+    "right": 18
+  },
+  {
+    "index": 309,
+    "pair_code": "P-767509",
+    "left": 64,
+    "right": 57
+  },
+  {
+    "index": 310,
+    "pair_code": "P-761911",
+    "left": 72,
+    "right": 16
+  },
+  {
+    "index": 311,
+    "pair_code": "P-584944",
+    "left": 67,
+    "right": 91
+  },
+  {
+    "index": 312,
+    "pair_code": "P-326265",
+    "left": 70,
+    "right": 91
+  },
+  {
+    "index": 313,
+    "pair_code": "P-171062",
+    "left": 83,
+    "right": 9
+  },
+  {
+    "index": 314,
+    "pair_code": "P-270502",
+    "left": 76,
+    "right": 47
+  },
+  {
+    "index": 315,
+    "pair_code": "P-062939",
+    "left": 91,
+    "right": 15
+  },
+  {
+    "index": 316,
+    "pair_code": "P-342257",
+    "left": 38,
+    "right": 28
+  },
+  {
+    "index": 317,
+    "pair_code": "P-626802",
+    "left": 26,
+    "right": 11
+  },
+  {
+    "index": 318,
+    "pair_code": "P-224826",
+    "left": 91,
+    "right": 66
+  }
+]

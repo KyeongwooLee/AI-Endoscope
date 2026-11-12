@@ -1,0 +1,90 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-6959-4
+response_sha256: de62389da3b0b9652e7f90e5172ad9e2c162401f59d01f65de28ebfd020771aa
+
+=== QUESTION ===
+Debelyn, Christel, and Andrena collect dolls. Debelyn had 20 dolls before she gave Andrena 2 dolls. Christel had 24 dolls before giving Andrena 5 dolls. After all the gifts, Andrena now has 2 more dolls  than Christel, how many more dolls does andrena have now than Debelyn?
+=== MODEL SOLUTION ===
+Let's denote the number of dolls Andrena, Christel, and Debelyn have after receiving dolls as A, C, and D respectively.
+
+Initially:
+- Debelyn had 20 dolls.
+- Christel had 24 dolls.
+- Andrena had 0 dolls.
+
+After giving dolls:
+- Debelyn gave away 2 dolls to Andrena and had 20 - 2 = 18 dolls left.
+- Andrena received 2 dolls and had 0 + 2 = 2 dolls.
+- Christel gave away 5 dolls to Andrena and had 24 - 5 = 19 dolls left.
+
+After receiving dolls from Andrena:
+- Andrena had 2 (initial) + 2 (received) = 4 dolls.
+- Christel had 19 dolls.
+
+We are given that after all the gifts, Andrena now has 2 more dolls than Christel. So:
+- A = 4
+- C = 19
+
+We need to find how many more dolls Andrena has than Debelyn:
+- A = D + 2
+
+Substituting the values:
+- 4 = D + 2
+
+Solving for D:
+- D = 4 - 2
+- D = 2
+
+Now, we need to find how many more dolls Andrena has than Debelyn:
+- A - D = 4 - 2 = 2
+
+#### 2
+Andrena has 2 more dolls than Debelyn.
+=== REFERENCE SOLUTION (fallible aid) ===
+Debelyn had 20 - 2 = <<20-2=18>>18 dolls left after giving out 2 dolls to Christel.
+Christel had 24 + 2 = <<24+2=26>>26 dolls after receiving 2 dolls from Debelyn.
+Christel had 24 - 5 = <<24-5=19>>19 dolls after giving Andrena 5 dolls.
+So, Andrena has 19 +2 = <<19+2=21>>21 dolls now.
+Therefore, Andrena has 21 - 18 = <<21-18=3>>3 more dolls than Debelyn.
+#### 3
+=== END ===

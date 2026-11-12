@@ -1,0 +1,28 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John and James decided to have a dance-off.  John danced for 3 hours and then another 5 hours after taking a 1-hour break.  James danced the whole time John was dancing and resting, and then another 1/3 times more hours.  How long was their combined dancing time without including  John's break time?
+SOLUTION: Step 1: Determine the total time John danced and rested.
+- John danced for 3 hours.
+- He took a 1-hour break.
+- He danced for another 5 hours.
+
+Total time John danced and rested = 3 hours + 1 hour + 5 hours = 9 hours
+
+Step 2: Determine the total time James danced.
+- James danced the whole time John was dancing and resting, which is 9 hours.
+
+Total time James danced = 9 hours
+
+Step 3: Determine the additional hours James danced.
+- James danced another 1/3 times more hours than the total time John danced and rested.
+
+Additional hours James danced = 1/3 * 9 hours = 3 hours
+
+Step 4: Calculate the total time James danced.
+- Total time James danced = 9 hours (initial) + 3 hours (additional) = 12 hours
+
+Step 5: Calculate the combined dancing time of John and James.
+- Combined dancing time = 9 hours (John) + 12 hours (James) = 21 hours
+
+#### 21
+The combined dancing time without including John's break time is 21 hours.

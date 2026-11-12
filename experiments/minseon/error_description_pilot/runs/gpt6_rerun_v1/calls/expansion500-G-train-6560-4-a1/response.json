@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6560-4",
+  "response_sha256": "dad616532bf655625d60952e9126a2acae88e5e066afd3546f8a3cc4682d4d8f",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total weight in ounces: 32 * 16 = 512 ounces",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Three friends ate a total of 8 pounds of fruit.",
+  "observed_error": "The response converts the 32-ounce subtotal as though it were the total weight in pounds.",
+  "violated_condition": "The total fruit weight is 8 pounds; 32 ounces is the combined weight of oranges and apples.",
+  "error_description": "The response multiplies the 32-ounce subtotal for oranges and apples by 16 and labels the result the total fruit weight in ounces. This conversion must use the stated 8-pound total instead. The multiplication is numerically correct, but its operand has the wrong units and represents the wrong quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

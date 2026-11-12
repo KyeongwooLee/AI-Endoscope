@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Celina enjoys hiking in the mountains. Due to a lack of proper equipment, she decided to order a new pair of boots, a flashlight, and a special hoodie. The hoodie cost $80 and the flashlight was only 20% of that price. The pair of boots cost was $110, but due to a special promotion, Celina was able to buy them 10% cheaper. How much did Celina spend in total on the above-mentioned equipment?
+SOLUTION: Step 1: Calculate the cost of the flashlight.
+The flashlight cost 20% of the hoodie's price.
+Cost of flashlight = 20% of $80
+Cost of flashlight = 0.20 * $80
+Cost of flashlight = $16
+
+Step 2: Calculate the discounted price of the boots.
+The boots originally cost $110, but Celina got a 10% discount.
+Discounted price of boots = 10% of $110
+Discounted price of boots = 0.10 * $110
+Discounted price of boots = $11
+
+Step 3: Calculate the total cost of all equipment.
+Total cost = Cost of hoodie + Cost of flashlight + Discounted price of boots
+Total cost = $80 + $16 + $11
+Total cost = $107
+
+#### 107

@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Gary manages two Amazon distribution centers. The first center processes 10000 packages per day, and the second center processes three times that volume. If Amazon makes 5 cents of profit per package, how much profit per week do the two centers make combined?
+SOLUTION: Step 1: Calculate the daily processing volume of the second center.
+Second center processes 3 times the volume of the first center.
+10000 packages/day * 3 = 30000 packages/day
+
+Step 2: Calculate the total daily processing volume of both centers.
+10000 packages/day + 30000 packages/day = 40000 packages/day
+
+Step 3: Calculate the daily profit from both centers.
+5 cents/package * 40000 packages/day = 200000 cents/day
+
+Step 4: Calculate the weekly profit.
+200000 cents/day * 7 days/week = 1400000 cents/week
+
+#### 1400000
+This is the combined weekly profit of both centers.

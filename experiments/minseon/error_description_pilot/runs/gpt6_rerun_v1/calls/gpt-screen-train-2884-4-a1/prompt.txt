@@ -1,0 +1,31 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Felix can lift off the ground 1.5 times more than he weighs. Felix's brother weighs twice as much as Felix and can lift three times his weight off the ground. If his brother can lift 600 pounds, how much can Felix lift off the ground?
+SOLUTION: To find out how much Felix can lift off the ground, we'll follow these steps:
+
+1. Determine Felix's brother's weight.
+2. Use the relationship between Felix's brother's weight and Felix's lifting ability to find Felix's weight.
+3. Calculate how much Felix can lift off the ground.
+
+Step 1: Felix's brother weighs twice as much as Felix.
+- Brother's weight = 2 * Felix's weight
+
+Step 2: Felix's brother can lift three times his weight.
+- Brother's lifting capacity = 3 * Brother's weight
+- Given that his brother can lift 600 pounds, we can set up the equation:
+  3 * Felix's brother's weight = 600 pounds
+
+Step 3: Solve for Felix's brother's weight.
+- 3 * Felix's brother's weight = 600 pounds
+- Felix's brother's weight = 600 / 3
+- Felix's brother's weight = 200 pounds
+
+Now we know Felix's brother weighs 200 pounds. Since Felix's brother can lift three times his weight off the ground, we calculate Felix's lifting capacity.
+
+Step 4: Calculate Felix's lifting capacity.
+- Felix's lifting capacity = 3 * Felix's brother's weight
+- Felix's lifting capacity = 3 * 200 pounds
+- Felix's lifting capacity = 600 pounds
+
+#### 600
+Therefore, Felix can lift 600 pounds off the ground.

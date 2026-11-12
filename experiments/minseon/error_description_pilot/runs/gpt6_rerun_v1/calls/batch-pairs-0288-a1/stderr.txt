@@ -1,0 +1,4 @@
+2026-11-11T21:20:59.588856Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-11-11T21:20:59.611533Z  WARN codex_core::shell_snapshot: Failed to delete shell snapshot at "/home/coder/.codex/shell_snapshots/01a1cc7c-3b30-7ff3-af5a-284128e70759.1794432056115302298.sh": Os { code: 2, kind: NotFound, message: "No such file or directory" }
+2026-11-11T21:21:03.275699Z ERROR codex_models_manager::manager: failed to renew cache TTL: EOF while parsing a value at line 1 column 0
+2026-11-11T21:21:16.905903Z  WARN codex_core::shell_snapshot: Failed to delete shell snapshot at AbsolutePathBuf("/home/coder/.codex/shell_snapshots/01a1cc7c-48ba-7d41-a519-6a2e442baeb3.1794432059582039574.sh"): Os { code: 2, kind: NotFound, message: "No such file or directory" }

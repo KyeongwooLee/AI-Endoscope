@@ -1,0 +1,26 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: There was a big sale on cat food at the pet store. 20 people bought cat food that day. The first 8 customers bought 3 cases each. The next four customers bought 2 cases each. The last 8 customers of the day only bought 1 case each. How many cases of cat food were sold?
+SOLUTION: Step 1: Calculate the total cases bought by the first 8 customers.
+First 8 customers bought 3 cases each.
+Total cases by the first 8 customers = 8 × 3
+
+Step 2: Calculate the total cases bought by the next 4 customers.
+Next 4 customers bought 2 cases each.
+Total cases by the next 4 customers = 4 × 2
+
+Step 3: Calculate the total cases bought by the last 8 customers.
+Last 8 customers bought 1 case each.
+Total cases by the last 8 customers = 8 × 1
+
+Step 4: Add the totals from each group to find the total number of cases sold.
+
+#### 32
+#### 8
+#### 8
+#### 32
+#### 48
+#### 8
+#### 64
+#### 32 + 8 + 8 + 64 = 112
+#### 112

@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Adam has 50 balls. 20 balls are red, 10 are blue, and the rest are either pink or orange. If there are 3 times as many pink as orange balls, how many orange balls are there?
+SOLUTION: Step 1: Determine the total number of red and blue balls.
+20 red balls + 10 blue balls = 30 balls
+
+Step 2: Calculate the number of pink and orange balls.
+Total balls = 50
+Red and blue balls = 30
+Pink and orange balls = 50 - 30 = 20
+
+Step 3: Set up the equation for the relationship between pink and orange balls.
+Let x be the number of orange balls.
+3x = 20 (since there are 3 times as many pink as orange balls)
+
+Step 4: Solve for x.
+x = 20 / 3
+x = 6.67
+
+#### 6.67

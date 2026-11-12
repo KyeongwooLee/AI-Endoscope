@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Anna goes trick-or-treating in a subdivision where she gets 14 pieces of candy per house. Her brother Billy goes trick-or-tricking in a neighboring subdivision where he gets 11 pieces of candy per house. If the first subdivision has 60 houses and the second subdivision has 75 houses, how many more pieces of candy does Anna get?
+SOLUTION: Step 1: Calculate the total number of pieces of candy Anna gets.
+Anna gets 14 pieces of candy per house.
+First subdivision has 60 houses.
+Total pieces of candy Anna gets = 14 * 60
+
+Step 2: Calculate the total number of pieces of candy Billy gets.
+Billy gets 11 pieces of candy per house.
+Second subdivision has 75 houses.
+Total pieces of candy Billy gets = 11 * 75
+
+Step 3: Calculate how many more pieces of candy Anna gets compared to Billy.
+Difference in pieces of candy = Total pieces of candy Anna gets - Total pieces of candy Billy gets
+
+Step 4: Calculate the final answer.
+Anna gets 252 pieces of candy.
+Billy gets 825 pieces of candy.
+Difference in pieces of candy = 252 - 825
+
+#### -573
+Anna gets -573 more pieces of candy than Billy.

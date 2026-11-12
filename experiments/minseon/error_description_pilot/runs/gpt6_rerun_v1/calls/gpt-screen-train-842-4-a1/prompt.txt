@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Antonio is preparing a meal of spaghetti and meatballs for his family.  His recipe for meatballs calls for 1/8 of a pound of hamburger per meatball.  Antonio has 8 family members, including himself.  If he uses 4 pounds of hamburger to make meatballs, and each member of the family eats an equal number of meatballs, how many meatballs will Antonio eat?
+SOLUTION: Step 1: Calculate the total number of meatballs Antonio can make with 4 pounds of hamburger.
+Step 2: Determine how many meatballs each family member will get.
+Step 3: Calculate the number of meatballs Antonio will eat.
+
+#### 48
+#### Step-by-step reasoning:
+Step 1: 
+- Antonio has 4 pounds of hamburger.
+- Each meatball requires 1/8 pound of hamburger.
+- Total number of meatballs = Total hamburger ÷ Meatball per hamburger = 4 ÷ (1/8) = 4 * 8 = 32 meatballs.
+
+Step 2: 
+- There are 8 family members.
+- Each family member will get the same number of meatballs.
+- Number of meatballs per person = Total meatballs ÷ Number of family members = 32 ÷ 8 = 4 meatballs per person.
+
+Step 3: 
+- Antonio will eat 4 meatballs.

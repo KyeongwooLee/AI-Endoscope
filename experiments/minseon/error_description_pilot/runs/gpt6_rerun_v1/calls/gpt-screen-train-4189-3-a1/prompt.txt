@@ -1,0 +1,26 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: In eight years, Mr. Bernard will be 3 times as old as Luke is now. If Luke is 20, what is 10 years less than their average age?
+SOLUTION: Step 1: Determine Mr. Bernard's age in eight years.
+Let Mr. Bernard's current age be \( B \).
+In eight years, Mr. Bernard will be \( B + 8 \) years old.
+According to the problem, in eight years, Mr. Bernard will be 3 times as old as Luke is now.
+Luke's current age is 20, so in eight years, Luke will be 20 + 8 = 28 years old.
+Therefore, \( B + 8 = 3 \times 28 \).
+Step 2: Solve for Mr. Bernard's current age.
+\[ B + 8 = 84 \]
+\[ B = 84 - 8 \]
+\[ B = 76 \]
+
+Step 3: Calculate the average of Mr. Bernard's and Luke's ages.
+Average age = \( \frac{B + 20}{2} \)
+\[ \text{Average age} = \frac{76 + 20}{2} \]
+\[ \text{Average age} = \frac{96}{2} \]
+\[ \text{Average age} = 48 \]
+
+Step 4: Find 10 years less than their average age.
+\[ \text{10 years less} = 48 - 10 \]
+\[ \text{10 years less} = 38 \]
+
+#### 38
+The final answer is 38.

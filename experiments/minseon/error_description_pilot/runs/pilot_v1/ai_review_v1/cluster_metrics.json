@@ -1,0 +1,1234 @@
+[
+  {
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 100,
+    "silhouette_cosine": 0.056435298174619675,
+    "sizes": [
+      29,
+      21,
+      33,
+      17
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 100,
+    "silhouette_cosine": 0.04117455333471298,
+    "sizes": [
+      17,
+      39,
+      30,
+      14
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 100,
+    "silhouette_cosine": 0.06793200224637985,
+    "sizes": [
+      27,
+      20,
+      25,
+      28
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans_stability",
+    "k": 4,
+    "ari_pairs": [
+      0.2505395198969571,
+      0.37010576890850333,
+      0.37855617046643647
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 100,
+    "silhouette_cosine": 0.036347948014736176,
+    "sizes": [
+      90,
+      6,
+      3,
+      1
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 100,
+    "silhouette_cosine": 0.036330558359622955,
+    "sizes": [
+      6,
+      27,
+      13,
+      25,
+      17,
+      12
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 100,
+    "silhouette_cosine": 0.042104318737983704,
+    "sizes": [
+      7,
+      25,
+      17,
+      19,
+      18,
+      14
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 100,
+    "silhouette_cosine": 0.05736422538757324,
+    "sizes": [
+      26,
+      14,
+      15,
+      20,
+      10,
+      15
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans_stability",
+    "k": 6,
+    "ari_pairs": [
+      0.28470505121865064,
+      0.306451467390814,
+      0.24946649359325998
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 100,
+    "silhouette_cosine": 0.03370767459273338,
+    "sizes": [
+      15,
+      6,
+      3,
+      1,
+      2,
+      73
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 100,
+    "silhouette_cosine": 0.039704661816358566,
+    "sizes": [
+      3,
+      27,
+      16,
+      7,
+      13,
+      10,
+      13,
+      11
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 100,
+    "silhouette_cosine": 0.03749890625476837,
+    "sizes": [
+      11,
+      18,
+      21,
+      8,
+      12,
+      13,
+      4,
+      13
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 100,
+    "silhouette_cosine": 0.023925306275486946,
+    "sizes": [
+      4,
+      14,
+      10,
+      14,
+      20,
+      9,
+      16,
+      13
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans_stability",
+    "k": 8,
+    "ari_pairs": [
+      0.19458264819987148,
+      0.1991022242814635,
+      0.1762750810389397
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 100,
+    "silhouette_cosine": 0.02425333485007286,
+    "sizes": [
+      73,
+      6,
+      2,
+      1,
+      2,
+      11,
+      4,
+      1
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 100,
+    "silhouette_cosine": 0.03455162048339844,
+    "sizes": [
+      6,
+      14,
+      21,
+      8,
+      4,
+      11,
+      14,
+      7,
+      6,
+      9
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 100,
+    "silhouette_cosine": 0.03264864906668663,
+    "sizes": [
+      11,
+      16,
+      12,
+      9,
+      8,
+      14,
+      10,
+      8,
+      5,
+      7
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 100,
+    "silhouette_cosine": 0.02626611478626728,
+    "sizes": [
+      6,
+      13,
+      6,
+      14,
+      12,
+      12,
+      14,
+      6,
+      7,
+      10
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "kmeans_stability",
+    "k": 10,
+    "ari_pairs": [
+      0.244691221972619,
+      0.22244876472555636,
+      0.3998117372838621
+    ]
+  },
+  {
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 100,
+    "silhouette_cosine": 0.04509247839450836,
+    "sizes": [
+      44,
+      5,
+      2,
+      29,
+      2,
+      11,
+      4,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 94,
+    "silhouette_cosine": 0.05592275783419609,
+    "sizes": [
+      9,
+      25,
+      28,
+      32
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 94,
+    "silhouette_cosine": 0.05793386325240135,
+    "sizes": [
+      31,
+      17,
+      26,
+      20
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 94,
+    "silhouette_cosine": 0.05268623307347298,
+    "sizes": [
+      12,
+      40,
+      24,
+      18
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans_stability",
+    "k": 4,
+    "ari_pairs": [
+      0.33377344859370717,
+      0.24399869606059846,
+      0.27870917250571675
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 94,
+    "silhouette_cosine": 0.04506663978099823,
+    "sizes": [
+      81,
+      11,
+      1,
+      1
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 94,
+    "silhouette_cosine": 0.0537044033408165,
+    "sizes": [
+      13,
+      20,
+      20,
+      12,
+      14,
+      15
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 94,
+    "silhouette_cosine": 0.036577410995960236,
+    "sizes": [
+      13,
+      7,
+      17,
+      26,
+      21,
+      10
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 94,
+    "silhouette_cosine": 0.04454479366540909,
+    "sizes": [
+      10,
+      16,
+      12,
+      21,
+      16,
+      19
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans_stability",
+    "k": 6,
+    "ari_pairs": [
+      0.23332204335892093,
+      0.39216099725428577,
+      0.25354866966301576
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 94,
+    "silhouette_cosine": 0.03555331751704216,
+    "sizes": [
+      11,
+      70,
+      6,
+      1,
+      5,
+      1
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 94,
+    "silhouette_cosine": 0.045875128358602524,
+    "sizes": [
+      12,
+      13,
+      16,
+      7,
+      10,
+      12,
+      10,
+      14
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 94,
+    "silhouette_cosine": 0.032675519585609436,
+    "sizes": [
+      4,
+      26,
+      10,
+      8,
+      10,
+      10,
+      19,
+      7
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 94,
+    "silhouette_cosine": 0.04360467940568924,
+    "sizes": [
+      12,
+      12,
+      16,
+      14,
+      11,
+      8,
+      13,
+      8
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans_stability",
+    "k": 8,
+    "ari_pairs": [
+      0.21979967670692085,
+      0.3023000977306512,
+      0.2578582290626808
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 94,
+    "silhouette_cosine": 0.023823561146855354,
+    "sizes": [
+      5,
+      67,
+      6,
+      3,
+      9,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 94,
+    "silhouette_cosine": 0.046271197497844696,
+    "sizes": [
+      13,
+      6,
+      11,
+      7,
+      16,
+      6,
+      9,
+      12,
+      6,
+      8
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 94,
+    "silhouette_cosine": 0.02429453656077385,
+    "sizes": [
+      11,
+      2,
+      8,
+      4,
+      4,
+      11,
+      24,
+      11,
+      6,
+      13
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 94,
+    "silhouette_cosine": 0.055179428309202194,
+    "sizes": [
+      5,
+      16,
+      12,
+      3,
+      7,
+      10,
+      11,
+      12,
+      5,
+      13
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "kmeans_stability",
+    "k": 10,
+    "ari_pairs": [
+      0.19635191236184682,
+      0.36895838234572836,
+      0.30000452961439616
+    ]
+  },
+  {
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 94,
+    "silhouette_cosine": 0.013270003721117973,
+    "sizes": [
+      65,
+      9,
+      6,
+      3,
+      4,
+      1,
+      2,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 94,
+    "silhouette_cosine": 0.0474710613489151,
+    "sizes": [
+      3,
+      40,
+      33,
+      18
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 94,
+    "silhouette_cosine": 0.05458815395832062,
+    "sizes": [
+      33,
+      16,
+      29,
+      16
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 94,
+    "silhouette_cosine": 0.052310265600681305,
+    "sizes": [
+      25,
+      22,
+      23,
+      24
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans_stability",
+    "k": 4,
+    "ari_pairs": [
+      0.40699073521485746,
+      0.36050744104599936,
+      0.3547970611058319
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 94,
+    "silhouette_cosine": 0.05840850993990898,
+    "sizes": [
+      85,
+      5,
+      3,
+      1
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 94,
+    "silhouette_cosine": 0.005963460076600313,
+    "sizes": [
+      7,
+      6,
+      14,
+      21,
+      23,
+      23
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 94,
+    "silhouette_cosine": 0.04735733941197395,
+    "sizes": [
+      3,
+      20,
+      11,
+      13,
+      25,
+      22
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 94,
+    "silhouette_cosine": 0.024877304211258888,
+    "sizes": [
+      12,
+      6,
+      24,
+      16,
+      17,
+      19
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans_stability",
+    "k": 6,
+    "ari_pairs": [
+      0.18214413516794253,
+      0.2850630411139051,
+      0.12940460985394667
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 94,
+    "silhouette_cosine": 0.026104984804987907,
+    "sizes": [
+      79,
+      5,
+      5,
+      1,
+      1,
+      3
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 94,
+    "silhouette_cosine": 0.023014305159449577,
+    "sizes": [
+      11,
+      15,
+      6,
+      7,
+      17,
+      21,
+      7,
+      10
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 94,
+    "silhouette_cosine": 0.03584012761712074,
+    "sizes": [
+      2,
+      5,
+      21,
+      21,
+      21,
+      5,
+      6,
+      13
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 94,
+    "silhouette_cosine": 0.03373341262340546,
+    "sizes": [
+      17,
+      17,
+      2,
+      10,
+      9,
+      12,
+      7,
+      20
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans_stability",
+    "k": 8,
+    "ari_pairs": [
+      0.1546008621971161,
+      0.26184172397524896,
+      0.1613453391773185
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 94,
+    "silhouette_cosine": 0.027747835963964462,
+    "sizes": [
+      5,
+      5,
+      3,
+      5,
+      1,
+      3,
+      71,
+      1
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 94,
+    "silhouette_cosine": 0.024314580485224724,
+    "sizes": [
+      12,
+      15,
+      3,
+      6,
+      8,
+      6,
+      10,
+      4,
+      13,
+      17
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 94,
+    "silhouette_cosine": 0.03653106093406677,
+    "sizes": [
+      3,
+      28,
+      8,
+      6,
+      14,
+      8,
+      7,
+      8,
+      7,
+      5
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 94,
+    "silhouette_cosine": 0.028875427320599556,
+    "sizes": [
+      3,
+      11,
+      23,
+      14,
+      8,
+      9,
+      6,
+      2,
+      12,
+      6
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "kmeans_stability",
+    "k": 10,
+    "ari_pairs": [
+      0.18636434003748137,
+      0.23173438582416994,
+      0.2862094166926194
+    ]
+  },
+  {
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 94,
+    "silhouette_cosine": 0.009168187156319618,
+    "sizes": [
+      71,
+      5,
+      4,
+      5,
+      1,
+      3,
+      2,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 100,
+    "silhouette_cosine": 0.03987237811088562,
+    "sizes": [
+      28,
+      27,
+      23,
+      22
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 100,
+    "silhouette_cosine": 0.04423204064369202,
+    "sizes": [
+      29,
+      32,
+      17,
+      22
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 100,
+    "silhouette_cosine": 0.05249746888875961,
+    "sizes": [
+      29,
+      34,
+      30,
+      7
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans_stability",
+    "k": 4,
+    "ari_pairs": [
+      0.4322769331224573,
+      0.4294811526717064,
+      0.43640126969538057
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 100,
+    "silhouette_cosine": 0.03446434438228607,
+    "sizes": [
+      95,
+      2,
+      2,
+      1
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 100,
+    "silhouette_cosine": 0.031911738216876984,
+    "sizes": [
+      9,
+      18,
+      18,
+      24,
+      11,
+      20
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 100,
+    "silhouette_cosine": 0.03330286592245102,
+    "sizes": [
+      16,
+      27,
+      14,
+      17,
+      14,
+      12
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 100,
+    "silhouette_cosine": 0.03320888802409172,
+    "sizes": [
+      27,
+      20,
+      11,
+      15,
+      20,
+      7
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans_stability",
+    "k": 6,
+    "ari_pairs": [
+      0.26613140742448105,
+      0.19491973115323086,
+      0.22793242921722578
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 100,
+    "silhouette_cosine": 0.025087861344218254,
+    "sizes": [
+      83,
+      11,
+      2,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 100,
+    "silhouette_cosine": 0.027554666623473167,
+    "sizes": [
+      6,
+      19,
+      13,
+      13,
+      17,
+      16,
+      11,
+      5
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 100,
+    "silhouette_cosine": 0.03078804723918438,
+    "sizes": [
+      9,
+      16,
+      8,
+      9,
+      10,
+      15,
+      20,
+      13
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 100,
+    "silhouette_cosine": 0.027027864009141922,
+    "sizes": [
+      18,
+      13,
+      9,
+      9,
+      15,
+      16,
+      15,
+      5
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans_stability",
+    "k": 8,
+    "ari_pairs": [
+      0.23457649515674223,
+      0.22734557335406005,
+      0.20466183931040804
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 100,
+    "silhouette_cosine": 0.019611844792962074,
+    "sizes": [
+      75,
+      11,
+      2,
+      2,
+      2,
+      1,
+      6,
+      1
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 100,
+    "silhouette_cosine": 0.0280707199126482,
+    "sizes": [
+      10,
+      8,
+      16,
+      11,
+      21,
+      3,
+      10,
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 100,
+    "silhouette_cosine": 0.020851384848356247,
+    "sizes": [
+      3,
+      15,
+      11,
+      13,
+      13,
+      16,
+      5,
+      13,
+      7,
+      4
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 100,
+    "silhouette_cosine": 0.026656311005353928,
+    "sizes": [
+      2,
+      12,
+      12,
+      15,
+      11,
+      10,
+      7,
+      12,
+      10,
+      9
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "kmeans_stability",
+    "k": 10,
+    "ari_pairs": [
+      0.2774074254294195,
+      0.31628682601445246,
+      0.23738122957899876
+    ]
+  },
+  {
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 100,
+    "silhouette_cosine": 0.04215984791517258,
+    "sizes": [
+      11,
+      39,
+      2,
+      13,
+      2,
+      1,
+      6,
+      1,
+      2,
+      23
+    ]
+  }
+]

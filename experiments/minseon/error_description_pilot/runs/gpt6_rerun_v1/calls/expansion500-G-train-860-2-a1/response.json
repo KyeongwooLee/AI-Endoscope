@@ -1,0 +1,19 @@
+{
+  "source_id": "train-860-2",
+  "response_sha256": "acd674bd944087115d20e88b8823260cede0e7adea50d19e4b4ffe3d12766a3f",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Earl owes a total of $28 + $40 = $68.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Greg owes Earl $40.",
+  "observed_error": "The response counts Greg's $40 debt to Earl as money Earl owes.",
+  "violated_condition": "Earl pays Fred $28 and receives $40 from Greg; the $40 must increase Earl's balance.",
+  "error_description": "The response adds the $40 Greg owes Earl to Earl's own $28 debt, treating an incoming payment as an outgoing obligation. Although $28 + $40 = $68 is arithmetically correct, this relation reverses the payment direction and incorrectly reduces Earl's balance by the money he should receive.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The final-balance calculations also omit Fred's $28 receipt from Earl and Greg's $32 receipt from Fred, subtracting their outgoing payments without adding these incoming payments."
+  ],
+  "uncertainty_note": null
+}

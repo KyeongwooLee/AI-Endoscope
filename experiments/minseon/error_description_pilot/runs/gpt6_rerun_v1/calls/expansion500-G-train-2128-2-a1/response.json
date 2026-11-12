@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2128-2",
+  "response_sha256": "43d6e6b41b644dfaa1c3e54e021ba8ebdcf016118fd095630dfa6201f98aa779",
+  "status": "insufficient_evidence",
+  "reference_review_needed": false,
+  "evidence_quote": "The custodian will fill 20 water jugs",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "A jug needs 40 cups of water to be full.",
+  "observed_error": "The response gives an incorrect jug count without showing any calculations.",
+  "violated_condition": "The jug count must equal (200 students × 10 cups per student) ÷ 40 cups per jug.",
+  "error_description": null,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The stated steps provide no numerical operations, so the text does not establish whether the wrong count resulted from an incorrect relation or incorrectly executed arithmetic."
+}

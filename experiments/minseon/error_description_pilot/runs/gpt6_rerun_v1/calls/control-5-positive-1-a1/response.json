@@ -1,0 +1,1 @@
+{"case1_error":"Answers Jo’s current age, 41, instead of the requested age one year ago, 40.","case2_error":"Answers Tully’s current age, 61, instead of the requested age one year ago, 60.","reason":"Both answer the wrong requested quantity: current age rather than age one year ago.","judgment":"same"}

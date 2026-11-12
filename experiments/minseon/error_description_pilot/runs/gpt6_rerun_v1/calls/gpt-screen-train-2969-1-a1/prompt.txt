@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Frank's laundry detergent is double concentrated and will wash 80 loads of laundry.  His detergent is usually $25.00 a bottle but they're having a sale.  If he buys 2 bottles, both bottles will drop to $20.00 a bottle.  How much does he spend, in cents, per load of laundry, if he buys 2 bottles of detergent?
+SOLUTION: Step 1: Calculate the total cost for 2 bottles of detergent at the sale price.
+Sale price per bottle = $20.00
+Total cost for 2 bottles = 2 × $20.00 = $40.00
+
+Step 2: Calculate the total number of loads that can be washed with the 2 bottles.
+Total number of loads = 80 loads
+
+Step 3: Calculate the cost per load of laundry.
+Cost per load = Total cost for 2 bottles / Total number of loads
+Cost per load = $40.00 / 80 loads = $0.50 per load
+
+Step 4: Convert the cost per load from dollars to cents.
+Cost per load in cents = $0.50 × 100 cents/dollar = 50 cents
+
+#### 50
+The final answer is 50 cents per load of laundry.

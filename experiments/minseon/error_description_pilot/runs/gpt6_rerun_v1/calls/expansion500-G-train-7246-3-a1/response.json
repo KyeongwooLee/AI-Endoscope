@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7246-3",
+  "response_sha256": "3ba1f6007e6a22630b223953c7b8d7ba8b97dc24bab458e65e518e7d5907af7b",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\( 10 \\text{ prayers} \\times 2 = 20 \\text{ prayers} \\)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "except on Sundays, when he prays twice as much as Pastor Paul.",
+  "observed_error": "The response doubles Bruce's regular daily count to calculate his Sunday count.",
+  "violated_condition": "Bruce's Sunday count must be twice Paul's Sunday count, which is 40 prayers.",
+  "error_description": "The response calculates Bruce's Sunday prayers as 10 × 2 = 20, doubling Bruce's regular daily count. The question instead requires twice Paul's Sunday count of 40 prayers. The multiplication is executed correctly, but its starting quantity violates the Sunday comparison between the pastors.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

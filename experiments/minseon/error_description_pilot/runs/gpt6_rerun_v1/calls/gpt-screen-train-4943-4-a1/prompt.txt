@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Juan needs 10 half-gallons of milk to bake 40 cookies with. How many half-gallons of milk does Juan need to bake 200 dozen cookies?
+SOLUTION: To solve this problem, we need to determine how much milk is required for one cookie and then use that to find out how much is needed for 200 dozen cookies.
+
+Step 1: Calculate the total number of cookies.
+- 1 dozen = 12 cookies
+- 200 dozen = 200 * 12 = 2400 cookies
+
+Step 2: Determine the number of half-gallons needed for 2400 cookies.
+- 10 half-gallons are needed for 40 cookies.
+- Therefore, for 2400 cookies, we need \( \frac{2400}{40} \times 10 = 600 \) half-gallons.
+
+Step 3: Calculate the number of half-gallons needed for 200 dozen cookies.
+- For 200 dozen cookies, we need \( \frac{200}{12} \times 600 \) half-gallons.
+- Simplifying, we get \( \frac{200}{12} \times 600 = 500 \times 600 = 300,000 \) half-gallons.
+
+#### 300,000
+This is the answer, formatted exactly as requested.

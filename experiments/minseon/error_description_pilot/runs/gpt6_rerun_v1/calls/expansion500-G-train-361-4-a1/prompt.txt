@@ -1,0 +1,73 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-361-4
+response_sha256: 2d5c064c3a10087c0f4c87b13ad78c3d93b96842fa8e2941788ca3879a99bab6
+
+=== QUESTION ===
+On the first day of the journey, the Skipper sailed his ship halfway to the destination by traveling due east for 20 hours at a speed of 30 kilometers per hour, and then turned the ship's engines off to let them cool down. But while the engines were off, a wind storm blew his vessel backward in a westward direction.  After the storm, the Skipper used his GPS device to determine the new location of the ship, and he discovered that he was only one-third of the way to his destination.  How many kilometers had the ship been blown in a westward direction by the storm?
+=== MODEL SOLUTION ===
+On the first day, the ship traveled 20 hours at a speed of 30 kilometers per hour. So, the distance covered by the ship is:
+\[ \text{Distance}_1 = 20 \times 30 = 600 \text{ kilometers} \]
+
+After the engines were turned off, the ship was blown backward by a wind storm. After the storm, the Skipper discovered that the ship was only one-third of the way to the destination. Let's denote the total distance to the destination as \( D \). Then, the distance covered by the ship after the storm is \( \frac{D}{3} \).
+
+Since the ship had already covered 600 kilometers and then was blown backward by \( D - 600 \) kilometers, the remaining distance is one-third of the total distance \( D \):
+\[ D - 600 = \frac{D}{3} \]
+
+To solve for \( D \), we multiply both sides by 3:
+\[ 3(D - 600) = D \]
+\[ 3D - 1800 = D \]
+\[ 2D = 1800 \]
+\[ D = 900 \text{ kilometers} \]
+
+So, the total distance to the destination is 900 kilometers. The distance covered by the ship before the storm was 600 kilometers, and it was blown backward by one-third of the total distance, which is:
+\[ \frac{900}{3} = 300 \text{ kilometers} \]
+
+Therefore, the ship was blown in a westward direction by the storm for:
+#### 300
+=== REFERENCE SOLUTION (fallible aid) ===
+Traveling 20 hours due east at 30 kilometers per hour, the ship sailed 20*30=<<20*30=600>>600 kilometers the first day.
+If half the distance to the destination is 600 kilometers, then 2*600=<<2*600=1200>>1200 kilometers is the total distance from start to destination.
+One-third of the distance from start to destination is 1/3 * 1200 = <<1200/3=400>>400 kilometers.
+Thus, the wind storm blew the ship in a westward direction for 600 - 400 = <<600-400=200>>200 kilometers.
+#### 200
+=== END ===

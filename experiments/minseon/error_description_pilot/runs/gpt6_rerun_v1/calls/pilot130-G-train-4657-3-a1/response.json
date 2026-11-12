@@ -1,0 +1,19 @@
+{
+  "source_id": "train-4657-3",
+  "response_sha256": "eecdd42532ea8a96fb9b3c295c22a5a370e405ffea36750c970d035190ec4326",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "So far, she has donated 25 square inches.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If she does this 2 times, then how much cloth will she have donated?",
+  "observed_error": "Step 5 reports the second donation as the cumulative amount donated.",
+  "violated_condition": "The cumulative donation after two cuts must include both the first 50 square inches and the second 25 square inches.",
+  "error_description": "After the second cut, the response states that Fatima has donated 25 square inches so far, omitting the earlier 50-square-inch donation from that cumulative statement. The 25 square inches describes only the second donation; the amount donated so far must include both donations.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Steps 6–9 perform a third and fourth cut-and-donate cycle despite the specified two repetitions, and Step 10 includes those additional donations in the total."
+  ],
+  "uncertainty_note": null
+}

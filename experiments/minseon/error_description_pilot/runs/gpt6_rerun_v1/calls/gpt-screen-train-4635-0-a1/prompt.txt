@@ -1,0 +1,15 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Johnny buys 15 packs of colored pencils for his class. Each pack has a red, yellow, and green pencil inside. When he gets home he notices that 3 of the packs have two extra red pencils inside. How many red colored pencils did Johnny buy?
+SOLUTION: Step 1: Determine the number of red pencils in the 12 packs that do not have extra red pencils.
+Each of these 12 packs contains 1 red pencil.
+12 packs * 1 red pencil per pack = 12 red pencils
+
+Step 2: Determine the number of red pencils in the 3 packs that have extra red pencils.
+Each of these 3 packs contains 2 red pencils.
+3 packs * 2 red pencils per pack = 6 red pencils
+
+Step 3: Add the number of red pencils from both types of packs to get the total number of red pencils Johnny bought.
+12 red pencils + 6 red pencils = 18 red pencils
+
+#### 18

@@ -1,0 +1,1 @@
+{"status":"answer_conflict","independent_answer":"8000 flowers","check":"There are 50 × 400 = 20000 flowers initially; the remaining 40% is 8000. The worked solution is correct, but its leading answer marker conflicts with that result.","evidence_quote":"#### 100","error_description":"The leading marker gives 100, while the correct derivation and worked final answer give 8000."}

@@ -1,0 +1,20 @@
+{
+  "source_id": "train-4567-4",
+  "response_sha256": "c7284c8edd1911686b4ea3624b8500f0c6c73e642f519957fd386140b8153c73",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 1: Calculate the total number of books sold in-store on Sunday.\n37 (Saturday) + 2 * 37 = 37 + 74 = 111 books",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "On Sunday, they sold twice as many books in-store",
+  "observed_error": "The response labels the combined Saturday and Sunday in-store sales as Sunday's sales.",
+  "violated_condition": "Sunday's in-store sales equal 2 × 37, excluding Saturday's 37 books.",
+  "error_description": "The response adds Saturday's 37 books to twice that amount and identifies the resulting 111 books as Sunday's in-store sales. Sunday alone requires only twice Saturday's sales. The arithmetic is correct, and 111 is subsequently used appropriately as the two-day total.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Step 2 similarly labels the two-day online total, 128 + 128 + 34 = 290 books, as Sunday's online sales.",
+    "Steps 4–5 compute final inventory as (401 + 743 + 160) − 743, retaining sold books as a positive contribution and canceling starting inventory. Final inventory must equal starting inventory minus sales plus the shipment."
+  ],
+  "uncertainty_note": null
+}

@@ -1,0 +1,2 @@
+2026-11-11T19:23:32.985913Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-11-11T19:23:33.925305Z  WARN sqlx::query: slow statement: execution time exceeded alert threshold summary="PRAGMA wal_checkpoint(PASSIVE)" db.statement="" rows_affected=0 rows_returned=1 elapsed=1.115719828s elapsed_secs=1.115719828 slow_threshold=1s

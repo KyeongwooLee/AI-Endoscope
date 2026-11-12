@@ -1,0 +1,11 @@
+You are comparing observable mathematical errors. Use no tools or outside resources. For each case, check its solution against its question; the reference is fallible and must not override the question. Distinguish an erroneous relation, a numerical evaluation error of a correctly written expression, an unsupported final number after a correct formula, and answering the wrong requested quantity. A contradictory leading answer marker with an otherwise correct derivation is an answer conflict, not evidence of an invented math mistake. Decide same only if BOTH cases have the same specific observable error mechanism. Different stories, numerical values, or arithmetic operators do not by themselves make mechanisms different. Decide different if both have diagnosable errors and their mechanisms differ. Decide uncertain if either case has no clear mathematical error, a materially ambiguous interpretation, or only answer-marker conflict. Never invent an unshown calculation. Return concise JSON: case1_error, case2_error, judgment (same/different/uncertain), reason. No method names, embedding scores, cluster labels or generated annotations are supplied.
+
+CASE 1
+QUESTION: There are 16 red apples and 12 more green apples than red apples. How many apples are there altogether?
+SOLUTION: There are 16 red apples and 12 green apples, so 16 + 12 = 28 total.
+REFERENCE: Green apples = 16 + 12 = 28; total = 16 + 28 = 44.
+
+CASE 2
+QUESTION: There are 16 red apples and 12 more green apples than red apples. How many apples are there altogether?
+SOLUTION: Green apples = 16 + 12 = 28. Total apples = 16 + 28 = 40.
+REFERENCE: Green apples = 16 + 12 = 28; total = 16 + 28 = 44.

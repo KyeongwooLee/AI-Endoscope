@@ -1,0 +1,20 @@
+{
+  "source_id": "train-5897-4",
+  "response_sha256": "966e2c72ca14ba95c878a69cc9f5bca27ca6cb96d39ed9df525467d215af18d1",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total from Uncle: \\( x + 2x = 3x \\).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Grandpa gave Olaf twice as many toy cars as the uncle.",
+  "observed_error": "The response labels the combined gifts from Uncle and Grandpa as Uncle's gift alone.",
+  "violated_condition": "If Uncle gives x cars, Grandpa gives 2x; 3x represents their combined gifts.",
+  "error_description": "The response adds Uncle's x cars and Grandpa's 2x cars, then identifies the resulting 3x as Uncle's gift alone. The addition is correct, but the quantity is misidentified: the stated twice-as-many relationship makes 3x the combined contribution of two relatives.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The gift sum includes both x + 1 and 6 for Auntie's single gift while omitting Mum's 15 cars.",
+    "The response sets 3x equal to the initial collection of 150 cars without a supporting relation; Uncle's gift must instead satisfy x + 1 = 6."
+  ],
+  "uncertainty_note": null
+}

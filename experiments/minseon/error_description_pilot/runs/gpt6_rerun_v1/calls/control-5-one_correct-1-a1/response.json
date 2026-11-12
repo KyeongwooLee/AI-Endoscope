@@ -1,0 +1,1 @@
+{"case1_error":"No mathematical error: 61 − 1 = 60 correctly gives the age one year ago.","case2_error":"Answers the current age, 61, instead of the requested age one year ago, 60.","reason":"Case 1 is correct, so both cases do not have diagnosable mathematical errors.","judgment":"uncertain"}

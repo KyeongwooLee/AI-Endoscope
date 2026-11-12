@@ -1,0 +1,13 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Louise is baking cakes for a gathering. She needs 60 cakes in total, and has already produced half this many. Today, she calculates how many cakes she has left to make and bakes half this amount. The next day, she again calculates how many cakes she has left to make and bakes a third of this amount. How many more cakes does Louise need to bake?
+SOLUTION: Step 1: Louise needs 60 cakes in total.
+Step 2: She has already produced half this many, which is 60 / 2 = 30 cakes.
+Step 3: She has 60 - 30 = 30 cakes left to make.
+Step 4: Today, she bakes half this amount, which is 30 / 2 = 15 cakes.
+Step 5: She now has 30 - 15 = 15 cakes left to make.
+Step 6: The next day, she bakes a third of this amount, which is 15 / 3 = 5 cakes.
+Step 7: She now has 15 - 5 = 10 cakes left to make.
+Step 8: Louise needs to bake 60 - 10 = 50 more cakes.
+
+#### 50

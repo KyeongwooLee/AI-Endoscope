@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7398-3",
+  "response_sha256": "b0adf526df70bee785a276fd62eb3608604ad310d79835a867c05469059c4658",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "12 walnuts (initial) + 6 walnuts (gathered) - 1 walnut (dropped) + 5 walnuts (brought) - 2 walnuts (eaten) = 18 walnuts",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "A boy squirrel gathers 6 walnuts and carries them to his burrow in the tree, adding to the 12 already there, and dropping 1 on the way. The girl squirrel brings 5 more walnuts to their burrow and eats 2.",
+  "observed_error": "The response incorrectly evaluates its correctly written expression as 18 walnuts.",
+  "violated_condition": "The remaining count must equal 12 + 6 - 1 + 5 - 2.",
+  "error_description": "The response correctly represents the initial 12 walnuts, the additions of 6 and 5, and the losses of 1 and 2, but incorrectly evaluates that written expression as 18 walnuts. The mistake is in executing the arithmetic, rather than in the relation used to represent the remaining count.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,1 @@
+{"status":"answer_conflict","independent_answer":"50 mph","check":"Natasha's speed was 60 miles ÷ 1 hour = 60 mph, so the speed limit was 60 − 10 = 50 mph. The worked solution is correct, but its leading answer marker conflicts with it.","evidence_quote":"#### 40","error_description":"The leading marker gives 40, while the correct worked final answer is 50 mph."}

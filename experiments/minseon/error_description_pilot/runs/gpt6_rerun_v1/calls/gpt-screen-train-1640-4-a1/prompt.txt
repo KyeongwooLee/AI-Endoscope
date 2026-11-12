@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: For Halloween, Taquon, Mack and Jafari put their candy together and they had 418 pieces of candy. If Taquon and Mack each had 171 pieces of candy, how many pieces of candy did Jafari start with?
+SOLUTION: #### 67
+To find out how many pieces of candy Jafari started with, we need to subtract the total number of pieces of candy that Taquon and Mack had from the total number of pieces of candy they had together.
+
+Step 1: Calculate the total number of pieces of candy that Taquon and Mack had together.
+Taquon had 171 pieces and Mack had 171 pieces.
+Total for Taquon and Mack = 171 + 171 = 342 pieces
+
+Step 2: Subtract the total number of pieces that Taquon and Mack had from the total number of pieces of candy they had together.
+Total candy = 418 pieces
+Total for Taquon and Mack = 342 pieces
+Jafari's candy = Total candy - Total for Taquon and Mack
+Jafari's candy = 418 - 342 = 67 pieces
+
+Therefore, Jafari started with 67 pieces of candy.

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4923-4",
+  "response_sha256": "60ed53394d5383c29445937712106f4ab884d8b33ac27120ed06614bdff03218",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "There are 8 floors from the 9th to the ground floor.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Austin and Jake start descending from the 9th floor of a building at the same time.",
+  "observed_error": "The response counts eight floor intervals from the ninth floor to ground level.",
+  "violated_condition": "Descending from the ninth floor to ground level requires nine floor intervals, each containing 30 steps.",
+  "error_description": "The response uses eight floor intervals for Jake’s descent from the ninth floor to ground level, instead of nine. This understates the stair count and descent time. Its multiplication, division, and time subtraction correctly execute the stated operands; the error is the initial floor-interval count.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Arthur has 3 dogs. They eat an average of 15 pounds of food a week. One dog eats 13 pounds a week. The second eats double this. How much does the third dog eat a week?
+SOLUTION: Step 1: Let's denote the amount of food the third dog eats per week as \( x \) pounds.
+Step 2: The second dog eats double the amount of the third dog, so it eats \( 2x \) pounds per week.
+Step 3: The total amount of food eaten by all three dogs is the sum of the food eaten by each dog, which is \( 15 \) pounds per week.
+Step 4: We can set up the equation to represent this: 
+   \[
+   13 + 2x + x = 15
+   \]
+Step 5: Combine like terms:
+   \[
+   13 + 3x = 15
+   \]
+Step 6: Subtract 13 from both sides to isolate the term with \( x \):
+   \[
+   3x = 2
+   \]
+Step 7: Divide both sides by 3 to solve for \( x \):
+   \[
+   x = \frac{2}{3}
+   \]
+
+#### 2/3

@@ -1,0 +1,12 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Gina chooses what she and her sister will watch on Netflix three times as often as her sister does. If her sister watches a total of 24 shows on Netflix per week, and each show is 50 minutes long, how many minutes of Netflix does Gina get to choose?
+SOLUTION: Step 1: Determine how many shows Gina chooses.
+Since Gina chooses what they watch three times as often as her sister, we need to calculate three times the number of shows her sister watches.
+24 shows * 3 = 72 shows
+
+Step 2: Calculate the total minutes Gina gets to choose.
+Each show is 50 minutes long, so for 72 shows, the total minutes are:
+72 shows * 50 minutes/show = 3600 minutes
+
+#### 3600

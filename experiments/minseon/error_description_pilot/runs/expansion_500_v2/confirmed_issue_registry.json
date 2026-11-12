@@ -1,0 +1,58 @@
+[
+  {
+    "source_id": "train-1081-4",
+    "issue": "reference_error",
+    "reason_ko": "원래 풀이1060은 맞다. 참조가500/1000을1000/500으로 뒤집고, 둘째 벌 수800을700으로 바꿨다.",
+    "arithmetic": "1000*(1-.2)=800; 500/1000=.5; 800*.5*1.4+500=1060",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately"
+  },
+  {
+    "source_id": "train-3995-2",
+    "issue": "reference_error",
+    "reason_ko": "타일 넓이가6제곱인치라고 주어졌다. 원래 풀이576이 문구에 맞고, 참조는6을 한 변 길이로 취급했다.",
+    "arithmetic": "48*72/6=576",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately"
+  },
+  {
+    "source_id": "train-3795-3",
+    "issue": "answer_marker_conflict",
+    "reason_ko": "본문의 제한속도50은 맞지만 서두####40과 충돌한다. 본문의 계산 오류로 분류하지 않는다.",
+    "arithmetic": "60/1-10=50",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately"
+  },
+  {
+    "source_id": "train-7430-4",
+    "issue": "answer_marker_conflict",
+    "reason_ko": "본문의 남은 좌석120은 맞지만 서두####20과 충돌한다.",
+    "arithmetic": "50*4-80=120",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately"
+  },
+  {
+    "source_id": "train-7421-3",
+    "issue": "answer_marker_conflict",
+    "reason_ko": "본문의 상금160은 맞지만 서두####200과 충돌한다.",
+    "arithmetic": "(2400-2400/3)/10=160",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately"
+  },
+  {
+    "source_id": "train-1297-4",
+    "issue": "answer_marker_conflict",
+    "reason_ko": "본문의 학생8명은 맞지만 서두####16과 충돌한다.",
+    "arithmetic": "40*.8*.25=8",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately"
+  },
+  {
+    "source_id": "train-6861-3",
+    "issue": "question_ambiguity",
+    "reason_ko": "둘이 게임 하나를 공동 구매하면12개, 각각 하나씩 사면24개다. 참조는 후자를 가정한다. 문구만으로 전자의 풀이를 확실한 오류로 단정하기 어렵다.",
+    "arithmetic": "60/5=12; 2*60/5=24",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately"
+  }
+]

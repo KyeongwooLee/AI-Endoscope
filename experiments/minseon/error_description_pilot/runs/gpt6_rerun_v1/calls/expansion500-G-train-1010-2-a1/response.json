@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1010-2",
+  "response_sha256": "19562a7e1db39d9aa50f3cd6061c23d87ea75c3217307984d0efdca3e573a3da",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 20",
+  "evidence_start": 0,
+  "evidence_end": 7,
+  "evidence_occurrence": null,
+  "question_evidence_quote": "how long will it take Erin to serve all the soup, rounded to the nearest minute?",
+  "observed_error": "The opening answer gives 20, contradicting the correctly calculated and rounded duration in the body.",
+  "violated_condition": "The reported duration must equal 768 ounces divided by 50 ounces per minute, rounded to the nearest minute.",
+  "error_description": "The opening answer reports 20 minutes, which does not match the required rounding of the response’s correctly computed 15.36-minute duration. The body’s conversions, division, and rounding are correct; the unsupported opening value contradicts that calculation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text does not establish how the incorrect opening value was obtained."
+}

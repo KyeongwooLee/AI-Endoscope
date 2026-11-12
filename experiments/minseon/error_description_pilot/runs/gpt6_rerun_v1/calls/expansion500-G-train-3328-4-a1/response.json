@@ -1,0 +1,19 @@
+{
+  "source_id": "train-3328-4",
+  "response_sha256": "19536d4a170d1e58a390a30fcadb3af09eed63aa2cf4c9f8c859aa7fa597ed1b",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 2: The second dog eats double the amount of the third dog, so it eats \\( 2x \\) pounds per week.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "One dog eats 13 pounds a week. The second eats double this.",
+  "observed_error": "The response makes the second dog's intake twice the third dog's intake.",
+  "violated_condition": "The second dog's weekly intake is twice the first dog's 13 pounds, not twice the third dog's unknown intake.",
+  "error_description": "The response assigns the second dog twice the third dog's unknown weekly intake, although “double this” refers to the first dog's 13 pounds per week. It independently treats the 15-pound average as the total for all three dogs. The subsequent arithmetic correctly follows the incorrectly constructed equation.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Step 3 treats 15 pounds per week as the combined intake, although it is the average across three dogs; the total must be 3 × 15 pounds per week."
+  ],
+  "uncertainty_note": null
+}

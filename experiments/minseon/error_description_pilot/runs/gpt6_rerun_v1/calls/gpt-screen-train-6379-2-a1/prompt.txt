@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Steve writes a letter every 3rd day to his friend.  He spends 20 minutes writing the letters.  It takes 10 minutes to write 1 page.  He also writes a long letter at the end of the month which he puts more thought into.  It takes twice as long per page but he spends 80 minutes writing.  How many pages does he write a month?
+SOLUTION: Step 1: Calculate the number of letters Steve writes in a month.
+He writes a letter every 3rd day. There are 30 days in a month.
+Number of letters = 30 / 3 = 10 letters
+
+Step 2: Calculate the total time Steve spends writing letters.
+Each letter takes 20 minutes to write.
+Total time = 10 letters * 20 minutes/letter = 200 minutes
+
+Step 3: Calculate the number of pages Steve writes in the regular letters.
+Each page takes 10 minutes to write.
+Number of pages in regular letters = 200 minutes / 10 minutes/page = 20 pages
+
+Step 4: Calculate the time Steve spends on the long letter.
+It takes twice as long per page as a regular letter, so 20 * 2 = 40 minutes per page.
+Total time for the long letter = 80 minutes
+Number of pages in the long letter = 80 minutes / 40 minutes/page = 2 pages
+
+Step 5: Calculate the total number of pages Steve writes in a month.
+Total pages = 20 pages (regular letters) + 2 pages (long letter) = 22 pages
+
+#### 22

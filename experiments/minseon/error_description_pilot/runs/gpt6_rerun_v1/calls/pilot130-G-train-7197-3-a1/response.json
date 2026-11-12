@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7197-3",
+  "response_sha256": "2f107624dd6faa8f2629cbaf0b899552578ccfe2f2a5cc548e7eec9fe40d751f",
+  "status": "ambiguous",
+  "reference_review_needed": true,
+  "evidence_quote": "Therefore, the number of hawksbill turtles taken is \\(2 \\times 800 = 1600\\).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "twice more hawksbill turtles than the number of green turtles",
+  "observed_error": "The response interprets “twice more” as twice as many; the reference interprets it as an additional twice the green-turtle count.",
+  "violated_condition": null,
+  "error_description": null,
+  "reference_review_reason": "The wording “twice more” permits competing interpretations: H = 2G or H = G + 2G. The reference assumes the latter without resolving this ambiguity.",
+  "secondary_errors": [],
+  "uncertainty_note": "The response’s arithmetic is correct under its interpretation. The supplied wording does not establish an unambiguous substantive error."
+}

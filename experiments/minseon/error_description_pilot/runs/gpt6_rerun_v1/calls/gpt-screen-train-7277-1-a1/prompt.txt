@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jeff bought 6 pairs of shoes and 4 jerseys for $560. Jerseys cost 1/4 price of one pair of shoes. Find the shoe's price total price.
+SOLUTION: Step 1: Let the price of one pair of shoes be \( S \).
+Step 2: Let the price of one jersey be \( J \). According to the problem, \( J = \frac{1}{4}S \).
+Step 3: Jeff bought 6 pairs of shoes and 4 jerseys for $560. Therefore, we can write the equation:
+\[ 6S + 4J = 560 \]
+Step 4: Substitute \( J \) with \( \frac{1}{4}S \):
+\[ 6S + 4\left(\frac{1}{4}S\right) = 560 \]
+Step 5: Simplify the equation:
+\[ 6S + S = 560 \]
+\[ 7S = 560 \]
+Step 6: Solve for \( S \):
+\[ S = \frac{560}{7} \]
+\[ S = 80 \]
+
+Answer: #### 80
+#### 80

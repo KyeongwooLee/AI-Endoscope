@@ -1,0 +1,19 @@
+{
+  "source_id": "train-4626-3",
+  "response_sha256": "98635a98e5b6a0ee2dac34a95c54671da87361e0066c1a9dd5d93b427b2b8b1c",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The construction cost of each of the other houses is $320,000.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "the other houses, which sell at $320,000 each",
+  "observed_error": "The response treats the other houses' selling price as their construction cost.",
+  "violated_condition": "The $320,000 amount is a selling price; only the $100,000 difference in construction costs is given.",
+  "error_description": "The response assigns $320,000 to the construction cost of each other house, although the question gives that amount as their selling price. It consequently asserts an unsupported $420,000 building cost for the new house. The question specifies only the difference between construction costs, not either absolute cost.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The response subtracts the extra $100,000 construction expense from a profit already calculated using the increased construction cost. Additional profit requires comparing the two houses' profits, not deducting the cost increase again."
+  ],
+  "uncertainty_note": null
+}

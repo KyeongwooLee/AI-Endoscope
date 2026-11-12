@@ -1,0 +1,20 @@
+{
+  "source_id": "train-289-3",
+  "response_sha256": "6bced2daa9233de54aec4520da9e5d2ef6494cc46ac75e3f108781af51d13d3f",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "301 = 4F + F + 2C + 3",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "he has 301 models total.",
+  "observed_error": "The total equation replaces the Chevy count C with 2C + 3, which represents the Ford count.",
+  "violated_condition": "The total must equal Buicks + Fords + Chevys = 4F + F + C.",
+  "error_description": "The response writes the total as 4F + F + 2C + 3 even though C denotes Chevys and 2C + 3 denotes Fords. This counts Fords twice and omits the Chevy count, violating the requirement that the 301 models equal the sum of the three makes.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "From 301 = 12C + 18, the response writes 183 = 12C; subtracting 18 from 301 gives 283, not 183.",
+    "The response rounds a fractional car count to 15 without preserving the exact total and count relations."
+  ],
+  "uncertainty_note": null
+}

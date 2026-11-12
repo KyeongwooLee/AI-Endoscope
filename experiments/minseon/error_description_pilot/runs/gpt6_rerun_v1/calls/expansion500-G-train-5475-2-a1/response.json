@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5475-2",
+  "response_sha256": "599ea81ec0509b48a5829a6083fbdf1947dc2f4c20237af24453f8d85be2ab53",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Chances of making the team = 10% + 30% = 40%",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "The chances of making the junior high basketball team start at 10% if you're 66 inches and increase 10% for every additional inch of height.",
+  "observed_error": "The response adds the increase for all three inches of growth to the baseline chance at 66 inches.",
+  "violated_condition": "The increase added to the 10% baseline must correspond to final height minus 66 inches, not final height minus 65 inches.",
+  "error_description": "The response adds a 30-percentage-point increase for Devin's entire three-inch growth to the 10% chance specified at 66 inches. His final height is 68 inches, only two inches above that baseline. The addition is executed correctly, but the increase uses the wrong starting height.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

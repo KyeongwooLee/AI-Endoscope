@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John is laying the foundation for 3 homes. Each home needs a slab of concrete that is 100 feet by 100 feet by .5 feet. Concrete has a density of 150 pounds per cubic foot. A pound of concrete cost $.02 per pound. How much does the foundation cost?
+SOLUTION: Let's break down the problem step by step:
+
+1. **Volume Calculation**:
+   - The concrete slab for one home is a rectangular prism with dimensions 100 feet by 100 feet by 0.5 feet.
+   - Volume of one slab = \(100 \text{ feet} \times 100 \text{ feet} \times 0.5 \text{ feet} = 5000 \text{ cubic feet}\).
+
+2. **Total Volume for 3 Homes**:
+   - Total volume for 3 homes = \(3 \times 5000 \text{ cubic feet} = 15000 \text{ cubic feet}\).
+
+3. **Weight Calculation**:
+   - Concrete density is 150 pounds per cubic foot.
+   - Weight of concrete for one home = \(5000 \text{ cubic feet} \times 150 \text{ pounds per cubic foot} = 750000 \text{ pounds}\).
+   - Weight of concrete for 3 homes = \(3 \times 750000 \text{ pounds} = 2250000 \text{ pounds}\).
+
+4. **Cost Calculation**:
+   - Cost per pound of concrete is $0.02.
+   - Total cost = \(2250000 \text{ pounds} \times \$0.02 \text{ per pound} = \$450000\).
+
+#### 450000
+The foundation costs $450,000.

@@ -1,0 +1,19 @@
+{
+  "source_id": "train-901-4",
+  "response_sha256": "740dd8892a078c06b5810eb2039281ede24e536c6000fd949fc96f94814500aa",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "$$ \\text{Gillian's spending} = 3 \\times 600 + 150 $$",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "She spent half of it at a farmer’s market. Gillian spent $150 more than three times Sandi's total.",
+  "observed_error": "The response uses Sandi's initial $600 instead of her $300 expenditure in Gillian's spending relation.",
+  "violated_condition": "Gillian's spending is $150 more than three times the amount Sandi spent at the market.",
+  "error_description": "The response multiplies Sandi's initial $600 by three when calculating Gillian's spending, although Sandi spent only half that amount at the market. The threefold comparison must use Sandi's $300 expenditure before adding $150; the written relation uses the wrong quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The reported final value 2100 also does not equal the written expression 3 × 600 + 150, which evaluates to 1950."
+  ],
+  "uncertainty_note": null
+}

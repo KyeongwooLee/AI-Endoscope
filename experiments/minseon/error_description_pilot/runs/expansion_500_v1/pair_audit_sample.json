@@ -1,0 +1,16 @@
+{
+  "seed": 20261114,
+  "selection": "10 uniformly random unique pairs; chosen before looking at their automatic judgments; Codex AI spot-check, not human",
+  "pair_ids": [
+    "pair-0262",
+    "pair-0986",
+    "pair-1983",
+    "pair-2070",
+    "pair-0528",
+    "pair-2036",
+    "pair-0100",
+    "pair-1792",
+    "pair-0968",
+    "pair-1760"
+  ]
+}

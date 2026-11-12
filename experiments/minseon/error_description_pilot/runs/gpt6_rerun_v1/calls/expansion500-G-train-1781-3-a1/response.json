@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1781-3",
+  "response_sha256": "358bf2560a1c8b38509336ae09ef2114f9fb9eaab960ce82db6b41c1e4be9d73",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "48 backpacks - 17 backpacks - 10 backpacks = 11 backpacks",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "A salesman bought a case of 48 backpacks for $576. He sold 17 of them for $18 at the swap meet, 10 were sold to a department store for $25 each.",
+  "observed_error": "The response evaluates 48 - 17 - 10 as 11 instead of 21.",
+  "violated_condition": "The remaining number of backpacks must equal the original 48 minus the 17 and 10 already sold.",
+  "error_description": "The response writes the correct subtraction for the remaining backpacks but evaluates 48 minus 17 minus 10 as 11 rather than 21. This understates the number sold at $22 each, so the subsequent remainder revenue, total revenue, and profit inherit the arithmetic error.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

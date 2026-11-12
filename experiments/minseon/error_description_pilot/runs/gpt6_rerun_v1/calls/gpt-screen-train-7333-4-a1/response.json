@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$3000","check":"The lightsaber costs 2 × $1000 = $2000, so total spending is $1000 + $2000 = $3000. Step 3 adds the lightsaber cost again after it was already included.","evidence_quote":"$3000 + $2000 = $5000","error_description":"The solution double-counts the lightsaber in Step 3, producing $5000 instead of $3000."}

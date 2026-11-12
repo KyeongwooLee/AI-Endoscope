@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6123-2",
+  "response_sha256": "2fa73d5dfae41ee4e3490d7ecdd607ce980bd6e62efffb346b0fe93fa449ade8",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Price per green tractor:\n   \\[\n   \\frac{3,000}{3} = 1,000\n   \\]",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "For every green tractor he sells, he gets paid 20% of the sales price for each tractor.",
+  "observed_error": "The response labels the $1,000 commission per green tractor as its price.",
+  "violated_condition": "The commission per green tractor equals 20% of its full sales price.",
+  "error_description": "The response correctly divides $3,000 in green-tractor earnings by three, but labels the resulting $1,000 as the price per tractor instead of the commission. It then multiplies by 1.20, although the commission equals 20% of the full price and must be divided by 0.20.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

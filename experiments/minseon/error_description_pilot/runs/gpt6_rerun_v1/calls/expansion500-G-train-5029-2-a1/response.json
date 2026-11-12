@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5029-2",
+  "response_sha256": "1ce8dad61ef1db2f0deca09dfe338ee5f731b6c94ffc1943508c1209d47a6077",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 300",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how much will be left in her savings after buying all these?",
+  "observed_error": "The marked final answer gives the purchase cost instead of the remaining savings, contradicting the explanation.",
+  "violated_condition": "Remaining savings must equal $500 minus the total purchase cost.",
+  "error_description": "The response marks $300 as its final answer, although its explanation identifies that amount as the total purchase cost. The question asks for savings remaining after the purchase. The written subtraction is correct, but the marked answer reports the wrong quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

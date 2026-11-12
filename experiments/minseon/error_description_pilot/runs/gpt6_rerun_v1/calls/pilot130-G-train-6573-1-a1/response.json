@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6573-1",
+  "response_sha256": "fb113f0dfadce1d9905761007fb2f27a2f85e1a80ac8ac9adeca80f70ca7301a",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Time to cool = (60 - 170) / 7 = -110 / 7 = -15.714 minutes",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "First he needs to raise the temperature of the candy mixture from 60 degrees to 240 degrees. Then he needs to cool it down to 170 degrees.",
+  "observed_error": "The cooling calculation uses 60 degrees as its starting temperature.",
+  "violated_condition": "Cooling begins at 240 degrees after heating, so its duration is (240 - 170) / 7 minutes.",
+  "error_description": "The response calculates cooling time using 60 degrees, the temperature before heating, instead of 240 degrees, the temperature when cooling begins. Its subtraction and division follow the written operands, but those operands describe the wrong temperature change. Taking the absolute value does not repair that relation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

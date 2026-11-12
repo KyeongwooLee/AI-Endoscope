@@ -1,0 +1,19 @@
+START analyze.py pilot130
+DONE analyze.py pilot130
+START run_gpt.py controls_batch
+DONE run_gpt.py controls_batch
+START control_gate.py
+DONE control_gate.py
+START analyze.py expansion500
+DONE analyze.py expansion500
+START build_judge_batches.py pairs
+DONE build_judge_batches.py pairs
+START run_gpt.py pairs_batch
+DONE run_gpt.py pairs_batch
+START evaluate.py
+DONE evaluate.py
+START report.py
+DONE report.py
+START validate_and_package.py
+DONE validate_and_package.py
+PIPELINE COMPLETE

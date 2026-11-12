@@ -1,0 +1,19 @@
+{
+  "source_id": "train-7335-4",
+  "response_sha256": "529adcf637bd9d06e27940e690c58ee7455603d53a673030710c0baae400b827",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "She was given 104 dryer sheets in a box.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "On her birthday, she was given wool dryer balls to use instead of dryer sheets.",
+  "observed_error": "The response treats the birthday gift as 104 dryer sheets.",
+  "violated_condition": "The gift was wool dryer balls replacing dryer sheets; 104 is the number of sheets in a purchased box.",
+  "error_description": "The response states that Sophie received 104 dryer sheets for her birthday, although she received wool dryer balls to replace dryer sheets. It turns the purchased box’s sheet count into a gift quantity and adds that quantity to annual sheet usage, violating the stated replacement condition.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Step 6 multiplies the annual number of sheets by $5.50 per box without dividing by 104 sheets per box, treating the box price as a per-sheet price."
+  ],
+  "uncertainty_note": "The trailing numbers have no shown arithmetic connecting them to the formulas, so they do not establish a separate arithmetic execution error."
+}

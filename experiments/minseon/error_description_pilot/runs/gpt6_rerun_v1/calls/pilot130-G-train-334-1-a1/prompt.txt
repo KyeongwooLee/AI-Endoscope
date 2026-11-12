@@ -1,0 +1,73 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-334-1
+response_sha256: 32bdb5654a0825bf4c7a4808c990cb06d58ad630adb4e94b1e921f4e12181006
+
+=== QUESTION ===
+Martha needs 4 cups of berries and 2 cups of heavy cream to make 1 quart of ice cream.  She wants to make 1 quart of strawberry ice cream and 1 quart of raspberry ice cream.  At the farmers market, the 2 cup packages of strawberries are $3.00 each and the 2 cup package of raspberries are $5.00 each.  The heavy cream is sold for $4.00 for a 4 cup container.  How much will it cost her to make 1 quart of each ice cream?
+=== MODEL SOLUTION ===
+Step 1: Calculate the cost of ingredients for strawberry ice cream.
+- 4 cups of strawberries at $3.00 each: 4 * $3.00 = $12.00
+- 2 cups of heavy cream: $4.00
+
+Total cost for strawberry ice cream: $12.00 + $4.00 = $16.00
+
+Step 2: Calculate the cost of ingredients for raspberry ice cream.
+- 4 cups of raspberries at $5.00 each: 4 * $5.00 = $20.00
+- 2 cups of heavy cream: $4.00
+
+Total cost for raspberry ice cream: $20.00 + $4.00 = $24.00
+
+Step 3: Calculate the total cost to make both ice creams.
+Total cost: $16.00 (strawberry) + $24.00 (raspberry) = $40.00
+
+#### 40
+This is the total cost for Martha to make 1 quart of each ice cream.
+=== REFERENCE SOLUTION (fallible aid) ===
+She needs 4 cups of strawberries per quart of ice cream and the strawberries are sold in 2 cup packages. So 4/2 = <<4/2=2>>2 packages of strawberries
+The strawberries cost $3.00 per package and she needs 2 so 3*2=$<<3*2=6.00>>6.00
+She needs 4 cups of raspberries per quart of ice cream and the raspberries are sold in 2 cup packages. So 4/2 = <<4/2=2>>2 packages of raspberries
+The raspberries cost $5.00 per package and she needs 2 so 5*2 = $<<5*2=10.00>>10.00
+Every quart needs 2 cups of heavy cream and she's making 2 quarts so 2*2 = <<2*2=4>>4 quarts
+She will spend $6.00 on strawberries, $10.00 on raspberries and $4.00 on heavy cream bringing the total to 6+10+4 = $<<6+10+4=20.00>>20.00
+#### 20
+=== END ===

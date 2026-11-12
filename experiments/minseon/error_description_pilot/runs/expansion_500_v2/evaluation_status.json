@@ -1,0 +1,8 @@
+{
+  "automatic_retrieval_accuracy_published": false,
+  "reason": "Both original and revised judge fail frozen elementary positive/uncertainty controls; real diagnosis reasons contain substantive errors. No reliable automatic same-error accuracy estimate.",
+  "retrieval_recomputed": true,
+  "full_new_pair_judging_skipped_after_failed_sanity_checks": true,
+  "screening_use": "triage only; not automatic relabeling",
+  "human_ground_truth": false
+}

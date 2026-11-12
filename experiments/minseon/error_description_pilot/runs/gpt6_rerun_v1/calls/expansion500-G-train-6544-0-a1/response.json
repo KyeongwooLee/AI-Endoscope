@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6544-0",
+  "response_sha256": "f247b307c23ec7add822232405766b701a1155bd73fa356a29de3fb7cb919384",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "so he spent \\( \\frac{I}{2} - 20 \\).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "spent $20 from the other half on groceries",
+  "observed_error": "Step 3 identifies the remaining half-income minus $20 as the amount spent.",
+  "violated_condition": "Groceries cost $20; I/2 - 20 is the remaining money and must equal $100.",
+  "error_description": "Step 3 labels I/2 - 20 as the amount spent on groceries, although the grocery expense is $20. That expression represents the money remaining after the donation and grocery purchase. The subsequent equation subtracts this remainder from total income instead of setting it equal to the stated $100 left.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

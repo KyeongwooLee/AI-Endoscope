@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4343-3",
+  "response_sha256": "06bdbfe2c0c7c21707bcdbf24fadc6c80e38da3c919bd19baba10882a0cd5e7d",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 15",
+  "evidence_start": 0,
+  "evidence_end": 7,
+  "evidence_occurrence": null,
+  "question_evidence_quote": "how many pancakes must Janina sell each day to cover her expenses?",
+  "observed_error": "The opening answer gives 15 pancakes, contradicting the correct calculation and conclusion below.",
+  "violated_condition": "Daily pancake revenue must cover both rent and supplies: 2n ≥ 30 + 12.",
+  "error_description": "The opening answer states 15 pancakes, which would generate only $30 at $2 each and leave the $12 daily supplies expense uncovered. The subsequent calculation correctly includes both expenses, so the observable mistake is the inconsistent opening answer, not the written arithmetic.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The response does not explain how the opening number was obtained."
+}

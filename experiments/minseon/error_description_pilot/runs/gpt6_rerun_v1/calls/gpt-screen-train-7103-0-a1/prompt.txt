@@ -1,0 +1,29 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Harry decided to buy some balloons for his friend's birthday party. One balloon costs $0.5, and a pack of 10 balloons is cheaper and costs only $3. Finally, Harry wants to bring to the party exactly 14 balloons. How much did he need to pay for them?
+SOLUTION: To determine how much Harry needs to pay for 14 balloons, we can break down the problem into two parts: buying individual balloons and buying packs of 10 balloons.
+
+1. **Calculate the cost of individual balloons:**
+   - Harry wants 14 balloons.
+   - Each individual balloon costs $0.5.
+   - Therefore, the cost for 14 individual balloons is:
+     \[
+     14 \times 0.5 = 7 \text{ dollars}
+     \]
+
+2. **Calculate the cost of packs of 10 balloons:**
+   - Each pack of 10 balloons costs $3.
+   - Harry needs 14 balloons, which is 2 packs of 10 balloons (since 10 + 10 = 20, but he only needs 14).
+   - Therefore, the cost for 2 packs of 10 balloons is:
+     \[
+     2 \times 3 = 6 \text{ dollars}
+     \]
+
+3. **Calculate the total cost:**
+   - The total cost is the sum of the cost of individual balloons and the cost of packs of 10 balloons:
+     \[
+     7 + 6 = 13 \text{ dollars}
+     \]
+
+#### 13
+Harry needs to pay $13 for 14 balloons.

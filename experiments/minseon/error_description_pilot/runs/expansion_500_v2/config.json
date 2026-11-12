@@ -1,0 +1,208 @@
+{
+  "protocol_name": "error-description-expansion-500-quality-followup",
+  "protocol_version": "expansion500-v2",
+  "run_dir": "runs/expansion_500_v2",
+  "data_dir": "data",
+  "sources": {
+    "primary": {
+      "release": "qwen-gsm8k-self-errors-v1",
+      "base_url": "https://github.com/KyeongwooLee/AI-Endoscope/releases/download/qwen-gsm8k-self-errors-v1/",
+      "subdir": "qwen-gsm8k-self-errors-v1",
+      "assets": {
+        "errors.jsonl": "cc54b199164cdef0c42365a1b806f3dc1e99580762d3b6976dabfba3d2c1993b",
+        "features_meta.json": "b0d6ba830ff66432dd118f3c0550db4d7d7a281e08111b431b225a37fbe60464",
+        "DATA_SCHEMA.json": "e1a62842dbc54a74a2691e3531dcc2b1af1cc211125645c44a7b1d8b207a9a13",
+        "README.md": "b239884f998c6724949e00bb16b090dc21434ffd2a5749a4bca2c98eca7f9316",
+        "SHA256SUMS.txt": "2b77c01a9e718b67cb74eaa07a0052f884c422bec5daef625fc16be1d461c829",
+        "ATTRIBUTION.md": "426e5d902a316d771d6620e079a3ee7d044c55611ade27e6cfae8911101ef254",
+        "LICENSE-GSM8K.txt": "893951b3bf94db8df1b13e05da5cdeb499400960e4d44a3962a8b33ed0b4f28e"
+      },
+      "source_model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "source_model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+    },
+    "prior_annotations": {
+      "release": "error-taxonomy-full-v1-draft",
+      "base_url": "https://github.com/KyeongwooLee/AI-Endoscope/releases/download/error-taxonomy-full-v1-draft/",
+      "subdir": "error-taxonomy-full-v1-draft",
+      "assets": {
+        "labels.jsonl": "6137ffc9efa9482260039b08378f8b479710753013f46857fd16b5b30c23193d"
+      }
+    },
+    "minsu_ai_review": {
+      "release": "minsu-branch-d95116f",
+      "base_url": "https://raw.githubusercontent.com/KyeongwooLee/AI-Endoscope/d95116f0d8a6b64a7f3eb08457af11144d6f4a7c/experiments/minsu/taxonomy_relabel/",
+      "subdir": "minsu-ai-review-d95116f",
+      "asset_urls": {
+        "ab_labels.tsv": "setup_ab/out/ab_labels.tsv",
+        "loc_labels.tsv": "loc_audit/out/loc_labels.tsv"
+      },
+      "assets": {
+        "ab_labels.tsv": "dfa22bef79fe7396a87a159b3bc984ada1ef2cdcdc46e4c041bcb5588fdd64ae",
+        "loc_labels.tsv": "6f1529c454182085b8b4dbcee0b3b9fcb48445e3e8669e045ce7b3614db7dd77"
+      }
+    },
+    "local_prior_artifacts": [
+      "/home/coder/yaicon-errorprobe/runs/20261012_followup/manual_adjudications.json",
+      "/home/coder/yaicon-errorprobe/runs/20261012_followup/manual_audit_sample.json",
+      "/home/coder/yaicon-errorprobe/runs/20261012_followup/PILOT_EXAMPLES.md",
+      "/home/coder/yaicon-errorprobe/runs/20261012_followup/ERROR_CASES.md",
+      "/home/coder/yaicon-errorprobe/runs/20261012_AB/REPORT.md",
+      "/home/coder/yaicon-errorprobe/runs/20261012_AB/EXAMPLES.md",
+      "/home/coder/yaicon-errorprobe/runs/20261009T0542Z/REPORT_KO.md",
+      "/home/coder/yaicon-errorprobe/results/20261010_meeting/YAICON_1010_ErrorProbe_회의자료.md"
+    ],
+    "local_prior_records_dirs": [
+      "/home/coder/yaicon-errorprobe/runs/20261012_followup/records",
+      "/home/coder/yaicon-errorprobe/runs/20261012_AB/records"
+    ]
+  },
+  "expected_audit": {
+    "responses": 7691,
+    "questions": 3489,
+    "sampled": 6380,
+    "greedy": 1311,
+    "finish_stop": 7656,
+    "finish_length": 35,
+    "extra_identical_pid_response_copies": 5,
+    "rule_counts": {
+      "SETUP": 4422,
+      "NOEQ": 1797,
+      "TARGET": 586,
+      "OTHER": 549,
+      "ARITH": 311,
+      "NEWNUM": 26
+    },
+    "prior_label_overlap_questions": 201,
+    "prior_label_overlap_rows": 467,
+    "prior_label_exact_pairs": 1
+  },
+  "split": {
+    "method": "fixed random question sample split into first100 queries and remaining400 gallery",
+    "legacy_sae_partition_policy": "union; not a new SAE confirmation test"
+  },
+  "sampling": {
+    "seed": 20261112,
+    "eval_questions": 500,
+    "eval_queries": 100,
+    "eval_gallery": 400,
+    "dev_uniform": 0,
+    "dev_enriched_strata": [],
+    "method": "Python random.Random: uniform question groups, then one response per question; prior audited questions and pilot130 excluded"
+  },
+  "annotation": {
+    "conditions": {
+      "E": "prompts/E_v1.txt",
+      "G": "prompts/G_v1.txt"
+    },
+    "schema_version": "edp-annotation-v1",
+    "language": "en",
+    "word_range": [
+      25,
+      60
+    ],
+    "max_attempts": 2,
+    "statuses": [
+      "supported_error",
+      "insufficient_evidence",
+      "no_error_observed",
+      "ambiguous"
+    ],
+    "annotator": {
+      "route": "local_transformers_causal_lm",
+      "provider": "Qwen",
+      "model_identifier": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "decoding_settings": {
+        "do_sample": false,
+        "max_new_tokens": 1000,
+        "dtype": "float16"
+      },
+      "condition_context_isolated": true,
+      "note": "Each item and condition receives a fresh prompt; no other outputs in context. Model differs from pilot_v1."
+    }
+  },
+  "embedding": {
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "library": "sentence-transformers",
+    "output": "dense only (CLS pooling per model's 1_Pooling config), L2-normalized, cosine",
+    "max_tokens": 8192,
+    "precision": "float32",
+    "batch_size": 4,
+    "device": "auto"
+  },
+  "retrieval": {
+    "k": 5,
+    "random_seed": 20261112,
+    "methods": [
+      "R",
+      "E",
+      "G",
+      "Q",
+      "Random"
+    ],
+    "cohorts": [
+      "native",
+      "common"
+    ]
+  },
+  "review": {
+    "assignment_seed": 20261108,
+    "second_review_fraction": 0.2
+  },
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 20261112,
+    "level": 0.95,
+    "contrasts": [
+      [
+        "G",
+        "E"
+      ],
+      [
+        "G",
+        "R"
+      ],
+      [
+        "E",
+        "R"
+      ]
+    ]
+  },
+  "clustering": {
+    "k_values": [
+      4,
+      6,
+      8,
+      10,
+      15,
+      20
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n_init": 10,
+    "representations": [
+      "R",
+      "E",
+      "G",
+      "Q"
+    ],
+    "display_k": 10,
+    "display_seed": 42,
+    "cohorts": [
+      "native",
+      "common"
+    ],
+    "algorithms": [
+      "KMeans",
+      "average-link cosine"
+    ]
+  },
+  "sae": {
+    "results_dir": null,
+    "kyeongwoo_commit": "7c4485dbc3f14e3771210fe626efe155e8eb468e"
+  }
+}

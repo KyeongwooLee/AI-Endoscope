@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Micah, Dean, and Jake are all training for a marathon organized by a local NGO to support children in their town who have cancer. Micah runs 2/3 times as fast as Dean. It takes Jake 1/3 times more time to finish the marathon than it takes Mica. If Dean takes 9 hours, what's the total time the three take to complete the marathon?
+SOLUTION: Step 1: Determine the time it takes for Micah to complete the marathon.
+Dean takes 9 hours to complete the marathon. Micah runs 2/3 times as fast as Dean, so Micah takes 3/2 times the time Dean takes.
+Time for Micah = 9 hours * 3/2 = 13.5 hours
+
+Step 2: Determine the time it takes for Jake to complete the marathon.
+Jake takes 1/3 times more time than Micah to complete the marathon. So, Jake takes 1 + 1/3 = 4/3 times the time Micah takes.
+Time for Jake = 13.5 hours * 4/3 = 18 hours
+
+Step 3: Calculate the total time the three take to complete the marathon.
+Total time = Time for Dean + Time for Micah + Time for Jake
+Total time = 9 hours + 13.5 hours + 18 hours = 40.5 hours
+
+#### 40.5
+The total time the three take to complete the marathon is 40.5 hours.

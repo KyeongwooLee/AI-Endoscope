@@ -1,0 +1,19 @@
+{
+  "source_id": "train-947-2",
+  "response_sha256": "9559e31a534774fcb9225fbfb968da5292491de99862f7f186064de146988b26",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "So, his total practice remains \\( P \\) after 20 days.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He practices the same amount each day. As of 20 days ago he had half as much practice as he has currently.",
+  "observed_error": "The response subtracts and then adds 20 days of practice to describe the total 20 days from now.",
+  "violated_condition": "With current practice P and daily practice d, the total 20 days from now is P + 20d; P - 20d describes 20 days ago.",
+  "error_description": "The response claims Johnny's total remains P after another 20 days by subtracting and adding the same 20 days of practice. That expression returns from 20 days ago to the present; it does not describe future accumulation. From the present, 20 more days adds 20 times his daily practice to P.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The response later asserts that the problem states P = P/2, equating current practice with practice 20 days ago, and uses this to claim x = 2 without determining the daily practice amount."
+  ],
+  "uncertainty_note": null
+}

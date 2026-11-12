@@ -1,0 +1,19 @@
+{
+  "source_id": "train-6775-3",
+  "response_sha256": "b1c4dac3cceb4a34168558b93f3d86b78b720311315b1f24eb3a5d82c4273d4f",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "1. Iris and her mother (2 people)\n2. 3 uncles and 3 aunts (6 people)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "her 3 uncles and 4 aunts who have a son and daughter each as well as her brother and mother",
+  "observed_error": "The response replaces the listed brother with Iris and counts three aunts instead of four.",
+  "violated_condition": "The guest list includes Iris’ brother and mother, three uncles, and four aunts, each with a son and daughter.",
+  "error_description": "The response counts Iris and her mother in place of the specified brother and mother, omitting the brother from its complete tally. It also independently reduces four aunts to three. The resulting six family units undercount relatives and their children; the arithmetic on the written operands is correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The response lists three aunts although the question specifies four; the reduced child count follows from this same undercount."
+  ],
+  "uncertainty_note": null
+}

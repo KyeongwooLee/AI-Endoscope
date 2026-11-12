@@ -1,0 +1,17 @@
+{
+  "source_id": "train-570-3",
+  "response_sha256": "09fd99a2d860d8f7fcfbdb1284102af43b8231ff0b4e1207c1ce95807aa896cd",
+  "status": "ambiguous",
+  "reference_review_needed": true,
+  "evidence_quote": "Total = 50 cents + 75 cents + 40 cents + 60 cents\nTotal = 225 cents",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If Eric dips his hands into the water and pulls out a quarter, how much money, in cents, did they put into the pond?",
+  "observed_error": "The response correctly totals the deposited coins without subtracting the retrieved quarter.",
+  "violated_condition": null,
+  "error_description": null,
+  "reference_review_reason": "The reference interprets the requested quantity as money remaining after withdrawal, while the question literally asks how much they put into the pond. The response answers the latter interpretation correctly.",
+  "secondary_errors": [],
+  "uncertainty_note": "The withdrawal suggests an intended net amount, but the wording supports the gross deposited amount. No arithmetic error is observable."
+}

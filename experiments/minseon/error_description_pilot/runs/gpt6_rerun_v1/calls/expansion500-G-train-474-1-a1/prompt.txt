@@ -1,0 +1,67 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-474-1
+response_sha256: eedc21ef8820505fc08d45ea8a2083b0ac437baee89e0d2258ac4bd7a29da50e
+
+=== QUESTION ===
+A club with 30 members ordered fruit juices. Two-fifths of them ordered lemon juice. One-third of the remaining members ordered mango juice, and the rest ordered orange juice. How many members ordered orange juice?
+=== MODEL SOLUTION ===
+Step 1: Calculate the number of members who ordered lemon juice.
+2/5 * 30 = 12 members
+
+Step 2: Calculate the remaining number of members after those who ordered lemon juice.
+30 - 12 = 18 members
+
+Step 3: Calculate the number of members who ordered mango juice.
+1/3 * 18 = 6 members
+
+Step 4: Calculate the number of members who ordered orange juice.
+18 - 6 = 12 members
+
+#### 12
+=== REFERENCE SOLUTION (fallible aid) ===
+30 x 2/5 = <<30*2/5=12>>12 members ordered lemon juice.
+So, 30 - 12 = <<30-12=18>>18 members did not order lemon juice.
+Since 1/3 of the remaining ordered mango juice, then 18 x 2/3 = <<18*2/3=12>>12 members ordered mango juice.
+Therefore, 18 - 12 = <<18-12=6>>6 members ordered orange juice.
+#### 6
+=== END ===

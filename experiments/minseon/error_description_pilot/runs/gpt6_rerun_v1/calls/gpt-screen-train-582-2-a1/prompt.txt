@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Haruto has tomato plants in his backyard. This year the plants grew 127 tomatoes. Birds had eaten 19 of the tomatoes. He picked the rest. If Haruto gave half of his tomatoes to his friend, how many tomatoes does he have left?
+SOLUTION: Step 1: Start with the total number of tomatoes grown.
+Total tomatoes grown = 127
+
+Step 2: Subtract the number of tomatoes eaten by birds.
+Tomatoes eaten by birds = 19
+Tomatoes left after birds ate = 127 - 19 = 108
+
+Step 3: Haruto picked half of the remaining tomatoes.
+Tomatoes picked by Haruto = 108 / 2 = 54
+
+Step 4: Haruto gave half of his picked tomatoes to his friend.
+Tomatoes given to friend = 54 / 2 = 27
+
+Step 5: Subtract the tomatoes given to his friend from the tomatoes picked by Haruto.
+Tomatoes left with Haruto = 54 - 27 = 27
+
+#### 27
+Haruto has 27 tomatoes left.

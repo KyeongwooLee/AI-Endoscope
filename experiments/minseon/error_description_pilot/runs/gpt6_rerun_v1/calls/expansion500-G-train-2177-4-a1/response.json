@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2177-4",
+  "response_sha256": "a1f09a39460c93d8df9fc28f1a79154651f651cb16841104713cc58539c5c591",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "18 \\text{ hours} + 6 \\text{ hours} + 8 \\text{ hours} + 7 \\text{ hours} = 49 \\text{ hours}",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how many hours in total will Toby spend pulling the sled?",
+  "observed_error": "The response incorrectly evaluates the sum of the four correctly calculated segment times as 49 hours.",
+  "violated_condition": "Total journey time must equal the arithmetic sum of the four segment times.",
+  "error_description": "The response correctly calculates the four segment times as 18, 6, 8, and 7 hours, but incorrectly adds them to obtain 49 hours. The written addition relation is appropriate for the continuous journey; its arithmetic evaluation overstates the total by 10 hours.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

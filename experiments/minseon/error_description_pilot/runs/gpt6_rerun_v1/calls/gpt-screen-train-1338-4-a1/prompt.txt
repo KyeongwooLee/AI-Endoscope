@@ -1,0 +1,28 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: My new house has 12 medium ceiling lights but I have seen small and large ceiling lights in other rooms. The small ones require 1 bulb, the medium ones require 2, and the large ones need 3 bulbs. How many bulbs should I buy if my wife says she saw twice as many large ceiling lights as medium ceiling lights and ten more small lights than medium ones?
+SOLUTION: Step 1: Define variables for the number of each type of light.
+Let M represent the number of medium ceiling lights.
+Let L represent the number of large ceiling lights.
+Let S represent the number of small ceiling lights.
+
+Step 2: Set up equations based on the information given.
+We know:
+- M = 12 (since there are 12 medium ceiling lights)
+- L = 2M (twice as many large ceiling lights as medium lights)
+- S = M + 10 (ten more small lights than medium lights)
+
+Step 3: Substitute the values of M and L into the equation for S.
+S = 12 + 10
+S = 22
+
+Step 4: Calculate the total number of bulbs needed.
+- Small lights: 1 bulb each, so 22 * 1 = 22 bulbs
+- Medium lights: 2 bulbs each, so 12 * 2 = 24 bulbs
+- Large lights: 3 bulbs each, so 22 * 3 = 66 bulbs
+
+Step 5: Add up all the bulbs.
+Total bulbs = 22 + 24 + 66 = 112
+
+#### 112
+This is the total number of bulbs you should buy.

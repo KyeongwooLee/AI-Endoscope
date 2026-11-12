@@ -1,0 +1,1 @@
+{"source_id":"train-4764-2","response_sha256":"48ffebe065b6120e52b8ef19f793256e550ea0174dd681afd53a030125f847ee","status":"supported_error","reference_review_needed":false,"explanation":"The model correctly sets up the increase as (15 × 0.40) + 15, but then incorrectly evaluates 15 × 0.40 as 30 instead of 6. This arithmetic mistake leads to its incorrect final total."}

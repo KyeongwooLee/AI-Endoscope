@@ -1,0 +1,35 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: There is very little car traffic on Happy Street. During the week, most cars pass it on Tuesday - 25. On Monday, 20% less than on Tuesday, and on Wednesday, 2 more cars than on Monday. On Thursday and Friday, it is about 10 cars each day. On the weekend, traffic drops to 5 cars per day. How many cars travel down Happy Street from Monday through Sunday?
+SOLUTION: Step 1: Determine the number of cars on Monday.
+- On Monday, 20% less than on Tuesday.
+- Tuesday: 25 cars
+- 20% of 25 = 0.20 * 25 = 5 cars
+- Monday: 25 - 5 = 20 cars
+
+Step 2: Determine the number of cars on Wednesday.
+- Wednesday: 2 more cars than on Monday.
+- Monday: 20 cars
+- Wednesday: 20 + 2 = 22 cars
+
+Step 3: Determine the number of cars on Thursday and Friday.
+- Thursday: 10 cars
+- Friday: 10 cars
+
+Step 4: Determine the number of cars on the weekend.
+- Weekend: 5 cars per day
+- Saturday: 5 cars
+- Sunday: 5 cars
+
+Step 5: Calculate the total number of cars from Monday through Sunday.
+- Monday: 20 cars
+- Tuesday: 25 cars
+- Wednesday: 22 cars
+- Thursday: 10 cars
+- Friday: 10 cars
+- Saturday: 5 cars
+- Sunday: 5 cars
+
+Total: 20 + 25 + 22 + 10 + 10 + 5 + 5 = 107 cars
+
+#### 107

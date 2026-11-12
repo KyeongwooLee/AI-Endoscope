@@ -1,0 +1,1194 @@
+{
+  "evaluated_at": "2026-11-07T17:01:05+00:00",
+  "reviews_dir": "/tmp/claude-1000/-home-coder-yaicon-errorprobe/55a97122-ae13-4bc8-b42b-ea4311f79794/scratchpad/blank_reviews",
+  "human_reviewers": [
+    "reviewer_1"
+  ],
+  "ai_provisional_reviewers_not_counted": [],
+  "pair_judgment_states": {
+    "unreviewed": 319
+  },
+  "pairs_total": 319,
+  "semantic_evaluation_complete": false,
+  "status": "human_review_pending",
+  "verified_same_error_at_5": {
+    "R": {
+      "complete": false,
+      "queries": 20,
+      "queries_with_missing_judgments": 20,
+      "verified_same_error_at_k": null,
+      "optimistic_bound": null,
+      "query_coverage": 1.0,
+      "conditional_yield_among_ranked_queries": null
+    },
+    "E": {
+      "complete": false,
+      "queries": 20,
+      "queries_with_missing_judgments": 19,
+      "verified_same_error_at_k": null,
+      "optimistic_bound": null,
+      "query_coverage": 0.95,
+      "conditional_yield_among_ranked_queries": null
+    },
+    "G": {
+      "complete": false,
+      "queries": 20,
+      "queries_with_missing_judgments": 19,
+      "verified_same_error_at_k": null,
+      "optimistic_bound": null,
+      "query_coverage": 0.95,
+      "conditional_yield_among_ranked_queries": null
+    },
+    "Q": {
+      "complete": false,
+      "queries": 20,
+      "queries_with_missing_judgments": 20,
+      "verified_same_error_at_k": null,
+      "optimistic_bound": null,
+      "query_coverage": 1.0,
+      "conditional_yield_among_ranked_queries": null
+    },
+    "Random": {
+      "complete": false,
+      "queries": 20,
+      "queries_with_missing_judgments": 20,
+      "verified_same_error_at_k": null,
+      "optimistic_bound": null,
+      "query_coverage": 1.0,
+      "conditional_yield_among_ranked_queries": null
+    }
+  },
+  "per_query": {
+    "R": [
+      {
+        "query_id": "train-21-3",
+        "query_index": 0,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-366-1",
+        "query_index": 1,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-609-2",
+        "query_index": 2,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-947-2",
+        "query_index": 3,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2205-1",
+        "query_index": 4,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2520-0",
+        "query_index": 5,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2680-2",
+        "query_index": 6,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2685-4",
+        "query_index": 7,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-3393-4",
+        "query_index": 8,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4498-3",
+        "query_index": 9,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4657-3",
+        "query_index": 10,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4815-4",
+        "query_index": 11,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-5595-2",
+        "query_index": 12,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-5612-0",
+        "query_index": 13,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-5807-3",
+        "query_index": 14,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6124-2",
+        "query_index": 15,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6145-4",
+        "query_index": 16,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6775-3",
+        "query_index": 17,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6914-1",
+        "query_index": 18,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6999-0",
+        "query_index": 19,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      }
+    ],
+    "E": [
+      {
+        "query_id": "train-21-3",
+        "query_index": 0,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-366-1",
+        "query_index": 1,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-609-2",
+        "query_index": 2,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-947-2",
+        "query_index": 3,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2205-1",
+        "query_index": 4,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2520-0",
+        "query_index": 5,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2680-2",
+        "query_index": 6,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2685-4",
+        "query_index": 7,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-3393-4",
+        "query_index": 8,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4498-3",
+        "query_index": 9,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4657-3",
+        "query_index": 10,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4815-4",
+        "query_index": 11,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-5595-2",
+        "query_index": 12,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-5612-0",
+        "query_index": 13,
+        "status": "query_abstained_or_missing",
+        "returned": 0,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 0,
+        "conservative": 0.0,
+        "optimistic": 0.0
+      },
+      {
+        "query_id": "train-5807-3",
+        "query_index": 14,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6124-2",
+        "query_index": 15,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6145-4",
+        "query_index": 16,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6775-3",
+        "query_index": 17,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6914-1",
+        "query_index": 18,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6999-0",
+        "query_index": 19,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      }
+    ],
+    "G": [
+      {
+        "query_id": "train-21-3",
+        "query_index": 0,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-366-1",
+        "query_index": 1,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-609-2",
+        "query_index": 2,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-947-2",
+        "query_index": 3,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2205-1",
+        "query_index": 4,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2520-0",
+        "query_index": 5,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2680-2",
+        "query_index": 6,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2685-4",
+        "query_index": 7,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-3393-4",
+        "query_index": 8,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4498-3",
+        "query_index": 9,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4657-3",
+        "query_index": 10,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4815-4",
+        "query_index": 11,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-5595-2",
+        "query_index": 12,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-5612-0",
+        "query_index": 13,
+        "status": "query_abstained_or_missing",
+        "returned": 0,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 0,
+        "conservative": 0.0,
+        "optimistic": 0.0
+      },
+      {
+        "query_id": "train-5807-3",
+        "query_index": 14,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6124-2",
+        "query_index": 15,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6145-4",
+        "query_index": 16,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6775-3",
+        "query_index": 17,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6914-1",
+        "query_index": 18,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6999-0",
+        "query_index": 19,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      }
+    ],
+    "Q": [
+      {
+        "query_id": "train-21-3",
+        "query_index": 0,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-366-1",
+        "query_index": 1,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-609-2",
+        "query_index": 2,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-947-2",
+        "query_index": 3,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2205-1",
+        "query_index": 4,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2520-0",
+        "query_index": 5,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2680-2",
+        "query_index": 6,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2685-4",
+        "query_index": 7,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-3393-4",
+        "query_index": 8,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4498-3",
+        "query_index": 9,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4657-3",
+        "query_index": 10,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4815-4",
+        "query_index": 11,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-5595-2",
+        "query_index": 12,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-5612-0",
+        "query_index": 13,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-5807-3",
+        "query_index": 14,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6124-2",
+        "query_index": 15,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6145-4",
+        "query_index": 16,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6775-3",
+        "query_index": 17,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6914-1",
+        "query_index": 18,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6999-0",
+        "query_index": 19,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      }
+    ],
+    "Random": [
+      {
+        "query_id": "train-21-3",
+        "query_index": 0,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-366-1",
+        "query_index": 1,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-609-2",
+        "query_index": 2,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-947-2",
+        "query_index": 3,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2205-1",
+        "query_index": 4,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2520-0",
+        "query_index": 5,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2680-2",
+        "query_index": 6,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-2685-4",
+        "query_index": 7,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-3393-4",
+        "query_index": 8,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4498-3",
+        "query_index": 9,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4657-3",
+        "query_index": 10,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-4815-4",
+        "query_index": 11,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-5595-2",
+        "query_index": 12,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-5612-0",
+        "query_index": 13,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-5807-3",
+        "query_index": 14,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6124-2",
+        "query_index": 15,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6145-4",
+        "query_index": 16,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6775-3",
+        "query_index": 17,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6914-1",
+        "query_index": 18,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      },
+      {
+        "query_id": "train-6999-0",
+        "query_index": 19,
+        "status": "ranked",
+        "returned": 5,
+        "same": 0,
+        "uncertain": 0,
+        "missing_judgments": 5,
+        "conservative": null,
+        "optimistic": null
+      }
+    ]
+  },
+  "contrasts": {
+    "status": "not_computed_missing_reviews"
+  },
+  "description_review": {
+    "per_reviewer": {
+      "reviewer_1": {
+        "stage2": {
+          "E": {
+            "rated": 0
+          },
+          "G": {
+            "rated": 0
+          }
+        },
+        "stage1_observable_error_present": {}
+      }
+    },
+    "pair_agreement": {}
+  },
+  "problems": [],
+  "interval_scope": "conditional on this fixed gallery and review process; excludes gallery sampling, reviewer error, prompt selection"
+}

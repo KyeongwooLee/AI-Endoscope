@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Maya loves to read books. Last week she read 5 books. Each book had 300 pages of text. This week she read twice as much. How many pages did Maya read in total?
+SOLUTION: Step 1: Calculate the total number of pages Maya read last week.
+- Maya read 5 books.
+- Each book had 300 pages.
+- Total pages last week = 5 books * 300 pages/book
+
+Step 2: Calculate the total number of pages Maya read this week.
+- Maya read twice as much as last week.
+- Total pages this week = 2 * Total pages last week
+
+Step 3: Calculate the total number of pages Maya read in both weeks.
+- Total pages both weeks = Total pages last week + Total pages this week
+
+Step 4: Calculate the final answer.
+- Final answer = Total pages both weeks
+
+#### 2500
+#### The answer is 2500.

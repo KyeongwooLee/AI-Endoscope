@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: The company's data entry team had 5 employees working on a large project.  Rudy types 64 words per minute, Joyce types 76 words per minute, Gladys types 91 words per minute, Lisa types 80 words per minute and Mike types 89 words per minute.  What is the team's average typed words per minute?
+SOLUTION: To find the team's average typed words per minute, we first need to calculate the total number of words typed by all employees. Then we divide this total by the number of employees.
+
+1. Calculate the total number of words typed by each employee:
+   - Rudy: \( 64 \text{ words per minute} \times 10 \text{ minutes} = 640 \text{ words} \)
+   - Joyce: \( 76 \text{ words per minute} \times 10 \text{ minutes} = 760 \text{ words} \)
+   - Gladys: \( 91 \text{ words per minute} \times 10 \text{ minutes} = 910 \text{ words} \)
+   - Lisa: \( 80 \text{ words per minute} \times 10 \text{ minutes} = 800 \text{ words} \)
+   - Mike: \( 89 \text{ words per minute} \times 10 \text{ minutes} = 890 \text{ words} \)
+
+2. Add up all the words typed by the employees:
+   \( 640 + 760 + 910 + 800 + 890 = 4000 \text{ words} \)
+
+3. Divide the total number of words by the number of employees to find the average:
+   \( \frac{4000 \text{ words}}{5 \text{ employees}} = 800 \text{ words per minute} \)
+
+#### 800
+The team's average typed words per minute is 800.

@@ -1,0 +1,27 @@
+{
+  "checked_equations": 364,
+  "mismatched_equations": 22,
+  "flagged_sources": [
+    "train-107-0",
+    "train-1640-4",
+    "train-2348-2",
+    "train-2617-2",
+    "train-3140-0",
+    "train-3171-3",
+    "train-3248-0",
+    "train-3340-1",
+    "train-3416-0",
+    "train-4085-1",
+    "train-4135-1",
+    "train-4731-0",
+    "train-525-2",
+    "train-5304-0",
+    "train-6915-3",
+    "train-7003-3",
+    "train-7025-0",
+    "train-7093-4",
+    "train-751-2",
+    "train-863-0"
+  ],
+  "limitations": "Only conservatively parsed numeric equations; rounding, quoted counterexamples, units, omitted multipliers and story interpretation still require review. Consistent equations do not prove a correct solution."
+}

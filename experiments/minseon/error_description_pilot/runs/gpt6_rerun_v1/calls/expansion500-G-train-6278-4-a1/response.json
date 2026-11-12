@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6278-4",
+  "response_sha256": "7856dce80609ddce053be8bb55b926fbdbb3b4c2853bf6f45ea9a1eff7f48770",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "- Total pies sold = (56 / 8) + (48 / 6)\n\n#### 22.0",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "How many pies did Milton sell during the weekend?",
+  "observed_error": "The reported total of 22 pies does not equal the correctly written expression (56 / 8) + (48 / 6).",
+  "violated_condition": "Total pies must equal the sum of apple slices divided by 8 and peach slices divided by 6.",
+  "error_description": "The response correctly sets up the total as (56 / 8) + (48 / 6), but then reports 22 pies, which does not equal that expression. The error occurs in the numerical result, rather than the relation used to count pies.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The response does not show intermediate arithmetic, so the specific calculation that produced 22 cannot be identified."
+}

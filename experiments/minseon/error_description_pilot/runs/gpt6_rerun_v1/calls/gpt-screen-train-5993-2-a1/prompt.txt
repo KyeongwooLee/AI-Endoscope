@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John wants to lose weight.  He eats 1800 calories a day and burns 2300 a day.  If he needs to burn 4000 calories to lose 1 pound how many days will it take to lose 10 pounds?
+SOLUTION: John eats 1800 calories a day and burns 2300 calories a day.
+To lose 1 pound, he needs to burn 4000 calories.
+
+To find out how many days it will take to lose 10 pounds, we first calculate the daily calorie deficit:
+\[ \text{Daily Calorie Deficit} = \text{Calories Burned} - \text{Calories Eaten} \]
+\[ \text{Daily Calorie Deficit} = 2300 - 1800 = 500 \text{ calories} \]
+
+Next, we determine the total calorie deficit for 10 pounds:
+\[ \text{Total Calorie Deficit for 10 Pounds} = \text{Daily Calorie Deficit} \times 10 \]
+\[ \text{Total Calorie Deficit for 10 Pounds} = 500 \times 10 = 5000 \text{ calories} \]
+
+Finally, we calculate the number of days it will take to burn 5000 calories:
+\[ \text{Number of Days} = \frac{\text{Total Calorie Deficit for 10 Pounds}}{\text{Daily Calorie Deficit}} \]
+\[ \text{Number of Days} = \frac{5000}{500} = 10 \text{ days} \]
+
+#### 10

@@ -1,0 +1,28 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A class is completing an art project. Each of the 30 students is assigned to a separate group and will need to take markers from the 22 boxes of markers. The first group has 10 students who will have 2 markers each and the second group has 15 students who will have 4 markers each. The last group takes the remaining markers and divides them equally. If each box of markers contains 5 markers, how many markers does each of the students in the last group receive?
+SOLUTION: Step 1: Calculate the total number of markers taken by the first group.
+First group has 10 students and each has 2 markers.
+\( 10 \times 2 = 20 \) markers
+
+Step 2: Calculate the total number of markers taken by the second group.
+Second group has 15 students and each has 4 markers.
+\( 15 \times 4 = 60 \) markers
+
+Step 3: Calculate the total number of markers taken by the first and second groups.
+\( 20 + 60 = 80 \) markers
+
+Step 4: Calculate the total number of markers in the 22 boxes.
+\( 22 \times 5 = 110 \) markers
+
+Step 5: Calculate the number of markers remaining for the last group.
+\( 110 - 80 = 30 \) markers
+
+Step 6: Calculate the number of students in the last group.
+\( 30 \) students
+
+Step 7: Calculate the number of markers each student in the last group receives.
+\( 30 \div 30 = 1 \) marker
+
+#### 1
+Each of the students in the last group receives 1 marker.

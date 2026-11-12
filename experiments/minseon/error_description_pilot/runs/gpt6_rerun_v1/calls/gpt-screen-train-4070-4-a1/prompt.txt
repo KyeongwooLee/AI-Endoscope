@@ -1,0 +1,46 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Lucius owns a small business and spends $10 every day on ingredients. He then makes a portion of French Fries and a portion of Poutine and sells them to the market, paying ten percent of his weekly income as tax. If the price of French fries is $12 and the price of Poutine is $8, how much does he earn every week after paying the taxes, selling all his products, and buying all the ingredients?
+SOLUTION: Step 1: Calculate daily earnings
+Lucius spends $10 on ingredients and makes a portion of French fries and a portion of Poutine. Let's denote the portion of French fries as F and the portion of Poutine as P. So, his daily earnings can be expressed as:
+Daily Earnings = 10 + F + P
+
+Step 2: Calculate weekly earnings
+Weekly Earnings = Daily Earnings × 7
+= (10 + F + P) × 7
+
+Step 3: Calculate tax paid
+Tax Paid = 10% of Weekly Earnings
+= 0.1 × (10 + F + P) × 7
+
+Step 4: Calculate remaining income after tax
+Remaining Income = Weekly Earnings - Tax Paid
+= (10 + F + P) × 7 - 0.1 × (10 + F + P) × 7
+
+Step 5: Calculate income from selling French fries
+Income from French Fries = Price of French Fries × Number of French Fries
+= 12 × F
+
+Step 6: Calculate income from selling Poutine
+Income from Poutine = Price of Poutine × Number of Poutine
+= 8 × P
+
+Step 7: Calculate total income from selling all products
+Total Income = Income from French Fries + Income from Poutine
+= 12F + 8P
+
+Step 8: Calculate total income after buying ingredients
+Total Income After Buying Ingredients = Total Income - (10 + F + P)
+= 12F + 8P - (10 + F + P)
+= 11F + 7P
+
+Step 9: Calculate remaining income after paying taxes
+Remaining Income After Taxes = Total Income After Buying Ingredients - Tax Paid
+= (11F + 7P) - 0.1 × (10 + F + P) × 7
+
+Step 10: Calculate weekly remaining income after taxes
+Weekly Remaining Income = Remaining Income After Taxes
+= (11F + 7P) - 0.1 × (10 + F + P) × 7
+
+#### 0
+This is the expression for the weekly remaining income after taxes. To get a numerical answer, we need to know the values of F and P. Since the problem does not provide these values, we cannot compute a specific numerical answer.

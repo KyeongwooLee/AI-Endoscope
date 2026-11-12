@@ -1,0 +1,1 @@
+{"source_id":"train-2951-4","response_sha256":"cc3cc6d359c29a708c2f4368adab1c435e4e1f1d13b2908760fc782869b77cdc","status":"supported_error","reference_review_needed":false,"explanation":"The model correctly sets up the revenue difference but first errs when it evaluates (36 × $0.75) − $16 as 15. The expression equals $11, so its final claim that Anna made $15 more is incorrect."}

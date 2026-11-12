@@ -1,0 +1,1 @@
+{"status":"answer_conflict","independent_answer":"29 yellow marbles.","check":"There are 3 × 14 = 42 blue marbles, so 85 − 14 − 42 = 29 yellow marbles. The worked solution is correct, but its leading answer marker conflicts with that result.","evidence_quote":"#### 21","error_description":"The leading marker states 21, while the correct worked final answer is 29."}

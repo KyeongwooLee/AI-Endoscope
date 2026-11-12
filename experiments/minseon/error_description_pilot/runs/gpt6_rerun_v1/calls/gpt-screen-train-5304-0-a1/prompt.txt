@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Gumball was counting his water intake for the previous week. He checked his list and saw that he had drank 60 liters of water for the week. He drank nine liters of water on Monday, Thursday and Saturday and 8 liters of water on Tuesday, Friday and Sunday. Unfortunately, no data was input on Wednesday. How many liters of water did he drink on Wednesday?
+SOLUTION: Step 1: Calculate the total water intake for the week excluding Wednesday.
+- Monday: 9 liters
+- Thursday: 9 liters
+- Saturday: 9 liters
+- Tuesday: 8 liters
+- Friday: 8 liters
+- Sunday: 8 liters
+
+Total for Monday to Sunday = 9 + 9 + 9 + 8 + 8 + 8 = 49 liters
+
+Step 2: Subtract the total water intake for Monday to Sunday from the total weekly intake to find the water intake on Wednesday.
+Total weekly intake = 60 liters
+Water intake on Wednesday = Total weekly intake - Total for Monday to Sunday
+Water intake on Wednesday = 60 - 49 = 11 liters
+
+#### 11
+The answer is 11 liters.

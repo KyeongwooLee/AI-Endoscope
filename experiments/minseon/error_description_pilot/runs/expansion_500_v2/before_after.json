@@ -1,0 +1,2019 @@
+{
+  "offset_repaired_n": 77,
+  "old_G_n": 261,
+  "new_G_n": 338,
+  "max_old_embedding_coordinate_change": 3.166496753692627e-07,
+  "same_cases_same_vectors": true,
+  "baseline_metrics_k10": [
+    {
+      "cohort": "native",
+      "method": "R",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 500,
+      "silhouette": 0.04866081103682518,
+      "sizes": [
+        62,
+        92,
+        68,
+        63,
+        33,
+        31,
+        35,
+        38,
+        35,
+        43
+      ]
+    },
+    {
+      "cohort": "native",
+      "method": "E",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 447,
+      "silhouette": 0.060801684856414795,
+      "sizes": [
+        76,
+        94,
+        35,
+        27,
+        52,
+        44,
+        17,
+        14,
+        47,
+        41
+      ]
+    },
+    {
+      "cohort": "native",
+      "method": "G",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 261,
+      "silhouette": 0.05921977013349533,
+      "sizes": [
+        20,
+        18,
+        27,
+        23,
+        24,
+        37,
+        30,
+        7,
+        11,
+        64
+      ]
+    },
+    {
+      "cohort": "native",
+      "method": "Q",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 500,
+      "silhouette": 0.03781778737902641,
+      "sizes": [
+        34,
+        39,
+        68,
+        65,
+        40,
+        30,
+        76,
+        62,
+        56,
+        30
+      ]
+    },
+    {
+      "cohort": "common",
+      "method": "R",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 250,
+      "silhouette": 0.03797576203942299,
+      "sizes": [
+        8,
+        16,
+        38,
+        20,
+        42,
+        45,
+        22,
+        35,
+        9,
+        15
+      ]
+    },
+    {
+      "cohort": "common",
+      "method": "E",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 250,
+      "silhouette": 0.0678483098745346,
+      "sizes": [
+        41,
+        63,
+        4,
+        6,
+        14,
+        57,
+        6,
+        10,
+        28,
+        21
+      ]
+    },
+    {
+      "cohort": "common",
+      "method": "G",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 250,
+      "silhouette": 0.05217888578772545,
+      "sizes": [
+        10,
+        28,
+        19,
+        15,
+        35,
+        16,
+        23,
+        27,
+        47,
+        30
+      ]
+    },
+    {
+      "cohort": "common",
+      "method": "Q",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 250,
+      "silhouette": 0.02891571819782257,
+      "sizes": [
+        27,
+        39,
+        18,
+        35,
+        22,
+        34,
+        13,
+        13,
+        24,
+        25
+      ]
+    }
+  ],
+  "new_metrics_k10": [
+    {
+      "cohort": "native",
+      "method": "R",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 500,
+      "silhouette": 0.04866081103682518,
+      "sizes": [
+        62,
+        92,
+        68,
+        63,
+        33,
+        31,
+        35,
+        38,
+        35,
+        43
+      ]
+    },
+    {
+      "cohort": "native",
+      "method": "E",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 447,
+      "silhouette": 0.060801684856414795,
+      "sizes": [
+        76,
+        94,
+        35,
+        27,
+        52,
+        44,
+        17,
+        14,
+        47,
+        41
+      ]
+    },
+    {
+      "cohort": "native",
+      "method": "G",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 338,
+      "silhouette": 0.039723124355077744,
+      "sizes": [
+        20,
+        27,
+        28,
+        37,
+        19,
+        75,
+        41,
+        23,
+        20,
+        48
+      ]
+    },
+    {
+      "cohort": "native",
+      "method": "Q",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 500,
+      "silhouette": 0.03781778737902641,
+      "sizes": [
+        34,
+        39,
+        68,
+        65,
+        40,
+        30,
+        76,
+        62,
+        56,
+        30
+      ]
+    },
+    {
+      "cohort": "common",
+      "method": "R",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 326,
+      "silhouette": 0.043008867651224136,
+      "sizes": [
+        8,
+        30,
+        36,
+        23,
+        40,
+        50,
+        31,
+        52,
+        12,
+        44
+      ]
+    },
+    {
+      "cohort": "common",
+      "method": "E",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 326,
+      "silhouette": 0.060077209025621414,
+      "sizes": [
+        69,
+        33,
+        56,
+        17,
+        15,
+        34,
+        35,
+        48,
+        6,
+        13
+      ]
+    },
+    {
+      "cohort": "common",
+      "method": "G",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 326,
+      "silhouette": 0.05377836152911186,
+      "sizes": [
+        52,
+        39,
+        27,
+        31,
+        14,
+        33,
+        22,
+        7,
+        49,
+        52
+      ]
+    },
+    {
+      "cohort": "common",
+      "method": "Q",
+      "algorithm": "kmeans",
+      "k": 10,
+      "seed": 42,
+      "n": 326,
+      "silhouette": 0.03345143049955368,
+      "sizes": [
+        18,
+        33,
+        35,
+        18,
+        32,
+        37,
+        23,
+        41,
+        36,
+        53
+      ]
+    }
+  ],
+  "fixed_baseline_common250": [
+    {
+      "method": "R",
+      "n": 250,
+      "old_silhouette": 0.03797576203942299,
+      "new_silhouette": 0.03797576203942299,
+      "old_vs_new_ari": 1.0
+    },
+    {
+      "method": "E",
+      "n": 250,
+      "old_silhouette": 0.0678483098745346,
+      "new_silhouette": 0.0678483098745346,
+      "old_vs_new_ari": 1.0
+    },
+    {
+      "method": "G",
+      "n": 250,
+      "old_silhouette": 0.05217888578772545,
+      "new_silhouette": 0.05217888951301575,
+      "old_vs_new_ari": 1.0
+    },
+    {
+      "method": "Q",
+      "n": 250,
+      "old_silhouette": 0.02891571819782257,
+      "new_silhouette": 0.02891571819782257,
+      "old_vs_new_ari": 1.0
+    }
+  ],
+  "old_common": {
+    "n": 250,
+    "ids": [
+      "train-1051-2",
+      "train-1052-2",
+      "train-1058-0",
+      "train-1061-4",
+      "train-1063-0",
+      "train-1066-0",
+      "train-107-0",
+      "train-1075-0",
+      "train-1102-2",
+      "train-1107-0",
+      "train-1136-3",
+      "train-1138-3",
+      "train-1151-4",
+      "train-1186-4",
+      "train-1194-1",
+      "train-1225-0",
+      "train-1253-4",
+      "train-1307-1",
+      "train-1325-1",
+      "train-1338-4",
+      "train-1365-3",
+      "train-1373-1",
+      "train-1421-1",
+      "train-1485-0",
+      "train-1591-3",
+      "train-1593-4",
+      "train-1640-4",
+      "train-1644-2",
+      "train-1646-2",
+      "train-1686-3",
+      "train-1755-2",
+      "train-1757-4",
+      "train-1780-4",
+      "train-1781-3",
+      "train-1798-0",
+      "train-1827-4",
+      "train-1833-0",
+      "train-1855-0",
+      "train-1877-4",
+      "train-1905-0",
+      "train-1932-0",
+      "train-1960-3",
+      "train-1971-2",
+      "train-2026-0",
+      "train-2036-2",
+      "train-2067-3",
+      "train-2080-0",
+      "train-2126-2",
+      "train-2128-2",
+      "train-2181-3",
+      "train-230-1",
+      "train-233-4",
+      "train-2348-2",
+      "train-2364-1",
+      "train-2377-1",
+      "train-2404-0",
+      "train-2409-4",
+      "train-2411-2",
+      "train-2432-4",
+      "train-25-3",
+      "train-2514-2",
+      "train-2589-4",
+      "train-2591-4",
+      "train-2617-2",
+      "train-262-2",
+      "train-2629-3",
+      "train-264-2",
+      "train-2658-4",
+      "train-2687-1",
+      "train-2715-1",
+      "train-274-4",
+      "train-2832-0",
+      "train-2849-4",
+      "train-286-4",
+      "train-2867-0",
+      "train-2869-2",
+      "train-2884-4",
+      "train-2885-4",
+      "train-2951-4",
+      "train-2963-3",
+      "train-2969-1",
+      "train-3109-1",
+      "train-3118-1",
+      "train-3130-1",
+      "train-317-0",
+      "train-3176-3",
+      "train-3199-2",
+      "train-320-0",
+      "train-3214-3",
+      "train-3240-3",
+      "train-3259-3",
+      "train-3311-2",
+      "train-3330-1",
+      "train-3340-1",
+      "train-340-2",
+      "train-3415-2",
+      "train-3418-1",
+      "train-3513-0",
+      "train-3520-3",
+      "train-3556-0",
+      "train-3628-0",
+      "train-3645-3",
+      "train-3647-3",
+      "train-3778-3",
+      "train-3795-3",
+      "train-38-4",
+      "train-3852-2",
+      "train-3907-3",
+      "train-3923-2",
+      "train-3974-4",
+      "train-3995-2",
+      "train-3997-4",
+      "train-4030-1",
+      "train-4037-1",
+      "train-405-0",
+      "train-4075-0",
+      "train-4135-1",
+      "train-4192-2",
+      "train-4194-3",
+      "train-4235-0",
+      "train-4239-3",
+      "train-4248-2",
+      "train-4262-2",
+      "train-427-4",
+      "train-4278-1",
+      "train-4313-3",
+      "train-4365-1",
+      "train-439-1",
+      "train-4446-1",
+      "train-4465-3",
+      "train-4473-2",
+      "train-4528-4",
+      "train-4561-0",
+      "train-459-2",
+      "train-4605-0",
+      "train-4612-0",
+      "train-4635-0",
+      "train-4636-4",
+      "train-4649-2",
+      "train-4658-2",
+      "train-4668-1",
+      "train-4704-2",
+      "train-474-1",
+      "train-4764-2",
+      "train-4790-2",
+      "train-4817-4",
+      "train-4882-1",
+      "train-4964-2",
+      "train-501-1",
+      "train-504-0",
+      "train-5067-4",
+      "train-5105-3",
+      "train-5158-0",
+      "train-5233-1",
+      "train-5239-1",
+      "train-525-2",
+      "train-5250-2",
+      "train-5253-4",
+      "train-5262-4",
+      "train-5268-4",
+      "train-5273-0",
+      "train-5285-2",
+      "train-5289-3",
+      "train-5304-0",
+      "train-5347-3",
+      "train-5362-0",
+      "train-5389-1",
+      "train-5406-0",
+      "train-5416-0",
+      "train-5428-2",
+      "train-5454-3",
+      "train-5471-2",
+      "train-5473-4",
+      "train-5475-2",
+      "train-5504-4",
+      "train-5529-2",
+      "train-5555-4",
+      "train-5563-0",
+      "train-5583-3",
+      "train-5599-4",
+      "train-5608-4",
+      "train-5613-2",
+      "train-5680-4",
+      "train-570-3",
+      "train-5760-3",
+      "train-5772-1",
+      "train-5791-1",
+      "train-5800-2",
+      "train-5801-1",
+      "train-581-4",
+      "train-582-2",
+      "train-5832-1",
+      "train-5928-3",
+      "train-596-4",
+      "train-5985-1",
+      "train-6000-4",
+      "train-604-0",
+      "train-6169-1",
+      "train-6185-2",
+      "train-6191-2",
+      "train-6209-1",
+      "train-6278-4",
+      "train-6284-4",
+      "train-6298-0",
+      "train-632-4",
+      "train-6333-3",
+      "train-6377-2",
+      "train-64-4",
+      "train-6476-4",
+      "train-6560-4",
+      "train-6577-0",
+      "train-6594-4",
+      "train-6616-1",
+      "train-6710-1",
+      "train-6743-1",
+      "train-6846-1",
+      "train-6861-3",
+      "train-6864-2",
+      "train-6877-1",
+      "train-689-4",
+      "train-6908-0",
+      "train-6987-1",
+      "train-7009-0",
+      "train-7103-0",
+      "train-7128-3",
+      "train-7202-1",
+      "train-7203-4",
+      "train-7303-3",
+      "train-7335-4",
+      "train-7358-1",
+      "train-739-2",
+      "train-7392-1",
+      "train-7396-4",
+      "train-7398-3",
+      "train-7423-2",
+      "train-7426-1",
+      "train-751-2",
+      "train-791-2",
+      "train-808-2",
+      "train-813-4",
+      "train-860-2",
+      "train-87-0",
+      "train-877-2",
+      "train-888-1",
+      "train-929-2",
+      "train-950-4",
+      "train-970-2",
+      "train-982-4",
+      "train-988-1",
+      "train-993-1"
+    ],
+    "query": 50,
+    "gallery": 200
+  },
+  "new_common": {
+    "n": 326,
+    "ids": [
+      "train-1051-2",
+      "train-1052-2",
+      "train-1058-0",
+      "train-1061-4",
+      "train-1063-0",
+      "train-1066-0",
+      "train-107-0",
+      "train-1075-0",
+      "train-1102-2",
+      "train-1107-0",
+      "train-1136-3",
+      "train-1138-3",
+      "train-1151-4",
+      "train-1186-4",
+      "train-1194-1",
+      "train-121-1",
+      "train-1224-4",
+      "train-1225-0",
+      "train-1253-4",
+      "train-1307-1",
+      "train-1325-1",
+      "train-1333-0",
+      "train-1338-4",
+      "train-1365-3",
+      "train-1373-1",
+      "train-1413-2",
+      "train-1421-1",
+      "train-1434-2",
+      "train-1485-0",
+      "train-1505-3",
+      "train-1591-3",
+      "train-1593-4",
+      "train-1640-4",
+      "train-1644-2",
+      "train-1646-2",
+      "train-1686-3",
+      "train-1755-2",
+      "train-1757-4",
+      "train-1780-4",
+      "train-1781-3",
+      "train-1798-0",
+      "train-1817-4",
+      "train-1819-3",
+      "train-1827-4",
+      "train-1833-0",
+      "train-1855-0",
+      "train-1877-4",
+      "train-1893-4",
+      "train-1894-1",
+      "train-1905-0",
+      "train-1932-0",
+      "train-1960-3",
+      "train-1971-2",
+      "train-2026-0",
+      "train-2036-2",
+      "train-2067-3",
+      "train-2080-0",
+      "train-212-3",
+      "train-2126-2",
+      "train-2128-2",
+      "train-2136-4",
+      "train-2181-3",
+      "train-2291-4",
+      "train-230-1",
+      "train-233-4",
+      "train-2348-2",
+      "train-2364-1",
+      "train-2377-1",
+      "train-2389-1",
+      "train-2404-0",
+      "train-2409-4",
+      "train-2411-2",
+      "train-2422-4",
+      "train-2432-4",
+      "train-25-3",
+      "train-2507-4",
+      "train-2514-2",
+      "train-2557-1",
+      "train-2589-4",
+      "train-2591-4",
+      "train-2617-2",
+      "train-262-2",
+      "train-2629-3",
+      "train-264-2",
+      "train-2658-4",
+      "train-2687-1",
+      "train-2715-1",
+      "train-274-4",
+      "train-2832-0",
+      "train-2849-4",
+      "train-286-4",
+      "train-2867-0",
+      "train-2869-2",
+      "train-2884-4",
+      "train-2885-4",
+      "train-289-3",
+      "train-2951-4",
+      "train-2963-3",
+      "train-2965-2",
+      "train-2969-1",
+      "train-3109-1",
+      "train-3118-1",
+      "train-3130-1",
+      "train-3140-0",
+      "train-317-0",
+      "train-3171-3",
+      "train-3176-3",
+      "train-3198-1",
+      "train-3199-2",
+      "train-320-0",
+      "train-3214-3",
+      "train-3240-3",
+      "train-3248-0",
+      "train-3259-3",
+      "train-3311-2",
+      "train-3330-1",
+      "train-3340-1",
+      "train-337-3",
+      "train-3373-4",
+      "train-340-2",
+      "train-3415-2",
+      "train-3416-0",
+      "train-3418-1",
+      "train-3513-0",
+      "train-3515-0",
+      "train-3520-3",
+      "train-3547-4",
+      "train-3556-0",
+      "train-3628-0",
+      "train-3645-3",
+      "train-3647-3",
+      "train-3718-4",
+      "train-3733-0",
+      "train-3778-3",
+      "train-3795-3",
+      "train-38-4",
+      "train-3809-1",
+      "train-3852-2",
+      "train-3907-3",
+      "train-3923-2",
+      "train-3946-4",
+      "train-3968-3",
+      "train-3974-4",
+      "train-3995-2",
+      "train-3997-4",
+      "train-4030-1",
+      "train-4037-1",
+      "train-405-0",
+      "train-4075-0",
+      "train-408-3",
+      "train-4085-1",
+      "train-4135-1",
+      "train-4156-0",
+      "train-4169-4",
+      "train-4192-2",
+      "train-4194-3",
+      "train-4235-0",
+      "train-4239-3",
+      "train-4248-2",
+      "train-4262-2",
+      "train-427-4",
+      "train-4278-1",
+      "train-4313-3",
+      "train-4365-1",
+      "train-439-1",
+      "train-4446-1",
+      "train-4465-3",
+      "train-4473-2",
+      "train-4495-1",
+      "train-4528-4",
+      "train-4535-4",
+      "train-4561-0",
+      "train-459-2",
+      "train-4605-0",
+      "train-4612-0",
+      "train-4626-3",
+      "train-4635-0",
+      "train-4636-4",
+      "train-4649-2",
+      "train-4658-2",
+      "train-4668-1",
+      "train-4704-2",
+      "train-4731-0",
+      "train-474-1",
+      "train-4764-2",
+      "train-4790-2",
+      "train-4817-4",
+      "train-4820-0",
+      "train-4882-1",
+      "train-4923-4",
+      "train-4964-2",
+      "train-501-1",
+      "train-504-0",
+      "train-5067-4",
+      "train-5105-3",
+      "train-5127-4",
+      "train-5144-0",
+      "train-5158-0",
+      "train-5227-3",
+      "train-5233-1",
+      "train-5239-1",
+      "train-525-2",
+      "train-5250-2",
+      "train-5253-4",
+      "train-5262-4",
+      "train-5268-4",
+      "train-5273-0",
+      "train-5285-2",
+      "train-5289-3",
+      "train-5299-4",
+      "train-5304-0",
+      "train-5347-3",
+      "train-5362-0",
+      "train-5364-3",
+      "train-5369-1",
+      "train-5389-1",
+      "train-5406-0",
+      "train-5416-0",
+      "train-5428-2",
+      "train-5454-3",
+      "train-5471-2",
+      "train-5473-4",
+      "train-5475-2",
+      "train-548-2",
+      "train-5504-4",
+      "train-5513-0",
+      "train-5529-2",
+      "train-5555-4",
+      "train-5563-0",
+      "train-5568-3",
+      "train-5583-3",
+      "train-5599-4",
+      "train-5608-4",
+      "train-5613-2",
+      "train-5680-4",
+      "train-570-3",
+      "train-5760-3",
+      "train-5772-1",
+      "train-5791-1",
+      "train-5800-2",
+      "train-5801-1",
+      "train-581-4",
+      "train-582-2",
+      "train-5832-1",
+      "train-5928-3",
+      "train-5950-2",
+      "train-596-4",
+      "train-5985-1",
+      "train-6000-4",
+      "train-604-0",
+      "train-6097-4",
+      "train-6123-2",
+      "train-6169-1",
+      "train-6185-2",
+      "train-6191-2",
+      "train-6209-1",
+      "train-6278-4",
+      "train-6284-4",
+      "train-6298-0",
+      "train-632-4",
+      "train-6333-3",
+      "train-6363-3",
+      "train-6377-2",
+      "train-6379-2",
+      "train-64-4",
+      "train-6476-4",
+      "train-6539-1",
+      "train-6542-0",
+      "train-6560-4",
+      "train-6577-0",
+      "train-6594-4",
+      "train-6605-2",
+      "train-6616-1",
+      "train-6630-2",
+      "train-6685-4",
+      "train-6710-1",
+      "train-6736-2",
+      "train-6743-1",
+      "train-6846-1",
+      "train-6861-3",
+      "train-6864-2",
+      "train-6877-1",
+      "train-689-4",
+      "train-6895-3",
+      "train-6908-0",
+      "train-6912-1",
+      "train-6979-4",
+      "train-6987-1",
+      "train-7009-0",
+      "train-7025-0",
+      "train-7103-0",
+      "train-7128-3",
+      "train-7202-1",
+      "train-7203-4",
+      "train-7286-4",
+      "train-7303-3",
+      "train-7329-4",
+      "train-7335-4",
+      "train-7358-1",
+      "train-739-2",
+      "train-7392-1",
+      "train-7396-4",
+      "train-7398-3",
+      "train-7423-2",
+      "train-7426-1",
+      "train-7451-1",
+      "train-7456-3",
+      "train-7463-2",
+      "train-751-2",
+      "train-760-4",
+      "train-790-2",
+      "train-791-2",
+      "train-808-2",
+      "train-813-4",
+      "train-860-2",
+      "train-87-0",
+      "train-877-2",
+      "train-888-1",
+      "train-89-3",
+      "train-922-2",
+      "train-929-2",
+      "train-950-4",
+      "train-970-2",
+      "train-982-4",
+      "train-988-1",
+      "train-993-1"
+    ],
+    "query": 65,
+    "gallery": 261
+  },
+  "retrieval": {
+    "old_G_queries": 52,
+    "new_G_queries": 67,
+    "old_G_gallery": 209,
+    "new_G_gallery": 271,
+    "old_queries_changed_top5": 41,
+    "repaired_candidates_in_old_query_top5": 61,
+    "compared_slots": 260,
+    "details": [
+      {
+        "query_id": "train-6333-3",
+        "old_top5": [
+          "train-6209-1",
+          "train-2687-1",
+          "train-2404-0",
+          "train-1066-0",
+          "train-2589-4"
+        ],
+        "new_top5": [
+          "train-6209-1",
+          "train-2687-1",
+          "train-2404-0",
+          "train-7456-3",
+          "train-1066-0"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-596-4",
+        "old_top5": [
+          "train-5985-1",
+          "train-4649-2",
+          "train-3520-3",
+          "train-1686-3",
+          "train-317-0"
+        ],
+        "new_top5": [
+          "train-2136-4",
+          "train-5985-1",
+          "train-4649-2",
+          "train-3520-3",
+          "train-1686-3"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-3923-2",
+        "old_top5": [
+          "train-5347-3",
+          "train-7423-2",
+          "train-2589-4",
+          "train-1780-4",
+          "train-2832-0"
+        ],
+        "new_top5": [
+          "train-5347-3",
+          "train-7451-1",
+          "train-7423-2",
+          "train-2589-4",
+          "train-7456-3"
+        ],
+        "shared_n": 3,
+        "newly_repaired_in_top5": 2,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-340-2",
+        "old_top5": [
+          "train-5416-0",
+          "train-1798-0",
+          "train-7423-2",
+          "train-1757-4",
+          "train-3907-3"
+        ],
+        "new_top5": [
+          "train-5416-0",
+          "train-3171-3",
+          "train-1798-0",
+          "train-7423-2",
+          "train-1757-4"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-2432-4",
+        "old_top5": [
+          "train-2589-4",
+          "train-1066-0",
+          "train-877-2",
+          "train-4636-4",
+          "train-3214-3"
+        ],
+        "new_top5": [
+          "train-1333-0",
+          "train-3198-1",
+          "train-3946-4",
+          "train-2589-4",
+          "train-1066-0"
+        ],
+        "shared_n": 2,
+        "newly_repaired_in_top5": 3,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-837-0",
+        "old_top5": [
+          "train-888-1",
+          "train-1136-3",
+          "train-5599-4",
+          "train-5416-0",
+          "train-5563-0"
+        ],
+        "new_top5": [
+          "train-4535-4",
+          "train-3373-4",
+          "train-888-1",
+          "train-1136-3",
+          "train-5599-4"
+        ],
+        "shared_n": 3,
+        "newly_repaired_in_top5": 2,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-427-4",
+        "old_top5": [
+          "train-5233-1",
+          "train-2885-4",
+          "train-1138-3",
+          "train-5067-4",
+          "train-1325-1"
+        ],
+        "new_top5": [
+          "train-5233-1",
+          "train-2885-4",
+          "train-1138-3",
+          "train-5067-4",
+          "train-1325-1"
+        ],
+        "shared_n": 5,
+        "newly_repaired_in_top5": 0,
+        "identical_order": true
+      },
+      {
+        "query_id": "train-1194-1",
+        "old_top5": [
+          "train-439-1",
+          "train-233-4",
+          "train-4649-2",
+          "train-877-2",
+          "train-2067-3"
+        ],
+        "new_top5": [
+          "train-439-1",
+          "train-233-4",
+          "train-4649-2",
+          "train-5950-2",
+          "train-4169-4"
+        ],
+        "shared_n": 3,
+        "newly_repaired_in_top5": 2,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-4446-1",
+        "old_top5": [
+          "train-3415-2",
+          "train-4817-4",
+          "train-2181-3",
+          "train-5233-1",
+          "train-2885-4"
+        ],
+        "new_top5": [
+          "train-3415-2",
+          "train-4817-4",
+          "train-2181-3",
+          "train-1224-4",
+          "train-5233-1"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-3109-1",
+        "old_top5": [
+          "train-2589-4",
+          "train-4636-4",
+          "train-5347-3",
+          "train-1063-0",
+          "train-7398-3"
+        ],
+        "new_top5": [
+          "train-2589-4",
+          "train-4636-4",
+          "train-4731-0",
+          "train-3946-4",
+          "train-3373-4"
+        ],
+        "shared_n": 2,
+        "newly_repaired_in_top5": 3,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-982-4",
+        "old_top5": [
+          "train-1063-0",
+          "train-1640-4",
+          "train-4636-4",
+          "train-3997-4",
+          "train-5304-0"
+        ],
+        "new_top5": [
+          "train-1333-0",
+          "train-1063-0",
+          "train-1640-4",
+          "train-6685-4",
+          "train-4636-4"
+        ],
+        "shared_n": 3,
+        "newly_repaired_in_top5": 2,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-4528-4",
+        "old_top5": [
+          "train-7423-2",
+          "train-1780-4",
+          "train-570-3",
+          "train-2885-4",
+          "train-2832-0"
+        ],
+        "new_top5": [
+          "train-7423-2",
+          "train-1780-4",
+          "train-1434-2",
+          "train-570-3",
+          "train-2885-4"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-5613-2",
+        "old_top5": [
+          "train-1365-3",
+          "train-1338-4",
+          "train-1644-2",
+          "train-1932-0",
+          "train-2128-2"
+        ],
+        "new_top5": [
+          "train-1365-3",
+          "train-1338-4",
+          "train-1644-2",
+          "train-1932-0",
+          "train-2389-1"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-6877-1",
+        "old_top5": [
+          "train-1066-0",
+          "train-2589-4",
+          "train-4636-4",
+          "train-474-1",
+          "train-6560-4"
+        ],
+        "new_top5": [
+          "train-1066-0",
+          "train-2589-4",
+          "train-7456-3",
+          "train-4636-4",
+          "train-474-1"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-6864-2",
+        "old_top5": [
+          "train-2128-2",
+          "train-4764-2",
+          "train-5304-0",
+          "train-439-1",
+          "train-4278-1"
+        ],
+        "new_top5": [
+          "train-2128-2",
+          "train-4764-2",
+          "train-5304-0",
+          "train-439-1",
+          "train-760-4"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-988-1",
+        "old_top5": [
+          "train-5416-0",
+          "train-1686-3",
+          "train-3907-3",
+          "train-3215-1",
+          "train-7358-1"
+        ],
+        "new_top5": [
+          "train-5416-0",
+          "train-1686-3",
+          "train-3907-3",
+          "train-1817-4",
+          "train-3215-1"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-5475-2",
+        "old_top5": [
+          "train-5416-0",
+          "train-4365-1",
+          "train-1325-1",
+          "train-2884-4",
+          "train-1225-0"
+        ],
+        "new_top5": [
+          "train-1224-4",
+          "train-5416-0",
+          "train-408-3",
+          "train-4365-1",
+          "train-1325-1"
+        ],
+        "shared_n": 3,
+        "newly_repaired_in_top5": 2,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-1833-0",
+        "old_top5": [
+          "train-3907-3",
+          "train-1757-4",
+          "train-1686-3",
+          "train-3215-1",
+          "train-4764-2"
+        ],
+        "new_top5": [
+          "train-6542-0",
+          "train-3547-4",
+          "train-1817-4",
+          "train-3907-3",
+          "train-1757-4"
+        ],
+        "shared_n": 2,
+        "newly_repaired_in_top5": 3,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-3322-4",
+        "old_top5": [
+          "train-4262-2",
+          "train-1755-2",
+          "train-751-2",
+          "train-405-0",
+          "train-3130-1"
+        ],
+        "new_top5": [
+          "train-4262-2",
+          "train-1755-2",
+          "train-751-2",
+          "train-405-0",
+          "train-6979-4"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-5928-3",
+        "old_top5": [
+          "train-5067-4",
+          "train-2377-1",
+          "train-1107-0",
+          "train-5760-3",
+          "train-7423-2"
+        ],
+        "new_top5": [
+          "train-5067-4",
+          "train-2377-1",
+          "train-1107-0",
+          "train-5760-3",
+          "train-7423-2"
+        ],
+        "shared_n": 5,
+        "newly_repaired_in_top5": 0,
+        "identical_order": true
+      },
+      {
+        "query_id": "train-7203-4",
+        "old_top5": [
+          "train-1932-0",
+          "train-5454-3",
+          "train-2885-4",
+          "train-2128-2",
+          "train-2377-1"
+        ],
+        "new_top5": [
+          "train-1932-0",
+          "train-5454-3",
+          "train-2885-4",
+          "train-2128-2",
+          "train-2377-1"
+        ],
+        "shared_n": 5,
+        "newly_repaired_in_top5": 0,
+        "identical_order": true
+      },
+      {
+        "query_id": "train-7396-4",
+        "old_top5": [
+          "train-7423-2",
+          "train-2832-0",
+          "train-5347-3",
+          "train-2377-1",
+          "train-6710-1"
+        ],
+        "new_top5": [
+          "train-5299-4",
+          "train-7423-2",
+          "train-2832-0",
+          "train-5347-3",
+          "train-2377-1"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-4612-0",
+        "old_top5": [
+          "train-4605-0",
+          "train-2885-4",
+          "train-3214-3",
+          "train-4465-3",
+          "train-2128-2"
+        ],
+        "new_top5": [
+          "train-4605-0",
+          "train-2885-4",
+          "train-3214-3",
+          "train-1333-0",
+          "train-4465-3"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-1102-2",
+        "old_top5": [
+          "train-1138-3",
+          "train-5289-3",
+          "train-3974-4",
+          "train-2080-0",
+          "train-6000-4"
+        ],
+        "new_top5": [
+          "train-1138-3",
+          "train-1894-1",
+          "train-5289-3",
+          "train-3974-4",
+          "train-3416-0"
+        ],
+        "shared_n": 3,
+        "newly_repaired_in_top5": 2,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-1781-3",
+        "old_top5": [
+          "train-5760-3",
+          "train-3118-1",
+          "train-7423-2",
+          "train-689-4",
+          "train-4635-0"
+        ],
+        "new_top5": [
+          "train-7456-3",
+          "train-5760-3",
+          "train-6097-4",
+          "train-3118-1",
+          "train-7423-2"
+        ],
+        "shared_n": 3,
+        "newly_repaired_in_top5": 2,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-5158-0",
+        "old_top5": [
+          "train-5273-0",
+          "train-4194-3",
+          "train-1138-3",
+          "train-7392-1",
+          "train-4473-2"
+        ],
+        "new_top5": [
+          "train-337-3",
+          "train-5273-0",
+          "train-4194-3",
+          "train-4820-0",
+          "train-1333-0"
+        ],
+        "shared_n": 2,
+        "newly_repaired_in_top5": 3,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-3259-3",
+        "old_top5": [
+          "train-4658-2",
+          "train-2885-4",
+          "train-5233-1",
+          "train-604-0",
+          "train-5454-3"
+        ],
+        "new_top5": [
+          "train-4658-2",
+          "train-2885-4",
+          "train-5233-1",
+          "train-604-0",
+          "train-5454-3"
+        ],
+        "shared_n": 5,
+        "newly_repaired_in_top5": 0,
+        "identical_order": true
+      },
+      {
+        "query_id": "train-230-1",
+        "old_top5": [
+          "train-2364-1",
+          "train-1962-3",
+          "train-1225-0",
+          "train-5304-0",
+          "train-3520-3"
+        ],
+        "new_top5": [
+          "train-3416-0",
+          "train-2364-1",
+          "train-1962-3",
+          "train-1225-0",
+          "train-5304-0"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-38-4",
+        "old_top5": [
+          "train-2128-2",
+          "train-4764-2",
+          "train-5765-1",
+          "train-5273-0",
+          "train-474-1"
+        ],
+        "new_top5": [
+          "train-2128-2",
+          "train-4764-2",
+          "train-5765-1",
+          "train-760-4",
+          "train-5273-0"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-1373-1",
+        "old_top5": [
+          "train-4658-2",
+          "train-2617-2",
+          "train-877-2",
+          "train-3907-3",
+          "train-2884-4"
+        ],
+        "new_top5": [
+          "train-4658-2",
+          "train-2617-2",
+          "train-877-2",
+          "train-3907-3",
+          "train-2884-4"
+        ],
+        "shared_n": 5,
+        "newly_repaired_in_top5": 0,
+        "identical_order": true
+      },
+      {
+        "query_id": "train-3795-3",
+        "old_top5": [
+          "train-4262-2",
+          "train-5599-4",
+          "train-751-2",
+          "train-1757-4",
+          "train-3130-1"
+        ],
+        "new_top5": [
+          "train-4262-2",
+          "train-5599-4",
+          "train-2136-4",
+          "train-751-2",
+          "train-1757-4"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-5239-1",
+        "old_top5": [
+          "train-3130-1",
+          "train-4649-2",
+          "train-3520-3",
+          "train-2128-2",
+          "train-2036-2"
+        ],
+        "new_top5": [
+          "train-3130-1",
+          "train-4649-2",
+          "train-3520-3",
+          "train-1333-0",
+          "train-5369-1"
+        ],
+        "shared_n": 3,
+        "newly_repaired_in_top5": 2,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-813-4",
+        "old_top5": [
+          "train-1075-0",
+          "train-1138-3",
+          "train-4313-3",
+          "train-2885-4",
+          "train-3647-3"
+        ],
+        "new_top5": [
+          "train-1075-0",
+          "train-1138-3",
+          "train-4313-3",
+          "train-2885-4",
+          "train-6912-1"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-2951-4",
+        "old_top5": [
+          "train-7423-2",
+          "train-2885-4",
+          "train-2348-2",
+          "train-1971-2",
+          "train-1075-0"
+        ],
+        "new_top5": [
+          "train-7423-2",
+          "train-5299-4",
+          "train-2885-4",
+          "train-2348-2",
+          "train-6912-1"
+        ],
+        "shared_n": 3,
+        "newly_repaired_in_top5": 2,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-2411-2",
+        "old_top5": [
+          "train-3974-4",
+          "train-5304-0",
+          "train-1058-0",
+          "train-5765-1",
+          "train-5289-3"
+        ],
+        "new_top5": [
+          "train-3974-4",
+          "train-5304-0",
+          "train-1058-0",
+          "train-2136-4",
+          "train-5765-1"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-5406-0",
+        "old_top5": [
+          "train-2377-1",
+          "train-3415-2",
+          "train-6987-1",
+          "train-5760-3",
+          "train-5067-4"
+        ],
+        "new_top5": [
+          "train-2377-1",
+          "train-3415-2",
+          "train-7456-3",
+          "train-6987-1",
+          "train-5760-3"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-5389-1",
+        "old_top5": [
+          "train-3520-3",
+          "train-1136-3",
+          "train-4649-2",
+          "train-3974-4",
+          "train-1058-0"
+        ],
+        "new_top5": [
+          "train-6379-2",
+          "train-4535-4",
+          "train-3520-3",
+          "train-2136-4",
+          "train-1136-3"
+        ],
+        "shared_n": 2,
+        "newly_repaired_in_top5": 3,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-87-0",
+        "old_top5": [
+          "train-3513-0",
+          "train-4313-3",
+          "train-1325-1",
+          "train-5504-4",
+          "train-7423-2"
+        ],
+        "new_top5": [
+          "train-3513-0",
+          "train-4313-3",
+          "train-1325-1",
+          "train-5504-4",
+          "train-7423-2"
+        ],
+        "shared_n": 5,
+        "newly_repaired_in_top5": 0,
+        "identical_order": true
+      },
+      {
+        "query_id": "train-6278-4",
+        "old_top5": [
+          "train-2832-0",
+          "train-2348-2",
+          "train-4636-4",
+          "train-5347-3",
+          "train-6987-1"
+        ],
+        "new_top5": [
+          "train-2832-0",
+          "train-2348-2",
+          "train-4636-4",
+          "train-5347-3",
+          "train-6987-1"
+        ],
+        "shared_n": 5,
+        "newly_repaired_in_top5": 0,
+        "identical_order": true
+      },
+      {
+        "query_id": "train-1591-3",
+        "old_top5": [
+          "train-1338-4",
+          "train-2404-0",
+          "train-4636-4",
+          "train-2832-0",
+          "train-1253-4"
+        ],
+        "new_top5": [
+          "train-1434-2",
+          "train-1338-4",
+          "train-2404-0",
+          "train-4636-4",
+          "train-2832-0"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-501-1",
+        "old_top5": [
+          "train-4764-2",
+          "train-233-4",
+          "train-5416-0",
+          "train-3628-0",
+          "train-1686-3"
+        ],
+        "new_top5": [
+          "train-4764-2",
+          "train-233-4",
+          "train-5416-0",
+          "train-3628-0",
+          "train-1686-3"
+        ],
+        "shared_n": 5,
+        "newly_repaired_in_top5": 0,
+        "identical_order": true
+      },
+      {
+        "query_id": "train-2867-0",
+        "old_top5": [
+          "train-4262-2",
+          "train-751-2",
+          "train-5262-4",
+          "train-3130-1",
+          "train-6000-4"
+        ],
+        "new_top5": [
+          "train-4262-2",
+          "train-751-2",
+          "train-6895-3",
+          "train-5262-4",
+          "train-3130-1"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-262-2",
+        "old_top5": [
+          "train-4194-3",
+          "train-6377-2",
+          "train-1066-0",
+          "train-2589-4",
+          "train-474-1"
+        ],
+        "new_top5": [
+          "train-4194-3",
+          "train-6377-2",
+          "train-1066-0",
+          "train-2589-4",
+          "train-474-1"
+        ],
+        "shared_n": 5,
+        "newly_repaired_in_top5": 0,
+        "identical_order": true
+      },
+      {
+        "query_id": "train-2969-1",
+        "old_top5": [
+          "train-2128-2",
+          "train-5760-3",
+          "train-3513-0",
+          "train-5304-0",
+          "train-6861-3"
+        ],
+        "new_top5": [
+          "train-2128-2",
+          "train-5760-3",
+          "train-3513-0",
+          "train-5304-0",
+          "train-6912-1"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-5832-1",
+        "old_top5": [
+          "train-3214-3",
+          "train-1421-1",
+          "train-2377-1",
+          "train-5233-1",
+          "train-3853-1"
+        ],
+        "new_top5": [
+          "train-3214-3",
+          "train-1421-1",
+          "train-2377-1",
+          "train-5299-4",
+          "train-5233-1"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-7103-0",
+        "old_top5": [
+          "train-5067-4",
+          "train-2377-1",
+          "train-5760-3",
+          "train-6861-3",
+          "train-439-1"
+        ],
+        "new_top5": [
+          "train-5067-4",
+          "train-6912-1",
+          "train-2377-1",
+          "train-5760-3",
+          "train-6861-3"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-7202-1",
+        "old_top5": [
+          "train-993-1",
+          "train-570-3",
+          "train-2885-4",
+          "train-6377-2",
+          "train-1960-3"
+        ],
+        "new_top5": [
+          "train-993-1",
+          "train-570-3",
+          "train-2885-4",
+          "train-6377-2",
+          "train-1960-3"
+        ],
+        "shared_n": 5,
+        "newly_repaired_in_top5": 0,
+        "identical_order": true
+      },
+      {
+        "query_id": "train-4704-2",
+        "old_top5": [
+          "train-6000-4",
+          "train-7358-1",
+          "train-3130-1",
+          "train-4262-2",
+          "train-3974-4"
+        ],
+        "new_top5": [
+          "train-6000-4",
+          "train-212-3",
+          "train-7358-1",
+          "train-3130-1",
+          "train-4262-2"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-459-2",
+        "old_top5": [
+          "train-3311-2",
+          "train-5760-3",
+          "train-929-2",
+          "train-5253-4",
+          "train-5504-4"
+        ],
+        "new_top5": [
+          "train-3311-2",
+          "train-5760-3",
+          "train-929-2",
+          "train-5127-4",
+          "train-5253-4"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-2715-1",
+        "old_top5": [
+          "train-5285-2",
+          "train-5583-3",
+          "train-2364-1",
+          "train-1225-0",
+          "train-2348-2"
+        ],
+        "new_top5": [
+          "train-5285-2",
+          "train-4535-4",
+          "train-408-3",
+          "train-5583-3",
+          "train-2364-1"
+        ],
+        "shared_n": 3,
+        "newly_repaired_in_top5": 2,
+        "identical_order": false
+      },
+      {
+        "query_id": "train-504-0",
+        "old_top5": [
+          "train-2885-4",
+          "train-4313-3",
+          "train-64-4",
+          "train-1138-3",
+          "train-1325-1"
+        ],
+        "new_top5": [
+          "train-2885-4",
+          "train-4313-3",
+          "train-64-4",
+          "train-1138-3",
+          "train-1325-1"
+        ],
+        "shared_n": 5,
+        "newly_repaired_in_top5": 0,
+        "identical_order": true
+      },
+      {
+        "query_id": "train-7128-3",
+        "old_top5": [
+          "train-3647-3",
+          "train-3513-0",
+          "train-3852-2",
+          "train-1075-0",
+          "train-6743-1"
+        ],
+        "new_top5": [
+          "train-3647-3",
+          "train-3513-0",
+          "train-3852-2",
+          "train-6123-2",
+          "train-1075-0"
+        ],
+        "shared_n": 4,
+        "newly_repaired_in_top5": 1,
+        "identical_order": false
+      }
+    ]
+  },
+  "interpretation": "Changed eligible membership, not changed descriptions. Native/common cohorts differ after repair; fixed old250 comparison isolates unchanged representations. No new accuracy claim."
+}

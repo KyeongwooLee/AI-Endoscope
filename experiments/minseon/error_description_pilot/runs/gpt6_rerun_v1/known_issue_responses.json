@@ -1,0 +1,226 @@
+[
+  {
+    "source_id": "train-1081-4",
+    "issue": "reference_error",
+    "reason_ko": "원래 풀이1060은 맞다. 참조가500/1000을1000/500으로 뒤집고, 둘째 벌 수800을700으로 바꿨다.",
+    "arithmetic": "1000*(1-.2)=800; 500/1000=.5; 800*.5*1.4+500=1060",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_E": {
+      "source_id": "train-1081-4",
+      "response_sha256": "008e41520472bee58b08316fd027ead042966cfe7b9e333a1cdc194529d54196",
+      "status": "no_error_observed",
+      "reference_review_needed": true,
+      "explanation": "The model correctly calculates 800 bees producing 0.70 liters each, giving 1060 liters overall. The reference incorrectly reverses the per-bee division and later uses 700 bees instead of 800."
+    },
+    "GPT_G": {
+      "source_id": "train-1081-4",
+      "response_sha256": "008e41520472bee58b08316fd027ead042966cfe7b9e333a1cdc194529d54196",
+      "status": "no_error_observed",
+      "reference_review_needed": true,
+      "evidence_quote": null,
+      "evidence_start": null,
+      "evidence_end": null,
+      "evidence_occurrence": null,
+      "question_evidence_quote": null,
+      "observed_error": null,
+      "violated_condition": null,
+      "error_description": null,
+      "reference_review_reason": "The reference reverses the per-bee honey ratio: 500 liters divided by 1000 bees is 0.5 liters per bee. It also uses 700 bees after correctly deriving 800. The model solution correctly applies both percentage changes and adds the two hives' production.",
+      "secondary_errors": [],
+      "uncertainty_note": null
+    }
+  },
+  {
+    "source_id": "train-3995-2",
+    "issue": "reference_error",
+    "reason_ko": "타일 넓이가6제곱인치라고 주어졌다. 원래 풀이576이 문구에 맞고, 참조는6을 한 변 길이로 취급했다.",
+    "arithmetic": "48*72/6=576",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_E": {
+      "source_id": "train-3995-2",
+      "response_sha256": "104a06ff0c9bbc7e4ade2d04487d51f210f302a0187af9df0060e624143a27c2",
+      "status": "no_error_observed",
+      "reference_review_needed": true,
+      "explanation": "The model correctly divides the floor area of 3,456 square inches by the stated tile area of 6 square inches, obtaining 576 tiles. The reference incorrectly treats 6 square inches as a side length of 6 inches."
+    },
+    "GPT_G": {
+      "source_id": "train-3995-2",
+      "response_sha256": "104a06ff0c9bbc7e4ade2d04487d51f210f302a0187af9df0060e624143a27c2",
+      "status": "no_error_observed",
+      "reference_review_needed": true,
+      "evidence_quote": null,
+      "evidence_start": null,
+      "evidence_end": null,
+      "evidence_occurrence": null,
+      "question_evidence_quote": "Each tile is 6 square inches.",
+      "observed_error": null,
+      "violated_condition": null,
+      "error_description": null,
+      "reference_review_reason": "The reference treats the tile area of 6 square inches as a side length of 6 inches. The model correctly divides the kitchen area by the stated tile area.",
+      "secondary_errors": [],
+      "uncertainty_note": null
+    }
+  },
+  {
+    "source_id": "train-3795-3",
+    "issue": "answer_marker_conflict",
+    "reason_ko": "본문의 제한속도50은 맞지만 서두####40과 충돌한다. 본문의 계산 오류로 분류하지 않는다.",
+    "arithmetic": "60/1-10=50",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_E": {
+      "source_id": "train-3795-3",
+      "response_sha256": "a9b91c32621f89c494a21c3f242cd5717d638972720d71308a05429679627d14",
+      "status": "supported_error",
+      "reference_review_needed": false,
+      "explanation": "The model’s opening answer, 40, is incorrect and contradicts its subsequent calculation. Its reasoning correctly finds a driving speed of 60 mph and subtracts 10 mph to obtain a speed limit of 50 mph, so the error is confined to the initial stated answer."
+    },
+    "GPT_G": {
+      "source_id": "train-3795-3",
+      "response_sha256": "a9b91c32621f89c494a21c3f242cd5717d638972720d71308a05429679627d14",
+      "status": "supported_error",
+      "reference_review_needed": false,
+      "evidence_quote": "#### 40",
+      "evidence_start": 0,
+      "evidence_end": 7,
+      "evidence_occurrence": 1,
+      "question_evidence_quote": "Natasha was going 10 mph over the speed limit",
+      "observed_error": "The headline answer contradicts the correctly calculated speed limit in the explanation.",
+      "violated_condition": "The speed limit must equal (60 miles / 1 hour) minus 10 mph.",
+      "error_description": "The response gives 40 as its headline answer, although its explanation correctly computes Natasha’s speed and subtracts 10 mph. The headline does not satisfy the required relation between her 60 mph travel speed and the speed limit.",
+      "reference_review_reason": null,
+      "secondary_errors": [],
+      "uncertainty_note": "The text establishes an inconsistent headline answer but does not show how 40 was obtained."
+    }
+  },
+  {
+    "source_id": "train-7430-4",
+    "issue": "answer_marker_conflict",
+    "reason_ko": "본문의 남은 좌석120은 맞지만 서두####20과 충돌한다.",
+    "arithmetic": "50*4-80=120",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_E": {
+      "source_id": "train-7430-4",
+      "response_sha256": "b1d52dbc482d566a9c496c6ee21c27bd3c1e1f8fb8520b800bb741f8ba8fb9dc",
+      "status": "supported_error",
+      "reference_review_needed": false,
+      "explanation": "The opening answer states 20 available spaces, which contradicts the total capacity of 200 minus 80 occupied spaces. The subsequent calculations and concluding answer correctly give 120, so the observable error is confined to the initial answer."
+    },
+    "GPT_G": {
+      "source_id": "train-7430-4",
+      "response_sha256": "b1d52dbc482d566a9c496c6ee21c27bd3c1e1f8fb8520b800bb741f8ba8fb9dc",
+      "status": "supported_error",
+      "reference_review_needed": false,
+      "evidence_quote": "#### 20",
+      "evidence_start": 0,
+      "evidence_end": 7,
+      "evidence_occurrence": 1,
+      "question_evidence_quote": "A park has 50 benches with a capacity of 4 people each. On a Sunday afternoon, 80 people were sitting on the benches.",
+      "observed_error": "The opening answer gives 20, contradicting the correctly calculated result in the body.",
+      "violated_condition": "Available spaces must equal 50 × 4 − 80.",
+      "error_description": "The opening answer states 20 available spaces, which does not equal the total capacity of 50 benches holding 4 people each minus the 80 occupied spaces. The subsequent calculation correctly applies and evaluates this relation, making the heading inconsistent with the worked solution.",
+      "reference_review_reason": null,
+      "secondary_errors": [],
+      "uncertainty_note": "The text does not establish how the incorrect opening number was obtained."
+    }
+  },
+  {
+    "source_id": "train-7421-3",
+    "issue": "answer_marker_conflict",
+    "reason_ko": "본문의 상금160은 맞지만 서두####200과 충돌한다.",
+    "arithmetic": "(2400-2400/3)/10=160",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_E": {
+      "source_id": "train-7421-3",
+      "response_sha256": "8b233b2f608a7284372d651bbb5dd30f63c9c4367af662166fab1141fa02e49e",
+      "status": "supported_error",
+      "reference_review_needed": false,
+      "explanation": "The model’s stated answer of $200 contradicts its own correct calculation that each of the next ten winners receives $160. The substantive mistake is the reported answer; the subsequent arithmetic correctly divides the $1,600 remainder among ten winners."
+    },
+    "GPT_G": {
+      "source_id": "train-7421-3",
+      "response_sha256": "8b233b2f608a7284372d651bbb5dd30f63c9c4367af662166fab1141fa02e49e",
+      "status": "supported_error",
+      "reference_review_needed": false,
+      "evidence_quote": "#### 200",
+      "evidence_start": 0,
+      "evidence_end": 8,
+      "evidence_occurrence": 1,
+      "question_evidence_quote": "The next ten winners will each receive a 10th of the remaining amount.",
+      "observed_error": "The headline states 200 dollars, contradicting the correctly calculated per-winner amount in the response.",
+      "violated_condition": "Each subsequent winner must receive one tenth of the money remaining after the first prize: (2400 - 2400 / 3) / 10.",
+      "error_description": "The response reports 200 dollars in its answer heading, although its working correctly divides the remaining 1,600 dollars among ten winners. The reported amount violates the requirement that each subsequent winner receive one tenth of the remainder.",
+      "reference_review_reason": null,
+      "secondary_errors": [],
+      "uncertainty_note": "The arithmetic shown is correct; the text does not establish how the incorrect headline was obtained."
+    }
+  },
+  {
+    "source_id": "train-1297-4",
+    "issue": "answer_marker_conflict",
+    "reason_ko": "본문의 학생8명은 맞지만 서두####16과 충돌한다.",
+    "arithmetic": "40*.8*.25=8",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_E": {
+      "source_id": "train-1297-4",
+      "response_sha256": "a24e91b113528f725ab9d693b5b0ee89f4830e23bc615f556bcec4161710fec1",
+      "status": "supported_error",
+      "reference_review_needed": false,
+      "explanation": "The opening answer, 16, is incorrect and contradicts the model’s own calculation. The subsequent steps correctly find 32 students with puppies and then calculate 25% of 32 as 8, which matches the final answer."
+    },
+    "GPT_G": {
+      "source_id": "train-1297-4",
+      "response_sha256": "a24e91b113528f725ab9d693b5b0ee89f4830e23bc615f556bcec4161710fec1",
+      "status": "supported_error",
+      "reference_review_needed": false,
+      "evidence_quote": "#### 16",
+      "evidence_start": 0,
+      "evidence_end": 7,
+      "evidence_occurrence": 1,
+      "question_evidence_quote": "Of those who have puppies, 25% also have parrots.",
+      "observed_error": "The opening answer states 16, contradicting the correctly calculated count and final answer below it.",
+      "violated_condition": "The number with both pets must equal 25% of the 80% of 40 students who have puppies.",
+      "error_description": "The response opens with 16 as the answer, although the requested count must be 25% of the puppy owners. Its subsequent calculations correctly apply both percentages, so the observable mistake is the contradictory opening answer, with no demonstrated arithmetic error.",
+      "reference_review_reason": null,
+      "secondary_errors": [],
+      "uncertainty_note": "The opening number is unexplained; the text does not establish how it was obtained."
+    }
+  },
+  {
+    "source_id": "train-6861-3",
+    "issue": "question_ambiguity",
+    "reason_ko": "둘이 게임 하나를 공동 구매하면12개, 각각 하나씩 사면24개다. 참조는 후자를 가정한다. 문구만으로 전자의 풀이를 확실한 오류로 단정하기 어렵다.",
+    "arithmetic": "60/5=12; 2*60/5=24",
+    "reviewer": "Codex direct original-text audit, not human ground truth",
+    "use": "quarantine from mathematical-error-only sensitivity analysis; keep originals and answer-marker cases separately",
+    "GPT_E": {
+      "source_id": "train-6861-3",
+      "response_sha256": "b0a344b28a7fd51777b5dc7a419a69ffe7b45273cacbe83574c70da4bd82123c",
+      "status": "ambiguous",
+      "reference_review_needed": true,
+      "explanation": "The model assumes Ronald and Max will buy one shared game, whereas the reference assumes each buys a separate copy. The question does not clearly specify which interpretation is intended, and the model’s arithmetic is correct for one shared copy."
+    },
+    "GPT_G": {
+      "source_id": "train-6861-3",
+      "response_sha256": "b0a344b28a7fd51777b5dc7a419a69ffe7b45273cacbe83574c70da4bd82123c",
+      "status": "ambiguous",
+      "reference_review_needed": true,
+      "evidence_quote": "So, they need to earn $60 in total.",
+      "evidence_start": 175,
+      "evidence_end": 210,
+      "evidence_occurrence": 1,
+      "question_evidence_quote": "How many ice creams will they need to sell for both to be able to afford to buy the game?",
+      "observed_error": "The response assumes one shared game costing $60; its division by $5 is correct.",
+      "violated_condition": null,
+      "error_description": null,
+      "reference_review_reason": "The reference assumes two games, but the question does not explicitly require separate copies. A shared purchase supports the model's interpretation.",
+      "secondary_errors": [],
+      "uncertainty_note": "Whether both friends need individual copies or jointly purchase one game is unresolved by the wording."
+    }
+  }
+]

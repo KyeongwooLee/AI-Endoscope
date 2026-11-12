@@ -1,0 +1,19 @@
+{
+  "source_id": "train-3226-3",
+  "response_sha256": "236438d83a2899ebcb82cf39ec38ef8ec781c9934e8163a317d6c0ca2c94c503",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total tips = (28 * 3) + (28 * 3 * 3) + (36 * 2) = 190",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He makes $2.00 in tips per customer.",
+  "observed_error": "The final expression multiplies Friday's and Saturday's customer counts by 3 instead of 2.",
+  "violated_condition": "Each day's customer count must be multiplied by $2 per customer; Saturday's customer count is 28 * 3.",
+  "error_description": "The final tips expression uses 28 * 3 for Friday and 28 * 3 * 3 for Saturday, applying $3 per customer to those days despite the stated $2 rate. Independently, the written expression evaluates to 408, so its equality to 190 is also arithmetically incorrect.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The written expression (28 * 3) + (28 * 3 * 3) + (36 * 2) equals 408, not 190."
+  ],
+  "uncertainty_note": null
+}

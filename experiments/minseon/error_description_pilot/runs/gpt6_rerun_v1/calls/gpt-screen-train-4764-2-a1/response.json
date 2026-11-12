@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"21 cups per week.","check":"40% of 15 is 6, so the recommended intake is 15 + 6 = 21 cups per week. The solution incorrectly replaces 15 × 0.40 with 30.","evidence_quote":"#### 30 + 15","error_description":"The substitution of 30 for 15 × 0.40 is incorrect, leading to 45 instead of 21 cups per week."}

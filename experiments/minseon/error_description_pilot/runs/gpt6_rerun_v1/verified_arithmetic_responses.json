@@ -1,0 +1,849 @@
+{
+  "n_sources": 19,
+  "conditions": {
+    "E": {
+      "supported_error": 19,
+      "total": 19
+    },
+    "G": {
+      "supported_error": 19,
+      "total": 19
+    }
+  },
+  "cases": [
+    {
+      "source_id": "train-107-0",
+      "verified_equations": [
+        {
+          "source_id": "train-107-0",
+          "quote": "20 + 25 + 22 + 10 + 10 + 5 + 5 = 107",
+          "start": 735,
+          "end": 771,
+          "lhs": "20 + 25 + 22 + 10 + 10 + 5 + 5",
+          "rhs": "107",
+          "computed_exact": "97",
+          "reported_exact": "107",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-107-0",
+        "response_sha256": "14c325db8d6f2a36b967cd087f096d9229f42ae8a8abcd9ff96271394b970577",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest substantive mistake is the addition in Step 5: the listed daily counts sum to 97, not 107. The model correctly calculates each day's traffic but makes an arithmetic error when combining those counts into the weekly total."
+      },
+      "GPT_G": {
+        "source_id": "train-107-0",
+        "response_sha256": "14c325db8d6f2a36b967cd087f096d9229f42ae8a8abcd9ff96271394b970577",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Total: 20 + 25 + 22 + 10 + 10 + 5 + 5 = 107 cars",
+        "evidence_start": 728,
+        "evidence_end": 776,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "How many cars travel down Happy Street from Monday through Sunday?",
+        "observed_error": "The seven correctly determined daily counts are added incorrectly, yielding 107 cars.",
+        "violated_condition": "The weekly total must equal the sum of the seven daily counts; the written sum is overstated by 10 cars.",
+        "error_description": "The response correctly determines each daily count but incorrectly evaluates 20 + 25 + 22 + 10 + 10 + 5 + 5 as 107 cars. This arithmetic error overstates the Monday-through-Sunday total by 10 cars; the daily relationships and the addition setup are correct.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-1640-4",
+      "verified_equations": [
+        {
+          "source_id": "train-1640-4",
+          "quote": "418 - 342 = 67",
+          "start": 663,
+          "end": 677,
+          "lhs": "418 - 342",
+          "rhs": "67",
+          "computed_exact": "76",
+          "reported_exact": "67",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-1640-4",
+        "response_sha256": "366ca55ddbfe22cd173b4f14a3476d01e06d30d7a330e3502a858ae9c4356ba2",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The model correctly calculates Taquon and Mack’s combined candy as 342 pieces, but makes an arithmetic error when evaluating 418 − 342 as 67. That subtraction equals 76, so the stated answer is incorrect."
+      },
+      "GPT_G": {
+        "source_id": "train-1640-4",
+        "response_sha256": "366ca55ddbfe22cd173b4f14a3476d01e06d30d7a330e3502a858ae9c4356ba2",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Jafari's candy = 418 - 342 = 67 pieces",
+        "evidence_start": 646,
+        "evidence_end": 684,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "they had 418 pieces of candy. If Taquon and Mack each had 171 pieces of candy",
+        "observed_error": "The response incorrectly evaluates 418 - 342 as 67.",
+        "violated_condition": "Jafari's candy must equal the combined 418 pieces minus Taquon and Mack's combined 342 pieces.",
+        "error_description": "The response correctly combines Taquon and Mack's candy as 342 pieces and correctly sets up subtracting that amount from 418. It then evaluates the written subtraction incorrectly as 67 pieces, so its stated remainder does not satisfy the total-candy condition.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-2348-2",
+      "verified_equations": [
+        {
+          "source_id": "train-2348-2",
+          "quote": "12 + 15 = 33",
+          "start": 99,
+          "end": 111,
+          "lhs": "12 + 15",
+          "rhs": "33",
+          "computed_exact": "27",
+          "reported_exact": "33",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-2348-2",
+        "response_sha256": "a4a4114387d978c756fedcffa2c28c79c3aed3f7f208248bf41bd97b77daa8cc",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The substantive mistake is in Step 2, where the model states that 12 + 15 = 33. The quarter calculation is correct, but this addition equals 27, so the reported answer is incorrect."
+      },
+      "GPT_G": {
+        "source_id": "train-2348-2",
+        "response_sha256": "a4a4114387d978c756fedcffa2c28c79c3aed3f7f208248bf41bd97b77daa8cc",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "12 + 15 = 33",
+        "evidence_start": 99,
+        "evidence_end": 111,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "fifteen more than a quarter of 48",
+        "observed_error": "The response incorrectly evaluates 12 + 15 as 33.",
+        "violated_condition": "The requested quantity is 48/4 + 15; the written addition must be evaluated correctly.",
+        "error_description": "The response correctly finds a quarter of 48 as 12 and correctly sets up adding 15, but evaluates 12 + 15 as 33. The mistake is in executing the written addition, not in translating “fifteen more than” into an operation.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-3140-0",
+      "verified_equations": [
+        {
+          "source_id": "train-3140-0",
+          "quote": "150 - 15 - 30 - 30 = 85",
+          "start": 713,
+          "end": 736,
+          "lhs": "150 - 15 - 30 - 30",
+          "rhs": "85",
+          "computed_exact": "75",
+          "reported_exact": "85",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-3140-0",
+        "response_sha256": "32f29676a0ef62c22bbd949c154bbac6c79514741ca00cfe7cc15f9094f8a569",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest mistake is the subtraction in Step 5: 150 − 15 − 30 − 30 equals 75, not 85. This incorrect student-seat total carries through the subsequent calculations and produces the wrong number of vacant seats."
+      },
+      "GPT_G": {
+        "source_id": "train-3140-0",
+        "response_sha256": "32f29676a0ef62c22bbd949c154bbac6c79514741ca00cfe7cc15f9094f8a569",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Chairs for students = 150 - 15 - 30 - 30 = 85 chairs",
+        "evidence_start": 691,
+        "evidence_end": 743,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "The last two rows are then reserved for the parents and the rest of the rows are for the students.",
+        "observed_error": "The response evaluates 150 - 15 - 30 - 30 as 85 instead of 75.",
+        "violated_condition": "Student chairs equal the total chairs minus chairs reserved for awardees, administrators and teachers, and parents.",
+        "error_description": "The response correctly subtracts the three nonstudent allocations from 150 chairs, but incorrectly evaluates 150 - 15 - 30 - 30 as 85 chairs rather than 75. The subsequent occupied and vacant seat calculations propagate this arithmetic error in the student allocation.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-3171-3",
+      "verified_equations": [
+        {
+          "source_id": "train-3171-3",
+          "quote": "30 + 2 * 15 = 70",
+          "start": 255,
+          "end": 271,
+          "lhs": "30 + 2 * 15",
+          "rhs": "70",
+          "computed_exact": "60",
+          "reported_exact": "70",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-3171-3",
+        "response_sha256": "77dd0ebc4932f001d0ffa586c331c117c2e3ec7668cfa0582a61d79d3df873f5",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest mistake is in Step 1: the model evaluates 30 + 2 × 15 as 70 inches, but it equals 60 inches. This arithmetic error inflates the tape required for the five rectangular boxes and propagates to the final total."
+      },
+      "GPT_G": {
+        "source_id": "train-3171-3",
+        "response_sha256": "77dd0ebc4932f001d0ffa586c331c117c2e3ec7668cfa0582a61d79d3df873f5",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Tape needed for one box = 30 + 2 * 15 = 70 inches.",
+        "evidence_start": 229,
+        "evidence_end": 279,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "Each box needs three pieces of tape, one as long as the long side and two as long as the short side.",
+        "observed_error": "The response evaluates 30 + 2 * 15 as 70 inches instead of 60 inches.",
+        "violated_condition": "For each 15-by-30-inch box, the tape length is 30 + 2 × 15 inches.",
+        "error_description": "The response correctly represents the tape for each rectangular box as 30 + 2 * 15 inches, but evaluates that expression as 70 inches rather than 60 inches. This arithmetic error inflates the tape assigned to all five rectangular boxes and propagates into the total.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-3248-0",
+      "verified_equations": [
+        {
+          "source_id": "train-3248-0",
+          "quote": "180 - 45 - 45 - 20 = 90",
+          "start": 535,
+          "end": 558,
+          "lhs": "180 - 45 - 45 - 20",
+          "rhs": "90",
+          "computed_exact": "70",
+          "reported_exact": "90",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-3248-0",
+        "response_sha256": "b3234989d54a050403e88226d521c2cf73dd633c5f5aefa5ec5c217598ab41ca",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest mistake is the arithmetic in Step 4: 180 − 45 − 45 − 20 equals 70, not 90. The model correctly identifies the three groups to subtract but incorrectly evaluates the final subtraction."
+      },
+      "GPT_G": {
+        "source_id": "train-3248-0",
+        "response_sha256": "b3234989d54a050403e88226d521c2cf73dd633c5f5aefa5ec5c217598ab41ca",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "180 - 45 - 45 - 20 = 90 students",
+        "evidence_start": 535,
+        "evidence_end": 567,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "and another 20 got less than a D.",
+        "observed_error": "The response incorrectly evaluates 180 - 45 - 45 - 20 as 90.",
+        "violated_condition": "The passing count must subtract all three nonpassing groups, including the additional 20 students.",
+        "error_description": "The response correctly writes the subtraction for all three nonpassing groups but evaluates 180 - 45 - 45 - 20 as 90 students. That value accounts for only the first two subtractions; the written expression also requires subtracting the additional 20 students who got less than a D.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-3340-1",
+      "verified_equations": [
+        {
+          "source_id": "train-3340-1",
+          "quote": "140 - 85 = 45",
+          "start": 305,
+          "end": 318,
+          "lhs": "140 - 85",
+          "rhs": "45",
+          "computed_exact": "55",
+          "reported_exact": "45",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-3340-1",
+        "response_sha256": "71775ad5813026dac742569d3f07a1070e819d7d9f87399c52f8637c231716b3",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The model correctly calculates each person's score and the team's total of 140 points, but makes a subtraction error when it states that 140 − 85 = 45. The difference is 55 points."
+      },
+      "GPT_G": {
+        "source_id": "train-3340-1",
+        "response_sha256": "71775ad5813026dac742569d3f07a1070e819d7d9f87399c52f8637c231716b3",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "140 - 85 = 45",
+        "evidence_start": 305,
+        "evidence_end": 318,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "If their opponent scored 85 points, how many more points do they have than their opponent?",
+        "observed_error": "The response incorrectly evaluates 140 - 85 as 45.",
+        "violated_condition": "The points advantage must equal the team's 140 points minus the opponent's 85 points.",
+        "error_description": "The response correctly computes the three scores and their total of 140 points, then incorrectly evaluates the written subtraction 140 - 85 as 45 points. The subtraction relation matches the requested advantage over the opponent, but its arithmetic execution is wrong.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-3416-0",
+      "verified_equations": [
+        {
+          "source_id": "train-3416-0",
+          "quote": "40 + 50 + 65 + 36 + 82 + 72 + 26 = 361",
+          "start": 230,
+          "end": 268,
+          "lhs": "40 + 50 + 65 + 36 + 82 + 72 + 26",
+          "rhs": "361",
+          "computed_exact": "371",
+          "reported_exact": "361",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-3416-0",
+        "response_sha256": "62f9073afd6b007fee73044e8a7a3321a0a3e120264572189cfb5f6f3877546b",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest mistake is in Step 1: the seven temperatures sum to 371 degrees, not 361 degrees. The model then correctly divides its incorrect total by seven, so the wrong average follows from this addition error."
+      },
+      "GPT_G": {
+        "source_id": "train-3416-0",
+        "response_sha256": "62f9073afd6b007fee73044e8a7a3321a0a3e120264572189cfb5f6f3877546b",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Total temperature = 40 + 50 + 65 + 36 + 82 + 72 + 26 = 361 degrees",
+        "evidence_start": 210,
+        "evidence_end": 276,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "40 degrees on Sunday then hit 50 on Monday, 65 on Tuesday, 36 on Wednesday, 82 on Thursday, 72 on Friday and ended the week at 26 on Saturday.",
+        "observed_error": "The response evaluates the sum of the seven temperatures as 361 degrees instead of 371 degrees.",
+        "violated_condition": "The weekly total must equal the sum of all seven supplied daily temperatures.",
+        "error_description": "The response lists all seven daily temperatures correctly but incorrectly evaluates 40 + 50 + 65 + 36 + 82 + 72 + 26 as 361 degrees; the sum is 371 degrees. Its subsequent division by seven correctly uses the written total, so the average inherits the addition error.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-4085-1",
+      "verified_equations": [
+        {
+          "source_id": "train-4085-1",
+          "quote": "80 - 16 = 40",
+          "start": 122,
+          "end": 134,
+          "lhs": "80 - 16",
+          "rhs": "40",
+          "computed_exact": "64",
+          "reported_exact": "40",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-4085-1",
+        "response_sha256": "126f49641e9787d352173e4b754bc9b927c1b685f1cd90e1552793b3e63dacb0",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The model correctly calculates 80 ants in the second anthill and a reduction of 16 ants for the third, but incorrectly evaluates 80 − 16 as 40. That subtraction equals 64, so its final answer is incorrect."
+      },
+      "GPT_G": {
+        "source_id": "train-4085-1",
+        "response_sha256": "126f49641e9787d352173e4b754bc9b927c1b685f1cd90e1552793b3e63dacb0",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "80 - 16 = 40 ants",
+        "evidence_start": 122,
+        "evidence_end": 139,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "in each next anthill, there are 20% fewer ants than in the previous one.",
+        "observed_error": "The response incorrectly evaluates 80 minus 16 as 40.",
+        "violated_condition": "The third anthill's count must equal 80 minus 20% of 80.",
+        "error_description": "The response correctly finds 80 ants in the second anthill and a reduction of 16 ants for the third, but incorrectly evaluates the written subtraction 80 − 16 as 40. The percentage relation is correct; the subtraction is executed incorrectly.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-4135-1",
+      "verified_equations": [
+        {
+          "source_id": "train-4135-1",
+          "quote": "8 + 12 + 16 + 4 = 30",
+          "start": 505,
+          "end": 525,
+          "lhs": "8 + 12 + 16 + 4",
+          "rhs": "30",
+          "computed_exact": "40",
+          "reported_exact": "30",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-4135-1",
+        "response_sha256": "ff8ba2b295e56ed7fbed510a19358366d01c08973010d0a4a2b1e7ba042aa2fd",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest mistake occurs in Step 5: the model incorrectly adds 8 + 12 + 16 + 4 to get 30. Those correctly calculated individual counts sum to 40, so the final total is incorrect."
+      },
+      "GPT_G": {
+        "source_id": "train-4135-1",
+        "response_sha256": "ff8ba2b295e56ed7fbed510a19358366d01c08973010d0a4a2b1e7ba042aa2fd",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "8 + 12 + 16 + 4 = 30 teeth removed",
+        "evidence_start": 505,
+        "evidence_end": 539,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "What's the total number of teeth removed at the dental clinic?",
+        "observed_error": "The response incorrectly evaluates 8 + 12 + 16 + 4 as 30.",
+        "violated_condition": "The total must equal the sum of the four correctly calculated removal counts.",
+        "error_description": "The response correctly calculates each person's removed teeth and sets up the required sum, but evaluates 8 + 12 + 16 + 4 as 30 teeth. This incorrectly executes the written addition, so the reported total does not equal the combined removals for all four adults.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-4731-0",
+      "verified_equations": [
+        {
+          "source_id": "train-4731-0",
+          "quote": "20 - (2 + 4 + 1 + 4) = 11",
+          "start": 655,
+          "end": 680,
+          "lhs": "20 - (2 + 4 + 1 + 4)",
+          "rhs": "11",
+          "computed_exact": "9",
+          "reported_exact": "11",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-4731-0",
+        "response_sha256": "2a9e53a6f09457fea1c572960bc125347d5b41bb42ded69888a070b4f834278d",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest substantive mistake is in Step 4, where the model evaluates 20 - (2 + 4 + 1 + 4) as 11. The parenthesized sum is 11, so subtracting it from 20 gives 9, not 11."
+      },
+      "GPT_G": {
+        "source_id": "train-4731-0",
+        "response_sha256": "2a9e53a6f09457fea1c572960bc125347d5b41bb42ded69888a070b4f834278d",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "20 - (2 + 4 + 1 + 4) = 11 apples on Wednesday.",
+        "evidence_start": 655,
+        "evidence_end": 701,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "Billy ate 20 apples this week.",
+        "observed_error": "The response incorrectly evaluates 20 - (2 + 4 + 1 + 4) as 11.",
+        "violated_condition": "Wednesday's amount must equal the weekly total minus the amounts assigned to the other listed days.",
+        "error_description": "The response correctly sets up subtracting the other listed days’ apples from the weekly total, but incorrectly evaluates 20 - (2 + 4 + 1 + 4) as 11 apples. The parenthesized amounts already sum to 11, so the stated remainder does not satisfy the written subtraction.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-525-2",
+      "verified_equations": [
+        {
+          "source_id": "train-525-2",
+          "quote": "8 + 6 + 12 + 24 = 40",
+          "start": 266,
+          "end": 286,
+          "lhs": "8 + 6 + 12 + 24",
+          "rhs": "40",
+          "computed_exact": "50",
+          "reported_exact": "40",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-525-2",
+        "response_sha256": "0f3c3ea479a95ffcae133745af5d90a3235129681621162bfa60059799d4105e",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest mistake is the addition of the trip distances: 8 + 6 + 12 + 24 equals 50 miles, not 40. The subsequent fuel and cost calculations use this incorrect total, causing the final cost to be underestimated."
+      },
+      "GPT_G": {
+        "source_id": "train-525-2",
+        "response_sha256": "0f3c3ea479a95ffcae133745af5d90a3235129681621162bfa60059799d4105e",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Total distance = 8 + 6 + 12 + 24 = 40 miles",
+        "evidence_start": 249,
+        "evidence_end": 292,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "8 miles to the grocery store, 6 miles to pick up her kids from school, 12 miles to drop her kids off at soccer practice, and twice the distance from the school to soccer practice to get everyone home again.",
+        "observed_error": "The response evaluates 8 + 6 + 12 + 24 as 40 miles instead of 50 miles.",
+        "violated_condition": "Total trip distance must equal the sum of the four driving distances.",
+        "error_description": "The response correctly identifies the four driving distances and writes their sum, but evaluates 8 + 6 + 12 + 24 as 40 miles rather than 50 miles. This arithmetic error understates the total trip distance; the subsequent fuel and cost calculations propagate that incorrect total.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-5304-0",
+      "verified_equations": [
+        {
+          "source_id": "train-5304-0",
+          "quote": "9 + 9 + 9 + 8 + 8 + 8 = 49",
+          "start": 224,
+          "end": 250,
+          "lhs": "9 + 9 + 9 + 8 + 8 + 8",
+          "rhs": "49",
+          "computed_exact": "51",
+          "reported_exact": "49",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-5304-0",
+        "response_sha256": "4db0e07502ce8c5e2f9beadfeb29628604acbcbc9368e55b77558fae3b0e072e",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest mistake is in Step 1: the model calculates 9 + 9 + 9 + 8 + 8 + 8 as 49 liters, but the sum is 51 liters. This incorrect subtotal leads to the wrong Wednesday intake."
+      },
+      "GPT_G": {
+        "source_id": "train-5304-0",
+        "response_sha256": "4db0e07502ce8c5e2f9beadfeb29628604acbcbc9368e55b77558fae3b0e072e",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "9 + 9 + 9 + 8 + 8 + 8 = 49 liters",
+        "evidence_start": 224,
+        "evidence_end": 257,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "He drank nine liters of water on Monday, Thursday and Saturday and 8 liters of water on Tuesday, Friday and Sunday.",
+        "observed_error": "The six listed daily amounts are added incorrectly as 49 liters.",
+        "violated_condition": "The known six-day intake equals 9 + 9 + 9 + 8 + 8 + 8 = 51 liters.",
+        "error_description": "The response correctly lists the six known daily amounts but evaluates 9 + 9 + 9 + 8 + 8 + 8 as 49 liters instead of 51 liters. This understates the intake excluding Wednesday; the subsequent subtraction from 60 liters correctly uses that erroneous subtotal.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-6915-3",
+      "verified_equations": [
+        {
+          "source_id": "train-6915-3",
+          "quote": "1000 - 400 - 375 = 200",
+          "start": 470,
+          "end": 492,
+          "lhs": "1000 - 400 - 375",
+          "rhs": "200",
+          "computed_exact": "225",
+          "reported_exact": "200",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-6915-3",
+        "response_sha256": "b7f2eb6b75b0520e6a488a4d6df8891a96850da1d8ea3d51d5af69ed71db9aeb",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The model correctly calculates the two older age groups as 400 and 375 players, but makes an arithmetic error when evaluating 1000 − 400 − 375. This subtraction equals 225, not the stated 200."
+      },
+      "GPT_G": {
+        "source_id": "train-6915-3",
+        "response_sha256": "b7f2eb6b75b0520e6a488a4d6df8891a96850da1d8ea3d51d5af69ed71db9aeb",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "1000 - 400 - 375 = 200",
+        "evidence_start": 470,
+        "evidence_end": 492,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "a total of 1000 players signed up, how many players are younger than 25 years?",
+        "observed_error": "The response incorrectly evaluates the subtraction 1000 - 400 - 375 as 200.",
+        "violated_condition": "The younger-than-25 count must equal the total minus the two older age-group counts.",
+        "error_description": "The response correctly calculates the two older age groups as 400 and 375 players and sets up subtraction from 1000. It then incorrectly evaluates 1000 - 400 - 375 as 200, so the reported younger-than-25 count does not satisfy its own subtraction relation.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-7003-3",
+      "verified_equations": [
+        {
+          "source_id": "train-7003-3",
+          "quote": "57 + 190 + 152 = 309",
+          "start": 734,
+          "end": 754,
+          "lhs": "57 + 190 + 152",
+          "rhs": "309",
+          "computed_exact": "399",
+          "reported_exact": "309",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-7003-3",
+        "response_sha256": "c59c77f18888924b9e1cae1d520958aeb4b5c8b84eb3259701f953031e3edcb9",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest mistake occurs in step 4, where the model adds 57, 190, and 152 and reports 309. These correctly calculated color totals actually sum to 399, so the final answer is incorrect."
+      },
+      "GPT_G": {
+        "source_id": "train-7003-3",
+        "response_sha256": "c59c77f18888924b9e1cae1d520958aeb4b5c8b84eb3259701f953031e3edcb9",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "57 + 190 + 152 = 309",
+        "evidence_start": 734,
+        "evidence_end": 754,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "How many balls did Julie buy in all?",
+        "observed_error": "The response incorrectly evaluates the sum of the three correctly calculated color totals as 309.",
+        "violated_condition": "The total must equal the arithmetic sum of 57 red balls, 190 yellow balls, and 152 green balls.",
+        "error_description": "The response correctly calculates each color’s ball count and correctly writes their sum, but evaluates 57 + 190 + 152 as 309. This arithmetic execution error makes the reported total inconsistent with the combined number of red, yellow, and green balls purchased.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-7025-0",
+      "verified_equations": [
+        {
+          "source_id": "train-7025-0",
+          "quote": "110 + 310 + 215 + 560 + 780 = 2175",
+          "start": 193,
+          "end": 227,
+          "lhs": "110 + 310 + 215 + 560 + 780",
+          "rhs": "2175",
+          "computed_exact": "1975",
+          "reported_exact": "2175",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-7025-0",
+        "response_sha256": "4dda88973ef0b9fb4969911e72984259d510195fa4ca330b606cec36b758f792",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest mistake is in Step 1: the model adds the five calorie amounts to get 2175, but their sum is 1975. This overcounts consumption by 200 calories and consequently understates the remaining allowance by 200 calories."
+      },
+      "GPT_G": {
+        "source_id": "train-7025-0",
+        "response_sha256": "4dda88973ef0b9fb4969911e72984259d510195fa4ca330b606cec36b758f792",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Total calories consumed = 110 + 310 + 215 + 560 + 780 = 2175 calories",
+        "evidence_start": 167,
+        "evidence_end": 236,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "His caloric intake for breakfast and lunch is 560 and 780 calories, respectively.",
+        "observed_error": "The response evaluates 110 + 310 + 215 + 560 + 780 as 2175 instead of 1975 calories.",
+        "violated_condition": "Total calories consumed must equal the sum of the five stated calorie amounts.",
+        "error_description": "The response adds the correct five calorie amounts but evaluates 110 + 310 + 215 + 560 + 780 as 2175 calories, overstating consumption by 200 calories. Its subsequent subtraction from the 2500-calorie daily limit correctly uses that incorrect total, so the remaining-calorie error follows from the addition.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-7093-4",
+      "verified_equations": [
+        {
+          "source_id": "train-7093-4",
+          "quote": "32 * 12 = 360",
+          "start": 506,
+          "end": 519,
+          "lhs": "32 * 12",
+          "rhs": "360",
+          "computed_exact": "384",
+          "reported_exact": "360",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-7093-4",
+        "response_sha256": "83b875feea205967b7b8eb80b73126937c43df3a01f129dd04fbb7aedc238e5d",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The substantive mistake is in Step 3, where the model calculates 32 × 12 as 360 instead of 384. Its counts of 16 attendees and 32 glasses are correct, but this multiplication error produces the incorrect final answer."
+      },
+      "GPT_G": {
+        "source_id": "train-7093-4",
+        "response_sha256": "83b875feea205967b7b8eb80b73126937c43df3a01f129dd04fbb7aedc238e5d",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "32 * 12 = 360 ounces of punch.",
+        "evidence_start": 506,
+        "evidence_end": 536,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "Each glass holds 12 ounces of punch.",
+        "observed_error": "The response incorrectly evaluates 32 multiplied by 12 as 360.",
+        "violated_condition": "Total ounces must equal the 32 required glasses multiplied by 12 ounces per glass.",
+        "error_description": "The response correctly counts 16 attendees and determines that they need 32 glasses, but then evaluates 32 × 12 as 360 ounces. The multiplication relation matches the stated 12 ounces per glass; the error is in executing that multiplication, which understates the required punch.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-751-2",
+      "verified_equations": [
+        {
+          "source_id": "train-751-2",
+          "quote": "22.5 + 0.6 * 22.5 = 35.25",
+          "start": 422,
+          "end": 447,
+          "lhs": "22.5 + 0.6 * 22.5",
+          "rhs": "35.25",
+          "computed_exact": "36",
+          "reported_exact": "141/4",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-751-2",
+        "response_sha256": "3a0cfc1def158a26cd2494ccfd613847afe1dcb5f323a40dcd00fef788898129",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest mistake is setting Tuesday’s speed equal to Monday’s 10 meters per hour. The question says that on each day from Tuesday through Thursday, Harry ran 50% faster than Monday, so Tuesday’s speed should already be 15 meters per hour; the increase is not compounded daily."
+      },
+      "GPT_G": {
+        "source_id": "train-751-2",
+        "response_sha256": "3a0cfc1def158a26cd2494ccfd613847afe1dcb5f323a40dcd00fef788898129",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "Speed on Tuesday = Speed on Monday = 10 meters per hour",
+        "evidence_start": 54,
+        "evidence_end": 109,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "From Tuesday to Thursday he ran 50% faster than on Monday.",
+        "observed_error": "Tuesday's speed is set equal to Monday's instead of 50% faster.",
+        "violated_condition": "Each speed from Tuesday through Thursday must equal 1.5 times Monday's speed.",
+        "error_description": "The response assigns Tuesday the same speed as Monday, 10 meters per hour, although Tuesday through Thursday must each be 50% faster than Monday. It subsequently applies increases to preceding days instead of maintaining Monday as the common baseline for that interval.",
+        "reference_review_reason": null,
+        "secondary_errors": [
+          "The Friday expression 22.5 + 0.6 * 22.5 is evaluated as 35.25 meters per hour, but the written arithmetic equals 36 meters per hour. This is independent of the incorrect Thursday speed."
+        ],
+        "uncertainty_note": null
+      }
+    },
+    {
+      "source_id": "train-863-0",
+      "verified_equations": [
+        {
+          "source_id": "train-863-0",
+          "quote": "15 + 10 - 6 = 29",
+          "start": 538,
+          "end": 554,
+          "lhs": "15 + 10 - 6",
+          "rhs": "29",
+          "computed_exact": "19",
+          "reported_exact": "29",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        },
+        {
+          "source_id": "train-863-0",
+          "quote": "15 + 10 - 6 = 29",
+          "start": 1399,
+          "end": 1415,
+          "lhs": "15 + 10 - 6",
+          "rhs": "29",
+          "computed_exact": "19",
+          "reported_exact": "29",
+          "consistent": false,
+          "review_category": "explicit_arithmetic_mismatch",
+          "review_note_ko": "원래 풀이의 전체 줄과 정확한 유리수 계산을 대조함. 주어진 숫자 식의 양변이 일치하지 않음. 이것이 가장 이른 오류인지는 별도 문제.",
+          "reviewer": "Codex original-line check + exact rational arithmetic; not human ground truth"
+        }
+      ],
+      "GPT_E": {
+        "source_id": "train-863-0",
+        "response_sha256": "498d05237a4b6f7ca62b031eee186ab16560aff92fe75d283fd9fe5d2672ead1",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "explanation": "The earliest mistake is evaluating 15 + 10 − 6 as 29 instead of 19, despite correctly stating the inclusion-exclusion formula. This arithmetic error leads the model to falsely declare the given data inconsistent and conclude that no students like neither food."
+      },
+      "GPT_G": {
+        "source_id": "train-863-0",
+        "response_sha256": "498d05237a4b6f7ca62b031eee186ab16560aff92fe75d283fd9fe5d2672ead1",
+        "status": "supported_error",
+        "reference_review_needed": false,
+        "evidence_quote": "15 + 10 - 6 = 29",
+        "evidence_start": null,
+        "evidence_end": null,
+        "evidence_occurrence": 1,
+        "question_evidence_quote": "15 students said they like French fries and 10 said they like burgers, with these statistics including the responses of 6 students who said they like both French fries and burgers.",
+        "observed_error": "The response evaluates 15 + 10 - 6 as 29 instead of 19.",
+        "violated_condition": "The union count is 15 + 10 - 6, which equals 19 students.",
+        "error_description": "The response writes the correct inclusion-exclusion relation but incorrectly evaluates 15 + 10 - 6 as 29 students. This arithmetic error inflates the count liking at least one food beyond the class size and leads it to incorrectly declare the supplied data inconsistent.",
+        "reference_review_reason": null,
+        "secondary_errors": [],
+        "uncertainty_note": null
+      }
+    }
+  ],
+  "note": "Known numeric-equation errors, selected by a limited parser and prior original-line review. Not a random sample or comprehensive accuracy measure."
+}

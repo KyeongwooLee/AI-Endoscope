@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John has 25 horses.  He feeds each horse twice a day and feeds them 20 pounds of food at each feeding.  He buys half ton bags of food.  How many of those will he have to buy in 60 days?
+SOLUTION: Step 1: Calculate the total amount of food John needs per day for all horses.
+John has 25 horses and feeds each horse 20 pounds of food twice a day.
+Total food per day = 25 horses × 20 pounds/horse × 2 feedings/day
+
+Step 2: Calculate the total amount of food needed for 60 days.
+Total food for 60 days = Total food per day × 60 days
+
+Step 3: Convert the total amount of food needed into bags of food.
+Each bag contains half a ton of food, which is equivalent to 500 pounds.
+Number of bags needed = Total food for 60 days / 500 pounds/bag
+
+Step 4: Calculate the total number of bags John needs to buy.
+Number of bags needed = Total number of bags John needs
+
+#### 15
+#### John will have to buy 15 bags of food in 60 days.

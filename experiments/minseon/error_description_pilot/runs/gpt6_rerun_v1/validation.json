@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "unchanged_baseline_files": 757,
+  "fixed_unique_questions": 630,
+  "annotation_records": 1260,
+  "annotation_models": [
+    "gpt-6-astra"
+  ],
+  "valid_annotations": 1260,
+  "invalid_annotations": 0,
+  "embedding_counts": {
+    "pilot130": {
+      "R": 130,
+      "E": 125,
+      "G": 123,
+      "Q": 130
+    },
+    "expansion500": {
+      "R": 500,
+      "E": 474,
+      "G": 464,
+      "Q": 500
+    }
+  },
+  "unique_retrieval_pairs": 3674,
+  "GPT_judged_pairs": 3674,
+  "reference_free_GPT_diagnoses": 500,
+  "recorded_fresh_GPT_sessions": 2546,
+  "no_model_tool_activity": true,
+  "human_ground_truth": false,
+  "limitations": "Structural/source/retrieval/provenance checks, not proof of semantic annotation accuracy."
+}

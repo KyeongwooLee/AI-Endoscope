@@ -1,0 +1,14 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Emery and Serena go to their school library, and each borrows a copy of The life of Jack Steve's book to read for their school project. If Emery can read five times as fast as Serena, and the book takes her 20 days to read, what's the average number of days the two take to read the book?
+SOLUTION: #### 15
+
+Reasoning:
+1. Let's denote the number of days Serena takes to read the book as \( S \).
+2. Since Emery reads five times faster than Serena, Emery's reading time is \( \frac{S}{5} \).
+3. We know Emery takes 20 days to read the book, so \( \frac{S}{5} = 20 \).
+4. Solving for \( S \), we get \( S = 20 \times 5 = 100 \).
+5. The total number of days both take to read the book is \( 20 + 100 = 120 \).
+6. The average number of days is \( \frac{120}{2} = 60 \div 2 = 30 \).
+
+Therefore, the average number of days the two take to read the book is 15.

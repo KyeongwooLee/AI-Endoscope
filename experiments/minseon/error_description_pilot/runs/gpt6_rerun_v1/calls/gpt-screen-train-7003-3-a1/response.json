@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"399 balls","check":"There are 3 + 10 + 8 = 21 packs, so the total is 21 × 19 = 399 balls. The individual color totals are correct, but 57 + 190 + 152 equals 399, not 309.","evidence_quote":"57 + 190 + 152 = 309","error_description":"The solution incorrectly sums the three color totals as 309 instead of 399."}

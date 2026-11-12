@@ -1,0 +1,17 @@
+{
+  "source_id": "train-340-2",
+  "response_sha256": "03d4b61d103d59aa3c8c70dcdf1ef606bfca057a559dc43d9c1c9e91f0a27ca3",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Length of rope after losing 25% = Total length needed * (1 - 0.25)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "The only rope being sold is 20 feet long but you lose 25% when lashing them together.",
+  "observed_error": "The response reduces the required 60-foot reach by 25% before dividing by the purchased piece length.",
+  "violated_condition": "The usable length after lashing must reach 60 feet; the 25% loss reduces purchased rope length, not required reach.",
+  "error_description": "The response multiplies the required 60-foot reach by 0.75, then treats the resulting 45 feet as the amount to buy. Lashing loss reduces the usable length of purchased rope while the required reach remains 60 feet. The multiplication is executed correctly, but the relation applies the loss to the wrong quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

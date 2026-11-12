@@ -1,0 +1,29 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: When Jason plays the video game, Duty for Ashes, his mission to slay the dragon hoard requires that he fire his weapon on average every 15 seconds.   And each time he fires his weapon, his power-fire setting allows him to shoot a flame for 5 seconds.  On average, how many seconds per minute does Jason shoot flames at the dragon hoard?
+SOLUTION: To find out how many seconds per minute Jason shoots flames at the dragon hoard, let's break it down step by step:
+
+1. **Total Fire Rate**: Jason fires his weapon every 15 seconds.
+   - This means he fires 1 fire per 15 seconds.
+
+2. **Duration of Each Fire**: Each fire lasts for 5 seconds.
+
+3. **Total Time Per Fire**: Since Jason fires every 15 seconds and each fire lasts 5 seconds, the total time he spends firing a flame is:
+   \[
+   15 \text{ seconds} (interval) + 5 \text{ seconds} (duration) = 20 \text{ seconds}
+   \]
+
+4. **Total Time Per Minute**: There are 60 seconds in a minute.
+
+5. **Number of Flames Per Minute**: To find the number of times Jason fires in one minute, divide the total time in a minute by the time it takes to fire one flame:
+   \[
+   \frac{60 \text{ seconds}}{20 \text{ seconds/fire}} = 3 \text{ flames per minute}
+   \]
+
+6. **Total Time Spent Shooting Flames Per Minute**: Multiply the number of times he fires by the duration of each fire to get the total time spent shooting flames in one minute:
+   \[
+   3 \text{ flames/minute} \times 5 \text{ seconds/fire} = 15 \text{ seconds/minute}
+   \]
+
+### Final Answer:
+#### 15

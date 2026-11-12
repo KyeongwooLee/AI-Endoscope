@@ -1,0 +1,17 @@
+{
+  "source_id": "train-609-2",
+  "response_sha256": "38da8bf91c4dfa378db710e62b12c207af53ff11a3cae12440076f4fd66a24d1",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "3. Determine the amount paid in taxes by subtracting the leftover amount from her salary.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Angie is part of a household with shared expenses and contributes $42 a month for necessities.",
+  "observed_error": "The proposed tax calculation subtracts only leftover money from salary, omitting necessities.",
+  "violated_condition": "Salary equals necessities plus taxes plus leftover money.",
+  "error_description": "The response first proposes calculating taxes as salary minus leftover money. That difference includes both necessities and taxes, so it fails to deduct Angie's separate $42 necessities payment. The required relation is that her $80 salary covers necessities, taxes, and the stated $18 remaining.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

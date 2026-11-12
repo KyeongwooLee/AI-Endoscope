@@ -1,0 +1,10 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Maria collects stamps and wants to enlarge her collection. She has collected 40 stamps so far and plans to have 20% more. How many stamps in total does Maria want to collect?
+SOLUTION: Step 1: Determine the total number of stamps Maria wants to collect by increasing her current collection by 20%.
+Step 2: Calculate 20% of 40 stamps.
+20% of 40 stamps = 0.20 * 40
+Step 3: Add the result from Step 2 to the current number of stamps (40).
+Total stamps Maria wants to collect = 40 + (0.20 * 40)
+
+#### 68

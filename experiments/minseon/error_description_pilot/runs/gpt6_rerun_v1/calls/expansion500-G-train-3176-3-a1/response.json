@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3176-3",
+  "response_sha256": "e92917becfd63ef3472e6696bc16ebb3652271b0bc57acd16207033e1a557754",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Next, solve for \\( R \\):\n\\[\nR + 4 = F\n\\]\n\\[\nR = F - 4\n\\]",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Matthew is two years older than Rebecca and four years younger than Freddy.",
+  "observed_error": "The response changes R + 2 = F - 4 into R + 4 = F.",
+  "violated_condition": "Freddy is six years older than Rebecca, so R + 6 = F.",
+  "error_description": "The response correctly writes R + 2 = F - 4, but then rearranges it as R + 4 = F. Adding four to both sides requires R + 6 = F. This reduces the Freddy–Rebecca age difference from six years to four, violating the two stated age comparisons.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

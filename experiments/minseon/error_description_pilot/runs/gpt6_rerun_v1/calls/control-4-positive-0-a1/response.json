@@ -1,0 +1,1 @@
+{"case1_error":"Treats the daily count of 8 biscuits as the weekly total, ignoring 5 days.","case2_error":"Treats the count of 4 packets as the peanut total, ignoring 30 peanuts per packet.","reason":"Both substitute one given factor for the requested total without applying the other factor.","judgment":"same"}

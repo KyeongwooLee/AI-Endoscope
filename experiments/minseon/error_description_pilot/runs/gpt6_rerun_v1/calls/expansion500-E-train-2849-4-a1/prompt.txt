@@ -1,0 +1,51 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition E: ordinary short error explanation | prompt v1]
+Read the math question, the model's solution, and the reference solution.
+The reference is a comparison aid and may itself be ambiguous or incorrect.
+Describe the earliest observable substantive mathematical mistake in the
+model's solution in one or two English sentences, approximately 25-60 words.
+If a specific mistake cannot be supported, say so instead of inventing one.
+Do not output a fixed error-category code or a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "explanation": "<25-60 English words; required when status is supported_error, otherwise a short reason or null>",
+  "reference_review_needed": false
+}
+
+source_id: train-2849-4
+response_sha256: 91843eadf5690fea9f447911e3e5eaeefa4dd55175e52510a29cd1f6e5a12380
+
+=== QUESTION ===
+For breakfast, Anna bought a bagel for $0.95 and a glass of orange juice for $0.85. At lunch, Anna spent $4.65 on a sandwich and $1.15 on a carton of milk. How much more money did Anna spend on lunch than on breakfast?
+=== MODEL SOLUTION ===
+Step 1: Calculate the total cost of breakfast.
+Cost of bagel = $0.95
+Cost of orange juice = $0.85
+Total cost of breakfast = $0.95 + $0.85
+
+Step 2: Calculate the total cost of lunch.
+Cost of sandwich = $4.65
+Cost of milk = $1.15
+Total cost of lunch = $4.65 + $1.15
+
+Step 3: Subtract the total cost of breakfast from the total cost of lunch to find out how much more Anna spent on lunch than on breakfast.
+Difference = Total cost of lunch - Total cost of breakfast
+
+Step 4: Calculate the final answer.
+#### (4.65 + 1.15 - (0.95 + 0.85))
+#### 5.00
+#### 5.00
+#### 5.00
+=== REFERENCE SOLUTION (fallible aid) ===
+The total cost of breakfast is $0.95 + $0.85 = $<<0.95+0.85=1.80>>1.80.
+The total cost of lunch is $4.65 + $1.15 = $<<4.65+1.15=5.80>>5.80.
+Anna spent $5.80 − $1.80 = $4 more on lunch than breakfast.
+#### 4
+=== END ===

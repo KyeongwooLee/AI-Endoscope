@@ -1,0 +1,32 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Nicole has three older sisters. After each one outgrows their clothes, they give them to Nicole. They have all outgrown their clothes and have given them all to Nicole. Nicole started with 10 pieces of clothing. Her first older sister had half as many clothes as Nicole. The next oldest sister had 2 more pieces of clothing than Nicole. The oldest had the average of what her three younger sisters had. How many pieces of clothing does Nicole end up with?
+SOLUTION: Let's break down the problem step by step:
+
+1. **Initial clothing for Nicole:**
+   - Nicole starts with 10 pieces of clothing.
+
+2. **Clothing for Nicole's first older sister:**
+   - The first sister has half as many clothes as Nicole.
+   - \( \frac{10}{2} = 5 \) pieces of clothing.
+
+3. **Clothing for Nicole's second older sister:**
+   - The second sister has 2 more pieces of clothing than Nicole.
+   - \( 10 + 2 = 12 \) pieces of clothing.
+
+4. **Clothing for Nicole's third older sister:**
+   - The third sister has the average of what her three younger sisters have.
+   - First sister: 5 pieces
+   - Second sister: 12 pieces
+   - Average = \( \frac{5 + 12}{2} = \frac{17}{2} = 8.5 \) pieces of clothing.
+
+5. **Total clothing given to Nicole:**
+   - Add all the clothing given to Nicole:
+   - Nicole's initial clothing: 10
+   - First sister's clothing: 5
+   - Second sister's clothing: 12
+   - Third sister's clothing: 8.5
+
+   Total = \( 10 + 5 + 12 + 8.5 = 35.5 \) pieces of clothing.
+
+#### 35.5

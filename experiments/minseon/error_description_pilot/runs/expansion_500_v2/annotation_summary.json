@@ -1,0 +1,68 @@
+{
+  "E": {
+    "valid": 494,
+    "statuses": {
+      "supported_error": 447,
+      "no_error_observed": 33,
+      "insufficient_evidence": 14,
+      "invalid": 6
+    },
+    "error_counts": {
+      "response_sha256 does not match packet": 1,
+      "explanation has 69 words; required 25-60": 1,
+      "explanation has 61 words; required 25-60": 1,
+      "explanation has 64 words; required 25-60": 1,
+      "explanation has 79 words; required 25-60": 1,
+      "explanation has 70 words; required 25-60": 1
+    },
+    "embedded_text_diagnostics": {
+      "n": 447,
+      "mean_words": 39.691275167785236,
+      "unique_texts": 447,
+      "texts_mentioning_reference": 102,
+      "gold_number_warning_rows": 253
+    }
+  },
+  "G": {
+    "valid": 379,
+    "statuses": {
+      "supported_error": 338,
+      "no_error_observed": 31,
+      "invalid": 121,
+      "insufficient_evidence": 10
+    },
+    "error_counts": {
+      "parse_error:Invalid \\escape: line 5 column 65 (char 217)": 1,
+      "evidence span invalid: evidence_quote is not an exact substring of the response": 41,
+      "question_evidence_quote is not an exact substring of the question": 19,
+      "parse_error:Invalid \\escape: line 5 column 75 (char 227)": 1,
+      "evidence span invalid: response[start:end] != evidence_quote": 52,
+      "error_description has 63 words; required 25-60": 1,
+      "parse_error:Invalid \\escape: line 5 column 89 (char 241)": 1,
+      "parse_error:Invalid \\escape: line 5 column 53 (char 205)": 1,
+      "parse_error:Invalid \\escape: line 5 column 140 (char 291)": 1,
+      "error_description has 140 words; required 25-60": 1,
+      "parse_error:Invalid \\escape: line 5 column 86 (char 238)": 2,
+      "response_sha256 does not match packet": 1,
+      "parse_error:Invalid \\escape: line 5 column 40 (char 192)": 1,
+      "parse_error:Invalid \\escape: line 5 column 31 (char 183)": 1,
+      "parse_error:Invalid \\escape: line 5 column 64 (char 216)": 1,
+      "parse_error:Invalid \\escape: line 5 column 26 (char 178)": 1,
+      "parse_error:Invalid \\escape: line 5 column 28 (char 180)": 1,
+      "parse_error:Invalid \\escape: line 5 column 157 (char 309)": 1,
+      "parse_error:Invalid \\escape: line 5 column 48 (char 200)": 1,
+      "parse_error:Invalid \\escape: line 5 column 74 (char 226)": 1,
+      "error_description has 61 words; required 25-60": 1,
+      "parse_error:Invalid \\escape: line 5 column 30 (char 182)": 1,
+      "parse_error:Invalid \\escape: line 5 column 57 (char 209)": 1
+    },
+    "embedded_text_diagnostics": {
+      "n": 338,
+      "mean_words": 39.19230769230769,
+      "unique_texts": 338,
+      "texts_mentioning_reference": 4,
+      "gold_number_warning_rows": 113
+    },
+    "diagnostic_offset_only_repairable_not_used_in_primary": []
+  }
+}

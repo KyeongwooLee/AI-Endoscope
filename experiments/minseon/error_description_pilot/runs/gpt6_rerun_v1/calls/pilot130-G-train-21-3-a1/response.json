@@ -1,0 +1,17 @@
+{
+  "source_id": "train-21-3",
+  "response_sha256": "9d3a1e6cb83115db0cb1f329a841d0ab1ef287ff2a2e455b718eb6022eaf3524",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Therefore, 30 snakes will eat \\(30 \\times 12 = 360\\) birds per day.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "each snake eats 3 birds per day",
+  "observed_error": "The response multiplies 30 snakes by 12 to calculate birds eaten per day.",
+  "violated_condition": "Bird consumption must use 3 birds per snake per day, not 12 beetles per bird per day.",
+  "error_description": "The response uses 12 as the number of birds each snake eats per day, multiplying 30 snakes by 12. The question specifies 3 birds per snake per day; 12 is the beetle consumption rate for birds. The written multiplication itself is correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

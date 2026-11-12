@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"5 people","check":"Horizontal stripes: 4 × 7 = 28 people. Vertical stripes: 40 − 7 − 28 = 5; the solution describes the correct method but gives 37.","evidence_quote":"#### 37","error_description":"The final number 37 conflicts with the result of the stated subtraction method, which yields 5. No correct worked final answer is shown."}

@@ -1,0 +1,2 @@
+# Preserve exact bytes: prompts, source records, and artifacts have SHA256 pins.
+** -text

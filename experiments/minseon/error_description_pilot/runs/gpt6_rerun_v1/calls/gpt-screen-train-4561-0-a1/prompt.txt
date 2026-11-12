@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Eric, Ben, and Jack have some money. Eric has $10 less than Ben, and Ben has $9 less than Jack. If Jack has $26, how much money, in dollars, do all 3 of them have in total?
+SOLUTION: Step 1: Determine how much money Ben has.
+Ben has $9 more than Jack.
+Jack has $26.
+Ben's money = Jack's money + $9
+Ben's money = $26 + $9
+Ben's money = $35
+
+Step 2: Determine how much money Eric has.
+Eric has $10 less than Ben.
+Ben has $35.
+Eric's money = Ben's money - $10
+Eric's money = $35 - $10
+Eric's money = $25
+
+Step 3: Calculate the total amount of money all three have.
+Total money = Eric's money + Ben's money + Jack's money
+Total money = $25 + $35 + $26
+Total money = $86
+
+#### 86

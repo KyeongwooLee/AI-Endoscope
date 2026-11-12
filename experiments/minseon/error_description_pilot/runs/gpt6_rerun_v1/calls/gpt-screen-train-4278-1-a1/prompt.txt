@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Antonov bought 60 candies. He gave a pack of candy to his sister. If a pack of candy has 20 pieces, how many packs does Antonov still have?
+SOLUTION: Step 1: Determine the total number of candies Antonov initially had.
+Antonov had 60 candies.
+
+Step 2: Determine the number of candies in one pack.
+A pack of candy has 20 pieces.
+
+Step 3: Calculate the number of packs Antonov gave to his sister.
+Number of packs given = Total number of candies / Number of candies per pack
+Number of packs given = 60 / 20
+Number of packs given = 3
+
+Step 4: Calculate the number of packs Antonov still has.
+Number of packs remaining = Total number of packs - Number of packs given
+Number of packs remaining = 3 - 3
+Number of packs remaining = 0
+
+#### 0
+Antonov still has 0 packs of candy.

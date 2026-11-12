@@ -1,0 +1,29 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Leila spent $40 which is 1/4 of her money on a sweater. She was then left with $20 after spending the rest of her money on buying pieces of jewelry. How much more did Leila spend on jewelry than on the sweater?
+SOLUTION: Step 1: Let's denote the total amount of money Leila had as \( x \).
+
+Step 2: According to the problem, Leila spent \( \frac{1}{4} \) of her money on a sweater. So, the amount spent on the sweater is \( \frac{x}{4} \).
+
+Step 3: We know that the amount spent on the sweater is $40. Therefore, we can write:
+   \[
+   \frac{x}{4} = 40
+   \]
+
+Step 4: Solving for \( x \):
+   \[
+   x = 40 \times 4 = 160
+   \]
+
+Step 5: Leila spent the remaining money on jewelry. She was left with $20 after buying jewelry. Therefore, the amount spent on jewelry is:
+   \[
+   160 - 20 = 140
+   \]
+
+Step 6: To find out how much more Leila spent on jewelry than on the sweater:
+   \[
+   140 - 40 = 100
+   \]
+
+#### 100
+Leila spent $100 more on jewelry than on the sweater.

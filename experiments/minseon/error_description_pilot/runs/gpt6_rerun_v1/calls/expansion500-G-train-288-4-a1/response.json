@@ -1,0 +1,19 @@
+{
+  "source_id": "train-288-4",
+  "response_sha256": "0ffc56d215e1e49f0910352c2226e186a88b1db6394f2587f131139e8a71bc57",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "- Total cost: \\( 10 \\times 12 = $120 \\)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "The cheap one costs $10 a month and has a sign-up fee of $50.",
+  "observed_error": "The first gym's first-year total excludes its $50 sign-up fee.",
+  "violated_condition": "First-year cost includes 12 monthly payments plus the sign-up fee.",
+  "error_description": "The response labels 10 × 12 = $120 as the first gym's total first-year cost, omitting its $50 sign-up fee. The multiplication is correct, but annual membership payments alone do not cover all first-year charges. It also excludes the second gym's calculated $120 sign-up fee from that gym's total.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The second gym's first-year total likewise omits its $120 sign-up fee, using only 30 × 12 = $360."
+  ],
+  "uncertainty_note": null
+}

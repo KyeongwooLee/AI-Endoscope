@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1102-2",
+  "response_sha256": "9408837d3274e4c7fdb8d069c42cda0d98d79a7a6e5748447685d548989176a5",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "Step 5: Add the counts from Monday and Tuesday.\nTotal counts on Tuesday = 1 (Monday) + 3 (Tuesday)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how many times has Carla counted something on Tuesday?",
+  "observed_error": "The response includes a Monday count in the Tuesday total.",
+  "violated_condition": "The requested total includes only counting performed on Tuesday.",
+  "error_description": "The response adds a Monday count to three Tuesday counts when constructing a total restricted to Tuesday. Its expression also omits the two Tuesday tile-counting rounds it previously identified. The addition itself is correct; the selected quantities violate the requested day.",
+  "reference_review_reason": "The reference counts individual tiles and books, whereas the response counts complete counting rounds. The wording permits uncertainty about the intended counting unit, but including Monday is erroneous under either interpretation.",
+  "secondary_errors": [],
+  "uncertainty_note": "The counting-unit ambiguity does not affect the supported temporal error."
+}

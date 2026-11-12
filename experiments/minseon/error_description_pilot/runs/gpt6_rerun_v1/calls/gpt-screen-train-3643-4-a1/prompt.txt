@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: The bakery has 8 indoor tables and 12 outdoor tables. Each indoor table has 3 chairs and each outdoor table has 3 chairs. How many chairs are there in total?
+SOLUTION: Step 1: Calculate the total number of chairs at indoor tables.
+- There are 8 indoor tables.
+- Each indoor table has 3 chairs.
+
+\[ \text{Total chairs at indoor tables} = 8 \times 3 \]
+
+Step 2: Calculate the total number of chairs at outdoor tables.
+- There are 12 outdoor tables.
+- Each outdoor table has 3 chairs.
+
+\[ \text{Total chairs at outdoor tables} = 12 \times 3 \]
+
+Step 3: Add the total number of chairs from indoor and outdoor tables.
+
+\[ \text{Total chairs} = \text{Total chairs at indoor tables} + \text{Total chairs at outdoor tables} \]
+
+Step 4: Calculate the final answer.
+
+#### 48
+#### 48

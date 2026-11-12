@@ -1,0 +1,42 @@
+{
+  "version": "qwen-gsm8k-self-errors-v1",
+  "files": {
+    "errors.jsonl": "one wrong answer per line, 7,691 lines (GSM8K train split, valid #### line only)",
+    "token_ids.jsonl": "one line per id in errors.jsonl, same order",
+    "hidden.npy": "float16 (7691, 4, 7, 1536); rows in errors.jsonl order (features_meta.json ids)",
+    "confidence.npy": "float32 (7691, 9); same rows",
+    "features_meta.json": "ids, layers, positions, confidence names"
+  },
+  "hidden.npy": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct @ 989aa7980e4cf806f80c7fef2b1adb7bc71aa306, HF transformers float16 replay of the exact token ids",
+    "axis1_positions": "q_end (last prompt token), r_end (last reasoning token before the #### line), r_mean (mean over reasoning tokens), ans (last token of the final answer number)",
+    "axis2_layers": "4, 8, 12, 16, 20, 24, 28 = HF output_hidden_states index; 28 is after the final RMSNorm (other team releases store h28 before it)"
+  },
+  "confidence.npy": {
+    "source": "final-layer distribution over the reasoning tokens",
+    "columns": "nll_mean, nll_max, lowtail_lp (mean of the lowest 10% token logprobs), ent_mean, ent_max, margin_mean, margin_min, ans_lp (answer-number token logprob), length (reasoning tokens)"
+  },
+  "errors.jsonl": {
+    "id": "string, {split}-{pid}-{sample}",
+    "split": "always train",
+    "pid": "int, 0-based line index in the official GSM8K train file (train-74 = train-00074 in the other releases)",
+    "sample": "int, 0 = greedy, 1-4 = sampled",
+    "mode": "greedy | sampled",
+    "question": "string",
+    "reference": "string, GSM8K reference solution including <<expr=val>> annotations and the #### line",
+    "gold": "float",
+    "pred": "float, number after the last ####",
+    "response": "string, model output text",
+    "finish": "stop | length",
+    "has_correct_sibling": "bool, another of the 5 solutions to the same problem is correct",
+    "rule_type": "SETUP | NOEQ | TARGET | OTHER | ARITH | NEWNUM",
+    "rule_first_wrong_eq": "int or null, 0-based index of the first checkable equation whose value is not valid (ARITH / SETUP / NEWNUM)",
+    "rule_n_eq": "int or null, number of checkable equations"
+  },
+  "token_ids.jsonl": {
+    "id": "string",
+    "prompt_token_ids": "list[int], Qwen chat template with add_generation_prompt",
+    "output_token_ids": "list[int], generated tokens as sampled"
+  },
+  "labels_note": "rule labels are automatic and not human-reviewed"
+}

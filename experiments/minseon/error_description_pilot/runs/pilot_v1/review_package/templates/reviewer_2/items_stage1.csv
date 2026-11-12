@@ -1,0 +1,709 @@
+"item_code","question","model_solution","reference_solution","observable_error_present","observed_error_or_uncertainty","reference_problem","reviewer_notes"
+"I-797165","Kekai is running a sundae booth at the carnival. On Monday, he makes a total of 40 sundaes, and he puts 6 m&ms on each sundae. On Tuesday, he makes a total of 20 sundaes, and he puts 10 m&ms on each sundae. If each m&m pack contains 40 m&ms, how many m&m packs does Kekai use?","Step 1: Calculate the total number of m&ms used on Monday.
+Number of sundaes on Monday = 40
+Number of m&ms per sundae = 6
+Total m&ms on Monday = 40 * 6
+
+Step 2: Calculate the total number of m&ms used on Tuesday.
+Number of sundaes on Tuesday = 20
+Number of m&ms per sundae = 10
+Total m&ms on Tuesday = 20 * 10
+
+Step 3: Calculate the total number of m&ms used.
+Total m&ms used = Total m&ms on Monday + Total m&ms on Tuesday
+
+Step 4: Calculate the number of m&m packs used.
+Number of m&ms per pack = 40
+Total number of m&ms used = Total m&ms used
+Number of packs used = Total number of m&ms used / Number of m&ms per pack
+
+Final answer:
+#### 20
+#### 20","On Monday, Kekai uses 40 * 6 = <<40*6=240>>240 m&ms
+On Tuesday, Kekai uses 20 * 10 = <<20*10=200>>200 m&ms
+Kekai uses a total of 240 + 200 = <<240+200=440>>440 m&ms
+Kekai uses a 440 / 40 = <<440/40=11>>11 m&m packs
+#### 11","","","",""
+"I-645380","Johnny has been playing guitar for a while now.  He practices the same amount each day. As of 20 days ago he had half as much practice as he has currently.  How many days will pass before Johnny has 3 times as much practice as he does currently?","Let's denote the amount of practice Johnny has currently as \( P \). According to the problem, 20 days ago, he had half of his current practice, which means he had \( \frac{P}{2} \).
+
+Johnny practices the same amount each day. Therefore, in 20 days, he will have practiced \( 20 \times \text{daily practice amount} \).
+
+After 20 days, his total practice will be:
+\[ P - 20 \times \text{daily practice amount} + 20 \times \text{daily practice amount} = P \]
+
+So, his total practice remains \( P \) after 20 days.
+
+Now, we want to find out how many days will pass before Johnny has 3 times as much practice as he currently has. Let's denote this number of days as \( x \).
+
+After \( x \) days, his total practice will be:
+\[ P + x \times \text{daily practice amount} \]
+
+We want this to be 3 times his current practice:
+\[ P + x \times \text{daily practice amount} = 3P \]
+
+Solving for \( x \):
+\[ x \times \text{daily practice amount} = 3P - P \]
+\[ x \times \text{daily practice amount} = 2P \]
+\[ x = \frac{2P}{\text{daily practice amount}} \]
+
+Since \( P = \frac{P}{2} \) from the problem statement, we can say \( P = 2P \). This means \( x = 2 \).
+
+#### 2
+Johnny will have 3 times as much practice as he does currently after 2 days.","If Johnny had half as much practice as he currently has as of 20 days ago, this means he has 20*2=<<20*2=40>>40 days worth of practice currently.
+Therefore, to have three times as much practice as he currently has, he'd need to practice for 40*3=<<40*3=120>>120 days.
+Since he's already practiced for 40 days, this means he needs to practice or 120-40= <<120-40=80>>80 more days
+#### 80","","","",""
+"I-605818","Lana and Mike are taking their dog and renting a cabin in the mountains for 2 weeks.  The daily rate is $125.00  There is a $100.00 pet fee.  There is also a 20% service/cleaning fee for the rental.  They need to pay 50% of the entire bill as a security deposit.  How much is their security deposit?","Step 1: Calculate the total daily cost for 2 weeks.
+Daily rate = $125.00
+Number of days = 14
+Total daily cost = $125.00 * 14
+
+Step 2: Add the pet fee to the total daily cost.
+Pet fee = $100.00
+Total cost = Total daily cost + Pet fee
+
+Step 3: Calculate the service/cleaning fee.
+Service/cleaning fee rate = 20%
+Total cost with fee = Total cost + (Total cost * 20%)
+
+Step 4: Calculate the security deposit.
+Security deposit = Total cost with fee * 50%
+
+#### 47500
+#### 23750
+#### 19250
+#### 48000","There are 7 days in a week and they're going for 2 weeks so that's 7*2 = <<7*2=14>>14 days
+The daily rate is $125.00 and they are staying for 14 days so that's 125*14 = $<<125*14=1750.00>>1,750.00
+There is also a $100.00 pet fee on top of their rental fee of $1,750.00 so that's 100+1750 = $<<100+1750=1850.00>>1850.00
+There is a 20% fee on the $1,850.00 so the fee comes to .20*1850 = $370.00
+The rental will costs $1,850.00 and there is $370.00 service/cleaning fee for a total of 1850+370 = $<<1850+370=2220.00>>2,220.00
+They need to pay 50% of the entire bill as a security deposit so that will be .5*2220 = $<<50*.01*2220=1110.00>>1,110.00
+#### 1110","","","",""
+"I-714118","The ages of three brothers are consecutive integers with the sum of 96.  How old is the youngest brother?","#### 24
+Step 1: Let the ages of the three brothers be \( x \), \( x+1 \), and \( x+2 \), where \( x \) is the age of the youngest brother.
+Step 2: According to the problem, the sum of their ages is 96.
+Step 3: Write the equation for the sum of their ages: \( x + (x+1) + (x+2) = 96 \).
+Step 4: Simplify the equation: \( 3x + 3 = 96 \).
+Step 5: Subtract 3 from both sides: \( 3x = 93 \).
+Step 6: Divide both sides by 3: \( x = 31 \).
+
+Final answer: 24","Let x represent the youngest brother
+Middle brother:x+1
+Oldest brother:x+2
+Total:x+x+1+x+2=96
+3x+3=96
+3x=93
+x=<<31=31>>31 years old
+#### 31","","","",""
+"I-753221","Shawna's workout goal is 30 situps. On Monday, Shawna was only able to do 12 situps, so she decided that she would make up for the rest on Tuesday. However, she was only able to do 19 situps on Tuesday. How many situps would Shawna have to do on Wednesday to meet her minimum goal and make up for the ones she didn't do?","Step 1: Determine the total number of situps Shawna needs to meet her goal.
+Shawna's goal is 30 situps.
+
+Step 2: Calculate the number of situps Shawna did on Monday and Tuesday.
+Monday: 12 situps
+Tuesday: 19 situps
+
+Step 3: Calculate the total number of situps Shawna has done so far.
+12 (Monday) + 19 (Tuesday) = 31 situps
+
+Step 4: Determine how many more situps Shawna needs to reach her goal.
+30 (goal) - 31 (so far) = -1 situps
+
+Step 5: Since Shawna has already exceeded her goal by 1 situp, she doesn't need to do any situps on Wednesday to meet her goal and make up for the ones she didn't do.
+
+#### 0
+Shawna doesn't need to do any situps on Wednesday to meet her goal.","On Monday, Shawna was short of 30 - 12 = <<30-12=18>>18 situps
+On Tuesday, Shawna was short of 30 - 19 = <<30-19=11>>11 situps
+On Wednesday, Shawna would have to do 30 + 18 + 11 = <<30+18+11=59>>59 situps
+#### 59","","","",""
+"I-833002","Angie is part of a household with shared expenses and contributes $42 a month for necessities. She has a salary of $80 per month. She also pays a share of the household taxes each month. At the end of this month, she had $18 left over. How much did she pay in taxes this month?","To determine how much Angie paid in taxes this month, we need to follow these steps:
+
+1. Calculate Angie's total expenses for this month.
+2. Subtract her total expenses from her salary to find the amount left over.
+3. Determine the amount paid in taxes by subtracting the leftover amount from her salary.
+
+Step 1: Calculate Angie's total expenses for this month.
+- Angie contributes $42 per month for necessities.
+- Angie has a salary of $80 per month.
+- Total expenses = Salary - Contribution for necessities
+  = $80 - $42
+  = $38
+
+Step 2: Subtract her total expenses from her salary to find the amount left over.
+- Amount left over = Salary - Total expenses
+  = $80 - $38
+  = $42
+
+Step 3: Determine the amount paid in taxes by subtracting the leftover amount from her salary.
+- Amount paid in taxes = Salary - Amount left over
+  = $80 - $42
+  = $38
+
+#### 38
+This is the amount Angie paid in taxes this month.","Angie earned 80 and paid 42 for necessities, so she had 80 - 42 = $<<80-42=38>>38 left.
+Angie had 18 left after paying taxes, so her share of the taxes was 38- 18 = $20 this month.
+#### 20","","","",""
+"I-157179","A cleaning company produces two sanitizer sprays. One spray kills 50% of germs, and another spray kills 25% of germs. However, 5% of the germs they kill are the same ones. What percentage of germs would be left after using both sanitizer sprays together?","To solve this problem, we need to consider the overlap in the germs killed by both sprays. Let's break it down step by step:
+
+1. **Calculate the total percentage of germs killed by each spray:**
+   - Spray 1 kills 50% of germs.
+   - Spray 2 kills 25% of germs.
+
+2. **Determine the overlap:**
+   - 5% of the germs killed by both sprays are the same.
+
+3. **Calculate the unique germs killed by each spray:**
+   - For Spray 1: \(50\% - 5\% = 45\%\)
+   - For Spray 2: \(25\% - 5\% = 20\%\)
+
+4. **Calculate the total unique germs killed by both sprays:**
+   - Total unique germs killed = \(45\% + 20\% = 65\%\)
+
+5. **Calculate the percentage of germs left after using both sprays:**
+   - Since 65% of germs are killed, the percentage left is \(100\% - 65\% = 35\%\)
+
+#### 35
+This is the percentage of germs left after using both sanitizer sprays together.","After the first spray kills 50% of germs, there will be 100 - 50 = <<100-50=50>>50% left.
+The second spray kills 25%, but 5% have already been killed by the 50% spray, so it kills 25 - 5 = <<25-5=20>>20%.
+After the second spray kills 20% of the remaining germs, there will be 50 - 20 = <<50-20=30>>30% left.
+#### 30","","","",""
+"I-214282","John buys a pair of earbuds that cost $200.  If tax was 15%, how much did he pay after tax?","Step 1: Calculate the tax amount.
+Tax amount = Cost of earbuds * Tax rate
+Tax amount = $200 * 0.15
+
+Step 2: Calculate the total cost after tax.
+Total cost = Cost of earbuds + Tax amount
+Total cost = $200 + (Tax amount)
+
+#### 260","The tax was 200*.15=$<<200*.15=30>>30
+So he paid 200+30=$<<200+30=230>>230
+#### 230","","","",""
+"I-894407","Hillary always buys the Wednesday, Thursday and Friday editions of the local newspaper for $0.50 each.  On Sunday, she spends $2.00 to get that copy.  How much does she spend on the newspaper over 8 weeks?","Hillary buys the newspaper for 3 days each week. Each day, she spends $0.50 on the newspaper. Therefore, the total cost for the newspaper per week is:
+3 days/week * $0.50/day = $1.50/week
+
+Over 8 weeks, the total cost for the newspaper is:
+8 weeks * $1.50/week = $12.00
+
+#### 12.00
+Hillary spends $12.00 on the newspaper over 8 weeks.","She buys Wednesday, Thursday and Friday's paper for $0.50 each so that's 3*.50 = $<<3*.50=1.50>>1.50
+She spends $1.50 for the weekday papers and $2.00 for the Sunday paper for a total of 1.5+2 = $<<1.5+2=3.50>>3.50 a week
+Over 8 weeks she spends 8*3.5 = $<<8*3.5=28.00>>28.00
+#### 28","","","",""
+"I-665830","Keaton climbed a 30 feet ladder twenty times while working at the construction site. Reece, also working at the same site, climbed a ladder 4 feet shorter than Keaton's ladder 15 times. What's the total length of the ladders that both workers climbed in inches?","Step 1: Calculate the length of Keaton's ladder in feet.
+Keaton climbed a 30 feet ladder twenty times.
+30 feet * 20 = 600 feet
+
+Step 2: Calculate the length of Reece's ladder in feet.
+Reece's ladder is 4 feet shorter than Keaton's ladder.
+30 feet - 4 feet = 26 feet
+
+Step 3: Calculate the length of Reece's ladder in inches.
+1 foot = 12 inches
+26 feet * 12 inches/foot = 312 inches
+
+Step 4: Calculate the total length of the ladders climbed by both workers in inches.
+600 feet * 12 inches/foot + 312 inches = 7200 inches + 312 inches = 7512 inches
+
+#### 7512
+This is the total length of the ladders that both workers climbed in inches.","If Keaton climbed his ladder twenty times, he covered a length of 30*20 = <<30*20=600>>600 feet.
+Reece's ladder, 4 feet shorter than Keaton's ladder, was 30-4 = <<30-4=26>>26 feet long.
+If Reece climbed the ladder 15 times, he covered a length of 15*26 = <<15*26=390>>390 feet.
+Keaton and Reece's total length covered while climbing the ladders is 390+600 = <<390+600=990>>990 feet.
+Since one foot is equal to 12 inches, the total length they climbed the ladders in inches is 12*990 = <<12*990=11880>>11880 inches.
+#### 11880","","","",""
+"I-654680","Fatima has a piece of cloth that is 100 square inches big. She has decided to cut the cloth in half. She plans on keeping half and donating the other half. If she does this 2 times, then how much cloth will she have donated?","Step 1: Fatima starts with 100 square inches of cloth.
+Step 2: She cuts the cloth in half, so now she has 100/2 = 50 square inches for each half.
+Step 3: She keeps one half and donates the other half. So far, she has donated 50 square inches.
+Step 4: She repeats the process again. Now she has 50/2 = 25 square inches for each half.
+Step 5: Again, she keeps one half and donates the other half. So far, she has donated 25 square inches.
+Step 6: She repeats the process one more time. Now she has 25/2 = 12.5 square inches for each half.
+Step 7: Again, she keeps one half and donates the other half. So far, she has donated 12.5 square inches.
+Step 8: She repeats the process one more time. Now she has 12.5/2 = 6.25 square inches for each half.
+Step 9: Again, she keeps one half and donates the other half. So far, she has donated 6.25 square inches.
+Step 10: The total amount of cloth donated is 50 + 25 + 12.5 + 6.25 = 93.75 square inches.
+
+#### 93.75","The first cut will result in 100 / 2 = <<100/2=50>>50 square inches of fabric.
+The second cut will result in 50 / 2 = <<50/2=25>>25 square inches of fabric.
+Fatima will have donated a total of 50 + 25 = <<50+25=75>>75 square inches of fabric.
+#### 75","","","",""
+"I-586342","Alex needs to be 54 inches tall to ride the newest roller coaster at the theme park. He is 48 inches tall this year. He hears a rumor that for every hour he hangs upside down, he can grow 1/12 of an inch. Normally he grows 1/3 of an inch per month. On average, how many hours does he need to hang upside down each month to be tall enough next year to ride the rollercoaster?","Step 1: Calculate the total growth needed next year.
+Total growth needed = Alex's desired height - Current height
+Total growth needed = 54 inches - 48 inches
+Total growth needed = 6 inches
+
+Step 2: Calculate the normal growth per month.
+Normal growth per month = 1/3 inch
+Normal growth per month = 1/3 inch
+
+Step 3: Calculate the additional growth needed from hanging upside down.
+Additional growth needed = Total growth needed - Normal growth per month
+Additional growth needed = 6 inches - 1/3 inch
+Additional growth needed = 1/3 inch
+
+Step 4: Calculate the number of hours needed to grow the additional growth needed.
+Number of hours needed = Additional growth needed / Growth per hour
+Number of hours needed = 1/3 inch / 1/12 hour
+Number of hours needed = 4 hours
+
+Answer:
+#### 4
+This is the number of hours Alex needs to hang upside down each month on average to be tall enough next year to ride the roller coaster.","He is 6 inches too short this year because 54 - 48 = <<54-48=6>>6
+He will naturally grow 4 inches taller because 12 x (1/3) = <<12*(1/3)=4>>4
+He needs to grow 2 inches from hanging because 6 - 4 = <<6-4=2>>2
+He needs to hang for 24 hours because 2 / (1/12) = <<2/(1/12)=24>>24
+He needs to hang for 2 hours a month because 24 / 12 = <<24/12=2>>2
+#### 2","","","",""
+"I-741424","James decides he needs to start eating more vegetables.  He starts by eating a quarter pound of asparagus and a quarter pound of broccoli per day.  After 2 weeks, he doubles that amount and adds 3 pounds of kale per week.  How many pounds of vegetables does he eat a week after adding the kale?","Step 1: Calculate the initial amount of vegetables James eats per day.
+- Asparagus: 1/4 pound
+- Broccoli: 1/4 pound
+- Total initial daily amount: 1/4 + 1/4 = 1/2 pound
+
+Step 2: Calculate the total amount of vegetables James eats in 2 weeks.
+- 2 weeks = 14 days
+- Total initial amount in 2 weeks: 1/2 pound/day * 14 days = 7 pounds
+
+Step 3: Double the initial amount and add the additional kale.
+- Double the initial amount: 7 pounds * 2 = 14 pounds
+- Add 3 pounds of kale per week: 14 pounds + 3 pounds = 17 pounds
+
+#### 17","He starts with .25+.25=<<.25+.25=.5>>.5 pounds of vegetables a day
+After doubling that it goes to .5*2=<<.5*2=1>>1 pound a day
+So he eats 1*7=7 pounds of asparagus and broccoli per week
+So he eats a total of 7+3=<<7+3=10>>10 pounds of vegetables a week
+#### 10","","","",""
+"I-393168","Sue borrowed 15 books and 6 movies. She returned 8 books. She then returned a third of the movies to the library and checked out 9 more books. How many movies and books does Sue now have?","Step 1: Sue initially borrowed 15 books and 6 movies.
+Step 2: She returned 8 books, so she now has 15 - 8 = 7 books.
+Step 3: She returned a third of the movies, which is 6 / 3 = 2 movies.
+Step 4: After returning the movies, she has 6 - 2 = 4 movies left.
+Step 5: She then checked out 9 more books, so she now has 7 + 9 = 16 books.
+Step 6: Therefore, Sue now has 4 movies and 16 books.
+
+#### 16
+#### 4","Sue has 15-8 = <<15-8=7>>7 books left after returning at the library.
+Sue returned 6/3 = <<6/3=2>>2 movies to the library.
+Sue had 6-2 = <<6-2=4>>4 movies left.
+Sue had 7+9 = <<7+9=16>>16 books after checking out at the library.
+Sue has 16+4 = <<16+4=20>>20 movies and books combined.
+#### 20","","","",""
+"I-391801","Billy wants to watch something fun on YouTube but doesn't know what to watch.  He has the website generate 15 suggestions but, after watching each in one, he doesn't like any of them.  Billy's very picky so he does this a total of 5 times before he finally finds a video he thinks is worth watching.  He then picks the 5th show suggested on the final suggestion list.  What number of videos does Billy watch?","Billy watches 15 videos in the first round.
+He watches another 15 videos in the second round.
+He watches another 15 videos in the third round.
+He watches another 15 videos in the fourth round.
+He watches another 15 videos in the fifth round.
+After the fifth round, he picks the 5th show suggested on the final suggestion list.
+
+Total number of videos Billy watches = 15 + 15 + 15 + 15 + 15 = 75
+
+#### 75","Billy has 15 suggestions generate for him 5 times for 15*5=<<15*5=75>>75 videos.
+There are 15-5 = <<15-5=10>>10 shows in the final set of suggestions he doesn't consider
+This means he picks the 75 - 10 = <<75-10=65>>65th show YouTube suggests
+#### 65","","","",""
+"I-571451","Zayne sells bracelets for $5 each and two for $8. If he started with 30 bracelets and made $60 from selling bracelets for $5 each, how much in total did he make from selling his bracelets?","Step 1: Determine the cost of each bracelet for $5 sales.
+Zayne sold bracelets for $5 each, and he made $60 from this sale.
+Cost of each $5 bracelet = $60 / 15 = $4 each.
+
+Step 2: Calculate the number of $5 bracelets sold.
+He started with 30 bracelets and sold $5 each, so he sold 30 / 5 = 6 $5 bracelets.
+
+Step 3: Calculate the total revenue from selling $5 bracelets.
+Total revenue from $5 bracelets = 6 * $5 = $30.
+
+Step 4: Calculate the total revenue from selling bracelets for $8.
+He sold two bracelets for $8, so for each $8 sale, he gets $8.
+Total revenue from $8 sales = 30 / 2 * $8 = $120.
+
+Step 5: Calculate the total revenue.
+Total revenue = $30 + $120 = $150.
+
+#### 150","If the bracelets he sold at $5 made $60, he sold $60/$5 = <<60/5=12>>12 bracelets.
+If the total number of $5 bracelets was 12, then the total number of bracelets he sold was 30-12 =18
+If he was selling a pair of bracelets at $8, he sold 18/2 = 9 pairs.
+The total amount of money he made from selling the nine pairs is $8 * 9 = $<<8*9=72>>72
+His total earnings from selling all of his bracelets are $72 + $60 = $<<72+60=132>>132
+#### 132","","","",""
+"I-780075","Frank picked 36 apples. Susan picked 3 times as many apples as Frank. If Susan gave out half of her apples, and Frank sold a third of his, how many in total do they have left?","Step 1: Determine how many apples Susan picked.
+Susan picked 3 times as many apples as Frank.
+36 apples * 3 = 108 apples
+
+Step 2: Calculate how many apples Susan has left after giving out half.
+108 apples / 2 = 54 apples
+
+Step 3: Calculate how many apples Frank has left after selling a third.
+36 apples / 3 = 12 apples
+
+Step 4: Calculate the total number of apples left.
+54 apples (Susan) + 12 apples (Frank) = 66 apples
+
+#### 66","Susan picked 3 times as much as 36 which is 3*36 = <<3*36=108>>108 apples
+She gave out half which is 108*(1/2) = <<108*(1/2)=54>>54 apples
+She now has 108-54 = <<108-54=54>>54 apples
+Frank sold a third of 36 which is 36*(1/3) = <<36*(1/3)=12>>12 apples
+Frank now has 36-12 = <<36-12=24>>24 apples
+Altogether they now have 54+24 = <<54+24=78>>78 apples
+#### 78","","","",""
+"I-902791","Jasmine and her older sister Alexa went to the store to buy shoes. Alexa's shoes are twice as big as Jasmine's shoes. If Jasmine's shoe size is 7, what's the combined shoe size for both of them?","#### 14
+Jasmine's shoe size is 7. Alexa's shoe size is twice as big, which is 14. The combined shoe size for both is 7 + 14 = 21.","If Alexa's shoes are twice those of Jasmine, then her shoe size is 7 * 2 = <<7*2=14>>14
+The total shoe size is 14 + 7= <<14+7=21>>21
+#### 21","","","",""
+"I-480116","Iris’ family is planning a surprise birthday party for her. The party will include her 3 uncles and 4 aunts who have a son and daughter each as well as her brother and mother. In total, how many people are coming to Iris’ birthday party?","To find the total number of people coming to Iris' birthday party, we'll add up all the family members:
+
+1. Iris and her mother (2 people)
+2. 3 uncles and 3 aunts (6 people)
+3. Each uncle and aunt has 1 son and 1 daughter, which totals 2 children per family unit (2 children per family unit * 6 family units = 12 children)
+
+Now, we sum up all these numbers:
+
+2 (Iris and mother) + 6 (uncles and aunts) + 12 (children) = 20 people
+
+#### 20
+This is the total number of people coming to Iris' birthday party.","Each of her aunts and uncles have a family unit of 1 son + 1 daughter + 1 aunt/uncle = <<1+1+1=3>>3 people.
+Iris has a total of 3 uncles + 4 aunts = <<3+4=7>>7 aunts or uncles in these family units.
+So among her aunts, uncles, and cousins, there will be 7 family units * 3 people in each family unit = <<7*3=21>>21 people.
+Including her mother and brother, there will be a total of 21 people + 1 mother + 1 brother = <<21+1+1=23>>23 people coming to her party.
+#### 23","","","",""
+"I-188947","Federal guidelines recommend eating at least 2 cups of vegetables per day. From breakfast on Sunday to the end of the day on Thursday, Sarah has eaten 8 cups. How many cups per day does Sarah need to eat of her vegetables in order to meet her daily minimum requirement for the week?","Step 1: Determine the total number of days Sarah needs to meet her daily minimum requirement.
+Total days = Sunday to Thursday = 5 days
+
+Step 2: Calculate the total number of cups Sarah needs to eat in a week.
+Required cups per week = 2 cups/day × 7 days = 14 cups
+
+Step 3: Calculate the number of cups Sarah needs to eat per day to meet her weekly requirement.
+Cups per day needed = Total required cups / Total days
+Cups per day needed = 14 cups / 5 days = 2.8 cups/day
+
+#### 2.8
+Sarah needs to eat 2.8 cups of vegetables per day to meet her daily minimum requirement for the week.","There are 7 days in a week and 2 cups are recommended per day, bringing the total to 7 days * 2 cups/day =<<7*2=14>>14 cups for the week.
+Out of the 14 total cups needed for the week, Sarah has already eaten 8, for a total of 14 cups - 8 cups = <<14-8=6>>6 cups left to consume for the week.
+Sunday through Thursday equals 5 days that have passed. If there are 7 days in the week then Sarah has 7 days - 5 days = <<7-5=2>>2 days left of the week.
+If she needs to eat 6 more cups in the next 2 days then she will have to eat 6 cups / 2 days = <<6/2=3>>3 cups per day over the next two days.
+#### 3","","","",""
+"I-582769","A machine at the soda factory can usually fill a barrel of soda in 3 minutes. However this morning a leak went unnoticed and it took 5 minutes to fill one barrel. If the leak remains undetected, how much longer will it take to fill 12 barrels of soda than on a normal day when the machine works fine?","Step 1: Determine the normal filling rate of the machine.
+Normal filling rate = 1 barrel per 3 minutes
+
+Step 2: Determine the filling rate with the leak.
+Filling rate with leak = 1 barrel per 5 minutes
+
+Step 3: Calculate the time difference for filling one barrel with the leak.
+Time difference = 3 minutes - 5 minutes = -2 minutes
+
+Step 4: Calculate the time difference for filling 12 barrels with the leak.
+Time difference for 12 barrels = 12 barrels * -2 minutes/barrel = -24 minutes
+
+Step 5: Determine the difference in time between normal filling and with the leak.
+Difference in time = Time difference for 12 barrels = -24 minutes
+
+#### -24
+The machine will take 24 minutes longer to fill 12 barrels with the leak than on a normal day when the machine works fine.","On a regular day it would take 3*12=<<3*12=36>>36 minutes
+With the leak it will take 5*12=<<5*12=60>>60 minutes
+It will take 60-36=<<60-36=24>>24 more minutes if the leak goes undetected
+#### 24","","","",""
+"I-617008","Tomas ate 1.5 pounds of chocolate fudge last week. Katya ate half a pound of peanut butter fudge, while Boris ate 2 pounds of fudge. How many ounces of fudge did the 3 friends eat in total?","To solve this problem, we need to first convert all measurements to the same unit. We will convert pounds to ounces. 
+
+1.16 ounces per pound
+
+1. Tomas ate 1.5 pounds of chocolate fudge:
+   1.5 pounds * 1.16 ounces per pound = 1.74 ounces
+
+2. Katya ate half a pound of peanut butter fudge:
+   0.5 pounds * 1.16 ounces per pound = 0.58 ounces
+
+3. Boris ate 2 pounds of fudge:
+   2 pounds * 1.16 ounces per pound = 2.32 ounces
+
+Now, we add up the total ounces:
+1.74 ounces + 0.58 ounces + 2.32 ounces = 4.64 ounces
+
+#### 4.64
+The three friends ate a total of 4.64 ounces of fudge.","Tomas ate 1.5 * 16 = <<1.5*16=24>>24 ounces
+Katya ate 0.5 * 16 = <<0.5*16=8>>8 ounces
+Boris ate 2 * 16 = <<2*16=32>>32 ounces
+Total = 24 + 8 + 32 = <<24+8+32=64>>64 ounces
+The 3 friends ate 64 ounces of fudge in total.
+#### 64","","","",""
+"I-669921","One dress requires 5.5 yards of fabric. Amare needs to make 4 dresses for the wedding and she has 7 feet of fabric. How many feet of fabric does Amare still need for the dresses?","Step 1: Determine the total amount of fabric needed for 4 dresses.
+Each dress requires 5.5 yards of fabric.
+4 dresses * 5.5 yards per dress = 22 yards
+
+Step 2: Convert the fabric Amare has from feet to yards.
+1 foot = 1/3 yards
+7 feet * 1/3 yards per foot = 7/3 yards
+
+Step 3: Subtract the fabric Amare has from the total fabric needed.
+22 yards needed - 7/3 yards she has = 22 2/3 yards
+
+#### 22 2/3","Dresses = 5.5 * 4 = <<5.5*4=22>>22 yards
+22 yards = <<22*3=66>>66 feet
+66 - 7 = <<66-7=59>>59
+Amare still needs 59 feet of fabric.
+#### 59","","","",""
+"I-949769","Rocky boxed 190 fights in his career.  50 percent of his fights were knockouts, and 20 percent of the knockouts were in the first round.  How many knockouts did Rocky have in the first round?","Step 1: Calculate the total number of knockouts.
+- Total fights: 190
+- Percentage of knockouts: 50%
+
+\[ \text{Number of knockouts} = \left( \frac{50}{100} \right) \times 190 \]
+
+Step 2: Calculate the number of knockouts in the first round.
+- Percentage of first-round knockouts: 20%
+
+\[ \text{Number of first-round knockouts} = \left( \frac{20}{100} \right) \times \text{Number of knockouts} \]
+
+Final answer:
+#### 95","Knockouts:190(.50)=95
+First Round:95(.2)=19
+#### 19","","","",""
+"I-792777","Today, at the school science lesson, Jake learned that there are 8 more solar systems for every planet in the galaxy. If there are 20 planets in the galaxy, how many solar systems and planets are there altogether?","Step 1: Determine the number of solar systems.
+- Given: There are 8 more solar systems for every planet.
+- Number of planets: 20
+- Calculation: 8 * 20 = 160
+
+Step 2: Determine the total number of solar systems and planets.
+- Number of planets: 20
+- Number of solar systems: 160
+- Calculation: 20 + 160 = 180
+
+Final answer:
+#### 180","If there are 8 more solar systems for every planet in the galaxy, there are 8+1 = <<8+1=9>>9 solar systems for every planet.
+Since the number of planets is 20, there are 20*9 = <<20*9=180>>180 solar systems in the galaxy.
+Altogether, there are 180+20 = <<180+20=200>>200 solar systems and planets in the galaxy.
+#### 200","","","",""
+"I-179223","James decides to try and collect rare artifacts in the field.  He spends 6 months researching before going on a 2-year-long expedition for his first find.  The second artifact takes 3 times as long for the research and discovery.  How long did it take him to find both?","To find the total time James spent on both artifacts, we start by breaking down the time spent on each.
+
+1. **Research and Discovery for the First Artifact:**
+   - Research time: 6 months
+   - Discovery time: 2 years
+   - Total time for the first artifact: \(6 \text{ months} + 2 \text{ years}\)
+
+2. **Research and Discovery for the Second Artifact:**
+   - Research time: \(3 \times 6 \text{ months} = 18 \text{ months}\)
+   - Discovery time: \(3 \times 2 \text{ years} = 6 \text{ years}\)
+   - Total time for the second artifact: \(18 \text{ months} + 6 \text{ years}\)
+
+3. **Total Time for Both Artifacts:**
+   - Convert all times to the same unit (years) for easier calculation.
+   - Total time for the first artifact: \(6 \text{ months} + 2 \text{ years} = 2.5 \text{ years}\)
+   - Total time for the second artifact: \(18 \text{ months} + 6 \text{ years} = 8.5 \text{ years}\)
+   - Total time for both artifacts: \(2.5 \text{ years} + 8.5 \text{ years} = 11 \text{ years}\)
+
+#### 11
+The total time it took James to find both artifacts is 11 years.","The research took 6/12=<<6/12=.5>>.5 years
+So it took 2+.5=<<2.5=2.5>>2.5 years for the first artifact
+It takes 2.5*3=<<2.5*3=7.5>>7.5 years for the second
+So in total it took 2.5+7.5=<<2.5+7.5=10>>10 years to find both
+#### 10","","","",""
+"I-721849","Miles is going to spend 1/6 of a day reading. He will read comic books, graphic novels, and novels. He reads 21 pages an hour when he reads novels, 30 pages an hour when he reads graphic novels, and 45 pages an hour when he reads comic books. If he reads each for 1/3 of his time, how many pages does he read?","Step 1: Calculate the total time Miles spends reading.
+1/6 day = 24 hours
+
+Step 2: Determine how much time Miles spends reading each type of book.
+1/3 of 24 hours = 8 hours
+
+Step 3: Calculate the number of pages read for each type of book.
+Novels: 21 pages/hour * 8 hours = 168 pages
+Graphic novels: 30 pages/hour * 8 hours = 240 pages
+Comic books: 45 pages/hour * 8 hours = 360 pages
+
+Step 4: Sum the number of pages read for all types of books.
+Total pages read = 168 + 240 + 360 = 768 pages
+
+#### 768","Miles will read for 4 hours because 24 x (1/6) = <<24*(1/6)=4>>4
+He will read each type for 1 and 1/3 hours because 4 / 3 = 1 and 1/3
+He will read 28 pages of novels because 21 x (1 and 1/3) = 28
+He will read 40 pages of graphic novels because 30 x (1 and 1/3) = 40
+He will read 60 pages of comic books because 45 x (1 and 1/3) = 60
+He will read 128 pages in total because 28 + 40 + 60 = <<28+40+60=128>>128
+#### 128","","","",""
+"I-882574","Bobby received his weekly paycheck today.  Although his salary is $450 per week, his actual paycheck is reduced in size because there are some taxes, insurance payments, and fees removed from his pay before his employer writes the check.  If the government removes 1/3 in federal taxes and 8% in state taxes, the health insurance removes $50 per week, the life insurance removes $20 per week, and the city charges him a fee of $10 per week for parking, then what is the final amount left in Bobby's paycheck, in dollars?","Step 1: Calculate the amount removed in federal taxes.
+Federal taxes = 1/3 * $450
+Step 2: Calculate the amount removed in state taxes.
+State taxes = 8% * $450
+Step 3: Calculate the total amount removed in federal and state taxes.
+Total federal and state taxes = Federal taxes + State taxes
+Step 4: Calculate the total amount removed in all taxes and fees.
+Total taxes and fees = Total federal and state taxes + $50 + $20 + $10
+Step 5: Calculate the final amount left in Bobby's paycheck.
+Final amount = $450 - Total taxes and fees
+#### 340
+#### 340","The federal government takes out 1/3*450=<<1/3*450=150>>150 dollars.
+The state takes out 0.08*450=<<0.08*450=36>>36 dollars.
+Then the final amount remaining after all the deductions are removed is 450-150-36-50-20-10=<<450-150-36-50-20-10=184>>184 dollars
+#### 184","","","",""
+"I-177424","Each bird eats 12 beetles per day, each snake eats 3 birds per day, and each jaguar eats 5 snakes per day. If there are 6 jaguars in a forest, how many beetles are eaten each day?","To find out how many beetles are eaten each day, let's break down the problem step by step:
+
+1. **Jaguars and snakes**: There are 6 jaguars in the forest.
+   - Each jaguar eats 5 snakes per day.
+
+2. **Snakes and birds**: Each snake eats 3 birds per day.
+   - Therefore, 6 jaguars will eat \(6 \times 5 = 30\) snakes per day.
+
+3. **Birds and beetles**: Each bird eats 12 beetles per day.
+   - Therefore, 30 snakes will eat \(30 \times 12 = 360\) birds per day.
+
+4. **Beetles and total**: Each bird eats 12 beetles per day.
+   - Therefore, 360 birds will eat \(360 \times 12 = 4320\) beetles per day.
+
+Final answer: #### 4320
+#### 4320","First find the total number of snakes eaten: 5 snakes/jaguar * 6 jaguars = <<5*6=30>>30 snakes
+Then find the total number of birds eaten per day: 30 snakes * 3 birds/snake = <<30*3=90>>90 snakes
+Then multiply the number of snakes by the number of beetles per snake to find the total number of beetles eaten per day: 90 snakes * 12 beetles/snake = <<90*12=1080>>1080 beetles
+#### 1080","","","",""
+"I-499560","Carla needs to dry-clean 80 pieces of laundry by noon. If she starts work at 8 AM, how many pieces of laundry does she need to clean per hour?","Step 1: Determine the total time Carla has to work to complete the task.
+Total time = Noon - 8 AM = 8 hours
+
+Step 2: Calculate the number of pieces of laundry Carla needs to clean per hour.
+Number of pieces per hour = Total pieces of laundry / Total hours
+Number of pieces per hour = 80 / 8
+
+Step 3: Perform the division to get the answer.
+Number of pieces per hour = 10
+
+#### 10
+This is the number of pieces of laundry Carla needs to clean per hour.","First find how many hours Carla has to work: 12:00 - 8:00 = 4 hours
+Then divide the total amount of laundry by the number of hours to find how many pieces Carla has to clean per hour: 80 pieces / 4 hours = <<80/4=20>>20 pieces/hour
+#### 20","","","",""
+"I-375269","Harrison buys a regular croissant on Saturdays for $3.50 and an almond croissant for $5.50 on Sundays.  How much does he spend on croissants in a year?","To solve this problem, we need to calculate Harrison's annual spending on croissants.
+
+1. **Calculate the weekly spending on regular croissants:**
+   - Cost of regular croissant = $3.50
+   - Number of Saturdays in a year = 52
+
+   \[
+   \text{Weekly spending on regular croissants} = 3.50 \times 52 = 182
+   \]
+
+2. **Calculate the weekly spending on almond croissants:**
+   - Cost of almond croissant = $5.50
+   - Number of Sundays in a year = 52
+
+   \[
+   \text{Weekly spending on almond croissants} = 5.50 \times 52 = 286
+   \]
+
+3. **Calculate the total weekly spending on croissants:**
+   \[
+   \text{Total weekly spending} = 182 + 286 = 468
+   \]
+
+4. **Calculate the annual spending on croissants:**
+   - There are 52 weeks in a year
+
+   \[
+   \text{Annual spending on croissants} = 468 \times 52 = 24,576
+   \]
+
+#### 24,576
+This is Harrison's total annual spending on croissants.","He buys a plain croissant for $3.50 and an almond croissant for $5.50 for a total of $3.50 + $5.50 = $<<3.5+5.5=9.00>>9.00 on pastries per weekend
+In one year, which is 52 weeks, he spends 52*$9 = $<<52*9=468.00>>468.00 on pastries
+#### 468","","","",""
+"I-596401","When Matty was born, the cost of a ticket to Mars was $1,000,000. The cost is halved every 10 years. How much will a ticket cost when Matty is 30?","Step 1: Determine the cost of a ticket when Matty is 20
+The cost of a ticket when Matty is born was $1,000,000. The cost is halved every 10 years.
+$1,000,000 / 2 = $500,000
+
+Step 2: Determine the cost of a ticket when Matty is 30
+The cost of a ticket when Matty is 20 was $500,000. The cost is halved every 10 years.
+$500,000 / 2 = $250,000
+
+Answer:
+#### 250000","First find the total number of times the cost is halved: 30 years / 10 years/halving = 3 halvings
+Then halve the cost once: $1,000,000 / 2 = $<<1000000/2=500000>>500,000
+Then halve the cost a second time: $500,000 / 2 = $<<500000/2=250000>>250,000
+Then halve the cost a third time: $250,000 / 2 = $<<250000/2=125000>>125,000
+#### 125000","","","",""
+"I-579547","Rockefeller Army Base has 3000 more than twice as many guns as Grenada Army Base, 400 less than thrice as many war tractors as Grenada Army Base, and 30 times as many soldier uniforms as Grenada Army Base reserved for its national protection. How many total war supplies does Rockefeller have if Grenada's war supplies are equally divided among the 6000 war supplies they have in total?","To solve this problem, let's denote the number of war supplies at Grenada Army Base as \( G \).
+
+1. **War Tractors at Rockefeller Army Base:**
+   - Rockefeller has 400 less than thrice as many war tractors as Grenada.
+   - Therefore, the number of war tractors at Rockefeller is \( 3G - 400 \).
+
+2. **War Supplies at Rockefeller Army Base:**
+   - Rockefeller has 30 times as many soldier uniforms as Grenada.
+   - Therefore, the number of soldier uniforms at Rockefeller is \( 30G \).
+
+3. **Total War Supplies at Rockefeller:**
+   - The total war supplies at Rockefeller are the sum of the war tractors and soldier uniforms.
+   - Total war supplies at Rockefeller = \( (3G - 400) + 30G \).
+
+4. **Total War Supplies at Grenada:**
+   - Grenada has 6000 war supplies in total.
+   - Since the war supplies are equally divided, each base has \( \frac{6000}{2} = 3000 \) war supplies.
+
+5. **Equating the Total War Supplies:**
+   - Rockefeller's total war supplies = Grenada's total war supplies.
+   - Therefore, \( (3G - 400) + 30G = 3000 \).
+
+6. **Solving for \( G \):**
+   - Combine like terms: \( 33G - 400 = 3000 \).
+   - Add 400 to both sides: \( 33G = 3400 \).
+   - Divide by 33: \( G = \frac{3400}{33} \approx 103.03 \).
+
+7. **Calculating Rockefeller's Total War Supplies:**
+   - Substitute \( G \) back into the equation for Rockefeller's total war supplies.
+   - Total war supplies at Rockefeller = \( (3 \times 103.03 - 400) + 30 \times 103.03 \).
+   - Simplify: \( 309.09 - 400 + 3090.9 \).
+
+8. **Final Calculation:**
+   - Total war supplies at Rockefeller = \( 3090.9 + 3090.9 - 400 \).
+   - Total war supplies at Rockefeller = \( 6181.8 \).
+
+#### 6181.8
+This is the total number of war supplies Rockefeller has.","For each component, Grenada Army Base has 6000/3=<<6000/3=2000>>2000 each of guns, war tractors, and soldier uniforms.
+Rockefeller Army Base has 3000+2*2000= <<3000+2*2000=7000>>7000 guns
+Rockefeller Army Base has 3*2000-400=<<3*2000-400=5600>>5600 war tractors.
+Rockefeller Army Base has 30*2000=<<30*2000=60000>>60000 soldier uniforms.
+The total war supplies Rockefeller Army Base has reserved are 60000+5600+7000=<<60000+5600+7000=72600>>72600 war supplies for its national protection.
+#### 72600","","","",""
+"I-609059","A casino table pays 3:2 if you get a blackjack with your first 2 cards. If you scored a blackjack and were paid $60, what was your original bet?","To find the original bet, we need to understand the payout ratio. The casino table pays 3:2, which means for every $2 you bet, you win $3.
+
+Given that you were paid $60 for a blackjack, we can set up the following equation to find the original bet:
+
+\[ \text{Payout} = \text{Bet} \times \text{Payout Ratio} \]
+
+Substituting the given values:
+
+\[ 60 = \text{Bet} \times 3 \]
+
+To find the Bet, we divide both sides by 3:
+
+\[ \text{Bet} = \frac{60}{3} \]
+
+\[ \text{Bet} = 20 \]
+
+#### 20
+The original bet was $20.","The payout for blackjack is 3:2 or 3/2=1.5 times my bet
+If my original bet was X then I won 1.5*X my bet
+Given that I was paid $60 we know $60 = 1.5X
+X=$60/1.5
+X=$<<40=40>>40 was my original bet
+#### 40","","","",""
+"I-624805","It takes Emmalyn and her research team, the Polar Bears, 30 minutes to fully navigate around a volcanic island. On Saturday, they decided to start off by rounding the island once. They then re-grouped and planned out the rest of their weekend research schedule. They completed 10 more round that day and then went home. When they came on Sunday, they were able to complete 15 rounds. Calculate the total time, in minutes, the Polar Bears spent circling the island over that weekend.","To calculate the total time the Polar Bears spent circling the island over the weekend, we need to break it down step by step:
+
+1. **Time spent on Saturday:**
+   - They completed 1 round on Saturday.
+   - Time per round: 30 minutes.
+   - Total time on Saturday: \( 1 \text{ round} \times 30 \text{ minutes} = 30 \text{ minutes} \).
+
+2. **Time spent on Sunday:**
+   - They completed 15 rounds on Sunday.
+   - Time per round: 30 minutes.
+   - Total time on Sunday: \( 15 \text{ rounds} \times 30 \text{ minutes} = 450 \text{ minutes} \).
+
+3. **Total time for the whole weekend:**
+   - Sum of time spent on Saturday and Sunday:
+     \( 30 \text{ minutes} + 450 \text{ minutes} = 480 \text{ minutes} \).
+
+#### 480
+The Polar Bears spent a total of 480 minutes circling the island over that weekend.","On the first day, they started off doing one round of 30 minutes.
+The team did ten more rounds on day one which took 10*30 = <<10*30=300>>300 minutes.
+The total time they took circumnavigating the land on the first day is 300+30 = <<300+30=330>>330 minutes.
+On the second day, they did 15 rounds, which took 30 minutes each, giving 15*30 = <<15*30=450>>450 minutes.
+The total number of rounds took 330+450 = <<330+450=780>>780 minutes.
+#### 780","","","",""
+"I-938853","Tom is cutting a piece of wood to make a shelf. He cut the wood to 143 cm, but it is too long to fit in the bookshelf he is making. He decides to cut 25 cm off the board. But it turned out longer than the other boards. He had to cut off 7 cm from each to make them the same size. How long were the boards before he cut the 7 cm off?","To find the original length of the boards before the 7 cm cut, we need to reverse the steps Tom took.
+
+1. Tom initially cut off 7 cm from each board to make them the same size. This means before the cut, the boards were 7 cm longer than the final length.
+2. Tom had to cut another 25 cm off the board after the initial cut to make them the same size as the others. So, before this cut, the boards were 25 cm longer than the final length.
+3. The final length of the boards is 143 cm. So, before the 7 cm cut, the boards were 143 cm - 7 cm = 136 cm.
+4. Before the 25 cm cut, the boards were 136 cm - 25 cm = 111 cm.
+
+Therefore, the original length of the boards before he cut the 7 cm off was 111 cm.
+
+#### 111","After the first cut, the board was 143 - 25 = <<143-25=118>>118 cm
+The other boards were 118 + 7 = <<118+7=125>>125 cm before they got cut.
+#### 125","","","",""

@@ -1,0 +1,35 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John decides to stop delivering the newspapers he is supposed to deliver and instead steals them to recycle them for cash.  The Monday-Saturday papers weigh 8 ounces each.  The Sunday paper weighs twice as much.  He is supposed to deliver 250 papers a day.  He doesn't deliver them for 10 weeks.  If one ton of paper recycles for $20, how much did he make?
+SOLUTION: Step 1: Calculate the total weight of the Monday-Saturday papers.
+- Weight of one Monday-Saturday paper = 8 ounces
+- Number of Monday-Saturday papers per day = 6
+- Total weight of Monday-Saturday papers per day = 6 * 8 = 48 ounces
+
+Step 2: Calculate the total weight of the Sunday paper.
+- Weight of the Sunday paper = 2 * 8 = 16 ounces
+
+Step 3: Calculate the total weight of the Sunday papers.
+- Number of Sunday papers per day = 1
+- Total weight of Sunday papers per day = 16 ounces
+
+Step 4: Calculate the total weight of all papers per day.
+- Total weight of Monday-Saturday papers per day = 48 ounces
+- Total weight of Sunday papers per day = 16 ounces
+- Total weight per day = 48 + 16 = 64 ounces
+
+Step 5: Calculate the total weight of all papers over 10 weeks.
+- Total weight per week = 64 ounces
+- Number of weeks = 10
+- Total weight over 10 weeks = 64 * 10 = 640 ounces
+
+Step 6: Convert the total weight to tons.
+- 1 ton = 32000 ounces
+- Total weight in tons = 640 / 32000 = 0.02 tons
+
+Step 7: Calculate the amount made from recycling the newspapers.
+- Recycle rate = $20 per ton
+- Amount made = 0.02 * 20 = $0.40
+
+#### 0.40
+The final answer is 0.40.

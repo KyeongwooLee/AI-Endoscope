@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1991-1",
+  "response_sha256": "9305f6793f64a4b400a1f3ddb2bf2141bd638150765e8403ad48dfd248b3a9b6",
+  "status": "ambiguous",
+  "reference_review_needed": true,
+  "evidence_quote": "\\text{Fuel needed} = \\frac{165 \\text{ miles}}{30 \\text{ miles per gallon}} = 5.5 \\text{ gallons}",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Sea World is 165 miles away and her car gets 30 miles per gallon of gas.",
+  "observed_error": "The response budgets fuel for only the 165-mile outbound journey; its written arithmetic is correct.",
+  "violated_condition": "If the trip includes returning home, fuel must cover twice the stated distance.",
+  "error_description": "The response uses the 165-mile distance to Sea World as the entire driving distance when calculating fuel costs. This omits return travel if a round trip is intended, but the question does not explicitly require a return journey. The arithmetic consistently follows the one-way interpretation.",
+  "reference_review_reason": "The reference assumes a round trip, doubling the distance, although return travel is not explicitly specified in the question.",
+  "secondary_errors": [],
+  "uncertainty_note": "Whether the one-way fuel budget is erroneous depends on the intended scope of the trip."
+}

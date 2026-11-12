@@ -1,0 +1,28 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Elsa's hockey team just made the playoffs along with two other teams. They make the playoffs by having the top three highest points for their records. Teams get 2 points for a win, 1 point for a tie, and zero points for a loss. The first-place team has 12 wins and 4 ties. The second-place team has 13 wins and 1 tie. Elsa's team has 8 wins and 10 ties. What is the average number of points for the playoff teams?
+SOLUTION: Step 1: Calculate the points for the first-place team.
+- Wins: 12 points
+- Ties: 4 points
+- Total points: 12 + 4 = 16
+
+Step 2: Calculate the points for the second-place team.
+- Wins: 13 points
+- Ties: 1 point
+- Total points: 13 + 1 = 14
+
+Step 3: Calculate the points for Elsa's team.
+- Wins: 8 points
+- Ties: 10 points
+- Total points: 8 + 10 = 18
+
+Step 4: Calculate the total number of teams.
+- Total teams: 3
+
+Step 5: Calculate the total number of points for all teams.
+- Total points: 16 + 14 + 18 = 48
+
+Step 6: Calculate the average number of points for the playoff teams.
+- Average points: 48 / 3 = 16
+
+#### 16

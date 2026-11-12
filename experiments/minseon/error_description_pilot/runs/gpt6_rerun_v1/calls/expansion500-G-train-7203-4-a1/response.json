@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7203-4",
+  "response_sha256": "d044c40e559359a6714bc1ebe184203816d2d7ed5fde1976064f9043e5f9ac36",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "32 + 8 + 8 + 64 = 112",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "The first 8 customers bought 3 cases each. The next four customers bought 2 cases each. The last 8 customers of the day only bought 1 case each.",
+  "observed_error": "The final sum uses 32 instead of 8 × 3 and includes an unsupported additional 64 cases.",
+  "violated_condition": "Total cases must equal 8 × 3 + 4 × 2 + 8 × 1, covering exactly the three customer groups.",
+  "error_description": "The response correctly writes the three group multiplications, but its explicit final sum uses 32 cases for the first group and adds an unsupported 64 cases. The addition itself is correct; its operands do not represent the cases purchased by the three specified customer groups.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The earlier standalone numbers are unexplained, so they do not establish how the incorrect operands were obtained."
+}

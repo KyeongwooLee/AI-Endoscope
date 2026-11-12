@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1320-0",
+  "response_sha256": "b87200c51ea16a51a2ffc5351325ea9a917098a345e0b8d0b3d92e03bcfb5a31",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total earnings = (12 * 8) + (25 * 5)\n\n#### 280",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "For every haircut she makes $12 and for every style she makes $25. How many dollars would Shaniqua make if she gave 8 haircuts and 5 styles?",
+  "observed_error": "The reported total of $280 does not equal the correctly written earnings expression.",
+  "violated_condition": "Total earnings must equal (12 × 8) + (25 × 5) dollars.",
+  "error_description": "The response correctly represents earnings as (12 × 8) + (25 × 5), but then reports $280, which does not equal that expression. The mistake occurs in evaluating or reporting the written arithmetic, rather than in relating the service counts to their prices.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

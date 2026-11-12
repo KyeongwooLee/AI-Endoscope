@@ -1,0 +1,40 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John carves a giant marble rectangular prism 8 meters tall with a 2-meter square base.  It has a density of 2700 kg per cubic meter.  How much does it weigh?
+SOLUTION: To find the weight of the marble rectangular prism, we need to follow these steps:
+
+1. **Calculate the volume of the rectangular prism:**
+   - The base of the prism is a square with a side length of 2 meters.
+   - The height of the prism is 8 meters.
+   - The volume \( V \) of a rectangular prism is given by the formula:
+     \[
+     V = \text{length} \times \text{width} \times \text{height}
+     \]
+   - Substituting the given values:
+     \[
+     V = 2 \, \text{m} \times 2 \, \text{m} \times 8 \, \text{m} = 32 \, \text{m}^3
+     \]
+
+2. **Calculate the mass of the rectangular prism:**
+   - The density \( \rho \) of the marble is 2700 kg per cubic meter.
+   - The mass \( m \) of the rectangular prism is given by the formula:
+     \[
+     m = \rho \times V
+     \]
+   - Substituting the given values:
+     \[
+     m = 2700 \, \text{kg/m}^3 \times 32 \, \text{m}^3 = 86400 \, \text{kg}
+     \]
+
+3. **Calculate the weight of the rectangular prism:**
+   - The weight \( W \) of the rectangular prism is given by the formula:
+     \[
+     W = m \times g
+     \]
+   - Assuming the acceleration due to gravity \( g \) is approximately 9.81 m/s²:
+     \[
+     W = 86400 \, \text{kg} \times 9.81 \, \text{m/s}^2 = 849144 \, \text{N}
+     \]
+
+#### 849144
+This is the weight of the marble rectangular prism.

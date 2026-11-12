@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2456-3",
+  "response_sha256": "a7dafd96c9187bb4b0f0a4bffb11ac17c5ccd4428efef99e6dd93f754501b098",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "437 - 72 - 74 = 391",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He counted 437 total raisins in 5 boxes. In one box he counted 72 raisins. In a second box he counted 74 raisins.",
+  "observed_error": "The response evaluates 437 - 72 - 74 as 391 instead of 291.",
+  "violated_condition": "The other three boxes must contain the total 437 raisins minus the 72 and 74 raisins in the first two boxes.",
+  "error_description": "The response correctly writes the subtraction needed to find the raisins in the other three boxes, but evaluates 437 - 72 - 74 as 391 rather than 291. This arithmetic error inflates the remaining total and propagates into the subsequent division by three.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

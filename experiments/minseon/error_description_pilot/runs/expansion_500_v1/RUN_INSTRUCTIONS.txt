@@ -1,0 +1,58 @@
+새 500문제 오류 설명·임베딩 확대 실험
+
+먼저 열 파일: analysis_report.html
+같은 폴더의 cluster_pca.png를 함께 두면 그림도 표시됩니다.
+
+데이터와 결과
+- sample.jsonl: 원본 500개, query 100개 / gallery 400개 역할
+- annotations_E.csv: 일반 오류 설명과 원본 풀이
+- annotations_G.csv: 근거 기반 오류 설명, 인용문, 검증 상태
+- annotation/E.jsonl, G.jsonl: 원출력과 검증 결과
+- annotation/raw_attempts.jsonl: 실패 및 재시도를 포함한 생성 기록
+- embeddings/{R,E,G,Q}_inputs.jsonl: 실제로 임베딩한 텍스트
+- embeddings/{R,E,G,Q}.npz: source_id 순서와 1,024차원 벡터
+- cluster_assignments.csv: 사례별 군집 번호. 파일은0~9, 보고서는1~10.
+- cluster_metrics.json: 전체/공통 표본의 모든 군집 설정 결과
+- cluster_interpretation.json: 중심 사례를 읽은 임시 해석. 검증된 오류 유형표 아님.
+- retrieval.jsonl: 방법별 상위5개 검색 결과
+- ai_pair_reviews.csv: AI의 동일 오류 판정과 이유
+- ai_evaluation.json: 집계 지표 및 기준 문제별 결과
+- annotation_audit_*.json: Codex의 무작위20개 설명 점검
+- pair_audit_*.json: Codex의 무작위10쌍 별도 점검. 자동 지표를 덮어쓰지 않음.
+- validation.json: 최종 파일 연결·중복·누락·벡터·원본 보존 검증
+
+모델
+원래 풀이: Qwen/Qwen2.5-1.5B-Instruct (민수님 저장 데이터)
+새 설명 및 자동 쌍 검수: Qwen/Qwen3-4B-Instruct-2507
+리비전: cdbee75f17c01a7cc42f958dc650907174af0554
+임베딩: BAAI/bge-m3
+리비전: 5617a9f61b028005a4858fdac845db406aefb181
+임베딩 가중치 SHA256:
+b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38
+라이브러리 버전: environment.json
+
+실행 환경과 코드
+작업 루트: /home/coder/yaicon-errorprobe
+Python: .venv-edp/bin/python
+코드 위치: 이 폴더의 source/
+
+실행 순서:
+prepare.py -> generate.py -> analyze.py -> judge.py -> evaluate.py -> report.py
+prepare.py는 새 실험을 준비하는 단계이며 기존 결과 검토 시 재실행할 필요가 없습니다.
+evaluate.py는 파싱되지 않은 쌍 판정에 대해서만 repair_judge.py를 호출할 수 있습니다.
+report.py는 validate_results.py를 실행하고 통과한 뒤 완료 상태를 기록합니다.
+plot.py는 동일한 저장 벡터로 그림만 다시 만듭니다.
+
+소스는 현재 저장소 구조와 로컬 모델 경로를 사용합니다. 다른 환경에서 재실행할 때는
+원본 패키지(edp/ 및 prompts/), 고정 버전 원본 데이터, 이전 표본/제외 목록,
+환경 버전 및 두 모델의 경로를 먼저 맞춰야 합니다. 대용량 모델 가중치는 결과 ZIP에
+포함하지 않습니다. 이미 생성된 주석과 벡터를 보존한 상태에서 집계만 재실행할 수 있습니다.
+
+해석 제한
+이전130개 실험과 주석 모델 및 검수 모델이 다릅니다. 데이터 수 증가만의 효과를
+분리한 실험이 아닙니다. 새500개 내부에서 두 설명 방식을 비교한 탐색 실험입니다.
+자동 쌍 검수도 주석 모델과 같은 모델이므로 독립 사람 정답률이 아닙니다.
+군집 번호와 시각화 색을 실제 오류 유형 이름으로 간주하면 안 됩니다.
+인용 위치만 자동 정렬하면 복구 가능한77개는 진단으로만 기록했으며 주 분석에 추가하지 않았습니다.
+metadata_correction.json은 실행에 쓰지 않은 이전 기본값이 config.json에 남아 있던 것을
+실제 실행값과 맞춘 기록입니다. 초기 protocol.json의500/100/400 및 군집 설정은 바꾸지 않았습니다.

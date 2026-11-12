@@ -1,0 +1,1 @@
+{"source_id":"train-6630-2","response_sha256":"08a3ebc672d50a63e90cd70e156a1bf654eae9b76ecba8916aebea8e656ff937","status":"supported_error","reference_review_needed":false,"explanation":"The first substantive mistake is the arithmetic in Step 5: $240 − ($80 + $120 + $10) equals $30, not $50. The earlier allocations and the $40 remaining balance are calculated correctly."}

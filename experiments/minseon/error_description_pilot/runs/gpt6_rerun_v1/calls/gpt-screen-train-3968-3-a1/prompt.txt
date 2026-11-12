@@ -1,0 +1,29 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Linda was gathering eggs from her chicken coops. When she was done, she had three times as many white eggs as brown eggs. On her way back to the house, she stumbled, dropping her egg basket. Upon inspecting the damage, she found that all 5 of the brown eggs survived, but now she only had a dozen eggs left. How many eggs did Linda break?
+SOLUTION: Let's denote the number of brown eggs as \( B \) and the number of white eggs as \( W \). According to the problem, Linda had three times as many white eggs as brown eggs, which can be written as:
+\[ W = 3B \]
+
+After dropping her basket, Linda found that all 5 brown eggs survived and she only had a dozen eggs left, which means she had 12 - 5 = 7 white eggs left.
+
+The total number of eggs she had before the accident was:
+\[ B + W = B + 3B = 4B \]
+
+Since she had 7 white eggs left, we can write:
+\[ 3B - 5 = 7 \]
+
+Now, we solve for \( B \):
+\[ 3B = 12 \]
+\[ B = 4 \]
+
+Now that we know \( B = 4 \), we can find \( W \):
+\[ W = 3B = 3 \times 4 = 12 \]
+
+The total number of eggs Linda had before the accident was:
+\[ B + W = 4 + 12 = 16 \]
+
+The number of eggs she broke is:
+\[ 16 - 7 = 9 \]
+
+#### 9
+The final answer is: 9

@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"30 hours","check":"The nightly amounts are correctly computed as 6, 8, 4, and 12 hours. Their sum is 30 hours, not the written “2L hours.”","evidence_quote":"6 + 8 + 4 + 12 = 2L hours","error_description":"The total shown after the correct sum expression is incorrect; it should be 30 hours."}

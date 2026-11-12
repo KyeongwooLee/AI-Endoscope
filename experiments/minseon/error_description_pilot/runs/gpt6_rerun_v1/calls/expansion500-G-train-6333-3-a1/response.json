@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6333-3",
+  "response_sha256": "4a9765cbed3a5737029240f130c19fedc851f8d3d1c2ba53292fdb176f26d3b9",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 19",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If she wants a total of 24 plants in her home, how many more plants does she need?",
+  "observed_error": "The response reports 19 additional plants despite correctly stating the required operations.",
+  "violated_condition": "Additional plants must equal 24 - (3 + 5 + 7).",
+  "error_description": "The response gives 19 additional plants after correctly specifying the sum of the existing plants and subtraction from 24. Adding 19 to the existing 15 plants would exceed the desired total. The omitted calculations do not show which arithmetic step produced the incorrect number.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The final result is demonstrably incorrect, but the text does not establish a specific arithmetic execution error."
+}

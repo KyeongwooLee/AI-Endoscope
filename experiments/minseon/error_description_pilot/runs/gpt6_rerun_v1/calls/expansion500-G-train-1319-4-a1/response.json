@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1319-4",
+  "response_sha256": "b76bec9d08b314149ef6e40808ae5c4931942055282ee4ec78eaf9fc671c13aa",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 75.00\n#### 18.75\n#### 13.75\n#### 37.50",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "If they split the bill equally, how much will they each owe?",
+  "observed_error": "The numerical outputs do not give the equal share required by the correctly written setup.",
+  "violated_condition": "Each person's share must equal (3 × $15.00 + 2 × $14.00 + 2 × $13.50) / 4.",
+  "error_description": "The response correctly sets up the three purchase costs and division by four, but then lists four unexplained numerical results, ending in 37.50. None equals the required per-person share. The outputs violate the stated equal-split calculation, although the text does not reveal which arithmetic operation produced them.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The numerical results are unlabeled, so no specific multiplication, addition, or division error can be established."
+}

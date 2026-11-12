@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Voldemort had his dinner and ate a piece of cake that has 110 calories. He also ate 1 pack of chips that contained 310 calories and drank a 500 ml bottle of coke that has 215 calories. His caloric intake for breakfast and lunch is 560 and 780 calories, respectively. If he has a 2500 calorie intake limit per day, how many calories can he still take?
+SOLUTION: Step 1: Calculate the total calories consumed so far.
+- Cake: 110 calories
+- Chips: 310 calories
+- Coke: 215 calories
+- Breakfast: 560 calories
+- Lunch: 780 calories
+
+Total calories consumed = 110 + 310 + 215 + 560 + 780 = 2175 calories
+
+Step 2: Subtract the total calories consumed from the daily limit.
+- Daily limit: 2500 calories
+- Calories consumed: 2175 calories
+
+Remaining calories = 2500 - 2175 = 325 calories
+
+#### 325

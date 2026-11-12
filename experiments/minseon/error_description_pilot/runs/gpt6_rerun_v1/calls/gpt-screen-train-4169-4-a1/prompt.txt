@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: An apple tree has three times as many apples as the number of plums on a plum tree. If Damien picks 3/5 of the fruits from the trees, calculate the total number of plums and apples remaining on the tree if there were 180 apples on the apple tree before Damien picked any of the fruits.
+SOLUTION: To find the total number of plums and apples remaining on the tree after Damien picks 3/5 of the fruits:
+
+1. Calculate the number of plums on the plum tree:
+   - Damien picks 3/5 of the apples on the apple tree, which is 3/5 * 180 = 108 apples.
+   - The number of plums on the plum tree remains the same, which is 180.
+
+2. Calculate the total number of fruits picked:
+   - Damien picks 108 apples + 180 plums = 288 fruits.
+
+3. Calculate the number of fruits remaining:
+   - 180 apples + 180 plums - 288 fruits = 180 apples + 180 plums - 288 fruits = 360 apples + 180 plums - 288 fruits = 172 fruits.
+
+4. Calculate the number of fruits remaining on the tree:
+   - The number of plums remaining = 180 - 3/5 * 180 = 180 - 108 = 72 plums.
+   - The number of apples remaining = 180 - 3/5 * 180 = 180 - 108 = 72 apples.
+   - Total number of fruits remaining = 72 apples + 72 plums = 144 fruits.
+
+#### 144

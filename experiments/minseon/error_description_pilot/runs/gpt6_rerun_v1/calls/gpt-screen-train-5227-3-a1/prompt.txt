@@ -1,0 +1,15 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Julian has 400 legos and wants to make lego models of two identical airplanes. If each airplane model requires 240 legos, how many more legos does Julian need?
+SOLUTION: Step 1: Calculate the total number of legos needed for one airplane model.
+Each airplane model requires 240 legos.
+
+Step 2: Multiply the number of legos needed for one airplane by the number of airplanes Julian wants to make.
+Total legos needed = 240 legos/airplane * 2 airplanes
+
+Step 3: Subtract the number of legos Julian currently has from the total number of legos needed.
+Additional legos needed = (Total legos needed) - (Legos Julian has)
+
+Step 4: Calculate the result of the subtraction.
+#### 160
+Julian needs 160 more legos to make the two airplane models.

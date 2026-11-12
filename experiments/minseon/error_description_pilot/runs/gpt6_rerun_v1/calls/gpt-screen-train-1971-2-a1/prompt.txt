@@ -1,0 +1,31 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Ms. Estrella is an entrepreneur with a startup company having 10 employees. The company makes a revenue of $400000 a month, paying 10% in taxes, 5% of the remaining amount on marketing and ads, 20% of the remaining amount on operational costs, and 15% of the remaining amount on employee wages.  Assuming each employee receives the same wage, calculate the amount of money each employee is paid monthly.
+SOLUTION: Step 1: Calculate the amount paid in taxes
+$400000 x 10/100 = $40000
+
+Step 2: Subtract the tax from the total revenue
+$400000 - $40000 = $360000
+
+Step 3: Calculate the amount spent on marketing and ads
+$360000 x 5/100 = $18000
+
+Step 4: Subtract the marketing and ads cost from the total revenue
+$360000 - $18000 = $342000
+
+Step 5: Calculate the amount spent on operational costs
+$342000 x 20/100 = $68400
+
+Step 6: Subtract the operational costs from the total revenue
+$342000 - $68400 = $273600
+
+Step 7: Calculate the amount spent on employee wages
+$273600 x 15/100 = $41040
+
+Step 8: Subtract the employee wages from the total revenue
+$273600 - $41040 = $232560
+
+Step 9: Divide the remaining amount by the number of employees to find the monthly wage per employee
+$232560 / 10 = $23256
+
+#### 23256

@@ -1,0 +1,26 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Carson is refilling his tires. Each tire can hold 500 cubic inches of air. Two of the tires are completely flat and empty. One tire is 40% full and the last tire is 70% full. If Carson injects 50 cubic inches of air with each pump, how many pumps will it take him to fill all the tires?
+SOLUTION: To find out how many pumps Carson needs to fill all the tires, we'll follow these steps:
+
+1. Calculate the total volume of air needed to fill all the tires.
+2. Determine the total volume of air already in the tires.
+3. Calculate the total volume of air still needed to be added.
+4. Determine how many pumps are required to add the total volume of air still needed.
+
+Step 1: Calculate the total volume of air needed to fill all the tires.
+Total volume needed = 500 cubic inches/tire * 4 tires = 2000 cubic inches
+
+Step 2: Determine the total volume of air already in the tires.
+Total volume in tires = 500 cubic inches/tire * 2 completely flat tires + 40% of 500 cubic inches/tire * 1 tire + 70% of 500 cubic inches/tire * 1 tire
+Total volume in tires = 1000 cubic inches + 0.4 * 500 cubic inches + 0.7 * 500 cubic inches
+Total volume in tires = 1000 cubic inches + 200 cubic inches + 350 cubic inches = 1550 cubic inches
+
+Step 3: Calculate the total volume of air still needed to be added.
+Total volume still needed = 2000 cubic inches - 1550 cubic inches = 450 cubic inches
+
+Step 4: Determine how many pumps are required to add the total volume of air still needed.
+Number of pumps = 450 cubic inches / 50 cubic inches per pump = 9 pumps
+
+#### 9
+This is the final answer.

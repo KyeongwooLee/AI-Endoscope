@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6861-3",
+  "response_sha256": "b0a344b28a7fd51777b5dc7a419a69ffe7b45273cacbe83574c70da4bd82123c",
+  "status": "ambiguous",
+  "reference_review_needed": true,
+  "evidence_quote": "So, they need to earn $60 in total.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "How many ice creams will they need to sell for both to be able to afford to buy the game?",
+  "observed_error": "The response assumes one shared game costing $60; its division by $5 is correct.",
+  "violated_condition": null,
+  "error_description": null,
+  "reference_review_reason": "The reference assumes two games, but the question does not explicitly require separate copies. A shared purchase supports the model's interpretation.",
+  "secondary_errors": [],
+  "uncertainty_note": "Whether both friends need individual copies or jointly purchase one game is unresolved by the wording."
+}

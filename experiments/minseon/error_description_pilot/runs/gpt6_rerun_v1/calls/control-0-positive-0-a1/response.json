@@ -1,0 +1,1 @@
+{"case1_error":"Uses George’s 45 oranges instead of Amelia’s 15 apples as the base for adding 5.","case2_error":"Uses Lia’s 30 red beads instead of her 12 blue beads as the base for adding 7.","reason":"Both form an erroneous relation by using the irrelevant item count as the comparison base; both evaluate the resulting addition correctly.","judgment":"same"}

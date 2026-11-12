@@ -1,0 +1,15 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: If 100 pieces, each 15 centimeters long, are cut from a 51-meter long ribbon, how much ribbon remains ?
+SOLUTION: Step 1: Calculate the total length of the 100 pieces of ribbon.
+100 pieces * 15 centimeters/piece = 1500 centimeters
+
+Step 2: Convert the length of the ribbon from meters to centimeters.
+51 meters * 100 centimeters/meter = 5100 centimeters
+
+Step 3: Subtract the total length of the pieces from the original length of the ribbon to find the remaining length.
+5100 centimeters - 1500 centimeters = 3600 centimeters
+
+Final answer:
+#### 3600
+3600 centimeters is the remaining length of the ribbon.

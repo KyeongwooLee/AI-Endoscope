@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2685-4",
+  "response_sha256": "5d6b165a3483a827ee3d3be4a0a84bcc9227d15b220d00b58e9fd33e3f49fc8a",
+  "status": "insufficient_evidence",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 47500\n#### 23750\n#### 19250\n#### 48000",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "They need to pay 50% of the entire bill as a security deposit.",
+  "observed_error": "The four unexplained final numbers do not match the deposit implied by the response's written formulas.",
+  "violated_condition": "The security deposit must equal 50% of the entire bill.",
+  "error_description": "The response writes consistent formulas for the rental cost, pet fee, service fee, and deposit, but then lists four unexplained numbers incompatible with those formulas. No numerical evaluation connects these numbers to a particular operation, so the text does not establish which calculation was performed incorrectly.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The output is incorrect, but the text does not support identifying a specific arithmetic or relational mistake."
+}

@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$98 profit per bottle.","check":"Revenue is 16 × $8 = $128, so profit is $128 − $30 = $98. The solution gives the correct profit formula but an incorrect final number.","evidence_quote":"#### 88.00","error_description":"The final answer of $88 does not match the $98 obtained from the stated formula."}

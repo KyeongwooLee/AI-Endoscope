@@ -1,0 +1,26 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jake earns thrice what Jacob does. If Jacob earns $6 per hour, how much does Jake earn in 5 days working 8 hours a day?
+SOLUTION: To find out how much Jake earns in 5 days working 8 hours a day, we need to follow these steps:
+
+1. Calculate Jake's hourly wage.
+2. Determine Jake's daily wage.
+3. Calculate Jake's weekly wage.
+4. Convert Jake's weekly wage into a daily wage.
+
+Step 1: Jake earns thrice what Jacob does.
+- Jacob earns $6 per hour.
+- Jake earns \(3 \times 6 = 18\) dollars per hour.
+
+Step 2: Calculate Jake's daily wage.
+- Jake works 8 hours a day.
+- Jake's daily wage is \(18 \times 8 = 144\) dollars.
+
+Step 3: Calculate Jake's weekly wage.
+- Jake works 5 days a week.
+- Jake's weekly wage is \(144 \times 5 = 720\) dollars.
+
+Step 4: Convert Jake's weekly wage into a daily wage.
+- Jake's daily wage remains \(144\) dollars.
+
+#### 144

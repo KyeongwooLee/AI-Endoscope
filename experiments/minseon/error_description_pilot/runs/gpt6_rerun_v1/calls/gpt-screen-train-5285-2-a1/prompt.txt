@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: The number of trees is three times more than the number of stones in the courtyard. There are also twice as many birds in the trees as the combined number of trees and stones in the yard. If the number of stones is 40, how many birds are in the trees?
+SOLUTION: Step 1: Determine the number of stones.
+Given: Number of stones = 40
+
+Step 2: Calculate the number of trees.
+Number of trees = 3 times the number of stones
+Number of trees = 3 * 40
+Number of trees = 120
+
+Step 3: Calculate the combined number of trees and stones.
+Combined number = Number of trees + Number of stones
+Combined number = 120 + 40
+Combined number = 160
+
+Step 4: Calculate the number of birds in the trees.
+Number of birds = Twice the combined number of trees and stones
+Number of birds = 2 * 160
+Number of birds = 320
+
+#### 320
+The number of birds in the trees is 320.

@@ -1,0 +1,90 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-5289-3
+response_sha256: eda4c7ea3bd9a1aa223fb5d0222aeb68baf8c4b11e4dcce0dd82e1e249467e10
+
+=== QUESTION ===
+John decides to stop delivering the newspapers he is supposed to deliver and instead steals them to recycle them for cash.  The Monday-Saturday papers weigh 8 ounces each.  The Sunday paper weighs twice as much.  He is supposed to deliver 250 papers a day.  He doesn't deliver them for 10 weeks.  If one ton of paper recycles for $20, how much did he make?
+=== MODEL SOLUTION ===
+Step 1: Calculate the total weight of the Monday-Saturday papers.
+- Weight of one Monday-Saturday paper = 8 ounces
+- Number of Monday-Saturday papers per day = 6
+- Total weight of Monday-Saturday papers per day = 6 * 8 = 48 ounces
+
+Step 2: Calculate the total weight of the Sunday paper.
+- Weight of the Sunday paper = 2 * 8 = 16 ounces
+
+Step 3: Calculate the total weight of the Sunday papers.
+- Number of Sunday papers per day = 1
+- Total weight of Sunday papers per day = 16 ounces
+
+Step 4: Calculate the total weight of all papers per day.
+- Total weight of Monday-Saturday papers per day = 48 ounces
+- Total weight of Sunday papers per day = 16 ounces
+- Total weight per day = 48 + 16 = 64 ounces
+
+Step 5: Calculate the total weight of all papers over 10 weeks.
+- Total weight per week = 64 ounces
+- Number of weeks = 10
+- Total weight over 10 weeks = 64 * 10 = 640 ounces
+
+Step 6: Convert the total weight to tons.
+- 1 ton = 32000 ounces
+- Total weight in tons = 640 / 32000 = 0.02 tons
+
+Step 7: Calculate the amount made from recycling the newspapers.
+- Recycle rate = $20 per ton
+- Amount made = 0.02 * 20 = $0.40
+
+#### 0.40
+The final answer is 0.40.
+=== REFERENCE SOLUTION (fallible aid) ===
+We know that 7-1=6 days the paper weighs 8 ounces
+So those contribute 6*8=<<6*8=48>>48 ounces per week
+So in total a weekly delivery of papers weighs 48+16=<<48+16=64>>64 ounces
+That means it weighs 64/16=<<64/16=4>>4 pounds
+So each week he delivers 4*250=<<4*250=1000>>1000 pounds of paper
+So in 10 weeks, he delivers 10*1000=<<10*1000=10000>>10000 pounds of paper
+That weighs 10000/2000=<<10000/2000=5>>5 tons of paper
+So he makes 5*20=$<<5*20=100>>100 from recycling the paper
+#### 100
+=== END ===

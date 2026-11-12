@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Samantha bought a crate of 30 eggs for $5. If she decides to sell each egg for 20 cents, how many eggs will she have left by the time she recovers her capital from the sales?
+SOLUTION: To solve this problem, we need to determine how many eggs Samantha needs to sell to recover her initial investment of $5.
+
+1. **Calculate the cost per egg:**
+   - Samantha bought 30 eggs for $5.
+   - Cost per egg = $5 / 30 eggs = $0.1667 per egg (rounded to four decimal places).
+
+2. **Determine the number of eggs needed to recover the capital:**
+   - Samantha needs to sell eggs to recover $5.
+   - Number of eggs needed = $5 / $0.1667 per egg ≈ 30 eggs.
+
+3. **Calculate the number of eggs left after recovery:**
+   - Samantha initially had 30 eggs.
+   - She needs to sell 30 eggs to recover her capital.
+   - Eggs left = 30 eggs - 30 eggs = 0 eggs.
+
+#### 0
+By selling all 30 eggs, Samantha will recover her initial investment of $5 and have no eggs left.

@@ -1,0 +1,10370 @@
+[
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 100,
+    "silhouette": 0.056435298174619675,
+    "sizes": [
+      29,
+      21,
+      33,
+      17
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 100,
+    "silhouette": 0.04117455333471298,
+    "sizes": [
+      17,
+      39,
+      30,
+      14
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 100,
+    "silhouette": 0.06793200224637985,
+    "sizes": [
+      27,
+      20,
+      25,
+      28
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.2505395198969571,
+      0.37010576890850333,
+      0.37855617046643647
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 100,
+    "silhouette": 0.036347948014736176,
+    "sizes": [
+      90,
+      6,
+      3,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 100,
+    "silhouette": 0.036330558359622955,
+    "sizes": [
+      6,
+      27,
+      13,
+      25,
+      17,
+      12
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 100,
+    "silhouette": 0.042104318737983704,
+    "sizes": [
+      7,
+      25,
+      17,
+      19,
+      18,
+      14
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 100,
+    "silhouette": 0.05736422538757324,
+    "sizes": [
+      26,
+      14,
+      15,
+      20,
+      10,
+      15
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.28470505121865064,
+      0.306451467390814,
+      0.24946649359325998
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 100,
+    "silhouette": 0.03370767459273338,
+    "sizes": [
+      15,
+      6,
+      3,
+      1,
+      2,
+      73
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 100,
+    "silhouette": 0.039704661816358566,
+    "sizes": [
+      3,
+      27,
+      16,
+      7,
+      13,
+      10,
+      13,
+      11
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 100,
+    "silhouette": 0.03749890625476837,
+    "sizes": [
+      11,
+      18,
+      21,
+      8,
+      12,
+      13,
+      4,
+      13
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 100,
+    "silhouette": 0.023925306275486946,
+    "sizes": [
+      4,
+      14,
+      10,
+      14,
+      20,
+      9,
+      16,
+      13
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.19458264819987148,
+      0.1991022242814635,
+      0.1762750810389397
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 100,
+    "silhouette": 0.02425333485007286,
+    "sizes": [
+      73,
+      6,
+      2,
+      1,
+      2,
+      11,
+      4,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 100,
+    "silhouette": 0.03455162048339844,
+    "sizes": [
+      6,
+      14,
+      21,
+      8,
+      4,
+      11,
+      14,
+      7,
+      6,
+      9
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 100,
+    "silhouette": 0.03264864906668663,
+    "sizes": [
+      11,
+      16,
+      12,
+      9,
+      8,
+      14,
+      10,
+      8,
+      5,
+      7
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 100,
+    "silhouette": 0.02626611478626728,
+    "sizes": [
+      6,
+      13,
+      6,
+      14,
+      12,
+      12,
+      14,
+      6,
+      7,
+      10
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.244691221972619,
+      0.22244876472555636,
+      0.3998117372838621
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 100,
+    "silhouette": 0.04509247839450836,
+    "sizes": [
+      44,
+      5,
+      2,
+      29,
+      2,
+      11,
+      4,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 100,
+    "silhouette": 0.029349343851208687,
+    "sizes": [
+      2,
+      4,
+      5,
+      6,
+      9,
+      13,
+      8,
+      14,
+      9,
+      5,
+      5,
+      4,
+      3,
+      9,
+      4
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 100,
+    "silhouette": 0.03999744728207588,
+    "sizes": [
+      3,
+      10,
+      10,
+      3,
+      5,
+      9,
+      6,
+      11,
+      5,
+      5,
+      10,
+      4,
+      3,
+      4,
+      12
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 100,
+    "silhouette": 0.025431618094444275,
+    "sizes": [
+      10,
+      4,
+      8,
+      9,
+      2,
+      7,
+      8,
+      4,
+      6,
+      6,
+      4,
+      5,
+      6,
+      7,
+      14
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.26648000028681135,
+      0.3165694725241039,
+      0.31313797080836375
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 100,
+    "silhouette": 0.04229911416769028,
+    "sizes": [
+      11,
+      9,
+      24,
+      29,
+      10,
+      2,
+      4,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      3
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 100,
+    "silhouette": 0.027857325971126556,
+    "sizes": [
+      4,
+      1,
+      6,
+      6,
+      4,
+      8,
+      3,
+      3,
+      8,
+      6,
+      5,
+      8,
+      2,
+      7,
+      5,
+      2,
+      3,
+      4,
+      8,
+      7
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 100,
+    "silhouette": 0.030659746378660202,
+    "sizes": [
+      4,
+      10,
+      7,
+      3,
+      7,
+      1,
+      5,
+      7,
+      8,
+      7,
+      3,
+      8,
+      2,
+      5,
+      3,
+      7,
+      3,
+      4,
+      3,
+      3
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 100,
+    "silhouette": 0.032967593520879745,
+    "sizes": [
+      7,
+      4,
+      9,
+      4,
+      2,
+      4,
+      10,
+      6,
+      5,
+      4,
+      5,
+      4,
+      4,
+      5,
+      3,
+      4,
+      2,
+      5,
+      5,
+      8
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.23839027297812482,
+      0.2528198179285074,
+      0.21286613331332477
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 100,
+    "silhouette": 0.043412886559963226,
+    "sizes": [
+      10,
+      21,
+      4,
+      2,
+      24,
+      2,
+      8,
+      7,
+      3,
+      2,
+      2,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      5,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 97,
+    "silhouette": 0.054036278277635574,
+    "sizes": [
+      40,
+      26,
+      13,
+      18
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 97,
+    "silhouette": 0.0398494191467762,
+    "sizes": [
+      24,
+      19,
+      32,
+      22
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 97,
+    "silhouette": 0.0432744063436985,
+    "sizes": [
+      31,
+      25,
+      30,
+      11
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.20926280803665,
+      0.2714255799087429,
+      0.28456462064093296
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 97,
+    "silhouette": 0.09153921902179718,
+    "sizes": [
+      94,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 97,
+    "silhouette": 0.04288334771990776,
+    "sizes": [
+      8,
+      19,
+      8,
+      22,
+      16,
+      24
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 97,
+    "silhouette": 0.05217842385172844,
+    "sizes": [
+      4,
+      43,
+      16,
+      10,
+      8,
+      16
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 97,
+    "silhouette": 0.03243313729763031,
+    "sizes": [
+      6,
+      20,
+      12,
+      28,
+      13,
+      18
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.27751851245863396,
+      0.22618067765077168,
+      0.2293038205430141
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 97,
+    "silhouette": 0.032454073429107666,
+    "sizes": [
+      3,
+      90,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 97,
+    "silhouette": 0.03263382986187935,
+    "sizes": [
+      6,
+      10,
+      7,
+      12,
+      21,
+      13,
+      22,
+      6
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 97,
+    "silhouette": 0.03571443632245064,
+    "sizes": [
+      12,
+      12,
+      17,
+      17,
+      8,
+      6,
+      11,
+      14
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 97,
+    "silhouette": 0.03678067401051521,
+    "sizes": [
+      5,
+      9,
+      14,
+      10,
+      5,
+      18,
+      8,
+      28
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.23673293029497208,
+      0.1718311356304245,
+      0.18452432635274452
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 97,
+    "silhouette": 0.004230870865285397,
+    "sizes": [
+      89,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 97,
+    "silhouette": 0.03353103995323181,
+    "sizes": [
+      5,
+      8,
+      12,
+      11,
+      9,
+      5,
+      21,
+      8,
+      14,
+      4
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 97,
+    "silhouette": 0.029131460934877396,
+    "sizes": [
+      6,
+      11,
+      5,
+      7,
+      9,
+      10,
+      16,
+      4,
+      17,
+      12
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 97,
+    "silhouette": 0.028198398649692535,
+    "sizes": [
+      5,
+      9,
+      12,
+      24,
+      12,
+      8,
+      3,
+      9,
+      10,
+      5
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.24868603042876902,
+      0.16123074339923604,
+      0.22276642821851303
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 97,
+    "silhouette": 0.0281617920845747,
+    "sizes": [
+      75,
+      10,
+      1,
+      2,
+      4,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 97,
+    "silhouette": 0.01832624152302742,
+    "sizes": [
+      2,
+      3,
+      11,
+      10,
+      10,
+      8,
+      3,
+      9,
+      3,
+      5,
+      3,
+      18,
+      2,
+      6,
+      4
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 97,
+    "silhouette": 0.030502591282129288,
+    "sizes": [
+      1,
+      12,
+      8,
+      14,
+      12,
+      9,
+      3,
+      11,
+      8,
+      2,
+      2,
+      1,
+      8,
+      3,
+      3
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 97,
+    "silhouette": 0.012099254876375198,
+    "sizes": [
+      4,
+      6,
+      7,
+      2,
+      15,
+      9,
+      4,
+      6,
+      15,
+      1,
+      4,
+      3,
+      4,
+      8,
+      9
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.19139849467887154,
+      0.2417497411145498,
+      0.16673250353370309
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 97,
+    "silhouette": 0.027145549654960632,
+    "sizes": [
+      63,
+      4,
+      2,
+      2,
+      7,
+      3,
+      6,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 97,
+    "silhouette": 0.034374888986349106,
+    "sizes": [
+      1,
+      7,
+      3,
+      5,
+      4,
+      3,
+      6,
+      5,
+      10,
+      7,
+      12,
+      6,
+      6,
+      7,
+      3,
+      3,
+      2,
+      4,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 97,
+    "silhouette": 0.01996900886297226,
+    "sizes": [
+      2,
+      8,
+      2,
+      9,
+      11,
+      4,
+      11,
+      11,
+      2,
+      6,
+      7,
+      1,
+      2,
+      3,
+      5,
+      2,
+      1,
+      4,
+      2,
+      4
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 97,
+    "silhouette": 0.022484995424747467,
+    "sizes": [
+      2,
+      2,
+      1,
+      6,
+      8,
+      1,
+      7,
+      8,
+      5,
+      5,
+      14,
+      9,
+      2,
+      8,
+      3,
+      1,
+      1,
+      8,
+      4,
+      2
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.45364717495761914,
+      0.16533421063558632,
+      0.2140966826015927
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 97,
+    "silhouette": 0.017998434603214264,
+    "sizes": [
+      3,
+      7,
+      56,
+      2,
+      4,
+      2,
+      6,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 96,
+    "silhouette": 0.057820361107587814,
+    "sizes": [
+      27,
+      19,
+      25,
+      25
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 96,
+    "silhouette": 0.06148563697934151,
+    "sizes": [
+      30,
+      22,
+      14,
+      30
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 96,
+    "silhouette": 0.05016686022281647,
+    "sizes": [
+      22,
+      33,
+      13,
+      28
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.39794276800078,
+      0.5681654825945177,
+      0.2961917775665399
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 96,
+    "silhouette": 0.06305019557476044,
+    "sizes": [
+      92,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 96,
+    "silhouette": 0.04129158332943916,
+    "sizes": [
+      16,
+      26,
+      14,
+      22,
+      11,
+      7
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 96,
+    "silhouette": 0.04017902538180351,
+    "sizes": [
+      16,
+      17,
+      6,
+      26,
+      18,
+      13
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 96,
+    "silhouette": 0.04399390518665314,
+    "sizes": [
+      2,
+      20,
+      25,
+      9,
+      28,
+      12
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.30510130563563537,
+      0.23710581313433213,
+      0.2543918059059775
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 96,
+    "silhouette": 0.04438285157084465,
+    "sizes": [
+      2,
+      86,
+      3,
+      1,
+      3,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 96,
+    "silhouette": 0.026523662731051445,
+    "sizes": [
+      7,
+      6,
+      13,
+      26,
+      15,
+      18,
+      8,
+      3
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 96,
+    "silhouette": 0.030725985765457153,
+    "sizes": [
+      3,
+      8,
+      11,
+      15,
+      17,
+      13,
+      21,
+      8
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 96,
+    "silhouette": 0.045270949602127075,
+    "sizes": [
+      1,
+      6,
+      21,
+      14,
+      14,
+      7,
+      7,
+      26
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.17216499810367766,
+      0.185568566922793,
+      0.27505910918019905
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 96,
+    "silhouette": 0.036107614636421204,
+    "sizes": [
+      83,
+      3,
+      3,
+      3,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 96,
+    "silhouette": 0.031060578301548958,
+    "sizes": [
+      2,
+      23,
+      10,
+      20,
+      16,
+      2,
+      5,
+      11,
+      2,
+      5
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 96,
+    "silhouette": 0.026203671470284462,
+    "sizes": [
+      2,
+      6,
+      13,
+      16,
+      13,
+      3,
+      19,
+      4,
+      14,
+      6
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 96,
+    "silhouette": 0.023666149005293846,
+    "sizes": [
+      7,
+      10,
+      5,
+      15,
+      9,
+      8,
+      8,
+      8,
+      22,
+      4
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.146861767787393,
+      0.14887853415767419,
+      0.21601636164683843
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 96,
+    "silhouette": 0.012830029241740704,
+    "sizes": [
+      79,
+      3,
+      3,
+      3,
+      1,
+      1,
+      1,
+      1,
+      3,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 96,
+    "silhouette": 0.01987616904079914,
+    "sizes": [
+      2,
+      7,
+      7,
+      9,
+      9,
+      6,
+      5,
+      11,
+      5,
+      4,
+      5,
+      3,
+      2,
+      11,
+      10
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 96,
+    "silhouette": 0.014826606959104538,
+    "sizes": [
+      3,
+      6,
+      6,
+      9,
+      8,
+      4,
+      9,
+      13,
+      6,
+      10,
+      6,
+      4,
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 96,
+    "silhouette": 0.013360145501792431,
+    "sizes": [
+      4,
+      10,
+      10,
+      5,
+      8,
+      6,
+      9,
+      5,
+      4,
+      6,
+      14,
+      2,
+      5,
+      3,
+      5
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.19572877893197427,
+      0.19844680337582532,
+      0.25246609686028476
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 96,
+    "silhouette": 0.004364208783954382,
+    "sizes": [
+      17,
+      3,
+      60,
+      2,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 96,
+    "silhouette": 0.012504607439041138,
+    "sizes": [
+      7,
+      4,
+      6,
+      13,
+      2,
+      5,
+      5,
+      7,
+      5,
+      5,
+      2,
+      3,
+      8,
+      2,
+      6,
+      5,
+      3,
+      4,
+      2,
+      2
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 96,
+    "silhouette": 0.03203093633055687,
+    "sizes": [
+      4,
+      7,
+      5,
+      3,
+      15,
+      4,
+      4,
+      1,
+      8,
+      5,
+      3,
+      2,
+      4,
+      9,
+      1,
+      3,
+      8,
+      2,
+      4,
+      4
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 96,
+    "silhouette": 0.013921603560447693,
+    "sizes": [
+      7,
+      5,
+      6,
+      4,
+      5,
+      1,
+      3,
+      11,
+      17,
+      3,
+      4,
+      3,
+      5,
+      1,
+      4,
+      1,
+      2,
+      2,
+      9,
+      3
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.19147882090661383,
+      0.1966258154347023,
+      0.4169045005488474
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 96,
+    "silhouette": 0.03993261232972145,
+    "sizes": [
+      2,
+      8,
+      4,
+      3,
+      26,
+      1,
+      17,
+      2,
+      16,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      5,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 100,
+    "silhouette": 0.03987237811088562,
+    "sizes": [
+      28,
+      27,
+      23,
+      22
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 100,
+    "silhouette": 0.04423204064369202,
+    "sizes": [
+      29,
+      32,
+      17,
+      22
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 100,
+    "silhouette": 0.05249746888875961,
+    "sizes": [
+      29,
+      34,
+      30,
+      7
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.4322769331224573,
+      0.4294811526717064,
+      0.43640126969538057
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 100,
+    "silhouette": 0.03446434438228607,
+    "sizes": [
+      95,
+      2,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 100,
+    "silhouette": 0.031911738216876984,
+    "sizes": [
+      9,
+      18,
+      18,
+      24,
+      11,
+      20
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 100,
+    "silhouette": 0.03330286592245102,
+    "sizes": [
+      16,
+      27,
+      14,
+      17,
+      14,
+      12
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 100,
+    "silhouette": 0.03320888802409172,
+    "sizes": [
+      27,
+      20,
+      11,
+      15,
+      20,
+      7
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.26613140742448105,
+      0.19491973115323086,
+      0.22793242921722578
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 100,
+    "silhouette": 0.025087861344218254,
+    "sizes": [
+      83,
+      11,
+      2,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 100,
+    "silhouette": 0.027554666623473167,
+    "sizes": [
+      6,
+      19,
+      13,
+      13,
+      17,
+      16,
+      11,
+      5
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 100,
+    "silhouette": 0.03078804723918438,
+    "sizes": [
+      9,
+      16,
+      8,
+      9,
+      10,
+      15,
+      20,
+      13
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 100,
+    "silhouette": 0.027027864009141922,
+    "sizes": [
+      18,
+      13,
+      9,
+      9,
+      15,
+      16,
+      15,
+      5
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.23457649515674223,
+      0.22734557335406005,
+      0.20466183931040804
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 100,
+    "silhouette": 0.019611844792962074,
+    "sizes": [
+      75,
+      11,
+      2,
+      2,
+      2,
+      1,
+      6,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 100,
+    "silhouette": 0.0280707199126482,
+    "sizes": [
+      10,
+      8,
+      16,
+      11,
+      21,
+      3,
+      10,
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 100,
+    "silhouette": 0.020851384848356247,
+    "sizes": [
+      3,
+      15,
+      11,
+      13,
+      13,
+      16,
+      5,
+      13,
+      7,
+      4
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 100,
+    "silhouette": 0.026656311005353928,
+    "sizes": [
+      2,
+      12,
+      12,
+      15,
+      11,
+      10,
+      7,
+      12,
+      10,
+      9
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.2774074254294195,
+      0.31628682601445246,
+      0.23738122957899876
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 100,
+    "silhouette": 0.04215984791517258,
+    "sizes": [
+      11,
+      39,
+      2,
+      13,
+      2,
+      1,
+      6,
+      1,
+      2,
+      23
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 100,
+    "silhouette": 0.022821025922894478,
+    "sizes": [
+      2,
+      6,
+      4,
+      8,
+      12,
+      10,
+      7,
+      14,
+      8,
+      6,
+      4,
+      5,
+      4,
+      3,
+      7
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 100,
+    "silhouette": 0.025632688775658607,
+    "sizes": [
+      5,
+      12,
+      4,
+      6,
+      11,
+      3,
+      3,
+      10,
+      5,
+      10,
+      10,
+      5,
+      5,
+      7,
+      4
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 100,
+    "silhouette": 0.020840968936681747,
+    "sizes": [
+      3,
+      7,
+      4,
+      13,
+      8,
+      9,
+      4,
+      6,
+      9,
+      8,
+      3,
+      6,
+      6,
+      11,
+      3
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.21308468358300214,
+      0.18980502355827408,
+      0.2170014012143858
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 100,
+    "silhouette": 0.04076455533504486,
+    "sizes": [
+      13,
+      3,
+      6,
+      2,
+      23,
+      29,
+      10,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      7,
+      1
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 100,
+    "silhouette": 0.023994171991944313,
+    "sizes": [
+      11,
+      4,
+      7,
+      2,
+      6,
+      4,
+      4,
+      3,
+      11,
+      2,
+      4,
+      4,
+      6,
+      2,
+      8,
+      10,
+      4,
+      2,
+      4,
+      2
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 100,
+    "silhouette": 0.021420510485768318,
+    "sizes": [
+      10,
+      2,
+      5,
+      7,
+      6,
+      8,
+      4,
+      7,
+      4,
+      4,
+      9,
+      6,
+      2,
+      4,
+      4,
+      1,
+      2,
+      7,
+      2,
+      6
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 100,
+    "silhouette": 0.021776854991912842,
+    "sizes": [
+      3,
+      6,
+      9,
+      2,
+      6,
+      10,
+      6,
+      3,
+      4,
+      7,
+      5,
+      4,
+      1,
+      6,
+      2,
+      5,
+      7,
+      4,
+      4,
+      6
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.20590374120122282,
+      0.3311078239315556,
+      0.2303507784655787
+    ]
+  },
+  {
+    "cohort": "native",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 100,
+    "silhouette": 0.044862791895866394,
+    "sizes": [
+      12,
+      2,
+      6,
+      7,
+      5,
+      29,
+      5,
+      4,
+      11,
+      2,
+      1,
+      1,
+      1,
+      7,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.06375948339700699,
+    "sizes": [
+      13,
+      24,
+      31,
+      27
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.037709563970565796,
+    "sizes": [
+      31,
+      22,
+      17,
+      25
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.04404877498745918,
+    "sizes": [
+      30,
+      21,
+      29,
+      15
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.33167355872888965,
+      0.24658520548658625,
+      0.26902842788590103
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 95,
+    "silhouette": 0.027667589485645294,
+    "sizes": [
+      87,
+      5,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.05264214426279068,
+    "sizes": [
+      27,
+      17,
+      24,
+      10,
+      10,
+      7
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.04448205605149269,
+    "sizes": [
+      17,
+      22,
+      21,
+      13,
+      14,
+      8
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.05492022633552551,
+    "sizes": [
+      4,
+      26,
+      27,
+      15,
+      12,
+      11
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.3323356703535903,
+      0.4181676082974877,
+      0.328554490374878
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 95,
+    "silhouette": 0.019341714680194855,
+    "sizes": [
+      81,
+      5,
+      2,
+      1,
+      5,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.04405366629362106,
+    "sizes": [
+      10,
+      7,
+      11,
+      25,
+      10,
+      10,
+      17,
+      5
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.03249330073595047,
+    "sizes": [
+      5,
+      15,
+      11,
+      13,
+      12,
+      20,
+      11,
+      8
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.03390321880578995,
+    "sizes": [
+      8,
+      7,
+      15,
+      7,
+      14,
+      21,
+      13,
+      10
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.2737472565104695,
+      0.34797967373262634,
+      0.1579991916841018
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 95,
+    "silhouette": 0.012660108506679535,
+    "sizes": [
+      79,
+      5,
+      2,
+      2,
+      3,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.027619289234280586,
+    "sizes": [
+      17,
+      5,
+      9,
+      12,
+      2,
+      7,
+      7,
+      7,
+      17,
+      12
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.04375911131501198,
+    "sizes": [
+      7,
+      5,
+      19,
+      4,
+      9,
+      7,
+      17,
+      13,
+      9,
+      5
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.03231671079993248,
+    "sizes": [
+      13,
+      8,
+      10,
+      15,
+      10,
+      9,
+      11,
+      8,
+      9,
+      2
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.3366927393653028,
+      0.27579966365894676,
+      0.20871854496284042
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 95,
+    "silhouette": 0.051748767495155334,
+    "sizes": [
+      21,
+      32,
+      2,
+      5,
+      26,
+      1,
+      2,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.032711975276470184,
+    "sizes": [
+      7,
+      5,
+      13,
+      9,
+      10,
+      9,
+      5,
+      6,
+      5,
+      5,
+      10,
+      2,
+      3,
+      1,
+      5
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.02924317494034767,
+    "sizes": [
+      2,
+      8,
+      5,
+      10,
+      10,
+      9,
+      7,
+      5,
+      7,
+      4,
+      4,
+      1,
+      13,
+      3,
+      7
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.019622504711151123,
+    "sizes": [
+      6,
+      2,
+      15,
+      8,
+      8,
+      3,
+      4,
+      11,
+      8,
+      4,
+      6,
+      4,
+      8,
+      2,
+      6
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.21414575332841793,
+      0.25130188099669337,
+      0.22493129575396031
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 95,
+    "silhouette": 0.05134080722928047,
+    "sizes": [
+      9,
+      8,
+      22,
+      4,
+      8,
+      2,
+      5,
+      1,
+      2,
+      3,
+      26,
+      1,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.037614382803440094,
+    "sizes": [
+      2,
+      9,
+      4,
+      2,
+      3,
+      7,
+      7,
+      6,
+      2,
+      8,
+      4,
+      6,
+      7,
+      5,
+      9,
+      5,
+      4,
+      2,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.03886749595403671,
+    "sizes": [
+      9,
+      6,
+      7,
+      10,
+      11,
+      6,
+      3,
+      9,
+      5,
+      1,
+      5,
+      6,
+      3,
+      3,
+      2,
+      1,
+      2,
+      1,
+      1,
+      4
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.03492813929915428,
+    "sizes": [
+      8,
+      9,
+      3,
+      9,
+      7,
+      3,
+      3,
+      9,
+      2,
+      4,
+      4,
+      4,
+      5,
+      5,
+      3,
+      3,
+      2,
+      1,
+      6,
+      5
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.3767540535044094,
+      0.4185891631139125,
+      0.23778951909561957
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 95,
+    "silhouette": 0.04893112555146217,
+    "sizes": [
+      26,
+      3,
+      5,
+      2,
+      3,
+      2,
+      3,
+      3,
+      8,
+      18,
+      5,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      4,
+      5
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.045249633491039276,
+    "sizes": [
+      9,
+      36,
+      32,
+      18
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.04183848202228546,
+    "sizes": [
+      26,
+      26,
+      26,
+      17
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.04494214430451393,
+    "sizes": [
+      29,
+      13,
+      36,
+      17
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.14540161008121202,
+      0.35309865925311307,
+      0.10347658823355162
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 95,
+    "silhouette": 0.09348444640636444,
+    "sizes": [
+      92,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.05049516633152962,
+    "sizes": [
+      10,
+      10,
+      9,
+      12,
+      35,
+      19
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.035626091063022614,
+    "sizes": [
+      18,
+      21,
+      19,
+      19,
+      7,
+      11
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.03733496740460396,
+    "sizes": [
+      9,
+      24,
+      14,
+      11,
+      12,
+      25
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.17869356927838903,
+      0.3223229284620544,
+      0.21852359413304823
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 95,
+    "silhouette": 0.04541872441768646,
+    "sizes": [
+      89,
+      2,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.04133693501353264,
+    "sizes": [
+      8,
+      26,
+      6,
+      8,
+      6,
+      20,
+      7,
+      14
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.027404094114899635,
+    "sizes": [
+      17,
+      5,
+      17,
+      2,
+      5,
+      14,
+      5,
+      30
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.03077659383416176,
+    "sizes": [
+      9,
+      11,
+      9,
+      28,
+      15,
+      10,
+      5,
+      8
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.17008540953722298,
+      0.14913342705232105,
+      0.46230884532232425
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 95,
+    "silhouette": 0.006977514363825321,
+    "sizes": [
+      87,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.03147051855921745,
+    "sizes": [
+      7,
+      24,
+      7,
+      5,
+      6,
+      16,
+      7,
+      11,
+      5,
+      7
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.05058567598462105,
+    "sizes": [
+      4,
+      3,
+      24,
+      13,
+      10,
+      12,
+      7,
+      6,
+      5,
+      11
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.032077085226774216,
+    "sizes": [
+      1,
+      7,
+      10,
+      15,
+      24,
+      7,
+      2,
+      11,
+      13,
+      5
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.23561760630928275,
+      0.19083177763949388,
+      0.21214254088471776
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 95,
+    "silhouette": 0.02586572989821434,
+    "sizes": [
+      75,
+      8,
+      1,
+      2,
+      4,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.02503485418856144,
+    "sizes": [
+      3,
+      10,
+      7,
+      5,
+      1,
+      17,
+      2,
+      8,
+      3,
+      9,
+      6,
+      3,
+      17,
+      2,
+      2
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.01920657604932785,
+    "sizes": [
+      4,
+      5,
+      8,
+      8,
+      4,
+      2,
+      4,
+      8,
+      11,
+      7,
+      4,
+      12,
+      4,
+      8,
+      6
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.029499882832169533,
+    "sizes": [
+      1,
+      11,
+      9,
+      5,
+      13,
+      6,
+      6,
+      1,
+      4,
+      7,
+      10,
+      6,
+      11,
+      2,
+      3
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.28056658219689756,
+      0.2156782701204879,
+      0.1733060519256127
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 95,
+    "silhouette": 0.025108372792601585,
+    "sizes": [
+      63,
+      4,
+      2,
+      2,
+      5,
+      3,
+      6,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 95,
+    "silhouette": -0.008649718016386032,
+    "sizes": [
+      3,
+      12,
+      12,
+      2,
+      2,
+      11,
+      2,
+      8,
+      9,
+      4,
+      5,
+      3,
+      1,
+      1,
+      4,
+      6,
+      6,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.029522700235247612,
+    "sizes": [
+      11,
+      10,
+      2,
+      7,
+      2,
+      4,
+      7,
+      5,
+      12,
+      1,
+      3,
+      1,
+      3,
+      10,
+      3,
+      6,
+      1,
+      1,
+      5,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.023110413923859596,
+    "sizes": [
+      2,
+      8,
+      13,
+      8,
+      9,
+      7,
+      2,
+      5,
+      2,
+      4,
+      7,
+      3,
+      8,
+      1,
+      5,
+      1,
+      2,
+      3,
+      4,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.34635810063696254,
+      0.33929011351361593,
+      0.38556760387678723
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 95,
+    "silhouette": 0.01600399985909462,
+    "sizes": [
+      3,
+      5,
+      56,
+      2,
+      4,
+      2,
+      6,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.056266844272613525,
+    "sizes": [
+      28,
+      13,
+      29,
+      25
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.05287976190447807,
+    "sizes": [
+      3,
+      24,
+      30,
+      38
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.04992363601922989,
+    "sizes": [
+      33,
+      21,
+      27,
+      14
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.36191997520836156,
+      0.4027150728932131,
+      0.37284803886815526
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 95,
+    "silhouette": 0.06953439861536026,
+    "sizes": [
+      91,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.03574419394135475,
+    "sizes": [
+      11,
+      16,
+      19,
+      13,
+      23,
+      13
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.04335824400186539,
+    "sizes": [
+      13,
+      30,
+      18,
+      5,
+      18,
+      11
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.043054480105638504,
+    "sizes": [
+      1,
+      20,
+      22,
+      12,
+      11,
+      29
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.4350930382005233,
+      0.29615150633909093,
+      0.294257402115927
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 95,
+    "silhouette": 0.05770444497466087,
+    "sizes": [
+      87,
+      1,
+      2,
+      1,
+      1,
+      3
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.02675279788672924,
+    "sizes": [
+      11,
+      15,
+      10,
+      14,
+      10,
+      5,
+      13,
+      17
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.023884905502200127,
+    "sizes": [
+      23,
+      9,
+      22,
+      13,
+      4,
+      5,
+      10,
+      9
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.032793398946523666,
+    "sizes": [
+      12,
+      12,
+      20,
+      4,
+      6,
+      17,
+      7,
+      17
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.2860501389304934,
+      0.1644563647972505,
+      0.25772726149588593
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 95,
+    "silhouette": 0.03046816773712635,
+    "sizes": [
+      84,
+      1,
+      3,
+      1,
+      1,
+      1,
+      3,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.032941967248916626,
+    "sizes": [
+      2,
+      9,
+      10,
+      23,
+      13,
+      2,
+      7,
+      12,
+      4,
+      13
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.02025579661130905,
+    "sizes": [
+      4,
+      7,
+      9,
+      10,
+      27,
+      5,
+      4,
+      10,
+      12,
+      7
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.028728926554322243,
+    "sizes": [
+      8,
+      6,
+      19,
+      3,
+      19,
+      11,
+      5,
+      8,
+      12,
+      4
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.15774627121326773,
+      0.22665848774063183,
+      0.1739658185409327
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 95,
+    "silhouette": 0.0072390115819871426,
+    "sizes": [
+      80,
+      3,
+      3,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.02652200311422348,
+    "sizes": [
+      6,
+      10,
+      13,
+      10,
+      6,
+      9,
+      7,
+      7,
+      5,
+      4,
+      2,
+      6,
+      3,
+      4,
+      3
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.020038623362779617,
+    "sizes": [
+      3,
+      10,
+      11,
+      4,
+      3,
+      3,
+      9,
+      6,
+      7,
+      12,
+      5,
+      6,
+      6,
+      7,
+      3
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.022358065471053123,
+    "sizes": [
+      9,
+      4,
+      7,
+      8,
+      5,
+      3,
+      4,
+      10,
+      10,
+      7,
+      5,
+      9,
+      3,
+      4,
+      7
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.27480147274568634,
+      0.4411840963808447,
+      0.3284693946291965
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 95,
+    "silhouette": 0.003466573776677251,
+    "sizes": [
+      65,
+      3,
+      9,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      4,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.02534073032438755,
+    "sizes": [
+      2,
+      4,
+      8,
+      11,
+      4,
+      9,
+      1,
+      6,
+      3,
+      6,
+      6,
+      4,
+      9,
+      3,
+      2,
+      1,
+      3,
+      4,
+      7,
+      2
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.021949704736471176,
+    "sizes": [
+      14,
+      7,
+      5,
+      7,
+      12,
+      2,
+      4,
+      3,
+      5,
+      7,
+      5,
+      3,
+      2,
+      2,
+      4,
+      1,
+      1,
+      2,
+      3,
+      6
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.020854072645306587,
+    "sizes": [
+      3,
+      9,
+      3,
+      9,
+      7,
+      4,
+      4,
+      2,
+      2,
+      9,
+      10,
+      6,
+      8,
+      6,
+      5,
+      3,
+      2,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.28935222027693774,
+      0.21808156668884876,
+      0.23673902399216581
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 95,
+    "silhouette": 0.039033595472574234,
+    "sizes": [
+      2,
+      3,
+      4,
+      2,
+      26,
+      2,
+      17,
+      5,
+      16,
+      2,
+      1,
+      1,
+      1,
+      7,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.05222361534833908,
+    "sizes": [
+      15,
+      27,
+      33,
+      20
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.03899227827787399,
+    "sizes": [
+      14,
+      27,
+      23,
+      31
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.04794031009078026,
+    "sizes": [
+      4,
+      29,
+      47,
+      15
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.45127396354462346,
+      0.38187980905464614,
+      0.33184076885272756
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 95,
+    "silhouette": 0.029252534732222557,
+    "sizes": [
+      91,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.02767260931432247,
+    "sizes": [
+      23,
+      23,
+      20,
+      16,
+      10,
+      3
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.0221448615193367,
+    "sizes": [
+      17,
+      14,
+      30,
+      9,
+      8,
+      17
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.016838619485497475,
+    "sizes": [
+      11,
+      15,
+      11,
+      26,
+      13,
+      19
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.2372866634261179,
+      0.08952556922569152,
+      0.12875932861114545
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 95,
+    "silhouette": 0.01880641281604767,
+    "sizes": [
+      77,
+      2,
+      8,
+      1,
+      6,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.02885671705007553,
+    "sizes": [
+      15,
+      2,
+      21,
+      12,
+      8,
+      14,
+      15,
+      8
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.023686960339546204,
+    "sizes": [
+      11,
+      18,
+      11,
+      15,
+      14,
+      5,
+      12,
+      9
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.03370955213904381,
+    "sizes": [
+      2,
+      15,
+      20,
+      14,
+      17,
+      3,
+      16,
+      8
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.2088938914334717,
+      0.19935020703676276,
+      0.31475750628965027
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 95,
+    "silhouette": 0.023165622726082802,
+    "sizes": [
+      8,
+      2,
+      62,
+      9,
+      6,
+      1,
+      6,
+      1
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.015311826020479202,
+    "sizes": [
+      2,
+      17,
+      18,
+      14,
+      9,
+      4,
+      8,
+      4,
+      14,
+      5
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.014407262206077576,
+    "sizes": [
+      10,
+      10,
+      18,
+      8,
+      11,
+      7,
+      6,
+      4,
+      9,
+      12
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.03186836838722229,
+    "sizes": [
+      2,
+      15,
+      11,
+      13,
+      15,
+      3,
+      16,
+      8,
+      4,
+      8
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.2795375722543353,
+      0.3286408852168532,
+      0.24405573673287875
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 95,
+    "silhouette": 0.03939923644065857,
+    "sizes": [
+      34,
+      2,
+      6,
+      9,
+      28,
+      1,
+      6,
+      1,
+      2,
+      6
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.013871113769710064,
+    "sizes": [
+      4,
+      4,
+      13,
+      8,
+      4,
+      1,
+      5,
+      8,
+      6,
+      9,
+      9,
+      5,
+      3,
+      10,
+      6
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.024213768541812897,
+    "sizes": [
+      6,
+      8,
+      9,
+      14,
+      3,
+      9,
+      7,
+      4,
+      3,
+      4,
+      9,
+      1,
+      5,
+      9,
+      4
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.018537316471338272,
+    "sizes": [
+      1,
+      5,
+      7,
+      12,
+      8,
+      3,
+      10,
+      7,
+      3,
+      7,
+      9,
+      5,
+      7,
+      5,
+      6
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.3393417937119459,
+      0.2950645249862713,
+      0.26771275288183494
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 95,
+    "silhouette": 0.047628890722990036,
+    "sizes": [
+      9,
+      20,
+      6,
+      3,
+      28,
+      2,
+      6,
+      1,
+      2,
+      4,
+      1,
+      1,
+      1,
+      8,
+      3
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 95,
+    "silhouette": 0.02155102603137493,
+    "sizes": [
+      2,
+      6,
+      2,
+      5,
+      16,
+      7,
+      5,
+      6,
+      5,
+      6,
+      5,
+      4,
+      4,
+      9,
+      3,
+      3,
+      1,
+      3,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 95,
+    "silhouette": 0.021092073991894722,
+    "sizes": [
+      3,
+      9,
+      3,
+      8,
+      7,
+      12,
+      5,
+      6,
+      4,
+      3,
+      6,
+      5,
+      2,
+      7,
+      1,
+      4,
+      3,
+      2,
+      2,
+      3
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 95,
+    "silhouette": 0.027085382491350174,
+    "sizes": [
+      4,
+      4,
+      4,
+      4,
+      8,
+      9,
+      13,
+      7,
+      5,
+      3,
+      4,
+      1,
+      2,
+      2,
+      5,
+      1,
+      2,
+      5,
+      3,
+      9
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.2802297227755571,
+      0.35343233717505473,
+      0.26492915442615633
+    ]
+  },
+  {
+    "cohort": "common",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 95,
+    "silhouette": 0.04984761402010918,
+    "sizes": [
+      28,
+      9,
+      3,
+      2,
+      4,
+      2,
+      8,
+      6,
+      11,
+      5,
+      1,
+      1,
+      1,
+      2,
+      3,
+      1,
+      4,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.05744900181889534,
+    "sizes": [
+      24,
+      20,
+      33,
+      14
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.051658425480127335,
+    "sizes": [
+      22,
+      23,
+      23,
+      23
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.05663682147860527,
+    "sizes": [
+      13,
+      26,
+      27,
+      25
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.3014636566608782,
+      0.3350079766379147,
+      0.3860686968229868
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 91,
+    "silhouette": 0.01961498335003853,
+    "sizes": [
+      87,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.03740376606583595,
+    "sizes": [
+      9,
+      17,
+      22,
+      13,
+      13,
+      17
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.041279952973127365,
+    "sizes": [
+      3,
+      15,
+      23,
+      28,
+      13,
+      9
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.029131226241588593,
+    "sizes": [
+      8,
+      28,
+      11,
+      8,
+      17,
+      19
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.27689346236166873,
+      0.1538384603151901,
+      0.23408695864943957
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 91,
+    "silhouette": 0.01840239390730858,
+    "sizes": [
+      79,
+      6,
+      2,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.04274969547986984,
+    "sizes": [
+      5,
+      4,
+      14,
+      24,
+      18,
+      3,
+      15,
+      8
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.03528948873281479,
+    "sizes": [
+      10,
+      15,
+      7,
+      13,
+      7,
+      12,
+      14,
+      13
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.02418663166463375,
+    "sizes": [
+      13,
+      14,
+      16,
+      12,
+      7,
+      9,
+      6,
+      14
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.2098937599837724,
+      0.21763919194763146,
+      0.24154358763831474
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 91,
+    "silhouette": 0.03672748804092407,
+    "sizes": [
+      6,
+      60,
+      8,
+      11,
+      1,
+      2,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.03418566659092903,
+    "sizes": [
+      9,
+      14,
+      11,
+      8,
+      7,
+      14,
+      5,
+      5,
+      10,
+      8
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.026020780205726624,
+    "sizes": [
+      14,
+      8,
+      6,
+      7,
+      11,
+      10,
+      7,
+      7,
+      9,
+      12
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.03988652303814888,
+    "sizes": [
+      3,
+      9,
+      8,
+      14,
+      11,
+      12,
+      7,
+      10,
+      10,
+      7
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.21432568550643535,
+      0.3617846081003768,
+      0.40266419357558386
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 91,
+    "silhouette": 0.028566379100084305,
+    "sizes": [
+      60,
+      5,
+      5,
+      11,
+      3,
+      2,
+      2,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.03438090160489082,
+    "sizes": [
+      7,
+      2,
+      11,
+      6,
+      9,
+      4,
+      4,
+      8,
+      10,
+      11,
+      5,
+      2,
+      6,
+      3,
+      3
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.026374438777565956,
+    "sizes": [
+      1,
+      4,
+      5,
+      8,
+      8,
+      8,
+      8,
+      6,
+      7,
+      4,
+      7,
+      5,
+      4,
+      8,
+      8
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.02930111438035965,
+    "sizes": [
+      6,
+      11,
+      8,
+      2,
+      7,
+      7,
+      9,
+      3,
+      10,
+      5,
+      3,
+      3,
+      4,
+      6,
+      7
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.32693341900697725,
+      0.20042072795405813,
+      0.31717690171402946
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 91,
+    "silhouette": 0.05449933186173439,
+    "sizes": [
+      29,
+      8,
+      23,
+      4,
+      8,
+      3,
+      2,
+      1,
+      1,
+      1,
+      3,
+      2,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.03261123225092888,
+    "sizes": [
+      2,
+      10,
+      7,
+      8,
+      4,
+      6,
+      5,
+      9,
+      3,
+      6,
+      2,
+      2,
+      5,
+      3,
+      4,
+      3,
+      1,
+      3,
+      5,
+      3
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.029358582571148872,
+    "sizes": [
+      3,
+      4,
+      7,
+      6,
+      6,
+      4,
+      5,
+      1,
+      7,
+      6,
+      5,
+      2,
+      4,
+      4,
+      2,
+      9,
+      4,
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.03790592402219772,
+    "sizes": [
+      2,
+      7,
+      6,
+      8,
+      4,
+      3,
+      6,
+      3,
+      4,
+      2,
+      3,
+      6,
+      1,
+      8,
+      9,
+      5,
+      4,
+      3,
+      4,
+      3
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.36589375884905934,
+      0.43671443030523277,
+      0.3987940950143777
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 91,
+    "silhouette": 0.052560653537511826,
+    "sizes": [
+      8,
+      4,
+      2,
+      19,
+      3,
+      3,
+      4,
+      5,
+      4,
+      1,
+      23,
+      2,
+      2,
+      1,
+      3,
+      1,
+      3,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.03302875533699989,
+    "sizes": [
+      13,
+      19,
+      44,
+      15
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.04510650411248207,
+    "sizes": [
+      12,
+      21,
+      33,
+      25
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.045531995594501495,
+    "sizes": [
+      10,
+      33,
+      24,
+      24
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.31417067442120566,
+      0.33302713987473903,
+      0.38794627435840123
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 91,
+    "silhouette": 0.09773259609937668,
+    "sizes": [
+      88,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.03767191618680954,
+    "sizes": [
+      10,
+      8,
+      19,
+      19,
+      23,
+      12
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.045029547065496445,
+    "sizes": [
+      7,
+      18,
+      31,
+      7,
+      5,
+      23
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.04366925358772278,
+    "sizes": [
+      13,
+      10,
+      26,
+      10,
+      12,
+      20
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.19087107129776146,
+      0.26800792141639657,
+      0.2700596209572661
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 91,
+    "silhouette": 0.05025046318769455,
+    "sizes": [
+      85,
+      2,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.020301979035139084,
+    "sizes": [
+      17,
+      8,
+      20,
+      16,
+      7,
+      13,
+      4,
+      6
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.040524713695049286,
+    "sizes": [
+      3,
+      21,
+      6,
+      13,
+      14,
+      6,
+      10,
+      18
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.03518617898225784,
+    "sizes": [
+      8,
+      12,
+      17,
+      8,
+      17,
+      6,
+      7,
+      16
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.27558313717098226,
+      0.1731335952848723,
+      0.21898656599333202
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 91,
+    "silhouette": 0.012128671631217003,
+    "sizes": [
+      83,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.030239619314670563,
+    "sizes": [
+      1,
+      7,
+      13,
+      10,
+      13,
+      10,
+      13,
+      9,
+      10,
+      5
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.0243716761469841,
+    "sizes": [
+      12,
+      4,
+      6,
+      4,
+      15,
+      10,
+      17,
+      13,
+      2,
+      8
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.02616019733250141,
+    "sizes": [
+      5,
+      8,
+      11,
+      25,
+      12,
+      2,
+      4,
+      7,
+      6,
+      11
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.18876972896338026,
+      0.2211721900413642,
+      0.144697629636422
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 91,
+    "silhouette": 0.03207585960626602,
+    "sizes": [
+      71,
+      8,
+      1,
+      2,
+      4,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.016262277960777283,
+    "sizes": [
+      1,
+      3,
+      8,
+      2,
+      6,
+      4,
+      5,
+      14,
+      5,
+      14,
+      11,
+      5,
+      2,
+      3,
+      8
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.026533398777246475,
+    "sizes": [
+      1,
+      7,
+      5,
+      7,
+      12,
+      6,
+      5,
+      6,
+      16,
+      5,
+      1,
+      7,
+      8,
+      4,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.03224484995007515,
+    "sizes": [
+      2,
+      11,
+      5,
+      7,
+      4,
+      13,
+      10,
+      3,
+      9,
+      5,
+      2,
+      15,
+      2,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.25318279182646697,
+      0.24191409398056302,
+      0.3236569658859657
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 91,
+    "silhouette": 0.026817329227924347,
+    "sizes": [
+      61,
+      4,
+      2,
+      2,
+      5,
+      1,
+      6,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.022977633401751518,
+    "sizes": [
+      11,
+      10,
+      11,
+      3,
+      2,
+      2,
+      6,
+      3,
+      4,
+      7,
+      5,
+      1,
+      4,
+      3,
+      1,
+      1,
+      1,
+      8,
+      2,
+      6
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.02480541169643402,
+    "sizes": [
+      1,
+      4,
+      2,
+      4,
+      7,
+      6,
+      4,
+      4,
+      9,
+      4,
+      10,
+      1,
+      10,
+      4,
+      2,
+      8,
+      2,
+      4,
+      1,
+      4
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.0449274443089962,
+    "sizes": [
+      5,
+      4,
+      5,
+      14,
+      12,
+      4,
+      6,
+      2,
+      3,
+      3,
+      1,
+      6,
+      1,
+      1,
+      6,
+      1,
+      6,
+      7,
+      2,
+      2
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.20201935474961627,
+      0.2889063973237927,
+      0.1871261132014184
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 91,
+    "silhouette": 0.034178510308265686,
+    "sizes": [
+      5,
+      9,
+      2,
+      4,
+      47,
+      1,
+      6,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.05429823696613312,
+    "sizes": [
+      26,
+      28,
+      27,
+      10
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.03977897763252258,
+    "sizes": [
+      23,
+      29,
+      25,
+      14
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.04139234498143196,
+    "sizes": [
+      26,
+      19,
+      24,
+      22
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.2941889990457861,
+      0.29651218722942774,
+      0.28703317946239604
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 91,
+    "silhouette": 0.08373667299747467,
+    "sizes": [
+      87,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.030441001057624817,
+    "sizes": [
+      21,
+      9,
+      16,
+      20,
+      4,
+      21
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.04124771058559418,
+    "sizes": [
+      5,
+      21,
+      22,
+      21,
+      8,
+      14
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.04929892718791962,
+    "sizes": [
+      21,
+      27,
+      6,
+      20,
+      12,
+      5
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.24954572986069049,
+      0.20711312753777253,
+      0.25455610041718507
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 91,
+    "silhouette": 0.045972712337970734,
+    "sizes": [
+      83,
+      2,
+      3,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.02001982182264328,
+    "sizes": [
+      14,
+      12,
+      18,
+      16,
+      8,
+      8,
+      5,
+      10
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.006614231038838625,
+    "sizes": [
+      20,
+      9,
+      3,
+      20,
+      2,
+      6,
+      12,
+      19
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.01999884657561779,
+    "sizes": [
+      15,
+      10,
+      7,
+      10,
+      13,
+      17,
+      10,
+      9
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.19744342804502973,
+      0.24971198693595112,
+      0.2543981493173587
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 91,
+    "silhouette": 0.039175160229206085,
+    "sizes": [
+      79,
+      2,
+      3,
+      1,
+      1,
+      1,
+      3,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.03587513044476509,
+    "sizes": [
+      15,
+      3,
+      11,
+      27,
+      6,
+      9,
+      11,
+      3,
+      3,
+      3
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.030762678012251854,
+    "sizes": [
+      5,
+      14,
+      9,
+      10,
+      9,
+      10,
+      9,
+      12,
+      10,
+      3
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.0264300350099802,
+    "sizes": [
+      3,
+      15,
+      8,
+      12,
+      8,
+      17,
+      7,
+      17,
+      3,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.22633501946397483,
+      0.14134208387034763,
+      0.20398688960629824
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 91,
+    "silhouette": 0.029619526118040085,
+    "sizes": [
+      74,
+      2,
+      3,
+      3,
+      2,
+      1,
+      3,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.01606603153049946,
+    "sizes": [
+      2,
+      7,
+      6,
+      2,
+      6,
+      18,
+      6,
+      9,
+      6,
+      2,
+      2,
+      7,
+      6,
+      5,
+      7
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.02094322443008423,
+    "sizes": [
+      19,
+      10,
+      11,
+      7,
+      3,
+      7,
+      7,
+      6,
+      3,
+      3,
+      2,
+      6,
+      3,
+      2,
+      2
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.010860673151910305,
+    "sizes": [
+      6,
+      6,
+      13,
+      6,
+      5,
+      4,
+      6,
+      10,
+      10,
+      7,
+      4,
+      1,
+      6,
+      3,
+      4
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.4184626914832475,
+      0.3388647778198508,
+      0.3542078993226674
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 91,
+    "silhouette": 0.024460457265377045,
+    "sizes": [
+      49,
+      2,
+      18,
+      3,
+      2,
+      2,
+      6,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.007113396655768156,
+    "sizes": [
+      6,
+      8,
+      3,
+      3,
+      6,
+      1,
+      10,
+      9,
+      6,
+      1,
+      3,
+      3,
+      7,
+      3,
+      4,
+      2,
+      6,
+      7,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.023815611377358437,
+    "sizes": [
+      13,
+      8,
+      2,
+      2,
+      3,
+      3,
+      2,
+      5,
+      7,
+      4,
+      5,
+      1,
+      3,
+      7,
+      2,
+      3,
+      6,
+      2,
+      8,
+      5
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.01875947043299675,
+    "sizes": [
+      10,
+      2,
+      2,
+      2,
+      9,
+      6,
+      5,
+      2,
+      7,
+      3,
+      13,
+      1,
+      4,
+      4,
+      1,
+      4,
+      5,
+      4,
+      3,
+      4
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.4623587660276755,
+      0.38894066480273376,
+      0.40889229350196593
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 91,
+    "silhouette": 0.018676623702049255,
+    "sizes": [
+      38,
+      2,
+      6,
+      3,
+      16,
+      2,
+      2,
+      6,
+      5,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.04666496813297272,
+    "sizes": [
+      28,
+      8,
+      11,
+      44
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.04303363338112831,
+    "sizes": [
+      14,
+      33,
+      25,
+      19
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.04011014476418495,
+    "sizes": [
+      9,
+      27,
+      28,
+      27
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.5509087441874111,
+      0.3548231666184832,
+      0.32005290356008237
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 91,
+    "silhouette": 0.04492521658539772,
+    "sizes": [
+      82,
+      2,
+      2,
+      5
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.03020612709224224,
+    "sizes": [
+      6,
+      21,
+      29,
+      12,
+      8,
+      15
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.03650859370827675,
+    "sizes": [
+      6,
+      13,
+      22,
+      24,
+      8,
+      18
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.02310202084481716,
+    "sizes": [
+      17,
+      14,
+      20,
+      17,
+      10,
+      13
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.3317388552395632,
+      0.12010719715515242,
+      0.2186105985476437
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 91,
+    "silhouette": 0.02961534447968006,
+    "sizes": [
+      72,
+      2,
+      9,
+      5,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.016849447041749954,
+    "sizes": [
+      5,
+      12,
+      16,
+      19,
+      8,
+      12,
+      7,
+      12
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.02462395653128624,
+    "sizes": [
+      11,
+      16,
+      19,
+      4,
+      11,
+      7,
+      14,
+      9
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.026978539302945137,
+    "sizes": [
+      10,
+      16,
+      12,
+      9,
+      6,
+      15,
+      11,
+      12
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.19011616973753392,
+      0.23916113168444655,
+      0.20134042207856473
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 91,
+    "silhouette": 0.030877362936735153,
+    "sizes": [
+      9,
+      2,
+      2,
+      9,
+      1,
+      59,
+      4,
+      5
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.022738229483366013,
+    "sizes": [
+      7,
+      12,
+      10,
+      8,
+      15,
+      8,
+      6,
+      7,
+      11,
+      7
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.02186918817460537,
+    "sizes": [
+      8,
+      13,
+      13,
+      4,
+      7,
+      7,
+      11,
+      9,
+      9,
+      10
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.03362428769469261,
+    "sizes": [
+      5,
+      10,
+      16,
+      12,
+      6,
+      10,
+      5,
+      10,
+      3,
+      14
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.22780231208645454,
+      0.254558496521053,
+      0.28646925352557656
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 91,
+    "silhouette": 0.02122078463435173,
+    "sizes": [
+      59,
+      2,
+      6,
+      9,
+      1,
+      1,
+      4,
+      5,
+      3,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.01842155121266842,
+    "sizes": [
+      4,
+      5,
+      4,
+      10,
+      3,
+      9,
+      11,
+      6,
+      5,
+      8,
+      3,
+      11,
+      3,
+      2,
+      7
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.024247631430625916,
+    "sizes": [
+      5,
+      11,
+      3,
+      6,
+      11,
+      3,
+      3,
+      7,
+      4,
+      5,
+      8,
+      3,
+      9,
+      9,
+      4
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.018204912543296814,
+    "sizes": [
+      3,
+      5,
+      4,
+      4,
+      5,
+      13,
+      6,
+      5,
+      11,
+      5,
+      5,
+      9,
+      5,
+      7,
+      4
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.3705660529552925,
+      0.24840394660475915,
+      0.2791676547308513
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 91,
+    "silhouette": 0.04372493922710419,
+    "sizes": [
+      5,
+      19,
+      13,
+      3,
+      27,
+      3,
+      4,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      6,
+      4
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.01622949354350567,
+    "sizes": [
+      2,
+      5,
+      1,
+      4,
+      14,
+      2,
+      3,
+      5,
+      2,
+      8,
+      8,
+      7,
+      4,
+      7,
+      5,
+      4,
+      1,
+      4,
+      4,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.015961596742272377,
+    "sizes": [
+      1,
+      12,
+      3,
+      3,
+      3,
+      4,
+      6,
+      12,
+      4,
+      1,
+      3,
+      6,
+      5,
+      2,
+      2,
+      5,
+      6,
+      1,
+      8,
+      4
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.020367905497550964,
+    "sizes": [
+      2,
+      9,
+      6,
+      9,
+      2,
+      8,
+      3,
+      4,
+      7,
+      1,
+      5,
+      7,
+      2,
+      3,
+      1,
+      2,
+      10,
+      3,
+      6,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.42082449365832814,
+      0.32179987384061864,
+      0.379398150662506
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 91,
+    "silhouette": 0.04405570775270462,
+    "sizes": [
+      3,
+      2,
+      4,
+      8,
+      27,
+      2,
+      2,
+      11,
+      8,
+      2,
+      1,
+      1,
+      1,
+      6,
+      4,
+      1,
+      1,
+      1,
+      5,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.0515766441822052,
+    "sizes": [
+      11,
+      28,
+      12,
+      40
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.043883953243494034,
+    "sizes": [
+      28,
+      18,
+      30,
+      15
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.05021226778626442,
+    "sizes": [
+      20,
+      30,
+      26,
+      15
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.22783350417337825,
+      0.321782640136229,
+      0.1779710711493354
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 91,
+    "silhouette": 0.047122541815042496,
+    "sizes": [
+      79,
+      10,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.03741861507296562,
+    "sizes": [
+      7,
+      24,
+      15,
+      17,
+      13,
+      15
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.043675899505615234,
+    "sizes": [
+      8,
+      9,
+      24,
+      19,
+      17,
+      14
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.04230945184826851,
+    "sizes": [
+      17,
+      15,
+      28,
+      12,
+      7,
+      12
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.20024889983706043,
+      0.21467496671906694,
+      0.21736772047776576
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 91,
+    "silhouette": 0.035609886050224304,
+    "sizes": [
+      10,
+      68,
+      6,
+      1,
+      5,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.03895370662212372,
+    "sizes": [
+      14,
+      16,
+      7,
+      10,
+      5,
+      12,
+      8,
+      19
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.050016019493341446,
+    "sizes": [
+      6,
+      12,
+      12,
+      8,
+      13,
+      10,
+      10,
+      20
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.03708173334598541,
+    "sizes": [
+      17,
+      16,
+      3,
+      15,
+      5,
+      12,
+      11,
+      12
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.30840677074374984,
+      0.24201152196417267,
+      0.2974401221668542
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 91,
+    "silhouette": 0.023103302344679832,
+    "sizes": [
+      5,
+      8,
+      6,
+      3,
+      65,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.04809531569480896,
+    "sizes": [
+      2,
+      10,
+      13,
+      26,
+      13,
+      12,
+      3,
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.06005805358290672,
+    "sizes": [
+      2,
+      12,
+      7,
+      7,
+      11,
+      12,
+      21,
+      4,
+      5,
+      10
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.03897529095411301,
+    "sizes": [
+      2,
+      18,
+      13,
+      20,
+      7,
+      7,
+      6,
+      6,
+      6,
+      6
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.5069996130295236,
+      0.3082778874464044,
+      0.3142154824447823
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 91,
+    "silhouette": 0.01537990476936102,
+    "sizes": [
+      65,
+      4,
+      6,
+      3,
+      6,
+      1,
+      2,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.04142047464847565,
+    "sizes": [
+      4,
+      4,
+      12,
+      6,
+      5,
+      14,
+      3,
+      5,
+      6,
+      5,
+      3,
+      9,
+      4,
+      8,
+      3
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.03886377811431885,
+    "sizes": [
+      11,
+      3,
+      8,
+      6,
+      14,
+      1,
+      8,
+      11,
+      2,
+      8,
+      4,
+      4,
+      5,
+      4,
+      2
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.05632191523909569,
+    "sizes": [
+      5,
+      18,
+      8,
+      6,
+      7,
+      3,
+      5,
+      9,
+      5,
+      5,
+      5,
+      4,
+      2,
+      7,
+      2
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.267229034861621,
+      0.39757698132256436,
+      0.38387963460505103
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 91,
+    "silhouette": 0.045716848224401474,
+    "sizes": [
+      34,
+      6,
+      2,
+      3,
+      2,
+      24,
+      5,
+      1,
+      1,
+      2,
+      2,
+      1,
+      2,
+      2,
+      4
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.04850460961461067,
+    "sizes": [
+      2,
+      6,
+      6,
+      3,
+      3,
+      3,
+      8,
+      5,
+      1,
+      6,
+      6,
+      11,
+      2,
+      11,
+      4,
+      2,
+      2,
+      4,
+      2,
+      4
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.062160708010196686,
+    "sizes": [
+      4,
+      2,
+      5,
+      4,
+      7,
+      2,
+      5,
+      5,
+      17,
+      3,
+      10,
+      3,
+      6,
+      1,
+      2,
+      1,
+      5,
+      2,
+      2,
+      5
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.03689422830939293,
+    "sizes": [
+      2,
+      8,
+      4,
+      4,
+      4,
+      4,
+      6,
+      4,
+      12,
+      11,
+      3,
+      2,
+      2,
+      3,
+      4,
+      2,
+      8,
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.37097703271545673,
+      0.3646948747271026,
+      0.3804976760362981
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_E",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 91,
+    "silhouette": 0.07429295033216476,
+    "sizes": [
+      19,
+      12,
+      5,
+      3,
+      2,
+      2,
+      2,
+      9,
+      12,
+      6,
+      2,
+      1,
+      2,
+      1,
+      4,
+      1,
+      4,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.05030552297830582,
+    "sizes": [
+      15,
+      18,
+      20,
+      38
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.04587709158658981,
+    "sizes": [
+      19,
+      30,
+      24,
+      18
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.03571352735161781,
+    "sizes": [
+      13,
+      24,
+      30,
+      24
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.3379778051787916,
+      0.1553883576505121,
+      0.2866511857012174
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 91,
+    "silhouette": 0.061172641813755035,
+    "sizes": [
+      81,
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.04866499826312065,
+    "sizes": [
+      24,
+      15,
+      22,
+      2,
+      13,
+      15
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.03242439031600952,
+    "sizes": [
+      21,
+      13,
+      22,
+      6,
+      17,
+      12
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.03463449329137802,
+    "sizes": [
+      19,
+      7,
+      14,
+      24,
+      21,
+      6
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.14437139001942048,
+      0.2158134896165663,
+      0.2036706721742396
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 91,
+    "silhouette": 0.01733192428946495,
+    "sizes": [
+      80,
+      5,
+      3,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.0386238731443882,
+    "sizes": [
+      3,
+      24,
+      9,
+      10,
+      7,
+      28,
+      7,
+      3
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.03524179384112358,
+    "sizes": [
+      25,
+      7,
+      7,
+      9,
+      9,
+      22,
+      3,
+      9
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.01855396293103695,
+    "sizes": [
+      1,
+      9,
+      12,
+      7,
+      17,
+      18,
+      7,
+      20
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.1513376325735821,
+      0.15221859190556492,
+      0.15641144105170313
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 91,
+    "silhouette": 0.0173953864723444,
+    "sizes": [
+      72,
+      3,
+      5,
+      5,
+      1,
+      1,
+      3,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.03767986223101616,
+    "sizes": [
+      28,
+      4,
+      7,
+      14,
+      5,
+      6,
+      13,
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.04412428289651871,
+    "sizes": [
+      2,
+      13,
+      8,
+      9,
+      20,
+      6,
+      19,
+      5,
+      3,
+      6
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.03001144900918007,
+    "sizes": [
+      4,
+      14,
+      4,
+      3,
+      14,
+      18,
+      7,
+      5,
+      14,
+      8
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.26874858064553697,
+      0.2843108123864581,
+      0.23912534938837818
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 91,
+    "silhouette": 0.011189036071300507,
+    "sizes": [
+      67,
+      5,
+      5,
+      5,
+      1,
+      1,
+      3,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.039324257522821426,
+    "sizes": [
+      3,
+      5,
+      12,
+      8,
+      5,
+      10,
+      4,
+      15,
+      9,
+      2,
+      2,
+      4,
+      1,
+      3,
+      8
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.02542959153652191,
+    "sizes": [
+      9,
+      3,
+      9,
+      4,
+      11,
+      17,
+      1,
+      7,
+      3,
+      2,
+      5,
+      3,
+      5,
+      7,
+      5
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.03401889652013779,
+    "sizes": [
+      4,
+      13,
+      8,
+      7,
+      6,
+      3,
+      6,
+      6,
+      4,
+      3,
+      5,
+      10,
+      7,
+      6,
+      3
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.3383831612816732,
+      0.24622737176076065,
+      0.17962087617562497
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 91,
+    "silhouette": 0.025561528280377388,
+    "sizes": [
+      23,
+      4,
+      37,
+      2,
+      6,
+      5,
+      3,
+      1,
+      4,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 91,
+    "silhouette": 0.03331676498055458,
+    "sizes": [
+      1,
+      7,
+      5,
+      4,
+      6,
+      8,
+      6,
+      4,
+      5,
+      4,
+      6,
+      8,
+      2,
+      5,
+      4,
+      4,
+      3,
+      3,
+      5,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 91,
+    "silhouette": 0.023068439215421677,
+    "sizes": [
+      6,
+      2,
+      3,
+      2,
+      8,
+      1,
+      7,
+      9,
+      5,
+      2,
+      6,
+      5,
+      2,
+      5,
+      6,
+      10,
+      2,
+      4,
+      2,
+      4
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 91,
+    "silhouette": 0.033537350594997406,
+    "sizes": [
+      4,
+      4,
+      7,
+      10,
+      11,
+      4,
+      3,
+      7,
+      5,
+      4,
+      3,
+      6,
+      2,
+      3,
+      5,
+      2,
+      2,
+      7,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.26309070319377953,
+      0.3589386447524201,
+      0.2399315609370887
+    ]
+  },
+  {
+    "cohort": "historical_common",
+    "method": "old_G",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 91,
+    "silhouette": 0.03536298871040344,
+    "sizes": [
+      29,
+      4,
+      20,
+      2,
+      6,
+      4,
+      3,
+      6,
+      4,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 30,
+    "silhouette": 0.05726464092731476,
+    "sizes": [
+      7,
+      6,
+      8,
+      9
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 30,
+    "silhouette": 0.07037150114774704,
+    "sizes": [
+      4,
+      10,
+      8,
+      8
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 30,
+    "silhouette": 0.059803321957588196,
+    "sizes": [
+      6,
+      13,
+      5,
+      6
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.410663558889941,
+      0.25494875754597784,
+      0.16741252771160653
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 30,
+    "silhouette": 0.07951637357473373,
+    "sizes": [
+      15,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 30,
+    "silhouette": 0.048683445900678635,
+    "sizes": [
+      6,
+      8,
+      5,
+      3,
+      4,
+      4
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 30,
+    "silhouette": 0.08646176755428314,
+    "sizes": [
+      2,
+      9,
+      5,
+      6,
+      4,
+      4
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 30,
+    "silhouette": 0.09093768149614334,
+    "sizes": [
+      2,
+      5,
+      6,
+      9,
+      6,
+      2
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.25966038757591,
+      0.29284337076102984,
+      0.6971196130167107
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 30,
+    "silhouette": 0.09888489544391632,
+    "sizes": [
+      5,
+      5,
+      5,
+      2,
+      10,
+      3
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 30,
+    "silhouette": 0.06599672883749008,
+    "sizes": [
+      3,
+      6,
+      6,
+      3,
+      2,
+      4,
+      2,
+      4
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 30,
+    "silhouette": 0.07698391377925873,
+    "sizes": [
+      2,
+      6,
+      2,
+      3,
+      6,
+      3,
+      5,
+      3
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 30,
+    "silhouette": 0.06587639451026917,
+    "sizes": [
+      4,
+      2,
+      4,
+      4,
+      2,
+      8,
+      2,
+      4
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.6527616840478949,
+      0.46944617299315494,
+      0.6348148148148148
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 30,
+    "silhouette": 0.10581386089324951,
+    "sizes": [
+      5,
+      2,
+      3,
+      4,
+      10,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 30,
+    "silhouette": 0.06577636301517487,
+    "sizes": [
+      1,
+      3,
+      6,
+      4,
+      4,
+      4,
+      3,
+      2,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 30,
+    "silhouette": 0.07646965235471725,
+    "sizes": [
+      2,
+      2,
+      4,
+      5,
+      3,
+      2,
+      3,
+      5,
+      2,
+      2
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 30,
+    "silhouette": 0.07069411873817444,
+    "sizes": [
+      3,
+      3,
+      7,
+      2,
+      3,
+      5,
+      2,
+      2,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.49313827032625585,
+      0.5176371864416939,
+      0.4967009600050033
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 30,
+    "silhouette": 0.08861902356147766,
+    "sizes": [
+      2,
+      10,
+      3,
+      4,
+      1,
+      3,
+      2,
+      1,
+      3,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 30,
+    "silhouette": 0.06550059467554092,
+    "sizes": [
+      2,
+      4,
+      6,
+      1,
+      2,
+      2,
+      1,
+      4,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 30,
+    "silhouette": 0.06155633181333542,
+    "sizes": [
+      2,
+      4,
+      3,
+      2,
+      2,
+      1,
+      4,
+      2,
+      1,
+      2,
+      2,
+      1,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 30,
+    "silhouette": 0.05770295485854149,
+    "sizes": [
+      1,
+      5,
+      2,
+      4,
+      2,
+      1,
+      1,
+      2,
+      3,
+      3,
+      1,
+      1,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.6189663915909824,
+      0.7560712591122806,
+      0.6473449533846778
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 30,
+    "silhouette": 0.06266668438911438,
+    "sizes": [
+      5,
+      3,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1,
+      1,
+      1,
+      1,
+      4,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 30,
+    "silhouette": 0.05839191749691963,
+    "sizes": [
+      1,
+      1,
+      2,
+      1,
+      3,
+      3,
+      2,
+      1,
+      2,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 30,
+    "silhouette": 0.06070949509739876,
+    "sizes": [
+      1,
+      2,
+      1,
+      2,
+      3,
+      2,
+      1,
+      2,
+      3,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 30,
+    "silhouette": 0.050570547580718994,
+    "sizes": [
+      1,
+      3,
+      1,
+      1,
+      2,
+      1,
+      1,
+      3,
+      2,
+      1,
+      1,
+      3,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.5470036921329168,
+      0.6035362741523879,
+      0.4646407270661744
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "R",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 30,
+    "silhouette": 0.05839191749691963,
+    "sizes": [
+      2,
+      3,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 28,
+    "silhouette": 0.10190560668706894,
+    "sizes": [
+      9,
+      6,
+      8,
+      5
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 28,
+    "silhouette": 0.07677903026342392,
+    "sizes": [
+      7,
+      8,
+      10,
+      3
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 28,
+    "silhouette": 0.08831926435232162,
+    "sizes": [
+      7,
+      9,
+      2,
+      10
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.6436785943214811,
+      0.41462335459606947,
+      0.3203639109640764
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 28,
+    "silhouette": 0.0720687136054039,
+    "sizes": [
+      24,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 28,
+    "silhouette": 0.045768193900585175,
+    "sizes": [
+      11,
+      2,
+      2,
+      7,
+      3,
+      3
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 28,
+    "silhouette": 0.06637760996818542,
+    "sizes": [
+      1,
+      6,
+      6,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 28,
+    "silhouette": 0.05752537399530411,
+    "sizes": [
+      3,
+      7,
+      7,
+      2,
+      6,
+      3
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.3181818181818182,
+      0.23048327137546468,
+      0.22841396203306796
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 28,
+    "silhouette": 0.05369829013943672,
+    "sizes": [
+      21,
+      2,
+      1,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 28,
+    "silhouette": 0.05704845115542412,
+    "sizes": [
+      1,
+      5,
+      1,
+      4,
+      4,
+      2,
+      7,
+      4
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 28,
+    "silhouette": 0.07189949601888657,
+    "sizes": [
+      3,
+      9,
+      2,
+      6,
+      2,
+      4,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 28,
+    "silhouette": 0.05422288551926613,
+    "sizes": [
+      4,
+      5,
+      7,
+      4,
+      5,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.3096081470002214,
+      0.8538978414699411,
+      0.2726435037129384
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 28,
+    "silhouette": 0.075138621032238,
+    "sizes": [
+      12,
+      2,
+      9,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 28,
+    "silhouette": 0.07697132974863052,
+    "sizes": [
+      4,
+      5,
+      2,
+      4,
+      1,
+      2,
+      2,
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 28,
+    "silhouette": 0.0959625095129013,
+    "sizes": [
+      1,
+      4,
+      2,
+      5,
+      4,
+      3,
+      2,
+      2,
+      4,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 28,
+    "silhouette": 0.058238230645656586,
+    "sizes": [
+      3,
+      4,
+      4,
+      1,
+      5,
+      2,
+      4,
+      1,
+      3,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.45058139534883723,
+      0.37802717070289427,
+      0.6650915534554046
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 28,
+    "silhouette": 0.08831585198640823,
+    "sizes": [
+      5,
+      7,
+      9,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 28,
+    "silhouette": 0.045772433280944824,
+    "sizes": [
+      1,
+      1,
+      3,
+      3,
+      4,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      3
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 28,
+    "silhouette": 0.068402960896492,
+    "sizes": [
+      1,
+      4,
+      3,
+      4,
+      3,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 28,
+    "silhouette": 0.08451271057128906,
+    "sizes": [
+      2,
+      2,
+      2,
+      5,
+      1,
+      1,
+      4,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.6301369863013698,
+      0.4821917808219178,
+      0.5656281920326864
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 28,
+    "silhouette": 0.057276349514722824,
+    "sizes": [
+      8,
+      3,
+      2,
+      1,
+      2,
+      1,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 28,
+    "silhouette": 0.050616126507520676,
+    "sizes": [
+      1,
+      2,
+      3,
+      3,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 28,
+    "silhouette": 0.044060561805963516,
+    "sizes": [
+      1,
+      1,
+      1,
+      3,
+      1,
+      3,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 28,
+    "silhouette": 0.04574430361390114,
+    "sizes": [
+      1,
+      4,
+      1,
+      2,
+      3,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.6918478260869565,
+      0.812778603268945,
+      0.812778603268945
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "E",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 28,
+    "silhouette": 0.04374708980321884,
+    "sizes": [
+      4,
+      2,
+      3,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 27,
+    "silhouette": 0.07298776507377625,
+    "sizes": [
+      2,
+      9,
+      11,
+      5
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 27,
+    "silhouette": 0.06147708371281624,
+    "sizes": [
+      6,
+      9,
+      7,
+      5
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 27,
+    "silhouette": 0.05982424318790436,
+    "sizes": [
+      7,
+      9,
+      6,
+      5
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.1638665997993982,
+      0.38390170511534605,
+      0.2998458609121407
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 27,
+    "silhouette": 0.05635862052440643,
+    "sizes": [
+      20,
+      5,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 27,
+    "silhouette": 0.0689648985862732,
+    "sizes": [
+      8,
+      4,
+      6,
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 27,
+    "silhouette": 0.07036992162466049,
+    "sizes": [
+      2,
+      7,
+      3,
+      3,
+      6,
+      6
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 27,
+    "silhouette": 0.07159561663866043,
+    "sizes": [
+      7,
+      5,
+      4,
+      4,
+      3,
+      4
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.3333430733717091,
+      0.43326732673267326,
+      0.31045490822027133
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 27,
+    "silhouette": 0.09132366627454758,
+    "sizes": [
+      4,
+      8,
+      8,
+      1,
+      5,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 27,
+    "silhouette": 0.08026092499494553,
+    "sizes": [
+      3,
+      3,
+      10,
+      4,
+      3,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 27,
+    "silhouette": 0.07324758172035217,
+    "sizes": [
+      9,
+      3,
+      3,
+      2,
+      3,
+      4,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 27,
+    "silhouette": 0.08273372799158096,
+    "sizes": [
+      3,
+      10,
+      2,
+      3,
+      3,
+      1,
+      3,
+      2
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.7488971026588769,
+      0.698470877956589,
+      0.6177627200677597
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 27,
+    "silhouette": 0.07376641035079956,
+    "sizes": [
+      8,
+      5,
+      3,
+      1,
+      7,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 27,
+    "silhouette": 0.07556094974279404,
+    "sizes": [
+      2,
+      3,
+      5,
+      5,
+      2,
+      3,
+      1,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 27,
+    "silhouette": 0.08493515849113464,
+    "sizes": [
+      2,
+      7,
+      3,
+      3,
+      1,
+      3,
+      3,
+      2,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 27,
+    "silhouette": 0.06668222695589066,
+    "sizes": [
+      6,
+      5,
+      2,
+      3,
+      2,
+      2,
+      1,
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.674457429048414,
+      0.3566292240447432,
+      0.45158698272398556
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 27,
+    "silhouette": 0.07766763120889664,
+    "sizes": [
+      3,
+      3,
+      3,
+      5,
+      7,
+      1,
+      1,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 27,
+    "silhouette": 0.05503740534186363,
+    "sizes": [
+      2,
+      4,
+      3,
+      2,
+      2,
+      2,
+      1,
+      3,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 27,
+    "silhouette": 0.05636079981923103,
+    "sizes": [
+      1,
+      6,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 27,
+    "silhouette": 0.05579688027501106,
+    "sizes": [
+      4,
+      2,
+      2,
+      2,
+      3,
+      3,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.5234575350731634,
+      0.8145473758365621,
+      0.5234575350731634
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 27,
+    "silhouette": 0.06460246443748474,
+    "sizes": [
+      6,
+      2,
+      2,
+      3,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 27,
+    "silhouette": 0.045012786984443665,
+    "sizes": [
+      1,
+      2,
+      1,
+      2,
+      2,
+      3,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 27,
+    "silhouette": 0.04697155952453613,
+    "sizes": [
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 27,
+    "silhouette": 0.041450660675764084,
+    "sizes": [
+      1,
+      2,
+      3,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.8720845481049563,
+      0.7441690962099126,
+      0.8720845481049563
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "G",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 27,
+    "silhouette": 0.040382176637649536,
+    "sizes": [
+      5,
+      2,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 42,
+    "n": 30,
+    "silhouette": 0.060611192137002945,
+    "sizes": [
+      7,
+      5,
+      6,
+      12
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 43,
+    "n": 30,
+    "silhouette": 0.050615694373846054,
+    "sizes": [
+      10,
+      10,
+      4,
+      6
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 4,
+    "seed": 44,
+    "n": 30,
+    "silhouette": 0.06980086863040924,
+    "sizes": [
+      7,
+      9,
+      9,
+      5
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 4,
+    "ari": [
+      0.35480517320247845,
+      0.438136062339432,
+      0.2566643882433356
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 4,
+    "n": 30,
+    "silhouette": 0.08274109661579132,
+    "sizes": [
+      6,
+      7,
+      2,
+      15
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 42,
+    "n": 30,
+    "silhouette": 0.05817519500851631,
+    "sizes": [
+      4,
+      3,
+      6,
+      3,
+      3,
+      11
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 43,
+    "n": 30,
+    "silhouette": 0.07335738837718964,
+    "sizes": [
+      3,
+      4,
+      6,
+      10,
+      4,
+      3
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 6,
+    "seed": 44,
+    "n": 30,
+    "silhouette": 0.07185758650302887,
+    "sizes": [
+      2,
+      5,
+      5,
+      10,
+      5,
+      3
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 6,
+    "ari": [
+      0.47931303669008585,
+      0.5643239509583837,
+      0.494827678619285
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 6,
+    "n": 30,
+    "silhouette": 0.062103163450956345,
+    "sizes": [
+      5,
+      15,
+      2,
+      6,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 42,
+    "n": 30,
+    "silhouette": 0.06666625291109085,
+    "sizes": [
+      2,
+      4,
+      9,
+      4,
+      3,
+      4,
+      3,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 43,
+    "n": 30,
+    "silhouette": 0.06467326730489731,
+    "sizes": [
+      4,
+      7,
+      2,
+      5,
+      6,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 8,
+    "seed": 44,
+    "n": 30,
+    "silhouette": 0.06577930599451065,
+    "sizes": [
+      2,
+      6,
+      2,
+      3,
+      9,
+      3,
+      3,
+      2
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 8,
+    "ari": [
+      0.3530286641427799,
+      0.4357244778829939,
+      0.30427828868452617
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 8,
+    "n": 30,
+    "silhouette": 0.08138804137706757,
+    "sizes": [
+      3,
+      5,
+      2,
+      6,
+      1,
+      1,
+      2,
+      10
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 42,
+    "n": 30,
+    "silhouette": 0.059257399290800095,
+    "sizes": [
+      3,
+      3,
+      7,
+      1,
+      4,
+      4,
+      2,
+      3,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 43,
+    "n": 30,
+    "silhouette": 0.07723879814147949,
+    "sizes": [
+      1,
+      2,
+      6,
+      6,
+      3,
+      2,
+      4,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 10,
+    "seed": 44,
+    "n": 30,
+    "silhouette": 0.07976992428302765,
+    "sizes": [
+      3,
+      5,
+      2,
+      1,
+      3,
+      5,
+      4,
+      3,
+      1,
+      3
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 10,
+    "ari": [
+      0.4618040569702201,
+      0.5872738958773299,
+      0.815622161671208
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 10,
+    "n": 30,
+    "silhouette": 0.07970510423183441,
+    "sizes": [
+      6,
+      4,
+      2,
+      10,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 42,
+    "n": 30,
+    "silhouette": 0.05438496172428131,
+    "sizes": [
+      2,
+      2,
+      4,
+      1,
+      3,
+      1,
+      3,
+      2,
+      2,
+      1,
+      5,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 43,
+    "n": 30,
+    "silhouette": 0.057856235653162,
+    "sizes": [
+      2,
+      1,
+      1,
+      3,
+      2,
+      3,
+      2,
+      2,
+      4,
+      1,
+      1,
+      1,
+      2,
+      1,
+      4
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 15,
+    "seed": 44,
+    "n": 30,
+    "silhouette": 0.0671825036406517,
+    "sizes": [
+      2,
+      3,
+      1,
+      4,
+      2,
+      3,
+      1,
+      3,
+      3,
+      2,
+      1,
+      1,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 15,
+    "ari": [
+      0.5027088821512004,
+      0.5591811917308472,
+      0.5078920433119647
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 15,
+    "n": 30,
+    "silhouette": 0.07226843386888504,
+    "sizes": [
+      3,
+      2,
+      4,
+      5,
+      2,
+      1,
+      2,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 42,
+    "n": 30,
+    "silhouette": 0.06295983493328094,
+    "sizes": [
+      1,
+      2,
+      1,
+      2,
+      3,
+      1,
+      1,
+      2,
+      1,
+      1,
+      3,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 43,
+    "n": 30,
+    "silhouette": 0.058568015694618225,
+    "sizes": [
+      2,
+      2,
+      4,
+      1,
+      3,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "kmeans",
+    "k": 20,
+    "seed": 44,
+    "n": 30,
+    "silhouette": 0.05095140263438225,
+    "sizes": [
+      1,
+      1,
+      2,
+      4,
+      2,
+      1,
+      3,
+      2,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "stability",
+    "k": 20,
+    "ari": [
+      0.6828868234007655,
+      0.7325428194993412,
+      0.46494464944649444
+    ]
+  },
+  {
+    "cohort": "development",
+    "method": "Q",
+    "algorithm": "average_link_cosine",
+    "k": 20,
+    "n": 30,
+    "silhouette": 0.052394382655620575,
+    "sizes": [
+      5,
+      3,
+      2,
+      3,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  }
+]

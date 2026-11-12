@@ -1,0 +1,25 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Roy spends 2 hours on sports activities in school every day. He goes to school 5 days a week. If he missed 2 days within a week, how many hours did he spend on sports in school that week?
+SOLUTION: Step 1: Calculate the total hours Roy spends on sports activities in school each week when he goes to school 5 days a week.
+- Hours per day: 2
+- Days per week: 5
+- Total hours per week: 2 * 5 = 10
+
+Step 2: Calculate the number of days Roy attended school during the week he missed.
+- Total days in a week: 7
+- Days missed: 2
+- Days attended: 7 - 2 = 5
+
+Step 3: Calculate the total hours Roy spent on sports activities in school during the week he attended school.
+- Hours per day attended: 2
+- Days attended: 5
+- Total hours attended: 2 * 5 = 10
+
+Step 4: Calculate the total hours Roy spent on sports activities in school that week.
+- Total hours attended: 10
+- Total hours missed: 0 (since he missed 2 days, he attended all 5 days)
+- Total hours for the week: 10 + 0 = 10
+
+#### 10
+This week, Roy spent a total of 10 hours on sports activities in school.

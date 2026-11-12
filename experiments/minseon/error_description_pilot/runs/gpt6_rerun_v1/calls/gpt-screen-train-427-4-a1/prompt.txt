@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Ever since she was a little girl, Sheila has dreamed of traveling the world. To help fund her dream, she bought a large piggy bank in December and started saving. By last week, she had saved $3,000. Pleased with her progress, she has decided to continue saving $276 per month, for 4 years. Today, Sheila’s family secretly added $7,000 into the piggy bank. At the end of 4 years, how much money will be in Sheila’s piggy bank?
+SOLUTION: Step 1: Calculate the total amount Sheila will save over 4 years, starting from her initial $3,000 and adding $276 each month for 4 years.
+
+Step 2: Convert 4 years to months: 4 years * 12 months/year = 48 months.
+
+Step 3: Calculate the total amount saved in 48 months: $276 * 48.
+
+Step 4: Add the amount her family added to the piggy bank: $3,000 + ($276 * 48) + $7,000.
+
+Step 5: Calculate the final amount in the piggy bank after 4 years.
+
+#### 12000
+#### 12000
+#### 12000
+#### 12000

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2860-4",
+  "response_sha256": "9033d374c13594e40e76baa716cfbc4cce045b4935c9a439a7a9428e23cdf989",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 1",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how many goals did they score per game on average?",
+  "observed_error": "The marked answer contradicts the correctly calculated average in the explanation.",
+  "violated_condition": "Average goals per game must equal (6 × 12) / 8.",
+  "error_description": "The response marks 1 as its answer, although its explanation correctly divides 72 goals by 8 games. The marked value does not equal the requested average; the written relation and arithmetic are correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text does not establish how the marked answer of 1 arose."
+}

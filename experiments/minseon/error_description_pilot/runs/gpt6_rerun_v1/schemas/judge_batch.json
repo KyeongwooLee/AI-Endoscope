@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pair_id": {
+            "type": "string"
+          },
+          "case1_error": {
+            "type": "string"
+          },
+          "case2_error": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "judgment": {
+            "type": "string",
+            "enum": [
+              "same",
+              "different",
+              "uncertain"
+            ]
+          }
+        },
+        "required": [
+          "pair_id",
+          "case1_error",
+          "case2_error",
+          "reason",
+          "judgment"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 5
+    }
+  },
+  "required": [
+    "results"
+  ],
+  "additionalProperties": false
+}

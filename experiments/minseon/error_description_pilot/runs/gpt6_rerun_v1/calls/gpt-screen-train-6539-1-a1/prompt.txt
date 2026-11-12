@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: American carmakers produce 5 650 000 cars each year. Then they distribute it to 5 car suppliers. The first supplier receives 1 000 000 cars each. The second supplier receives 500 000 cars more while the third car supplier receives the same number as the first and second suppliers combined. The fourth and the fifth supplier receive an equal number of cars. How many cars do the fourth and fourth suppliers each receive?
+SOLUTION: Step 1: Calculate the total number of cars distributed to the first three suppliers.
+- First supplier: 1,000,000 cars
+- Second supplier: 1,000,000 + 500,000 = 1,500,000 cars
+- Total for first three suppliers: 1,000,000 + 1,500,000 = 2,500,000 cars
+
+Step 2: Calculate the number of cars remaining for the fourth and fifth suppliers.
+- Total cars: 5,650,000
+- Cars for first three suppliers: 2,500,000
+- Remaining cars: 5,650,000 - 2,500,000 = 3,150,000 cars
+
+Step 3: Calculate the number of cars each of the fourth and fifth suppliers receive.
+- Total cars for fourth and fifth suppliers: 3,150,000
+- Each receives an equal number of cars: 3,150,000 / 2 = 1,575,000 cars
+
+#### 1,575,000
+The fourth and fifth suppliers each receive 1,575,000 cars.

@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Carla needs to drive her car to do a bunch of errands. She needs to drive 8 miles to the grocery store, 6 miles to pick up her kids from school, 12 miles to drop her kids off at soccer practice, and twice the distance from the school to soccer practice to get everyone home again. If Carla's car gets 25 miles per gallon, and gas costs $2.50, how much will Carla have to spend on gas for her trip?
+SOLUTION: To calculate the total distance Carla will drive, we sum up all the distances:
+- To the grocery store: 8 miles
+- To pick up her kids: 6 miles
+- To drop her kids off at soccer practice: 12 miles
+- To get everyone home again: 2 * 12 miles = 24 miles
+
+Total distance = 8 + 6 + 12 + 24 = 40 miles
+
+Next, we calculate the amount of gas needed:
+- Carla's car gets 25 miles per gallon.
+- Total distance = 40 miles.
+
+Gas needed = Total distance / Miles per gallon = 40 / 25 = 1.6 gallons
+
+Finally, we calculate the cost of the gas:
+- Gas costs $2.50 per gallon.
+
+Cost of gas = Gas needed * Cost per gallon = 1.6 * 2.50 = $4.00
+
+#### 4.00

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1593-4",
+  "response_sha256": "dc16d8a92c9e0d1dde0f135f284a556cf134cf33afdb0650ae7c80cda722f3ef",
+  "status": "no_error_observed",
+  "reference_review_needed": true,
+  "evidence_quote": "Yun's paperclips + (1/4) * Yun's paperclips + 7 = Marion's paperclips",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Marion has 1/4 more than what Yun currently has, plus 7.",
+  "observed_error": null,
+  "violated_condition": null,
+  "error_description": null,
+  "reference_review_reason": "The reference treats '1/4 more than' as '1/4 of' and omits Yun's current amount from Marion's total. The model uses the stated relation and executes the arithmetic correctly.",
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

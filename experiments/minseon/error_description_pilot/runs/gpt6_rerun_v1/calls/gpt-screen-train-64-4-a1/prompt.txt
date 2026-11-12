@@ -1,0 +1,27 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: James earns $20 an hour while working at his main job.  He earns 20% less while working his second job.  He works 30 hours at his main job and half that much at his second job.  How much does he earn per week?
+SOLUTION: Step 1: Calculate James's earnings from his main job.
+James earns $20 an hour and works 30 hours.
+Earnings from main job = $20/hour × 30 hours
+
+Step 2: Calculate James's hourly wage at his second job.
+James earns 20% less at his second job than at his main job.
+Hourly wage at second job = $20/hour - ($20/hour × 20%)
+
+Step 3: Calculate the number of hours James works at his second job.
+James works half the number of hours at his second job as he does at his main job.
+Number of hours at second job = 30 hours / 2
+
+Step 4: Calculate James's earnings from his second job.
+Earnings from second job = Hourly wage at second job × Number of hours at second job
+
+Step 5: Calculate total earnings per week.
+Total earnings per week = Earnings from main job + Earnings from second job
+
+Let's calculate the earnings from each job.
+#### 600
+#### 120
+#### 420
+#### 1020
+#### 1020

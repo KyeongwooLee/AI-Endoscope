@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5473-4",
+  "response_sha256": "4a982cadc6a87246204ee7f30446eb1fa5edcf39801ea658f8579505490dd056",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 1350",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "How much did she make over three months, assuming each month is 30 days long?",
+  "observed_error": "The reported total of $1,350 contradicts the correctly written monthly earnings expressions and summation relation.",
+  "violated_condition": "Total earnings must equal 10 × 30 + 2 × 10 × 30 + 20 × 15 dollars.",
+  "error_description": "The response reports $1,350 despite correctly expressing monthly earnings as $10/day × 30 days, 2 × $10/day × 30 days, and $20/day × 15 days. The reported total does not equal their sum; the text does not show which numerical operation produced the discrepancy.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The incorrect total is observable, but the particular arithmetic operation responsible is not shown."
+}

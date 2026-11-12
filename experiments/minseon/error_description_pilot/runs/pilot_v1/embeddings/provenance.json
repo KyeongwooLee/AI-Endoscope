@@ -1,0 +1,31 @@
+{
+  "model": "BAAI/bge-m3",
+  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "device": "cuda",
+  "precision": "float32",
+  "max_seq_length": 8192,
+  "modules": [
+    "Transformer",
+    "Pooling",
+    "Normalize"
+  ],
+  "pooling": {
+    "word_embedding_dimension": 1024,
+    "pooling_mode_cls_token": true,
+    "pooling_mode_mean_tokens": false,
+    "pooling_mode_max_tokens": false,
+    "pooling_mode_mean_sqrt_len_tokens": false,
+    "pooling_mode_weightedmean_tokens": false,
+    "pooling_mode_lasttoken": false,
+    "include_prompt": true
+  },
+  "normalize_embeddings": true,
+  "similarity": "cosine (dot product of L2-normalized vectors)",
+  "versions": {
+    "sentence-transformers": "5.1.2",
+    "transformers": "4.57.1",
+    "torch": "2.12.1",
+    "numpy": "1.23.5"
+  },
+  "tokenizer_class": "XLMRobertaTokenizerFast"
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2905-4",
+  "response_sha256": "9e1068f7fea5badb5960650d9cd17bfc0deafd89937df3efc2de786311de8298",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The rubber is longer than the pen by 3 cm, so \\( R = P_p + 3 \\).",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "A pen is longer than the rubber by 3 centimeters",
+  "observed_error": "The response reverses the length comparison between the pen and rubber.",
+  "violated_condition": "The rubber must be 3 centimeters shorter than the pen: R = P_p - 3.",
+  "error_description": "The response states that the rubber is 3 centimeters longer than the pen and adds 3 to the pen’s length. The question says the pen is longer, so the rubber’s length requires subtracting 3 centimeters. The subsequent arithmetic correctly executes the wrong relation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The initial heading gives an unexplained 30; it does not establish a specific mathematical error before the explicit reversed comparison."
+}

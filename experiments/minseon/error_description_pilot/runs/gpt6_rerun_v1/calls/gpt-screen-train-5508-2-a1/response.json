@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$180","check":"The total is 50×20 + 40×18 + 80 = 1800 beads. At $1 per 10 beads, the cost is 1800÷10 = $180.","evidence_quote":"Cost = 1800 × (10/10) = 1800 × 1 = $1800","error_description":"The solution uses $1 per bead instead of $0.10 per bead, making the cost ten times too high."}

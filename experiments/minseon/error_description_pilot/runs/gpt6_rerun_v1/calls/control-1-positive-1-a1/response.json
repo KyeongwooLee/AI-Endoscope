@@ -1,0 +1,1 @@
+{"case1_error":"Treats 8 more seniors as 8 seniors instead of 20 + 8 seniors.","case2_error":"Treats 12 more green apples as 12 green apples instead of 16 + 12 green apples.","reason":"Both mistake a comparative increase for the second group's count; the displayed additions are evaluated correctly.","judgment":"same"}

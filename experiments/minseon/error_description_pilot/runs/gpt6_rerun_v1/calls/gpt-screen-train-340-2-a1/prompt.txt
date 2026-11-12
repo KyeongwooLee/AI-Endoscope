@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Tom needs to lower a rope down 6 stories.   One story is 10 feet.  The only rope being sold is 20 feet long but you lose 25% when lashing them together.  How many pieces of rope will he need to buy?
+SOLUTION: Step 1: Calculate the total length of rope needed
+Total length needed = Number of stories * Length of one story
+Total length needed = 6 * 10 = 60 feet
+
+Step 2: Calculate the length of rope after losing 25%
+Length of rope after losing 25% = Total length needed * (1 - 0.25)
+Length of rope after losing 25% = 60 * 0.75 = 45 feet
+
+Step 3: Calculate the number of pieces needed
+Number of pieces needed = Length of rope after losing 25% / Length of one piece
+Number of pieces needed = 45 / 20 = 2.25
+
+Since Tom cannot buy a fraction of a piece of rope, he needs to round up to the nearest whole number.
+
+#### 3
+Tom will need to buy 3 pieces of rope.

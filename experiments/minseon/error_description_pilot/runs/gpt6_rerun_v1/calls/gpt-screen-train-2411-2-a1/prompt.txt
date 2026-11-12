@@ -1,0 +1,16 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Bo is learning words for the GRE.  He got 800 flashcards.  He knew 20% of the words on them.  He has 40 days to learn the rest.  How many words does he need to learn a day?
+SOLUTION: Step 1: Determine the number of words Bo already knew.
+Bo knew 20% of the 800 flashcards.
+20% of 800 = 0.20 * 800 = 160 words
+
+Step 2: Calculate the number of words Bo still needs to learn.
+Total flashcards - Words Bo already knew = Words Bo needs to learn
+800 - 160 = 640 words
+
+Step 3: Calculate the number of words Bo needs to learn per day.
+Days to learn the words / Words Bo needs to learn = Words Bo needs to learn per day
+40 days / 640 words = 0.0625 words per day
+
+#### 0.0625

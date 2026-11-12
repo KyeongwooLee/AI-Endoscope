@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: There is a playground that is surrounded by a square fence that has a side length of 27 yards. There is a 12 yard by 9 yard garden that has fencing around it. How many yards of fencing do the playground and garden have together?
+SOLUTION: #### 114
+
+Step 1: Calculate the perimeter of the square playground.
+- Side length of the playground = 27 yards
+- Perimeter of the playground = 4 × side length = 4 × 27 = 108 yards
+
+Step 2: Calculate the perimeter of the garden.
+- Dimensions of the garden = 12 yards by 9 yards
+- Perimeter of the garden = 2 × (length + width) = 2 × (12 + 9) = 2 × 21 = 42 yards
+
+Step 3: Add the perimeters of the playground and the garden to find the total length of the fencing.
+- Total length of the fencing = Perimeter of the playground + Perimeter of the garden
+- Total length of the fencing = 108 + 42 = 150 yards
+
+Therefore, the playground and garden together have a total of 150 yards of fencing.

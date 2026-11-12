@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7354-4",
+  "response_sha256": "0ee7b32ddd13953e91570a3e5435008fd53a60c97894a9fcbfc94ddd2bf2dfcb",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Gas consumption: \\(8 \\div 4 = 2\\) gallons.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Her lawn mower uses 2 gallons of gas every 4th time she cuts her lawn.",
+  "observed_error": "The response labels the number of four-cut groups as gallons, omitting the factor of 2 gallons per group.",
+  "violated_condition": "Gas consumption equals the number of cuts divided by 4, multiplied by 2 gallons.",
+  "error_description": "For the eight cuts in March, April, September, and October, the response correctly computes 8 divided by 4 as 2 but incorrectly calls that quantity gallons. It counts four-cut groups without multiplying by the specified 2 gallons per group, understating gas consumption.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5563-0",
+  "response_sha256": "5aac8165a5499b5aada10ce8a01e5f3c0a034fb041110b2adc6ca8de0270e622",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "3. The number of parking fine citations is double the number of littering citations:",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "he issued double the number of other citations for parking fines.",
+  "observed_error": "The response sets parking citations equal to twice littering citations alone.",
+  "violated_condition": "Parking citations must equal twice the combined littering and off-leash dog citations: P = 2(L + D).",
+  "error_description": "The response interprets parking fines as twice the littering citations alone, writing P = 2L. The question makes parking fines twice all other citations, which includes both littering and off-leash dogs. Its subsequent arithmetic correctly follows the written equation, but that equation omits dog citations from the doubled quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

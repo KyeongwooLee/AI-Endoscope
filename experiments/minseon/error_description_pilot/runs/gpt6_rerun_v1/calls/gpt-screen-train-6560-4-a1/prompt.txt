@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Three friends ate a total of 8 pounds of fruit. Mario had 8 ounces of oranges, while Lydia ate 24 ounces of apples. Nicolai ate peaches. How many pounds of peaches did Nicolai eat?
+SOLUTION: To find out how many pounds of peaches Nicolai ate, we need to follow these steps:
+
+1. **Convert the total weight of fruit to ounces**: 
+   - Mario's oranges: 8 ounces
+   - Lydia's apples: 24 ounces
+   - Total: 8 + 24 = 32 ounces
+
+2. **Convert pounds to ounces**: 
+   - 1 pound = 16 ounces
+   - Total weight in ounces: 32 * 16 = 512 ounces
+
+3. **Determine the weight of peaches Nicolai ate**: 
+   - Total weight of fruit: 8 pounds
+   - Weight of fruit not peaches: 8 * 16 = 128 ounces
+   - Weight of peaches: 512 - 128 = 384 ounces
+
+4. **Convert the weight of peaches back to pounds**: 
+   - 384 ounces / 16 = 24 pounds
+
+#### 24
+Nicolai ate 24 pounds of peaches.

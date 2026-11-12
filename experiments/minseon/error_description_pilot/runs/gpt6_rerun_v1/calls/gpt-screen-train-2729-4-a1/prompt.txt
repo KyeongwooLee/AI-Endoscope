@@ -1,0 +1,31 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: It takes 3 men an hour to complete a job. If they are hired to work on 5 such similar jobs by a company that pays each of them $10 per hour, calculate the total amount of money the three will earn when they complete the jobs?
+SOLUTION: To calculate the total amount of money the three men will earn, we first need to determine the total time they will take to complete the 5 jobs.
+
+1. **Time to complete one job:**
+   - It takes 3 men 1 hour to complete one job.
+
+2. **Time to complete 5 jobs:**
+   - If it takes 1 hour to complete 1 job, then for 5 jobs, it would take:
+     \[
+     1 \text{ hour/job} \times 5 \text{ jobs} = 5 \text{ hours}
+     \]
+
+3. **Total payment per hour:**
+   - Each man is paid $10 per hour.
+
+4. **Total earnings per man:**
+   - The three men working together for 5 hours would earn:
+     \[
+     5 \text{ hours} \times 3 \text{ men} \times \$10/\text{hour} = 15 \times \$10 = \$150
+     \]
+
+5. **Total earnings for all three men:**
+   - Since there are 3 men, the total earnings for all three men combined would be:
+     \[
+     3 \text{ men} \times \$150/\text{man} = \$450
+     \]
+
+#### 450
+The final answer is 450.

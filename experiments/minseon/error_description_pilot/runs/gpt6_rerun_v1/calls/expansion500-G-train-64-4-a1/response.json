@@ -1,0 +1,17 @@
+{
+  "source_id": "train-64-4",
+  "response_sha256": "9e461e594bf536158b11df7a610521b4d25a06693c06d709ffb3170260b4f5b8",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 600\n#### 120\n#### 420\n#### 1020\n#### 1020",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He earns 20% less while working his second job.  He works 30 hours at his main job and half that much at his second job.",
+  "observed_error": "The reported weekly total of $1020 contradicts the correctly written earnings expressions.",
+  "violated_condition": "Weekly earnings must equal 20 × 30 + [20 × (1 − 0.20)] × (30 / 2) dollars.",
+  "error_description": "The response writes correct relations for both jobs but reports weekly earnings of $1020, inconsistent with adding 30 hours at $20 per hour and half as many hours at a 20% lower wage. Its unlabeled intermediate numbers do not establish which arithmetic operation first went wrong.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The intermediate values 120 and 420 are unexplained, so their intended quantities and the earliest faulty calculation cannot be identified reliably."
+}

@@ -1,0 +1,88 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-2783-3
+response_sha256: cf5dac7ccb936f47898316245e1236d48c61821822c7674f2381f6171e93359f
+
+=== QUESTION ===
+Jude bought three chairs for his house, all at the same price. He also bought a table that costs $50 and two sets of plates at $20 for each set. After giving the cashier $130, Jude got a $4 change. How much did each of the chairs cost?
+=== MODEL SOLUTION ===
+#### 20
+
+Let's break down the problem step by step:
+
+1. **Total cost of table and plates:**
+   - Table costs $50
+   - Two sets of plates cost $20 each, so \( 2 \times 20 = $40 \)
+   - Total for table and plates: \( 50 + 40 = $90 \)
+
+2. **Amount given to the cashier:**
+   - Jude gave the cashier $130
+
+3. **Change received:**
+   - Jude received $4 in change
+
+4. **Cost of chairs:**
+   - Total cost of table and plates is $90
+   - Jude received $4 in change, so the total cost of the chairs and table and plates combined is \( 130 - 4 = $126 \)
+
+5. **Cost of three chairs:**
+   - Since Jude bought three chairs at the same price, let's denote the price of one chair as \( x \)
+   - Therefore, the cost of three chairs is \( 3x \)
+
+6. **Setting up the equation:**
+   - The cost of three chairs plus the table and plates is $126
+   - So, \( 3x + 90 = 126 \)
+
+7. **Solving for \( x \):**
+   - Subtract 90 from both sides: \( 3x = 126 - 90 \)
+   - Simplify: \( 3x = 36 \)
+   - Divide both sides by 3: \( x = 12 \)
+
+Thus, the cost of each chair is \( \boxed{20} \) dollars.
+=== REFERENCE SOLUTION (fallible aid) ===
+The two sets of plates amount to $20 x 2 = $<<20*2=40>>40.
+So the table and the two sets of plates amount to $50 + $40 = $<<50+40=90>>90 in all.
+Since Jude received a $4 change, then he paid a total of $130 - $4 = $<<130-4=126>>126 for the chairs, tables, and plates.
+Thus, the three chairs cost $126 - $90 = $<<126-90=36>>36.
+Therefore, each chair cost $36/3 = $<<36/3=12>>12.
+#### 12
+=== END ===

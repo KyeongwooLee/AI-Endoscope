@@ -1,0 +1,1 @@
+{"source_id":"train-428-4","response_sha256":"76ad36ca14cce94ac15b17838d9e9c8b08b722c1a88883558e344fed9900448b","status":"supported_error","reference_review_needed":false,"explanation":"The earliest mistake is evaluating (50 + 100 + 120) × 2 as 270 in the fourth-day calculation. The first three days total 270 eggs, so doubling that total gives 540 eggs for the fourth day."}

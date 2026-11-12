@@ -1,0 +1,29 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John decides to get gym memberships so he can get in shape.  The gym close to his house is close but doesn't have everything he wants so he gets two different gym memberships.  The cheap one costs $10 a month and has a sign-up fee of $50.  The second gym is 3 times more expensive and it has a sign-up fee of 4 months membership.  How much total did he pay in the first year for gym membership?
+SOLUTION: Let's break down the problem step by step:
+
+1. **Calculate the monthly cost for the first gym:**
+   - Monthly cost: $10
+   - Sign-up fee: $50
+
+2. **Calculate the total cost for the first gym in the first year:**
+   - Monthly cost: $10
+   - Number of months: 12
+   - Total cost: \( 10 \times 12 = $120 \)
+
+3. **Calculate the monthly cost for the second gym:**
+   - Monthly cost: 3 times the first gym, so \( 3 \times 10 = $30 \)
+   - Sign-up fee: 4 months membership, so \( 30 \times 4 = $120 \)
+
+4. **Calculate the total cost for the second gym in the first year:**
+   - Monthly cost: $30
+   - Number of months: 12
+   - Total cost: \( 30 \times 12 = $360 \)
+
+5. **Add the total costs of both gyms to get the final total:**
+   - Total cost of the first gym: $120
+   - Total cost of the second gym: $360
+   - Final total: \( 120 + 360 = $480 \)
+
+#### 480

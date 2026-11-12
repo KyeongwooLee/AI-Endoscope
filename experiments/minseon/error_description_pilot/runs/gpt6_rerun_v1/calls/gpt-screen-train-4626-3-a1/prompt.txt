@@ -1,0 +1,38 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: The cost of building a certain house in an area is 100,000 more than the construction cost of each of the houses in the area.  But it sells for 1.5 times as much as the other houses, which sell at $320,000 each. How much more profit is made by spending the extra money to build?
+SOLUTION: To solve this problem, let's break it down into steps:
+
+1. **Determine the cost of building the house in question:**
+   - The problem states that the cost of building the house is 100,000 more than the construction cost of each of the other houses.
+   - The construction cost of each of the other houses is $320,000.
+   - Therefore, the cost of building the house in question is:
+     \[
+     320,000 + 100,000 = 420,000
+     \]
+
+2. **Calculate the selling price of the house in question:**
+   - The problem states that the house sells for 1.5 times as much as the other houses.
+   - The selling price of each of the other houses is $320,000.
+   - Therefore, the selling price of the house in question is:
+     \[
+     320,000 \times 1.5 = 480,000
+     \]
+
+3. **Calculate the profit from selling the house in question:**
+   - The profit is calculated as the selling price minus the cost of building.
+   - The cost of building the house in question is $420,000.
+   - Therefore, the profit is:
+     \[
+     480,000 - 420,000 = 60,000
+     \]
+
+4. **Determine how much more profit is made by spending the extra money to build the house:**
+   - The extra money spent to build the house is $100,000.
+   - Therefore, the additional profit from spending this extra money is:
+     \[
+     60,000 - 100,000 = -40,000
+     \]
+
+Final answer:
+#### -40,000

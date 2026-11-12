@@ -1,0 +1,13 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: We harvested 405 kg of apples. 90 kg were used to make fruit juice and 60 kg were given to a restaurant. The rest was sold in 5 kg bags and their sale brought in $408. What was the selling price of one bag of apples?
+SOLUTION: Step 1: Calculate the total weight of apples used for fruit juice and given to the restaurant.
+90 kg (fruit juice) + 60 kg (restaurant) = 150 kg
+
+Step 2: Calculate the weight of apples sold in bags.
+405 kg (total) - 150 kg (used) - 60 kg (given) = 295 kg
+
+Step 3: Calculate the selling price per bag.
+$408 (total sale) ÷ 56 bags = $7.41 per bag
+
+#### 7.41

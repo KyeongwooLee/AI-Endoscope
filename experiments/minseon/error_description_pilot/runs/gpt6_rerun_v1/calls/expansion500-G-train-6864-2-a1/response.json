@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6864-2",
+  "response_sha256": "c357199394ba9ad8c658c3382f1a463702d3b0d93397aceaf4fc33ce6dbbfe1d",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "4 sets * 12 cups/set = 48 cups",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "four sets of 2-dozen paper cups",
+  "observed_error": "The response assigns 12 cups to each two-dozen set.",
+  "violated_condition": "Each set contains 2 × 12 cups, so the total prepared is 4 × 2 × 12 cups.",
+  "error_description": "The response multiplies four sets by 12 cups per set, although each set contains two dozen cups. The written multiplication is correct, but the cups-per-set quantity omits the factor of two, understating the prepared total before subtracting damaged and unused cups.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

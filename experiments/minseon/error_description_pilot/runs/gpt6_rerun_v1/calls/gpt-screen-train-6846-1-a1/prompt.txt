@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Isabella has $45 more than Sam but only $15 more than Giselle. If Giselle has $120, calculate the total amount of money each shopper will receive if Isabella, Sam, and Giselle donate the money to three shoppers at their local town's supermarket who then decides to share it equally.
+SOLUTION: Step 1: Determine the amount of money Sam has.
+Since Isabella has $45 more than Sam and $15 more than Giselle, and Giselle has $120, we calculate Sam's money as follows:
+Sam's money = Giselle's money - $15 = $120 - $15 = $105
+
+Step 2: Determine the amount of money Isabella has.
+Isabella has $45 more than Sam, so:
+Isabella's money = Sam's money + $45 = $105 + $45 = $150
+
+Step 3: Calculate the total amount of money.
+Total money = Isabella's money + Sam's money + Giselle's money = $150 + $105 + $120 = $375
+
+Step 4: Determine how much money each shopper will receive.
+Since the money is to be shared equally among three shoppers, we divide the total money by 3:
+Each shopper's share = Total money / 3 = $375 / 3 = $125
+
+#### 125
+Isabella has $45 more than Sam but only $15 more than Giselle. If Giselle has $120, calculate the total amount of money each shopper will receive if Isabella, Sam, and Giselle donate the money to three shoppers at their local town's supermarket who then decides to share it equally.

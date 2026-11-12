@@ -1,0 +1,30 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: There are 3 ducks in a pond and they all eat some pieces of bread thrown in the water. One duck eats half of all the pieces of bread. Another duck eats only 13 pieces of the bread and the last duck eats 7 pieces of bread. There are 30 pieces of bread left in the water, how many total pieces of bread were thrown in the pond?
+SOLUTION: Let's denote the total number of pieces of bread thrown in the pond as T.
+
+- One duck eats half of all the pieces of bread, so it eats T/2 pieces.
+- Another duck eats 13 pieces.
+- The last duck eats 7 pieces.
+- There are 30 pieces of bread left in the water.
+
+The sum of the pieces of bread eaten by all the ducks plus the pieces left should equal the total number of pieces thrown in the pond. Therefore, we can write the equation:
+
+\[ \frac{T}{2} + 13 + 7 + 30 = T \]
+
+Now, let's solve for T:
+
+\[ \frac{T}{2} + 40 = T \]
+
+Subtract \(\frac{T}{2}\) from both sides:
+
+\[ 40 = T - \frac{T}{2} \]
+
+\[ 40 = \frac{T}{2} \]
+
+Multiply both sides by 2:
+
+\[ 80 = T \]
+
+#### 80
+There were 80 pieces of bread thrown in the pond.

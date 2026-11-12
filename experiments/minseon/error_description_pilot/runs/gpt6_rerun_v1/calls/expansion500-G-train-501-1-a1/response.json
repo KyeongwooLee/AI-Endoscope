@@ -1,0 +1,19 @@
+{
+  "source_id": "train-501-1",
+  "response_sha256": "0eecf9ba3d5de712e4fd8af50f06f05e8d853230f3a38370c8b86ce7c8c95c50",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "- Initial reps: 15\n     - Add 1 rep each day: 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30\n     - Number of days to reach 15 reps: 15",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He adds 1 rep a day and once he gets to 15 reps he will start training high elevation push-ups.",
+  "observed_error": "The high-elevation stage starts at 15 reps but counts 15 further daily increments as time to reach 15 reps.",
+  "violated_condition": "Starting at 15 reps already satisfies a 15-rep threshold; 15 additional one-rep increments reach 30 reps.",
+  "error_description": "For high elevation push-ups, the response sets the initial count to 15 reps, then lists increases through 30 while calling these 15 days the time to reach 15 reps. This contradicts the stated transition threshold: its own starting count already meets that threshold.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The total-weeks calculation labels 15 training days per stage as 15 weeks, omitting conversion using five training days per week. The multiplication itself is correct."
+  ],
+  "uncertainty_note": null
+}

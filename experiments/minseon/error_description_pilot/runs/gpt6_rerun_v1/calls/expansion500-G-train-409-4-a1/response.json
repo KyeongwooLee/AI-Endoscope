@@ -1,0 +1,17 @@
+{
+  "source_id": "train-409-4",
+  "response_sha256": "e2829d0f2ba771a9cfaaa7a6b8ac6025dba3903a90924264ca876ab1c5526005",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "So, Frank needs to sell **1** car per day for the remaining 23 days to meet his quota.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how many cars does he need to sell for the remaining days to meet his quota?",
+  "observed_error": "The final answer reports a daily sales rate instead of the requested total remaining cars.",
+  "violated_condition": "The requested quantity is the monthly quota minus cars already sold, measured in cars rather than cars per day.",
+  "error_description": "The response correctly computes the remaining car total, but then divides it by the remaining days and presents 1 car per day as its final answer. The question asks for the total cars still needed to meet the quota, not a daily sales rate.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

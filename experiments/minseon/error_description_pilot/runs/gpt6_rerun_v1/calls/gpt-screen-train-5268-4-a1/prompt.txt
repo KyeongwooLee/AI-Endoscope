@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Pat's Pool Supply has three times as many swimming pools as Pat's Ark & Athletic Wear store. If Pat's Ark & Athletic Wear store has 200 pools, how many pools do they have in total?
+SOLUTION: To find the total number of pools, we start with the given information:
+- Pat's Ark & Athletic Wear store has 200 pools.
+- Pat's Pool Supply has three times as many pools as Pat's Ark & Athletic Wear store.
+
+Let's denote:
+- \( P_{\text{AR}} \) as the number of pools at Pat's Ark & Athletic Wear store.
+- \( P_{\text{PS}} \) as the number of pools at Pat's Pool Supply.
+
+Given \( P_{\text{AR}} = 200 \), we calculate \( P_{\text{PS}} \) as follows:
+\[ P_{\text{PS}} = 3 \times P_{\text{AR}} \]
+
+Now, substituting the value of \( P_{\text{AR}} \):
+\[ P_{\text{PS}} = 3 \times 200 \]
+
+Performing the multiplication:
+\[ P_{\text{PS}} = 600 \]
+
+Therefore, Pat's Pool Supply has 600 pools.
+
+#### 600
+Final answer: 600

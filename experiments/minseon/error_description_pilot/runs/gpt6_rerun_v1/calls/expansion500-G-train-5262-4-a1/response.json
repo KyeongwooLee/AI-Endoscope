@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5262-4",
+  "response_sha256": "cc9e17dfae67f264a9c6e438e38b1a11e0f36154309da91ae3a07bee42c94f92",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Fabian needs to walk for a total of 6 more hours to reach a total of 30 kilometers.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "How many more hours did Fabian need to walk to reach a total of 30 kilometers?",
+  "observed_error": "The final statement labels the total walking time as additional walking time.",
+  "violated_condition": "Additional walking time must exclude the 3 hours already walked.",
+  "error_description": "The response correctly calculates the remaining walking time, then reports the total duration of 6 hours as 6 more hours. The question asks for additional time after the initial 3 hours, so those elapsed hours must be excluded from the requested quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

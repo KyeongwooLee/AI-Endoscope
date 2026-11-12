@@ -1,0 +1,73 @@
+{
+  "split": {
+    "discovery_responses": 6114,
+    "discovery_questions": 2791,
+    "confirmation_responses": 1577,
+    "confirmation_questions": 698
+  },
+  "eligibility": {
+    "canonical_units": 7686,
+    "cross_partition_question_conflicts": 0,
+    "questions_after_length_and_labels_jsonl_exclusion": {
+      "discovery": 2612,
+      "confirmation": 663
+    },
+    "questions_after_all_exclusions": {
+      "discovery": 1752,
+      "confirmation": 418
+    },
+    "eligible_units_after_all_exclusions": {
+      "discovery": 3646,
+      "confirmation": 931
+    }
+  },
+  "enrichment": [
+    {
+      "stratum": "ARITH",
+      "requested": 2,
+      "candidates": 118,
+      "selected": 2
+    },
+    {
+      "stratum": "NEWNUM",
+      "requested": 2,
+      "candidates": 10,
+      "selected": 2
+    },
+    {
+      "stratum": "TARGET",
+      "requested": 2,
+      "candidates": 243,
+      "selected": 2
+    },
+    {
+      "stratum": "OTHER",
+      "requested": 2,
+      "candidates": 236,
+      "selected": 2
+    },
+    {
+      "stratum": "SHORT_RESPONSE",
+      "requested": 2,
+      "candidates": 43,
+      "selected": 2
+    }
+  ],
+  "eligible_dev_groups": 1752,
+  "eligible_eval_groups": 418,
+  "rng": "numpy.random.default_rng([seed, stream]) numpy==1.23.5",
+  "streams": {
+    "dev_uniform_groups": 1,
+    "dev_uniform_response": 2,
+    "dev_enriched": 3,
+    "eval_groups": 4,
+    "eval_response": 5,
+    "eval_roles": 6
+  },
+  "seed": 20261108,
+  "roles": {
+    "development": 30,
+    "eval_query": 20,
+    "eval_gallery": 80
+  }
+}

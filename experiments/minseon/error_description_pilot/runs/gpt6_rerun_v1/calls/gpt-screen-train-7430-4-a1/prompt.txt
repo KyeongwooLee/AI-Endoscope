@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A park has 50 benches with a capacity of 4 people each. On a Sunday afternoon, 80 people were sitting on the benches. What's the number of available spaces on the benches that other people can sit on before the carrying capacity of the benches is full?
+SOLUTION: #### 20
+To determine the number of available spaces on the benches, we first need to calculate the total capacity of the benches. Given that there are 50 benches with a capacity of 4 people each:
+
+Total capacity = Number of benches × Capacity per bench
+Total capacity = 50 benches × 4 people/bench
+Total capacity = 200 people
+
+Next, we know that on a Sunday afternoon, 80 people were sitting on the benches. To find the number of available spaces, we subtract the number of people sitting from the total capacity:
+
+Available spaces = Total capacity - Number of people sitting
+Available spaces = 200 people - 80 people
+Available spaces = 120 people
+
+Thus, there are 120 available spaces on the benches that other people can sit on before the carrying capacity is full.

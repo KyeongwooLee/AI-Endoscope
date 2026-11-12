@@ -1,0 +1,19 @@
+{
+  "source_id": "train-786-0",
+  "response_sha256": "fe4be57bcf5217e68d7de7cbe39fc301605e4b4479af33805d2a83ac7a328fa5",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "Step 2: Calculate the total number of pages John writes in a year.\nThere are 52 weeks in a year.\n150 pages/week * 52 weeks/year = 7800 pages/year",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He also writes a novel that is 1200 pages each year.",
+  "observed_error": "The stated annual total includes only short-story pages and omits the novel.",
+  "violated_condition": "Annual total pages must include both short-story pages and the additional 1200-page novel.",
+  "error_description": "The response labels 150 pages/week multiplied by 52 weeks/year as John's total annual output, but this counts only short stories. It omits the additional 1200-page annual novel required by the question. The multiplication itself is correct; the stated total is incomplete.",
+  "reference_review_reason": "The reference computes paper for a full year rather than 12 weeks, and its final answer disagrees with its calculated ream count.",
+  "secondary_errors": [
+    "Step 3 multiplies the annual page count by 12 rather than by 12/52 to obtain 12 weeks of output. The arithmetic 7800 × 12 = 93600 is correct, but the time conversion is wrong."
+  ],
+  "uncertainty_note": null
+}

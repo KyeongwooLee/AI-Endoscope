@@ -1,0 +1,30 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Carla is taking attendance for her sixth-grade class. She knows that 2 students are in the restroom, and one less than three times that number of students are absent. If there are four rows with six desks each that are all 2/3 full, how many students does Carla teach, including the ones in and out of the classroom?
+SOLUTION: Step 1: Determine the number of students in the restroom.
+Number of students in the restroom = 2
+
+Step 2: Calculate the number of absent students.
+Absent students = 3 * Number of students in the restroom - 1
+Absent students = 3 * 2 - 1
+Absent students = 6 - 1
+Absent students = 5
+
+Step 3: Find the number of desks occupied in the classroom.
+Occupied desks = Number of rows * Number of desks per row * Fraction of desks occupied
+Occupied desks = 4 * 6 * 2/3
+Occupied desks = 24 * 2/3
+Occupied desks = 16
+
+Step 4: Calculate the total number of students in the classroom.
+Total students in the classroom = Number of occupied desks + Number of students in the restroom
+Total students in the classroom = 16 + 2
+Total students in the classroom = 18
+
+Step 5: Determine the total number of students Carla teaches.
+Total students = Students in the restroom + Absent students + Total students in the classroom
+Total students = 2 + 5 + 18
+Total students = 25
+
+#### 25
+The total number of students Carla teaches, including those in and out of the classroom, is 25.

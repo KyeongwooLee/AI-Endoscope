@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Erin works in the school cafeteria serving soup. Each bowl of soup has 10 ounces, and Erin can serve 5 bowls per minute. If the pot of soup has 6 gallons of soup, how long will it take Erin to serve all the soup, rounded to the nearest minute? (There are 128 ounces to a gallon.)
+SOLUTION: #### 20
+To find out how long it will take Erin to serve all the soup, we first need to determine the total amount of soup in ounces. Since there are 128 ounces in a gallon and the pot has 6 gallons of soup, we multiply 128 by 6:
+
+\[ 128 \times 6 = 768 \text{ ounces} \]
+
+Next, we need to determine how many bowls of soup can be served with 768 ounces. Since each bowl contains 10 ounces, we divide 768 by 10:
+
+\[ 768 \div 10 = 76.8 \text{ bowls} \]
+
+Erin can serve 5 bowls per minute, so we divide the number of bowls by 5 to find out how many minutes it will take to serve all the soup:
+
+\[ 76.8 \div 5 = 15.36 \text{ minutes} \]
+
+Since we need to round to the nearest minute, we round 15.36 to 15 minutes. Therefore, the time it will take Erin to serve all the soup is 15 minutes.

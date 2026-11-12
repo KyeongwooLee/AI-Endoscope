@@ -1,0 +1,27 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A father is buying sand to fill his son's new sandbox, but he is worried that the sand will be too heavy for his car.  The sandbox is square, with each side being 40 inches long.  If a 30-pound bag of sand is enough to fill 80 square inches of the sandbox to an adequate depth, how many pounds of sand are needed to fill the box completely?
+SOLUTION: To determine how many pounds of sand are needed to fill the sandbox, we first need to calculate the total surface area of the sandbox that needs to be filled with sand.
+
+1. **Calculate the area of one side of the sandbox:**
+   \[
+   \text{Area of one side} = \text{side length} \times \text{side length} = 40 \, \text{inches} \times 40 \, \text{inches} = 1600 \, \text{square inches}
+   \]
+
+2. **Calculate the total surface area of the sandbox:**
+   \[
+   \text{Total surface area} = \text{Area of one side} \times \text{number of sides} = 1600 \, \text{square inches} \times 4 = 6400 \, \text{square inches}
+   \]
+
+3. **Determine the amount of sand needed per square inch:**
+   \[
+   \text{Sand per square inch} = \frac{30 \, \text{pounds}}{80 \, \text{square inches}} = 0.375 \, \text{pounds per square inch}
+   \]
+
+4. **Calculate the total amount of sand needed to fill the sandbox:**
+   \[
+   \text{Total sand needed} = \text{Total surface area} \times \text{Sand per square inch} = 6400 \, \text{square inches} \times 0.375 \, \text{pounds per square inch} = 2400 \, \text{pounds}
+   \]
+
+#### 2400
+This is the total amount of sand needed to fill the sandbox completely.

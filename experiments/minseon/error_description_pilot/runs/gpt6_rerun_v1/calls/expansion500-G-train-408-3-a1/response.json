@@ -1,0 +1,19 @@
+{
+  "source_id": "train-408-3",
+  "response_sha256": "33e382f2e5e8c3be9144d5884020357436326e604c80cb1da841051bedb7daf4",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total weight of adults = 140 pounds/3",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Three adults whose average weight is 140 pounds",
+  "observed_error": "The response divides the adults' average weight by three to obtain their total weight.",
+  "violated_condition": "Total weight equals average weight multiplied by the number of people.",
+  "error_description": "The response substitutes 140 pounds divided by 3 for the three adults' total weight, despite stating that average weight should be multiplied by the number of adults. The division is evaluated correctly to rounding precision, but the chosen operation violates the relation between average and total weight.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The children's total is independently calculated as 64 pounds/2, although their average weight must be multiplied by two."
+  ],
+  "uncertainty_note": null
+}

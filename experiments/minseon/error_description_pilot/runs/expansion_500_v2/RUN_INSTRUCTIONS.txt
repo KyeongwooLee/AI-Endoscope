@@ -1,0 +1,26 @@
+500개 후속 분석 결과 읽기
+
+1. ZIP을 모두 풀고 analysis_report.html을 브라우저에서 여세요. comparison.png를 같은 폴더에 유지하세요.
+2. annotations_G.csv에서 보정된 설명·인용 위치를 확인할 수 있습니다. offset_repaired=true인77개가 이번 변경 대상입니다. 설명 문장은 바뀌지 않았습니다.
+3. confirmed_issue_registry.json은 원문을 대조한7개 이슈입니다. reference_review_queue.csv는 AI 검토 후보이며 확정된 오류 목록이 아닙니다.
+4. judge_control_results.json에 기존/수정 평가 프롬프트의 기본 시험 결과가 있습니다. 두 방식 모두 기본 시험에 실패해 새 검색 정확도는 산출하지 않았습니다.
+5. embeddings/*_inputs.jsonl이 실제 임베딩 텍스트이며 *.npz가1,024차원 벡터입니다. reference-free screening 문장은 임베딩에 추가하지 않았습니다.
+6. sensitivity/에는 원문에서 확인된7개 이슈만 제외한 추가 분석이 있습니다. 남은 전체가 검증된 깨끗한 데이터라는 뜻이 아닙니다.
+7. source/exact_quote.py와 quote_only_prompt_for_future_runs.txt를 다음 주석 생성에 재사용할 수 있습니다. 이번 실험은 기존 설명을 재생성하지 않고 위치만 보정했습니다.
+
+재현 환경과 실행 순서
+- 원래 AI-Endoscope/experiments/minseon/error_description_pilot 저장소와 edp 패키지, 이웃 runs/expansion_500_v1 결과가 필요합니다. ZIP은 모델 가중치/가상환경/저장소 전체를 포함하지 않습니다.
+- 기존 .venv-edp 환경: Python, PyTorch2.6.0+cu124, transformers, numpy, scikit-learn, matplotlib, sentence-transformers. 로컬 Qwen3-4B-Instruct-2507 및 BAAI-bge-m3 경로는 source/에 기록돼 있습니다. 기존 v1 environment.json도 참조하세요.
+- source/prepare.py는 새 빈 실행 폴더에서만 실행하며 이미 protocol.json이 있으면 덮어쓰지 않습니다. v1 원본 해시를 저장하고77개 위치를 보정합니다.
+- analyze.py → compare.py → build_checks.py → run_checks.py → check_reference_arithmetic.py → check_written_arithmetic.py → quarantine_sensitivity.py → summarize_checks.py → report.py → validate_and_package.py 순서입니다.
+- run_checks.py는 이미 저장된 ID를 건너뜁니다. build_checks.py는 모델 호출 전 고정한 프롬프트와 통제 사례를 만듭니다. 이를 결과를 본 뒤 바꾸어 같은 시험 성능으로 보고하면 안 됩니다.
+- report/validation/package 코드는 분석이 끝난 뒤 실행해야 합니다.
+- 별도 유료 API 호출 없음. 기존 민수님 데이터/130개 실험/500개 v1 결과를 덮어쓰지 않았습니다.
+
+해석상 제한
+- 모든 자동 판정은 AI 탐색 결과이며 사람 정답이 아닙니다.
+- 통제 사례36입력은18개 쌍을 두 순서로 본 것입니다.36개 독립 실제 사례가 아닙니다.
+- 500개 참조 없는 점검도 같은 Qwen 모델을 썼으며 오류와 미완성 JSON이 있을 수 있습니다. AI 계산 답과 참조가 다르다고 참조가 틀렸다는 뜻은 아닙니다.
+- 기존250개 공통 사례를 고정하면 임베딩 및 군집은 사실상 그대로입니다. 새로운 사례 포함에 따른 지표 변화는 설명 품질 향상의 증거가 아닙니다.
+
+추가 산술 검사: written_arithmetic_checks.json과 arithmetic_flag_review.json을 확인하세요. 전자는 제한된 숫자 식 검사이며 후자는 원문 전체 줄을 직접 대조한 기록입니다. 반올림2회는 확정 산술 오류에서 제외했습니다. 직접 점검 기록은 자동 생성 정답이 아니며 재실행 시에도 그대로 보존해야 합니다.

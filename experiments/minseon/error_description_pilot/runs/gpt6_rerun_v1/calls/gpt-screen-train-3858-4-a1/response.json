@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"Bethany is 19 years old.","check":"The sister is currently 16 − 5 = 11, so she was 8 three years ago. Thus B − 3 = 2 × 8 = 16, giving B = 19.","evidence_quote":"B - 3 = 2 \\times 11","error_description":"The equation uses the sister’s current age, 11, instead of her age three years ago, 8. This gives the incorrect answer 25."}

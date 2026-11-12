@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Kathleen saved $21 in June, $46 in July, and $45 in August. Then Kathleen spent $12 on school supplies and $54 on new clothes. Kathleen’s aunt said she would give Kathleen $25 if Kathleen saves more than $125.  How much money does Kathleen have left?
+SOLUTION: Step 1: Calculate the total amount Kathleen saved.
+$21 (June) + $46 (July) + $45 (August) = $112
+
+Step 2: Calculate the total amount Kathleen spent.
+$12 (school supplies) + $54 (new clothes) = $66
+
+Step 3: Calculate the remaining amount after spending.
+$112 (total saved) - $66 (total spent) = $46
+
+Step 4: Determine if Kathleen qualifies for the gift from her aunt.
+$46 (remaining amount) < $125 (threshold for gift)
+
+Step 5: Calculate the amount Kathleen has left after spending.
+$46 (remaining amount) - $25 (gift from aunt) = $21
+
+#### 21
+Kathleen has $21 left.

@@ -1,0 +1,37 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: On his farm, Mr. Mathews has goats and sheep in the ratio of 5:7. He decides to sell half of the goats at $40 each and 2/3 of the sheep at $30 each. How much money does he make from the sale of the animals if the total number of sheep and goats on the farm is 360?
+SOLUTION: Step 1: Determine the number of goats and sheep on the farm.
+Given the ratio of goats to sheep is 5:7, and the total number of animals is 360, we can set up the following proportion:
+
+\[
+\frac{5}{7} = \frac{x}{360}
+\]
+
+Step 2: Solve for \( x \), the number of goats.
+\[
+x = \frac{5}{7} \times 360 = 257.142857 \approx 257 \text{ goats}
+\]
+
+Step 3: Solve for the number of sheep.
+\[
+\frac{7}{5} = \frac{360 - x}{360} = \frac{360 - 257}{360} = \frac{103}{360} \approx 28.61 \text{ sheep}
+\]
+
+Step 4: Calculate the revenue from selling the goats.
+\[
+\text{Revenue from goats} = 257 \times 40 = 10280
+\]
+
+Step 5: Calculate the revenue from selling the sheep.
+\[
+\text{Revenue from sheep} = 28.61 \times 30 = 858.3
+\]
+
+Step 6: Calculate the total revenue from both sales.
+\[
+\text{Total revenue} = 10280 + 858.3 = 11138.3
+\]
+
+#### 11138.3
+This is the final answer.

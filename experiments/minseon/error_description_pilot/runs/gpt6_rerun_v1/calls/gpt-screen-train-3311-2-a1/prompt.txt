@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Porter is a painter who creates beautiful paintings of wild animals.  Most recently, he painted a mural of a pack of wolves standing on a snowy-white mountainside underneath a full moon.  He put the painting up for auction and it sold for $1000 less than five times more than he had made on his previous painting.  If he received $44,000 for the sale of his most recent painting, how much, in dollars, did he make for selling his previous painting?
+SOLUTION: Step 1: Let's denote the amount Porter made from his previous painting as x dollars.
+
+Step 2: According to the problem, the most recent painting sold for $1000 less than five times more than he had made on his previous painting. Therefore, the sale price of the most recent painting can be expressed as 5x + 1000 dollars.
+
+Step 3: We are given that he received $44,000 for the sale of his most recent painting. Thus, we can set up the equation:
+\[ 5x + 1000 = 44000 \]
+
+Step 4: Solving for x:
+\[ 5x = 44000 - 1000 \]
+\[ 5x = 43000 \]
+\[ x = \frac{43000}{5} \]
+\[ x = 8600 \]
+
+#### 8600
+Porter made $8600 for selling his previous painting.

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2635-4",
+  "response_sha256": "682ee1e1f00f6d4077493bde60feb25fc58a9ddf9b4abcb41dbe3e204d052ce5",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "If John lived alone, he would pay the full cost of the new apartment.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "John's old apartment which costs $1200 per month",
+  "observed_error": "The response uses the new apartment's $1680 monthly cost as John's living-alone baseline.",
+  "violated_condition": "Savings must compare John's $1200 monthly old-apartment cost with his share of the new apartment.",
+  "error_description": "The response treats living alone as paying $1680 per month for the new apartment, replacing the $1200 old-apartment baseline. It consequently subtracts the $560 shared monthly cost from the wrong amount. The subtraction and annual multiplication are executed correctly for the chosen operands.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

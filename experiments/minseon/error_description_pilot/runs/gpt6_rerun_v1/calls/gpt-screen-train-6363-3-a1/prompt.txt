@@ -1,0 +1,26 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: The rim of a standard basketball hoop is 10 feet above the ground.  Additionally, most experts will say that a player must be able to reach at least 6 inches above the rim to dunk a basketball.  Suppose a basketball player is 6 feet tall and can reach 22 inches above their head using the wingspan of their arms.  How high must this player be able to jump to reach 6 inches above the rim to dunk a basketball?
+SOLUTION: To determine how high the player must jump to reach 6 inches above the rim, we need to follow these steps:
+
+1. Convert all measurements to the same unit. Let's use inches.
+   - The rim is 10 feet above the ground.
+   - 6 inches above the rim.
+   - 6 feet tall.
+   - 22 inches above their head.
+
+2. Calculate the total vertical distance the player needs to reach to dunk.
+   - Total vertical distance = rim height - reach above head
+   - Total vertical distance = 10 feet - 6 inches
+   - 10 feet = 120 inches
+   - 6 inches = 6 inches
+   - Total vertical distance = 120 inches - 6 inches = 114 inches
+
+3. Determine the height the player must jump to reach the total vertical distance.
+   - Player's height = 6 feet = 72 inches
+   - Reach above head = 22 inches
+   - Jump height needed = total vertical distance - player's height - reach above head
+   - Jump height needed = 114 inches - 72 inches - 22 inches = 20 inches
+
+#### 20
+The player must be able to jump 20 inches high to reach 6 inches above the rim to dunk a basketball.

@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"118 bulbs.","check":"There are 24 large lights and 22 small lights. Total bulbs = 22 × 1 + 12 × 2 + 24 × 3 = 118.","evidence_quote":"Large lights: 3 bulbs each, so 22 * 3 = 66 bulbs","error_description":"The solution uses 22 large lights despite stating L = 2M with M = 12, which gives 24. This understates the total by 6 bulbs."}

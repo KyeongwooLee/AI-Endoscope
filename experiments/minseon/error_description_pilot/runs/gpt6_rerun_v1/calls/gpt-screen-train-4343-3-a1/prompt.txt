@@ -1,0 +1,16 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Janina spends $30 each day for rent and uses $12 worth of supplies daily to run her pancake stand. If she sells each pancake for $2, how many pancakes must Janina sell each day to cover her expenses?
+SOLUTION: #### 15
+To determine how many pancakes Janina must sell each day to cover her expenses, we start by calculating her total daily expenses.
+
+1. Janina's daily rent: $30
+2. Janina's daily supplies: $12
+3. Total daily expenses: $30 + $12 = $42
+
+Janina sells each pancake for $2. To find out how many pancakes she needs to sell to cover her total expenses, we divide the total expenses by the price per pancake:
+
+\[ \text{Number of pancakes} = \frac{\text{Total expenses}}{\text{Price per pancake}} \]
+\[ \text{Number of pancakes} = \frac{42}{2} = 21 \]
+
+Therefore, Janina must sell **21** pancakes each day to cover her expenses.

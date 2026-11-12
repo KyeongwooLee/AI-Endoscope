@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Mary went to the store to buy fruit. Apples cost $1, oranges cost $2, and bananas cost $3. For every 5 fruits that customers buy, the store offers a $1 discount. Mary buys 5 apples, 3 oranges, and 2 bananas. How much will she pay?
+SOLUTION: Step 1: Calculate the total cost of each type of fruit.
+Cost of 5 apples = 5 * $1 = $5
+Cost of 3 oranges = 3 * $2 = $6
+Cost of 2 bananas = 2 * $3 = $6
+
+Step 2: Sum the costs of all fruits.
+Total cost = $5 + $6 + $6 = $17
+
+Step 3: Calculate the discount.
+Number of sets of 5 fruits = 5 / 5 = 1
+Discount per set = $1
+Total discount = 1 * $1 = $1
+
+Step 4: Subtract the total discount from the total cost.
+Final amount to pay = $17 - $1 = $16
+
+#### 16
+The final answer is $16.

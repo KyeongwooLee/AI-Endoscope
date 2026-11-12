@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1962-3",
+  "response_sha256": "b90ac7f8129bf824ff2ee4896c678b682fd55bf16c34a1899ce335ab3ea76a62",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total paintings after 30 days = 20 + (2 * 30)\n\n#### 100",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He makes 2 paintings per day. If he already has 20 paintings, how many paintings in total will he have after 30 days?",
+  "observed_error": "The reported total of 100 does not equal the correctly written expression 20 + (2 * 30).",
+  "violated_condition": "The total must equal the initial 20 paintings plus 2 paintings per day multiplied by 30 days.",
+  "error_description": "The response correctly represents the total as 20 + (2 * 30), combining the initial paintings with those made over 30 days, but then reports 100. This result does not equal its written expression; the error occurs in the final numerical evaluation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

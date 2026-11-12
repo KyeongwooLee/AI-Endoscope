@@ -1,0 +1,36 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Joyce, Michael, Nikki, and Ryn have a favorite movie. Joyce's favorite movie is 2 hours longer than Michael's movie. Nikki's movie is three times as long as Michael's movie, and Ryn's favorite movie is 4/5 times as long as Nikki's favorite movie. If Nikki's favorite movie is 30 hours long, calculate the total number of hours of their favorite movies together.
+SOLUTION: ### Step-by-Step Reasoning:
+
+1. **Determine Nikki's Movie Duration:**
+   - Nikki's favorite movie is 30 hours long.
+
+2. **Calculate Nikki's Favorite Movie Duration:**
+   - Given: \( \text{Nikki's movie} = 30 \) hours.
+
+3. **Calculate Ryn's Favorite Movie Duration:**
+   - Ryn's favorite movie is \(\frac{4}{5}\) times as long as Nikki's movie.
+   - Ryn's movie duration \( = \frac{4}{5} \times 30 \) hours
+   - Simplify: \( \frac{4}{5} \times 30 = 24 \) hours.
+
+4. **Calculate Nikki's Movie Duration:**
+   - Given: \( \text{Nikki's movie} = 30 \) hours.
+
+5. **Calculate Nikki's Favorite Movie Duration:**
+   - Given: \( \text{Nikki's movie} = 30 \) hours.
+
+6. **Calculate Nikki's Favorite Movie Duration:**
+   - Given: \( \text{Nikki's movie} = 30 \) hours.
+
+7. **Calculate Nikki's Favorite Movie Duration:**
+   - Given: \( \text{Nikki's movie} = 30 \) hours.
+
+8. **Calculate Nikki's Favorite Movie Duration:**
+   - Given: \( \text{Nikki's movie} = 30 \) hours.
+
+9. **Calculate Nikki's Favorite Movie Duration:**
+   - Given: \( \text{Nikki's movie} = 30 \) hours.
+
+### Final Answer:
+#### 120

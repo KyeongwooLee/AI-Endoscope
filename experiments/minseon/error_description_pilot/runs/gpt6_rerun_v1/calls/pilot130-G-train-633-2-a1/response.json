@@ -1,0 +1,17 @@
+{
+  "source_id": "train-633-2",
+  "response_sha256": "35ad07dd7cab93651d330c1a50babd4f38b945e8be1fc7c0cc8841e6d6d34448",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 14",
+  "evidence_start": 0,
+  "evidence_end": 7,
+  "evidence_occurrence": null,
+  "question_evidence_quote": "what's the combined shoe size for both of them?",
+  "observed_error": "The answer heading gives Alexa's individual shoe size instead of the combined size.",
+  "violated_condition": "The requested quantity is Jasmine's size plus Alexa's size, not Alexa's size alone.",
+  "error_description": "The answer heading reports 14, which the explanation identifies as Alexa's individual shoe size. The question asks for both sisters' combined shoe size. The subsequent addition is correct, but the heading contradicts that calculation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

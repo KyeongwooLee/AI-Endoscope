@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5067-4",
+  "response_sha256": "a3e656ee0fa0b624250eb5178ab391f4ca7cd75f6d8f24be8e004272143d22dc",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "2250000 \\text{ pounds} \\times \\$0.02 \\text{ per pound} = \\$450000",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "A pound of concrete cost $.02 per pound.",
+  "observed_error": "The written multiplication of 2,250,000 pounds by $0.02 per pound is evaluated ten times too high.",
+  "violated_condition": "Total cost must equal the concrete weight multiplied by $0.02 per pound.",
+  "error_description": "The response correctly obtains 2,250,000 pounds of concrete for three homes and writes the appropriate multiplication by $0.02 per pound. It then evaluates that product as $450,000, ten times its value. The mistake is in executing the written multiplication, not in the cost relation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

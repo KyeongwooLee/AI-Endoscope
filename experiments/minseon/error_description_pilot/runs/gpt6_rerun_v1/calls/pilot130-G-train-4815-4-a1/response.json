@@ -1,0 +1,20 @@
+{
+  "source_id": "train-4815-4",
+  "response_sha256": "8d0caf8b39846dc341d1bf941f243e6318caf66424c766e3b8e3cd1e4af1695e",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Cost of each $5 bracelet = $60 / 15 = $4 each.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Zayne sells bracelets for $5 each and two for $8.",
+  "observed_error": "The response introduces an unsupported divisor of 15 and assigns a $4 unit price to bracelets explicitly sold for $5 each.",
+  "violated_condition": "The individual-sale unit price is fixed at $5; the number sold equals $60 divided by $5.",
+  "error_description": "The response divides the $60 revenue by an unsupported quantity of 15 to obtain a $4 price for bracelets sold individually, contradicting the stated $5 price. The division itself is correct, but the relation is unjustified: revenue divided by the given unit price determines the number sold.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "It calculates the number sold individually as 30 / 5, dividing initial inventory by price instead of dividing the $60 individual-sale revenue by $5.",
+    "It calculates pair-sale revenue using all 30 bracelets, without subtracting the bracelets already sold individually."
+  ],
+  "uncertainty_note": null
+}

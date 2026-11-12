@@ -1,0 +1,31 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Three years ago, Bethany was twice the age of her younger sister. In 5 years, her younger sister will be 16. How old is Bethany now?
+SOLUTION: To solve this problem, let's define the current ages of Bethany and her younger sister. Let \( B \) represent Bethany's current age and \( S \) represent her younger sister's current age.
+
+Step 1: Determine the younger sister's current age.
+We know that in 5 years, her younger sister will be 16 years old. Therefore, we can write the equation:
+\[ S + 5 = 16 \]
+
+Solving for \( S \):
+\[ S = 16 - 5 \]
+\[ S = 11 \]
+
+So, the younger sister is currently 11 years old.
+
+Step 2: Determine Bethany's age three years ago.
+Three years ago, Bethany's age was \( B - 3 \).
+
+Step 3: Set up the relationship between Bethany's age three years ago and her younger sister's age three years ago.
+We are told that three years ago, Bethany was twice the age of her younger sister. Therefore, we can write the equation:
+\[ B - 3 = 2 \times 11 \]
+
+Solving for \( B \):
+\[ B - 3 = 22 \]
+\[ B = 22 + 3 \]
+\[ B = 25 \]
+
+So, Bethany is currently 25 years old.
+
+#### 25
+The final answer is 25.

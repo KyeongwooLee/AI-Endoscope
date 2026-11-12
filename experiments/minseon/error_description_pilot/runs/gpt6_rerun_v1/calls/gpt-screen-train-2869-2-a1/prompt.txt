@@ -1,0 +1,16 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: The new pad of paper has 120 pages. Sammy uses 25% of the pages for his science project, and another 10 pages for his math homework. How many pages remain in the pad?
+SOLUTION: To find out how many pages remain in the pad, we need to calculate the pages Sammy uses and subtract that from the total number of pages.
+
+1. Calculate the number of pages Sammy uses for his science project:
+   - Sammy uses 25% of the pages for his science project.
+   - 25% of 120 pages = 0.25 * 120 = 30 pages
+
+2. Subtract the number of pages used for science project from the total number of pages:
+   - Total pages = 120
+   - Pages used for science project = 30
+   - Pages remaining = 120 - 30 = 90 pages
+
+#### 90
+This is the number of pages that remain in the pad.

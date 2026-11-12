@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Kara has to drink 4 ounces of water every time she takes her medication. Her medication instructions are to take one tablet three times a day. She followed the instructions for one week, but in the second week, she forgot twice on one day. How many ounces of water did she drink with her medication over those two weeks?
+SOLUTION: Step 1: Calculate the total ounces of water Kara drinks in one day without any forgetfulness.
+She drinks 4 ounces of water with each tablet and takes the tablet 3 times a day.
+4 ounces/tablet * 3 tablets/day = 12 ounces/day
+
+Step 2: Calculate the total ounces of water Kara drinks in one week without any forgetfulness.
+12 ounces/day * 7 days/week = 84 ounces/week
+
+Step 3: Calculate the total ounces of water Kara drinks in the first week.
+84 ounces/week
+
+Step 4: Calculate the total ounces of water Kara drinks in the second week.
+She forgot twice on one day, so she only took the tablet 1 time that day.
+12 ounces/day * 5 days/week = 60 ounces/week
+
+Step 5: Calculate the total ounces of water Kara drinks in the two weeks.
+84 ounces/week + 60 ounces/week = 144 ounces
+
+#### 144

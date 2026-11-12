@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5726-4",
+  "response_sha256": "fe67c8422b62994682fac2eca79fdd45a7bb71bb407fb9c327bed67f10cc4e4b",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Step 5: If they combine their money, the total amount of money is:\n   20 + 25 + 30 = $75",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "calculate the loss Cara and Janet will make if they combine their money",
+  "observed_error": "The combined buying funds include Jerry's $30.",
+  "violated_condition": "Only Cara's $20 and Janet's $25 contribute to the buying price.",
+  "error_description": "The response combines Cara’s $20, Janet’s $25, and Jerry’s $30 as the buying funds, although the question specifies that only Cara and Janet combine their money. The addition is executed correctly, but including Jerry’s money makes the buying price and the subsequent loss calculation use the wrong base.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7423-2",
+  "response_sha256": "1da7e44ad06241f1cf94cbba0a7b063956b416fe11d00634bf66ec66f9f77b29",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 30",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "A sack of rice, which is 50 kilograms,  costs $50. If David sells it for $1.20 per kilogram, how much will be his profit?",
+  "observed_error": "The final profit of $30 is inconsistent with the correctly written revenue and profit relations.",
+  "violated_condition": "Profit must equal ($1.20 per kilogram × 50 kilograms) − $50.",
+  "error_description": "The response reports a profit of $30 after correctly setting up revenue and profit. That amount does not equal the proceeds from selling 50 kilograms at $1.20 per kilogram minus the $50 cost. The omitted evaluations prevent identifying which arithmetic operation produced the discrepancy.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The incorrect final amount is observable, but the text does not establish whether multiplication, subtraction, or another unwritten step caused it."
+}

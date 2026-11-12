@@ -1,0 +1,65 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-7392-1
+response_sha256: 8f5fd728b8323021fb57b2351fda43a6603e8e7c1100d5500dd590690cb8b890
+
+=== QUESTION ===
+Gina chooses what she and her sister will watch on Netflix three times as often as her sister does. If her sister watches a total of 24 shows on Netflix per week, and each show is 50 minutes long, how many minutes of Netflix does Gina get to choose?
+=== MODEL SOLUTION ===
+Step 1: Determine how many shows Gina chooses.
+Since Gina chooses what they watch three times as often as her sister, we need to calculate three times the number of shows her sister watches.
+24 shows * 3 = 72 shows
+
+Step 2: Calculate the total minutes Gina gets to choose.
+Each show is 50 minutes long, so for 72 shows, the total minutes are:
+72 shows * 50 minutes/show = 3600 minutes
+
+#### 3600
+=== REFERENCE SOLUTION (fallible aid) ===
+Let g be the number of shows Gina chooses and s be the number her sister chooses. We know that g = 3s and g + s = 24
+Substituting the first equation into the second equation, we get 3s + s = 24
+Combining like terms, we get 4s = 24
+Dividing both sides by 4, we get s = 6
+Substituting this value back into g = 3s, we get g = 3 * 6 = <<3*6=18>>18
+Then multiply the number of shows by the length of each show in minutes to find the total number of minutes Gina chooses: 18 shows * 50 minutes/show = <<18*50=900>>900 minutes
+#### 900
+=== END ===

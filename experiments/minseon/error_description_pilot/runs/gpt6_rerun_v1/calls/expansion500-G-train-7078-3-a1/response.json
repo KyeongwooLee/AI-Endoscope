@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7078-3",
+  "response_sha256": "273c7eb812e0e9aa4b974da76c4587ed74b319b25053ab33f6bcb0d0055dea86",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\[ \\frac{T}{2} + 40 = T \\]",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Another duck eats only 13 pieces of the bread and the last duck eats 7 pieces of bread. There are 30 pieces of bread left in the water",
+  "observed_error": "The response simplifies 13 + 7 + 30 to 40.",
+  "violated_condition": "The two specified duck portions and the leftover bread sum to 13 + 7 + 30 = 50 pieces.",
+  "error_description": "The response correctly sets up the bread conservation equation, but then replaces 13 + 7 + 30 with 40 instead of 50 pieces. This incorrectly executes the written addition of the two ducks’ portions and the bread remaining in the water, producing an incorrect total.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

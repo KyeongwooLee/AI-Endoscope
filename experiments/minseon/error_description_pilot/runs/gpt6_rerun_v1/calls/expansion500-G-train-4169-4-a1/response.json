@@ -1,0 +1,20 @@
+{
+  "source_id": "train-4169-4",
+  "response_sha256": "8f8bd60e0e7db9f5dcee290b5bbde8317ab46efb34c8fcb8621c7d909f8c9143",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The number of plums on the plum tree remains the same, which is 180.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "An apple tree has three times as many apples as the number of plums on a plum tree.",
+  "observed_error": "The response assigns 180 plums, equating the plum count with the given apple count.",
+  "violated_condition": "The initial apple count equals three times the initial plum count, so the plum count must be 180/3.",
+  "error_description": "The response sets the plum count to 180, the given initial number of apples. This violates the stated relation that there are three times as many apples as plums: the initial plum count must be one third of the apple count.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The picked-fruit calculation counts all 180 assumed plums as picked, despite the condition that Damien picks 3/5 of the fruits.",
+    "The remaining-fruit arithmetic changes 180 apples + 180 plums into 360 apples + 180 plums, then incorrectly evaluates 360 + 180 - 288 as 172."
+  ],
+  "uncertainty_note": null
+}

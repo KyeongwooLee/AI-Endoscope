@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"9 liters","check":"The six recorded days total 3 × 9 + 3 × 8 = 51 liters. Wednesday's intake is 60 − 51 = 9 liters.","evidence_quote":"9 + 9 + 9 + 8 + 8 + 8 = 49 liters","error_description":"The solution incorrectly sums the six recorded days as 49 liters instead of 51, leading to the incorrect answer of 11 liters."}

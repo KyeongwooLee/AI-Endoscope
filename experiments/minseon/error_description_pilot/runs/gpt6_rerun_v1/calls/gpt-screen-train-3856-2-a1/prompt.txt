@@ -1,0 +1,36 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Lilith is trying to break the world record for largest cap collection. She collects 3 caps per month in the first year, and 5 caps per month after the first year. Each Christmas, she also receives 40 caps from friends and family. She estimates that each year, she loses 15 of the caps she has collected. If Lilith has been collecting for 5 years, how many caps has she collected so far?
+SOLUTION: Step 1: Calculate the number of caps collected in the first year.
+Caps collected in the first year = 3 caps/month * 12 months/year
+Caps collected in the first year = 36 caps/year
+
+Step 2: Calculate the number of caps collected in the subsequent years.
+Caps collected in the subsequent years = 5 caps/month * 12 months/year * 4 years
+Caps collected in the subsequent years = 240 caps/year
+
+Step 3: Calculate the total number of caps collected before Christmas gifts.
+Total caps before Christmas gifts = Caps collected in the first year + Caps collected in the subsequent years
+Total caps before Christmas gifts = 36 caps + 240 caps
+Total caps before Christmas gifts = 276 caps
+
+Step 4: Calculate the total number of caps received from Christmas gifts.
+Total caps from Christmas gifts = 40 caps/year * 5 years
+Total caps from Christmas gifts = 200 caps
+
+Step 5: Calculate the total number of caps before accounting for lost caps.
+Total caps before lost caps = Total caps before Christmas gifts + Total caps from Christmas gifts
+Total caps before lost caps = 276 caps + 200 caps
+Total caps before lost caps = 476 caps
+
+Step 6: Calculate the total number of caps lost over the 5 years.
+Total caps lost = 15 caps/year * 5 years
+Total caps lost = 75 caps
+
+Step 7: Calculate the total number of caps collected after accounting for lost caps.
+Total caps collected = Total caps before lost caps - Total caps lost
+Total caps collected = 476 caps - 75 caps
+Total caps collected = 391 caps
+
+#### 391
+Lilith has collected 391 caps so far.

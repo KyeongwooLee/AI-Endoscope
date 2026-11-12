@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5800-2",
+  "response_sha256": "ba16852e8c990edc65ffa147842eb36452e0004d2ccf6c67b32909d92e766424",
+  "status": "insufficient_evidence",
+  "reference_review_needed": false,
+  "evidence_quote": "Anne can make 4 more drawings before she runs out of markers.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "She has 12 markers and she notices that each one lasts for about 1.5 drawings. If she has already made 8 drawings, how many more can she make before she runs out of markers?",
+  "observed_error": "The response reports 4 remaining drawings without showing any numerical calculation.",
+  "violated_condition": "Remaining drawings must equal (12 markers × 1.5 drawings per marker) − 8 drawings.",
+  "error_description": null,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The stated approach is valid, but the unexplained incorrect result does not establish whether the response used a wrong numerical relation or executed arithmetic incorrectly."
+}

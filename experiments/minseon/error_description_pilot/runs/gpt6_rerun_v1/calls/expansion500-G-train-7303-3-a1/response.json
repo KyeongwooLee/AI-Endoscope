@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7303-3",
+  "response_sha256": "c44b01da307981a03a552409e0c786b2aa99fddbdeb9b7814e95af14b068b784",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The difference is 13 kilograms.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He kept 7/10 of it in storage and gave the rest to Mr. Everest.",
+  "observed_error": "The reported difference of 13 kilograms contradicts the correctly stated expressions.",
+  "violated_condition": "The difference must equal 50 × 7/10 − (50 − 50 × 7/10) kilograms.",
+  "error_description": "The response reports a difference of 13 kilograms, which does not equal its correctly written expression for rice kept minus rice received. No intermediate numerical calculations are shown, so the particular arithmetic operation responsible cannot be identified.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The final quantity is demonstrably incorrect, but the text does not reveal how 13 was obtained."
+}

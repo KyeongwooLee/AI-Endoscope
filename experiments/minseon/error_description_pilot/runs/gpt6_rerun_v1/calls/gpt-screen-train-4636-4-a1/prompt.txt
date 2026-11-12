@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Randy had 32 biscuits. His father gave him 13 biscuits as a gift. His mother gave him 15 biscuits. Randy’s brother ate 20 of these biscuits. How many biscuits are Randy left with?
+SOLUTION: Step 1: Calculate the total number of biscuits Randy had after receiving the gifts.
+Randy initially had 32 biscuits. His father gave him 13 biscuits and his mother gave him 15 biscuits.
+Total biscuits = 32 (initial) + 13 (from father) + 15 (from mother)
+
+Step 2: Add the biscuits received from the father and mother.
+Total biscuits = 32 + 13 + 15
+
+Step 3: Calculate the total number of biscuits Randy had before the brother ate some.
+Total biscuits before brother ate = 32 + 13 + 15
+
+Step 4: Calculate the number of biscuits left after Randy's brother ate some.
+Biscuits left = Total biscuits before brother ate - 20 (biscuits eaten by brother)
+
+Step 5: Calculate the final number of biscuits Randy is left with.
+Biscuits left = (32 + 13 + 15) - 20
+
+#### 30
+Randy is left with 30 biscuits.

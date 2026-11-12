@@ -1,0 +1,76 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-993-1
+response_sha256: a8bdfca06705a05909be0b3c375b8ebb0694e6bf19a7eaf643098ab3aec8189d
+
+=== QUESTION ===
+Rick has 130 cards. He decided to only keep 15 cards and so he gave Miguel some of the cards. Then, he saw 8 friends and decided to give them 12 cards each, and the remaining cards were given equally to his 2 sisters. If each of Rick's sisters got 3 cards, how many cards did Rick give to Miguel?
+=== MODEL SOLUTION ===
+Step 1: Determine the total number of cards given to Rick's sisters.
+Rick's sisters got 3 cards each. 
+Number of sisters = 2
+Cards given to sisters = 3 * 2 = 6 cards
+
+Step 2: Calculate the number of cards left after giving to Rick's sisters.
+Total cards = 130
+Cards given to sisters = 6
+Cards left = 130 - 6 = 124 cards
+
+Step 3: Determine the number of cards given to Rick's friends.
+Rick gave 12 cards each to 8 friends.
+Cards given to friends = 12 * 8 = 96 cards
+
+Step 4: Calculate the number of cards given to Miguel.
+Total cards left after giving to sisters and friends = 124
+Cards given to friends = 96
+Cards given to Miguel = 124 - 96 = 28 cards
+
+#### 28
+Rick gave 28 cards to Miguel.
+=== REFERENCE SOLUTION (fallible aid) ===
+After keeping 15 cards, Rick had 130 cards - 15 cards = 115 cards left.
+The total number of cards given by Rick to his 8 friends was 8 friends x 12 cards/friend = <<8*12=96>>96 cards.
+There were 2 sisters x 3 cards/sister = <<2*3=6>>6 cards given to Rick's sisters.
+So, there were 96 cards + 6 cards = <<96+6=102>>102 cards left after Rick gave Miguel some cards.
+Therefore, 115 cards - 102 cards = <<115-102=13>>13 cards were given to Miguel.
+#### 13
+=== END ===

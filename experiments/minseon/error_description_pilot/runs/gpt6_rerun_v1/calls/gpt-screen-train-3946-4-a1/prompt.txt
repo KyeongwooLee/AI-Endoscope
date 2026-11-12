@@ -1,0 +1,10 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Mother made 2 dozen brownies and placed them on the kitchen counter to cool.  Father smelled the brownies, came into the kitchen and ate 8 of them. Then, their daughter, Mooney, wandered into the kitchen and ate 4 of the brownies. The next morning, Mother made another two dozen brownies and added them to those remaining from the day before.  After that, how many brownies were on the counter?
+SOLUTION: Step 1: Mother made 2 dozen brownies. There are 24 brownies in total.
+Step 2: Father ate 8 brownies. Now there are 24 - 8 = 16 brownies left.
+Step 3: Mooney ate 4 brownies. Now there are 16 - 4 = 12 brownies left.
+Step 4: The next morning, Mother made another 2 dozen brownies. There are 24 + 24 = 48 brownies.
+Step 5: After adding the new batch to the remaining brownies, the total is 12 + 48 = 60 brownies.
+
+#### 60

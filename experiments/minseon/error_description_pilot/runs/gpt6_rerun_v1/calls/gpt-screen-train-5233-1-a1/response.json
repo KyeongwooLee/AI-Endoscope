@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$167","check":"The expenses total $132. Adding the $35 remaining gives $132 + $35 = $167.","evidence_quote":"$132 + $35 = $144","error_description":"The solution incorrectly adds the remaining money to the expenses: the sum is $167, not $144."}

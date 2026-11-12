@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$24","check":"Two tubs cost 2 × ($12 − $2) = $20. Ten cans of juice cost (10 ÷ 5) × $2 = $4, giving a total of $24.","evidence_quote":"Cost per can of juice: $2","error_description":"The solution treats $2 as the price of one can instead of five cans. This overstates the juice cost as $20 and produces an incorrect total of $40."}

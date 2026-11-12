@@ -1,0 +1,13 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A 750 ml bottle of spirits costs $30.00 and has 16 servings per bottle.  Most restaurants will charge $8.00 for one serving.  How much money does a restaurant make on a bottle of spirits?
+SOLUTION: Step 1: Calculate the total revenue from selling the spirits.
+Total revenue = Number of servings × Price per serving
+Total revenue = 16 servings × $8.00/serving
+Step 2: Calculate the cost of the bottle of spirits.
+Cost of bottle = Price of bottle
+Step 3: Calculate the profit by subtracting the cost from the total revenue.
+Profit = Total revenue - Cost of bottle
+Step 4: Substitute the values from steps 1 and 2 into the profit equation.
+Profit = (16 servings × $8.00/serving) - $30.00
+#### 88.00

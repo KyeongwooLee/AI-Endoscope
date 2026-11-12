@@ -1,0 +1,28 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Bill is a painter who is hired to paint a client’s house. The house has three bedrooms, and twice as many other rooms as bedrooms. The client wants each bedroom painted a different color, and the other rooms painted white. Each room takes 2 gallons of paint. Color paint comes in 1-gallon paint cans, and white paint comes in 3-gallon cans. How many cans of paint will Bill need for the whole house?
+SOLUTION: Step 1: Determine the number of other rooms.
+The house has three bedrooms and twice as many other rooms as bedrooms.
+Number of other rooms = 2 * Number of bedrooms = 2 * 3 = 6
+
+Step 2: Calculate the total number of rooms.
+Total number of rooms = Number of bedrooms + Number of other rooms = 3 + 6 = 9
+
+Step 3: Calculate the total amount of paint needed for the bedrooms.
+Each bedroom takes 2 gallons of paint.
+Total paint for bedrooms = Number of bedrooms * Paint per bedroom = 3 * 2 = 6 gallons
+
+Step 4: Calculate the total amount of paint needed for the other rooms.
+Each other room takes 2 gallons of paint.
+Total paint for other rooms = Number of other rooms * Paint per room = 6 * 2 = 12 gallons
+
+Step 5: Calculate the total amount of paint needed for the whole house.
+Total paint needed = Paint for bedrooms + Paint for other rooms = 6 + 12 = 18 gallons
+
+Step 6: Calculate the number of cans of paint needed.
+Color paint comes in 1-gallon cans.
+White paint comes in 3-gallon cans.
+Total cans needed = Total paint needed / Paint per can = 18 / 1 = 18 cans
+
+#### 18
+Bill will need 18 cans of paint for the whole house.

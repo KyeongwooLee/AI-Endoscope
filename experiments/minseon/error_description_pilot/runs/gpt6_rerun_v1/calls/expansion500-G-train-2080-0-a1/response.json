@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2080-0",
+  "response_sha256": "97b8def552ef26a01bc1a9e4cef9a736ac73e3682f86be086efd3fea9994b16f",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "5 days * $59 per day = $295",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "2 trendy haircuts per day, how much money does he earn per week?",
+  "observed_error": "The response uses five days to convert daily earnings into weekly earnings.",
+  "violated_condition": "A week contains seven days; the question specifies daily haircuts without restricting work to five days.",
+  "error_description": "The response correctly calculates daily earnings of $59 but multiplies them by five days to obtain weekly earnings. The question gives haircuts per day without specifying a five-day workweek, so the weekly conversion requires seven days. The written multiplication itself is correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,33 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Teddy has 7 dogs and 8 cats. Ben has 9 more dogs than Teddy, and Dave has 13 more cats and 5 less dogs than Teddy. How many pets do all of them have combined?
+SOLUTION: Step 1: Determine the number of dogs Ben has.
+Teddy has 7 dogs. Ben has 9 more dogs than Teddy.
+\[ \text{Ben's dogs} = 7 + 9 = 16 \]
+
+Step 2: Determine the number of cats Ben has.
+Teddy has 8 cats. Ben has 13 more cats than Teddy.
+\[ \text{Ben's cats} = 8 + 13 = 21 \]
+
+Step 3: Determine the number of dogs Dave has.
+Teddy has 7 dogs. Dave has 5 less dogs than Teddy.
+\[ \text{Dave's dogs} = 7 - 5 = 2 \]
+
+Step 4: Determine the number of cats Dave has.
+Teddy has 8 cats. Dave has 13 more cats than Teddy.
+\[ \text{Dave's cats} = 8 + 13 = 21 \]
+
+Step 5: Calculate the total number of pets.
+Teddy has 7 dogs and 8 cats.
+\[ \text{Teddy's pets} = 7 + 8 = 15 \]
+
+Ben has 16 dogs and 21 cats.
+\[ \text{Ben's pets} = 16 + 21 = 37 \]
+
+Dave has 2 dogs and 21 cats.
+\[ \text{Dave's pets} = 2 + 21 = 23 \]
+
+Total number of pets:
+\[ \text{Total pets} = 15 + 37 + 23 = 75 \]
+
+#### 75

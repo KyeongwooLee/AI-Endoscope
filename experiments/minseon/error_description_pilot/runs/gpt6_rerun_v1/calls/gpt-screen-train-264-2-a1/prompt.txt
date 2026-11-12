@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: An Italian restaurant earns $600 every weekday and twice as much on the weekend. How much money does it earn by the end of the month?
+SOLUTION: Step 1: Calculate the earnings on weekdays.
+- Earnings per weekday = $600
+- Number of weekdays in a month = 4 (assuming 4 weeks in a month)
+- Total earnings on weekdays = 600 * 4 = $2400
+
+Step 2: Calculate the earnings on weekends.
+- Earnings per weekend day = 2 * $600 = $1200
+- Number of weekend days in a month = 2 (assuming 2 weekends in a month)
+- Total earnings on weekends = 1200 * 2 = $2400
+
+Step 3: Calculate the total monthly earnings.
+- Total monthly earnings = Earnings on weekdays + Earnings on weekends
+- Total monthly earnings = 2400 + 2400 = $4800
+
+#### 4800

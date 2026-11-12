@@ -1,0 +1,99 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-4070-4
+response_sha256: 599c4c915534e54e8134e872dfc1a3050abfdcc2c7f805fc242eaa85d822672f
+
+=== QUESTION ===
+Lucius owns a small business and spends $10 every day on ingredients. He then makes a portion of French Fries and a portion of Poutine and sells them to the market, paying ten percent of his weekly income as tax. If the price of French fries is $12 and the price of Poutine is $8, how much does he earn every week after paying the taxes, selling all his products, and buying all the ingredients?
+=== MODEL SOLUTION ===
+Step 1: Calculate daily earnings
+Lucius spends $10 on ingredients and makes a portion of French fries and a portion of Poutine. Let's denote the portion of French fries as F and the portion of Poutine as P. So, his daily earnings can be expressed as:
+Daily Earnings = 10 + F + P
+
+Step 2: Calculate weekly earnings
+Weekly Earnings = Daily Earnings × 7
+= (10 + F + P) × 7
+
+Step 3: Calculate tax paid
+Tax Paid = 10% of Weekly Earnings
+= 0.1 × (10 + F + P) × 7
+
+Step 4: Calculate remaining income after tax
+Remaining Income = Weekly Earnings - Tax Paid
+= (10 + F + P) × 7 - 0.1 × (10 + F + P) × 7
+
+Step 5: Calculate income from selling French fries
+Income from French Fries = Price of French Fries × Number of French Fries
+= 12 × F
+
+Step 6: Calculate income from selling Poutine
+Income from Poutine = Price of Poutine × Number of Poutine
+= 8 × P
+
+Step 7: Calculate total income from selling all products
+Total Income = Income from French Fries + Income from Poutine
+= 12F + 8P
+
+Step 8: Calculate total income after buying ingredients
+Total Income After Buying Ingredients = Total Income - (10 + F + P)
+= 12F + 8P - (10 + F + P)
+= 11F + 7P
+
+Step 9: Calculate remaining income after paying taxes
+Remaining Income After Taxes = Total Income After Buying Ingredients - Tax Paid
+= (11F + 7P) - 0.1 × (10 + F + P) × 7
+
+Step 10: Calculate weekly remaining income after taxes
+Weekly Remaining Income = Remaining Income After Taxes
+= (11F + 7P) - 0.1 × (10 + F + P) × 7
+
+#### 0
+This is the expression for the weekly remaining income after taxes. To get a numerical answer, we need to know the values of F and P. Since the problem does not provide these values, we cannot compute a specific numerical answer.
+=== REFERENCE SOLUTION (fallible aid) ===
+He earns $12 + $8 = $<<12+8=20>>20 after selling the French fries and Poutine every day.
+So, he earns $20 x 7 = $<<20*7=140>>140 every week.
+And the total amount he pays for the taxes is $140 x 0.10= $<<140*0.10=14>>14.
+So, his income after paying the weekly taxes is $140 - $14 = $<<140-14=126>>126.
+Lucius spends $10 x 7 = $<<10*7=70>>70 for the ingredients every week.
+Therefore, his total income every week after buying all the ingredients and paying the taxes is $126 - $70 = $<<126-70=56>>56.
+#### 56
+=== END ===

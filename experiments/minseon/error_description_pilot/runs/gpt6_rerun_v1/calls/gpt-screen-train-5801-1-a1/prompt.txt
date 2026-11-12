@@ -1,0 +1,10 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Aubree saw 20 beavers and 40 chipmunks by a tree when going to school and scared them away when they saw her. While coming back from school, she realized the number of beavers had doubled and the number of chipmunks had decreased by 10. What's the total number of animals she saw that day?
+SOLUTION: Step 1: Aubree initially saw 20 beavers and 40 chipmunks.
+Step 2: The number of beavers doubled, so she saw 20 * 2 = 40 beavers.
+Step 3: The number of chipmunks decreased by 10, so she saw 40 - 10 = 30 chipmunks.
+Step 4: The total number of animals she saw that day is 40 beavers + 30 chipmunks = 70 animals.
+#### 70
+Step 5: Write the final answer using the exact format requested.
+#### 70

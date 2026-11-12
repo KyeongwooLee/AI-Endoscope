@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4473-2",
+  "response_sha256": "323217dd5c6eb48c297dff087b102ba970186489c768b245b5c9b9b508f64609",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "Total unique books = 23 + 12 + 17 - 3 - 1\nTotal unique books = 40",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Tony read 23 books, Dean read 12 books and Breanna read 17 books.",
+  "observed_error": "The response incorrectly evaluates its written expression as 40.",
+  "violated_condition": "The individual counts sum to 52; subtracting 3 and 1 removes four books.",
+  "error_description": "The response writes 23 + 12 + 17 - 3 - 1 but incorrectly evaluates it as 40. The three reading counts total 52, and the written deductions remove only four books, so the stated result does not follow from its arithmetic.",
+  "reference_review_reason": "The reference subtracts two additional copies of the three-way shared book after already removing its Tony–Dean duplicate, if that book is included in their three shared books. The wording also leaves other pairwise overlaps unspecified.",
+  "secondary_errors": [],
+  "uncertainty_note": "The overlap wording permits uncertainty about the intended union count, but the response's arithmetic error is explicit regardless."
+}

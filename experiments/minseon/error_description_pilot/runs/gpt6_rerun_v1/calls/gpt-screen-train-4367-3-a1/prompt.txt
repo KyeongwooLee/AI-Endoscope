@@ -1,0 +1,13 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Susan is playing a board game with 48 spaces from the starting space to the winning end space of the game. On the first turn, she moves forward eight spaces. On the second turn, she moves two spaces, but lands on a space that sends her back five spaces. On the third turn, she moves forward six more spaces. How many spaces does she have to move to reach the ending space and win the game?
+SOLUTION: Step 1: Susan starts at the beginning of the game with 48 spaces.
+Step 2: On the first turn, she moves forward 8 spaces.
+Step 3: On the second turn, she moves 2 spaces forward but then moves back 5 spaces.
+   Calculation: 2 - 5 = -3 spaces
+Step 4: On the third turn, she moves forward 6 spaces.
+   Calculation: -3 + 6 = 3 spaces
+Step 5: We need to find the number of spaces she needs to move to reach 48 from her current position of 3 spaces.
+   Calculation: 48 - 3 = 45 spaces
+
+#### 45

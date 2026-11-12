@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"25 cents per load","check":"Two bottles wash 2 × 80 = 160 loads and cost 2 × $20 = $40. Thus the cost per load is 4,000 ÷ 160 = 25 cents.","evidence_quote":"Total number of loads = 80 loads","error_description":"The solution counts only 80 loads for two bottles instead of 160. This makes its cost per load twice the correct amount."}

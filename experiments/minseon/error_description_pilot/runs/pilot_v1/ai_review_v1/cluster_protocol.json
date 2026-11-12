@@ -1,0 +1,19 @@
+{
+  "status": "posthoc_exploratory_AI_review",
+  "primary_display": "KMeans k=6, seed=42, n_init=10; chosen for readability before inspecting computed cluster results",
+  "sensitivity_k": [
+    4,
+    6,
+    8,
+    10
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "secondary_algorithm": "average-link cosine agglomerative",
+  "input": "frozen eval BGE-M3 L2-normalized dense vectors, no reembedding, no label input, no PCA before clustering",
+  "cohorts": "R/Q n=100; E/G n=94; silhouette across unequal cohorts is descriptive, not a fair performance ranking",
+  "not_new_holdout": true
+}

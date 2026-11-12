@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7286-4",
+  "response_sha256": "f1ea3877fca4e9750e5d5f53b522293684f2550ba4fa8821aad7144e9673cee2",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The total amount of time they all have left is \\( G + P = 12 + 20 = 32 \\) hours.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "calculate the total number of hours they all have left to finish their homework?",
+  "observed_error": "The total includes Greg and Patrick but omits Jacob's 18 hours.",
+  "violated_condition": "The requested total must include the remaining homework time of all three people: Greg, Patrick, and Jacob.",
+  "error_description": "The response correctly calculates Greg's and Patrick's remaining time, but defines the total as G + P, omitting Jacob's 18 hours. The question asks for all three people's remaining hours. The addition 12 + 20 = 32 is correct; the total uses an incomplete set of quantities.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2866-1",
+  "response_sha256": "bfe20cf3ad66cdbec9698f9163f58ed098e836bb057a931baa3d9cf60f8e76e3",
+  "status": "insufficient_evidence",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 500",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "There are 6 episodes that are each 50 minutes long.",
+  "observed_error": "The response gives an incorrect final number, 500, without showing either calculation.",
+  "violated_condition": "The viewing time in hours must equal (6 × 50) / 60.",
+  "error_description": null,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The stated steps are valid. The unexplained final number does not establish whether the error occurred in multiplication, conversion, or reporting."
+}

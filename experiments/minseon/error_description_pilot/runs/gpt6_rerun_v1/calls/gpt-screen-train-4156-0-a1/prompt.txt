@@ -1,0 +1,30 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Wendy's truck has a gas tank that can hold 20 gallons. She also has a car with a gas tank that holds 12 gallons. The truck's tank is half full. The car's tank is 1/3 full. If she fills them both up completely, how many gallons does she add?
+SOLUTION: To determine how many gallons Wendy needs to add to fill both her truck and car tanks completely, we will follow these steps:
+
+1. Calculate the current amount of gas in the truck's tank.
+2. Calculate the current amount of gas in the car's tank.
+3. Determine the total amount of gas needed to fill both tanks completely.
+4. Subtract the current amount of gas from the total amount needed to find out how much gas needs to be added.
+
+Step 1: Calculate the current amount of gas in the truck's tank.
+- The truck's tank can hold 20 gallons.
+- The truck's tank is half full.
+- Current amount of gas in the truck's tank = 20 gallons * 1/2 = 10 gallons.
+
+Step 2: Calculate the current amount of gas in the car's tank.
+- The car's tank can hold 12 gallons.
+- The car's tank is 1/3 full.
+- Current amount of gas in the car's tank = 12 gallons * 1/3 = 4 gallons.
+
+Step 3: Determine the total amount of gas needed to fill both tanks completely.
+- Total amount of gas needed = Current amount in truck's tank + Current amount in car's tank
+- Total amount of gas needed = 10 gallons + 4 gallons = 14 gallons.
+
+Step 4: Subtract the current amount of gas from the total amount needed to find out how much gas needs to be added.
+- Amount of gas to be added = Total amount needed - Current amount in truck's tank
+- Amount of gas to be added = 14 gallons - 10 gallons = 4 gallons.
+
+#### 4
+This is the final answer.

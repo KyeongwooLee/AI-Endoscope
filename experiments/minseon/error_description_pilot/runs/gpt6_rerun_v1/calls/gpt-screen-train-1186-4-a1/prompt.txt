@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: John decides to install a ramp in his house.  He needs to get permits which cost $250.  After that, he hires a contractor which costs $150 an hour and the guy works for 3 days at 5 hours per day.  He also pays an inspector 80% less to make sure it is OK.  How much was the total cost?
+SOLUTION: Step 1: Calculate the cost of hiring the contractor.
+The cost is $150 per hour and the contractor works for 3 days at 5 hours per day.
+\[ \text{Cost of contractor} = 150 \times 3 \times 5 = 2250 \]
+
+Step 2: Calculate the cost of the inspector.
+The inspector is paid 80% less than the regular rate, which is $150 per hour.
+\[ \text{Regular rate} = 150 \]
+\[ \text{Discount} = 150 \times 0.8 = 120 \]
+\[ \text{Cost of inspector} = 150 - 120 = 30 \]
+
+Step 3: Calculate the total cost by adding the cost of permits, contractor, and inspector.
+\[ \text{Total cost} = 250 + 2250 + 30 = 2530 \]
+
+#### 2530
+This is the total cost.

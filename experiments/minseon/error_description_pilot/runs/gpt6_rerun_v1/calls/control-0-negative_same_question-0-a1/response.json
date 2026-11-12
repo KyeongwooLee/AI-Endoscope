@@ -1,0 +1,1 @@
+{"case1_error":"Uses George’s 45 oranges instead of Amelia’s 15 apples as the base for adding 5.","case2_error":"Correctly writes 15 + 5 but evaluates it as 21 instead of 20.","reason":"Case 1 forms an erroneous relation; case 2 numerically miscalculates a correctly written expression.","judgment":"different"}

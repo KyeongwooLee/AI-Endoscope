@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6191-2",
+  "response_sha256": "b28d50e222f0fcf8e99e1a31992bf01c5cf8030157a6cfb226b290de8227f6e5",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Fans who attended = Total seats - Seats sold - Fans who stayed home",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "only 75% of the seats were sold for the music show. Because of the threat of rain, 5,000 fans stayed home.",
+  "observed_error": "Attendance is calculated by subtracting seats sold and absent fans from total capacity.",
+  "violated_condition": "Attendance equals seats sold minus the 5,000 fans who stayed home.",
+  "error_description": "The response subtracts the 45,000 sold seats from the 60,000-seat capacity before subtracting the 5,000 absent fans. Attendance must instead start with the sold seats and subtract those who stayed home. The written subtraction is executed correctly, but it represents the wrong quantity.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

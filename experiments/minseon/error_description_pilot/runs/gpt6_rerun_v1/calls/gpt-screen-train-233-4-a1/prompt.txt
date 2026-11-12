@@ -1,0 +1,11 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Bryan starts exercising at home during quarantine. To start, he decides to do 3 sets of 15 push-ups each. Near the end of the third set, he gets tired and does 5 fewer push-ups. How many push-ups did he do in total?
+SOLUTION: Step 1: Bryan starts with 3 sets of 15 push-ups each.
+Step 2: Each set consists of 15 push-ups.
+Step 3: Calculate the total push-ups for the first two sets: 3 sets × 15 push-ups/set = 45 push-ups
+Step 4: Bryan does 5 fewer push-ups in the third set than the first two sets combined.
+Step 5: Subtract 5 from the total of the first two sets: 45 push-ups - 5 push-ups = 40 push-ups
+Step 6: Add the push-ups from the third set to the total from the first two sets to get the final count: 40 push-ups + 15 push-ups = 55 push-ups
+
+#### 55

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3215-1",
+  "response_sha256": "03100a0b14a034be3b5691ac05693827dbeea5e31cbb035b4817eafeb1c94537",
+  "status": "insufficient_evidence",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 1000",
+  "evidence_start": 0,
+  "evidence_end": 9,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "increases by two-fifths of its previous volume every hour",
+  "observed_error": "The response lists seven unexplained numbers, none matching the required volume, without showing a calculation or identifying a final answer.",
+  "violated_condition": "The volume after two hours must satisfy V₂ = 500(1 + 2/5)² cm³.",
+  "error_description": null,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text does not establish whether an incorrect growth relation or an arithmetic execution error produced the numbers."
+}

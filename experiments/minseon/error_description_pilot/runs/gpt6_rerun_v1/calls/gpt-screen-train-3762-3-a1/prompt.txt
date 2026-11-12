@@ -1,0 +1,34 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Between them, Mark and Sarah have 24 traffic tickets. Mark has twice as many parking tickets as Sarah, and they each have an equal number of speeding tickets. If Sarah has 6 speeding tickets, how many parking tickets does Mark have?
+SOLUTION: Let's break down the problem step by step.
+
+1. **Total Tickets**: Mark and Sarah have 24 tickets in total.
+2. **Speeding Tickets**: Sarah has 6 speeding tickets.
+3. **Speeding Tickets for Both**: Since they have the same number of speeding tickets, both have 6 speeding tickets.
+
+4. **Total Speeding Tickets**: 
+   \[
+   \text{Total Speeding Tickets} = 6 (\text{Sarah}) + 6 (\text{Mark}) = 12
+   \]
+
+5. **Remaining Tickets**: Subtract the total speeding tickets from the total tickets:
+   \[
+   \text{Remaining Tickets} = 24 - 12 = 12
+   \]
+
+6. **Parking Tickets**: Mark has twice as many parking tickets as Sarah.
+
+7. **Sarah's Parking Tickets**:
+   \[
+   \text{Sarah's Parking Tickets} = \frac{\text{Remaining Tickets}}{2} = \frac{12}{2} = 6
+   \]
+
+8. **Mark's Parking Tickets**:
+   \[
+   \text{Mark's Parking Tickets} = 2 \times \text{Sarah's Parking Tickets} = 2 \times 6 = 12
+   \]
+
+9. **Final Answer**: Mark has 12 parking tickets.
+#### 12
+This completes the problem and the solution.

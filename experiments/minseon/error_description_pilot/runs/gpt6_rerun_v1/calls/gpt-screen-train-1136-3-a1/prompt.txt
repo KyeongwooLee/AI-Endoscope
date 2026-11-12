@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Emily loves to have pets and for that reason, she has 4 dogs in her home. Each one eats 250 grams of food per day. She has to go on vacation for 14 days. How many kilograms of food should she buy for her 4 dogs so they don't starve while she is out?
+SOLUTION: Step 1: Calculate the daily food consumption for all dogs.
+Each dog eats 250 grams of food per day. There are 4 dogs.
+250 grams/dog * 4 dogs = 1000 grams per day
+
+Step 2: Convert the daily food consumption to kilograms.
+1000 grams = 1 kg
+So, each dog eats 1 kg of food per day.
+
+Step 3: Calculate the total food consumption for 14 days.
+1 kg/dog * 4 dogs * 14 days = 56 kg
+
+Final answer:
+#### 56
+Emily should buy 56 kilograms of food for her 4 dogs so they don't starve while she is out.

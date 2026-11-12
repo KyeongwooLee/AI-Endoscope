@@ -1,0 +1,27 @@
+{
+  "R": {
+    "queries_ranked": 20,
+    "queries": 20,
+    "mean_usable_gallery": 80.0
+  },
+  "E": {
+    "queries_ranked": 19,
+    "queries": 20,
+    "mean_usable_gallery": 75.0
+  },
+  "G": {
+    "queries_ranked": 19,
+    "queries": 20,
+    "mean_usable_gallery": 75.0
+  },
+  "Q": {
+    "queries_ranked": 20,
+    "queries": 20,
+    "mean_usable_gallery": 80.0
+  },
+  "Random": {
+    "queries_ranked": 20,
+    "queries": 20,
+    "mean_usable_gallery": 80.0
+  }
+}

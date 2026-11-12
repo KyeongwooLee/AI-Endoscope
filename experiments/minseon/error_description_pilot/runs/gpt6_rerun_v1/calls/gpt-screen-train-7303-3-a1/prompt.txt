@@ -1,0 +1,14 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Mr. Llesis had 50 kilograms of rice. He kept 7/10 of it in storage and gave the rest to Mr. Everest. How many kilograms of rice did Mr. Llesis keep than Mr. Everest?
+SOLUTION: Step 1: Calculate the amount of rice Mr. Llesis kept in storage.
+Amount kept = 50 kg * 7/10
+
+Step 2: Calculate the amount of rice Mr. Everest received.
+Amount received by Mr. Everest = 50 kg - (50 kg * 7/10)
+
+Step 3: Calculate the difference between the amount Mr. Llesis kept and the amount Mr. Everest received.
+Difference = Amount kept - Amount received by Mr. Everest
+
+#### 13
+The difference is 13 kilograms.

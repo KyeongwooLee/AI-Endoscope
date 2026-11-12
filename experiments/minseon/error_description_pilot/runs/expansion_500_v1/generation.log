@@ -1,0 +1,37 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:02<00:04,  2.02s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:04<00:02,  2.00s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.35s/it]
+MODEL LOADED
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+G 16 / 500 seconds 58.3 valid 16
+G 32 / 500 seconds 60.0 valid 16
+G 48 / 500 seconds 58.8 valid 12
+G 64 / 500 seconds 59.6 valid 13
+G 80 / 500 seconds 59.4 valid 15
+G 96 / 500 seconds 62.6 valid 12
+G 112 / 500 seconds 64.2 valid 13
+G 128 / 500 seconds 63.4 valid 11
+G 144 / 500 seconds 61.9 valid 13
+G 160 / 500 seconds 66.6 valid 12
+G 176 / 500 seconds 61.0 valid 14
+G 192 / 500 seconds 70.9 valid 14
+G 208 / 500 seconds 64.2 valid 10
+G 224 / 500 seconds 67.1 valid 11
+G 240 / 500 seconds 75.1 valid 9
+G 256 / 500 seconds 66.1 valid 11
+G 272 / 500 seconds 66.3 valid 8
+G 288 / 500 seconds 81.8 valid 8
+G 304 / 500 seconds 71.1 valid 9
+G 320 / 500 seconds 83.8 valid 9
+G 336 / 500 seconds 75.4 valid 9
+G 352 / 500 seconds 73.5 valid 7
+G 368 / 500 seconds 68.6 valid 7
+G 384 / 500 seconds 86.0 valid 7
+G 400 / 500 seconds 75.2 valid 9
+G 416 / 500 seconds 91.3 valid 9
+G 432 / 500 seconds 84.0 valid 3
+G 448 / 500 seconds 98.4 valid 3
+G 464 / 500 seconds 88.6 valid 6
+G 480 / 500 seconds 80.8 valid 3
+G 496 / 500 seconds 104.9 valid 3
+G 500 / 500 seconds 42.0 valid 0
+ANNOTATION COMPLETE

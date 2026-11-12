@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Bob enters cycling competitions every single week and hopes to win the 100 dollar grand prize each time. For the first 2 weeks, he managed first place and got 100 dollars each week. He is saving up for a puppy that costs 1000 dollars. What is the minimum number of additional weeks Bob must win first place?
+SOLUTION: Step 1: Determine the total amount Bob has already won.
+Bob has won 100 dollars each week for the first 2 weeks. So, the total amount he has won so far is:
+100 dollars/week × 2 weeks = 200 dollars
+
+Step 2: Calculate the remaining amount Bob needs to save.
+The puppy costs 1000 dollars. Subtract the amount Bob has already won from the cost of the puppy to find out how much more he needs:
+1000 dollars - 200 dollars = 800 dollars
+
+Step 3: Determine how many more weeks Bob needs to win first place.
+Bob needs to save 800 dollars to buy the puppy. He has already won 200 dollars in the first 2 weeks. So, the remaining amount he needs to win is:
+800 dollars - 200 dollars = 600 dollars
+
+Since Bob wins 100 dollars each week, we need to find out how many weeks it will take for him to win 600 dollars:
+600 dollars ÷ 100 dollars/week = 6 weeks
+
+Therefore, the minimum number of additional weeks Bob must win first place is 6.
+
+#### 6

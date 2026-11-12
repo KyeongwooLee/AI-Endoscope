@@ -1,0 +1,72 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-1075-0
+response_sha256: 9d103499081443377607c09b4d90356cea97d1b99d03998aaa6d62c063e66d32
+
+=== QUESTION ===
+Celina enjoys hiking in the mountains. Due to a lack of proper equipment, she decided to order a new pair of boots, a flashlight, and a special hoodie. The hoodie cost $80 and the flashlight was only 20% of that price. The pair of boots cost was $110, but due to a special promotion, Celina was able to buy them 10% cheaper. How much did Celina spend in total on the above-mentioned equipment?
+=== MODEL SOLUTION ===
+Step 1: Calculate the cost of the flashlight.
+The flashlight cost 20% of the hoodie's price.
+Cost of flashlight = 20% of $80
+Cost of flashlight = 0.20 * $80
+Cost of flashlight = $16
+
+Step 2: Calculate the discounted price of the boots.
+The boots originally cost $110, but Celina got a 10% discount.
+Discounted price of boots = 10% of $110
+Discounted price of boots = 0.10 * $110
+Discounted price of boots = $11
+
+Step 3: Calculate the total cost of all equipment.
+Total cost = Cost of hoodie + Cost of flashlight + Discounted price of boots
+Total cost = $80 + $16 + $11
+Total cost = $107
+
+#### 107
+=== REFERENCE SOLUTION (fallible aid) ===
+The flashlight was 20% of the price of the hoodie, so 80 * 20/100 = $<<80*20/100=16>>16.
+The promotion for a pair of boots was 110 * 10/100 = $<<110*10/100=11>>11.
+So the pair of boots cost 110 - 11 = $<<110-11=99>>99.
+Celina therefore spent 80 + 16 + 99 = $<<80+16+99=195>>195 on the equipment.
+#### 195
+=== END ===

@@ -1,0 +1,30 @@
+{
+  "E": {
+    "packets": 100,
+    "accepted": 100,
+    "failed": 0,
+    "missing": 0,
+    "accepted_on_attempt2": 0,
+    "statuses": {
+      "supported_error": 94,
+      "ambiguous": 4,
+      "insufficient_evidence": 2
+    },
+    "complete": true,
+    "with_warnings": 6
+  },
+  "G": {
+    "packets": 100,
+    "accepted": 100,
+    "failed": 0,
+    "missing": 0,
+    "accepted_on_attempt2": 0,
+    "statuses": {
+      "supported_error": 94,
+      "ambiguous": 4,
+      "insufficient_evidence": 2
+    },
+    "complete": true,
+    "with_warnings": 5
+  }
+}

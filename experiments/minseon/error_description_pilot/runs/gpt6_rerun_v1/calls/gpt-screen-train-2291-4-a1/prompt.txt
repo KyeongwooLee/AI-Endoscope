@@ -1,0 +1,36 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Trish likes to go for walks every day.  One day, she goes on a 1-mile walk.  Every subsequent day, she doubles the distance she walked the previous day.  On what day does she walk more than 10 times further than she did on the first day?
+SOLUTION: Let's break down the problem step by step:
+
+1. **Initial Distance:**
+   - Day 1: 1 mile
+
+2. **Doubling the Distance:**
+   - Day 2: \(1 \times 2 = 2\) miles
+   - Day 3: \(2 \times 2 = 4\) miles
+   - Day 4: \(4 \times 2 = 8\) miles
+
+3. **Comparison with First Day:**
+   - Day 1: 1 mile
+   - Day 2: 2 miles (100% of the first day)
+   - Day 3: 4 miles (200% of the first day)
+   - Day 4: 8 miles (400% of the first day)
+
+4. **Finding the Day When She Walks More than 10 Times Further:**
+   - We need to find the day where the distance is more than 10 times the distance of the first day.
+   - Day 1: 1 mile
+   - Day 2: 2 miles (100%)
+   - Day 3: 4 miles (200%)
+   - Day 4: 8 miles (400%)
+
+   Since 10 times the first day's distance is 10 miles, we need to find the first day where the distance is 10 miles or more.
+
+   - Day 2: 2 miles (2 times the first day)
+   - Day 3: 4 miles (4 times the first day)
+   - Day 4: 8 miles (8 times the first day)
+
+   Therefore, she walks more than 10 times further on Day 4.
+
+#### 4
+#### 4

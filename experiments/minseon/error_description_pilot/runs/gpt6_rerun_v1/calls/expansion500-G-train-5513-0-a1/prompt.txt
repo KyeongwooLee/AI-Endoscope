@@ -1,0 +1,69 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-5513-0
+response_sha256: 4d7953165adf0b15488c2bcb8c2ecac74eaae7e40a69f2f2fe15ee25cf72e563
+
+=== QUESTION ===
+An investor invested some money in 2 separate schemes: A and B. Scheme A will yield 30% of the capital within a year, and scheme B will yield 50% of the capital within a year. If he invested $300 in scheme A and $200 in B, how much more money will he have in scheme A than in B after a year, provided he does not withdraw anything?
+=== MODEL SOLUTION ===
+Step 1: Calculate the amount of money in scheme A after a year.
+Scheme A yields 30% of the capital within a year.
+Amount in scheme A = $300 * 30/100 = $90
+
+Step 2: Calculate the amount of money in scheme B after a year.
+Scheme B yields 50% of the capital within a year.
+Amount in scheme B = $200 * 50/100 = $100
+
+Step 3: Find the difference between the amounts in scheme A and scheme B.
+Difference = Amount in scheme A - Amount in scheme B
+Difference = $90 - $100 = -$10
+
+#### -10
+The investor will have $10 less in scheme A than in scheme B after a year.
+=== REFERENCE SOLUTION (fallible aid) ===
+After a year, scheme A will yield 30% of his capital which is (30/100)*$300 = $<<30/100*300=90>>90
+In addition to his capital, he will have $90+$300 = $<<90+300=390>>390 in scheme A
+After a year, scheme B will yield 50% of his capital which is (50/100)*$200 = $<<50*.01*200=100>>100
+In addition to his capital, he will have $100+$200 = $<<100+200=300>>300 in scheme B
+After a year, he will have $390-$300 = $<<390-300=90>>90 in scheme A more than in scheme B
+#### 90
+=== END ===

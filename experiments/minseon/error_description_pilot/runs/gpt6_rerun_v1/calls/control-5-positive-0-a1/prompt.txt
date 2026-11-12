@@ -1,0 +1,11 @@
+You are comparing observable mathematical errors. Use no tools or outside resources. For each case, check its solution against its question; the reference is fallible and must not override the question. Distinguish an erroneous relation, a numerical evaluation error of a correctly written expression, an unsupported final number after a correct formula, and answering the wrong requested quantity. A contradictory leading answer marker with an otherwise correct derivation is an answer conflict, not evidence of an invented math mistake. Decide same only if BOTH cases have the same specific observable error mechanism. Different stories, numerical values, or arithmetic operators do not by themselves make mechanisms different. Decide different if both have diagnosable errors and their mechanisms differ. Decide uncertain if either case has no clear mathematical error, a materially ambiguous interpretation, or only answer-marker conflict. Never invent an unshown calculation. Return concise JSON: case1_error, case2_error, judgment (same/different/uncertain), reason. No method names, embedding scores, cluster labels or generated annotations are supplied.
+
+CASE 1
+QUESTION: Tully is 61 years old now. How old was Tully exactly one year ago?
+SOLUTION: Tully is now 61, so the answer is 61 years old.
+REFERENCE: 61 - 1 = 60 years old.
+
+CASE 2
+QUESTION: Jo is 41 years old today. How old was Jo exactly one year ago?
+SOLUTION: Jo is 41 now. The answer is 41 years old.
+REFERENCE: 41 - 1 = 40 years old.

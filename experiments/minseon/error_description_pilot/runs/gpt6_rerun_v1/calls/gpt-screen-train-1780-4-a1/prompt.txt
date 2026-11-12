@@ -1,0 +1,29 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Faith is getting paid $13.50 per hour. She normally works 8 hours a day, 5 days a week, plus 2 hours of overtime per day. How much will she earn by the end of the week?
+SOLUTION: Step 1: Calculate Faith's regular pay per day
+Regular pay per day = Hourly rate * Regular hours per day
+Regular pay per day = $13.50 * 8
+
+Step 2: Calculate Faith's overtime pay per day
+Overtime pay per day = Overtime rate * Overtime hours per day
+Overtime pay per day = $13.50 * 2
+
+Step 3: Calculate Faith's total regular pay per week
+Total regular pay per week = Regular pay per day * Days worked per week
+Total regular pay per week = (Regular pay per day * 5) * 1
+
+Step 4: Calculate Faith's total overtime pay per week
+Total overtime pay per week = Overtime pay per day * Days worked per week
+Total overtime pay per week = (Overtime pay per day * 5) * 1
+
+Step 5: Calculate Faith's total weekly earnings
+Total weekly earnings = Total regular pay per week + Total overtime pay per week
+Total weekly earnings = (Total regular pay per week + Total overtime pay per week)
+
+Step 6: Calculate the final weekly earnings
+Total weekly earnings = Total regular pay per week + Total overtime pay per week
+
+#### 135
+#### 187.5
+#### 322.5

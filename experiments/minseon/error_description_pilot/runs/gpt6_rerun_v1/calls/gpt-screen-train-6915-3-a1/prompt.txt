@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Exactly two-fifths of NBA players who signed up for a test are aged between 25 and 35 years. If three-eighths of them are older than 35, and a total of 1000 players signed up, how many players are younger than 25 years?
+SOLUTION: #### 200
+
+Let's break down the problem step by step:
+
+1. **Total number of players signed up**: 1000
+2. **Number of players aged between 25 and 35**: \( \frac{2}{5} \times 1000 = 400 \)
+3. **Number of players older than 35**: \( \frac{3}{8} \times 1000 = 375 \)
+4. **Number of players younger than 25**: We need to subtract the players aged between 25 and 35 and the players older than 35 from the total number of players.
+
+\[
+\text{Number of players younger than 25} = 1000 - 400 - 375 = 200
+\]
+
+So, the number of players younger than 25 years is 200.

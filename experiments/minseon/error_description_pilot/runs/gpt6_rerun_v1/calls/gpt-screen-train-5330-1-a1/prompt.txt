@@ -1,0 +1,22 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Steve makes 40000$ a year as a teacher.  He loses 20 percent to taxes, 10 percent to healthcare, and 800$ to local union dues.  How much money does Steve take home?
+SOLUTION: Step 1: Calculate the amount lost to taxes.
+Tax loss = 20% of $40,000
+Tax loss = 0.20 * $40,000
+Tax loss = $8,000
+
+Step 2: Calculate the amount lost to healthcare.
+Healthcare loss = 10% of $40,000
+Healthcare loss = 0.10 * $40,000
+Healthcare loss = $4,000
+
+Step 3: Subtract the healthcare loss from the original income.
+Net income after healthcare = $40,000 - $4,000
+Net income after healthcare = $36,000
+
+Step 4: Subtract the union dues from the net income after healthcare.
+Net income after union dues = $36,000 - $800
+Net income after union dues = $35,200
+
+#### 35200

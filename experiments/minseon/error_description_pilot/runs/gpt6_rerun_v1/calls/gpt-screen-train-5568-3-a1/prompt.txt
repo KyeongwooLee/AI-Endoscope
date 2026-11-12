@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Mary wants 144 cupcakes for her party. Mary has already made 36 cherry cupcakes, and 48 berry cupcakes. Mary wants to make an even number of chocolate and vanilla cupcakes for the rest. How much of each should she make?
+SOLUTION: First, let's determine the total number of cupcakes Mary has already made:
+- Cherry cupcakes: 36
+- Berry cupcakes: 48
+- Total cupcakes made so far: 36 + 48 = 84
+
+Mary wants a total of 144 cupcakes for her party. Therefore, the number of cupcakes she still needs to make is:
+- Total cupcakes needed: 144
+- Cupcakes already made: 84
+- Remaining cupcakes: 144 - 84 = 60
+
+Mary wants to make an even number of chocolate and vanilla cupcakes for the remaining 60 cupcakes. The only even number that divides 60 evenly is 60 itself (since 60 is already even). Therefore, she should make 60 chocolate cupcakes and 60 vanilla cupcakes.
+
+#### 60
+#### 60

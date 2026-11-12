@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4568-0",
+  "response_sha256": "4280ed2717a32c856d8bcfc526d09fa04f44f0bb777563c8557a7756cef29c86",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\[ 60 = \\text{Bet} \\times 3 \\]",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "A casino table pays 3:2 if you get a blackjack with your first 2 cards.",
+  "observed_error": "The substitution uses a payout multiplier of 3 instead of 3/2.",
+  "violated_condition": "A 3:2 payout means the $60 payout equals the original bet multiplied by 3/2.",
+  "error_description": "The response correctly states that each $2 bet wins $3, but substitutes 3 as the payout multiplier in the equation for the $60 payment. The stated ratio requires a multiplier of 3/2. Dividing 60 by 3 is executed correctly; the error is the payout relation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

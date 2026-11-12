@@ -1,0 +1,13 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Sarah is in charge of making 2 copies of a contract for 9 people that will be in a meeting.  The contract is 20 pages long.  How many pages will Sarah copy?
+SOLUTION: Step 1: Determine the total number of copies needed.
+Sarah needs to make 2 copies for each of the 9 people.
+
+Step 2: Calculate the total number of pages to be copied.
+Each contract is 20 pages long, and Sarah needs to make 2 copies of each contract.
+
+Step 3: Multiply the number of copies by the number of pages per contract.
+2 copies * 20 pages per contract = 40 pages
+
+#### 40

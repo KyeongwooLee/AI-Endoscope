@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2540-1",
+  "response_sha256": "318ee87ef7a194a29df16da758a674570a11276cef8c3863564275d4db88ee59",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "So, its current value is $4000 + $4000 = $8000.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Three years ago, Rosie purchased an art piece for $4000. The same art piece will be three times as much in another three years.",
+  "observed_error": "The response asserts that the current value is twice the purchase price without supporting information.",
+  "violated_condition": "The purchase price and future tripling condition do not establish a doubling during the three years since purchase.",
+  "error_description": "The response adds $4000 to the $4000 purchase price to assert a current value of $8000. Although the addition is correct, the question supplies no increase over the three years since purchase and no rule establishing that current value.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1855-0",
+  "response_sha256": "fd7a37f69e15795806b76d200f235395ee42645cbe71ab6ffea28eddc388823c",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "\\frac{x}{2} + 30 = x",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "60% of the citizens own a pet",
+  "observed_error": "The equation equates the stated pet-owner total to the entire town population.",
+  "violated_condition": "With x denoting all citizens, the pet-owner total is 0.6x, not x.",
+  "error_description": "The response identifies the dog-owner and cat-owner sum as the pet-owner total, then sets that sum equal to the entire population x. This violates the stated 60% pet-ownership rate: that total should be 0.6x. The subsequent arithmetic correctly solves the incorrectly written equation.",
+  "reference_review_reason": "The question leaves the denominator of 'half' ambiguous and does not explicitly exclude overlapping ownership or other pets. The reference assumes half of pet owners own dogs and the remainder own cats.",
+  "secondary_errors": [],
+  "uncertainty_note": "Interpreting 'half' as half of all citizens is not independently established as an error by the wording."
+}

@@ -1,0 +1,15 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jenny is planning her catering budget for her wedding. She's going to have 80 guests. 3 times as many guests want steak as chicken. If each steak entree costs $25 and each chicken entree costs $18, how much is the total catering budget?
+SOLUTION: Step 1: Let's denote the number of chicken entrees as \( x \).
+Step 2: Then the number of steak entrees will be \( 3x \) because there are 3 times as many guests wanting steak as chicken.
+Step 3: The cost of the chicken entrees is \( 18x \).
+Step 4: The cost of the steak entrees is \( 25 \times 3x = 75x \).
+Step 5: The total cost for the chicken entrees is \( 18x \).
+Step 6: The total cost for the steak entrees is \( 75x \).
+Step 7: The total catering budget is the sum of the costs for chicken and steak entrees.
+Step 8: The total catering budget is \( 18x + 75x = 93x \).
+Step 9: Since there are 80 guests, we have \( x = 80 \).
+Step 10: Substituting \( x = 80 \) into the total catering budget equation gives \( 93 \times 80 = 7440 \).
+
+#### 7440

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1373-1",
+  "response_sha256": "fc5038bc86b911071c1eeefb3f29164d68060bc9fe0cc5a3dda6869d86f53018",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "To divide the land equally with his four siblings, Jose needs to divide the total land by the number of siblings.",
+  "evidence_start": 0,
+  "evidence_end": 110,
+  "evidence_occurrence": null,
+  "question_evidence_quote": "needs to divide it equally with his four siblings",
+  "observed_error": "The response uses the four siblings as the entire recipient count, excluding Jose.",
+  "violated_condition": "The land must be divided equally among Jose and his four siblings, totaling five recipients.",
+  "error_description": "The response divides 20,000 square meters by the four siblings alone, omitting Jose from the recipient count. Equal sharing with his four siblings requires five shares. The division by four is executed correctly, but the divisor does not represent everyone receiving land.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

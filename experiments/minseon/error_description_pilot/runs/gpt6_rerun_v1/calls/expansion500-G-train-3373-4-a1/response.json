@@ -1,0 +1,19 @@
+{
+  "source_id": "train-3373-4",
+  "response_sha256": "222e98c2422d4bd17c4ae8c393373694562adc97c2304dce15c55305b062a014",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "- Number of adults: 7\n   - Number of other adults: 7\n   - Total people: 2 + 10 + 7 + 7 = 26",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "herself and the 7 other adults",
+  "observed_error": "The response counts two groups of seven adults instead of Shonda and seven other adults.",
+  "violated_condition": "The adult count is 1 + 7, so the total person count must be 2 + 10 + 1 + 7.",
+  "error_description": "The response counts seven adults plus seven other adults, although the question specifies Shonda herself plus seven other adults. Its sum of 26 correctly evaluates the written operands, but those operands misrepresent the people present. Independently, it treats 12 eggs per basket as 12 eggs per person.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The response calculates total eggs as 26 people × 12 eggs/person, although the question supplies 15 baskets holding 12 eggs each."
+  ],
+  "uncertainty_note": null
+}

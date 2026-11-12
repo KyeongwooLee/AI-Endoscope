@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Marc bought 50 episodes of the show "Friends" online. Each day Marc watches 1/10 of the episodes he bought. How many days will Marc need to finish 50 episodes of the show he bought?
+SOLUTION: Step 1: Determine the total number of episodes Marc needs to watch.
+Marc bought 50 episodes of "Friends".
+
+Step 2: Calculate the number of episodes Marc watches each day.
+Marc watches 1/10 of the episodes he bought each day.
+
+Step 3: Calculate the number of days Marc needs to finish all episodes.
+To find the number of days, we divide the total number of episodes by the number of episodes watched each day.
+
+Calculation:
+\[ \text{Number of days} = \frac{\text{Total number of episodes}}{\text{Episodes watched per day}} \]
+\[ \text{Number of days} = \frac{50}{\frac{1}{10}} \]
+\[ \text{Number of days} = 50 \times 10 \]
+\[ \text{Number of days} = 500 \]
+
+#### 500
+Marc will need 500 days to finish 50 episodes of the show he bought.

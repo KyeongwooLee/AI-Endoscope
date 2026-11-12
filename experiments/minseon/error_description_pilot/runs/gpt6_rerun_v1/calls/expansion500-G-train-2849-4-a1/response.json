@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2849-4",
+  "response_sha256": "91843eadf5690fea9f447911e3e5eaeefa4dd55175e52510a29cd1f6e5a12380",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### (4.65 + 1.15 - (0.95 + 0.85))\n#### 5.00",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "How much more money did Anna spend on lunch than on breakfast?",
+  "observed_error": "The response reports $5.00 for a correctly written subtraction expression that does not evaluate to $5.00.",
+  "violated_condition": "The difference must equal ($4.65 + $1.15) − ($0.95 + $0.85).",
+  "error_description": "The response correctly represents the requested difference as lunch costs minus breakfast costs, but then gives $5.00 as the value of (4.65 + 1.15 − (0.95 + 0.85)). This incorrectly evaluates the written arithmetic; the subtraction relation and the four price operands are correct.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text does not reveal which intermediate arithmetic operation produced the incorrect value."
+}

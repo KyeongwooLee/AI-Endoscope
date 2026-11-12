@@ -1,0 +1,12 @@
+{
+  "baseline": "expansion_500_v1",
+  "sample_unchanged": true,
+  "intervention": "unique exact quote offsets only; no description or source text modifications",
+  "repair_n": 77,
+  "clustering": "same settings; full and eligible common cohorts; also compare on fixed baseline common cohort",
+  "reference_screening": "fresh Qwen3-4B diagnosis without reference for all500; provisional triage, not truth; assess on existing20 AI audits",
+  "judge_validation": "original vs revised reference-free structured prompt on frozen synthetic positive/negative/uncertain controls with swapped order; existing10 real pair AI diagnoses used as additional checks",
+  "no_human_ground_truth": true,
+  "gate": "no new full-retrieval accuracy claim unless evaluator trustworthy; synthetic success alone insufficient",
+  "main_embedding": "only existing E/G descriptions; reference-free screening text NOT substituted into primary vectors"
+}

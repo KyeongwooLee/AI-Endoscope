@@ -1,0 +1,20 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Tara has a shoebox that is 4 inches tall and 6 inches wide. She puts a square block inside that is 4 inches per side. How many square inches of the box are left uncovered?
+SOLUTION: To find the uncovered area, we first need to calculate the total area of the shoebox and then the area occupied by the square block.
+
+1. Calculate the total area of the shoebox:
+   - The shoebox is 4 inches tall and 6 inches wide.
+   - The area of the base (length times width) is 4 inches * 6 inches = 24 square inches.
+   - The area of the two sides (each 4 inches tall and 6 inches wide) is 2 * (4 inches * 6 inches) = 48 square inches.
+   - The total area of the shoebox is 24 square inches + 48 square inches = 72 square inches.
+
+2. Calculate the area of the square block:
+   - The square block is 4 inches per side.
+   - The area of a square is side length squared, so 4 inches * 4 inches = 16 square inches.
+
+3. Subtract the area of the square block from the total area of the shoebox to find the uncovered area:
+   - 72 square inches - 16 square inches = 56 square inches.
+
+#### 56
+This is the final answer.

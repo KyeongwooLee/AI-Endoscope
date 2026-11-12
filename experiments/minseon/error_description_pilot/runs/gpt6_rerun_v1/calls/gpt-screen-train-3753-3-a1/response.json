@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"201 students didn't pass.","check":"The failing percentage is 100% − 75% = 25%, and 804 × 0.25 = 201. The solution gives 151 without a worked calculation supporting it.","evidence_quote":"#### 151","error_description":"The final answer is 151, but the stated quantities give 201 students who failed."}

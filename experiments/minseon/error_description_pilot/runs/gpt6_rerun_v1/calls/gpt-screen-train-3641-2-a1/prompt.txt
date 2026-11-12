@@ -1,0 +1,23 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Bobby wanted pancakes for breakfast.  The recipe on the box makes 21 pancakes.  While he ate 5 pancakes, his dog jumped up and was able to eat 7 before being caught.  How many pancakes does Bobby have left?
+SOLUTION: Step 1: Start with the total number of pancakes made by the recipe.
+Total pancakes = 21
+
+Step 2: Subtract the number of pancakes Bobby ate.
+Bobby's pancakes = Total pancakes - Bobby's pancakes
+Bobby's pancakes = 21 - 5
+Bobby's pancakes = 16
+
+Step 3: Subtract the number of pancakes the dog ate.
+Dog's pancakes = Total pancakes - Dog's pancakes
+Dog's pancakes = 21 - 7
+Dog's pancakes = 14
+
+Step 4: Subtract the dog's pancakes from Bobby's pancakes to find out how many are left.
+Left = Bobby's pancakes - Dog's pancakes
+Left = 16 - 14
+Left = 2
+
+#### 2
+Bobby has 2 pancakes left.

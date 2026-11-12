@@ -1,0 +1,81 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-3118-1
+response_sha256: dfe30005df75846d9dab819ef897748611419d72af319ea48100954bdc12c468
+
+=== QUESTION ===
+Jason is trying to figure out whether he can afford a new car. The car he wants costs $32,000, and he can make a down payment of $8,000. He'll have to get a loan for the rest of the amount and make 48 equal monthly payments on it. Each month, he also has to pay interest equal to 5% of that month's payment. How much will Jason's monthly payments be?
+=== MODEL SOLUTION ===
+Step 1: Calculate the loan amount.
+Loan amount = Total cost of the car - Down payment
+Loan amount = $32,000 - $8,000
+Loan amount = $24,000
+
+Step 2: Calculate the total amount to be paid over 48 months.
+Total payments = Loan amount / Number of months
+Total payments = $24,000 / 48
+Total payments = $500 per month
+
+Step 3: Calculate the monthly interest payment.
+Monthly interest payment = 5% of monthly payment
+Monthly interest payment = 0.05 * $500
+Monthly interest payment = $25
+
+Step 4: Calculate the total amount paid excluding interest.
+Total amount paid excluding interest = Total payments - Monthly interest payment
+Total amount paid excluding interest = $500 - $25
+Total amount paid excluding interest = $475
+
+Step 5: Calculate the total amount paid including interest.
+Total amount paid including interest = Total amount paid excluding interest + Monthly interest payment
+Total amount paid including interest = $475 + $25
+Total amount paid including interest = $500
+
+#### 500
+Jason's monthly payments will be $500.
+=== REFERENCE SOLUTION (fallible aid) ===
+First figure out how much the loan will be: $32,000 - $8,000 = $<<32000-8000=24000>>24,000
+Then divide the loan amount by the number of payments to find the monthly payment before interest: $24,000 / 48 months = $<<24000/48=500>>500/month
+Then multiply the loan amount by 5% to find out how much the interest is: $500/month * .05 = $<<500*.05=25>>25/month
+Then add the interest to the payment amount to find the total monthly payment: $500/month + $25/month = $<<500+25=525>>525/month
+#### 525
+=== END ===

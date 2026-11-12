@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"40 biscuits","check":"32 + 13 + 15 = 60, and 60 - 20 = 40. The solution gives the correct formula but reports 30 biscuits.","evidence_quote":"Randy is left with 30 biscuits.","error_description":"The final answer of 30 conflicts with the value 40 obtained from the solution’s correct formula."}

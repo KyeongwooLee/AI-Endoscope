@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4365-1",
+  "response_sha256": "003fc1bd431f58853325630ec966e20ff4ffdb5c368acbb79ec383027cee058f",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "\\[ H = 16.67 \\]",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "There are three times as many misses as hits in an MLB game. If the number of misses is 50",
+  "observed_error": "The response accepts a fractional number of hits as a valid game count.",
+  "violated_condition": "Hits are integer counts, but M = 3H and M = 50 imply H = 50/3.",
+  "error_description": "After correctly deriving H = 50/3, the response reports 16.67 hits as a valid game count. Hits must be whole numbers, and 50 misses cannot equal three times an integer number of hits. The given conditions are inconsistent; rounding does not resolve that inconsistency.",
+  "reference_review_reason": "The reference treats 50 as the number of hits, although the question explicitly identifies 50 as the number of misses. It also overlooks the incompatible integer-count conditions.",
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

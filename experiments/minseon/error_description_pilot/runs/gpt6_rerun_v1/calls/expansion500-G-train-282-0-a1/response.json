@@ -1,0 +1,17 @@
+{
+  "source_id": "train-282-0",
+  "response_sha256": "3959504702aa5371dcddc36c72d1f7ec4628eff0b04a940be7f3452cedfb727e",
+  "status": "ambiguous",
+  "reference_review_needed": true,
+  "evidence_quote": "Riku's stickers = Kristoff's stickers * 25",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Riku has 25 times more stickers than Kristoff.",
+  "observed_error": "The response treats 25 times Kristoff's count as Riku's total; the multiplication is correct.",
+  "violated_condition": "If '25 times more' specifies the excess, Riku's total must include Kristoff's baseline count in addition to that excess.",
+  "error_description": null,
+  "reference_review_reason": "The reference interprets '25 times more' as an excess, while the response uses the common interpretation '25 times as many.' The wording does not unambiguously distinguish these readings.",
+  "secondary_errors": [],
+  "uncertainty_note": "The response is valid under the multiplicative-total reading and incorrect under the excess reading."
+}

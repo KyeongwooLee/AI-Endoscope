@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Southton buries their time capsule 15 feet underground. Northton buries their time capsule 12 feet higher than 4 times the depth of the Southton time capsule. How deep is Northton's time capsule buried?
+SOLUTION: To find the depth of Northton's time capsule, we start by identifying the given depth of Southton's time capsule. Southton's time capsule is buried 15 feet underground.
+
+Next, we need to determine the depth of Northton's time capsule. The problem states that Northton's time capsule is buried 12 feet higher than 4 times the depth of Southton's time capsule. Mathematically, this can be represented as:
+\[ \text{Depth of Northton's time capsule} = 4 \times \text{Depth of Southton's time capsule} + 12 \]
+
+Substituting the depth of Southton's time capsule into the equation:
+\[ \text{Depth of Northton's time capsule} = 4 \times 15 + 12 \]
+
+Calculating the expression:
+\[ 4 \times 15 = 60 \]
+\[ 60 + 12 = 72 \]
+
+Therefore, the depth of Northton's time capsule is:
+#### 72
+#### 72

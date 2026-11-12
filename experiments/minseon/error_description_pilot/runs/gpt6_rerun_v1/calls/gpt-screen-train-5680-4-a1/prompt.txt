@@ -1,0 +1,24 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Ten percent of Jonessa's pay goes to paying tax. If her pay is $500, how much is her take-home pay?
+SOLUTION: To find Jonessa's take-home pay, we first need to calculate the amount of tax she has to pay. 
+
+1. Calculate the tax amount:
+   Tax amount = 10% of $500
+   Tax amount = 0.10 * $500
+
+2. Add the tax amount to the original pay to get the take-home pay:
+   Take-home pay = Original pay + Tax amount
+   Take-home pay = $500 + Tax amount
+
+Let's calculate the tax amount first:
+
+   Tax amount = 0.10 * $500
+   Tax amount = $50
+
+Now, add this tax amount to the original pay:
+
+   Take-home pay = $500 + $50
+   Take-home pay = $550
+
+#### 550

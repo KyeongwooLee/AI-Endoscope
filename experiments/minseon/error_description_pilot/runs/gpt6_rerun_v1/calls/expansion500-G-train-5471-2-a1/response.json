@@ -1,0 +1,19 @@
+{
+  "source_id": "train-5471-2",
+  "response_sha256": "4d6372921569adef9285f323ce4eb5f4b9ad3e071c6edd737274cbb56e99a832",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total situps Hani did = 7 situps/minute * 40 minutes",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Diana then did 40 situps at a rate of 4 situps per minute.",
+  "observed_error": "The response uses 40 minutes as Hani's duration, although 40 is Diana's situp count.",
+  "violated_condition": "Duration equals situp count divided by rate: 40 situps / (4 situps per minute) = 10 minutes.",
+  "error_description": "The response multiplies Hani's rate of 7 situps per minute by 40 minutes, treating Diana's situp count as elapsed time. Diana's stated count and rate imply 10 minutes. Under the shared-duration interpretation, Hani's count must use that duration.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The final total of 150 does not follow from the written expressions, which imply 40 + 7 × 40 = 320; no calculation explains this discrepancy."
+  ],
+  "uncertainty_note": "The question does not explicitly state that Hani and Diana exercise for the same duration; the reference assumes this."
+}

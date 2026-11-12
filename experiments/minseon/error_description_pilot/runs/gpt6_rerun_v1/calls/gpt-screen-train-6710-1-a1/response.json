@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$1,500 profit.","check":"Each necklace costs 10 × $15 = $150, so 30 necklaces cost $4,500. Profit is $6,000 − $4,500 = $1,500.","evidence_quote":"Profit = 6000 - 150 = $5850","error_description":"The solution subtracts the cost of one necklace from the revenue for 30 necklaces. It must subtract the cost of all 30 necklaces."}

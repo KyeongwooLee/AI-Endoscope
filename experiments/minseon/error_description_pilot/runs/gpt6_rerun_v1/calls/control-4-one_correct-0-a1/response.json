@@ -1,0 +1,1 @@
+{"case1_error":"Treats the daily amount as the weekly total, ignoring the five school days.","case2_error":"No mathematical error; 8 × 5 = 40 correctly gives the weekly total.","reason":"Case 1 has a clear error, but case 2 is correct, so both do not have diagnosable errors to compare.","judgment":"uncertain"}

@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Liezl prepared four sets of 2-dozen paper cups for her daughter's birthday party. If 5 cups were damaged and 30 were not used, how many paper cups were used?
+SOLUTION: Step 1: Determine the total number of paper cups Liezl prepared.
+Liezl prepared four sets of 2-dozen paper cups.
+1 dozen = 12 cups
+4 sets * 12 cups/set = 48 cups
+
+Step 2: Determine the total number of cups that were damaged.
+5 cups were damaged.
+
+Step 3: Determine the total number of cups that were not used.
+30 cups were not used.
+
+Step 4: Calculate the number of cups used.
+Total cups prepared - damaged cups - not used cups = used cups
+48 cups - 5 cups - 30 cups = 13 cups
+
+#### 13

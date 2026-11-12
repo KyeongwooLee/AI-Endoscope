@@ -1,0 +1,13 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Tilly counts 120 stars to the east of her house and six times that number to the west. How many stars does she count total?
+SOLUTION: Step 1: Determine the number of stars to the west.
+Tilly counts 6 times the number of stars to the east. 
+Number of stars to the west = 6 * 120
+
+Step 2: Calculate the total number of stars.
+Total number of stars = Stars to the east + Stars to the west
+Total number of stars = 120 + (6 * 120)
+
+#### 960
+The total number of stars Tilly counts is 960.

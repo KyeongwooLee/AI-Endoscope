@@ -1,0 +1,17 @@
+{
+  "source_id": "train-653-2",
+  "response_sha256": "b8ff5cfc86c626c63a56255e0e757747e7497857f13aa97cec3b2c6f141d1c57",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 20",
+  "evidence_start": 0,
+  "evidence_end": 7,
+  "evidence_occurrence": null,
+  "question_evidence_quote": "What is his weekly allowance if he ended with 14 dollars?",
+  "observed_error": "The opening answer gives 20, contradicting the correctly worked solution below it.",
+  "violated_condition": "Half the weekly allowance plus the $6 earned must equal $14.",
+  "error_description": "The opening answer gives a weekly allowance of $20. Half of that allowance plus the $6 earned would leave $16, violating the stated ending balance of $14. The subsequent equation and arithmetic are correct but contradict the opening answer.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text does not establish how the incorrect opening number was obtained."
+}

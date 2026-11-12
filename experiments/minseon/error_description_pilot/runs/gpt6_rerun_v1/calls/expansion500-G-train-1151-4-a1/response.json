@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1151-4",
+  "response_sha256": "0c6e4456bb6b386380aa8f084a4037f110e2d4de85480cecaba51344c877bd56",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "To get the total, add the 10 pieces to the 5 pieces that Kobe ordered.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "how many pieces of fried chicken will Pau have eaten in all?",
+  "observed_error": "The response includes Kobe's five pieces in Pau's initial total.",
+  "violated_condition": "Pau's total should include only Pau's portions from the two sets.",
+  "error_description": "The response adds Kobe's five pieces to Pau's ten pieces and treats the combined fifteen pieces as Pau's initial consumption. The question asks for Pau's consumption alone. The addition is executed correctly, but it combines portions belonging to different people; the later total carries this error forward.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

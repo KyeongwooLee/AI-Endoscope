@@ -1,0 +1,29 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Carolyn wants to embroider her new jeans. She can sew 4 stitches/minute. A flower takes 60 stitches to embroider, a unicorn takes 180 stitches, and Godzilla takes 800 stitches. If Carolyn wants to embroider Godzilla crushing 3 unicorns and 50 flowers, how many minutes does she need to spend embroidering?
+SOLUTION: To find out how many minutes Carolyn needs to spend embroidering, we first need to determine the total number of stitches she will need to sew.
+
+1. Calculate the total number of stitches for 50 flowers:
+   - Each flower requires 60 stitches.
+   - Total stitches for flowers: \( 50 \times 60 = 3000 \) stitches.
+
+2. Calculate the total number of stitches for 3 unicorns:
+   - Each unicorn requires 180 stitches.
+   - Total stitches for unicorns: \( 3 \times 180 = 540 \) stitches.
+
+3. Calculate the total number of stitches for Godzilla crushing 3 unicorns:
+   - Godzilla requires 800 stitches.
+   - Since Carolyn is embroidering 3 unicorns, the additional stitches are:
+     - Total stitches for Godzilla: 800.
+     - Total stitches for 3 unicorns: \( 3 \times 180 = 540 \).
+     - Total stitches for 3 unicorns and Godzilla: \( 800 + 540 = 1340 \) stitches.
+
+4. Calculate the total number of stitches for all:
+   - Total stitches: \( 3000 + 540 + 1340 = 4880 \) stitches.
+
+5. Calculate the time Carolyn needs to spend embroidering:
+   - Carolyn sews 4 stitches per minute.
+   - Total time needed: \( \frac{4880 \text{ stitches}}{4 \text{ stitches/minute}} = 1220 \text{ minutes} \).
+
+#### 1220
+Carolyn needs to spend 1220 minutes embroidering.

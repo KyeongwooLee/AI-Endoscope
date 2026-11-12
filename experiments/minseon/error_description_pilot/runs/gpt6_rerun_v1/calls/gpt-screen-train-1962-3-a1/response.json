@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"80 paintings","check":"Philip makes 2 × 30 = 60 new paintings, giving 20 + 60 = 80. The solution gives the correct expression but reports 100.","evidence_quote":"#### 100","error_description":"The final number 100 conflicts with the correct expression 20 + (2 * 30), which evaluates to 80."}

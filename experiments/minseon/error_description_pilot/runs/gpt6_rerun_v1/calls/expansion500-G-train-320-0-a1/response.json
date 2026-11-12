@@ -1,0 +1,17 @@
+{
+  "source_id": "train-320-0",
+  "response_sha256": "6eee8add22b167969242720e3b827df5deaf36dce723da03f75a368f8c041e7f",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Finally, add the change.\n#### 130.72",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He left with $11.53 in change.",
+  "observed_error": "The final addition reports $130.72 after correctly computing $68.47 including tax.",
+  "violated_condition": "The starting amount equals $68.47 spent plus $11.53 in change.",
+  "error_description": "The response correctly states that the starting amount equals the robot cost plus tax plus change, and correctly obtains $68.47 before change. It then reports $130.72 when adding the $11.53 change, which incorrectly executes the stated addition.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

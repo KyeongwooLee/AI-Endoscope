@@ -1,0 +1,20 @@
+{
+  "source_id": "train-3334-3",
+  "response_sha256": "6605d9289ce849bf8a04bc4630f930a7e913e093e8250582a60b498ab38737a9",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "\\frac{5}{7} = \\frac{x}{360}",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Mr. Mathews has goats and sheep in the ratio of 5:7.",
+  "observed_error": "The response equates the goats-to-sheep ratio with the goats-to-total ratio.",
+  "violated_condition": "With x goats and 360 total animals, x/360 must equal 5/(5+7), not 5/7.",
+  "error_description": "The response sets x/360 equal to 5/7 even though 360 counts both goats and sheep. The given 5:7 ratio compares goats with sheep, so the goats' share of all animals is 5/(5+7). The initial proportion is wrong; this is not an arithmetic execution error.",
+  "reference_review_reason": "The reference writes $4200+$3000 = $8600, an incorrect sum that also conflicts with its final answer of 7200.",
+  "secondary_errors": [
+    "Step 3 incorrectly evaluates 103/360 as approximately 28.61 and labels that quotient as a sheep count.",
+    "The revenue calculations omit the sale fractions: only half the goats and two-thirds of the sheep are sold."
+  ],
+  "uncertainty_note": null
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "train-3974-4",
+  "response_sha256": "1452ad2f1156004b5e9c0f554114e919a26442a9f6e6bb0ea623dfede527a8ae",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Final answer:\n#### 80\n#### 80\n#### 80\n#### 80",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He reads for 2 hours a day and reads at a rate of 50 pages an hour.  If the bible is 2800 pages long how many weeks will it take him to read it all?",
+  "observed_error": "The final answer of 80 contradicts the correctly written calculation relations.",
+  "violated_condition": "Weeks required = 2800 / (2 × 50) / 7.",
+  "error_description": "The response reports 80 weeks despite correctly stating the daily reading, total days, and week conversion relations. That result does not equal 2800 pages divided by 100 pages per day and then by 7 days per week. No evaluated intermediate arithmetic explains the discrepancy.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The final numerical error is observable, but the text does not establish which arithmetic operation produced it."
+}

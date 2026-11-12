@@ -1,0 +1,21 @@
+{
+  "source_id": "train-4070-4",
+  "response_sha256": "599c4c915534e54e8134e872dfc1a3050abfdcc2c7f805fc242eaa85d822672f",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Daily Earnings = 10 + F + P",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Lucius owns a small business and spends $10 every day on ingredients.",
+  "observed_error": "The daily earnings equation adds the ingredient expense and unpriced portion quantities as income.",
+  "violated_condition": "Sales revenue is price times portions sold; the $10 daily ingredient expense reduces earnings rather than increasing them.",
+  "error_description": "The response defines daily earnings as 10 + F + P, adding the $10 ingredient expense to portion quantities without applying their selling prices. Ingredient spending is a cost, while revenue comes from selling one French fries portion for $12 and one Poutine portion for $8.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The simplification 12F + 8P - (10 + F + P) = 11F + 7P incorrectly drops the constant -10.",
+    "The final expression subtracts weekly tax from product income that has not been multiplied by seven.",
+    "The response claims F and P are unspecified, although the question states that one portion of each product is made."
+  ],
+  "uncertainty_note": null
+}

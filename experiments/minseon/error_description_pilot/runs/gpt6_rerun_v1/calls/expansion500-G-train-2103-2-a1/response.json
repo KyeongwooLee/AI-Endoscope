@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2103-2",
+  "response_sha256": "99253f5cf473be2bad698f2f1c88f0bbbf3da3ae48a55ac2b90b1de73736ae6a",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\text{Total surface area} = \\text{Area of one side} \\times \\text{number of sides}",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "The sandbox is square, with each side being 40 inches long.",
+  "observed_error": "The response multiplies the square's already complete area by four.",
+  "violated_condition": "The area to fill is side length squared, without an additional factor for the four sides.",
+  "error_description": "The response calculates 40 × 40 = 1600 square inches, then treats that as the area of one side and multiplies by four. The square sandbox's footprint is already 1600 square inches. The multiplication is executed correctly, but the extra factor violates the area relation and inflates the sand requirement.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

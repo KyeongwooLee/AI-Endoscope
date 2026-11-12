@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"80 more legos.","check":"Two airplanes require 240 × 2 = 480 legos, so Julian needs 480 − 400 = 80 more. The solution gives the correct setup but reports 160.","evidence_quote":"Julian needs 160 more legos","error_description":"The final answer of 160 conflicts with the result of the solution’s stated formula, which gives 80."}

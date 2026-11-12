@@ -1,0 +1,19 @@
+{
+  "source_id": "train-4262-2",
+  "response_sha256": "6ab5f82999e05787155c1575f6ed2e8011a16636671033bd9df9286f92e2d647",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "First part of the second day: 6 miles/hour × 6 hours\nSecond part of the second day: 3 miles/hour × 3 hours\nDistance = 36 miles",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "The next day, they traveled at 6 miles per hour for 6 hours, and then at half that speed for another three hours",
+  "observed_error": "The second-day distance includes only the first leg despite listing both legs.",
+  "violated_condition": "Second-day distance must equal (6 × 6) + (3 × 3) miles.",
+  "error_description": "The response reports 36 miles for the second day after listing both travel legs. That distance accounts only for 6 miles per hour over 6 hours, omitting the additional 3 miles per hour over 3 hours required in the second-day sum.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The total-distance relation includes only the first and second days, independently omitting the third day's 5 hours at 7 miles per hour."
+  ],
+  "uncertainty_note": null
+}

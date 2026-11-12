@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1187-2",
+  "response_sha256": "b274ce7781fe457cb92addbdae8cdf04cc75514ab4ba5fee2bdebe9de036b681",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Maximum number of apples = $35 / $1.166666667 ≈ 30",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "needs to pay the $3.50 subway fare each way",
+  "observed_error": "The response uses all $35 remaining after fruit purchases as the apple budget without reserving subway fares.",
+  "violated_condition": "The apple budget must subtract both $3.50 subway fares in addition to the kiwi and banana expenses.",
+  "error_description": "The response uses $35, the balance after buying kiwis and bananas, to calculate how many apples Brian can afford. This omits the required $3.50 subway fare each way, totaling $7. The mistake is the available-budget relation, not the subtraction of $15 from $50.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

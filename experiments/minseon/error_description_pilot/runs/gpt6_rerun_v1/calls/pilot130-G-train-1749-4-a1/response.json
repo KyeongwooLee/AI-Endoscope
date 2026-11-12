@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1749-4",
+  "response_sha256": "694f9f21426c96a0beddd8551b6ad9675f270fe63a3b0942e1f974a505376c02",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Total cost = Labor cost + Cost of trees\nTotal cost = $3000 + (Total planks / 15) * $100  # assuming cost per plank is $100",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He paid $3000 for all the labor.",
+  "observed_error": "The response adds an unsupported $5,000 material cost to the stated labor expense.",
+  "violated_condition": "Profit is table revenue minus the stated $3,000 labor cost; no tree or plank purchase cost is supplied.",
+  "error_description": "The response introduces a $100 material charge absent from the question and multiplies it by the number of tables, adding $5,000 to expenses. This changes the cost relation beyond the stated $3,000 labor expense; the written arithmetic itself is executed correctly.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

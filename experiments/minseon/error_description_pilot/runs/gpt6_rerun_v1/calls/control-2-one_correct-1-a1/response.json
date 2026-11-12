@@ -1,0 +1,1 @@
+{"case1_error":"No mathematical error; 80 - 16 = 64.","case2_error":"Numerical evaluation error: the correctly written expression 80 - 16 is evaluated as 40 instead of 64.","reason":"Case 1 has no clear mathematical error, so the pair cannot be classified as sharing or differing in error mechanism.","judgment":"uncertain"}

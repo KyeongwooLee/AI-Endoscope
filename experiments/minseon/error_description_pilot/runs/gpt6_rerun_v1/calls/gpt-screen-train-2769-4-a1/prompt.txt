@@ -1,0 +1,19 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Linda makes and sells necklaces at craft fairs. At her most recent fair she sold 4 necklaces and 8 rings for a total of $80. If each necklace costs $12, how much does each ring cost?
+SOLUTION: #### 5
+Step 1: Calculate the total cost of the necklaces sold.
+Each necklace costs $12 and Linda sold 4 necklaces.
+\[ 4 \times 12 = 48 \]
+
+Step 2: Subtract the cost of the necklaces from the total amount earned to find the cost of the rings.
+Total amount earned is $80.
+Subtract the cost of the necklaces from the total amount:
+\[ 80 - 48 = 32 \]
+
+Step 3: Determine the cost of each ring.
+Linda sold 8 rings for a total of $32.
+Divide the total cost of the rings by the number of rings:
+\[ 32 \div 8 = 4 \]
+
+Therefore, the cost of each ring is $4.

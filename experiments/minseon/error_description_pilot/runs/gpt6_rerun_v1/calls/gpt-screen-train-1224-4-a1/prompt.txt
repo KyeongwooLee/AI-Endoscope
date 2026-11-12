@@ -1,0 +1,17 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jim starts with $80 in his investment portfolio. After 1 year it grows by 15%. He then adds another $28 to his portfolio. After 1 more year the combined portfolio grows by 10%. What is his final portfolio worth after 2 years from when he started?
+SOLUTION: Step 1: Calculate the value of the portfolio after the first year.
+Initial value = $80
+Growth = 15% = 0.15
+Portfolio after 1 year = Initial value * (1 + Growth) = $80 * 1.15 = $92
+
+Step 2: Add the additional $28 to the portfolio.
+Portfolio after adding $28 = Portfolio after 1 year + Additional amount = $92 + $28 = $120
+
+Step 3: Calculate the value of the portfolio after the second year.
+Growth = 10% = 0.10
+Portfolio after 2 years = Portfolio after 1 year + Additional amount * (1 + Growth) = $120 + $28 * 1.10 = $120 + $30.80 = $150.80
+
+#### 150.80
+This is the final answer, formatted exactly as requested.

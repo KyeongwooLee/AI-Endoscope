@@ -1,0 +1,7 @@
+# Experiment inputs and run artifacts are intentionally versioned.
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+!.env.example

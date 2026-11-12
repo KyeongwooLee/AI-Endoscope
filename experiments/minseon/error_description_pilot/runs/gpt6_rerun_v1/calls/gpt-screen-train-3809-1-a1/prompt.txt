@@ -1,0 +1,32 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Norma takes her clothes to the laundry. She leaves 9 T-shirts and twice as many sweaters as T-shirts in the washer. When she returns she finds 3 sweaters and triple the number of T-shirts. How many items are missing?
+SOLUTION: Step 1: Calculate the number of sweaters Norma initially left in the washer.
+- Number of sweaters = 2 × Number of T-shirts
+- Number of sweaters = 2 × 9
+- Number of sweaters = 18
+
+Step 2: Determine the total number of items Norma initially left in the washer.
+- Total initial items = Number of T-shirts + Number of sweaters
+- Total initial items = 9 + 18
+- Total initial items = 27
+
+Step 3: Calculate the number of sweaters Norma found when she returned.
+- Number of sweaters found = 3
+
+Step 4: Determine the number of T-shirts Norma found when she returned.
+- Number of T-shirts found = 3 × Number of T-shirts
+- Number of T-shirts found = 3 × 9
+- Number of T-shirts found = 27
+
+Step 5: Calculate the total number of items Norma found when she returned.
+- Total found items = Number of T-shirts found + Number of sweaters found
+- Total found items = 27 + 3
+- Total found items = 30
+
+Step 6: Calculate the number of items missing.
+- Number of items missing = Total initial items - Total found items
+- Number of items missing = 27 - 30
+- Number of items missing = -3
+
+#### -3

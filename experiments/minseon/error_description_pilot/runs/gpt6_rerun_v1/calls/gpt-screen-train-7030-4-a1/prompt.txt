@@ -1,0 +1,55 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Sally was at a self-serve candy shop where you scoop candy from the bins and pay based on the weight. She scoops 32 cherry sours into a bag. Then she gets a scoop of lemon sours, and the ratio of cherry sours to lemon sours is 4:5. Then she gets a scoop of orange sours, and they make up 25% of the sours in the bag. How many sours does she have in total?
+SOLUTION: To find the total number of sours Sally has, we start by defining variables for the quantities of each type of sour. Let \( C \) be the number of cherry sours, \( L \) be the number of lemon sours, and \( O \) be the number of orange sours.
+
+Given:
+1. Sally has 32 cherry sours: \( C = 32 \)
+2. The ratio of cherry sours to lemon sours is 4:5: \( \frac{C}{L} = \frac{4}{5} \)
+3. Orange sours make up 25% of the total number of sours: \( O = 0.25(C + L + O) \)
+
+First, solve for \( L \) using the ratio:
+\[
+\frac{C}{L} = \frac{4}{5} \implies L = \frac{5C}{4}
+\]
+Substitute \( C = 32 \):
+\[
+L = \frac{5 \times 32}{4} = \frac{160}{4} = 40
+\]
+
+Next, solve for \( O \) using the total number of sours:
+\[
+O = 0.25(C + L + O)
+\]
+Let \( T \) be the total number of sours:
+\[
+T = C + L + O
+\]
+Substitute \( C = 32 \) and \( L = 40 \):
+\[
+T = 32 + 40 + O
+\]
+We need to find \( O \) first:
+\[
+O = 0.25(T - 72)
+\]
+\[
+O = 0.25(32 + 40 + O - 72)
+\]
+\[
+O = 0.25(72 - 72 + O)
+\]
+\[
+O = 0.25O
+\]
+\[
+O = 2
+\]
+
+Finally, find the total number of sours:
+\[
+T = 32 + 40 + 2 = 74
+\]
+
+#### 74
+The total number of sours Sally has is 74.

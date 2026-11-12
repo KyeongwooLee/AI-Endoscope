@@ -1,0 +1,17 @@
+{
+  "confirmed_arithmetic_error_sources": 19,
+  "screen_missed_confirmed_arithmetic_errors": 16,
+  "attempted": 500,
+  "parsed": 492,
+  "statuses": {
+    "no_math_error": 240,
+    "answer_conflict": 41,
+    "math_error": 211,
+    "unparsed": 8
+  },
+  "numeric_reference_disagreement_n": 412,
+  "not_exact_evidence_quote_n": 93,
+  "any_flag_n": 468,
+  "disagrees_with_annotation_n": 250,
+  "note": "Flags are review candidates only, not confirmed bad references or corrected annotation labels. No screening output used in primary embeddings."
+}

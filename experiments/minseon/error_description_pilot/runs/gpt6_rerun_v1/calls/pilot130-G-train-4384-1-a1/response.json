@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4384-1",
+  "response_sha256": "6546899ab36cb358485b8db40320caa113bce641ca41db86b79ee73551387fa8",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "The speed is halved for every 100 additional people, so for 200 people (which is 100 additional people), the speed is halved.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "For every 100 additional people that board a spaceship, its speed is halved.",
+  "observed_error": "The response applies only one halving to the increase from 200 to 400 people.",
+  "violated_condition": "Adding 200 people comprises two increments of 100 people, each requiring a halving.",
+  "error_description": "The response treats the increase from 200 to 400 people as requiring only one halving of the 500 km/hr speed. That increase contains two groups of 100 additional people, requiring two successive halvings. The division by 2 is executed correctly; the number of halvings is wrong.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

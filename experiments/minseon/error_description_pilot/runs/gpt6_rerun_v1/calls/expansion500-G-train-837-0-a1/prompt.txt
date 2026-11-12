@@ -1,0 +1,76 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition G: evidence-grounded short description | prompt v1]
+Inspect the actual model solution against the question. Use the reference
+only as a fallible aid. A different valid solution path is not an error.
+Identify the earliest observable substantive mistake, if the text supports
+one. Quote the exact response fragment that supports it and identify the
+relevant condition or quantity in the question. Distinguish a wrong relation
+from incorrectly executing the written arithmetic. Do not infer unobserved
+mental causes such as attention, memory failure, or internal confusion.
+An unexplained wrong number can be insufficient evidence for an error type.
+Do not count downstream propagation as a new independent mistake.
+Allow multiple independent errors or unresolved reference ambiguity.
+Write a 25-60-word English description of what the response did incorrectly
+and what relation/quantity/condition it violated. Omit category names,
+generic opening formulas, recommendations, and the final gold answer.
+Keep necessary units, directions, operands, and temporal relations; do not
+erase information merely to make descriptions sound alike.
+Return the specified structured JSON, not a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "evidence_quote": "<exact unchanged substring of the MODEL SOLUTION, or null>",
+  "evidence_start": "<Python character offset, half-open [start,end), or null>",
+  "evidence_end": "<offset or null>",
+  "evidence_occurrence": "<optional 1-based occurrence index of evidence_quote, used instead of offsets; required if the quote repeats and offsets are omitted>",
+  "question_evidence_quote": "<exact unchanged substring of the QUESTION, or null>",
+  "observed_error": "<short factual observation>",
+  "violated_condition": "<relevant mathematical relation or condition>",
+  "error_description": "<25-60 English words for embedding; required when status is supported_error>",
+  "reference_review_needed": false,
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}
+
+source_id: train-837-0
+response_sha256: d665f22fd4105ac124ad74bcb596305f3c62c3ee44245f5452758a335844bed0
+
+=== QUESTION ===
+Mariel is a dog walker.  While walking her pack of dogs, she gets tangled up in the leashes of another dog walker and their 3 dogs.  There are 36 legs tangled up in leashes.  How many dogs is Mariel walking?
+=== MODEL SOLUTION ===
+Let's denote the number of dogs Mariel is walking as \( x \).
+
+Each dog has 4 legs, and each person has 2 legs. Mariel and the other dog walker each have 2 legs.
+
+The total number of legs is given by:
+\[ 4x + 2 + 2 + 3 \times 2 = 36 \]
+
+Simplifying the equation:
+\[ 4x + 2 + 2 + 6 = 36 \]
+\[ 4x + 10 = 36 \]
+
+Subtract 10 from both sides:
+\[ 4x = 26 \]
+
+Divide by 4:
+\[ x = 6.5 \]
+
+Since the number of dogs must be a whole number, we need to re-evaluate the problem. The total number of legs (36) is an even number, and each dog and person has an even number of legs. This suggests a possible error in the problem statement or a need to recheck the interpretation. However, based on the given information and assuming no errors in the problem statement, the closest whole number solution would be:
+
+#### 7
+This is the closest whole number solution to the problem as stated.
+=== REFERENCE SOLUTION (fallible aid) ===
+There are 2 dog walkers and they each have 2 legs so that's 2*2 = <<2*2=4>>4 legs
+The other dog walker is walking 3 dogs that each have 4 legs so that's 3*4 = <<3*4=12>>12 legs
+The dog walkers have 4 legs and the other dogs have 12 legs for a total of 4+12 = <<4+12=16>>16 legs
+There are 36 legs total and 16 belong to the dog walkers and 3 dogs so that leaves 36-16 = <<36-16=20>>20 legs
+Dogs have 4 legs and there are 20 legs so Mariel is walking 20/4 = 5 dogs
+#### 5
+=== END ===

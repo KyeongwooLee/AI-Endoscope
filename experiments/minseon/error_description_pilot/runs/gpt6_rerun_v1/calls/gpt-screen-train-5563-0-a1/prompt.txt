@@ -1,0 +1,36 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A park warden has issued 24 citations over the past three hours. He issued the same number for littering as he did for off-leash dogs, and he issued double the number of other citations for parking fines. How many littering citations did the warden issue?
+SOLUTION: Let's denote the number of littering citations as \( L \), the number of off-leash dog citations as \( D \), and the number of parking fine citations as \( P \).
+
+From the problem, we know:
+1. The total number of citations is 24:
+   \[
+   L + D + P = 24
+   \]
+2. The number of littering citations is the same as the number of off-leash dog citations:
+   \[
+   L = D
+   \]
+3. The number of parking fine citations is double the number of littering citations:
+   \[
+   P = 2L
+   \]
+
+Substitute \( D \) and \( P \) in terms of \( L \) into the total citations equation:
+\[
+L + L + 2L = 24
+\]
+Combine like terms:
+\[
+4L = 24
+\]
+Solve for \( L \):
+\[
+L = \frac{24}{4} = 6
+\]
+
+Therefore, the warden issued 6 littering citations.
+
+#### 6
+The final answer is 6.

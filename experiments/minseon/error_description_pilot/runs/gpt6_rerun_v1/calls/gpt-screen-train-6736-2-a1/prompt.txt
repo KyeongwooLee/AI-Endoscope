@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: One of the clubs at Georgia's school was selling carnations for a fundraising event. A carnation costs $0.50.  They also had a special where you could buy one dozen carnations for $4.00.  If Georgia sent a dozen carnations to each of her 5 teachers and bought one carnation for each of her 14 friends, how much money would she spend?
+SOLUTION: To calculate the total cost, we need to consider both the individual carnations and the dozen carnations for teachers.
+
+1. **Cost of individual carnations for friends:**
+   - Georgia has 14 friends.
+   - Each carnation costs $0.50.
+   - Total cost for friends = 14 * $0.50 = $7.00
+
+2. **Cost of dozen carnations for teachers:**
+   - Georgia has 5 teachers.
+   - Each dozen carnations costs $4.00.
+   - Total cost for teachers = 5 * $4.00 = $20.00
+
+3. **Total cost:**
+   - Total cost = Cost for friends + Cost for teachers
+   - Total cost = $7.00 + $20.00 = $27.00
+
+#### 27
+The total amount of money Georgia would spend is $27.00.

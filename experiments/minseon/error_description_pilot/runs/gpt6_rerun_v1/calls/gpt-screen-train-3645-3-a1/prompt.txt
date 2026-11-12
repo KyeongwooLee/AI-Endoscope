@@ -1,0 +1,27 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Geordie takes a toll road on his drive to work and back every day of his five-day workweek. The toll is $12.50 per car or $7 per motorcycle. Both his car and his motorcycle get 35 miles per gallon of gas and the commute to work is 14 miles. Gas costs him $3.75 per gallon. Geordie drives his car to work three times a week and his motorcycle to work twice a week. How many dollars does he spend driving to work and back on the same route in a week?
+SOLUTION: Step 1: Calculate the daily toll for both car and motorcycle.
+- Car toll: $12.50
+- Motorcycle toll: $7
+
+Step 2: Calculate the total toll for the week.
+- Car toll for the week: $12.50 * 3 days = $37.50
+- Motorcycle toll for the week: $7 * 2 days = $14
+
+Step 3: Calculate the total gas cost for the week.
+- Gas cost for the car: $3.75 * 14 miles / 35 miles per gallon * 3 days
+  = $3.75 * (14 / 35) * 3
+  = $3.75 * 0.4 * 3
+  = $4.50
+
+- Gas cost for the motorcycle: $3.75 * 14 miles / 35 miles per gallon * 2 days
+  = $3.75 * (14 / 35) * 2
+  = $3.75 * 0.4 * 2
+  = $3.00
+
+Step 4: Calculate the total weekly driving cost.
+- Total cost: $4.50 + $3.00 = $7.50
+
+#### 7.50
+Geordie spends $7.50 driving to work and back on the same route in a week.

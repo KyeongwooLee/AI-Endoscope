@@ -1,0 +1,17 @@
+{
+  "source_id": "train-4561-0",
+  "response_sha256": "99b63df91942281f6cde59afdfece619ff3e8b071da49ca574bcb2842d94df84",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Ben has $9 more than Jack.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Ben has $9 less than Jack.",
+  "observed_error": "The response reverses Ben's monetary relationship to Jack.",
+  "violated_condition": "Ben's money equals Jack's money minus $9, not plus $9.",
+  "error_description": "The response states that Ben has $9 more than Jack and adds $9 to Jack's $26. The question says Ben has $9 less than Jack, requiring subtraction. The addition is executed correctly, but the reversed relation makes Ben's amount and the subsequent amounts incorrect.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

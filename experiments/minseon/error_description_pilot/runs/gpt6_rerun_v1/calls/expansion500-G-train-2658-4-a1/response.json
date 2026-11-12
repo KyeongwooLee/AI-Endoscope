@@ -1,0 +1,19 @@
+{
+  "source_id": "train-2658-4",
+  "response_sha256": "e809368c7ef09ce5cb1b31831049f6763d80b3f521ef890da249e9fd8e25ab4c",
+  "status": "supported_error",
+  "reference_review_needed": true,
+  "evidence_quote": "Total stickers Andrew gave = Stickers Andrew received + Stickers Bill received",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He gave some of his stickers to his two friends, Andrew and Bill.",
+  "observed_error": "The response equates Andrew's outgoing stickers with Andrew's and Bill's combined receipts from Zander.",
+  "violated_condition": "Stickers received from Zander do not establish how many stickers Andrew subsequently gave away.",
+  "error_description": "The response adds Andrew's and Bill's receipts from Zander and labels that sum as stickers Andrew gave away. These transfers describe Zander giving stickers to two recipients; the question supplies no transfer from Andrew to his own friends that would justify this equality.",
+  "reference_review_reason": "The question asks about Andrew giving stickers despite describing Zander as the giver. The reference repeats this unsupported attribution.",
+  "secondary_errors": [
+    "The final value 16 does not equal the stated sum (1/5 × 100) + (3/10 × (100 − 1/5 × 100)); the response does not show how 16 was obtained."
+  ],
+  "uncertainty_note": "The intended giver in the final question may be Zander, but that correction is not supplied in the text."
+}

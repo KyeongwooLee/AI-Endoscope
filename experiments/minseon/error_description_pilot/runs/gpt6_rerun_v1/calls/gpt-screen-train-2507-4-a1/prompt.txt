@@ -1,0 +1,31 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Sadie, Ariana and Sarah are running a relay race. Each part of the race is a different length and covers different terrain. It takes Sadie 2 hours to run through the forest at an average speed of 3 miles per hour. Ariana sprints across the open field on her section at 6 miles per hour for half an hour. If Sarah runs along the beach at four miles per hour and their total time for the race is four and half hours, what is the total distance of the race?
+SOLUTION: To find the total distance of the race, we need to calculate the distance each runner covers and then sum them up.
+
+1. **Sadie's Distance:**
+   - Time: 2 hours
+   - Speed: 3 miles per hour
+   - Distance = Speed × Time
+   - Distance = 3 miles/hour × 2 hours = 6 miles
+
+2. **Ariana's Distance:**
+   - Speed: 6 miles per hour
+   - Time: 0.5 hours
+   - Distance = Speed × Time
+   - Distance = 6 miles/hour × 0.5 hours = 3 miles
+
+3. **Sarah's Distance:**
+   - Sarah runs along the beach at 4 miles per hour
+   - Total time for the race = 4.5 hours
+   - Time for Sarah = Total time - Time for Sadie and Ariana
+   - Time for Sarah = 4.5 hours - 2 hours = 2.5 hours
+   - Distance = Speed × Time
+   - Distance = 4 miles/hour × 2.5 hours = 10 miles
+
+4. **Total Distance of the Race:**
+   - Total distance = Distance covered by Sadie + Distance covered by Ariana + Distance covered by Sarah
+   - Total distance = 6 miles + 3 miles + 10 miles = 19 miles
+
+#### 19
+The total distance of the race is 19 miles.

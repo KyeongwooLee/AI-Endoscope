@@ -1,0 +1,17 @@
+{
+  "source_id": "train-2832-0",
+  "response_sha256": "29996f58fe013c3484c69a181292223aec66b4c30398a89865b8258417a4af52",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "- Total earnings = (453 * 12) + (126 * 7)\n\n#### 6351",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "453 cakes at $12 and 126 pies at $7",
+  "observed_error": "The reported $6351 does not equal the correctly written revenue expression.",
+  "violated_condition": "Total earnings must equal (453 × $12) + (126 × $7).",
+  "error_description": "The response correctly expresses earnings as (453 × 12) + (126 × 7), but reports $6351, which does not equal that expression. The error lies in evaluating the written arithmetic; the omitted intermediate results do not identify which operation was executed incorrectly.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text does not establish whether a multiplication or the final addition produced the discrepancy."
+}

@@ -1,0 +1,1 @@
+{"case1_error":"Equates the packet count with the peanut total, omitting 30 peanuts per packet; the total is 120.","case2_error":"Equates the daily biscuit count with the weekly total, omitting the 5 days; the total is 40.","reason":"Both incorrectly treat one given count as the requested total, ignoring the required multiplicative factor.","judgment":"same"}

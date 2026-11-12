@@ -1,0 +1,282 @@
+[
+  {
+    "source_id": "train-2136-4",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "75 school days.",
+      "check": "Daily driving is 2 × 20 = 40 minutes; 50 hours is 3000 minutes, so 3000 ÷ 40 = 75 school days. The solution substitutes 50 trips per day and later divides quantities with incompatible units.",
+      "evidence_quote": "Number of school days = 50 hours ÷ 1000 minutes/day = 50 ÷ 10 = 5 days",
+      "error_description": "The solution incorrectly uses 1000 minutes as the daily driving time instead of 40 minutes. Its subsequent unit conversion and division are invalid, yielding 5 days instead of 75."
+    },
+    "previous_Qwen_status": "math_error"
+  },
+  {
+    "source_id": "train-1081-4",
+    "prior_AI_expected_status": "no_math_error",
+    "GPT_status": "no_math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "no_math_error",
+      "independent_answer": "1060 liters",
+      "check": "The second hive produces 500 × 0.80 × 1.40 = 560 liters. Both hives produce 500 + 560 = 1060 liters, matching the solution and answer marker.",
+      "evidence_quote": "#### 1060",
+      "error_description": ""
+    },
+    "previous_Qwen_status": "no_math_error"
+  },
+  {
+    "source_id": "train-6861-3",
+    "prior_AI_expected_status": "ambiguous",
+    "GPT_status": "ambiguous",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "ambiguous",
+      "independent_answer": "12 ice creams for one shared game; 24 for one game each.",
+      "check": "A shared game requires 60/5 = 12 ice creams. If both buy their own copy, they need (2 × 60)/5 = 24; the question does not clearly specify which.",
+      "evidence_quote": "So, they need to earn $60 in total.",
+      "error_description": "The solution correctly calculates the shared-game interpretation, but the wording also permits each friend buying a copy."
+    },
+    "previous_Qwen_status": "no_math_error"
+  },
+  {
+    "source_id": "train-1827-4",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "3,380 eggs per year, using 52 weeks per year.",
+      "check": "Lisa cooks 4 × 2 + 3 + 2 = 13 eggs each morning, so 13 × 5 = 65 eggs weekly and 65 × 52 = 3,380 annually. The solution treats daily quantities as weekly quantities, omitting the factor of 5.",
+      "evidence_quote": "Total weekly eggs = 8 eggs/week + 3 eggs/week + 2 eggs/week = 13 eggs/week.",
+      "error_description": "The stated 13 eggs is the daily total, not the weekly total. Using it as the weekly total produces an annual count five times too small."
+    },
+    "previous_Qwen_status": "no_math_error"
+  },
+  {
+    "source_id": "train-344-4",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "100 marbles",
+      "check": "After both losses, Archie retains 0.4 × 0.5 = 0.2 of his initial marbles, so he started with 20 ÷ 0.2 = 100. The solution incorrectly equates the amount remaining after the first loss to the final 20.",
+      "evidence_quote": "0.4y = 20",
+      "error_description": "After the street loss, 40 marbles remain, since half of those leave 20. The correct equation is 0.4y = 40, giving 100 rather than 50."
+    },
+    "previous_Qwen_status": "no_math_error"
+  },
+  {
+    "source_id": "train-7430-4",
+    "prior_AI_expected_status": "answer_conflict",
+    "GPT_status": "answer_conflict",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "answer_conflict",
+      "independent_answer": "120 available spaces",
+      "check": "The total capacity is 50 × 4 = 200 people, leaving 200 − 80 = 120 spaces. The worked solution is correct, but its leading answer marker conflicts with it.",
+      "evidence_quote": "#### 20",
+      "error_description": "The leading marker states 20, while the correct derivation and worked final answer state 120."
+    },
+    "previous_Qwen_status": "answer_conflict"
+  },
+  {
+    "source_id": "train-5364-3",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "$4,000 profit.",
+      "check": "Before taxes, profit is 5000 × ($8 − $3) − $10,000 − 4 × $2,500 = $5,000. Taxes are 20% × $5,000 = $1,000, leaving $4,000.",
+      "evidence_quote": "Total expenses = $10,000 + $2,500 × 4 + $3,000",
+      "error_description": "The solution uses $3,000 in taxes instead of $1,000. Its subsequent subtraction is consistent with that incorrect expense, producing the wrong final profit."
+    },
+    "previous_Qwen_status": "no_math_error"
+  },
+  {
+    "source_id": "train-7421-3",
+    "prior_AI_expected_status": "answer_conflict",
+    "GPT_status": "answer_conflict",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "answer_conflict",
+      "independent_answer": "$160 per winner.",
+      "check": "The first winner receives $2,400 / 3 = $800, leaving $1,600. Each of the next ten winners receives $1,600 / 10 = $160, matching the worked solution but contradicting the leading marker.",
+      "evidence_quote": "#### 200",
+      "error_description": "The leading answer marker states 200, while the correct worked final answer is 160."
+    },
+    "previous_Qwen_status": "no_math_error"
+  },
+  {
+    "source_id": "train-1061-4",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "$18",
+      "check": "The cakes cost 3 × $12 = $36, so John's half is $36 / 2 = $18. Step 2 correctly sets this up, but Step 3 introduces an invalid extra multiplication.",
+      "evidence_quote": "Amount John Smith paid = Total cost per person × Amount John Smith paid per cake",
+      "error_description": "The cost per person already equals John's payment; multiplying it by a per-cake payment is incorrect. The final markers also conflict: 18 is correct, while 9 is not."
+    },
+    "previous_Qwen_status": "math_error"
+  },
+  {
+    "source_id": "train-4085-1",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "64 ants",
+      "check": "Each anthill has 80% as many ants as the previous one, so the third has 100 × 0.8 × 0.8 = 64 ants. The solution incorrectly evaluates 80 − 16 as 40.",
+      "evidence_quote": "80 - 16 = 40 ants",
+      "error_description": "The subtraction is incorrect: 80 − 16 = 64, not 40."
+    },
+    "previous_Qwen_status": "no_math_error"
+  },
+  {
+    "source_id": "train-1338-4",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "118 bulbs.",
+      "check": "There are 24 large lights and 22 small lights. Total bulbs = 22 × 1 + 12 × 2 + 24 × 3 = 118.",
+      "evidence_quote": "Large lights: 3 bulbs each, so 22 * 3 = 66 bulbs",
+      "error_description": "The solution uses 22 large lights despite stating L = 2M with M = 12, which gives 24. This understates the total by 6 bulbs."
+    },
+    "previous_Qwen_status": "math_error"
+  },
+  {
+    "source_id": "train-4465-3",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "17 eggs",
+      "check": "The total is 2 × 5 + 3 + 4 = 17 eggs. The solution totals only 10 + 3 and omits the 4 eggs in the front-yard nest.",
+      "evidence_quote": "10 eggs (tree) + 3 eggs (front yard) = 13 eggs",
+      "error_description": "The solution incorrectly labels the 3 eggs from the other tree as front-yard eggs and leaves out the actual 4 front-yard eggs, producing 13 instead of 17."
+    },
+    "previous_Qwen_status": "no_math_error"
+  },
+  {
+    "source_id": "train-1833-0",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "3 gallon cans",
+      "check": "Two coats require coverage of 600 × 2 = 1,200 sq. ft.; 1,200 ÷ 400 = 3 gallons. The solution incorrectly multiplies area by coverage per gallon in Step 2.",
+      "evidence_quote": "Total paint needed = Total area * Coverage per gallon",
+      "error_description": "Paint needed is area divided by coverage per gallon, not multiplied by it. This incorrect step leads to the incorrect answer of 1,200 gallons."
+    },
+    "previous_Qwen_status": "math_error"
+  },
+  {
+    "source_id": "train-1627-4",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "390 gallons",
+      "check": "The first 3 hours add 50 × 3 = 150 gallons. Adding another hose leaves both running for 2 more hours, adding (50 + 70) × 2 = 240 gallons, for 390 gallons total.",
+      "evidence_quote": "P = 150 \\text{ gallons} + 140 \\text{ gallons} = 290 \\text{ gallons}",
+      "error_description": "The solution omits the 100 gallons supplied by the first hose during the final 2 hours, understating the pool's capacity by 100 gallons."
+    },
+    "previous_Qwen_status": "no_math_error"
+  },
+  {
+    "source_id": "train-1262-0",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "6 pints",
+      "check": "Each thermos contains 36 ÷ 18 = 2 pints, so Genevieve drank 3 × 2 = 6 pints. The solution instead divides the total coffee by the 3 thermoses she drank.",
+      "evidence_quote": "\\frac{36}{3} = 12",
+      "error_description": "The solution uses 3 as the divisor instead of dividing among all 18 thermoses and multiplying by the 3 consumed."
+    },
+    "previous_Qwen_status": "no_math_error"
+  },
+  {
+    "source_id": "train-3647-3",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "$4.00",
+      "check": "After the coupon, the cost is $7.50 − $2.50 = $5.00. The additional 20% discount gives $5.00 × 0.80 = $4.00; step 4 incorrectly adds the discount back.",
+      "evidence_quote": "$4.00 + $1.00 = $5.00",
+      "error_description": "Step 4 reverses the correctly applied senior discount, producing an incorrect total of $5.00."
+    },
+    "previous_Qwen_status": "answer_conflict"
+  },
+  {
+    "source_id": "train-1297-4",
+    "prior_AI_expected_status": "answer_conflict",
+    "GPT_status": "answer_conflict",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "answer_conflict",
+      "independent_answer": "8 students",
+      "check": "80% of 40 is 32, and 25% of 32 is 8. The worked solution and final sentence are correct, but the leading answer marker conflicts with them.",
+      "evidence_quote": "#### 16",
+      "error_description": "The leading marker gives 16, while the correct worked final answer is 8."
+    },
+    "previous_Qwen_status": "math_error"
+  },
+  {
+    "source_id": "train-4704-2",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "10 weeks",
+      "check": "Each of the other two countries takes twice the first country's 2 weeks, so each stay is 4 weeks. The total is 2 + 4 + 4 = 10 weeks.",
+      "evidence_quote": "Time in the third country = 2 * 4 weeks = 8 weeks",
+      "error_description": "The third-country stay incorrectly doubles the second-country stay. It should double the first-country stay, giving 4 weeks and a total of 10 weeks."
+    },
+    "previous_Qwen_status": "math_error"
+  },
+  {
+    "source_id": "train-1686-3",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "ambiguous",
+    "exact_status_agreement": false,
+    "GPT_output": {
+      "status": "ambiguous",
+      "independent_answer": "50 hours/week; 200 hours for a four-week month. Exact monthly hours require the month or a convention.",
+      "check": "10 × 5 = 50 hours per week. Under the solution’s explicit four-week assumption, 50 × 4 = 200 hours, which conflicts with its stated 500 hours.",
+      "evidence_quote": "Bob logs a total of 500 hours in a month.",
+      "error_description": "The question does not specify the month’s length or a weeks-per-month convention. Even under the solution’s four-week assumption, its final 500 hours does not match the stated formula."
+    },
+    "previous_Qwen_status": "no_math_error"
+  },
+  {
+    "source_id": "train-5239-1",
+    "prior_AI_expected_status": "math_error",
+    "GPT_status": "math_error",
+    "exact_status_agreement": true,
+    "GPT_output": {
+      "status": "math_error",
+      "independent_answer": "1 minute, using 120 peanuts over 120 minutes.",
+      "check": "There are 4 × 30 = 120 peanuts, so the intended time per peanut is 120 ÷ 120 = 1 minute. The solution uses the number of bags as the number of peanuts.",
+      "evidence_quote": "Number of peanuts = 4",
+      "error_description": "The solution counts only 4 peanuts instead of 120, leading to the incorrect 30-minute answer."
+    },
+    "previous_Qwen_status": "math_error"
+  }
+]

@@ -1,0 +1,27 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Maria is a saleswoman at a flower shop. On the first day, she sold 30 tulips and 20 roses. The next day, she doubled the previous day's sales. On the third day, she sold only 10% of the tulips sold on the second day and 16 roses. The price of one tulip is $2 and one rose is $3. How much did Maria earn over these three days?
+SOLUTION: Step 1: Calculate the sales on the first day.
+Tulips: 30
+Roses: 20
+Total on the first day: 30 + 20 = 50
+
+Step 2: Calculate the sales on the second day.
+Double the first day's sales.
+Tulips: 2 * 30 = 60
+Roses: 2 * 20 = 40
+Total on the second day: 60 + 40 = 100
+
+Step 3: Calculate the sales on the third day.
+10% of the second day's tulips.
+Tulips: 0.10 * 60 = 6
+Roses: 16
+Total on the third day: 6 + 16 = 22
+
+Step 4: Calculate the total earnings over the three days.
+Tulips: 50 + 60 + 6 = 116
+Roses: 20 + 40 + 16 = 76
+Total earnings: 116 * 2 + 76 * 3 = 232 + 228 = 460
+
+#### 460
+Maria earned $460 over these three days.

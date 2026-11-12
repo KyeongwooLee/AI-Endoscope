@@ -1,0 +1,45 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Susan wants to throw a party for her mom. She is planning on having 30 guests. For dinner she is making a recipe that makes 2 servings each. Each batch of the recipe calls for 4 potatoes and 1 teaspoon of salt. A potato costs $.10 and a container of salt costs $2 at the supermarket. If each container of salt has 5 teaspoons, how much money will Susan spend on food?
+SOLUTION: Step 1: Calculate the total number of servings needed.
+Total guests = 30
+Servings per batch = 2
+Total servings needed = 30 / 2 = 15 servings
+
+Step 2: Calculate the number of batches required.
+Servings needed = 15
+Servings per batch = 2
+Batches required = 15 / 2 = 7.5 batches
+Since we can't make half a batch, we'll need to round up to 8 batches.
+
+Step 3: Calculate the total number of potatoes needed.
+Potatoes per batch = 4
+Batches required = 8
+Total potatoes needed = 4 * 8 = 32 potatoes
+
+Step 4: Calculate the cost of potatoes.
+Cost per potato = $0.10
+Total cost of potatoes = 32 * $0.10 = $3.20
+
+Step 5: Calculate the number of teaspoons of salt needed.
+Teaspoons per batch = 1
+Batches required = 8
+Total teaspoons of salt needed = 1 * 8 = 8 teaspoons
+
+Step 6: Calculate the number of containers of salt needed.
+Teaspoons per container = 5
+Total teaspoons of salt needed = 8
+Number of containers of salt needed = 8 / 5 = 1.6 containers
+Since we can't have a fraction of a container, we'll need to round up to 2 containers.
+
+Step 7: Calculate the cost of salt.
+Cost per container = $2
+Number of containers of salt needed = 2
+Total cost of salt = 2 * $2 = $4
+
+Step 8: Calculate the total cost of food.
+Total cost of potatoes = $3.20
+Total cost of salt = $4
+Total cost of food = $3.20 + $4 = $7.20
+
+#### 7.20

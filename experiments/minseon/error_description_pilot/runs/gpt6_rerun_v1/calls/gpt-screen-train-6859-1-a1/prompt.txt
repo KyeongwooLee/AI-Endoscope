@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Simon, Gerry, and Micky want to have a race with handmade miniature rafts. Simon's raft needs 36 sticks, Gerry's raft needs two-thirds of the number of sticks that Simon needs, and Micky's raft needs 9 sticks more than Simon and Gerry's rafts combined. How many sticks do the three boys need to collect in total?
+SOLUTION: Step 1: Calculate the number of sticks needed for Gerry's raft.
+Gerry's raft needs two-thirds of the number of sticks that Simon needs.
+36 sticks / 3 = 12 sticks (for Gerry's raft)
+
+Step 2: Calculate the total number of sticks needed for Simon and Gerry's rafts.
+36 sticks (Simon) + 12 sticks (Gerry) = 48 sticks
+
+Step 3: Calculate the number of sticks needed for Micky's raft.
+Micky's raft needs 9 sticks more than Simon and Gerry's rafts combined.
+48 sticks (Simon and Gerry) + 9 sticks = 57 sticks
+
+Step 4: Calculate the total number of sticks needed for all three boys.
+48 sticks (Simon) + 57 sticks (Gerry) + 57 sticks (Micky) = 156 sticks
+
+#### 156

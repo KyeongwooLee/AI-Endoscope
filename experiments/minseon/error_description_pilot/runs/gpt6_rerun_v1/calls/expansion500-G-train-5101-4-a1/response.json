@@ -1,0 +1,17 @@
+{
+  "source_id": "train-5101-4",
+  "response_sha256": "26b61333d9fa81453e94b968641bbd4aa6e720713344fa9880045cbe4163ecdc",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Assuming Johnny needs 3 planks for each leg (a typical number for a table)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Each table needs a plank of wood for each of the legs",
+  "observed_error": "The response substitutes 3 planks per leg for the specified 1 plank per leg.",
+  "violated_condition": "Leg planks must equal the number of legs multiplied by 1 plank per leg.",
+  "error_description": "The response assumes 3 planks per leg despite the question specifying one plank for each leg. It therefore uses 3 × 4 to calculate the leg planks for one table. The multiplication is executed correctly, but its per-leg quantity violates the stated requirement.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

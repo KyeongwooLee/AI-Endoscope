@@ -1,0 +1,17 @@
+{
+  "source_id": "train-1987-4",
+  "response_sha256": "8ea58837c914c68c8b3d86508ab20205a5527dbedb966263b4c86fee1822ec58",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "#### 24",
+  "evidence_start": 0,
+  "evidence_end": 7,
+  "evidence_occurrence": null,
+  "question_evidence_quote": "the rest are green",
+  "observed_error": "The opening answer reports 24 green cards, contradicting the correct calculation and conclusion that follow.",
+  "violated_condition": "Green cards must equal 120 minus 48 red cards minus 40 black cards.",
+  "error_description": "The response initially reports 24 green cards, which does not equal the total minus the red and black cards. Its subsequent arithmetic correctly applies that relation, so the observable error is the opening answer.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": "The text does not establish how the opening number was obtained."
+}

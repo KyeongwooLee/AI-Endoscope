@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"$10 profit.","check":"Revenue is $1.20 × 50 = $60, so profit is $60 − $50 = $10. The formulas are correct, but the final answer of 30 does not match their result.","evidence_quote":"#### 30","error_description":"The final number is $30 instead of $10; the solution provides no evaluated arithmetic supporting $30."}

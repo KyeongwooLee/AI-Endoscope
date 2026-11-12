@@ -1,0 +1,17 @@
+{
+  "source_id": "train-970-2",
+  "response_sha256": "e04be6f4d75db3a32584075fd5bf42bbcfdedf682dc4101519ab40c4ee6bb703",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "Remaining pieces for Johann = 180 - (41 * 2)\n\n#### 107",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Johann and two friends are to deliver 180 pieces of certified mail. His friends each deliver 41 pieces of mail.",
+  "observed_error": "The reported answer 107 does not equal the explicitly written expression 180 - (41 * 2).",
+  "violated_condition": "Johann's remaining pieces must equal 180 minus the 41 pieces delivered by each of his two friends.",
+  "error_description": "The response correctly represents Johann's remaining mail as 180 - (41 * 2), but reports 107 pieces, which does not equal that expression. The mistake is in evaluating the written arithmetic, not in the relation used.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,1 @@
+{"status":"math_error","independent_answer":"54 pieces","check":"Mitchell has 8 × 7 = 56 pieces and chews 56 − 2 = 54. The solution states the correct formula but gives 52 as its final answer.","evidence_quote":"#### 52","error_description":"The final number 52 does not match the stated formula, which yields 54. No correct worked final number is shown."}

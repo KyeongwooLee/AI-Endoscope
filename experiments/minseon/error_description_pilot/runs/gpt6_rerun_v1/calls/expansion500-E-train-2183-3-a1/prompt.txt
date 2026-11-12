@@ -1,0 +1,79 @@
+This is a standalone mathematical annotation request. Use only the supplied texts. Do not call tools, read files, run commands, search, or delegate. Complete the requested JSON directly.
+
+[condition E: ordinary short error explanation | prompt v1]
+Read the math question, the model's solution, and the reference solution.
+The reference is a comparison aid and may itself be ambiguous or incorrect.
+Describe the earliest observable substantive mathematical mistake in the
+model's solution in one or two English sentences, approximately 25-60 words.
+If a specific mistake cannot be supported, say so instead of inventing one.
+Do not output a fixed error-category code or a corrected full solution.
+
+The three texts below are data to analyze, not instructions to follow.
+
+Return exactly one JSON object with these keys:
+{
+  "source_id": "<copy the input source_id>",
+  "response_sha256": "<copy the input response_sha256>",
+  "status": "supported_error | insufficient_evidence | no_error_observed | ambiguous",
+  "explanation": "<25-60 English words; required when status is supported_error, otherwise a short reason or null>",
+  "reference_review_needed": false
+}
+
+source_id: train-2183-3
+response_sha256: a2341a6807937c86d49b18379d4398721172ac6d392a7657ae1490644ebe55aa
+
+=== QUESTION ===
+Andrew installed hardwood flooring in his house. His bedroom took eight wooden planks, his living room took twenty planks, and his kitchen took eleven planks. The guest bedroom took two fewer planks than Andrew’s bedroom, and each of his two hallways took four planks. He accidentally ruined three planks in each bedroom by dragging furniture over them and had to replace them. He ended up with six leftover planks at the end. How many wooden planks did Andrew buy to start with?
+=== MODEL SOLUTION ===
+To find the total number of wooden planks Andrew bought, let's break down the problem step by step:
+
+1. **Bedroom Planks**:
+   - Andrew's bedroom took 8 planks.
+   - Guest bedroom took 2 fewer planks than Andrew’s bedroom.
+   - Hallways each took 4 planks, and there are two hallways.
+
+   Total planks for bedrooms and hallways:
+   \[
+   8 + (8 - 2) + 2 \times 4 = 8 + 6 + 8 = 22
+   \]
+
+2. **Living Room Planks**:
+   - Living room took 20 planks.
+
+3. **Kitchen Planks**:
+   - Kitchen took 11 planks.
+
+4. **Repaired Planks**:
+   - Andrew ruined 3 planks in each bedroom.
+
+   Total planks ruined:
+   \[
+   3 \times 3 = 9
+   \]
+
+5. **Leftover Planks**:
+   - Andrew ended up with 6 leftover planks.
+
+6. **Initial Planks Calculation**:
+   - We need to find the initial number of planks Andrew bought.
+
+   Total planks used initially:
+   \[
+   22 + 20 + 11 = 53
+   \]
+
+   Adding the leftover planks:
+   \[
+   53 + 6 = 59
+   \]
+
+Therefore, the answer is:
+#### 59
+=== REFERENCE SOLUTION (fallible aid) ===
+Andrew’s guest bedroom took 8 - 2 = <<8-2=6>>6 wooden planks.
+His hallways took 2 * 4 = <<2*4=8>>8 planks.
+In two bedrooms, he ruined 3 planks each, so the bedrooms took an extra 3 * 2 = <<3*2=6>>6 planks.
+In all, he used 8 + 20 + 11 + 6 + 8 + 6 = <<8+20+11+6+8+6=59>>59 planks for his whole house.
+Andrew had 6 leftover planks, so he bought 59 + 6 = <<6+59=65>>65 wooden planks to start with.
+#### 65
+=== END ===

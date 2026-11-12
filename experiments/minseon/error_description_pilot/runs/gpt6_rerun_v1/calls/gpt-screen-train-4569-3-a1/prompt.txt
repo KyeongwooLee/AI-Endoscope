@@ -1,0 +1,33 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: A rancher owns a mixture of 8 sheep and 5 cattle that graze on his land.  In a typical year, the rancher will allow his animals to feed off his pastures for as long as possible before they run out of grass.  After the pastures run out of grass, he must buy feed corn for $10 per bag.  Each cow eats 2 acres of grass per month, and each sheep eats 1 acre of grass per month.  Additionally, a bag of feed corn can feed each cow for 1 month and each sheep for 2 months.   If the rancher's pasture contains 144 acres of grass, how much will the rancher need to spend on feed corn to feed his animals each year?
+SOLUTION: To determine how much the rancher will need to spend on feed corn, we first need to calculate the total amount of grass the animals will eat in a year.
+
+1. Calculate the total amount of grass the cattle will eat in a year:
+   - Each cow eats 2 acres of grass per month.
+   - There are 12 months in a year.
+   - There are 5 cattle.
+   - Total grass eaten by cattle per year = 2 acres/month * 12 months/year * 5 cattle = 120 acres/year
+
+2. Calculate the total amount of grass the sheep will eat in a year:
+   - Each sheep eats 1 acre of grass per month.
+   - There are 8 sheep.
+   - There are 12 months in a year.
+   - Total grass eaten by sheep per year = 1 acre/month * 12 months/year * 8 sheep = 96 acres/year
+
+3. Calculate the total amount of grass eaten by both cattle and sheep in a year:
+   - Total grass eaten by animals per year = 120 acres/year (cattle) + 96 acres/year (sheep) = 216 acres/year
+
+4. Calculate the total amount of feed corn needed:
+   - Each cow can be fed for 1 month with 1 bag of feed corn.
+   - Each sheep can be fed for 2 months with 1 bag of feed corn.
+   - Total bags of feed corn needed = 120 acres/year (cattle) / 1 acre/cow/month = 120 bags for cattle
+   - Total bags of feed corn needed = 96 acres/year (sheep) / 1/2 acre/sheep/month = 192 bags for sheep
+   - Total bags of feed corn needed = 120 bags (cattle) + 192 bags (sheep) = 312 bags
+
+5. Calculate the total cost of feed corn:
+   - Feed corn costs $10 per bag.
+   - Total cost = 312 bags * $10/bag = $3120
+
+#### 3120
+The rancher will need to spend $3120 on feed corn to feed his animals each year.

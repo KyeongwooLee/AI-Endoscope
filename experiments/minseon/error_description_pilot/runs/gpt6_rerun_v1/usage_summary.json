@@ -1,0 +1,13 @@
+{
+  "recorded_calls": 2546,
+  "provider_reported_usage": {
+    "input_tokens": 29106125,
+    "cached_input_tokens": 19309568,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 767728,
+    "reasoning_output_tokens": 95015
+  },
+  "billing_route": "ChatGPT-authenticated Codex; no API-key billing estimate",
+  "model_alias": "gpt-6-astra",
+  "snapshot_unknown": true
+}

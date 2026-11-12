@@ -1,0 +1,35 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Bob is building a garden on his land, and he wants it to be fenced in to keep out varmints. The garden is a rectangular plot 225 feet long by 125 feet wide. He also wants to have a small 3-foot wide gate to walk through and a larger 10-foot wide gate to move his gardening equipment through. How much fencing is Bob going to need to fence in his garden, taking into account the two gates?
+SOLUTION: To determine the amount of fencing Bob needs, we first calculate the perimeter of the rectangular plot of land. The formula for the perimeter \( P \) of a rectangle is:
+
+\[
+P = 2 \times (length + width)
+\]
+
+Substituting the given dimensions:
+
+\[
+P = 2 \times (225 + 125) = 2 \times 350 = 700 \text{ feet}
+\]
+
+Next, we account for the gates. Each gate is 3 feet wide, so the total width occupied by the gates is:
+
+\[
+3 \text{ feet} + 3 \text{ feet} = 6 \text{ feet}
+\]
+
+Bob also wants a larger 10-foot wide gate. We add this to the total width occupied by the smaller gate:
+
+\[
+6 \text{ feet} + 10 \text{ feet} = 16 \text{ feet}
+\]
+
+The total length of the fencing needed is the original perimeter minus the width occupied by the gates:
+
+\[
+700 \text{ feet} - 16 \text{ feet} = 684 \text{ feet}
+\]
+
+#### 684
+Bob is going to need 684 feet of fencing to fence in his garden.

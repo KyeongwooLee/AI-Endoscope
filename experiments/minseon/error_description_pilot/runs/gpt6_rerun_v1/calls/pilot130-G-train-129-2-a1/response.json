@@ -1,0 +1,17 @@
+{
+  "source_id": "train-129-2",
+  "response_sha256": "7fab066e42fbd945d3d9689ca6c98c68bbde52f7fc3944e8213638879ac0371a",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "the number of free cones given away is 50 cones / 6 = 8.333... free cones.",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "every sixth customer gets a free ice cream cone",
+  "observed_error": "The response divides the number of paid cones by six to calculate free cones.",
+  "violated_condition": "Each complete group of six customers includes five paying customers and one receiving a free cone.",
+  "error_description": "The response treats the 50 paid cones as the total customer count and divides by six. Every sixth customer receives a free cone, so each complete group contains five paid cones and one free cone. The division is executed correctly, but it uses the wrong relation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

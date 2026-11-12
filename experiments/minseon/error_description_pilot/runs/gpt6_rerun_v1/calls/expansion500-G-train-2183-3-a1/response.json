@@ -1,0 +1,19 @@
+{
+  "source_id": "train-2183-3",
+  "response_sha256": "a2341a6807937c86d49b18379d4398721172ac6d392a7657ae1490644ebe55aa",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "3 \\times 3 = 9",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "He accidentally ruined three planks in each bedroom by dragging furniture over them and had to replace them.",
+  "observed_error": "The response multiplies three ruined planks by three bedrooms, although there are only two bedrooms.",
+  "violated_condition": "Ruined planks equal three per bedroom times two bedrooms.",
+  "error_description": "The response calculates ruined planks as 3 × 3, using three bedrooms although the question identifies only Andrew’s bedroom and the guest bedroom. The multiplication itself is correct, but the bedroom count is wrong. Independently, its final purchase calculation adds only installed and leftover planks, omitting replacement planks entirely.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The final calculation, 53 + 6 = 59, omits replacement planks, even though the response separately calculates ruined planks."
+  ],
+  "uncertainty_note": null
+}

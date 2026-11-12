@@ -1,0 +1,19 @@
+{
+  "source_id": "train-3556-0",
+  "response_sha256": "534ef05f39ffb540460bf95a75e26930814db3d99f09121ec1f293002196fc6f",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "$46 (remaining amount) < $125 (threshold for gift)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "Kathleen’s aunt said she would give Kathleen $25 if Kathleen saves more than $125.",
+  "observed_error": "The response tests the gift threshold against the post-spending balance rather than the total saved.",
+  "violated_condition": "The gift condition concerns the $112 saved across June, July, and August.",
+  "error_description": "The response compares the $125 savings threshold with the $46 remaining after spending instead of the $112 saved over the three months. It also subtracts the aunt’s $25 gift despite finding Kathleen ineligible; a conditional gift is neither an expense nor a deduction from her balance.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "Step 5 subtracts $25 for an unreceived gift. The subtraction is arithmetically correct, but the balance relation is wrong."
+  ],
+  "uncertainty_note": null
+}

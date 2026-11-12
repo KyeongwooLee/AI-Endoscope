@@ -1,0 +1,21 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Two-thirds of all the animals on my street are cats and the rest are dogs.  If there are 300 animals on the street, what's the total number of legs of dogs that are on the street?
+SOLUTION: #### 600
+
+To solve this problem, let's break it down step by step:
+
+1. **Determine the number of cats and dogs**:
+   - We know that two-thirds of the animals are cats.
+   - Therefore, one-third of the animals are dogs.
+   - There are 300 animals in total.
+
+2. **Calculate the number of dogs**:
+   - One-third of 300 animals is \( \frac{1}{3} \times 300 = 100 \).
+   - This means there are 100 dogs.
+
+3. **Calculate the number of legs of the dogs**:
+   - Each dog has 4 legs.
+   - Therefore, the total number of legs of the dogs is \( 100 \times 4 = 400 \).
+
+So, the total number of legs of the dogs on the street is 400.

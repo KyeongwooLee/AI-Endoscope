@@ -1,0 +1,1 @@
+{"source_id":"train-5985-1","response_sha256":"753954595bc9e5ea9f01e565813ddf41593c6d8f97bb0cddfe91d44134fb1884","status":"supported_error","reference_review_needed":false,"explanation":"The nightly amounts are all calculated correctly, but the final summation incorrectly states that 6 + 8 + 4 + 12 equals “2L” hours. Those amounts sum to 30 hours."}

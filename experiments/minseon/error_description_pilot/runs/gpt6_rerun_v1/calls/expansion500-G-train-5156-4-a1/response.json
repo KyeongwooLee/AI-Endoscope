@@ -1,0 +1,19 @@
+{
+  "source_id": "train-5156-4",
+  "response_sha256": "ca499f8bb6069e0d8efdb1fa7a601647eeea525de1dbde896d5d8b6a0716ce6c",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "\\[ \\text{Cows after last year} = 39 - 25 + 6 + 24 + 43 \\]",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "last year 25 of them died and he sold 6 of them. This year the number of the cows increased by 24 and the man bought 43 more.",
+  "observed_error": "The response adds the 6 sold cows and includes this year's additions in the quantity labeled as last year's ending count.",
+  "violated_condition": "Selling 6 cows decreases the herd by 6; this year's increase and purchase occur after last year's ending count.",
+  "error_description": "The response includes this year's increase of 24 cows and purchase of 43 cows in a quantity labeled as the count after last year. It also adds the 6 sold cows instead of subtracting them. The subsequent arithmetic correctly evaluates that incorrectly constructed expression.",
+  "reference_review_reason": null,
+  "secondary_errors": [
+    "The expression adds 6 for the cows sold, although a sale reduces the herd."
+  ],
+  "uncertainty_note": null
+}

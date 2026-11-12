@@ -1,0 +1,17 @@
+{
+  "source_id": "train-7467-4",
+  "response_sha256": "75d2d428fddfd7ef2c8bb49d0c4ba483eb5cdfdb69efc37f7bf4a19afb9554f7",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "43 \\text{ degrees} = 43 \\text{ degrees} - 4t \\text{ degrees}",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "the air conditioner was turned off for three hours, during which time the temperature rose by 8 degrees per hour.",
+  "observed_error": "The restoration equation omits the previously calculated 24-degree temperature increase.",
+  "violated_condition": "Cooling must reverse the 24-degree rise accumulated during the outage, so the temperature balance must include that increase.",
+  "error_description": "The response calculates a 24-degree rise during the outage but omits it from the restoration equation, writing 43 = 43 − 4t. This makes cooling begin at the target temperature instead of the warmed temperature. The subsequent algebra correctly solves that incorrect equation.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

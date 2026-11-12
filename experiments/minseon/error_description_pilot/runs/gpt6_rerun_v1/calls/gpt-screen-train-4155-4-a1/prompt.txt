@@ -1,0 +1,18 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Emmy has a collection of 14 iPods. She loses 6 out of the 14 she had but she still has twice as many as Rosa. How many iPods does Emmy and Rosa have together?
+SOLUTION: Step 1: Calculate the number of iPods Emmy has after losing some.
+Emmy initially has 14 iPods, loses 6, so:
+14 - 6 = 8 iPods
+
+Step 2: Determine the number of iPods Rosa has.
+Emmy has twice as many iPods as Rosa, so if Emmy has 8 iPods, then:
+2 * 8 = 16 iPods
+
+Rosa has 16 iPods.
+
+Step 3: Calculate the total number of iPods Emmy and Rosa have together.
+Emmy has 8 iPods, Rosa has 16 iPods, so together:
+8 + 16 = 24 iPods
+
+#### 24

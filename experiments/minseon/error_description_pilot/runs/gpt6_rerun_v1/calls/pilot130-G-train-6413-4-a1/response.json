@@ -1,0 +1,17 @@
+{
+  "source_id": "train-6413-4",
+  "response_sha256": "b289eed628923286df109b86145374d1eebf3061bd9598dd0920a4a41e011c38",
+  "status": "supported_error",
+  "reference_review_needed": false,
+  "evidence_quote": "**First year (current year):** \\( 200 \\times 1.5 = 300 \\)",
+  "evidence_start": null,
+  "evidence_end": null,
+  "evidence_occurrence": 1,
+  "question_evidence_quote": "three years ago, and each subsequent year until the current one",
+  "observed_error": "The response labels the first annual increase as the current year and selects its result.",
+  "violated_condition": "The current year is three annual increases after the initial count, not one.",
+  "error_description": "The response identifies the first year after the initial 200 students as the current year, selecting 300 students. The question places the initial count three years ago, requiring three successive annual increases. Its multiplications are correct, but the later increases shown under verification are excluded from its chosen current-year count.",
+  "reference_review_reason": null,
+  "secondary_errors": [],
+  "uncertainty_note": null
+}

@@ -1,0 +1,38 @@
+Use no tools, files, search or delegation. Complete this standalone diagnosis from the supplied texts only.
+Check this mathematical solution against the QUESTION alone. No reference answer is supplied. Compute a compact independent answer from the stated quantities. Then compare the written solution. Do not infer an unshown mental cause. Distinguish a genuinely incorrect step from a correct derivation followed by a conflicting answer marker. If the question has multiple reasonable interpretations, mark ambiguous. Return JSON only with keys: status (one of math_error, no_math_error, answer_conflict, ambiguous), independent_answer (short string), check (one or two concise sentences with the key arithmetic), evidence_quote (exact short substring of the supplied solution, or null), error_description (one or two concise sentences; empty if no mathematical error). For a wrong final number after a correct formula, describe the observable mismatch; do not claim an arithmetic equation the solution never wrote. A leading #### marker that contradicts a correct worked final answer should be answer_conflict unless a separate math error is visible.
+QUESTION: Jim is a maintenance worker at a pool. Every time someone jumps in the pool, they cause 400 ml of water to splash out and evaporate. Jim has to get everyone out of the pool, clean, and refill it when it gets below 80% full. If the pool holds 2000 L of water, how many times can people jump in the pool before Jim has to clean it?
+SOLUTION: To determine how many times people can jump in the pool before Jim has to clean it, we need to follow these steps:
+
+1. **Convert the pool's capacity to milliliters:**
+   The pool holds 2000 liters. Since 1 liter = 1000 milliliters, we have:
+   \[
+   2000 \text{ L} \times 1000 \text{ ml/L} = 2,000,000 \text{ ml}
+   \]
+
+2. **Calculate the minimum amount of water needed to refill the pool:**
+   Jim needs to refill the pool when it gets below 80% full. Therefore, the minimum amount of water needed to refill the pool is:
+   \[
+   2,000,000 \text{ ml} \times 0.20 = 400,000 \text{ ml}
+   \]
+
+3. **Determine the amount of water that splashes out each time someone jumps in:**
+   Each jump causes 400 ml of water to splash out.
+
+4. **Calculate the number of jumps before the pool is below 80% full:**
+   To find out how many jumps are needed to reach 80% full, we calculate 80% of the pool's capacity:
+   \[
+   2,000,000 \text{ ml} \times 0.80 = 1,600,000 \text{ ml}
+   \]
+   The number of jumps required to reach 80% full is:
+   \[
+   \frac{1,600,000 \text{ ml}}{400 \text{ ml/jump}} = 4,000 \text{ jumps}
+   \]
+
+5. **Calculate the number of jumps before the pool is below 80% full:**
+   To find out how many jumps are needed to reach below 80% full, we subtract the number of jumps needed to reach 80% full from the total number of jumps:
+   \[
+   4,000 \text{ jumps} - 4,000 \text{ jumps} = 0 \text{ jumps}
+   \]
+
+Therefore, Jim does not need to clean the pool before it gets below 80% full. The answer is:
+#### 0
