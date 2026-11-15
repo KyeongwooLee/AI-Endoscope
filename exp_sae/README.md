@@ -1,8 +1,5 @@
 # GSM8K 반복 생성·오류 유형별 SAE 분석
 
-`AI-Endoscope` 저장소 루트에서 `python -m exp_sae --config exp_sae/config.local.json <단계>`로 실행한다.
-기존 `sae_error_clustering`의 토큰 경계·엄격한 수치 채점·문제 단위 분할·원자적 저장·캐시 replay를 가져오며 기존 실험 파일은 수정하지 않는다.
-
 기본 실험은 GSM8K **train 7,473문제 × 20회 = 149,460응답**이다. 모델과 tokenizer는 각각
 `Qwen/Qwen2.5-1.5B-Instruct@989aa7980e4cf806f80c7fef2b1adb7bc71aa306`, 데이터는
 `openai/gsm8k@740312add88f781978c0658806c59bc2815b9866`의 `main/train`으로 고정했다.
@@ -116,7 +113,7 @@ python -m exp_sae --config exp_sae/config.local.json discover-taxonomy freeze --
 Responses + Batch API, strict JSON schema, reasoning effort none을 사용한다. 실제 Batch 지원/권한은 서버 제출에서 최종 확인한다.
 가격 근거는 [Luna 모델 설명](https://developers.openai.com/api/docs/models/gpt-5.6-luna)과
 [Batch 문서](https://developers.openai.com/api/docs/guides/batch), [가격표](https://developers.openai.com/api/docs/pricing)다.
-기본 Batch 단가는 입력 $0.10/M, 출력 $0.60/M(2026-11-15 확인)이다. **서버 실행 전 가격을 다시 확인하고 준비 전에 설정한다.**
+기본 Batch 단가는 입력 $0.10/M, 출력$0.60/M(2026-11-15 확인)이다. **서버 실행 전 가격을 다시 확인하고 준비 전에 설정한다.**
 
 전체 $9는 taxonomy 문제별 탐색·통합·탐색 라벨·파일럿·확인 라벨·제출 중 요청을 모두 포함한다.
 요청마다 입력 UTF-8 byte 수+4096 framing 여유와 최대 출력 토큰 수로 상한을 예약한다.
@@ -177,13 +174,15 @@ python -m exp_sae --config exp_sae/config.local.json report
 `metadata_verified` **44개**, 레이어 **4·10·12·14·17·18·19·21·24**가 기본 적용 대상이다.
 동일 층의 Geaming BT(F)/BT(P)/FAST, 8×/16×, standard/JumpReLU는 모두 별도 결과다.
 
-| 배포자 | 적용/제외 |
-|---|---|
-| HuggingAnalist | layer 17,18,19,21 standard 4개 |
-| Geaming | layer 4,14,24의 36개 변형 |
-| huypn16 | native Eleuther config의 layer 10,12,18 3개 적용. layer 8,14,16은 `apply_b_dec_to_input=false`와 Eleuther의 decoder-bias subtraction이 충돌해 제외 |
-| 09Catho | layer 18 TopK/input_scale 1개. backbone revision 일치. 20k-token smoke SAE의 과소학습 한계를 유지 |
-| elrashid | layer 14: pinned README/sae.py가 HTTP 401, 차원별 표준화 및 tensor layout 확인 불가로 제외 |
+
+| 배포자            | 적용/제외                                                                                                                                 |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| HuggingAnalist | layer 17,18,19,21 standard 4개                                                                                                         |
+| Geaming        | layer 4,14,24의 36개 변형                                                                                                                 |
+| huypn16        | native Eleuther config의 layer 10,12,18 3개 적용. layer 8,14,16은 `apply_b_dec_to_input=false`와 Eleuther의 decoder-bias subtraction이 충돌해 제외 |
+| 09Catho        | layer 18 TopK/input_scale 1개. backbone revision 일치. 20k-token smoke SAE의 과소학습 한계를 유지                                                  |
+| elrashid       | layer 14: pinned README/sae.py가 HTTP 401, 차원별 표준화 및 tensor layout 확인 불가로 제외                                                           |
+
 
 공개 설정·헤더 검증을 actual weights load/reconstruction 검증과 구분한다. 대부분 학습 backbone revision이 공개되지 않아 exact match는 미검증이다.
 서버에서 SHA256을 확인한 checkpoint만 로드하며 remote Python은 실행하지 않는다. `.pt`는 `torch.load(weights_only=True)`만 사용한다.
@@ -206,26 +205,28 @@ checkpoint 처리가 끝나면 checksum을 확인한 해당 캐시 파일만 삭
 ## 6. 평가와 산출물
 
 - 동일 문제에 두 유형이 모두 있는 경우 각 유형에만 속하는 응답끼리 평균 차이를 계산한다. 둘 다 속하는 응답은 해당 쌍에서 제외한다.
-  탐색 문제에서 feature를 선택하고 확인 문제에서 문제별 차이·bootstrap 구간을 보고한다. 짝지어진 문제가 부족하면 평가 불가다.
+탐색 문제에서 feature를 선택하고 확인 문제에서 문제별 차이·bootstrap 구간을 보고한다. 짝지어진 문제가 부족하면 평가 불가다.
 - 탐색에서만 variance filtering, StandardScaler, PCA와 L2 logistic(C=1)을 fit한다.
-  SAE mean/max/frequency를 연결한 입력과 raw hidden PCA를 비교하고 길이/정오답/길이+정오답 기준선을 별도로 둔다.
-  한 checkpoint 내 다섯 기준선은 같은 라벨·토큰 유효 표본을 쓴다.
+SAE mean/max/frequency를 연결한 입력과 raw hidden PCA를 비교하고 길이/정오답/길이+정오답 기준선을 별도로 둔다.
+한 checkpoint 내 다섯 기준선은 같은 라벨·토큰 유효 표본을 쓴다.
 - 유형별 positive/negative 문제 수가 최소치보다 적으면 AUPRC/F1을 만들지 않는다. F1 threshold는 0.5 고정이다.
-  확인 응답의 문제 단위 bootstrap으로 95% 구간과 유효 반복 수를 보고한다.
+확인 응답의 문제 단위 bootstrap으로 95% 구간과 유효 반복 수를 보고한다.
 - 각 유형의 top feature는 탐색에서 선택하고, 확인 영역의 최대 활성 구절과 같은 SAE에서 유형 간 공통 feature를 제공한다.
-  여러 유형·SAE 비교는 다중 비교 보정 없는 탐색적 결과다.
+여러 유형·SAE 비교는 다중 비교 보정 없는 탐색적 결과다.
 
-| 경로(run_dir 아래) | 내용 |
-|---|---|
-| `manifest.json`, `problems.jsonl`, `splits.json` | 설정·데이터 revision/hash·실행 환경·문제 분할 |
-| `generation-worker-*.json`, `responses/*.jsonl`, `*.meta.json` | 모든 반복 응답·토큰·재생 설정·생성 파일럿 실측 |
-| `taxonomy/` | 탐색 원문 400응답, draft, 검토 후 고정 codebook |
-| `api/ledger.json`, `*.input.jsonl`, `*.output.jsonl`, `*.remote.json` | 통합 예산 장부·원래 요청·원래 결과·provider 상태 |
-| `labels/labels.jsonl`, `labels.jsonl.meta.json` | 검증/미판정·다중 유형·first error·근거·원문 hash |
-| `sae_registry.json` | 적용/제외 후보와 공개 근거 snapshot |
-| `extraction/<SAE>/<label-hash>/` | 문제별 집계 NPZ·품질 JSONL·완료 marker, 임시 hidden |
-| `analysis/<SAE>.json` | 유형별 지표·문제 bootstrap·동일 문제 차이·공통 feature·구절 |
-| `report/REPORT.md`, `quality.json`, `extraction_quality.json`, `metrics.json`, `*.png` | 한국어 보고서·명시적 분모·그림·출처 hash |
+
+| 경로(run_dir 아래)                                                                         | 내용                                         |
+| -------------------------------------------------------------------------------------- | ------------------------------------------ |
+| `manifest.json`, `problems.jsonl`, `splits.json`                                       | 설정·데이터 revision/hash·실행 환경·문제 분할           |
+| `generation-worker-*.json`, `responses/*.jsonl`, `*.meta.json`                         | 모든 반복 응답·토큰·재생 설정·생성 파일럿 실측                |
+| `taxonomy/`                                                                            | 탐색 원문 400응답, draft, 검토 후 고정 codebook       |
+| `api/ledger.json`, `*.input.jsonl`, `*.output.jsonl`, `*.remote.json`                  | 통합 예산 장부·원래 요청·원래 결과·provider 상태           |
+| `labels/labels.jsonl`, `labels.jsonl.meta.json`                                        | 검증/미판정·다중 유형·first error·근거·원문 hash        |
+| `sae_registry.json`                                                                    | 적용/제외 후보와 공개 근거 snapshot                   |
+| `extraction/<SAE>/<label-hash>/`                                                       | 문제별 집계 NPZ·품질 JSONL·완료 marker, 임시 hidden   |
+| `analysis/<SAE>.json`                                                                  | 유형별 지표·문제 bootstrap·동일 문제 차이·공통 feature·구절 |
+| `report/REPORT.md`, `quality.json`, `extraction_quality.json`, `metrics.json`, `*.png` | 한국어 보고서·명시적 분모·그림·출처 hash                  |
+
 
 보고서는 일부 생성/파일럿 상태에서도 작성된다. 전체 추출/라벨이 필요한 analyze는 미완료 상태를 거부한다.
 분리도는 **생성 완료 후 AI 라벨의 관찰 가능한 오류 유형과 activation 사이의 연관성**이다.
@@ -236,28 +237,11 @@ checkpoint 처리가 끝나면 checksum을 확인한 해당 캐시 파일만 삭
 - 정상 완료된 문제 묶음은 ID/설정/hash를 확인하고 건너뛴다. `--limit` 파일럿 뒤 같은 설정으로 제한 없이 실행하면 이어간다.
 - OOM·공간 부족은 예외로 중단한다. 완료 결과와 아직 검증되지 않은 hidden을 보존한다. chunk/config를 바꾸려면 새 run을 쓴다.
 - 손상 파일·commit metadata가 없는 orphan은 자동 삭제하지 않는다. 오류가 지목한 문제 파일과 sidecar를 **별도 백업 경로로 이동**하고 원인을 확인한 뒤 그 문제를 재생성/재추출한다.
-  같은 seed만으로 원문이 바뀔 수 있으므로 이미 라벨/특징이 있는 생성 원문은 함부로 재생성하지 않는다.
+같은 seed만으로 원문이 바뀔 수 있으므로 이미 라벨/특징이 있는 생성 원문은 함부로 재생성하지 않는다.
 - 잠금 파일 `.lock`이 남았다면 기록된 PID의 프로세스가 종료됐는지 먼저 확인한 후 **해당 lock 파일만** 수동 제거한다.
 - Batch 제출 전에 `submitting`을 기록한다. timeout 이후 같은 submit은 metadata key를 가진 기존 Batch를 전체 페이지에서 조회해 **정확히 하나일 때만** 복구한다.
-  0개/복수라면 재제출하지 않고 예약액을 유지한다. provider dashboard에서 실제 접수 여부를 확인해야 한다. SDK 자동 재시도는 꺼져 있다.
+0개/복수라면 재제출하지 않고 예약액을 유지한다. provider dashboard에서 실제 접수 여부를 확인해야 한다. SDK 자동 재시도는 꺼져 있다.
 - `expired/cancelled/failed`의 일부 성공은 원래 결과로 보존하고 나머지를 미판정으로 남긴다. 실패 요청을 자동 유료 재시도하지 않는다.
-  명시적 복구 후에도 중복 제출 위험이 남는 상태에서 ledger를 임의로 지우지 않는다.
+명시적 복구 후에도 중복 제출 위험이 남는 상태에서 ledger를 임의로 지우지 않는다.
 - `label materialize`는 수집한 모든 label Batch를 다시 검증해 행으로 만든다. build를 반복해도 기존 문제를 다시 제출하지 않는다.
 
-## 검토 후 수동 Git 전달
-
-현재 로컬 브랜치는 최신 `origin/kyeongwoo`의 `9b21c925116bb5b8a6b2f389ca9c0379f09e78d2`에서 시작한 `kyeongwoo/exp-SAE`다.
-Git ref 이름 충돌을 피하려고 기존 로컬 `kyeongwoo`는 `kyeongwoo-before-exp-SAE`로 이름만 변경해 보존했다. 원격 브랜치는 변경하지 않았다.
-변경은 `exp_sae/` 안에만 있다. 구현·문서·registry만 추가하고 실행 데이터/hidden/가중치/캐시/키는 제외한다.
-
-```powershell
-# AI-Endoscope 저장소 루트에서, 사용자가 검토한 뒤 직접 실행
-git diff --stat
-git diff
-git status --short
-# 아직 untracked이므로 처음에는 일반 git diff에 안 보인다. exp_sae 파일 자체도 검토한다.
-git add exp_sae
-git diff --cached
-git commit -m "Add repeated GSM8K SAE experiment pipeline"
-git push -u origin kyeongwoo/exp-SAE
-```
