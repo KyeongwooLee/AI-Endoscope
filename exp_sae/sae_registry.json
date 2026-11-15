@@ -1,0 +1,2139 @@
+{
+  "checked_on": "2026-11-15",
+  "evidence_level": "public config, LFS hash and safetensors header; no full weights loaded locally",
+  "entries": [
+    {
+      "id": "09Catho-sae--smoke_v0",
+      "repo": "09Catho/BrainPatch-Qwen2.5-1.5B",
+      "revision": "0d5e6437864e048c6cd06f3d29eacdf8d004b295",
+      "layer": 18,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "hook": "residual_post",
+      "architecture": "topk",
+      "d_in": 1536,
+      "d_sae": 2048,
+      "apply_b_dec_to_input": true,
+      "normalize_activations": "input_scale",
+      "input_scale": 0.5610531069008018,
+      "k": 32,
+      "format": "brainpatch",
+      "config_file": "sae/smoke_v0/config.json",
+      "config_sha256": "c865e4947efbcb1dc7b2d225ee88aa77f7c5fe6d11eee5f4658b35363fb01952",
+      "weights_file": "sae/smoke_v0/sae_latest.pt",
+      "weights_sha256": "4cf0ee497677f87a1e66eee3ca6efa7684be5787fb7e85c2f7581c9d87c23373",
+      "weights_bytes": 75585898,
+      "weight_shapes": {},
+      "header_sha256": null,
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "exact",
+      "source": "https://huggingface.co/09Catho/BrainPatch-Qwen2.5-1.5B/blob/0d5e6437864e048c6cd06f3d29eacdf8d004b295/sae/smoke_v0/config.json",
+      "implementation_source": "https://github.com/09Catho/BrainPatch/blob/main/brainpatch/research/ml/sae.py",
+      "warning": "20k-token smoke SAE; undertrained per author; not a validated semantic dictionary"
+    },
+    {
+      "id": "elrashid-topk-l14",
+      "repo": "elrashid/sae-qwen2.5-1.5b-instruct-topk-l14",
+      "revision": "d9d88b7a1c0d875bd4b78fab0dafebaf07fa32cd",
+      "layer": 14,
+      "status": "excluded",
+      "reason": "Pinned README/sae.py resolve returned HTTP 401; per-dimension standardization and state-dict layout cannot be verified. No remote code execution.",
+      "weights_file": "sae.pt",
+      "weights_sha256": "513aec9f6d43ce7d018be125e21fdf36f71b8a7ee65ed15dd1079d74a10aab1f",
+      "weights_bytes": 302109285,
+      "source": "https://huggingface.co/elrashid/sae-qwen2.5-1.5b-instruct-topk-l14/tree/d9d88b7a1c0d875bd4b78fab0dafebaf07fa32cd"
+    },
+    {
+      "id": "Geaming-BTF--blocks_14_hook_resid_post_16X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 14,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.14.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(F)/blocks_14_hook_resid_post_16X_2048_jumprelu/cfg.json",
+      "config_sha256": "928b21001159a962726046dcd699ea1a883527af3e6a9d4068a86974922edffc",
+      "weights_file": "BT(F)/blocks_14_hook_resid_post_16X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "a6e7d5c2e17f1daf0bada4100206af434af8802ccdd0984b8547b4b8c0d5a9f5",
+      "weights_bytes": 302193040,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ],
+        "threshold": [
+          24576
+        ]
+      },
+      "header_sha256": "fb52aeb1e57f57296dbad18e1958ab942e5e0960c78c5614fedaef48b842ccee",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(F)/blocks_14_hook_resid_post_16X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-BTF--blocks_14_hook_resid_post_16X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 14,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.14.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(F)/blocks_14_hook_resid_post_16X_2048_standard/cfg.json",
+      "config_sha256": "324121951a7ae7a598bbd0dd09d6be0f8698943579dcaca6eb646a0c129525ac",
+      "weights_file": "BT(F)/blocks_14_hook_resid_post_16X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "368001fbc96f7e7dc6c10bbaa69fe54f64b6cfbafef1331f9598e8d3e90d9aa9",
+      "weights_bytes": 302094656,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ]
+      },
+      "header_sha256": "a02b15ef9b3114cae07f07e02e6d613642eb5cd158cdac5173caebf225756399",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(F)/blocks_14_hook_resid_post_16X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-BTF--blocks_14_hook_resid_post_8X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 14,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.14.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(F)/blocks_14_hook_resid_post_8X_2048_jumprelu/cfg.json",
+      "config_sha256": "d842d5a5a65f7d096e1a95e14b92dcd4769a4c72d65c0dd5700b3bc763e93a69",
+      "weights_file": "BT(F)/blocks_14_hook_resid_post_8X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "665f1ab4886569fd713d9a82f00ff386aeb92ea7cc1f7a9c747ded5ccc7905f7",
+      "weights_bytes": 151099792,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ],
+        "threshold": [
+          12288
+        ]
+      },
+      "header_sha256": "82b8dbff896e3d49d9ba0fe8c548da004c72801813828ba786db51d4324ce0e6",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(F)/blocks_14_hook_resid_post_8X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-BTF--blocks_14_hook_resid_post_8X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 14,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.14.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(F)/blocks_14_hook_resid_post_8X_2048_standard/cfg.json",
+      "config_sha256": "bc668e8ee4eb82e63df56ab1e8162cef0fa97fca5bdc9f5e210b35444eacaf88",
+      "weights_file": "BT(F)/blocks_14_hook_resid_post_8X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "3e170c614ae71cb52c3e4fde5ad05d68d03c17664d380348b77f4fbc2467232b",
+      "weights_bytes": 151050560,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ]
+      },
+      "header_sha256": "5a42871c2ddf0768feba6df3de152543743f988ded2fee29c0fb1c882d285022",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(F)/blocks_14_hook_resid_post_8X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-BTF--blocks_24_hook_resid_post_16X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 24,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.24.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(F)/blocks_24_hook_resid_post_16X_2048_jumprelu/cfg.json",
+      "config_sha256": "4c20b3f907d099f79103d26d4d90f1fbcc270c011fa86155e277b0ab5254e6c7",
+      "weights_file": "BT(F)/blocks_24_hook_resid_post_16X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "ff92c8c7f0f9f3fd61e96740b79a2128ec9fc4205a5daa6d6e127d7afbaf60f2",
+      "weights_bytes": 302193040,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ],
+        "threshold": [
+          24576
+        ]
+      },
+      "header_sha256": "fb52aeb1e57f57296dbad18e1958ab942e5e0960c78c5614fedaef48b842ccee",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(F)/blocks_24_hook_resid_post_16X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-BTF--blocks_24_hook_resid_post_16X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 24,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.24.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(F)/blocks_24_hook_resid_post_16X_2048_standard/cfg.json",
+      "config_sha256": "32c73d409e7a3d2c5343a6a7aef0c96403512482842d05bbb8bff5975c97d5ba",
+      "weights_file": "BT(F)/blocks_24_hook_resid_post_16X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "12a781f869bfc45db4f01a890d981b781f1ff2e2e480e78d661683cececd595b",
+      "weights_bytes": 302094656,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ]
+      },
+      "header_sha256": "a02b15ef9b3114cae07f07e02e6d613642eb5cd158cdac5173caebf225756399",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(F)/blocks_24_hook_resid_post_16X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-BTF--blocks_24_hook_resid_post_8X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 24,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.24.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(F)/blocks_24_hook_resid_post_8X_2048_jumprelu/cfg.json",
+      "config_sha256": "f441b16a3121a6de7ec7d9c043354b9212e4bf138beef6c47c304e7055e517f9",
+      "weights_file": "BT(F)/blocks_24_hook_resid_post_8X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "e9fd3c01c76b75e62261cfdfa0cbe4a1d6946ce19c1e17146693021f3311c4fc",
+      "weights_bytes": 151099792,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ],
+        "threshold": [
+          12288
+        ]
+      },
+      "header_sha256": "82b8dbff896e3d49d9ba0fe8c548da004c72801813828ba786db51d4324ce0e6",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(F)/blocks_24_hook_resid_post_8X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-BTF--blocks_24_hook_resid_post_8X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 24,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.24.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(F)/blocks_24_hook_resid_post_8X_2048_standard/cfg.json",
+      "config_sha256": "fc9dafba1e51ea5edda075b8d764c87ecc25adb0997ad39c445d90c6538b73b5",
+      "weights_file": "BT(F)/blocks_24_hook_resid_post_8X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "9f4dbb8f82c89f7b6533238a271beb06e16f7f29249b50ad11c487b678df1ca2",
+      "weights_bytes": 151050560,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ]
+      },
+      "header_sha256": "5a42871c2ddf0768feba6df3de152543743f988ded2fee29c0fb1c882d285022",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(F)/blocks_24_hook_resid_post_8X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-BTF--blocks_4_hook_resid_post_16X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 4,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.4.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(F)/blocks_4_hook_resid_post_16X_2048_jumprelu/cfg.json",
+      "config_sha256": "edb669753dd9981ce0617488096fb3e131af5fbb49487de7559bd388af398967",
+      "weights_file": "BT(F)/blocks_4_hook_resid_post_16X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "f0ad5457543b43189152a067fb1872fa99f10add24714f1b7eaaa3aee94d2ac3",
+      "weights_bytes": 302193040,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ],
+        "threshold": [
+          24576
+        ]
+      },
+      "header_sha256": "fb52aeb1e57f57296dbad18e1958ab942e5e0960c78c5614fedaef48b842ccee",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(F)/blocks_4_hook_resid_post_16X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-BTF--blocks_4_hook_resid_post_16X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 4,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.4.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(F)/blocks_4_hook_resid_post_16X_2048_standard/cfg.json",
+      "config_sha256": "8d85650f30f03050b15c19dd6f3ed84f0037b6e3b0ad88c57235918cdbaf46be",
+      "weights_file": "BT(F)/blocks_4_hook_resid_post_16X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "ad67517671bdd4a8ab3e512471a90d2ffdc0687e4ad6e9a1504e0abdafb3f9d3",
+      "weights_bytes": 302094656,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ]
+      },
+      "header_sha256": "a02b15ef9b3114cae07f07e02e6d613642eb5cd158cdac5173caebf225756399",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(F)/blocks_4_hook_resid_post_16X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-BTF--blocks_4_hook_resid_post_8X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 4,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.4.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(F)/blocks_4_hook_resid_post_8X_2048_jumprelu/cfg.json",
+      "config_sha256": "891257191905334cc24ad0d92a814c61939c313510930fb11119b9923853d7d0",
+      "weights_file": "BT(F)/blocks_4_hook_resid_post_8X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "b585d2c1e01591adb21d79a5d2d0c0511394703b3bfaa45ade01183215e25086",
+      "weights_bytes": 151099792,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ],
+        "threshold": [
+          12288
+        ]
+      },
+      "header_sha256": "82b8dbff896e3d49d9ba0fe8c548da004c72801813828ba786db51d4324ce0e6",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(F)/blocks_4_hook_resid_post_8X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-BTF--blocks_4_hook_resid_post_8X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 4,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.4.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(F)/blocks_4_hook_resid_post_8X_2048_standard/cfg.json",
+      "config_sha256": "fae5a7c114d247c3f27a124e2ce37c0e501867b0187e9141194be56015711344",
+      "weights_file": "BT(F)/blocks_4_hook_resid_post_8X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "b9d089cf5ce5908d0aef23491b76234c52e81cc2cbb58492cd328a2d0fb78952",
+      "weights_bytes": 151050560,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ]
+      },
+      "header_sha256": "5a42871c2ddf0768feba6df3de152543743f988ded2fee29c0fb1c882d285022",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(F)/blocks_4_hook_resid_post_8X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-BTP--blocks_14_hook_resid_post_16X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 14,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.14.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(P)/blocks_14_hook_resid_post_16X_2048_jumprelu/cfg.json",
+      "config_sha256": "6583a1f76ea1f7a0bfdbbd70b2ae98442b3f3986d080d3bc3c52862d120ca80a",
+      "weights_file": "BT(P)/blocks_14_hook_resid_post_16X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "60401589559d3563d0a1452e3ea0f01b8e50e58aafefa353bf8e6b7137af5cbb",
+      "weights_bytes": 302193040,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ],
+        "threshold": [
+          24576
+        ]
+      },
+      "header_sha256": "fb52aeb1e57f57296dbad18e1958ab942e5e0960c78c5614fedaef48b842ccee",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(P)/blocks_14_hook_resid_post_16X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-BTP--blocks_14_hook_resid_post_16X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 14,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.14.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(P)/blocks_14_hook_resid_post_16X_2048_standard/cfg.json",
+      "config_sha256": "92546b757e488ac6178e38c2225f43686652f669e8e2c85eb91d1abf88198b46",
+      "weights_file": "BT(P)/blocks_14_hook_resid_post_16X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "3e155fc55b53c816352141c0fc6b34712f9859ba455db40f47c6e6e5bbfc03ea",
+      "weights_bytes": 302094656,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ]
+      },
+      "header_sha256": "a02b15ef9b3114cae07f07e02e6d613642eb5cd158cdac5173caebf225756399",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(P)/blocks_14_hook_resid_post_16X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-BTP--blocks_14_hook_resid_post_8X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 14,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.14.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(P)/blocks_14_hook_resid_post_8X_2048_jumprelu/cfg.json",
+      "config_sha256": "eaea4e55ed293913e53a0580a8370c4b2e0a9fd55a1ab78bc42400c7cd78f56e",
+      "weights_file": "BT(P)/blocks_14_hook_resid_post_8X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "faf0810a22bd3709a6a7d5a4b97efc7da84043a00a08d14347a65ad647814ec6",
+      "weights_bytes": 151099792,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ],
+        "threshold": [
+          12288
+        ]
+      },
+      "header_sha256": "82b8dbff896e3d49d9ba0fe8c548da004c72801813828ba786db51d4324ce0e6",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(P)/blocks_14_hook_resid_post_8X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-BTP--blocks_14_hook_resid_post_8X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 14,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.14.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(P)/blocks_14_hook_resid_post_8X_2048_standard/cfg.json",
+      "config_sha256": "a5cc1a42664944725d863fe8aae53910f4beccbb4758c675eb4304f3d31f6a7f",
+      "weights_file": "BT(P)/blocks_14_hook_resid_post_8X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "24e986ff12079211c4c79b3fccbd1ed83335c39f1149174eea1760ec1ee060f2",
+      "weights_bytes": 151050560,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ]
+      },
+      "header_sha256": "5a42871c2ddf0768feba6df3de152543743f988ded2fee29c0fb1c882d285022",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(P)/blocks_14_hook_resid_post_8X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-BTP--blocks_24_hook_resid_post_16X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 24,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.24.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(P)/blocks_24_hook_resid_post_16X_2048_jumprelu/cfg.json",
+      "config_sha256": "e96331b086d628243884788823d611bd3d6ec4861a48106edfffee82ce8d890d",
+      "weights_file": "BT(P)/blocks_24_hook_resid_post_16X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "f9d6a735fa0e4a23201e897ef934277b8b521ceb293908f98b9d2753dc5ebc0f",
+      "weights_bytes": 302193040,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ],
+        "threshold": [
+          24576
+        ]
+      },
+      "header_sha256": "fb52aeb1e57f57296dbad18e1958ab942e5e0960c78c5614fedaef48b842ccee",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(P)/blocks_24_hook_resid_post_16X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-BTP--blocks_24_hook_resid_post_16X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 24,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.24.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(P)/blocks_24_hook_resid_post_16X_2048_standard/cfg.json",
+      "config_sha256": "475ee5b0e53f754794eb982e8070dbac76637f9a39620feda4c7ac17a38a011b",
+      "weights_file": "BT(P)/blocks_24_hook_resid_post_16X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "0f4a2d6ba0d901627fcd34eaafc98a967dcf4ba3a79c8bc291f625cfd859da57",
+      "weights_bytes": 302094656,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ]
+      },
+      "header_sha256": "a02b15ef9b3114cae07f07e02e6d613642eb5cd158cdac5173caebf225756399",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(P)/blocks_24_hook_resid_post_16X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-BTP--blocks_24_hook_resid_post_8X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 24,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.24.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(P)/blocks_24_hook_resid_post_8X_2048_jumprelu/cfg.json",
+      "config_sha256": "cb7fb23b544858c504436b392e755622f6c09c33e4512ccd94649ceda50b257c",
+      "weights_file": "BT(P)/blocks_24_hook_resid_post_8X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "6cd32722e769212439763fe54ef0f3f241ab97ac2ab93ee86e22c51d1b03fe86",
+      "weights_bytes": 151099792,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ],
+        "threshold": [
+          12288
+        ]
+      },
+      "header_sha256": "82b8dbff896e3d49d9ba0fe8c548da004c72801813828ba786db51d4324ce0e6",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(P)/blocks_24_hook_resid_post_8X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-BTP--blocks_24_hook_resid_post_8X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 24,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.24.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(P)/blocks_24_hook_resid_post_8X_2048_standard/cfg.json",
+      "config_sha256": "ad3f0459092c42f8233f054fdf4c833f71b71775241e5424754fb92f021055ab",
+      "weights_file": "BT(P)/blocks_24_hook_resid_post_8X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "6a2fa5dce039a2ed934330e004c116bc0bc69786fc11f2c8dd7b7cfc20f44efa",
+      "weights_bytes": 151050560,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ]
+      },
+      "header_sha256": "5a42871c2ddf0768feba6df3de152543743f988ded2fee29c0fb1c882d285022",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(P)/blocks_24_hook_resid_post_8X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-BTP--blocks_4_hook_resid_post_16X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 4,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.4.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(P)/blocks_4_hook_resid_post_16X_2048_jumprelu/cfg.json",
+      "config_sha256": "b49d024d8c1d61b7e8dfcd02b70ca72a1d60f447a8ddf9d1e5ade8d95529d08f",
+      "weights_file": "BT(P)/blocks_4_hook_resid_post_16X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "6dc57950ea121eebd1782731b69b1bd863d3467d2af2cccb30c79a7246a176a5",
+      "weights_bytes": 302193040,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ],
+        "threshold": [
+          24576
+        ]
+      },
+      "header_sha256": "fb52aeb1e57f57296dbad18e1958ab942e5e0960c78c5614fedaef48b842ccee",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(P)/blocks_4_hook_resid_post_16X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-BTP--blocks_4_hook_resid_post_16X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 4,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.4.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(P)/blocks_4_hook_resid_post_16X_2048_standard/cfg.json",
+      "config_sha256": "203afa69861252bb0cd0b29c8d6a8226c3b9e1b711f7ff664bcce8383f0f4f32",
+      "weights_file": "BT(P)/blocks_4_hook_resid_post_16X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "9dd210a1597d26bff70fb77fbce4385ff0527dcbc152cc27fc9cb8f36101634d",
+      "weights_bytes": 302094656,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ]
+      },
+      "header_sha256": "a02b15ef9b3114cae07f07e02e6d613642eb5cd158cdac5173caebf225756399",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(P)/blocks_4_hook_resid_post_16X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-BTP--blocks_4_hook_resid_post_8X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 4,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.4.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(P)/blocks_4_hook_resid_post_8X_2048_jumprelu/cfg.json",
+      "config_sha256": "16aa1ec54fed03ace184bb06ef2b2c8a89bd9e68710db9289b3c343143022872",
+      "weights_file": "BT(P)/blocks_4_hook_resid_post_8X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "359e3c52543e88e18ea5af67f642ca96031c7936d07f2a6cf82d81cbc961d854",
+      "weights_bytes": 151099792,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ],
+        "threshold": [
+          12288
+        ]
+      },
+      "header_sha256": "82b8dbff896e3d49d9ba0fe8c548da004c72801813828ba786db51d4324ce0e6",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(P)/blocks_4_hook_resid_post_8X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-BTP--blocks_4_hook_resid_post_8X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 4,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.4.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "BT(P)/blocks_4_hook_resid_post_8X_2048_standard/cfg.json",
+      "config_sha256": "053c60388c9b12ff230dbcd95b96583ae063fca19bf8a454692d441deb0a7b7f",
+      "weights_file": "BT(P)/blocks_4_hook_resid_post_8X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "17baca322aa579af402226e3561c513ed681c3a87b50e2a4eaeeaef4a04b6b10",
+      "weights_bytes": 151050560,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ]
+      },
+      "header_sha256": "5a42871c2ddf0768feba6df3de152543743f988ded2fee29c0fb1c882d285022",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/BT(P)/blocks_4_hook_resid_post_8X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-FAST--blocks_14_hook_resid_post_16X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 14,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.14.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "FAST/blocks_14_hook_resid_post_16X_2048_jumprelu/cfg.json",
+      "config_sha256": "c2c5b2906ec1502f1bc4b4e93b5d26a5dc70accad738b70c0bb9027c3406b44e",
+      "weights_file": "FAST/blocks_14_hook_resid_post_16X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "8bda3e34709148fafa4412f298525c704a672c1e59b77e2ef3162f31a54d8220",
+      "weights_bytes": 302193040,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ],
+        "threshold": [
+          24576
+        ]
+      },
+      "header_sha256": "fb52aeb1e57f57296dbad18e1958ab942e5e0960c78c5614fedaef48b842ccee",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/FAST/blocks_14_hook_resid_post_16X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-FAST--blocks_14_hook_resid_post_16X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 14,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.14.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "FAST/blocks_14_hook_resid_post_16X_2048_standard/cfg.json",
+      "config_sha256": "3d69afa2fb21a34ca837b4708564cfa384736c99199114e2f7bc34f4ddfab805",
+      "weights_file": "FAST/blocks_14_hook_resid_post_16X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "0647a38c83ccc926de7f1ae01fd56ce81f317489cb5221ae28143aa1f54c48f6",
+      "weights_bytes": 302094656,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ]
+      },
+      "header_sha256": "a02b15ef9b3114cae07f07e02e6d613642eb5cd158cdac5173caebf225756399",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/FAST/blocks_14_hook_resid_post_16X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-FAST--blocks_14_hook_resid_post_8X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 14,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.14.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "FAST/blocks_14_hook_resid_post_8X_2048_jumprelu/cfg.json",
+      "config_sha256": "f4062f4313ea98657e2c9ba9f513de8009e6c35a4cfc0a93f45bf4ccbb484096",
+      "weights_file": "FAST/blocks_14_hook_resid_post_8X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "e5670d79eefd89bf4c99809617de0d295e74814dc1771c82df50c22a3a4c6b1a",
+      "weights_bytes": 151099792,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ],
+        "threshold": [
+          12288
+        ]
+      },
+      "header_sha256": "82b8dbff896e3d49d9ba0fe8c548da004c72801813828ba786db51d4324ce0e6",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/FAST/blocks_14_hook_resid_post_8X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-FAST--blocks_14_hook_resid_post_8X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 14,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.14.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "FAST/blocks_14_hook_resid_post_8X_2048_standard/cfg.json",
+      "config_sha256": "3a2d408ef36771a4428c03008ecb70ad3a75c99ee3fbe15c5306da98461719e1",
+      "weights_file": "FAST/blocks_14_hook_resid_post_8X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "c4f2cd897411f2376cdae020bc63d8a90b9f76b033755b34ccff7fea5b3e9b69",
+      "weights_bytes": 151050560,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ]
+      },
+      "header_sha256": "5a42871c2ddf0768feba6df3de152543743f988ded2fee29c0fb1c882d285022",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/FAST/blocks_14_hook_resid_post_8X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-FAST--blocks_24_hook_resid_post_16X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 24,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.24.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "FAST/blocks_24_hook_resid_post_16X_2048_jumprelu/cfg.json",
+      "config_sha256": "ab4c2c899037d3d4b94776150fe2c8282339c36f5c5935d4072e8c5640586ec2",
+      "weights_file": "FAST/blocks_24_hook_resid_post_16X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "f02ff491c9cf32b888e26d9a0d23d3ed75b0a4dafe75eae3d413e0ba1b2967b1",
+      "weights_bytes": 302193040,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ],
+        "threshold": [
+          24576
+        ]
+      },
+      "header_sha256": "fb52aeb1e57f57296dbad18e1958ab942e5e0960c78c5614fedaef48b842ccee",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/FAST/blocks_24_hook_resid_post_16X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-FAST--blocks_24_hook_resid_post_16X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 24,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.24.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "FAST/blocks_24_hook_resid_post_16X_2048_standard/cfg.json",
+      "config_sha256": "d547142db5c29497144f16eda6e560fa17b44ffe441af55f619de7400c31d4f0",
+      "weights_file": "FAST/blocks_24_hook_resid_post_16X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "1bdac04048f716b8ddc1d380ca78cd6bbdca1daf6120957dfd8d068da5aa8e08",
+      "weights_bytes": 302094656,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ]
+      },
+      "header_sha256": "a02b15ef9b3114cae07f07e02e6d613642eb5cd158cdac5173caebf225756399",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/FAST/blocks_24_hook_resid_post_16X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-FAST--blocks_24_hook_resid_post_8X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 24,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.24.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "FAST/blocks_24_hook_resid_post_8X_2048_jumprelu/cfg.json",
+      "config_sha256": "fd9baa2d31bc6a7fe8748d60afe697a5e212dec033889b9c9c4a3df07486f0ce",
+      "weights_file": "FAST/blocks_24_hook_resid_post_8X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "526c9f75620017458237c717bd40a7655891d7575aa678521d6686b659bf3290",
+      "weights_bytes": 151099792,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ],
+        "threshold": [
+          12288
+        ]
+      },
+      "header_sha256": "82b8dbff896e3d49d9ba0fe8c548da004c72801813828ba786db51d4324ce0e6",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/FAST/blocks_24_hook_resid_post_8X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-FAST--blocks_24_hook_resid_post_8X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 24,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.24.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "FAST/blocks_24_hook_resid_post_8X_2048_standard/cfg.json",
+      "config_sha256": "bdf111211beedaf8a23b9f92bea11083c56995f1eb35138394b2114eb5fe4ee1",
+      "weights_file": "FAST/blocks_24_hook_resid_post_8X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "b6b71a34d1e235fea42e0396a230f7e4682ce6e4c9c44575c52cf1546a68fd96",
+      "weights_bytes": 151050560,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ]
+      },
+      "header_sha256": "5a42871c2ddf0768feba6df3de152543743f988ded2fee29c0fb1c882d285022",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/FAST/blocks_24_hook_resid_post_8X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-FAST--blocks_4_hook_resid_post_16X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 4,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.4.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "FAST/blocks_4_hook_resid_post_16X_2048_jumprelu/cfg.json",
+      "config_sha256": "f9f9a7d63abd4b36d73ebbfeb1ba5811ef4e1c81ff570153269e954e888c4346",
+      "weights_file": "FAST/blocks_4_hook_resid_post_16X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "469eac903acac4fdfff7c83c2ac1ebe08c75dd6e324c69a10065af5c2f77fb91",
+      "weights_bytes": 302193040,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ],
+        "threshold": [
+          24576
+        ]
+      },
+      "header_sha256": "fb52aeb1e57f57296dbad18e1958ab942e5e0960c78c5614fedaef48b842ccee",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/FAST/blocks_4_hook_resid_post_16X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-FAST--blocks_4_hook_resid_post_16X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 4,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.4.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "FAST/blocks_4_hook_resid_post_16X_2048_standard/cfg.json",
+      "config_sha256": "1c46c924e1c894e0eba589130be968f630dd40851992027f058754b0666758df",
+      "weights_file": "FAST/blocks_4_hook_resid_post_16X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "d88850050bb769811450b874ac797550cbae22984f2344c6ff1b719da640b087",
+      "weights_bytes": 302094656,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ]
+      },
+      "header_sha256": "a02b15ef9b3114cae07f07e02e6d613642eb5cd158cdac5173caebf225756399",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/FAST/blocks_4_hook_resid_post_16X_2048_standard/cfg.json"
+    },
+    {
+      "id": "Geaming-FAST--blocks_4_hook_resid_post_8X_2048_jumprelu",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 4,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.4.hook_resid_post",
+      "architecture": "jumprelu",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "FAST/blocks_4_hook_resid_post_8X_2048_jumprelu/cfg.json",
+      "config_sha256": "d2a348e6943a0175e7632f3669f78e52eb9f3a0f801909f79a7e77cf57c18d56",
+      "weights_file": "FAST/blocks_4_hook_resid_post_8X_2048_jumprelu/sae_weights.safetensors",
+      "weights_sha256": "579009879452b997cbd653080657c95ab29a6700c2a46188b185f0fd75591240",
+      "weights_bytes": 151099792,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ],
+        "threshold": [
+          12288
+        ]
+      },
+      "header_sha256": "82b8dbff896e3d49d9ba0fe8c548da004c72801813828ba786db51d4324ce0e6",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/FAST/blocks_4_hook_resid_post_8X_2048_jumprelu/cfg.json"
+    },
+    {
+      "id": "Geaming-FAST--blocks_4_hook_resid_post_8X_2048_standard",
+      "repo": "Geaming/Qwen2.5-1.5B-Instruct_SAEs",
+      "revision": "247154db899bf2f1db2ef4e1aa3241032007f6f9",
+      "layer": 4,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.4.hook_resid_post",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 12288,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "FAST/blocks_4_hook_resid_post_8X_2048_standard/cfg.json",
+      "config_sha256": "7c94d7bdd04f119ef87c299fe510b3af6dd52e9e3c63228bb0cfe51a794360b5",
+      "weights_file": "FAST/blocks_4_hook_resid_post_8X_2048_standard/sae_weights.safetensors",
+      "weights_sha256": "8f0e386562061ae44dac814cffd4267b91ba2151ac4de944e8256aa4f180b524",
+      "weights_bytes": 151050560,
+      "weight_shapes": {
+        "W_dec": [
+          12288,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          12288
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          12288
+        ]
+      },
+      "header_sha256": "5a42871c2ddf0768feba6df3de152543743f988ded2fee29c0fb1c882d285022",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/Geaming/Qwen2.5-1.5B-Instruct_SAEs/blob/247154db899bf2f1db2ef4e1aa3241032007f6f9/FAST/blocks_4_hook_resid_post_8X_2048_standard/cfg.json"
+    },
+    {
+      "id": "HuggingAnalist-layer_17--final_sae",
+      "repo": "HuggingAnalist/sae-qwen2.5-1.5B-res",
+      "revision": "2a9297bf085d40d36ae0aad8a3a76a28d0ed6d59",
+      "layer": 17,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "model.layers.17",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": true,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "layer_17/final_sae/cfg.json",
+      "config_sha256": "d4d1ef0169d8e5b28bf6f5fe5244bd7bd6482be3e7d15d37785fa3e1480a2b71",
+      "weights_file": "layer_17/final_sae/sae_weights.safetensors",
+      "weights_sha256": "485d6c7a8e8140c649dbf906812a0886ffb3b3e72b539add2415346596c6e392",
+      "weights_bytes": 302094656,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ]
+      },
+      "header_sha256": "a02b15ef9b3114cae07f07e02e6d613642eb5cd158cdac5173caebf225756399",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/HuggingAnalist/sae-qwen2.5-1.5B-res/blob/2a9297bf085d40d36ae0aad8a3a76a28d0ed6d59/layer_17/final_sae/cfg.json"
+    },
+    {
+      "id": "HuggingAnalist-layer_18--final_sae",
+      "repo": "HuggingAnalist/sae-qwen2.5-1.5B-res",
+      "revision": "2a9297bf085d40d36ae0aad8a3a76a28d0ed6d59",
+      "layer": 18,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "model.layers.18",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": true,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "layer_18/final_sae/cfg.json",
+      "config_sha256": "55794ab1f584515f2493c43e7dd3c3e8e2f8bef2b73d2dc1d6d3144e61dc61b7",
+      "weights_file": "layer_18/final_sae/sae_weights.safetensors",
+      "weights_sha256": "a7eaec6d04637b918e8979e8334edc68e43356c25f75e82a11d69582a38295dc",
+      "weights_bytes": 302094656,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ]
+      },
+      "header_sha256": "a02b15ef9b3114cae07f07e02e6d613642eb5cd158cdac5173caebf225756399",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/HuggingAnalist/sae-qwen2.5-1.5B-res/blob/2a9297bf085d40d36ae0aad8a3a76a28d0ed6d59/layer_18/final_sae/cfg.json"
+    },
+    {
+      "id": "HuggingAnalist-layer_19--final_sae",
+      "repo": "HuggingAnalist/sae-qwen2.5-1.5B-res",
+      "revision": "2a9297bf085d40d36ae0aad8a3a76a28d0ed6d59",
+      "layer": 19,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "model.layers.19",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": true,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "layer_19/final_sae/cfg.json",
+      "config_sha256": "71641ed064c2c11c29d8a3f49e3d676802c0773b2110ec10bb3eec5522da8f6d",
+      "weights_file": "layer_19/final_sae/sae_weights.safetensors",
+      "weights_sha256": "dbc544096c8018551a9448bc23431bd0349435b102cc492d5b3ecde43f228d52",
+      "weights_bytes": 302094656,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ]
+      },
+      "header_sha256": "a02b15ef9b3114cae07f07e02e6d613642eb5cd158cdac5173caebf225756399",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/HuggingAnalist/sae-qwen2.5-1.5B-res/blob/2a9297bf085d40d36ae0aad8a3a76a28d0ed6d59/layer_19/final_sae/cfg.json"
+    },
+    {
+      "id": "HuggingAnalist-layer_21--final_sae",
+      "repo": "HuggingAnalist/sae-qwen2.5-1.5B-res",
+      "revision": "2a9297bf085d40d36ae0aad8a3a76a28d0ed6d59",
+      "layer": 21,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "model.layers.21",
+      "architecture": "standard",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": true,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": null,
+      "format": "sae_lens",
+      "config_file": "layer_21/final_sae/cfg.json",
+      "config_sha256": "60e23a3ff108769f5e8bca0db9618be0e39a14fc9c5004e317ee07086052ba3e",
+      "weights_file": "layer_21/final_sae/sae_weights.safetensors",
+      "weights_sha256": "5bdcc8e0f814a5e8bdd8bd0ab28ca7eadf3a89e3140b382c16ba8f68ab7aa930",
+      "weights_bytes": 302094656,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "W_enc": [
+          1536,
+          24576
+        ],
+        "b_dec": [
+          1536
+        ],
+        "b_enc": [
+          24576
+        ]
+      },
+      "header_sha256": "a02b15ef9b3114cae07f07e02e6d613642eb5cd158cdac5173caebf225756399",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/HuggingAnalist/sae-qwen2.5-1.5B-res/blob/2a9297bf085d40d36ae0aad8a3a76a28d0ed6d59/layer_21/final_sae/cfg.json"
+    },
+    {
+      "id": "huypn16-layers.10",
+      "repo": "huypn16/sae-qwen-2.5-1.5B-OMS-16x",
+      "revision": "af2cd1bd1a7cfc848469a0a7c70d2baa23e0eb56",
+      "layer": 10,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "model.layers.10",
+      "architecture": "topk",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": true,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": 64,
+      "format": "eleuther",
+      "config_file": "layers.10/cfg.json",
+      "config_sha256": "bd6bd84278c2bbc3c3096096f7a4454bd2f348117084bb8e2b66ef9b54c62976",
+      "weights_file": "layers.10/sae.safetensors",
+      "weights_sha256": "960287254a58b3d8161b2611986ab1e42270d85c90ff11ff545a55612ec3a213",
+      "weights_bytes": 302094672,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "b_dec": [
+          1536
+        ],
+        "encoder.bias": [
+          24576
+        ],
+        "encoder.weight": [
+          24576,
+          1536
+        ]
+      },
+      "header_sha256": "3d4d0d63d93cedbc4a683959f74e50c6799c1044ebfc2c9a08e8f1dd4aac55b1",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/huypn16/sae-qwen-2.5-1.5B-OMS-16x/blob/af2cd1bd1a7cfc848469a0a7c70d2baa23e0eb56/layers.10/cfg.json",
+      "implementation_source": "https://github.com/EleutherAI/sparsify/blob/main/sparsify/sparse_coder.py",
+      "training_config_sha256": "2a9c2884b87034b0d8363079bad277febd2138d6c530e4982eede631134aaa87"
+    },
+    {
+      "id": "huypn16-layers.12",
+      "repo": "huypn16/sae-qwen-2.5-1.5B-OMS-16x",
+      "revision": "af2cd1bd1a7cfc848469a0a7c70d2baa23e0eb56",
+      "layer": 12,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "model.layers.12",
+      "architecture": "topk",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": true,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": 64,
+      "format": "eleuther",
+      "config_file": "layers.12/cfg.json",
+      "config_sha256": "bd6bd84278c2bbc3c3096096f7a4454bd2f348117084bb8e2b66ef9b54c62976",
+      "weights_file": "layers.12/sae.safetensors",
+      "weights_sha256": "b673f43fbb9ffb919e5f3ff7694ca0288a6329bfaa44d493ed06deaf7c146931",
+      "weights_bytes": 302094672,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "b_dec": [
+          1536
+        ],
+        "encoder.bias": [
+          24576
+        ],
+        "encoder.weight": [
+          24576,
+          1536
+        ]
+      },
+      "header_sha256": "3d4d0d63d93cedbc4a683959f74e50c6799c1044ebfc2c9a08e8f1dd4aac55b1",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/huypn16/sae-qwen-2.5-1.5B-OMS-16x/blob/af2cd1bd1a7cfc848469a0a7c70d2baa23e0eb56/layers.12/cfg.json",
+      "implementation_source": "https://github.com/EleutherAI/sparsify/blob/main/sparsify/sparse_coder.py",
+      "training_config_sha256": "2a9c2884b87034b0d8363079bad277febd2138d6c530e4982eede631134aaa87"
+    },
+    {
+      "id": "huypn16-layers.14",
+      "repo": "huypn16/sae-qwen-2.5-1.5B-OMS-16x",
+      "revision": "af2cd1bd1a7cfc848469a0a7c70d2baa23e0eb56",
+      "layer": 14,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.14.hook_resid_post",
+      "architecture": "topk",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": 64,
+      "format": "eleuther",
+      "config_file": "layers.14/cfg.json",
+      "config_sha256": "3b5fe25d6b7a37d882110c93637919ac0b624d6f2a778a8a76212146f446026c",
+      "weights_file": "layers.14/sae.safetensors",
+      "weights_sha256": "133296d4c1b17a951833166bb31f67cbcf92972025e4156a592095728dcd519b",
+      "weights_bytes": 302094672,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "b_dec": [
+          1536
+        ],
+        "encoder.bias": [
+          24576
+        ],
+        "encoder.weight": [
+          24576,
+          1536
+        ]
+      },
+      "header_sha256": "3d4d0d63d93cedbc4a683959f74e50c6799c1044ebfc2c9a08e8f1dd4aac55b1",
+      "status": "excluded",
+      "reason": "cfg.json says apply_b_dec_to_input=false but Eleuther SparseCoder.encode always subtracts b_dec; training implementation/revision unresolved",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/huypn16/sae-qwen-2.5-1.5B-OMS-16x/blob/af2cd1bd1a7cfc848469a0a7c70d2baa23e0eb56/layers.14/cfg.json",
+      "implementation_source": "https://github.com/EleutherAI/sparsify/blob/main/sparsify/sparse_coder.py",
+      "training_config_sha256": "2a9c2884b87034b0d8363079bad277febd2138d6c530e4982eede631134aaa87"
+    },
+    {
+      "id": "huypn16-layers.16",
+      "repo": "huypn16/sae-qwen-2.5-1.5B-OMS-16x",
+      "revision": "af2cd1bd1a7cfc848469a0a7c70d2baa23e0eb56",
+      "layer": 8,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.16.hook_resid_post",
+      "architecture": "topk",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": 64,
+      "format": "eleuther",
+      "config_file": "layers.16/cfg.json",
+      "config_sha256": "e6d8538f44cbfe5bbd526669224052c33c812ca5a135e5d36b9570f07c6c5a46",
+      "weights_file": "layers.16/sae.safetensors",
+      "weights_sha256": "bbc7bbc68ffdc8ef50bc849535c5b02ee6935af383d24f2f01c880d0d5952be3",
+      "weights_bytes": 302094672,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "b_dec": [
+          1536
+        ],
+        "encoder.bias": [
+          24576
+        ],
+        "encoder.weight": [
+          24576,
+          1536
+        ]
+      },
+      "header_sha256": "3d4d0d63d93cedbc4a683959f74e50c6799c1044ebfc2c9a08e8f1dd4aac55b1",
+      "status": "excluded",
+      "reason": "cfg.json says apply_b_dec_to_input=false but Eleuther SparseCoder.encode always subtracts b_dec; training implementation/revision unresolved",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/huypn16/sae-qwen-2.5-1.5B-OMS-16x/blob/af2cd1bd1a7cfc848469a0a7c70d2baa23e0eb56/layers.16/cfg.json",
+      "implementation_source": "https://github.com/EleutherAI/sparsify/blob/main/sparsify/sparse_coder.py",
+      "training_config_sha256": "2a9c2884b87034b0d8363079bad277febd2138d6c530e4982eede631134aaa87"
+    },
+    {
+      "id": "huypn16-layers.18",
+      "repo": "huypn16/sae-qwen-2.5-1.5B-OMS-16x",
+      "revision": "af2cd1bd1a7cfc848469a0a7c70d2baa23e0eb56",
+      "layer": 18,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "model.layers.18",
+      "architecture": "topk",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": true,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": 64,
+      "format": "eleuther",
+      "config_file": "layers.18/cfg.json",
+      "config_sha256": "bd6bd84278c2bbc3c3096096f7a4454bd2f348117084bb8e2b66ef9b54c62976",
+      "weights_file": "layers.18/sae.safetensors",
+      "weights_sha256": "167a82ea402b3d4032c043402eae58b9bed2ac0313a3e641295044ab8566e62d",
+      "weights_bytes": 302094672,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "b_dec": [
+          1536
+        ],
+        "encoder.bias": [
+          24576
+        ],
+        "encoder.weight": [
+          24576,
+          1536
+        ]
+      },
+      "header_sha256": "3d4d0d63d93cedbc4a683959f74e50c6799c1044ebfc2c9a08e8f1dd4aac55b1",
+      "status": "metadata_verified",
+      "reason": "",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/huypn16/sae-qwen-2.5-1.5B-OMS-16x/blob/af2cd1bd1a7cfc848469a0a7c70d2baa23e0eb56/layers.18/cfg.json",
+      "implementation_source": "https://github.com/EleutherAI/sparsify/blob/main/sparsify/sparse_coder.py",
+      "training_config_sha256": "2a9c2884b87034b0d8363079bad277febd2138d6c530e4982eede631134aaa87"
+    },
+    {
+      "id": "huypn16-layers.8",
+      "repo": "huypn16/sae-qwen-2.5-1.5B-OMS-16x",
+      "revision": "af2cd1bd1a7cfc848469a0a7c70d2baa23e0eb56",
+      "layer": 8,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": null,
+      "hook": "blocks.8.hook_resid_post",
+      "architecture": "topk",
+      "d_in": 1536,
+      "d_sae": 24576,
+      "apply_b_dec_to_input": false,
+      "normalize_activations": "none",
+      "input_scale": 1.0,
+      "k": 64,
+      "format": "eleuther",
+      "config_file": "layers.8/cfg.json",
+      "config_sha256": "69d4ce4c445e8d71bad0d1c5d67fb7e1444eda552f5ef2700cc1b8d4e109e33c",
+      "weights_file": "layers.8/sae.safetensors",
+      "weights_sha256": "18dc8eafcf7d71b38d48a8d3207071e2199c7c2eb590c5eeb57c9f221dc69c24",
+      "weights_bytes": 302094672,
+      "weight_shapes": {
+        "W_dec": [
+          24576,
+          1536
+        ],
+        "b_dec": [
+          1536
+        ],
+        "encoder.bias": [
+          24576
+        ],
+        "encoder.weight": [
+          24576,
+          1536
+        ]
+      },
+      "header_sha256": "3d4d0d63d93cedbc4a683959f74e50c6799c1044ebfc2c9a08e8f1dd4aac55b1",
+      "status": "excluded",
+      "reason": "cfg.json says apply_b_dec_to_input=false but Eleuther SparseCoder.encode always subtracts b_dec; training implementation/revision unresolved",
+      "runtime_validation": "pending_server_pilot",
+      "revision_match": "training base revision not recorded; unverified",
+      "source": "https://huggingface.co/huypn16/sae-qwen-2.5-1.5B-OMS-16x/blob/af2cd1bd1a7cfc848469a0a7c70d2baa23e0eb56/layers.8/cfg.json",
+      "implementation_source": "https://github.com/EleutherAI/sparsify/blob/main/sparsify/sparse_coder.py",
+      "training_config_sha256": "2a9c2884b87034b0d8363079bad277febd2138d6c530e4982eede631134aaa87"
+    }
+  ]
+}

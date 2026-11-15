@@ -1,0 +1,29 @@
+{
+  "run_dir": "/data/exp_sae/run-v1",
+  "cache_dir": "/data/exp_sae/cache",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "tokenizer_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dataset": "openai/gsm8k",
+  "dataset_revision": "740312add88f781978c0658806c59bc2815b9866",
+  "expected_problems": 7473,
+  "repeats": 20,
+  "seed": 42,
+  "generation": {"temperature": 0.7, "top_p": 0.95, "max_new_tokens": 1024},
+  "discovery_problems": 20,
+  "pilot_problems": 2,
+  "workers": 2,
+  "chunk_size": 128,
+  "min_free_gib": 15,
+  "labeling": {
+    "model": "gpt-5.6-luna",
+    "budget_usd": "9.00",
+    "batch_input_usd_per_million": "0.10",
+    "batch_output_usd_per_million": "0.60",
+    "pricing_checked_on": "2026-11-15",
+    "pricing_source": "https://developers.openai.com/api/docs/pricing",
+    "max_output_tokens": 4096
+  },
+  "analysis": {"pca_components": 32, "min_train_positive_problems": 3,
+    "min_test_positive_problems": 3, "bootstrap_runs": 200, "top_features": 10}
+}
