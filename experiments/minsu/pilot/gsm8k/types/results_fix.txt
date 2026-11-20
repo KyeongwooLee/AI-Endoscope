@@ -1,0 +1,44 @@
+items 1000; attempts per correction 8; corrections ['restart', 'calc', 'code', 'cut', 'line']
+
+## fix rate per correction (mean over items where it applies)
+correction     n fix rate any of N  >= half restart same items          diff [95% CI]  tokens
+restart     1000    60.5%    91.2%    70.1%              60.5%   +0.000 [+0.000, +0.000]     227
+calc          56    41.1%    48.2%    41.1%              63.2%   -0.221 [-0.344, -0.107]      71
+code        1000    55.0%    82.9%    59.3%              60.5%   -0.055 [-0.074, -0.035]     109
+cut          999    28.6%    55.5%    31.3%              60.5%   -0.319 [-0.341, -0.296]     118
+line         999    12.6%    35.7%    10.9%              60.5%   -0.479 [-0.499, -0.458]     206
+
+## types, works = fix rate >= 0.5: retry 701 (70.1%)  calc 2 (0.2%)  code 69 (6.9%)  line 21 (2.1%)  stuck 207 (20.7%)
+
+## types, works = fix rate >= 0.25: retry 825 (82.5%)  calc 1 (0.1%)  code 48 (4.8%)  line 14 (1.4%)  stuck 112 (11.2%)
+
+## types, works = fix rate >= 0.125: retry 912 (91.2%)  calc 0 (0.0%)  code 31 (3.1%)  line 12 (1.2%)  stuck 45 (4.5%)
+
+## noise: type from attempts 1-4 vs 5-8 (threshold 0.5): agree 78.1%, kappa 0.52
+  first half / second half   retry   calc   code   line  stuck
+  retry                        619      1     44     15     35
+  calc                           4      0      0      0      0
+  code                          35      1     27      3     19
+  line                          10      0      1      6      4
+  stuck                         34      0      9      4    129
+
+## which corrections work on the same item (fix rate >= 0.5), items where all apply
+  restart vs calc  (n=56): both 21  only restart 22  only calc 2  neither 11
+  restart vs code  (n=1000): both 522  only restart 179  only code 71  neither 228
+  restart vs cut   (n=999): both 285  only restart 415  only cut 28  neither 271
+  restart vs line  (n=999): both 103  only restart 597  only line 6  neither 293
+
+## types by rule category and by audited class
+  group              n  retry   calc   code   line  stuck   restart     calc     code      cut     line
+  rule SETUP       524  62.4%   0.0%   7.6%   2.9%  27.1%     54.6%    15.9%    46.3%    24.5%     7.8%
+  rule NOEQ        294  81.3%   0.0%   5.8%   1.0%  11.9%     71.1%     nan%    70.1%    32.8%    21.8%
+  rule TARGET       73  69.9%   0.0%   8.2%   2.7%  19.2%     58.9%    31.2%    54.8%    26.4%     8.7%
+  rule OTHER        64  75.0%   0.0%   6.2%   1.6%  17.2%     58.6%     nan%    45.9%    29.9%    12.3%
+  rule ARITH        43  81.4%   4.7%   4.7%   0.0%   9.3%     66.6%    59.0%    73.0%    50.6%    15.7%
+  audit CALC       100  90.0%   2.0%   2.0%   2.0%   4.0%     74.5%    71.0%    75.6%    42.9%    23.5%
+  audit TARGET      85  76.5%   0.0%   5.9%   1.2%  16.5%     63.7%     0.0%    58.4%    25.9%    13.1%
+  audit SETUP      681  64.2%   0.0%   8.1%   2.3%  25.4%     55.5%     4.3%    48.2%    23.9%     8.3%
+  audit OTHER      134  81.3%   0.0%   5.2%   1.5%  11.9%     73.7%     nan%    72.0%    43.5%    26.5%
+  all             1000  70.1%   0.2%   6.9%   2.1%  20.7%     60.5%    41.1%    55.0%    28.6%    12.6%
+
+code: programs without a number in the output (error, timeout, nothing printed) 1.3%

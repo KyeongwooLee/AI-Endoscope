@@ -1,0 +1,25 @@
+strategy line: items 999; fix rate restart 60.1% line 12.8%; mean gain -0.473
+reliability: gain from attempts 1-16 vs 17-32, correlation 0.76
+line-needed (line > restart, Fisher p < 0.05): 6 (0.6%); expected by chance if equal 2.6%; restart-needed (restart > line): 805 (80.6%)
+
+## traits: line-needed vs other wrong answers
+  numbers                 3.17 vs    3.59
+  max digits              2.17 vs    2.38
+  log max value           1.63 vs    1.82
+  decimal                 0.00 vs    0.08
+  percent                 0.00 vs    0.14
+  fraction                0.17 vs    0.25
+  log question length     5.48 vs    5.49
+  other-4 accuracy        0.38 vs    0.67
+  restart fix rate        0.21 vs    0.60
+  audited CALC           16.7% vs   10.0%
+  audited TARGET         16.7% vs    8.5%
+  audited SETUP          50.0% vs   68.3%
+  audited OTHER          16.7% vs   13.3%
+  rule SETUP             33.3% vs   52.6%
+  rule NOEQ              33.3% vs   29.3%
+  rule TARGET            16.7% vs    7.3%
+  rule OTHER             16.7% vs    6.3%
+  rule ARITH              0.0% vs    4.3%
+
+examples: fix/line_needed_examples.txt

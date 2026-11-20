@@ -1,0 +1,33 @@
+strategy cut: items 999; fix rate restart 60.1% cut 28.5%; mean gain -0.316
+reliability: gain from attempts 1-16 vs 17-32, correlation 0.82
+cut-needed (cut > restart, Fisher p < 0.05): 33 (3.3%); expected by chance if equal 2.4%; restart-needed (restart > cut): 576 (57.7%)
+
+## traits: cut-needed vs other wrong answers
+  numbers                 4.27 vs    3.57
+  max digits              2.67 vs    2.37
+  log max value           1.98 vs    1.81
+  decimal                 0.03 vs    0.08
+  percent                 0.12 vs    0.14
+  fraction                0.33 vs    0.25
+  log question length     5.60 vs    5.49
+  other-4 accuracy        0.52 vs    0.67
+  restart fix rate        0.44 vs    0.61
+  audited CALC            9.1% vs   10.0%
+  audited TARGET         12.1% vs    8.4%
+  audited SETUP          72.7% vs   68.0%
+  audited OTHER           6.1% vs   13.6%
+  rule SETUP             63.6% vs   52.1%
+  rule NOEQ              12.1% vs   29.9%
+  rule TARGET            12.1% vs    7.1%
+  rule OTHER              0.0% vs    6.6%
+  rule ARITH              9.1% vs    4.1%
+
+examples: fix/cut_needed_examples.txt
+
+## probe: gain (Spearman) and cut-needed (AUROC); [95% CI of hidden r_mean minus this input]
+  hidden r_mean                  gain 0.283                    needed 0.696
+  question q_end                 gain 0.161 [+0.05, +0.19]     needed 0.453 [+0.15, +0.34]
+  confidence+len                 gain 0.134 [+0.08, +0.22]     needed 0.609 [-0.02, +0.21]
+  question numbers               gain 0.146 [+0.06, +0.21]     needed 0.640 [-0.06, +0.17]
+  text                           gain 0.110 [+0.11, +0.24]     needed 0.631 [-0.05, +0.16]
+  other-4 accuracy (reference)   gain 0.359 [-0.15, -0.01]     needed 0.614 [-0.03, +0.18]

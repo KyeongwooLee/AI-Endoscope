@@ -1,0 +1,25 @@
+strategy calc: items 56; fix rate restart 61.1% calc 40.2%; mean gain -0.209
+reliability: gain from attempts 1-16 vs 17-32, correlation 0.94
+calc-needed (calc > restart, Fisher p < 0.05): 13 (23.2%); expected by chance if equal 1.9%; restart-needed (restart > calc): 29 (51.8%)
+
+## traits: calc-needed vs other wrong answers
+  numbers                 6.38 vs    4.58
+  max digits              2.54 vs    2.37
+  log max value           1.60 vs    1.83
+  decimal                 0.23 vs    0.14
+  percent                 0.08 vs    0.12
+  fraction                0.38 vs    0.28
+  log question length     5.72 vs    5.43
+  other-4 accuracy        0.65 vs    0.66
+  restart fix rate        0.57 vs    0.62
+  audited CALC          100.0% vs   41.9%
+  audited TARGET          0.0% vs    4.7%
+  audited SETUP           0.0% vs   53.5%
+  audited OTHER           0.0% vs    0.0%
+  rule SETUP              7.7% vs   48.8%
+  rule NOEQ               0.0% vs    0.0%
+  rule TARGET             0.0% vs    4.7%
+  rule OTHER              0.0% vs    0.0%
+  rule ARITH             92.3% vs   46.5%
+
+examples: fix/calc_needed_examples.txt

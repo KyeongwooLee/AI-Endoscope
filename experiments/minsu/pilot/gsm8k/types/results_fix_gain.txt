@@ -1,0 +1,33 @@
+items 1000; fix rate restart 60.1% code 54.5%; mean gain -0.057
+reliability: gain from attempts 1-16 vs 17-32, correlation 0.74
+code-needed (code > restart, Fisher p < 0.05): 151 (15.1%); expected by chance if equal 2.0%; restart-needed (restart > code): 260 (26.0%)
+
+## traits: code-needed vs other wrong answers
+  numbers                 3.79 vs    3.55
+  max digits              2.64 vs    2.33
+  log max value           2.04 vs    1.78
+  decimal                 0.07 vs    0.08
+  percent                 0.12 vs    0.14
+  fraction                0.25 vs    0.25
+  log question length     5.49 vs    5.49
+  other-4 accuracy        0.61 vs    0.67
+  restart fix rate        0.51 vs    0.62
+  audited CALC           14.6% vs    9.2%
+  audited TARGET          9.3% vs    8.4%
+  audited SETUP          61.6% vs   69.3%
+  audited OTHER          14.6% vs   13.2%
+  rule SETUP             40.4% vs   54.5%
+  rule NOEQ              37.7% vs   27.9%
+  rule TARGET             8.6% vs    7.1%
+  rule OTHER              5.3% vs    6.6%
+  rule ARITH              7.9% vs    3.7%
+
+## probe: gain (Spearman) and code-needed (AUROC); [95% CI of hidden r_mean minus this input]
+  hidden r_mean                  gain 0.308                    code-needed 0.623
+  question q_end                 gain 0.243 [+0.00, +0.13]     code-needed 0.636 [-0.07, +0.04]
+  confidence+len                 gain 0.053 [+0.18, +0.35]     code-needed 0.560 [-0.01, +0.13]
+  question numbers               gain 0.043 [+0.19, +0.34]     code-needed 0.582 [-0.03, +0.10]
+  text                           gain 0.211 [+0.03, +0.16]     code-needed 0.623 [-0.06, +0.05]
+  other-4 accuracy (reference)   gain 0.078 [+0.14, +0.32]     code-needed 0.563 [-0.00, +0.13]
+
+examples: fix/code_needed_examples.txt

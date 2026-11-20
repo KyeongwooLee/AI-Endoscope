@@ -1,0 +1,75 @@
+## 1. V with nearest-neighbour labels on both sides (reported V in parentheses is not comparable across methods)
+rep         config                    V fair
+contrast_d  gmm_diag_k5                0.336
+contrast_d  gmm_full_k5                0.283
+contrast_d  kmeans_k5                  0.173
+contrast_d  louvain                    0.318
+contrast_d  ward_k5                    0.195
+contrast_d  white_k5                   0.183
+contrast_q  gmm_diag_k5                0.230
+contrast_q  gmm_full_k5                0.210
+contrast_q  kmeans_k5                  0.161
+contrast_q  louvain                    0.221
+contrast_q  ward_k5                    0.157
+contrast_q  white_k5                   0.160
+diff        gmm_diag_k5                0.106
+diff        gmm_full_k5                0.079
+diff        kmeans_k5                  0.069
+diff        louvain                    0.132
+diff        ward_k5                    0.070
+diff        white_k5                   0.096
+diff_ns     gmm_diag_k5                0.128
+diff_ns     gmm_full_k5                0.084
+diff_ns     kmeans_k5                  0.125
+diff_ns     louvain                    0.163
+diff_ns     ward_k5                    0.047
+diff_ns     white_k5                   0.107
+qres_ns     gmm_diag_k5                0.053
+qres_ns     gmm_full_k5                0.057
+qres_ns     kmeans_k5                  0.054
+qres_ns     louvain                    0.097
+qres_ns     ward_k5                    0.036
+qres_ns     white_k5                   0.085
+raw         gmm_diag_k5                0.014
+raw         gmm_full_k5                0.028
+raw         kmeans_k5                  0.015
+raw         louvain                    0.045
+raw         ward_k5                    0.016
+raw         white_k5                   0.013
+
+## 2. contrastive directions on held-out problems: wrong / correct, variance and squared IQR
+contrast_d: random directions, squared IQR ratio median 1.40
+  variance  2.42  4.88  4.33  3.46  2.27  2.24  2.15  2.61  2.11  2.00
+  IQR^2     1.84  2.97  2.90  2.37  2.82  2.54  2.16  2.14  2.14  2.12
+  excess kurtosis    918.4    12.4   196.3    65.5
+contrast_q: random directions, squared IQR ratio median 1.09
+  variance  2.24  2.41  2.53  1.44  1.30  1.28  1.26  1.30  1.22  1.26
+  IQR^2     1.44  1.58  1.47  1.40  1.21  1.27  1.32  1.24  1.23  1.15
+  excess kurtosis    342.2     8.1     8.1     1.0
+
+## 3. arithmetic-heavy cluster of each method on the first wrong equation (test: audited CALC among its rows)
+rep       config                   n train  ARITH  >=2 + n test   CALC shape top-n CALC
+step      gmm_diag_k5                  216  27.8%  94.9%     68  30.9%            44.1%
+step      gmm_diag_k8                  248  27.4%  91.9%     72  33.3%            41.7%
+step      kmeans_k8                    363  25.1%  95.0%    102  37.3%            32.4%
+step      louvain                      418  26.6%  90.7%    118  35.6%            33.9%
+step      umap_hdbscan_nn15_m100       317  23.7%  89.0%     91  31.9%            33.0%
+step      umap_hdbscan_nn15_m30         56  28.6% 100.0%     15  33.3%            33.3%
+step      umap_hdbscan_nn50_m100       101  30.7%  98.0%     35  40.0%            40.0%
+step      umap_hdbscan_nn50_m30        101  30.7%  98.0%     34  41.2%            38.2%
+step      ward_k8                      419  26.7%  86.9%    123  33.3%            33.3%
+step      white_k3                     463  25.7%  88.8%    120  35.0%            34.2%
+step      white_k5                     457  26.3%  89.3%    124  34.7%            33.1%
+step      white_k8                     424  25.5%  95.0%    121  35.5%            33.9%
+step_raw  gmm_diag_k5                  362  22.7%  93.4%    131  35.1%            33.6%
+step_raw  gmm_diag_k8                  349  22.1%  96.3%    111  30.6%            32.4%
+step_raw  kmeans_k5                    478  23.0%  87.7%    133  33.1%            33.8%
+step_raw  kmeans_k8                    369  25.5%  93.8%    109  33.9%            31.2%
+step_raw  louvain                      327  24.5%  93.9%     88  26.1%            34.1%
+step_raw  umap_hdbscan_nn15_m100       347  23.6%  87.3%     97  30.9%            32.0%
+step_raw  umap_hdbscan_nn15_m30         60  30.0%  93.3%     19  36.8%            31.6%
+step_raw  umap_hdbscan_nn50_m30         61  29.5%  93.4%     19  36.8%            31.6%
+step_raw  ward_k5                      403  25.1%  84.9%    111  29.7%            32.4%
+step_raw  ward_k8                      403  25.1%  84.9%    113  29.2%            32.7%
+step_raw  white_k5                     481  23.5%  92.3%    138  34.1%            32.6%
+step_raw  white_k8                     449  24.7%  94.2%    137  35.0%            32.8%

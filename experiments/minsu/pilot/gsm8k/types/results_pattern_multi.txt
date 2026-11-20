@@ -1,0 +1,25 @@
+items 3489; dominant 2381 (68.2%)  stuck 198 (5.7%)  competing 606 (17.4%)  spread 725 (20.8%)
+
+## self hidden
+label        share   AUROC  recall  precision
+dominant     68.2%   0.759     70%        82%
+stuck         5.7%   0.644     37%        10%
+competing    17.4%   0.612     52%        23%
+spread       20.8%   0.848     74%        49%
+all four labels right: 35.5%
+
+## confidence
+label        share   AUROC  recall  precision
+dominant     68.2%   0.708     63%        80%
+stuck         5.7%   0.686     71%         9%
+competing    17.4%   0.593     63%        21%
+spread       20.8%   0.771     67%        39%
+all four labels right: 23.0%
+
+## Qwen7B reader
+label        share   AUROC  recall  precision
+dominant     68.2%   0.805     74%        85%
+stuck         5.7%   0.704     38%        14%
+competing    17.4%   0.663     56%        26%
+spread       20.8%   0.874     75%        51%
+all four labels right: 40.0%

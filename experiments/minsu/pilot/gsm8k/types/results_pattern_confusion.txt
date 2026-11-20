@@ -1,0 +1,55 @@
+all 3489 wrong answers (32 restarts each): dominant 2381 (68.2%)  stuck 198 (5.7%)  competing 291 (8.3%)  spread 516 (14.8%)  other 103 (3.0%)
+
+4 classes, 3386 items; always-"dominant" accuracy 70.3%, chance balanced 25%
+
+######## class-balanced classifier
+
+## self hidden: accuracy 51.9%, balanced 44.1%
+true/pred      dominant      stuck  competing     spread   recall
+dominant           1296        434        354        297      54%
+stuck                72         67         40         19      34%
+competing            74         53         75         89      26%
+spread               62         27        106        321      62%
+precision           86%        12%        13%        44%
+
+## confidence: accuracy 34.7%, balanced 40.8%
+true/pred      dominant      stuck  competing     spread   recall
+dominant            723        987        238        433      30%
+stuck                21        126         23         28      64%
+competing            35        117         40         99      14%
+spread               44         92         93        287      56%
+precision           88%        10%        10%        34%
+
+## Qwen7B reader: accuracy 57.3%, balanced 46.2%
+true/pred      dominant      stuck  competing     spread   recall
+dominant           1478        321        320        262      62%
+stuck                67         72         40         19      36%
+competing            80         47         74         90      25%
+spread               67         33        101        315      61%
+precision           87%        15%        14%        46%
+
+######## unweighted classifier
+
+## self hidden: accuracy 72.6%, balanced 37.0%
+true/pred      dominant      stuck  competing     spread   recall
+dominant           2180         30         34        137      92%
+stuck               178          4          6         10       2%
+competing           222          0         11         58       4%
+spread              235          1         18        262      51%
+precision           77%        11%        16%        56%
+
+## confidence: accuracy 70.9%, balanced 28.0%
+true/pred      dominant      stuck  competing     spread   recall
+dominant           2327          0          0         54      98%
+stuck               196          0          0          2       0%
+competing           280          0          0         11       0%
+spread              443          0          0         73      14%
+precision           72%         0%         0%        52%
+
+## Qwen7B reader: accuracy 73.3%, balanced 39.8%
+true/pred      dominant      stuck  competing     spread   recall
+dominant           2176         40         38        127      91%
+stuck               157         19         10         12      10%
+competing           200          9         17         65       6%
+spread              204          5         36        271      53%
+precision           80%        26%        17%        57%

@@ -1,0 +1,15 @@
+items 1000; positives: restart 701 (70.1%)  code 593 (59.3%)  cut 313 (31.3%)  code_only 71 (7.1%)
+
+## AUROC (restart_rate: Spearman); hidden minus input [95% CI] over 500 item bootstraps
+input                                             restart                     code                      cut                code_only             restart_rate
+hidden r_mean                                       0.670                    0.736                    0.606                    0.490                    0.383
+question q_end                        0.681 (-0.05,+0.03)      0.726 (-0.02,+0.04)      0.551 (+0.01,+0.10)      0.548 (-0.14,+0.03)      0.401 (-0.07,+0.04)
+confidence+len                        0.684 (-0.05,+0.02)      0.648 (+0.05,+0.12)      0.630 (-0.07,+0.02)      0.536 (-0.13,+0.04)      0.305 (+0.02,+0.13)
+text                                  0.575 (+0.06,+0.13)      0.629 (+0.07,+0.15)      0.521 (+0.04,+0.13)      0.563 (-0.16,+0.01)      0.085 (+0.23,+0.36)
+other 4 solutions (reference)         0.894 (-0.27,-0.18)      0.768 (-0.07,+0.01)      0.684 (-0.12,-0.03)      0.278 (+0.13,+0.30)      0.712 (-0.39,-0.26)
+(parentheses: 95% CI of hidden r_mean minus this input; above 0 = hidden better)
+
+## within the same difficulty: AUROC inside groups of the problem's other-4 accuracy (0/4 ... 4/4), averaged by size
+  restart    hidden r_mean 0.602  question q_end 0.643  confidence+len 0.680  text 0.565
+  code       hidden r_mean 0.697  question q_end 0.698  confidence+len 0.595  text 0.621
+  code_only  hidden r_mean 0.458  question q_end 0.527  confidence+len 0.498  text 0.562

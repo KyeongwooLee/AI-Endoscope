@@ -1,0 +1,17 @@
+items 972: dominant 663  stuck 76  competing 81  spread 152
+
+## stuck vs spread (AUROC), rows = position, columns = layer
+             L4     L8    L12    L16    L20    L24    L28
+q_end     0.559  0.643  0.627  0.731  0.709  0.694  0.672
+r_end     0.533  0.584  0.635  0.684  0.738  0.693  0.607
+r_mean    0.650  0.696  0.793  0.869  0.875  0.840  0.787
+ans       0.578  0.638  0.701  0.770  0.747  0.696  0.682
+best cell r_mean/L20 0.875 (picked on the same folds); nested estimate 0.870 (seeds 0.884, 0.865, 0.861); cells picked: [('r_mean/L20', 12), ('r_mean/L16', 3)]
+
+## 4-way (balanced accuracy), rows = position, columns = layer
+             L4     L8    L12    L16    L20    L24    L28
+q_end     0.279  0.283  0.291  0.326  0.366  0.357  0.351
+r_end     0.291  0.298  0.346  0.339  0.356  0.343  0.313
+r_mean    0.337  0.347  0.364  0.381  0.393  0.381  0.357
+ans       0.302  0.294  0.330  0.338  0.332  0.329  0.323
+best cell r_mean/L20 0.393 (picked on the same folds); nested estimate 0.381 (seeds 0.415, 0.371, 0.356); cells picked: [('r_mean/L20', 7), ('r_mean/L16', 3), ('r_mean/L12', 2), ('q_end/L20', 1)]

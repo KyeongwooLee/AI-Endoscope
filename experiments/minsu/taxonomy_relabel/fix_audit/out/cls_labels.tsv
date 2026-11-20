@@ -1,0 +1,1001 @@
+id	class	num	thought	conf	reason	rule_cls	rule_cat	rule_k	rule_line	audit_k	n_votes
+train-1002-3	SETUP	L13	L11	h	Carmen taken as 2J=40, ignoring the 7 short; should be 33.	NOEQ	NOEQ	None	18	None	1
+train-1010-2	OTHER	L1	L1	h	Derivation correctly gets 15, but stated answer is 20	NOEQ	NOEQ	None	1	None	1
+train-1023-1	CALC	L8	L8	h	20*5*2 evaluated as 40*2 instead of 200	SETUP	SETUP	0	8	0	4
+train-1052-2	SETUP	L6	L5	m	Tim should be 2J-5, not 5+2J; gold also suspect; alt=OTHER	NOEQ	NOEQ	None	18	None	1
+train-1059-3	SETUP	L6	L5	h	Multiplies weekly total for all children by 3 again	SETUP	SETUP	1	6	1	1
+train-1060-4	SETUP	L20	L18	h	Adds received 12 again to already-tripled total 36	SETUP	SETUP	3	20	3	1
+train-1061-4	OTHER	L10	L8	m	Gives 18 then 9 with nonsense formula, no derivation; alt=SETUP	NOEQ	NOEQ	None	10	None	1
+train-1066-2	SETUP	L6	L6	h	George's apples taken as 15 instead of 20	SETUP	SETUP	2	6	2	1
+train-107-0	CALC	L25	L25	h	Sum of 20+25+22+10+10+5+5 is 97, not 107.	CALC	ARITH	3	25	3	1
+train-1079-2	SETUP	L3	L3	h	Installment total omits the $120 down payment	SETUP	SETUP	1	7	0	1
+train-1095-2	SETUP	L6	L6	h	Counts unicycle and tricycle as 2 tires instead of 4.	SETUP	SETUP	2	6	2	1
+train-1098-4	SETUP	L5	L3	h	Subtracts eaten from given instead of adding weekly use	SETUP	SETUP	0	5	0	4
+train-1103-1	SETUP	L14	L14	h	Treats $540 as 540 lilies; forgot dividing by $15.	SETUP	SETUP	0	3	None	1
+train-1121-1	OTHER	L11	L11	h	Only symbolic steps; answers 120, 12, 25 unexplained	NOEQ	NOEQ	None	187	None	1
+train-1127-2	SETUP	L7	L7	h	Uses 70 instead of 0.70 for 70%.	NOEQ	NOEQ	None	9	None	1
+train-1136-3	SETUP	L6	L6	h	1 kg is all dogs' daily food, not each dog	SETUP	SETUP	1	8	1	1
+train-1138-2	SETUP	L24	L24	m	Treats a month as 20 weeks; alt=OTHER	SETUP	SETUP	4	9	None	1
+train-116-4	SETUP	L4	L4	h	Bills counted as 2 stamps; electric bill needs 2, total 3	TARGET	TARGET	None	11	0	4
+train-1164-3	SETUP	L9	L9	h	Ignores 2-gallon loss in hours three and four	SETUP	SETUP	2	9	2	1
+train-117-4	TARGET	L7	L7	m	Gives clownfish joining, ignores third swimming back; alt=SETUP	TARGET	TARGET	None	8	None	1
+train-1171-4	SETUP	L9	L7	h	Jack's trophies based on Michael's future 130, not current 30	SETUP	SETUP	1	9	1	1
+train-1174-2	OTHER	L1	L1	h	Derives 4 blue butterflies but gives 11 as answer	NOEQ	NOEQ	None	1	None	1
+train-1184-4	SETUP	L14	L14	h	Counts one bed of each type instead of two each	SETUP	SETUP	2	14	2	1
+train-1194-2	SETUP	L13	L12	h	Multiplies number of tied pieces by single piece length	NOEQ	NOEQ	None	16	None	1
+train-1202-1	SETUP	L8	L8	m	Apartment totals omit rent; answers unexplained; alt=OTHER	NOEQ	NOEQ	None	15	None	1
+train-1204-1	SETUP	L6	L5	m	8 more per planet means 9 per planet; alt=OTHER	SETUP	SETUP	0	6	0	1
+train-1207-2	SETUP	L4	L4	h	Doubles day one only; should double first two days, 12	SETUP	SETUP	0	4	0	1
+train-1215-0	SETUP	L2	L2	h	Counts 7 people; there are 8	SETUP	SETUP	0	4	0	1
+train-1223-4	TARGET	L18	L8	h	Gives total falls of all three, not Sonya's 6.	NOEQ	NOEQ	None	18	None	1
+train-1224-4	SETUP	L9	L9	h	Applies growth only to added $28, not whole $120	SETUP	SETUP	4	9	4	1
+train-1227-1	SETUP	L1	L1	h	Counts 5 full boxes as 5 crayons	SETUP	SETUP	0	1	0	1
+train-1241-0	TARGET	L30	L23	m	Converted mass to newtons; asked weight in kg; alt=OTHER	NOEQ	NOEQ	None	32	None	1
+train-1262-0	SETUP	L7	L7	h	Divides total pints by 3 drunk instead of 18 thermoses	SETUP	SETUP	1	7	1	1
+train-1264-0	SETUP	L15	L14	h	Adds width and height pixels instead of multiplying	NOEQ	NOEQ	None	17	None	1
+train-1267-3	SETUP	L8	L8	h	Omits $100 internet bill	SETUP	SETUP	3	10	2	1
+train-1268-3	SETUP	L7	L2	m	Per-brushing usage treated as daily, ignores three brushings. alt=L7	SETUP	SETUP	0	12	0	1
+train-1279-4	OTHER	L14	L14	h	Only symbolic steps, answer 12000 without computed values	NOEQ	NOEQ	None	14	None	1
+train-1284-1	SETUP	L2	L2	h	Every other day misread; 14 showers, not 56	SETUP	SETUP	0	2	0	1
+train-129-0	SETUP	L8	L8	h	Divides by 6; every 6th free means 1 per 5 sold.	SETUP	SETUP	1	9	1	1
+train-1306-2	SETUP	L12	L11	h	Adds amount spent to money given instead of subtracting	SETUP	SETUP	4	12	4	1
+train-1308-2	SETUP	L16	L16	h	Uses 22 as Mon-Thu total instead of 33.	SETUP	SETUP	4	16	4	1
+train-1309-2	SETUP	L7	L7	h	From week 2, adds 3 but omits 5 deaths.	SETUP	SETUP	0	3	2	1
+train-131-4	OTHER	L1	L1	h	Derivation reaches 500, but stray answer 198 given.	NOEQ	NOEQ	None	1	None	1
+train-1313-2	SETUP	L11	L4	h	Omits current 45 minutes from time already spent	SETUP	SETUP	2	11	2	1
+train-1317-4	OTHER	L16	L16	m	Correct formulas but answer 75 unsupported, should be 240; alt=CALC	NOEQ	NOEQ	None	16	None	1
+train-1326-0	SETUP	L11	L10	h	Subtracts savings from sale price instead of adding	NOEQ	NOEQ	None	13	None	1
+train-1340-2	SETUP	L12	L11	h	Total omits the two 1.5-hour days	SETUP	SETUP	4	12	4	1
+train-1352-2	SETUP	L4	L4	h	Treats 10 minutes per day as per hour over 24 hours	SETUP	SETUP	0	6	0	1
+train-1358-3	SETUP	L9	L9	h	Sets chicken guests x = 80 instead of 4x = 80	NOEQ	NOEQ	None	11	None	1
+train-1362-0	SETUP	L13	L13	h	Combined total ignores purchased gumballs; should be 500	SETUP	SETUP	4	16	3	1
+train-1366-3	OTHER	L1	L1	m	Derivation gets 55 but answer given is 35; alt=TARGET	NOEQ	NOEQ	None	1	None	1
+train-1373-1	SETUP	L5	L1	h	Divides by 4 siblings, excluding Jose; should be 5	NOEQ	NOEQ	None	7	None	1
+train-1393-3	SETUP	L7	L3	h	Treats 120 total jars as per box, multiplies by boxes again	OTHER	OTHER	None	15	None	1
+train-1417-2	TARGET	L10	L10	h	Gives Maria's age 3, not Mario's 4.	NOEQ	NOEQ	None	11	None	1
+train-142-4	SETUP	L3	L3	h	Claims 75% left after second spray; wrong overlap reasoning.	NOEQ	NOEQ	None	6	None	1
+train-1421-1	OTHER	L7	L7	m	Answer 63 with no computed values; alt=CALC	NOEQ	NOEQ	None	7	None	1
+train-1429-4	SETUP	L13	L13	h	Adds total profit to per-phone profit instead of cost 15	NOEQ	NOEQ	None	15	None	1
+train-1430-4	SETUP	L9	L8	m	Divides 50 parents by 3 groups needlessly; alt=L1 premature #### 8.	NOEQ	NOEQ	None	35	None	1
+train-1452-2	TARGET	L11	L8	m	Gives travel-time gap, ignoring Abel's one-hour head start; alt=SETUP	SETUP	SETUP	2	8	None	1
+train-1470-2	SETUP	L9	L9	m	Running total misses Friday's base 30 minutes. alt=L11	SETUP	SETUP	0	3	2	1
+train-1479-2	SETUP	L9	L8	h	Adds bags already made to order instead of subtracting	SETUP	SETUP	0	9	0	1
+train-1497-0	SETUP	L3	L3	h	Equation ignores Neil's 5 received games: 28 = 4N.	TARGET	TARGET	None	5	1	1
+train-1502-3	SETUP	L8	L5	m	Ignores 3 sick students, gives cupcakes to 29; alt=L9	OTHER	OTHER	None	10	2	1
+train-1508-1	SETUP	L7	L7	h	Dorothy's frames priced at $5 instead of $2.50	SETUP	SETUP	2	7	2	1
+train-151-2	OTHER	L4	L4	h	Final answer is an unevaluated correct expression, parsed as 111	NOEQ	NOEQ	None	4	None	4
+train-1518-4	SETUP	L8	L7	h	Invents meaningless 40+28-24 count after correct 28	OTHER	OTHER	None	11	None	1
+train-1523-3	OTHER	L7	L7	h	No numeric derivation; answer 1900 stated without computation	NOEQ	NOEQ	None	8	None	1
+train-153-4	OTHER	L10	L10	h	Only an answer of 180, no computed values	NOEQ	NOEQ	None	11	None	1
+train-1533-3	SETUP	L23	L21	h	Quarter left equals 16 (second-day start), not 8	SETUP	SETUP	1	27	1	1
+train-1544-4	OTHER	L13	L13	h	No values computed; final 992 appears without derivation.	NOEQ	NOEQ	None	13	None	1
+train-1546-4	SETUP	L15	L13	h	Airplane total omits final 10 minutes to interview site	SETUP	SETUP	2	24	None	1
+train-155-2	TARGET	L13	L13	h	Gives remaining kilograms instead of number of mangoes	NOEQ	NOEQ	None	13	None	1
+train-1567-1	SETUP	L3	L3	h	Sunday to Friday counted as 5 days instead of 6	OTHER	OTHER	None	17	0	1
+train-1574-4	TARGET	L1	L1	m	Gives one-wall count 1500, later computes 3000; alt=OTHER	NOEQ	NOEQ	None	1	None	1
+train-160-2	SETUP	L6	L5	h	Alcohol added to shared cost; John pays alcohol alone	SETUP	SETUP	2	6	2	1
+train-1606-2	SETUP	L12	L12	h	Subtracts 70 instead of starting lift 60	SETUP	SETUP	3	12	3	1
+train-1623-1	SETUP	L8	L8	h	Single men computed as 60-45; should use 1/4 married	SETUP	SETUP	2	11	1	1
+train-164-2	TARGET	L10	L7	m	Gives Thursday purchase 5, not total 32; alt=L9 gives 27.	TARGET	TARGET	None	10	None	1
+train-1640-4	CALC	L10	L10	h	418 - 342 equals 76, written as 67	NOEQ	NOEQ	None	1	None	1
+train-1646-2	OTHER	L3	L3	h	Only states 115 with no derivation	NOEQ	NOEQ	None	4	None	1
+train-1648-4	TARGET	L6	L6	m	60 only ties last week; beating requires 61; alt=SETUP	TARGET	TARGET	None	7	None	4
+train-1649-4	OTHER	L14	L14	m	Only formulas, no values; final 125 unsupported; alt=SETUP	NOEQ	NOEQ	None	14	None	1
+train-1652-4	SETUP	L10	L8	h	Added Ashton's 40 sheets to Tommy instead of Jimmy	SETUP	SETUP	1	21	None	1
+train-1655-2	OTHER	L1	L1	m	Derivation gets 1250 but answer given is 1000; alt=TARGET	NOEQ	NOEQ	None	1	None	1
+train-166-4	SETUP	L3	L3	m	Wednesday time is 9 hours, not 8; alt=CALC	SETUP	SETUP	1	5	0	1
+train-1665-4	SETUP	L8	L8	h	Uses 48 before losing red balls instead of 42	SETUP	SETUP	2	8	2	4
+train-167-3	OTHER	L26	L26	h	192*100=19200 is right; gold 1920 looks wrong	SETUP	SETUP	0	7	4	1
+train-1681-2	SETUP	L4	L4	h	Multiplies weeks by washes per bottle instead of dividing.	SETUP	SETUP	0	4	0	1
+train-1683-3	CALC	L11	L11	h	7 + 14 + 19 summed as 30 instead of 40	NOEQ	NOEQ	None	12	None	1
+train-1686-3	OTHER	L8	L8	h	No values computed; final 500 has no derivation.	NOEQ	NOEQ	None	9	None	1
+train-1687-4	OTHER	L10	L10	m	Correct formulas, no values; 640 unsupported. alt=CALC	NOEQ	NOEQ	None	10	None	1
+train-1703-4	CALC	L10	L10	m	Totals evaluated as 77 and 62.50 instead of 290 and 53; alt=OTHER.	NOEQ	NOEQ	None	11	None	1
+train-1708-1	SETUP	L7	L7	h	Opponent 2-pointers counted as 50 points instead of 100	SETUP	SETUP	7	10	4	1
+train-1717-2	SETUP	L5	L5	h	Applies $8 discount per single pair	SETUP	SETUP	2	6	2	1
+train-1731-3	SETUP	L6	L5	h	Uses Ricciana's 20-foot run instead of Margarita's 18	SETUP	SETUP	1	6	1	1
+train-1742-3	CALC	L9	L9	h	35+46+27+61+31 summed as 196 instead of 200	NOEQ	NOEQ	None	12	None	1
+train-1759-4	SETUP	L7	L7	h	Third store to work is 4 miles, not 14	SETUP	SETUP	1	6	2	1
+train-1760-4	OTHER	L10	L10	m	Correct formulas, no values; 37.5 unsupported. alt=CALC	NOEQ	NOEQ	None	10	None	1
+train-1770-4	OTHER	L17	L17	h	Only symbolic steps; answer 1250 stated without any computed values	NOEQ	NOEQ	None	18	None	1
+train-1776-3	OTHER	L6	L6	h	2250-2146=104 is correct; gold 94 looks wrong	NOEQ	NOEQ	None	7	None	1
+train-1777-2	SETUP	L11	L11	h	Counts hoop basketballs as separate donations; total excludes them wrongly.	TARGET	TARGET	None	22	3	1
+train-1781-3	CALC	L6	L6	h	48-17-10 computed as 11 instead of 21	CALC	ARITH	2	6	2	1
+train-1792-4	SETUP	L4	L2	h	Lilies twice all other flowers instead of twice snapdragons.	NOEQ	NOEQ	None	15	None	1
+train-1795-0	SETUP	L6	L6	h	Mary's blue halves Jenny's 25 instead of Anie's 50	SETUP	SETUP	1	6	1	4
+train-1811-4	SETUP	L25	L23	h	Subtracts remaining supplies from initial total wrongly.	SETUP	SETUP	4	25	4	1
+train-1815-2	SETUP	L10	L10	h	Uses 10 years of planting instead of 5	SETUP	SETUP	2	25	None	1
+train-1825-1	SETUP	L4	L2	m	Premium total 480 treated as surgery cost without insurance; alt=L7	NOEQ	NOEQ	None	17	None	1
+train-1829-0	SETUP	L9	L9	h	Adds owl's cost twice	SETUP	SETUP	4	9	4	1
+train-1835-2	SETUP	L13	L13	h	100 dimes equal $10, not $1.	NOEQ	NOEQ	None	18	None	1
+train-1838-4	OTHER	L1	L1	h	Derives 75 blocks but gives 55 as answer	NOEQ	NOEQ	None	1	None	1
+train-1839-0	SETUP	L5	L4	h	Donkey weight taken as 90% instead of 10% of elephant	SETUP	SETUP	2	8	1	1
+train-184-2	TARGET	L11	L10	m	Stops before subtracting third-day 200 recoveries; alt=SETUP	TARGET	TARGET	None	12	2	1
+train-1842-1	SETUP	L5	L5	h	Black trucks are 20% of 50, not of 25	SETUP	SETUP	1	5	1	1
+train-1844-0	TARGET	L8	L8	h	Stops at 40 hats left, before subtracting 25 used.	TARGET	TARGET	None	8	None	1
+train-1847-1	SETUP	L3	L3	h	Initial bottles taken as 4 instead of 8	SETUP	SETUP	0	3	0	1
+train-1849-2	SETUP	L2	L1	h	Counts one-way trips only, not round trips	NOEQ	NOEQ	None	3	None	1
+train-1853-1	SETUP	L8	L6	m	Counts the shared Monday/Sunday shirt twice; alt=L6	OTHER	OTHER	None	19	0	1
+train-1859-4	OTHER	L13	L9	m	Answer 3600 unexplained; divides difference per week/day; alt=SETUP	NOEQ	NOEQ	None	13	None	1
+train-1866-4	SETUP	L15	L15	h	Adds unicorn stitches twice in total	SETUP	SETUP	3	13	4	1
+train-1869-4	SETUP	L10	L10	h	Halves only 36, omitting the first 40 dollars	SETUP	SETUP	2	10	2	1
+train-187-1	CALC	L6	L6	m	(5/8)*48 written as 15 instead of 30; alt=SETUP	SETUP	SETUP	0	3	1	1
+train-1870-3	OTHER	L1	L1	h	Derivation gets 80, but answer given is 120	NOEQ	NOEQ	None	1	None	1
+train-1873-0	SETUP	L13	L12	h	Sophia's age in three years treated as current age.	SETUP	SETUP	5	16	4	1
+train-1887-1	OTHER	L1	L1	h	Only an answer, no derivation	NOEQ	NOEQ	None	1	None	1
+train-1901-2	SETUP	L9	L9	h	Divides by 1 hour instead of 50 mph speed	OTHER	OTHER	None	12	2	1
+train-1908-2	SETUP	L3	L3	h	Ignores twice: each friend has 8, not 4.	SETUP	SETUP	0	3	0	1
+train-1909-0	TARGET	L10	L9	m	Gives remaining 24 kids; needs one sixth of them; alt=SETUP	TARGET	TARGET	None	11	2	1
+train-1910-1	SETUP	L9	L9	h	Neighbor's per-hectare two-month yield 160 treated as monthly	SETUP	SETUP	0	3	2	1
+train-1924-0	SETUP	L3	L3	m	Uses Taro's points as total in 3/5 relation; alt=L8	NOEQ	NOEQ	None	16	None	1
+train-1925-1	SETUP	L8	L8	h	Uses all 30 miles for lake time; only half the races	SETUP	SETUP	0	5	1	1
+train-1928-2	SETUP	L10	L10	m	Totals per station ignore four round trips; 160 misused. alt=L11	SETUP	SETUP	2	12	2	1
+train-1948-0	TARGET	L15	L14	m	Gives $15 of large sales, not 5 cups. alt=SETUP	SETUP	SETUP	1	12	2	1
+train-1951-2	TARGET	L6	L1	m	Gives 9 days of ten-chip eating, omits first day; alt=SETUP	TARGET	TARGET	None	6	None	1
+train-1955-1	SETUP	L8	L8	h	Uses 7 open days instead of 4	SETUP	SETUP	2	15	1	1
+train-1957-4	SETUP	L5	L5	h	Cost per paper computed as 2/0.75 instead of 2*0.25	SETUP	SETUP	2	5	2	1
+train-1959-0	SETUP	L7	L6	h	Adds spent money to initial amount instead of subtracting	SETUP	SETUP	0	7	0	1
+train-1963-2	SETUP	L2	L2	h	Total earnings taken as sales, ignoring 12% commission	NOEQ	NOEQ	None	13	None	1
+train-1966-4	SETUP	L17	L17	h	Takes final $30 as total money received, ignoring $20 spent	SETUP	SETUP	2	18	2	1
+train-1987-4	OTHER	L1	L1	h	Derivation gets 32 but answer given is 24	NOEQ	NOEQ	None	1	None	1
+train-1991-1	SETUP	L8	L6	m	Uses one-way distance, not round trip; alt=L12	SETUP	SETUP	0	30	None	1
+train-1995-4	SETUP	L17	L14	m	Correct 120 found, then invents daily rate steps; alt=OTHER	OTHER	OTHER	None	25	None	1
+train-2000-2	SETUP	L4	L3	h	Remaining amount computed as 90-45, ignoring her initial $10	TARGET	TARGET	None	12	1	1
+train-2002-4	OTHER	L8	L8	h	No values computed; final 88 has no derivation.	NOEQ	NOEQ	None	9	None	1
+train-2011-3	SETUP	L4	L4	h	Multiplies tokens by 30 instead of dividing.	SETUP	SETUP	0	3	1	1
+train-2014-3	TARGET	L11	L9	m	Gives total tanks 6 instead of 3 more tanks; alt=SETUP	SETUP	SETUP	3	10	None	1
+train-2016-0	CALC	L20	L20	h	84+21+5 equals 110, not 100	NOEQ	NOEQ	None	25	None	1
+train-2026-3	SETUP	L2	L2	m	Calls total spent 125 the skates cost; alt=L4 sum 200.	SETUP	SETUP	0	2	0	1
+train-2033-1	SETUP	L9	L6	m	Uses whole lot capacity 425 instead of per-level 85; alt=L6	SETUP	SETUP	0	9	0	1
+train-204-4	OTHER	L14	L14	h	Only repeated answers, no derivation.	NOEQ	NOEQ	None	245	None	1
+train-2048-4	SETUP	L8	L7	m	Divides questions by 3 wrongly; alt=L13 ignores 200 members.	SETUP	SETUP	1	8	1	1
+train-2049-3	SETUP	L10	L8	h	Ignores Mark's extra 6 miles back and forth	SETUP	SETUP	0	17	None	1
+train-208-4	CALC	L10	L10	m	Correct plan but final value 1100 instead of 200; alt=OTHER	NOEQ	NOEQ	None	11	None	1
+train-2080-0	SETUP	L10	L10	h	Uses 5 days per week instead of 7.	SETUP	SETUP	3	10	3	1
+train-2084-1	SETUP	L9	L8	h	Counts one bicycle instead of three	SETUP	SETUP	1	9	1	1
+train-21-3	SETUP	L7	L7	h	Multiplies snakes by 12 instead of 3 birds per snake	SETUP	SETUP	1	7	1	1
+train-2109-3	OTHER	L1	L1	h	Computes 48 correctly but states 20 as answer	NOEQ	NOEQ	None	1	None	1
+train-211-1	TARGET	L13	L13	h	Gives monthly increase 600; question asks annual increase	TARGET	TARGET	None	13	None	1
+train-2114-1	OTHER	L2	L2	h	Only answers given, no derivation.	NOEQ	NOEQ	None	2	None	1
+train-2116-0	SETUP	L8	L8	h	Equation omits second street x and adds 7.	OTHER	OTHER	None	15	None	1
+train-2121-4	SETUP	L17	L17	h	Subtracts full peanut jar $3 instead of half-jar $1.50	OTHER	OTHER	None	18	2	1
+train-2126-2	CALC	L5	L5	m	40 + 9*50 equals 490, answer written 530; alt=OTHER	NOEQ	NOEQ	None	5	None	1
+train-2130-4	OTHER	L197	L197	h	Repeating answer list without derivation; cut off.	NOEQ	NOEQ	None	198	None	1
+train-2142-4	SETUP	L17	L14	h	Applies 75% to 400 instead of remaining 200.	SETUP	SETUP	3	18	3	1
+train-2154-0	SETUP	L6	L6	h	Subtracts 100 from full capacity instead of one-third	SETUP	SETUP	2	6	2	1
+train-2161-2	SETUP	L8	L8	h	Omits $1 lottery ticket cost	SETUP	SETUP	6	8	6	1
+train-2167-0	TARGET	L13	L13	m	Gives gross pay 150, gas cost not subtracted; alt=SETUP	TARGET	TARGET	None	13	None	1
+train-217-4	SETUP	L9	L7	m	Invents equation A+(A-E)=2E instead of A=2E; alt=L8	OTHER	OTHER	None	19	1	1
+train-2172-0	SETUP	L9	L8	h	Total omits living room's 10 candles.	SETUP	SETUP	1	9	1	1
+train-218-4	OTHER	L17	L17	h	$3.50 equals gold 350 cents; unit mismatch only.	SETUP	SETUP	2	12	None	1
+train-2182-3	SETUP	L6	L5	h	Each rate applied to full 8 intervals instead of 4	SETUP	SETUP	0	2	2	1
+train-2189-4	SETUP	L4	L4	h	Counts weight for only one hand instead of two	SETUP	SETUP	2	4	2	1
+train-219-0	SETUP	L8	L8	m	Uses full 10 minutes instead of remaining 5; alt=L10	OTHER	OTHER	None	15	None	1
+train-2198-4	SETUP	L7	L2	m	Counts pairs as single items, total 45 not 70; alt=L16.	NOEQ	NOEQ	None	18	None	1
+train-2212-0	SETUP	L6	L6	h	120% more means 2200 per episode, not 1200	SETUP	SETUP	4	8	2	1
+train-2217-4	TARGET	L12	L12	m	Gives pre-discount total $1300, discount never applied; alt=SETUP	NOEQ	NOEQ	None	15	None	1
+train-2225-1	SETUP	L7	L1	m	Used Mario's last-year salary instead of $4000; alt=L7 thought	SETUP	SETUP	0	7	0	1
+train-2245-4	SETUP	L9	L9	h	Total change uses births only, ignoring deaths	SETUP	SETUP	1	15	None	1
+train-2256-3	SETUP	L8	L8	h	Divided full 240 minutes, ignoring other rides' time	SETUP	SETUP	3	5	4	1
+train-2264-4	SETUP	L6	L4	h	Reverses relation: Willowdale defined from Roseville	NOEQ	NOEQ	None	57	None	1
+train-2269-0	SETUP	L3	L3	h	Third-day present is not 280 minus first-day present	SETUP	SETUP	1	11	0	1
+train-2281-0	SETUP	L3	L2	h	Servings summed as 1+1.5+1, ignoring four girls and son's 3	SETUP	SETUP	1	6	0	1
+train-2286-1	SETUP	L2	L2	h	Adds tips to total instead of subtracting them	SETUP	SETUP	0	7	0	1
+train-2293-2	OTHER	L4	L4	h	Only answer given, no derivation to locate error.	NOEQ	NOEQ	None	4	None	1
+train-230-3	SETUP	L9	L9	h	Inverted relation: faster Emery takes fewer days, Serena 100	NOEQ	NOEQ	None	21	None	1
+train-2300-3	SETUP	L14	L14	h	Monthly wage multiplies daily wage by 4, omits 5 days/week	SETUP	SETUP	2	9	4	1
+train-2302-4	SETUP	L3	L3	m	Uses 9 years instead of 8 from 2001 to 2009; alt=OTHER	NOEQ	NOEQ	None	56	None	4
+train-231-2	SETUP	L6	L6	h	Subtracts beakers from drops instead of 45/3-8	SETUP	SETUP	0	6	0	1
+train-2316-0	SETUP	L7	L6	h	Ignores 8 leftover stickers when finding stickers for others	SETUP	SETUP	1	7	1	1
+train-2320-4	SETUP	L12	L12	h	Counts one pizza's base price for two pizzas	SETUP	SETUP	1	10	2	1
+train-233-0	SETUP	L2	L2	h	Uses 3 sets for first two sets, counts third set twice	SETUP	SETUP	2	6	0	1
+train-2330-2	SETUP	L8	L6	h	Divided area by minutes per foot instead of multiplying	NOEQ	NOEQ	None	13	None	1
+train-2336-0	OTHER	L10	L10	h	No values computed; only final answer 100.	NOEQ	NOEQ	None	10	None	1
+train-2338-3	OTHER	L11	L11	h	Model's 25 is correct; gold 30 looks wrong	OTHER	OTHER	None	13	None	1
+train-2344-3	CALC	L7	L7	h	50 + 5 + 15 written as 65 instead of 70	CALC	ARITH	2	7	2	1
+train-2346-4	SETUP	L11	L11	h	Adds trade-in value instead of subtracting it	SETUP	SETUP	3	11	3	1
+train-235-3	OTHER	L16	L16	m	Correct formulas, no values computed; 25 unsupported. alt=CALC	NOEQ	NOEQ	None	16	None	1
+train-2356-4	SETUP	L6	L5	h	Halves orange price per kg, not total cost of apples.	SETUP	SETUP	2	9	1	1
+train-2364-2	CALC	L7	L7	h	75% times 25 computed as 187.5 instead of 18.75	CALC	ARITH	0	7	0	1
+train-2376-3	SETUP	L9	L9	m	Double syrup not doubled; syrup should cost $1; alt=L15	SETUP	SETUP	1	17	1	1
+train-2389-3	SETUP	L10	L10	m	Misses 9 among numbers divisible by 3; alt=L9 13 red cards.	SETUP	SETUP	0	4	3	1
+train-24-4	SETUP	L8	L8	h	Adds payments to credit used: 138 instead of 100.	SETUP	SETUP	0	8	0	1
+train-2404-0	TARGET	L6	L6	m	Gives brother's 11 cars as total of three; alt=SETUP.	TARGET	TARGET	None	7	None	1
+train-2424-4	OTHER	L1	L1	m	States 5 mistakes without derivation after finding score 28; alt=CALC	NOEQ	NOEQ	None	1	None	1
+train-2445-1	SETUP	L11	L2	m	Never substitutes three eyes; answers coefficient 23; alt=OTHER	NOEQ	NOEQ	None	11	None	1
+train-245-4	CALC	L11	L11	m	Correct expression evaluated as 2760 instead of 2280; alt=OTHER	NOEQ	NOEQ	None	11	None	1
+train-2463-4	SETUP	L10	L10	h	Adds arrivals to original 300 instead of remaining 188.	SETUP	SETUP	3	14	3	1
+train-2468-4	SETUP	L5	L5	h	Remaining patients computed as 25-6, ignoring second patient	SETUP	SETUP	0	5	0	1
+train-2469-4	SETUP	L8	L5	h	Subtracts only red and blue, omits 4 green crayons	SETUP	SETUP	1	5	2	1
+train-2470-3	SETUP	L9	L7	h	Adds David's points to Brenda's lead instead of subtracting	SETUP	SETUP	1	9	1	1
+train-2472-1	SETUP	L2	L2	h	Ham sandwich probability is 3/5, not 1/5	NOEQ	NOEQ	None	7	None	1
+train-248-4	SETUP	L6	L6	h	Counts 18 issues, ignoring twice-a-month issues (36).	SETUP	SETUP	0	5	None	1
+train-2482-3	SETUP	L4	L4	h	Multiplies inches by 24 stitches per minute, not 4 per inch	SETUP	SETUP	1	4	1	1
+train-2504-2	OTHER	L1	L1	h	Answer 100 stated, derivation loops and is cut off	NOEQ	NOEQ	None	1	None	1
+train-2519-1	SETUP	L6	L5	h	Leftover $25 taken as earnings; earnings are $100	SETUP	SETUP	1	9	1	1
+train-253-2	CALC	L4	L4	h	2x+6x simplified to 6x instead of 8x	NOEQ	NOEQ	None	8	None	1
+train-2539-1	SETUP	L8	L7	h	Saved amount is cost of oranges 6, not 15-6	SETUP	SETUP	1	8	1	1
+train-2557-1	CALC	L9	L9	h	30+35+46 equals 111, not 101	CALC	ARITH	2	9	2	1
+train-2558-4	SETUP	L7	L1	h	Treats colors as limiting and picks max; should pool all spools	NOEQ	NOEQ	None	8	None	1
+train-256-0	TARGET	L14	L14	m	Gives count of quarter inches 13.5, not times 8 miles; alt=SETUP	SETUP	SETUP	0	14	0	1
+train-2580-4	SETUP	L7	L7	h	Oranges per friend computed as 10/4 instead of 4/10	NOEQ	NOEQ	None	14	None	1
+train-259-3	SETUP	L11	L11	h	Subtracts only class B, omits class A from total	NOEQ	NOEQ	None	17	None	1
+train-2599-1	SETUP	L4	L3	h	Divides whole string by 6 and by 12 separately	SETUP	SETUP	1	4	1	1
+train-2605-1	SETUP	L13	L12	h	Total omits the $100 insurance payment	SETUP	SETUP	2	13	2	1
+train-2612-1	SETUP	L6	L6	h	Treats $21 as per pound, not per 45-pound container.	SETUP	SETUP	2	6	2	1
+train-262-2	SETUP	L10	L10	h	Divides 8 by Jack's 12 instead of Jill's 24 by 8	OTHER	OTHER	None	11	None	1
+train-2635-3	SETUP	L6	L5	h	Living alone costs old $1200, not new $1680	SETUP	SETUP	0	3	2	1
+train-2640-3	OTHER	L1	L1	h	Derivation reaches 10 but answer line says 40.	NOEQ	NOEQ	None	1	None	1
+train-2641-4	SETUP	L10	L9	h	Last week computed as difference instead of 150 minus others.	NOEQ	NOEQ	None	14	None	1
+train-2673-1	SETUP	L4	L2	m	Sums cumulative totals 10+40+70 as monthly savings; alt=L2	SETUP	SETUP	2	4	2	1
+train-2681-4	SETUP	L8	L4	h	Counts 5 regular days instead of 6, missing Sunday.	SETUP	NEWNUM	1	8	1	1
+train-2700-4	SETUP	L5	L5	h	Claims each student needs 200 points, not the whole class	SETUP	SETUP	0	7	0	1
+train-2701-4	OTHER	L6	L6	h	Answer 66 stated first; derivation gives 12	NOEQ	NOEQ	None	7	None	1
+train-2714-4	SETUP	L22	L19	h	Uses one parakeet's cost instead of three parakeets	SETUP	SETUP	4	22	4	1
+train-2726-3	SETUP	L3	L3	h	Assumes all three letters worth x, ignoring 1-point letters	NOEQ	NOEQ	None	8	None	4
+train-2736-1	SETUP	L7	L5	h	Round trip treated as 50 feet; should be 100.	SETUP	SETUP	1	14	0	1
+train-2740-1	SETUP	L9	L8	h	Adds trade-in value to car cost instead of subtracting	NOEQ	NOEQ	None	12	None	1
+train-2747-2	TARGET	L8	L8	m	Answers Nelly's stamps 78 instead of total; alt=OTHER	NOEQ	NOEQ	None	9	None	1
+train-276-2	CALC	L16	L16	h	2800-800-1000 evaluated as 1100 instead of 1000	CALC	ARITH	5	16	5	1
+train-2760-4	SETUP	L4	L4	h	Wrongly claims 27 years will pass	SETUP	SETUP	1	4	1	1
+train-2762-0	SETUP	L8	L7	h	Subtracts refund from total cost instead of dividing refund by price	SETUP	SETUP	1	4	3	1
+train-2770-3	OTHER	L20	L20	h	Model's 108 is correct; gold 106 looks wrong	TARGET	TARGET	None	20	None	1
+train-2783-3	OTHER	L24	L24	h	Solves x=12 correctly but reports 20	NOEQ	NOEQ	None	1	None	1
+train-2807-0	SETUP	L11	L11	h	Weekly total should be 5*3=15, not 13+3	SETUP	SETUP	1	11	1	1
+train-2815-4	SETUP	L7	L5	h	Uses Nora's future age 20 instead of current age 10	OTHER	OTHER	None	20	None	4
+train-2816-2	SETUP	L6	L5	h	70% eaten applied to remainder instead of total eggs	SETUP	SETUP	1	6	1	1
+train-2822-4	SETUP	L5	L5	h	Triples Jennifer's current 20 instead of future 30	SETUP	SETUP	1	5	1	1
+train-2832-0	CALC	L13	L13	m	Correct expression evaluates to 6318, not 6351; alt=OTHER	NOEQ	NOEQ	None	13	None	1
+train-2835-3	SETUP	L4	L4	h	Third day uses 2100/5 instead of 2/5 of 1500	SETUP	SETUP	1	4	1	1
+train-2838-4	CALC	L13	L13	h	21120 + 2925 + 1287 summed as 26332 instead of 25332	OTHER	OTHER	None	14	None	4
+train-2847-4	TARGET	L11	L11	h	Gives mushroom pieces 88, not mushrooms 22.	TARGET	TARGET	None	11	None	1
+train-2849-4	CALC	L13	L13	h	5.80 - 1.80 evaluated as 5.00 instead of 4	NOEQ	NOEQ	None	15	None	1
+train-2852-1	SETUP	L12	L12	h	Multiplies 4 ounces by 8 oz per serving	SETUP	SETUP	5	12	5	1
+train-2856-0	CALC	L13	L13	h	Sum of listed times is 180, not 150.	SETUP	SETUP	3	15	3	1
+train-2860-4	OTHER	L7	L7	h	Answer 1 given though explanation computes correct 9	NOEQ	NOEQ	None	7	None	1
+train-2863-3	OTHER	L1	L1	h	Answer 10 given though derivation computes correct 15	NOEQ	NOEQ	None	1	None	1
+train-2866-1	OTHER	L3	L3	h	Only plan and answer 500, no derivation	NOEQ	NOEQ	None	3	None	1
+train-287-1	SETUP	L8	L8	h	Adds job earnings to tuition instead of subtracting.	SETUP	SETUP	3	8	3	1
+train-2871-1	SETUP	L7	L7	h	Adds her cash to amount needed instead of to money available	SETUP	SETUP	3	5	4	1
+train-2877-1	OTHER	L12	L12	m	Finds 20 hours correctly, then also outputs 30; alt=TARGET	TARGET	TARGET	None	12	None	1
+train-288-4	SETUP	L8	L8	h	First gym total omits $50 sign-up fee	TARGET	TARGET	None	20	0	4
+train-2893-1	SETUP	L4	L4	h	Steps per day omit return trip: 150 instead of 300	SETUP	SETUP	0	10	None	1
+train-2897-4	TARGET	L16	L13	m	Final cost 252 found, then gives discount 108; alt=SETUP	TARGET	TARGET	None	17	2	1
+train-2898-1	SETUP	L5	L5	h	Adds per-floor rates without multiplying by 5 floors	SETUP	SETUP	0	5	0	1
+train-2899-3	SETUP	L4	L4	h	Remaining after first store written x/2+14 instead of x/2-14.	NOEQ	NOEQ	None	39	None	1
+train-2910-4	SETUP	L10	L10	h	Uses net 320-200 instead of total 520 per train	SETUP	SETUP	1	10	1	1
+train-2926-4	SETUP	L12	L11	m	Subtracts in wrong order giving negative difference; alt=TARGET	SETUP	SETUP	2	12	2	1
+train-2928-4	CALC	L11	L11	h	48 + 1 + 300 equals 349, not 350.	CALC	ARITH	1	11	1	1
+train-293-3	SETUP	L7	L6	h	Omits tantrum time; only practice time added	SETUP	SETUP	1	10	0	1
+train-2931-1	OTHER	L7	L7	m	Correct formulas, no computed values; answer 2000 unsupported; alt=CALC	NOEQ	NOEQ	None	7	None	1
+train-2937-2	OTHER	L3	L3	h	2 monitors per 15 students gives 60; gold assumes 120.	SETUP	SETUP	1	6	0	1
+train-2949-2	TARGET	L6	L5	h	Gives clock time 4:05 instead of minutes left (55).	CALC	ARITH	0	2	None	1
+train-2951-0	CALC	L9	L9	m	Correct expression (36*0.75)-16 given as 21 instead of 11; alt=OTHER	NOEQ	NOEQ	None	9	None	1
+train-2962-4	SETUP	L16	L15	h	Omits gas reimbursement of $51 from total	SETUP	SETUP	3	16	3	1
+train-2963-3	TARGET	L9	L9	h	Gives Tully's current age, not age a year ago	TARGET	TARGET	None	9	None	1
+train-2965-3	SETUP	L4	L4	h	Subtracts gifted ball twice and omits the 4 lost balls	SETUP	SETUP	4	7	2	1
+train-2969-1	SETUP	L5	L5	h	Uses 80 loads for two bottles instead of 160.	SETUP	SETUP	1	8	1	1
+train-2980-2	SETUP	L4	L4	h	Uses all 20 customers instead of half	SETUP	SETUP	0	4	0	1
+train-2984-2	SETUP	L5	L5	h	Bottles in crates computed as 130/12 instead of 12*10.	SETUP	SETUP	1	11	0	1
+train-2989-4	SETUP	L3	L3	h	Invents 13 stamps equal 1 matchbook; ignores 12 matches/stamp	SETUP	SETUP	1	19	0	1
+train-2990-3	SETUP	L8	L6	h	Sets J+6 equal to J/3; new 6 jewels should be J/3	OTHER	OTHER	None	46	None	1
+train-2998-1	SETUP	L2	L1	h	Takes Naomi's time as 1/4 of 20, not 20 plus 5.	SETUP	SETUP	1	4	0	1
+train-3001-1	OTHER	L3	L3	m	Model's 108 defensible; gold counts group miles once; alt=SETUP	SETUP	SETUP	0	3	0	1
+train-3008-3	SETUP	L15	L13	h	Subtracts head again from body length already excluding head	SETUP	SETUP	2	17	None	1
+train-3009-3	SETUP	L11	L11	h	Adds 60% increase to capacity 4000 instead of to 2000	SETUP	SETUP	3	15	2	1
+train-3011-4	OTHER	L7	L7	h	Answer 250 contradicts its own explanation giving 210	NOEQ	NOEQ	None	7	None	1
+train-3014-0	TARGET	L15	L14	m	Stops before subtracting $108 penalty; alt=SETUP	TARGET	TARGET	None	16	3	1
+train-3018-4	SETUP	L8	L8	m	Forgetting twice leaves 1 dose, not 2; alt=L9	TARGET	TARGET	None	12	1	1
+train-3027-2	SETUP	L9	L4	h	Daughter's birthday book omitted after mislabeling bookstore books	SETUP	SETUP	3	9	3	1
+train-303-3	SETUP	L9	L9	h	Divides 48 by 10 but applies to 12-pound bags	SETUP	SETUP	1	11	1	1
+train-3039-4	SETUP	L7	L6	h	Extra 40A running current added to starting load	SETUP	SETUP	2	7	2	1
+train-3050-3	SETUP	L6	L6	h	$9 treated as 9 cents; should be 900 cents	SETUP	SETUP	1	6	1	1
+train-3051-3	SETUP	L9	L9	m	Sums single-animal costs, ignoring animal counts. alt=L2	NOEQ	NOEQ	None	11	None	1
+train-3053-3	SETUP	L4	L4	h	Bills are a third of 150 savings, not of 25	SETUP	SETUP	0	6	0	1
+train-3055-2	OTHER	L1	L1	m	Answer line 80 precedes derivation, which reaches 64 then 51.2. alt=TARGET	NOEQ	NOEQ	None	1	None	1
+train-3056-4	SETUP	L14	L14	h	Subtracts eaten food from empty bowl weight instead of adding refill	SETUP	SETUP	1	14	1	1
+train-3060-0	CALC	L3	L3	h	10,000 / 100 equals 100, not 1,000.	SETUP	SETUP	1	6	0	1
+train-3079-0	SETUP	L5	L3	h	Subtracts 10 instead of adding when reversing discount	SETUP	SETUP	0	5	0	1
+train-3085-4	SETUP	L9	L7	h	Reverses relation: pennies are three times nickels, not nickels thrice pennies	SETUP	SETUP	1	25	0	1
+train-3088-0	SETUP	L8	L8	h	560/40 gives 14 refills, mislabeled as liters	OTHER	OTHER	None	14	None	1
+train-3089-2	OTHER	L1	L1	h	Computes 9 correctly but states 1 as answer	NOEQ	NOEQ	None	1	None	1
+train-3090-3	SETUP	L8	L7	h	Minimum taken as twice standard; should be 100+5	SETUP	SETUP	0	8	0	1
+train-3095-2	SETUP	L14	L14	h	Sets 4% of elephants equal to 4 instead of 4% of 50	SETUP	SETUP	2	15	2	1
+train-3105-1	CALC	L2	L2	m	13*2*2 evaluated as 26 instead of 52; alt=OTHER	NOEQ	NOEQ	None	1	None	1
+train-3110-1	SETUP	L7	L4	m	Parents counted as adults rather than seniors; alt=L4	SETUP	SETUP	1	9	0	1
+train-3114-2	SETUP	L15	L15	h	Total sold omits final customer's 10 boxes	SETUP	SETUP	3	15	3	1
+train-3125-0	SETUP	L3	L3	h	Set total werewolves equal to 8 removed	NOEQ	NOEQ	None	11	None	1
+train-3126-1	SETUP	L5	L5	h	Dinner is half the money, so earnings are 72 not 18	SETUP	SETUP	0	5	0	1
+train-3134-3	CALC	L12	L12	h	Sum of five days is 44,900, not 45,900.	CALC	ARITH	1	12	1	1
+train-3136-3	TARGET	L9	L9	m	Gives balloons per bag, not two bags total; alt=CALC	SETUP	SETUP	1	5	None	1
+train-3147-2	CALC	L4	L4	m	Half of 2 grams is 1, not 2. alt=SETUP	NOEQ	NOEQ	None	14	None	1
+train-315-2	SETUP	L11	L10	h	Subtracts 30 days again; 90 days remain after people leave	SETUP	SETUP	4	11	4	1
+train-3158-2	SETUP	L10	L10	h	Divides by 2 per week instead of 4 lessons per week	SETUP	SETUP	3	10	3	1
+train-316-2	OTHER	L8	L8	m	Correct formula, no computed values; answer 273 unsupported; alt=CALC	NOEQ	NOEQ	None	8	None	1
+train-3163-4	SETUP	L7	L7	m	Treats 2x as total cheese; used cheese is 2x. alt=L12	SETUP	SETUP	0	9	0	1
+train-3166-4	SETUP	L2	L2	h	Horizontal pictures taken as V/2 instead of half of 30	SETUP	SETUP	1	19	0	1
+train-3173-4	SETUP	L5	L2	m	Treats 20 as packs, then total cards as 20; alt=L3	SETUP	SETUP	2	7	1	1
+train-3184-4	SETUP	L6	L6	h	Adds Rick's guppies as extra clowns, total clowns 90.	SETUP	SETUP	1	6	1	1
+train-3186-3	TARGET	L7	L7	h	Gives day-5 count 32 instead of five-day total 62	TARGET	TARGET	None	7	None	1
+train-3195-3	CALC	L11	L11	m	5 packs times 12 written as 270 sodas; alt=SETUP	CALC	ARITH	0	11	0	1
+train-320-0	CALC	L13	L13	m	68.47 + 11.53 equals 80, not 130.72. alt=OTHER	NOEQ	NOEQ	None	13	None	1
+train-321-4	SETUP	L2	L1	m	Takes ten times more as 10x, gold uses 11x; alt=OTHER	SETUP	SETUP	1	4	0	1
+train-3215-1	OTHER	-	-	h	Only a list of answers, no derivation	NOEQ	NOEQ	None	7	None	1
+train-322-3	SETUP	L7	L5	m	Tax taken on total bill 140; alt=L14 tax ignored.	NOEQ	NOEQ	None	17	None	1
+train-3226-3	SETUP	L11	L11	h	Tip formula multiplies customers by 3 instead of $2	CALC	ARITH	0	11	0	1
+train-3230-4	SETUP	L13	L2	h	Subtracts invented jade cost from price; no cost given	SETUP	SETUP	0	13	0	1
+train-3240-4	SETUP	L20	L20	h	Takes $20 left over as jewelry spending	SETUP	SETUP	2	27	2	1
+train-3259-0	SETUP	L3	L3	m	Brother assumed to have only $21; ignores initial money; alt=L8	SETUP	SETUP	1	5	1	1
+train-3264-4	OTHER	L1	L1	h	Answer 6 given though derivation computes correct 3	NOEQ	NOEQ	None	1	None	1
+train-3274-1	TARGET	L9	L2	m	Stops before final week of eating; 14 more fish eaten; alt=SETUP	TARGET	TARGET	None	9	None	1
+train-3277-2	SETUP	L8	L8	h	Uses Jane's age 28 as Dara's current age	SETUP	SETUP	2	10	2	1
+train-3278-4	SETUP	L16	L15	h	Adds books owned instead of books given to Lily	NOEQ	NOEQ	None	18	None	1
+train-328-3	SETUP	L20	L18	h	Cars with spare get 4 tires, not 5; omits other cars.	SETUP	SETUP	2	26	None	1
+train-3283-3	SETUP	L7	L5	h	Subtracts 1000 again from bedroom area 1300, guest becomes 300.	SETUP	SETUP	1	7	1	1
+train-3285-3	CALC	L11	L11	m	Correct expression 57-50 given as 23 instead of 7; alt=OTHER	NOEQ	NOEQ	None	11	None	1
+train-3289-2	SETUP	L9	L8	m	First wing given 7 floors instead of 9, sum also off; alt=CALC	CALC	ARITH	0	9	0	1
+train-3290-0	SETUP	L9	L9	h	Multiplies one-pug time by 15 instead of dividing by 15	SETUP	SETUP	0	11	0	1
+train-3295-0	SETUP	L2	L2	h	People count wrong; total should be 14 not 20	SETUP	SETUP	0	2	0	1
+train-3296-0	SETUP	L5	L2	h	Uses one-way 2 hours instead of round trip 4 hours	SETUP	SETUP	0	5	0	1
+train-3303-4	SETUP	L16	L15	h	Damage is 20% of 245 remaining pages, not 350	SETUP	SETUP	3	18	2	1
+train-331-3	SETUP	L9	L9	h	Total pitch for 16 miles mislabeled as per truckload	SETUP	SETUP	0	3	2	1
+train-3313-4	OTHER	L1	L1	h	Derivation gets 20 but answer given is 8	NOEQ	NOEQ	None	1	None	1
+train-3315-1	TARGET	L9	L9	h	Answers 75 cars instead of 375 doors	TARGET	TARGET	None	9	None	1
+train-3318-2	TARGET	L11	L10	h	Gives last night's total 8 instead of both meals	TARGET	TARGET	None	12	3	1
+train-332-3	CALC	L10	L10	m	60000 minus 10800 written as 59100; alt=OTHER no explicit derivation	NOEQ	NOEQ	None	10	None	1
+train-3341-3	SETUP	L9	L9	h	Third week cases are 2000, not 2500 plus 2000	SETUP	SETUP	1	9	1	1
+train-335-1	TARGET	L24	L24	h	Gives one kit's cost; needs three kits for three nieces	NOEQ	NOEQ	None	24	None	1
+train-3354-1	SETUP	L3	L2	h	Adds down payment to car price instead of subtracting it	NOEQ	NOEQ	None	9	None	1
+train-337-4	OTHER	L1	L1	h	Computes 31 correctly but states unrelated 55 as answer	NOEQ	NOEQ	None	1	None	1
+train-3372-1	SETUP	L10	L10	h	Omits second loss before retiring; losses should be 2	SETUP	SETUP	2	12	2	4
+train-3373-4	SETUP	L7	L6	m	Counts 7 adults twice, omits Shonda; alt=L8 eggs per person	SETUP	SETUP	0	7	0	1
+train-3375-0	OTHER	L15	L15	m	Only bare answers; 30 not derived; alt=CALC.	NOEQ	NOEQ	None	17	None	1
+train-338-0	SETUP	L5	L5	h	Extra 6-mile farm trip counted; total should be 20	SETUP	SETUP	0	9	0	1
+train-3398-1	CALC	L8	L8	m	27/60*100 computed as 50 instead of 45; alt=L7	NOEQ	NOEQ	None	7	None	1
+train-3399-2	SETUP	L16	L12	h	Later flags given 6 red stripes, dropping first red stripe	SETUP	SETUP	2	23	1	1
+train-3406-0	SETUP	L8	L7	h	Counts one bath per room, ignoring couples' two people	SETUP	SETUP	0	4	1	1
+train-3408-2	SETUP	L16	L15	h	Adds old computer cost to new computer cost	SETUP	SETUP	2	10	4	1
+train-3413-2	SETUP	L5	L5	h	Drops the first 20 seeds from the running total	SETUP	SETUP	0	5	0	1
+train-3416-0	CALC	L9	L9	h	Sum of temperatures is 371, not 361	CALC	ARITH	0	9	0	1
+train-3420-4	SETUP	L11	L5	h	Subtracts $5 from total value, treating it as per-figure price	SETUP	SETUP	2	12	1	1
+train-3426-2	SETUP	L5	L5	h	One $100 changed to $50s counted as 1 bill, not 2	NOEQ	NOEQ	None	6	None	1
+train-3429-1	SETUP	L4	L4	h	Saturday triples the weekly total instead of one weekday	SETUP	SETUP	1	4	1	1
+train-343-2	SETUP	L5	L5	h	500 watt-hours called 500 kWh; no conversion to kilowatt-hours	SETUP	SETUP	2	12	0	1
+train-3434-3	SETUP	L9	L8	h	Adds spilled amount to 500 instead of subtracting remaining.	NOEQ	NOEQ	None	14	None	1
+train-3442-3	SETUP	L9	L9	h	Multiplied by 1/5 instead of dividing; should be 10 cupcakes	SETUP	SETUP	1	12	1	1
+train-3445-1	SETUP	L11	L7	h	Individual cost for children uses kids' items for all four children	SETUP	SETUP	3	16	None	1
+train-3452-4	TARGET	L14	L12	m	Gives full 2-hour allowance, never subtracts 45 minutes; alt=SETUP	OTHER	OTHER	None	15	None	1
+train-3468-4	SETUP	L8	L7	h	Skipped Frank; set Frank equal to Pepe's height	TARGET	TARGET	None	17	2	1
+train-347-2	SETUP	L4	L4	h	Reversed relation; today is 9+5=14 songs	SETUP	SETUP	0	4	0	1
+train-3480-3	TARGET	L9	L8	h	Converts 200 minutes to hours; answer expected in minutes	SETUP	SETUP	0	5	2	1
+train-3481-4	SETUP	L4	L4	h	Savanna gets three times remaining-before amount, not 3*30.	OTHER	OTHER	None	16	None	1
+train-3483-1	SETUP	L6	L6	h	Uses $20 per household instead of $40 pair	CALC	ARITH	2	6	2	1
+train-3495-3	SETUP	L7	L7	h	Brother's per-game goals treated as per season, ignoring 50 games	NOEQ	NOEQ	None	12	None	1
+train-3498-2	TARGET	L6	L2	m	Gives friends' total 60 as each friend's share; alt=SETUP.	SETUP	SETUP	1	5	None	1
+train-3503-4	CALC	L14	L14	h	(12-9)*20 evaluated as 40 instead of 60	NOEQ	NOEQ	None	14	None	1
+train-3504-1	SETUP	L9	L9	h	Halves 200 instead of the course's 400 bricks	SETUP	SETUP	2	9	2	1
+train-3508-0	SETUP	L8	L8	h	Assumes evening speed is 30 mph; distance should stay 30 miles	SETUP	SETUP	1	9	1	1
+train-3509-1	SETUP	L2	L2	h	Counts 6 miles for two days; should be 12	SETUP	SETUP	2	3	1	1
+train-3518-3	SETUP	L8	L8	h	Multiplies already-total wall area 560 by 4 again.	SETUP	SETUP	3	8	3	1
+train-3519-3	SETUP	L6	L6	h	Uses box price 7.50 as price per bar.	SETUP	SETUP	1	6	1	1
+train-3529-0	OTHER	L8	L8	h	Model's 13 is correct; gold reference misuses 60%	SETUP	SETUP	0	2	None	1
+train-3530-3	CALC	L3	L3	m	Writes 5*4*5 equals 100*5, extra factor of 5; alt=SETUP	SETUP	SETUP	0	3	0	1
+train-3556-0	SETUP	L10	L10	h	Subtracts aunt's $25 gift she never received	NOEQ	NOEQ	None	11	None	1
+train-356-3	SETUP	L6	L3	m	Assumes all 25 answered correctly, giving 50 points; alt=OTHER	SETUP	SETUP	0	6	0	1
+train-3571-4	SETUP	L9	L5	h	Treats 5 trips as daily, multiplies by 7 days.	NOEQ	NOEQ	None	10	None	1
+train-3576-1	SETUP	L13	L13	h	Ignores Billy finishing 30 seconds before Margaret.	SETUP	SETUP	2	17	1	1
+train-3588-3	SETUP	L5	L5	m	Four triplings used; reference counts three. alt=OTHER	NOEQ	NOEQ	None	10	None	1
+train-3591-4	SETUP	L8	L8	h	Second gain taken as 50% of 100 instead of 500	SETUP	SETUP	3	9	2	1
+train-3616-0	SETUP	L9	L7	m	Takes all remaining 12 countries as Asian, not half; alt=TARGET	SETUP	SETUP	0	6	1	4
+train-3617-4	CALC	L1	L1	m	Correct expression 2*(90/3) given as 180 instead of 60; alt=OTHER	NOEQ	NOEQ	None	7	None	1
+train-362-3	SETUP	L13	L13	h	Full briefcase written as 2K+L+W instead of K+L+W=16	OTHER	OTHER	None	57	0	1
+train-3628-1	SETUP	L6	L6	h	Subtracts one week's 12 normal chores, not two weeks' 24.	SETUP	SETUP	1	6	1	1
+train-3630-3	OTHER	L9	L9	m	Correct formulas, no computed values; answer 168 unsupported; alt=SETUP	NOEQ	NOEQ	None	9	None	1
+train-3632-2	TARGET	L10	L10	m	Gives total cost 500 cents, not per page; alt=OTHER	NOEQ	NOEQ	None	10	None	1
+train-3633-1	SETUP	L6	L6	h	Divides sips by 5 instead of multiplying	SETUP	SETUP	2	6	2	1
+train-3636-2	CALC	L8	L8	m	Total needed should be 3000, written 2250; alt=SETUP	NOEQ	NOEQ	None	9	None	1
+train-3637-0	SETUP	L12	L12	h	Carries 8 objects on one trip despite 3-object limit	SETUP	SETUP	0	4	None	1
+train-3640-1	SETUP	L10	L8	h	Buys fractional comic books; should buy 16 and keep $4	SETUP	SETUP	2	10	2	1
+train-3644-1	SETUP	L10	L10	h	Total omits Twitter's 370 followers.	SETUP	SETUP	4	10	4	1
+train-3648-4	SETUP	L12	L11	h	Adds Anna's and Billy's times instead of taking difference.	SETUP	SETUP	2	12	2	1
+train-365-1	SETUP	L8	L5	h	Adds single runner times instead of all eight runners	OTHER	OTHER	None	10	None	1
+train-3673-4	SETUP	L18	L9	m	Uses unexplained 13 and extra difference steps; alt=L10	SETUP	SETUP	2	16	3	1
+train-3697-2	SETUP	L4	L4	h	Second savings uses 100/2 instead of half of 80	OTHER	OTHER	None	7	1	1
+train-3702-3	CALC	L10	L10	h	384*11 equals 4224, not 4128.	CALC	ARITH	5	10	5	1
+train-3703-2	SETUP	L25	L25	h	Uses one floor's 80 seconds, not all floors' driving time.	SETUP	SETUP	4	26	4	1
+train-3704-1	SETUP	L11	L10	h	Sums yearly sales instead of giving year three value 477	SETUP	SETUP	0	3	4	1
+train-3708-0	SETUP	L3	L2	h	Divides distance by minutes per mile instead of multiplying	NOEQ	NOEQ	None	15	None	1
+train-3733-0	SETUP	L8	L8	h	Uses 40 acres for clay soil instead of 20	SETUP	SETUP	3	8	3	1
+train-3742-1	SETUP	L5	L5	h	Refund equation should be 3P = 30, not 120 - 3P.	NOEQ	NOEQ	None	18	None	1
+train-3750-4	CALC	L33	L33	h	540000+1320000 equals 1860000, not 5400000.	OTHER	OTHER	None	35	None	1
+train-3756-4	SETUP	L15	L6	m	Difference written D-S, giving negative count; alt=L29	NOEQ	NOEQ	None	30	None	1
+train-3766-4	SETUP	L6	L5	h	Added basket count 9 instead of 9 baskets of 20	NOEQ	NOEQ	None	7	None	1
+train-3773-4	OTHER	L1	L1	h	Derivation reaches 55, but 75 stated as answer.	NOEQ	NOEQ	None	1	None	1
+train-3789-2	TARGET	L15	L15	h	Gives number of cartons, not widgets (times 3).	TARGET	TARGET	None	16	None	1
+train-3793-4	OTHER	L7	L7	m	Answer 4300 stated without computing total or division; alt=CALC	NOEQ	NOEQ	None	7	None	1
+train-3795-3	OTHER	L1	L1	h	Derivation gives 50, but stray answer 40 given first.	NOEQ	NOEQ	None	1	None	1
+train-3804-3	SETUP	L2	L2	m	Subtracts recommended from current, giving negative lack; alt=OTHER	NOEQ	NOEQ	None	5	None	1
+train-3817-2	SETUP	L4	L4	h	Counts only seventh-year quarters, not all years' accumulation	NOEQ	NOEQ	None	11	None	1
+train-3822-3	SETUP	L10	L10	m	Misreads 5 students as five percent of 30; alt=L11	SETUP	SETUP	3	11	3	1
+train-3836-4	OTHER	L1	L1	h	Derivation reaches 20 but answer line says 10.	NOEQ	NOEQ	None	1	None	1
+train-3837-4	OTHER	L16	L16	m	Correct 12 computed, then arbitrary 8 added; alt=SETUP.	NOEQ	NOEQ	None	17	None	1
+train-3853-1	OTHER	L1	L1	h	Derivation reaches 2 but answer lines say 14.	NOEQ	NOEQ	None	13	None	1
+train-3861-4	SETUP	L6	L6	m	First pair's capacity given as 400 instead of 800; alt=CALC	NOEQ	NOEQ	None	1	None	1
+train-3862-4	SETUP	L12	L12	h	Charges all 56 patients the adult fee.	SETUP	SETUP	0	8	2	1
+train-3869-3	SETUP	L3	L3	h	Ideal sleep uses actual hours instead of 8 per night	SETUP	SETUP	6	13	0	4
+train-3874-4	SETUP	L10	L5	h	Uses 7 days per week instead of 5 weekdays.	SETUP	SETUP	0	12	0	1
+train-3881-2	TARGET	L13	L13	h	Answer given in dollars 0.16, asked in cents 16	SETUP	SETUP	0	4	None	1
+train-3902-4	SETUP	L13	L10	m	Claims no coconut oil needed despite butter shortfall; alt=L16	OTHER	OTHER	None	18	None	1
+train-3904-0	SETUP	L11	L11	h	Erasers are 18/6=3, not 6	SETUP	SETUP	3	16	2	1
+train-3909-2	SETUP	L8	L8	h	Uses 2 acts instead of 5 acts for dropped play	SETUP	SETUP	3	8	3	1
+train-3912-1	OTHER	L5	L5	m	Correct formulas, no values; 135000 unsupported. alt=CALC	NOEQ	NOEQ	None	6	None	1
+train-3916-4	OTHER	L13	L13	h	No numeric derivation; answer 12480 stated without computation	NOEQ	NOEQ	None	15	None	1
+train-3921-4	SETUP	L7	L1	m	Ratio of totals instead of averaging per-tree ratios; alt=OTHER.	SETUP	SETUP	0	7	0	1
+train-395-0	SETUP	L7	L6	h	Ignores initial 30,000 elephants when finding entrants.	NOEQ	NOEQ	None	13	None	1
+train-3955-4	SETUP	L7	L6	h	Misreads Roger's bags as 11, 11 and 3	NOEQ	NOEQ	None	11	None	1
+train-3957-3	SETUP	L2	L2	h	Treats 16 dollars as daily pay, not hourly rate.	SETUP	SETUP	1	8	0	1
+train-3970-4	SETUP	L5	L5	h	50% more than 2 is 3 cans, not 1.	SETUP	SETUP	2	13	0	1
+train-3974-4	OTHER	L11	L11	h	No numeric derivation; answer 80 stated without computation	NOEQ	NOEQ	None	14	None	1
+train-3976-1	SETUP	L2	L2	m	Claims no blocks removed during five rounds; alt=L1	NOEQ	NOEQ	None	1	None	1
+train-3980-1	SETUP	L10	L10	h	Total omits the 2 swallows	NOEQ	NOEQ	None	13	None	1
+train-3995-1	OTHER	L8	L8	m	Literal 6 square inch tiles gives 576; gold assumes 6-inch sides; alt=SETUP	SETUP	SETUP	0	4	1	4
+train-3996-4	SETUP	L2	L2	h	Waiter ratio computed as 8-5=3 instead of 8 of 13	SETUP	SETUP	0	2	0	4
+train-4024-3	CALC	L10	L10	h	6+12+18+24 equals 60, not 50	CALC	ARITH	4	10	4	1
+train-4037-4	SETUP	L6	L3	h	Gives cats to Bob, but Robert is someone else.	SETUP	SETUP	1	6	1	1
+train-4038-2	OTHER	L1	L1	h	Computes 16 correctly but states 20 as answer	NOEQ	NOEQ	None	1	None	1
+train-4047-1	CALC	L8	L8	h	30 + 30/2 evaluated as 60 instead of 45	SETUP	SETUP	4	11	3	1
+train-4050-1	SETUP	L3	L2	h	Reversed relation; Angus has 7 more than Ollie	SETUP	SETUP	0	3	0	1
+train-4053-4	SETUP	L6	L6	h	Petunia fertilizer computed as 4*8 plants, ignoring 8 oz each	TARGET	TARGET	None	19	0	1
+train-4054-0	TARGET	L11	L11	h	Gives total fee 16000, ignores brother paying half	TARGET	TARGET	None	12	3	1
+train-4072-2	OTHER	L15	L15	m	Correct expression, no values; answer 261 unsupported. alt=CALC	NOEQ	NOEQ	None	16	None	1
+train-408-3	SETUP	L3	L3	h	Divides average by count instead of multiplying	NOEQ	NOEQ	None	17	None	1
+train-4093-2	SETUP	L10	L8	h	Forgets to subtract the one delayed ruling	TARGET	TARGET	None	12	None	1
+train-4105-1	OTHER	L7	L7	h	Gold uses Tuesday; problem says Monday, so 56 and 77 correct	SETUP	SETUP	0	4	1	1
+train-411-4	SETUP	L9	L8	h	Ignores that x equals 8; sets x to 5	SETUP	SETUP	0	11	0	1
+train-4113-2	OTHER	L11	L11	h	No values computed; final 180000 has no derivation.	NOEQ	NOEQ	None	11	None	1
+train-4127-2	CALC	L5	L5	h	2*65 - 10 computed as 130 instead of 120	SETUP	SETUP	2	7	1	1
+train-4135-2	CALC	L9	L9	h	8+12+16+4 equals 40, not 30	CALC	ARITH	3	9	3	1
+train-4137-3	SETUP	L9	L4	h	Ignores Donald's 4 cakes when counting cakes left	SETUP	SETUP	0	9	0	1
+train-4145-4	SETUP	L9	L7	h	Treats car payment as 20% of gross, not after-tax income	SETUP	SETUP	1	30	None	1
+train-415-4	SETUP	L12	L11	h	Adds an extra doubling at one year not in problem	SETUP	SETUP	3	12	3	1
+train-4155-4	SETUP	L6	L6	h	Doubled Emmy's count instead of halving for Rosa	SETUP	SETUP	1	6	1	1
+train-4157-2	CALC	L6	L6	h	1.25/9 computed as 1 1/3 instead of about 0.139	CALC	ARITH	1	8	1	1
+train-4165-4	SETUP	L6	L5	m	Assumes squares pattern instead of 3-day repeat; alt=OTHER	NOEQ	NOEQ	None	1	None	1
+train-4167-0	SETUP	L5	L5	m	Gives 6 donuts to each new friend instead of 3; alt=L9	SETUP	SETUP	0	3	1	1
+train-4174-1	SETUP	L9	L9	h	Summed one car per color, ignoring boxcar counts	SETUP	SETUP	2	9	2	1
+train-4182-0	SETUP	L8	L4	m	Reverses subtraction, labels 28 as sold; alt=L17 sold equals 28.	SETUP	SETUP	4	17	2	1
+train-4185-1	SETUP	L2	L2	m	Nonsense subtraction of 40 necklaces from 9 packs; alt=OTHER	NOEQ	NOEQ	None	1	None	1
+train-4191-1	SETUP	L8	L3	h	John's experience is not James plus 8; should be 32	SETUP	SETUP	0	8	0	1
+train-4196-2	TARGET	L6	L6	m	Gives calcified eggs 8 instead of hatching 16; alt=SETUP	TARGET	TARGET	None	8	2	1
+train-4203-3	TARGET	L12	L12	h	Stops before subtracting $350 car payment.	TARGET	TARGET	None	12	None	1
+train-4209-0	SETUP	L4	L4	h	4 dozen is a quarter of 16 dozen, not half	SETUP	SETUP	0	5	0	1
+train-4213-3	SETUP	L10	L7	h	Mislabels height 9 as area per foot, then divides again	OTHER	OTHER	None	11	5	1
+train-4216-3	CALC	L14	L14	h	12+24+9+18+6 summed as 67 instead of 69	CALC	ARITH	3	14	3	1
+train-4240-3	SETUP	L6	L6	h	Alex is twice Diane's 30, not half.	SETUP	SETUP	6	23	1	1
+train-4246-0	SETUP	L11	L11	h	Counted 60 once for two plants; should be 120	OTHER	OTHER	None	12	None	1
+train-425-0	TARGET	L13	L12	m	Gives Calvin's total 500 instead of needed 125; alt=SETUP	NOEQ	NOEQ	None	14	None	1
+train-4260-4	SETUP	L7	L7	m	Multiplies guests by 10 instead of adding 10 plates; alt=OTHER	NOEQ	NOEQ	None	10	None	1
+train-4262-1	SETUP	L6	L6	h	Uses 6 mph instead of half speed 3 mph	SETUP	SETUP	2	6	2	1
+train-4275-4	SETUP	L23	L5	m	Reversed: Scott has one third of Mary's; alt=L14	SETUP	SETUP	1	23	1	1
+train-4278-1	SETUP	L8	L6	h	Total packs taken as packs given to sister.	NOEQ	NOEQ	None	13	None	1
+train-4282-0	SETUP	L9	L9	h	Ignores the 2 harvests in 6 months	SETUP	SETUP	3	9	3	1
+train-4291-3	SETUP	L12	L10	h	Subtracts repayment from $30 instead of adding to remaining $15	SETUP	SETUP	2	12	2	1
+train-4295-0	SETUP	L5	L5	h	Counts rest after final stretch; only 2 stops needed	SETUP	SETUP	1	5	1	1
+train-4299-0	SETUP	L11	L10	h	Adds tray fractions to 40 eggs; omits Willa and others	NOEQ	NOEQ	None	22	None	1
+train-4304-3	SETUP	L13	L13	h	Doubled age difference instead of adding 13 years	SETUP	SETUP	3	11	4	1
+train-4312-4	SETUP	L7	L6	h	Garage bulbs taken as 2/2 instead of half of 8	SETUP	SETUP	0	9	0	1
+train-4313-3	SETUP	L9	L8	h	Subtracts the 200 already won a second time	SETUP	SETUP	2	9	2	1
+train-4319-1	SETUP	L4	L2	h	Uses 12 oranges per day, ignoring 10 trees	SETUP	SETUP	0	4	0	1
+train-432-1	SETUP	L7	L7	h	Profit per book computed as 120-5 instead of 20-5	SETUP	SETUP	0	22	None	1
+train-4323-1	SETUP	L6	L6	h	Multiplies puppies, portions and days instead of dividing	NOEQ	NOEQ	None	15	None	1
+train-4324-3	TARGET	L15	L12	m	Gives total $4 given away instead of $1 per cousin; alt=L21	NOEQ	NOEQ	None	21	None	1
+train-4333-1	SETUP	L2	L2	h	Each half has 5 seasons, not 10	SETUP	SETUP	0	5	0	1
+train-4358-0	SETUP	L13	L5	h	Total slices use 20 children instead of 5 pizzas	SETUP	SETUP	0	13	0	1
+train-436-0	SETUP	L9	L9	h	Initial pencils taken as 0 instead of 60	SETUP	SETUP	3	9	3	1
+train-4365-1	TARGET	L14	L14	m	Answers hits only, total asked; gold misreads ratio; alt=OTHER.	NOEQ	NOEQ	None	14	None	1
+train-4405-3	OTHER	L9	L8	m	Nonsensical relation, no derivation for 475; alt=SETUP	NOEQ	NOEQ	None	9	None	1
+train-4409-4	OTHER	L10	L10	h	No values computed; final 264 has no derivation.	NOEQ	NOEQ	None	10	None	1
+train-442-4	SETUP	L17	L16	h	Wrong percentage formula dividing by total crane height	SETUP	SETUP	0	3	None	1
+train-4435-1	SETUP	L8	L8	h	Assumes 4 boxes of cookies, ignores price twice milk	SETUP	SETUP	3	32	3	1
+train-4447-4	CALC	L16	L16	h	30*15 + 30*25 written as 145 instead of 1200	NOEQ	NOEQ	None	17	None	1
+train-4450-4	SETUP	L8	L8	m	240% used as 240, not 2.4, product also off; alt=CALC	CALC	ARITH	1	8	1	1
+train-4460-2	SETUP	L8	L7	h	Uses 700 instead of discounted 600 vest price.	SETUP	SETUP	2	8	2	1
+train-4468-2	SETUP	L10	L10	h	Subtracts 300 from 300; remaining 300 masks are sold in baggies.	SETUP	SETUP	1	17	None	1
+train-4477-2	TARGET	L5	L5	m	Gives 50 remaining, skips container step; alt=SETUP	TARGET	TARGET	None	6	None	1
+train-4482-4	TARGET	L1	L1	m	Answers 9 fruit trees, not 3 of each kind; alt=OTHER.	NOEQ	NOEQ	None	1	None	1
+train-4494-3	OTHER	L20	L20	m	No computed values; answer 3970 unexplained; alt=SETUP	NOEQ	NOEQ	None	20	None	1
+train-4496-2	SETUP	L14	L13	h	Subtracts grant from full tuition, ignoring savings	NOEQ	NOEQ	None	16	None	1
+train-450-3	TARGET	L10	L10	h	Gives total extra 42 gallons, not daily extra.	TARGET	TARGET	None	11	2	1
+train-4505-4	SETUP	L14	L14	h	Uses full 14-day sentence instead of half, 7 days	SETUP	SETUP	1	10	2	1
+train-4510-3	SETUP	L12	L11	h	Subtracts age difference from parents' age instead of Mark's age	OTHER	OTHER	None	13	3	1
+train-4516-1	SETUP	L14	L11	h	Subtracts substitution cost increase instead of adding it	SETUP	SETUP	5	14	5	1
+train-4520-2	SETUP	L3	L3	h	Sets C/3 = 63; Madeline has half of Cheryl.	SETUP	SETUP	0	5	0	1
+train-4541-2	SETUP	L2	L2	h	Doubled rise time twice; total rise is 240 minutes	SETUP	SETUP	1	3	0	1
+train-4549-4	SETUP	L11	L11	m	Car given bus's per-mile time, ignoring 5 fewer minutes; alt=L12	SETUP	SETUP	0	9	1	1
+train-4551-3	TARGET	L5	L5	m	Final answer is savings 44, not flowers 11; alt=OTHER.	NOEQ	NOEQ	None	5	None	1
+train-4552-4	CALC	L15	L15	h	10+14+17 equals 41, not 31	NOEQ	NOEQ	None	18	None	1
+train-4562-1	TARGET	L3	L1	h	Gives filled holes 6 as unfilled; should be 2.	TARGET	TARGET	None	4	None	1
+train-4563-2	SETUP	L9	L8	h	Daily total omits sharks' 4 buckets	SETUP	SETUP	2	9	2	1
+train-4575-4	SETUP	L6	L6	h	Subtracts one poster's cost instead of two posters' cost	SETUP	SETUP	1	6	1	1
+train-458-3	OTHER	L1	L1	h	Derivation gets 66 but answer given is 24	NOEQ	NOEQ	None	1	None	1
+train-4581-4	OTHER	L14	L14	m	Correct formulas, no computed values; answer 10590 unsupported; alt=CALC	NOEQ	NOEQ	None	15	None	1
+train-4589-0	SETUP	L10	L10	h	Toilet paper time for one roll only, ignores 7 rolls	SETUP	SETUP	1	9	2	1
+train-4592-3	SETUP	L9	L9	h	Used 2 weeks instead of second expedition's 5 weeks	SETUP	SETUP	0	15	0	1
+train-4605-0	SETUP	L6	L6	h	Eggs not converted to dozens before multiplying by $2	SETUP	SETUP	2	6	2	1
+train-4614-2	SETUP	L6	L4	h	Equation sets new balance equal to quarter of itself.	NOEQ	NOEQ	None	37	None	1
+train-4622-3	CALC	L6	L6	h	260 - 50*5 evaluated as 150 instead of 10	NOEQ	NOEQ	None	7	None	4
+train-4624-4	SETUP	L39	L37	m	Nonsense 2x = 25 equation after correct 68. alt=CALC alt=L33	SETUP	SETUP	4	49	None	1
+train-4631-3	SETUP	L3	L2	h	Multiplies by 3 stories instead of 4 hours	SETUP	SETUP	0	3	0	1
+train-4635-0	SETUP	L5	L5	h	Extra packs hold 3 red pencils, not 2	SETUP	SETUP	2	8	1	1
+train-4638-1	SETUP	L16	L16	h	Rest-of-office total includes Sonja and omits Mario and Rick	CALC	ARITH	5	19	None	1
+train-4646-0	SETUP	L5	L5	h	Uses 5999 instead of 6000 needed to beat record	SETUP	SETUP	0	5	0	1
+train-4648-0	OTHER	L8	L8	m	Correct formulas, no computed values; answer 1008 unsupported; alt=CALC	NOEQ	NOEQ	None	10	None	1
+train-4660-1	SETUP	L11	L8	h	Divided $100 by trip fee instead of solving for groceries	OTHER	OTHER	None	12	None	1
+train-4663-0	SETUP	L10	L9	h	Uses today's price for Friday; should be $1.0 after rollback	NOEQ	NOEQ	None	16	None	1
+train-4667-0	SETUP	L9	L3	h	Applies 100 mm to the 150 equal pieces instead of 4	SETUP	SETUP	1	9	1	1
+train-4673-2	CALC	L21	L21	h	234 + 166 equals 400, not 399	CALC	ARITH	2	21	2	1
+train-4683-1	SETUP	L3	L3	h	Writes 5+2x=11 instead of 2x-5=11.	NOEQ	NOEQ	None	9	None	1
+train-4695-4	SETUP	L2	L2	h	Multiplies 3 times per week by 7 days.	SETUP	SETUP	0	2	0	1
+train-470-3	SETUP	L12	L12	h	Arbitrarily assumes 50 total hours instead of solving	SETUP	SETUP	1	28	1	1
+train-4703-1	CALC	L6	L6	h	390 / 2 equals 195, written as 190	CALC	ARITH	1	6	1	1
+train-4710-4	SETUP	L11	L10	h	Uses flight distance instead of 2800 car distance	SETUP	SETUP	2	11	2	1
+train-4719-3	CALC	L12	L12	h	48 - 8 is 40, not 30	OTHER	OTHER	None	14	None	1
+train-4743-3	OTHER	L11	L11	m	No sum computed; 44 given instead of 24+40; alt=CALC.	NOEQ	NOEQ	None	11	None	1
+train-4744-2	SETUP	L16	L15	m	Misreads negative remainder; concludes 0 wait instead of 5; alt=OTHER	SETUP	SETUP	1	9	None	1
+train-4747-3	SETUP	L8	L7	h	Compares April with May; slowest month is March.	NOEQ	NOEQ	None	9	None	1
+train-4764-2	CALC	L3	L3	h	15 * 0.40 is 6, not 30	NOEQ	NOEQ	None	6	None	1
+train-4769-3	SETUP	L9	L8	h	Lost total 52 already covers both series; doubled again.	NOEQ	NOEQ	None	12	None	1
+train-4777-4	SETUP	L10	L10	m	Wrong formula for extra discount (3/5 factor); alt=CALC since 0.6*5 written 0.6*15	SETUP	SETUP	1	6	3	1
+train-4778-3	OTHER	L16	L16	h	Question says bought at 20% of price; 120 matches wording.	TARGET	TARGET	None	18	None	1
+train-4782-2	SETUP	L7	L5	h	Uses Neil's original 7 games instead of 13 after receiving	SETUP	SETUP	0	9	0	1
+train-4785-4	SETUP	L3	L3	h	Says 3 miles is 4 laps; actually 12 laps	SETUP	SETUP	0	7	0	1
+train-4793-2	SETUP	L6	L6	h	Second tree multiplied by 2 days instead of 4.	SETUP	SETUP	5	12	2	1
+train-4794-1	TARGET	L11	L10	m	Gives 5 to tie; needs 6 to be ahead; alt=SETUP	TARGET	TARGET	None	12	None	1
+train-4796-3	OTHER	L11	L11	h	120 is correct; gold 140 contradicts reference's own 120	NOEQ	NOEQ	None	13	None	1
+train-4799-2	SETUP	L5	L5	h	Uses discount amount as discounted seminar fee	SETUP	SETUP	1	5	1	1
+train-4815-0	SETUP	L13	L13	h	Pair equation 8y = 18*2 is wrong; should be y = 9	SETUP	SETUP	2	16	2	4
+train-4821-4	SETUP	L2	L1	h	Down payment charged every year instead of once	SETUP	SETUP	0	2	0	1
+train-4824-1	SETUP	L3	L3	h	Halves running dogs 12 instead of all 88.	SETUP	SETUP	0	3	0	1
+train-4847-4	SETUP	L2	L2	h	Counts 11 people though ten includes Lucy	SETUP	SETUP	0	6	0	1
+train-4855-4	SETUP	L17	L15	h	Wrongly subtracts 4 from 36, already the requested leg	SETUP	SETUP	3	19	None	1
+train-4859-3	OTHER	L7	L7	m	Answer 848 with no computed values; alt=CALC	NOEQ	NOEQ	None	8	None	1
+train-486-2	SETUP	L5	L5	h	Monday-Thursday total omits Thursday's 1 inch.	SETUP	SETUP	2	5	2	1
+train-487-2	SETUP	L11	L11	h	$5 is per 4 rings; all 72 rings sold	SETUP	SETUP	2	14	2	1
+train-4871-1	TARGET	L8	L8	m	Gives non-laying hens only, roosters omitted; alt=SETUP	TARGET	TARGET	None	9	3	1
+train-4874-2	SETUP	L10	L10	h	Uses red eaten 30 as red remaining instead of 20.	SETUP	SETUP	2	10	2	1
+train-4880-0	SETUP	L7	L7	h	Cheese fries were split, one order, not two	SETUP	SETUP	3	8	2	1
+train-4886-2	SETUP	L3	L3	h	Uses 4 hours/week and 4 weeks/year instead of 8 and 52	SETUP	SETUP	0	3	0	1
+train-4904-3	TARGET	L7	L4	m	Gives Star Wars profit 380 instead of earnings 405; alt=SETUP	TARGET	TARGET	None	8	1	4
+train-4910-3	SETUP	L5	L1	h	Invents per-device savings formula, nonsense value $40	SETUP	SETUP	1	7	0	1
+train-4918-4	SETUP	L36	L31	h	Assumes Chandra scored 0 instead of 22	SETUP	SETUP	2	40	None	1
+train-4922-3	SETUP	L24	L22	h	Divides already-split share again by 5.	NOEQ	NOEQ	None	27	None	1
+train-4924-2	SETUP	L5	L5	h	Wrong loss formula 165-100-50 instead of 165+50	SETUP	SETUP	1	5	1	1
+train-4937-4	SETUP	L6	L2	h	Takes orange minus pear literally, giving negative banana price	CALC	ARITH	0	9	0	1
+train-4943-0	OTHER	L20	L20	h	Gold treats 200 dozen as 200 cookies; solution literally correct.	SETUP	SETUP	0	12	None	1
+train-496-1	OTHER	L1	L1	h	Computes 600 correctly but states 150 as answer	NOEQ	NOEQ	None	1	None	1
+train-4970-1	SETUP	L4	L4	h	Uses current age x for daughter's age 5 years ago	SETUP	SETUP	1	10	1	1
+train-4981-3	OTHER	L12	L12	h	Only symbolic steps; answer 1083 has no derivation	NOEQ	NOEQ	None	13	None	1
+train-50-2	SETUP	L13	L11	h	Ignores 8 saving months; divides whole $400 by $10	SETUP	SETUP	1	13	1	1
+train-5000-3	SETUP	L9	L8	h	Total omits crackers 3.50.	SETUP	SETUP	0	4	2	1
+train-5002-4	SETUP	L3	L3	h	Invents equation J = 2*24+3, wrong relation	SETUP	SETUP	0	5	0	1
+train-5010-4	SETUP	L4	L4	h	15 months converted to 180 days; paychecks are per month.	SETUP	SETUP	0	5	0	1
+train-5019-4	SETUP	L2	L2	h	Taylor had 6 suckers, not 5; backward reasoning wrong	OTHER	OTHER	None	19	0	1
+train-5028-0	SETUP	L8	L8	h	Divides person-hours by work rate, giving wrong time	NOEQ	NOEQ	None	12	None	1
+train-5029-2	TARGET	L16	L16	m	Gives total cost 300 instead of remaining 200; alt=OTHER	NOEQ	NOEQ	None	16	None	1
+train-505-2	SETUP	L7	L7	h	Sets 10% of total equal to 81 pen sheep.	OTHER	OTHER	None	14	0	1
+train-5051-2	SETUP	L5	L5	h	Adds 200 again plus first-day total 500	SETUP	SETUP	2	5	2	1
+train-5057-3	SETUP	L3	L3	h	Multiplies birds by 1/3 instead of one-third of 21 tomatoes	CALC	ARITH	0	6	0	1
+train-5059-3	SETUP	L8	L8	h	Adds purchase cost to revenue instead of subtracting it	SETUP	SETUP	3	8	3	1
+train-5067-2	CALC	L16	L16	h	2,250,000 * 0.02 equals 45,000, not 450,000.	CALC	ARITH	3	16	3	1
+train-5071-2	SETUP	L5	L3	h	Subtracts sale income instead of adding it	SETUP	SETUP	1	5	1	1
+train-5075-2	SETUP	L6	L6	h	Discount is $20 (two $10), not $2	SETUP	SETUP	1	9	1	1
+train-5086-1	SETUP	L11	L8	h	Savings 7 mislabeled as discounted cost, then subtracted from 20	TARGET	TARGET	None	12	3	1
+train-5100-3	OTHER	L1	L1	m	Answer 40 unsupported; derivation reached 59; alt=SETUP	NOEQ	NOEQ	None	1	None	1
+train-5104-3	SETUP	L7	L5	m	Trombone count labeled drummers; drummers 18 never computed; alt=L16	SETUP	SETUP	4	16	1	4
+train-5115-4	SETUP	L7	L6	h	Wrong overtime formula adds wage and multiplies by 1.5 again	SETUP	SETUP	1	10	1	1
+train-5118-1	SETUP	L2	L2	h	Second day sold 25, not 14+25	SETUP	SETUP	1	4	0	1
+train-5128-4	OTHER	L1	L1	h	Computes 1000 correctly but states 200 as answer	NOEQ	NOEQ	None	1	None	1
+train-5144-0	SETUP	L12	L12	h	Uses South+East sum 100 as South distance	OTHER	OTHER	None	13	None	1
+train-5158-4	SETUP	L13	L13	h	Omits the 2 shared movies from the total	OTHER	OTHER	None	15	None	1
+train-516-4	SETUP	L3	L3	h	Geography taken as 4 times history instead of 3 times	SETUP	SETUP	1	3	1	1
+train-5161-4	CALC	L12	L12	h	2400 + 480 + 33 summed as 2813 instead of 2913	CALC	ARITH	3	12	3	1
+train-5172-2	TARGET	L7	L7	m	Answers total exercises 40 instead of pushup percentage; alt=OTHER	NOEQ	NOEQ	None	8	None	1
+train-5178-1	SETUP	L4	L4	h	Halves apple weight; they eat a whole apple daily together	SETUP	SETUP	0	7	0	1
+train-5184-4	OTHER	L3	L3	m	Premature rounding of 8.5/3 gives 48.9993 not 49; alt=CALC	SETUP	SETUP	0	3	0	1
+train-5205-3	SETUP	L8	L8	m	Treats 80% pace as 0.8 hours per mile; alt=L11	SETUP	SETUP	0	11	0	1
+train-5212-1	SETUP	L12	L9	h	Labels current age 32 as four years ago, adds 4 again.	SETUP	SETUP	4	12	4	1
+train-5215-4	SETUP	L4	L4	h	Total lost omits 32 washed hairs, only 16 brushed.	NOEQ	NOEQ	None	11	None	1
+train-5224-3	SETUP	L8	L6	h	Adds discarded marble back; statues total 58, not 80.	SETUP	SETUP	3	16	1	1
+train-5227-3	CALC	L8	L8	m	Correct setup, 480-400 given as 160 instead of 80; alt=OTHER	NOEQ	NOEQ	None	8	None	1
+train-5237-0	SETUP	L4	L4	h	Daily distance omits afternoon repeat; should be 2 miles	SETUP	SETUP	2	12	0	1
+train-5246-3	CALC	L4	L4	h	40 + 14 equals 54, written as 84	NOEQ	NOEQ	None	9	None	1
+train-5249-2	SETUP	L6	L6	h	Husband gets 6 cakes yearly, not 7	SETUP	SETUP	2	21	1	1
+train-5251-4	OTHER	L10	L1	h	Derives x=12 but states 16 as answer	NOEQ	NOEQ	None	1	None	1
+train-5260-3	SETUP	L6	L6	m	Total monthly spending omits $400 food; alt=L9	SETUP	SETUP	1	9	0	1
+train-5261-0	SETUP	L13	L13	h	Divides used water by 20 instead of remaining 300	SETUP	SETUP	1	10	2	1
+train-5262-4	TARGET	L16	L13	h	Gives total hours 6 instead of additional hours 3	TARGET	TARGET	None	17	3	1
+train-5273-0	SETUP	L6	L4	h	Ignored 9 people; needs 18 copies, not 2	TARGET	TARGET	None	7	0	1
+train-5277-4	SETUP	L5	L3	h	Treats 6 unripe apples as needed per pie	SETUP	SETUP	0	7	0	1
+train-5280-2	SETUP	L12	L12	m	Assumes 12 eggs per tray instead of 36; alt=OTHER	SETUP	SETUP	2	13	2	1
+train-5285-2	SETUP	L6	L4	m	Three times more read as 3x, not 4x; alt=OTHER.	NOEQ	NOEQ	None	15	None	1
+train-5289-0	SETUP	L2	L2	h	One day's papers taken as all Monday-Saturday papers; ignores weeks.	SETUP	SETUP	0	2	0	1
+train-5294-3	SETUP	L9	L9	h	Nonsense conclusion that no flowers contain red or white	NOEQ	NOEQ	None	11	None	1
+train-5297-4	SETUP	L4	L4	h	Omits 15 games when totaling goals of 8 players	SETUP	SETUP	2	6	1	1
+train-5312-4	OTHER	L1	L1	h	Derivation reaches 10 but answer line says 5.	NOEQ	NOEQ	None	1	None	1
+train-5332-1	SETUP	L9	L9	h	Uses 4 hours each for Wednesday and Thursday instead of 2	SETUP	SETUP	2	9	2	1
+train-5346-4	SETUP	L11	L8	h	Adds books taken home to donated books instead of to remainder	SETUP	SETUP	2	11	2	1
+train-5360-2	OTHER	L8	L8	h	Lists 22, 23, 24; correct 22 replaced by 24.	OTHER	OTHER	None	8	None	1
+train-5362-0	SETUP	L11	L10	m	Flying Scotsman computed as 100-20 instead of 100+20; alt=L12	NOEQ	NOEQ	None	20	None	1
+train-5385-4	SETUP	L21	L19	h	Total omits the 9 teachers	SETUP	SETUP	2	21	2	1
+train-5387-4	SETUP	L12	L12	h	Second half uses 20 emails/day instead of 25	SETUP	SETUP	2	15	1	1
+train-54-4	SETUP	L24	L12	h	Adds the surviving $1 instead of subtracting it from wallet	SETUP	SETUP	4	24	4	1
+train-5406-0	SETUP	L2	L2	h	Equation uses 5 children and 5 adults instead of 3 and 2	SETUP	SETUP	0	11	0	1
+train-5410-3	TARGET	L16	L15	m	Gives fastest hike time 4, not 1-hour difference; alt=OTHER	TARGET	TARGET	None	16	None	1
+train-5418-4	SETUP	L79	L79	m	n>3.17 needs n=4, takes 3; alt=L6 wrong growth direction.	NOEQ	NOEQ	None	80	None	1
+train-5423-3	SETUP	L4	L4	h	Uses 4 walked miles as return trip instead of 14	NOEQ	NOEQ	None	6	None	1
+train-5425-4	SETUP	L14	L14	m	Divides drivers by 40 for car count; alt=L11	SETUP	SETUP	2	11	4	1
+train-5432-4	CALC	L15	L15	m	(10+26)/2 written as 36, division skipped; alt=TARGET	SETUP	SETUP	4	13	5	1
+train-5440-3	SETUP	L7	L7	h	Subtracts biweekly $46 from one week's savings	SETUP	SETUP	0	7	0	1
+train-5446-2	SETUP	L4	L4	h	Adds nonexistent time going down; floor times misassigned.	SETUP	SETUP	0	5	0	1
+train-5453-0	SETUP	L6	L6	h	Daily travel counts only one direction, not both	SETUP	SETUP	1	8	0	1
+train-5458-0	SETUP	L11	L9	h	Adds cask capacity to barrels' total, extra component.	SETUP	SETUP	3	11	3	1
+train-5461-2	SETUP	L11	L11	h	Pays per clover instead of per leaf	CALC	ARITH	3	11	3	1
+train-5463-2	SETUP	L9	L9	h	Non-collectors are 2 students, not 30-15=15	TARGET	TARGET	None	19	2	1
+train-5465-4	OTHER	L6	L6	h	Answer 90 has no derivation and is not valid	NOEQ	NOEQ	None	6	None	1
+train-548-2	TARGET	L10	L10	h	Gives profit in cents, not converted to dollars	TARGET	TARGET	None	10	None	1
+train-5481-0	SETUP	L4	L2	m	Frank given Grace minus 5, which is Calvin's count; alt=L3	SETUP	SETUP	1	9	0	1
+train-5488-4	SETUP	L9	L8	h	Multiplies population by phones per 1000 without dividing by 1000	CALC	ARITH	0	16	0	1
+train-549-3	SETUP	L18	L18	h	Multiplies remaining chairs 48 by table legs instead of 20 tables.	SETUP	SETUP	6	18	6	1
+train-5496-0	SETUP	L2	L2	m	Excludes driver; gold counts driver in total; alt=OTHER	SETUP	SETUP	1	6	0	1
+train-5504-4	OTHER	L9	L9	h	Only symbolic steps; answer 450 has no derivation	NOEQ	NOEQ	None	9	None	1
+train-5506-1	SETUP	L6	L6	h	Remaining for first tank is 1000-300=700, not 300	SETUP	SETUP	1	12	0	1
+train-5521-2	CALC	L16	L16	h	6:00 minus 4 hours is 2:00, not 1:00	OTHER	OTHER	None	17	1	1
+train-5523-4	SETUP	L21	L4	h	Wrong model: divides 240-50 by 30 as games bought	SETUP	SETUP	0	21	0	1
+train-5526-1	SETUP	L15	L11	m	Toys wrongly split; Jenny pays her toys alone; alt=L12	SETUP	SETUP	1	12	2	1
+train-5528-1	SETUP	L5	L4	h	Takes 60% of males instead of total herd.	SETUP	SETUP	0	5	0	1
+train-5529-2	OTHER	L9	L9	m	Answer 15 without computed values; alt=SETUP halves Dean	NOEQ	NOEQ	None	9	None	1
+train-5537-3	SETUP	L11	L10	h	Uses 1000 steps/day for all four weeks	SETUP	SETUP	5	13	4	1
+train-5545-4	SETUP	L8	L8	h	Ignores 4 jennies per pot; should be 16 plants	SETUP	SETUP	0	5	1	1
+train-5555-4	OTHER	L7	L7	m	Correct expression, no values; 960 unsupported. alt=CALC	NOEQ	NOEQ	None	7	None	1
+train-5561-0	SETUP	L2	L2	h	Computes one island, not two islands, at 20 miles/day.	SETUP	SETUP	2	6	0	1
+train-5563-1	SETUP	L4	L4	h	Parking should be double littering plus off-leash, not 2L.	NOEQ	NOEQ	None	16	None	1
+train-5567-0	SETUP	L4	L4	h	Uses 1600 per person; each of first six took 800	SETUP	SETUP	1	4	1	1
+train-5577-4	SETUP	L5	L5	h	Divides servings by balls per serving, giving 5 balls	SETUP	SETUP	0	5	0	1
+train-5578-1	SETUP	L4	L4	h	Multiplies episodes by rate instead of dividing.	SETUP	SETUP	1	4	1	1
+train-5583-3	SETUP	L2	L2	h	Counts each win as 1 point instead of 2	SETUP	SETUP	1	8	0	1
+train-5589-0	SETUP	L6	L6	h	Ignores the 5 cookies Sarah receives	TARGET	TARGET	None	7	1	1
+train-5591-1	SETUP	L5	L5	m	Counts from day one's 10s, not current 30s; alt=OTHER	SETUP	SETUP	0	5	0	1
+train-5598-1	TARGET	L10	L8	m	Gives one towel's weight, not Frances's towels; gold also suspect; alt=OTHER	SETUP	SETUP	3	9	None	1
+train-5600-3	CALC	L8	L8	h	482,653 + 362,987 evaluated as 563,189 instead of 845,640	NOEQ	NOEQ	None	8	None	1
+train-5601-4	OTHER	L1	L1	h	Derivation gets 24 but answer given is 12	NOEQ	NOEQ	None	1	None	1
+train-5605-1	SETUP	L4	L4	h	Uses Tom's current age 25 instead of 23 two years ago	SETUP	SETUP	1	4	1	1
+train-5608-3	SETUP	L3	L1	h	Treats 18 leftover watermelons as sold; adds revenue to profit	SETUP	SETUP	0	8	0	1
+train-5614-3	SETUP	L21	L21	m	Block charge computed as 20 dogs times 1.25; alt=L28	SETUP	SETUP	2	21	2	1
+train-5616-4	SETUP	L13	L8	m	Subtracts irrelevant dragon 120 ft time from 32 seconds; alt=L11	SETUP	SETUP	2	11	3	1
+train-5632-2	TARGET	L6	L4	m	Gives episodes per day as number of days; alt=SETUP	NOEQ	NOEQ	None	7	None	1
+train-5633-1	SETUP	L6	L5	m	Omits the 7 blending marker drawings; alt=TARGET	NOEQ	NOEQ	None	8	None	1
+train-5634-4	OTHER	L12	L12	m	Correct expressions, no values; 28800 unsupported. alt=CALC	NOEQ	NOEQ	None	12	None	1
+train-5655-1	SETUP	L10	L10	h	Counts weekdays as 3 boxes total instead of 3 times 5	SETUP	SETUP	2	10	2	1
+train-5679-4	SETUP	L11	L11	h	60 cheeses cover 4 weeks; wrongly one package per week	OTHER	OTHER	None	14	3	1
+train-5680-4	SETUP	L12	L5	m	Adds tax to pay instead of subtracting; alt=L7	NOEQ	NOEQ	None	14	None	1
+train-5686-3	OTHER	L1	L1	h	Derivation reaches 100 but answer line says 82.	NOEQ	NOEQ	None	1	None	1
+train-5693-1	SETUP	L5	L5	h	Thursday also 10-4=6, not 6-4	TARGET	TARGET	None	9	2	1
+train-5700-4	SETUP	L13	L12	h	Removes half of 70 instead of 30 eaters	SETUP	SETUP	3	13	3	1
+train-5701-1	SETUP	L7	L3	h	Misreads as half of Alvin's age in 5 years.	SETUP	SETUP	0	4	1	1
+train-5706-2	SETUP	L5	L5	h	Uses 30 sheets per folder instead of 10.	SETUP	SETUP	1	5	1	1
+train-5709-3	SETUP	L9	L9	m	Swapped bats and wights rates and counts; alt=L18	SETUP	SETUP	0	22	0	1
+train-5712-4	CALC	L12	L12	m	140 * 10 computed as 700 instead of 1400; alt=L1	NOEQ	NOEQ	None	1	None	1
+train-5713-2	SETUP	L4	L4	h	Tom is faster, so time is 6/3, not 6*3	SETUP	SETUP	0	13	0	1
+train-5721-0	SETUP	L2	L2	m	Total candies needed is 14, not 4; then uses 10. alt=L4	SETUP	SETUP	0	4	0	1
+train-5732-2	SETUP	L4	L4	m	Uses 90 marks for second group instead of 80. alt=CALC	CALC	ARITH	1	4	1	1
+train-575-3	OTHER	L1	L1	h	Derivation gets 180 but answer given is 60	NOEQ	NOEQ	None	1	None	1
+train-5755-2	SETUP	L6	L4	h	Sets Tonya/2 = 60 instead of John = 60/2	SETUP	SETUP	0	6	0	1
+train-5769-2	OTHER	L12	L12	h	No values computed; final 13 has no derivation.	NOEQ	NOEQ	None	12	None	1
+train-5770-3	TARGET	L9	L8	m	Gives daily total 90 as weekly total, omits times 7; alt=SETUP	TARGET	TARGET	None	10	1	1
+train-5783-3	SETUP	L9	L9	h	Extra factor 1/2 applied to 50 cents.	SETUP	SETUP	1	20	None	1
+train-5785-4	SETUP	L11	L1	m	Treats given 5 fiction books as unknown F; alt=OTHER	OTHER	OTHER	None	14	None	1
+train-5787-3	TARGET	L10	L9	m	Gives one person's cost, not family total; alt=SETUP	TARGET	TARGET	None	10	None	1
+train-5794-1	SETUP	L8	L7	h	Subtracts ingredients from repayment instead of from total money	SETUP	SETUP	2	8	2	1
+train-5811-4	SETUP	L23	L16	m	October mowing set to September total 124, weeds added again; alt=L16.	SETUP	SETUP	3	25	3	1
+train-5813-3	SETUP	L2	L2	h	Each machine makes 5 per minute, not 10	SETUP	SETUP	0	3	0	1
+train-5832-1	OTHER	L4	L4	h	Only plan steps and answer 19, no computed values	NOEQ	NOEQ	None	4	None	1
+train-5837-2	SETUP	L2	L2	h	Uses 12 shirt boxes instead of 20	SETUP	SETUP	0	2	0	1
+train-5857-3	SETUP	L7	L7	h	Dog food from one day's 20, not ten days' 200	OTHER	OTHER	None	11	0	1
+train-5860-4	CALC	L10	L10	h	480+10 equals 490, not 500.	NOEQ	NOEQ	None	16	None	1
+train-587-1	SETUP	L6	L5	h	Multiplies weekly catch-up by 3 instead of dividing weekend time	SETUP	SETUP	0	3	1	1
+train-5872-4	SETUP	L13	L4	h	Subtracts 20% instead of taking 20% of Jill's distance.	SETUP	SETUP	2	13	2	1
+train-5882-4	SETUP	L1	L1	h	Daughters' shared slice counted as half; total should be 3	SETUP	SETUP	0	1	0	4
+train-5887-4	SETUP	L4	L4	m	Four times more read as 4x, gold uses 5x; alt=OTHER	SETUP	SETUP	2	9	0	1
+train-5890-4	SETUP	L6	L6	h	Supermarket round trip should be 40 miles, not 30.	SETUP	SETUP	1	7	1	1
+train-5897-3	SETUP	L22	L22	m	Sum omits uncle's cars. alt=L36	OTHER	OTHER	None	41	None	1
+train-5900-4	SETUP	L12	L6	h	Revenue per tree is 5*3, not 3/5	SETUP	SETUP	0	12	0	1
+train-5902-2	CALC	L8	L8	h	24 + 17 + 19 equals 60, not 50.	OTHER	OTHER	None	9	None	1
+train-5906-4	SETUP	L5	L4	h	Total counts only one other member, not four.	SETUP	SETUP	1	5	1	1
+train-5909-2	SETUP	L13	L13	h	Pair of roller skates has 8 wheels, not 4.	SETUP	SETUP	1	8	2	1
+train-591-1	SETUP	L4	L4	h	Inverts rate: 20 per 10 minutes is 0.5 min per cherry	SETUP	SETUP	2	5	1	1
+train-5918-2	SETUP	L6	L6	m	Ascent time ignores second 15-minute pull; alt=L16	SETUP	SETUP	0	13	0	1
+train-5919-2	SETUP	L9	L8	h	Multiplies weekly total by 7 again	SETUP	SETUP	2	9	2	1
+train-5926-3	SETUP	L7	L5	h	Counts euros twice and drops the 3000 yen	OTHER	OTHER	None	8	None	1
+train-5928-3	TARGET	L13	L4	m	Gives one company's cost, not three combined; alt=SETUP.	NOEQ	NOEQ	None	13	None	1
+train-5931-4	SETUP	L4	L3	h	Half the journey time misread as half the distance.	SETUP	SETUP	0	20	None	1
+train-5934-3	SETUP	L10	L8	h	Reversed relation; seventh-level is twice fourth, 320	SETUP	SETUP	1	10	1	1
+train-5936-2	SETUP	L6	L3	m	Uses 18 cakes; gold treats 9 cakes as total; alt=OTHER	SETUP	NEWNUM	0	6	0	1
+train-5950-2	OTHER	L1	L1	h	Computes 14 correctly but states 26 as answer	NOEQ	NOEQ	None	1	None	1
+train-5951-0	SETUP	L13	L13	h	Sets Friday's 2x equal to all 36 remaining pages	OTHER	OTHER	None	16	None	1
+train-5954-1	SETUP	L12	L12	h	Zack's class taken as 22; should include Zack, 23.	SETUP	SETUP	0	29	0	1
+train-5956-3	SETUP	L2	L2	h	Gasoline cost for first option ignored; should add $18	SETUP	SETUP	1	4	1	1
+train-5964-3	SETUP	L4	L3	h	Counts sugar cookies as blondies/brownies, omits Betty's brownies	SETUP	SETUP	1	4	1	1
+train-5967-1	SETUP	L6	L6	h	Third week uses (28+16)/2 instead of 28/2	SETUP	SETUP	2	6	2	1
+train-5971-2	SETUP	L5	L5	h	Multiplies pack count by per-chain price instead of pack price	SETUP	SETUP	3	6	2	1
+train-5977-0	SETUP	L11	L10	h	Multiplies salary by 9 instead of dividing	NOEQ	NOEQ	None	19	None	1
+train-5978-2	OTHER	L8	L8	h	Computed 11 correctly but answers unsupported 8	NOEQ	NOEQ	None	9	None	1
+train-5983-4	SETUP	L6	L4	h	Omits Molly and parents; adds departed 40 instead of subtracting	NOEQ	NOEQ	None	9	None	1
+train-5984-4	SETUP	L3	L2	h	Sets Debby's 25% equal to Maggie's $4,500.	NOEQ	NOEQ	None	1	None	1
+train-5989-4	CALC	L11	L11	h	22 + 10 + 14 summed as 51 instead of 46	OTHER	OTHER	None	14	None	1
+train-5996-3	CALC	L8	L8	m	40+88+66 equals 194, not 294; alt=OTHER	NOEQ	NOEQ	None	7	None	1
+train-6002-4	SETUP	L7	L7	h	Uses full rent 1200, ignoring Shelby sharing rent.	SETUP	SETUP	1	7	1	1
+train-6010-4	SETUP	L9	L7	m	Adds 50 pounds after strap/distance boosts; alt=L7	SETUP	SETUP	0	4	2	1
+train-6012-4	SETUP	L6	L4	h	Divides boy's growth by 2 instead of doubling for tree	OTHER	OTHER	None	9	1	1
+train-6027-3	SETUP	L6	L6	h	Chickens laid 3 eggs each, not 2	SETUP	SETUP	1	6	1	1
+train-6043-2	SETUP	L4	L4	h	Claims 40 quarters in a dollar; nonsense values follow	SETUP	SETUP	0	6	0	1
+train-6049-3	OTHER	L12	L12	h	Only symbolic steps; answer 395 has no derivation	NOEQ	NOEQ	None	12	None	1
+train-6050-4	SETUP	L10	L8	h	One pair per pet; four-legged pets need two pairs.	SETUP	SETUP	0	6	None	1
+train-6075-4	SETUP	L29	L17	h	Doubles both-guards weekly cost again for two bodyguards	SETUP	SETUP	1	29	1	1
+train-6087-3	OTHER	L8	L8	m	No derivation; 220 replaces correct 121; alt=SETUP	NOEQ	NOEQ	None	9	None	1
+train-6090-4	CALC	L8	L8	h	18 x 2 x 300 written as 21600 instead of 10800	NOEQ	NOEQ	None	8	None	1
+train-6104-4	TARGET	L13	L6	h	Gives total time 14 instead of average 7	NOEQ	NOEQ	None	13	None	1
+train-611-4	SETUP	L8	L8	h	Forgets dividing 40 pepperoni among 4 slices.	SETUP	SETUP	0	8	0	1
+train-6110-0	SETUP	L2	L2	h	Counts one bottle as one cup instead of two	SETUP	SETUP	2	5	0	1
+train-6120-3	CALC	L11	L11	h	200 - 60 - 56 equals 84, not 184.	CALC	ARITH	3	11	3	1
+train-6123-2	SETUP	L28	L20	m	Multiplies commission by 1.20 instead of dividing by 0.20. alt=L22	SETUP	SETUP	3	28	3	1
+train-6124-2	CALC	L8	L8	h	22 minus 7/3 is 19 2/3, not 22 2/3.	TARGET	TARGET	None	9	1	1
+train-6128-4	SETUP	L11	L3	h	Treated 20% as seats taken instead of not taken	SETUP	SETUP	2	14	1	1
+train-6136-3	TARGET	L13	L13	m	Gives total cookies 96 instead of per pack; alt=OTHER	NOEQ	NOEQ	None	13	None	1
+train-6138-4	SETUP	L17	L16	h	Subtracts erasers again from remaining $30	SETUP	SETUP	7	21	6	1
+train-6158-2	SETUP	L6	L6	h	Total omits oven's $500.	SETUP	SETUP	1	6	1	1
+train-616-1	SETUP	L7	L5	m	Brother omitted first 15 minutes, rate not doubled; alt=L3	SETUP	SETUP	1	8	1	1
+train-6162-0	SETUP	L2	L2	h	Two erasers priced P/2 total instead of P/2 each	NOEQ	NOEQ	None	17	None	1
+train-6169-4	SETUP	L29	L26	m	Uses cumulative distance instead of monthly distance; alt=L35	SETUP	SETUP	4	19	7	1
+train-617-0	SETUP	L7	L7	h	Doubles only per-mile penalty, excluding base fine	SETUP	SETUP	2	7	2	1
+train-6175-2	SETUP	L7	L6	h	Divides total by 4 games instead of 2 players	SETUP	SETUP	2	7	2	1
+train-619-4	SETUP	L6	L6	m	Re-added Tuesday and Thursday dogs to 42; alt=CALC	SETUP	SETUP	1	6	1	1
+train-6191-3	OTHER	L10	L8	m	Answer 33750 unexplained; formula subtracts sold from total; alt=SETUP	NOEQ	NOEQ	None	11	None	1
+train-62-1	SETUP	L6	L5	h	Divides remaining oil by 24 instead of 14 cans	SETUP	SETUP	2	6	2	1
+train-6205-2	SETUP	L10	L10	h	Subtracts removed from kept 40 instead of from 100.	SETUP	SETUP	4	10	4	1
+train-6206-3	SETUP	L10	L10	h	Uses $20 for computer table instead of $140.	CALC	ARITH	2	10	2	1
+train-6209-1	SETUP	L1	L1	h	Subtracts mint from basil count only, dropping parsley	OTHER	OTHER	None	2	0	4
+train-6212-3	CALC	L4	L4	m	10+4 equals 14, not 32; alt=L1 stray answer.	NOEQ	NOEQ	None	1	None	1
+train-6214-3	SETUP	L11	L11	h	Subtracts all planes' total reduction from each plane.	SETUP	SETUP	0	5	2	1
+train-6217-3	SETUP	L6	L5	h	Reverses relation: Eli has three times Jayden, not a third	SETUP	SETUP	1	6	1	1
+train-6220-0	SETUP	L14	L14	h	One extra halving step; sixth doll is 32 after five steps	SETUP	SETUP	5	14	5	1
+train-6222-4	SETUP	L10	L10	h	Total omits the 30 extra teddies from mom	SETUP	SETUP	2	10	2	1
+train-6226-4	SETUP	L3	L3	h	Second hour customers ordered 4-egg, counted as 3-egg	SETUP	SETUP	1	3	1	1
+train-6252-2	SETUP	L8	L8	h	Jill's wins use 10 games instead of 20	SETUP	SETUP	1	8	1	1
+train-6254-0	SETUP	L8	L7	h	Adds gifts again although 125 already includes them	NOEQ	NOEQ	None	17	None	1
+train-6271-0	SETUP	L10	L9	h	Tip computed on taxed total 104 instead of 100	NOEQ	NOEQ	None	17	None	1
+train-6273-1	OTHER	L7	L7	m	No values computed; final 56 unexplained; alt=SETUP.	NOEQ	NOEQ	None	7	None	1
+train-6282-3	SETUP	L18	L17	h	Minimum rain taken as 6+1, ignoring 72-inch capacity and 51 inches	SETUP	SETUP	5	18	5	1
+train-6284-4	SETUP	L6	L6	h	Elevator stop counted once instead of on all 20 floors	TARGET	TARGET	None	14	1	1
+train-6287-3	SETUP	L4	L4	h	Uses selling price 375 instead of profit 125 per tire.	SETUP	SETUP	1	4	1	1
+train-63-3	SETUP	L10	L9	h	Compared two days' total to one-day goal; ignored deficits	SETUP	SETUP	0	4	1	1
+train-6303-4	SETUP	L15	L9	m	Calls 42 non-blue marbles non-red, then subtracts wrongly; alt=L26	SETUP	SETUP	3	26	2	1
+train-6310-3	SETUP	L15	L15	h	Minimum weight is John's 46, not Tracy's 52	OTHER	OTHER	None	20	None	1
+train-6318-2	SETUP	L4	L4	h	Twice as fast doubles minutes per mile instead of halving	SETUP	SETUP	0	6	0	1
+train-6330-2	CALC	L12	L12	h	50 - 10 - 25 equals 15, not 35.	TARGET	TARGET	None	13	None	1
+train-6332-1	OTHER	L3	L3	h	Only answer given, no derivation.	NOEQ	NOEQ	None	3	None	1
+train-6338-3	SETUP	L7	L6	h	Treats case and headphones as monthly; omits phone price	SETUP	SETUP	2	7	2	1
+train-6339-4	SETUP	L11	L11	h	Doubles 10 instead of the 15 kg weekly amount	SETUP	SETUP	1	11	1	1
+train-6341-3	TARGET	L12	L12	m	Gives total lead time 32, ignores 2 days remaining; alt=SETUP	TARGET	TARGET	None	20	None	1
+train-6363-3	SETUP	L12	L8	h	Subtracted 6 inches from rim instead of adding	SETUP	SETUP	0	12	0	1
+train-6369-3	SETUP	L4	L4	h	Halves piece length for mother instead of giving two pieces.	SETUP	SETUP	2	6	1	1
+train-6379-0	SETUP	L12	L12	h	Applies 10 min/page to long letter, which takes 20 min/page	SETUP	SETUP	1	5	4	1
+train-638-2	SETUP	L24	L24	h	Grand prize ticket also counted as $10 winner; should be 7	SETUP	SETUP	6	27	5	1
+train-6391-3	SETUP	L9	L9	m	Forgets border pieces in subtraction; alt=L3 Joe placed 105	SETUP	SETUP	1	9	1	1
+train-64-4	CALC	L16	L16	m	Second job earnings written 120 instead of 240; alt=OTHER	NOEQ	NOEQ	None	19	None	1
+train-6400-4	CALC	L8	L8	h	32 - 15 - 2 equals 15, not 9.	CALC	ARITH	1	8	1	1
+train-6402-0	CALC	L10	L10	m	Rounds 1/3 dollar to 0.33, making total 4.95 not 5; alt=OTHER	SETUP	SETUP	3	11	2	1
+train-6404-3	SETUP	L12	L12	h	Uses $1.50 as amount spent instead of $2.50 total	SETUP	SETUP	3	13	3	1
+train-6405-2	SETUP	L3	L3	h	Assumes 5-minute pause after every 100 meters.	SETUP	SETUP	0	6	0	1
+train-6411-2	SETUP	L10	L10	h	Uses 3 buttons instead of 1 button per earring	SETUP	SETUP	0	7	1	1
+train-6414-0	SETUP	L8	L8	h	Uses 15 gharials instead of 9 and skips fish step	SETUP	SETUP	0	8	0	4
+train-6415-0	SETUP	L6	L5	h	Sets raft capacity with jackets equal to 8 people.	NOEQ	NOEQ	None	15	None	1
+train-6418-1	SETUP	L2	L2	h	Used 7 days instead of 6 days	SETUP	SETUP	0	3	0	1
+train-6419-3	TARGET	L11	L11	h	Gives ounces in one bag, not total from $7.	OTHER	OTHER	None	11	None	1
+train-6439-3	SETUP	L16	L9	m	Counts five workouts instead of three per week; alt=L11	SETUP	SETUP	2	11	None	1
+train-6447-0	SETUP	L9	L8	m	Uses combined money for Emmy and Gerry each, double counting; alt=L16	NOEQ	NOEQ	None	18	None	1
+train-645-4	OTHER	L1	L1	h	Derivation correctly gets 264 but stated answer is 60	NOEQ	NOEQ	None	1	None	1
+train-6455-0	SETUP	L6	L5	h	Ignores 2 leftover books; bought 80 + 2 - 56.	SETUP	SETUP	1	6	1	1
+train-6478-3	SETUP	L7	L7	h	Multiplies total height 6 instead of second-week growth 4	SETUP	SETUP	1	5	2	1
+train-6487-0	SETUP	L9	L7	h	Subtracts kept 5 and also sets remainder 5; double counts.	OTHER	OTHER	None	25	0	1
+train-6502-4	TARGET	L6	L6	m	Gives one bank's $6 as total for two banks; alt=SETUP	TARGET	TARGET	None	8	None	1
+train-6510-0	TARGET	L8	L8	h	Gives 12 hours for four videos; asked per video	NOEQ	NOEQ	None	9	None	1
+train-652-0	SETUP	L7	L7	h	Uses 30 extra boxes as Sunday's sales instead of 90	TARGET	TARGET	None	8	1	1
+train-6520-1	SETUP	L5	L5	m	Adds weekday and Saturday pay as one daily rate; alt=L8	SETUP	SETUP	0	5	0	1
+train-653-2	OTHER	L1	L1	h	Derivation correctly gets 16, but stated answer is 20	NOEQ	NOEQ	None	1	None	1
+train-6531-2	SETUP	L5	L5	h	Uses 6 logs per hour instead of 3 burned.	SETUP	SETUP	0	5	0	1
+train-6536-4	SETUP	L5	L4	h	Treats 200 as this week's total instead of last week's	SETUP	SETUP	0	9	0	1
+train-6539-2	OTHER	L17	L17	h	Correct 325,000 computed; formatting yields 325.	NOEQ	NOEQ	None	17	None	1
+train-6540-2	SETUP	L5	L5	m	Three times more read as 3x, gold uses 4x; alt=OTHER	SETUP	SETUP	1	9	0	1
+train-6544-0	SETUP	L5	L3	m	Wrong equation; calls I/2-20 the spent amount; alt=L3.	NOEQ	NOEQ	None	13	None	1
+train-6545-1	SETUP	L4	L4	h	Daily savings uses $4 instead of $3 home cost	SETUP	SETUP	2	6	1	4
+train-6553-2	SETUP	L10	L10	h	Adds 6 loaves instead of 24 Tuesday bananas	SETUP	SETUP	2	10	2	1
+train-6561-1	SETUP	L3	L3	h	A fifth of 50 computed as 50*5/50 = 5	SETUP	SETUP	1	4	0	1
+train-6568-4	SETUP	L17	L17	m	Uses one sack 50,000 g instead of 100,000 g; alt=L20	SETUP	SETUP	0	5	None	1
+train-657-3	CALC	L5	L5	m	10 minutes plus 1h20 summed as 32 minutes; alt=SETUP	NOEQ	NOEQ	None	19	None	1
+train-6571-2	TARGET	L16	L16	h	Gives Steve's initial 7, not after receiving 3	NOEQ	NOEQ	None	16	None	1
+train-6581-3	SETUP	L3	L3	h	Adds per-cake 6 to 12, ingredient cost becomes 18.	SETUP	SETUP	1	3	1	1
+train-6601-4	OTHER	L14	L14	m	No values computed; final 40 unexplained; alt=SETUP.	NOEQ	NOEQ	None	15	None	1
+train-6608-3	CALC	L2	L2	m	20*(10+5+5) equals 400, not 200; alt=SETUP	SETUP	SETUP	5	14	0	1
+train-6612-3	SETUP	L18	L13	m	Divides Steven's 71 hikes, not remaining 64; alt=L14	NOEQ	NOEQ	None	20	None	1
+train-6618-1	CALC	L4	L4	m	6 + 12 summed as 17 instead of 18; alt=L1	NOEQ	NOEQ	None	1	None	1
+train-6626-4	SETUP	L10	L10	h	Ignores double-sided printing; one side per sheet, 4 pages/sheet.	OTHER	OTHER	None	19	None	1
+train-6630-4	TARGET	L1	L1	m	States remainder 40, later computes contingency 30; alt=OTHER	NOEQ	NOEQ	None	1	None	1
+train-6641-1	TARGET	L8	L7	m	Gives weight per leg, never divides by 0.5 area; alt=SETUP	OTHER	OTHER	None	9	1	1
+train-6649-4	SETUP	L3	L2	h	Divides steps by 3 km; one lap is 5350 steps.	NOEQ	NOEQ	None	14	None	1
+train-665-4	SETUP	L3	L3	h	Each kid takes 3 apples total, not 3 per teacher	SETUP	SETUP	1	4	0	1
+train-6651-2	TARGET	L5	L5	h	Gives red-or-green count instead of neither.	NOEQ	NOEQ	None	5	None	1
+train-6653-4	SETUP	L3	L3	h	Total sugar omits the 3 cups at home	SETUP	SETUP	2	14	0	1
+train-6660-3	CALC	L14	L14	h	100+60+90+150 summed as 300 instead of 400	CALC	ARITH	4	14	4	1
+train-6664-3	TARGET	L12	L12	h	Gives total tissue cost $6, not per box	TARGET	TARGET	None	13	None	1
+train-6670-3	SETUP	L12	L10	h	Subtracts only white chips, omits 3 blue chips	NOEQ	NOEQ	None	14	None	1
+train-6672-2	SETUP	L12	L11	m	Counts 8 chores weekly instead of Patty's 4; alt=L16	SETUP	SETUP	2	12	2	1
+train-6678-2	TARGET	L10	L10	h	Gives limes plus grapefruits 4, not grapefruits alone 2	TARGET	TARGET	None	11	None	1
+train-6685-4	SETUP	L8	L8	h	Craig's second day is 100, not 60.	OTHER	OTHER	None	19	1	1
+train-6688-4	TARGET	L11	L9	h	Gives additional computers 8 instead of total 49	TARGET	TARGET	None	11	None	1
+train-67-4	SETUP	L4	L3	m	Counts Jesse's 3-day 2 miles three times; alt=L7	SETUP	SETUP	3	7	1	4
+train-6716-3	SETUP	L20	L18	h	Adds rectangles to marker capacity: total should be 48	SETUP	SETUP	4	33	None	1
+train-6736-1	SETUP	L8	L8	m	14 singles bought instead of dozen plus two; alt=OTHER	SETUP	SETUP	1	8	1	1
+train-6755-4	SETUP	L4	L2	h	Assumes 5 pictures per new gallery without using pencil total	SETUP	SETUP	0	4	0	1
+train-6757-2	CALC	L10	L10	h	1.5M+0.2M+5.1M summed as 7.8M instead of 6.8M	SETUP	SETUP	3	12	3	1
+train-6758-0	SETUP	L13	L12	h	Divides walls by hours instead of multiplying by 2	SETUP	SETUP	1	13	1	1
+train-6768-3	OTHER	L3	L3	m	Gold seems wrong: Emily is 20+6=26, so Kate 13	SETUP	SETUP	0	3	0	4
+train-677-3	OTHER	L8	L8	m	Correct formulas, no values; 1200 unsupported. alt=CALC	NOEQ	NOEQ	None	8	None	1
+train-6773-3	SETUP	L6	L6	h	Uses 20 nights over 4 weeks; should be 5 nights	SETUP	SETUP	2	8	1	1
+train-6776-3	SETUP	L14	L14	h	Difference computed as x-0.8x instead of x-30000	OTHER	OTHER	None	20	None	1
+train-6791-1	SETUP	L2	L2	h	Ratio parts sum to 5, not 15	SETUP	SETUP	0	2	0	1
+train-6799-4	SETUP	L13	L12	h	iPhones sold omits the defective iPhone thrown out	SETUP	SETUP	1	13	1	4
+train-6821-1	SETUP	L4	L4	h	Counts work walk one way only, not round trip	SETUP	SETUP	0	4	0	1
+train-6849-1	SETUP	L12	L12	h	Rest counted once; two stops per leg give 2 hours	SETUP	SETUP	2	12	2	1
+train-6850-2	SETUP	L2	L2	h	Includes strings per night in count of shows	SETUP	SETUP	1	4	0	1
+train-6861-3	SETUP	L2	L2	h	Needs money for two games, $120, not $60	TARGET	TARGET	None	12	None	1
+train-6866-4	SETUP	L16	L16	h	Geese leaving computed as 5-15 = -10, departure ignored	NOEQ	NOEQ	None	24	None	1
+train-6874-0	SETUP	L6	L6	h	Omits $15 overage fee from six-month total	SETUP	SETUP	1	4	2	1
+train-6875-0	SETUP	L8	L8	m	Fat of 40 herring given as 40 oz, not 1600; alt=CALC	OTHER	OTHER	None	14	1	1
+train-6882-4	SETUP	L3	L3	h	Subtracts car from full pay instead of debit-card half.	SETUP	SETUP	0	3	0	1
+train-6883-2	SETUP	L10	L9	h	Adds trade-in money instead of subtracting it	SETUP	SETUP	2	10	2	1
+train-6886-4	SETUP	L7	L7	h	Fourth week is 340, not sum with weeks 2 and 3.	OTHER	OTHER	None	11	None	1
+train-6892-4	OTHER	L10	L10	m	Only answers 68 and 34, no computed values; alt=CALC	NOEQ	NOEQ	None	13	None	1
+train-6897-4	SETUP	L14	L14	m	Converts 1 hour instead of 5 hours to minutes; alt=TARGET.	SETUP	SETUP	4	14	4	1
+train-6908-3	CALC	L7	L7	m	New total 2200*1.15 should be 2530, written 3460; alt=OTHER	NOEQ	NOEQ	None	8	None	4
+train-6909-3	SETUP	L8	L6	h	Divides by per-day rate, ignoring the 10 days.	TARGET	TARGET	None	13	None	1
+train-691-1	CALC	L3	L3	m	6 a.m. plus 18 hours is midnight, not 6 p.m.; alt=SETUP	NOEQ	NOEQ	None	8	None	1
+train-6917-0	CALC	L2	L2	h	Rainfall sum equals 20.00, not 20.90	CALC	ARITH	0	2	0	1
+train-6920-2	SETUP	L14	L11	h	Compounds interest on new balance; problem says interest on original amount	NOEQ	NOEQ	None	19	None	1
+train-6927-4	SETUP	L7	L6	m	Assigns kiddie scoops to Mrs. Martin, double-counting them; alt=L16	SETUP	SETUP	4	15	1	1
+train-6932-2	CALC	L15	L15	h	432-360 equals 72, not 172	NOEQ	NOEQ	None	17	None	1
+train-6941-2	CALC	L12	L12	h	200 - 80 - 60 equals 60, not 40.	NOEQ	NOEQ	None	13	None	1
+train-6950-3	CALC	L7	L7	h	L + 4L equals 5L, written as 4L	NOEQ	NOEQ	None	14	None	1
+train-6952-4	CALC	L21	L21	h	Costs summed as 13 instead of 14	CALC	ARITH	3	21	3	1
+train-6968-4	OTHER	L1	L1	h	Derivation gives 4 periods but stated answer is 8	NOEQ	NOEQ	None	15	None	1
+train-6974-0	SETUP	L9	L7	h	Multiplies daily use by 5 days; should divide 60 by 20.	CALC	ARITH	4	11	3	1
+train-6984-0	SETUP	L18	L17	h	Forgets to subtract 20 removed words	NOEQ	NOEQ	None	24	None	1
+train-6988-4	OTHER	L11	L11	m	Correct formulas, no computed values; answer 160 unsupported; alt=CALC	NOEQ	NOEQ	None	11	None	1
+train-6990-3	SETUP	L11	L11	m	Pastry flour 2 pounds added twice; alt=CALC	SETUP	SETUP	0	11	0	1
+train-6998-1	SETUP	L6	L5	h	Remaining pages subtracts pages read in hour, not current page	SETUP	SETUP	1	6	1	1
+train-6999-4	CALC	L5	L5	h	2 * 1/4 computed as 1 instead of 0.5	SETUP	SETUP	3	9	0	1
+train-7001-2	OTHER	L8	L8	h	Only symbolic steps; answer 553 has no derivation	NOEQ	NOEQ	None	8	None	1
+train-7002-1	CALC	L8	L8	h	6:00 pm minus 8 hours computed as 8:00 am	TARGET	TARGET	None	9	3	1
+train-7003-3	CALC	L19	L19	h	57+190+152 equals 399, not 309.	CALC	ARITH	3	21	None	1
+train-7005-0	SETUP	L11	L10	h	Ignores moon area being 1/5 of Earth	OTHER	OTHER	None	13	None	1
+train-7008-4	SETUP	L10	L9	h	Uses one square painting instead of three	SETUP	SETUP	4	10	4	1
+train-7028-3	OTHER	L1	L1	m	Only plan and answer 40, no derivation; alt=TARGET	NOEQ	NOEQ	None	5	None	1
+train-7043-3	SETUP	L11	L11	h	Water bill $20 still owed, written as $0	SETUP	SETUP	1	6	4	1
+train-7045-3	SETUP	L8	L8	h	Uses 2 vacuuming hours instead of 4	TARGET	TARGET	None	15	None	1
+train-7048-4	SETUP	L10	L10	h	Divides by per-member pay instead of band's $80 per gig	OTHER	OTHER	None	14	None	1
+train-7050-3	SETUP	L2	L2	m	Subtracts 2 courses from 60 bricks and re-adds last wall; alt=L1	NOEQ	NOEQ	None	1	None	1
+train-7053-4	SETUP	L14	L14	h	Uses blue removed 12 instead of blue left 18	SETUP	SETUP	2	14	2	1
+train-7063-0	SETUP	L16	L16	h	Mothers are 2200-1200=1000, not 1200	NOEQ	NOEQ	None	20	None	1
+train-7068-4	SETUP	L28	L28	h	Subtracts full $350 instead of his $175 half	OTHER	OTHER	None	31	4	1
+train-7077-3	SETUP	L6	L6	m	Uses 0.6667 ft (8 inches) for 2 inches melted; alt=CALC	SETUP	SETUP	0	2	2	1
+train-7086-3	SETUP	L7	L7	h	Cotton candy earnings not multiplied by 5 days	SETUP	SETUP	1	8	1	1
+train-709-4	SETUP	L14	L14	h	Uses 3 meatballs per plate instead of 1 left	TARGET	TARGET	None	15	3	1
+train-7104-4	CALC	L8	L8	h	10000 + 600 + 2500 equals 13100, written as 12100	SETUP	SETUP	3	12	3	1
+train-7110-4	SETUP	L5	L5	m	Treats 120 buckets as joint trips; wrong trip ratio; alt=L13	SETUP	SETUP	0	30	None	1
+train-7118-4	OTHER	L10	L10	m	Answer 102 with no computed values; alt=CALC	NOEQ	NOEQ	None	11	None	1
+train-7125-2	SETUP	L8	L8	h	Multiplies $10 by $0.50 instead of dividing.	SETUP	SETUP	2	8	2	1
+train-7139-2	SETUP	L8	L4	m	Target 24 groups wrong; confuses books per group with groups; alt=L10.	SETUP	SETUP	1	10	1	1
+train-7145-3	CALC	L8	L8	h	246240*1.5 equals 369360, not 374360.	CALC	ARITH	3	8	3	1
+train-716-0	SETUP	L7	L7	h	Guy's dime of 10 cents omitted from sum	SETUP	SETUP	3	7	3	1
+train-717-4	SETUP	L2	L2	h	Uses all 8 shots, ignoring split with friend	SETUP	SETUP	0	8	0	1
+train-7181-2	SETUP	L12	L12	h	Business occupancy should be 25-3=22, not 25	SETUP	SETUP	0	6	2	1
+train-7186-4	OTHER	L6	L6	h	Only answers listed, no derivation	NOEQ	NOEQ	None	6	None	1
+train-7189-1	SETUP	L3	L3	h	Total students omits the 13 girls	OTHER	OTHER	None	9	0	1
+train-7197-1	SETUP	L5	L4	m	Twice more means 3 times green per gold; alt=OTHER	NOEQ	NOEQ	None	11	None	1
+train-7200-3	SETUP	L12	L11	h	Johanna's donation formula wrong; should be 16/2 = 8	SETUP	SETUP	2	12	2	1
+train-7202-3	SETUP	L15	L13	h	Subtracts only Chris's share instead of both shares	NOEQ	NOEQ	None	21	None	1
+train-7206-0	SETUP	L13	L12	h	Left set equal to eaten plus total, not total minus eaten	NOEQ	NOEQ	None	22	None	1
+train-721-2	CALC	L5	L5	h	300 + 800 + 1100 summed as 1100 instead of 2200	NOEQ	NOEQ	None	1	None	1
+train-7214-4	OTHER	L12	L12	h	No computed values; answer 80 stated without derivation	NOEQ	NOEQ	None	13	None	1
+train-7215-3	SETUP	L2	L2	h	Multiplies total items by sum of prices, wrong formula.	SETUP	SETUP	0	5	0	1
+train-7235-4	SETUP	L9	L7	m	Charlie is 11 then; adds extra years again; alt=OTHER	SETUP	SETUP	1	8	2	1
+train-7250-4	CALC	L5	L5	m	2 + 10 cars equals 12, not 13. alt=SETUP	SETUP	SETUP	0	9	0	1
+train-7263-2	SETUP	L10	L10	h	Needed cans copied as 7 instead of 42	OTHER	OTHER	None	11	None	1
+train-7279-3	TARGET	L30	L21	h	Converts to gallons; asked weekly milk in ounces.	OTHER	OTHER	None	30	None	1
+train-7283-3	SETUP	L5	L4	h	Divides rows by bed count; beds per plant should be rows/2	SETUP	SETUP	1	4	2	1
+train-7286-4	SETUP	L8	L8	h	Total omits Jacob's 18 hours	SETUP	SETUP	2	8	2	1
+train-729-4	SETUP	L4	L4	h	Invents dog speed 4 and adds speeds.	SETUP	SETUP	0	5	0	1
+train-7303-3	OTHER	L7	L7	m	Answer 13 stated without numeric computation; alt=CALC	NOEQ	NOEQ	None	7	None	1
+train-7305-3	SETUP	L14	L13	h	Uses current 40 dogs, not original 20, for original relation.	NOEQ	NOEQ	None	18	None	1
+train-7309-4	OTHER	L9	L9	m	Correct expressions, no computed values; answer 52 unsupported; alt=SETUP	NOEQ	NOEQ	None	9	None	1
+train-7310-3	CALC	L9	L9	m	Correct setup, 84+11 given as 89 instead of 95; alt=OTHER	NOEQ	NOEQ	None	10	None	1
+train-7316-1	SETUP	L12	L12	h	Uses 10 jars instead of the 4 jars available	SETUP	SETUP	4	15	3	1
+train-7320-3	SETUP	L4	L4	h	Pedro's own 20 gumballs omitted; he has 80.	SETUP	SETUP	2	11	0	1
+train-7328-0	SETUP	L6	L6	h	Counts 4 teachers; problem says 2 teachers from both classes	SETUP	SETUP	1	6	1	1
+train-7330-3	SETUP	L6	L5	m	Digging speed inverted: hours per foot used as feet per hour; alt=L18	SETUP	SETUP	2	18	0	4
+train-7331-1	SETUP	L2	L2	h	Treats 2700 as price per ounce, not per bottle	SETUP	SETUP	0	2	0	1
+train-7332-4	SETUP	L9	L9	h	Treats $45,000 as total of all four pieces, not three	SETUP	SETUP	0	12	0	1
+train-7337-4	SETUP	L6	L5	h	Second intersection taken as 1/4 of 40, not 40 plus 10	SETUP	SETUP	2	12	0	1
+train-734-3	SETUP	L3	L3	h	Swaps sweet and sour percentages.	SETUP	SETUP	0	13	0	1
+train-7344-0	OTHER	L1	L1	h	Derivation correctly gives 10 but stated answer is 6	NOEQ	NOEQ	None	1	None	1
+train-7354-4	SETUP	L4	L4	h	8 cuts give 2 refills, i.e. 4 gallons, not 2	TARGET	TARGET	None	11	1	1
+train-7365-1	SETUP	L11	L6	h	Subtracts pizza cost again from Frank's leftover 9.	SETUP	SETUP	2	17	None	1
+train-7371-3	SETUP	L17	L17	h	Needs 85 average over 10 tests, not 8*75+10	CALC	ARITH	3	17	3	1
+train-7381-4	SETUP	L6	L4	h	Subtracts 10 years again from mother's age at death	SETUP	SETUP	1	6	1	1
+train-7386-3	SETUP	L7	L5	m	Treats men+women 60 as total passengers instead of 80; alt=L5	SETUP	SETUP	1	7	1	1
+train-7389-2	SETUP	L3	L1	h	Age gap uses 59-38 instead of 71-59	SETUP	SETUP	0	3	0	1
+train-739-2	TARGET	L5	L4	m	28 people is weekly, not per day. alt=SETUP	TARGET	TARGET	None	6	1	1
+train-7398-3	CALC	L8	L8	h	12+6-1+5-2 equals 20, not 18	NOEQ	NOEQ	None	9	None	1
+train-7401-0	OTHER	L11	L11	h	Sum 10750 is correct; gold 10850 from reference addition error	SETUP	SETUP	0	3	3	1
+train-7406-2	CALC	L14	L14	h	13 + 11 + 13 + 11 summed as 58 instead of 48	CALC	ARITH	0	14	0	1
+train-7408-4	TARGET	L14	L12	h	Gives average per minute instead of per hour.	SETUP	SETUP	2	11	None	1
+train-7418-1	SETUP	L6	L6	h	Divided ounces by 7 instead of multiplying	SETUP	SETUP	1	6	1	1
+train-7420-1	SETUP	L20	L19	h	Divides leaf earnings by 5 instead of remaining $20	SETUP	SETUP	3	20	3	1
+train-7424-2	SETUP	L5	L4	h	Divides total paid by tax rate, treating 240 as taxed pounds.	SETUP	SETUP	1	24	None	1
+train-7443-1	TARGET	L14	L11	h	Gives mother's current age, not her age at birth	TARGET	TARGET	None	14	None	1
+train-7444-4	SETUP	L13	L13	h	Counts two short songs 10 plus extra 10; ignores gig count	SETUP	SETUP	2	13	2	1
+train-7453-0	CALC	L11	L11	h	75+225-25 equals 275, not 300	NOEQ	NOEQ	None	12	None	1
+train-7457-2	OTHER	L2	L2	h	Question asks Mark's deposit, given as 88; gold looks wrong	NOEQ	NOEQ	None	2	None	1
+train-7463-2	SETUP	L8	L8	h	New women should be 30+10=40, not 100-30+10	SETUP	SETUP	3	8	3	1
+train-7464-2	OTHER	L10	L10	h	Total 54000 asserted with no computed intermediate values	NOEQ	NOEQ	None	11	None	1
+train-756-0	TARGET	L13	L10	m	Stops after giving 2 stamps, omits mountain stamp received; alt=SETUP	TARGET	TARGET	None	13	None	1
+train-757-3	SETUP	L6	L6	h	Frank total taken as 2 cups, omitting afternoon cup	SETUP	SETUP	2	6	2	1
+train-760-4	SETUP	L8	L4	h	Divides by 2 servings twice, getting 7.5 batches	SETUP	SETUP	1	8	1	1
+train-766-0	CALC	L11	L11	h	7 + 8 - 3 equals 12, not 15.	NOEQ	NOEQ	None	22	None	1
+train-774-4	TARGET	L30	L30	m	Picks first job $240 instead of maximum $250; alt=OTHER	TARGET	TARGET	None	31	None	1
+train-789-0	CALC	L5	L5	h	15 + 3 + 21 equals 39, not 40.	OTHER	OTHER	None	6	None	1
+train-791-2	SETUP	L2	L2	h	Dutch computed as 90/5 instead of 3/5 of 90	SETUP	SETUP	0	2	0	1
+train-794-4	TARGET	L15	L12	m	Gives total before Carlos ate yellow candies; alt=SETUP.	TARGET	TARGET	None	15	None	1
+train-803-4	SETUP	L6	L6	h	One pack per student instead of packs of five	SETUP	SETUP	3	12	0	1
+train-808-2	SETUP	L15	L14	m	Adds restroom students to classroom count, later double counted; alt=L19	NOEQ	NOEQ	None	21	None	1
+train-816-3	SETUP	L2	L2	h	Matt and son are 2 people, not 3	SETUP	SETUP	0	10	0	1
+train-82-4	SETUP	L6	L6	h	Treats $500 weekly pay as hourly wage	SETUP	SETUP	1	6	1	1
+train-820-4	SETUP	L8	L7	h	Assigns tip to friend's payment, then subtracts from total	SETUP	SETUP	4	10	3	1
+train-830-4	SETUP	L11	L11	h	Takes 30% of 60% instead of 30% of all students	SETUP	SETUP	0	12	0	1
+train-836-3	TARGET	L9	L9	h	Gives number of tails, not tails minus heads.	NOEQ	NOEQ	None	9	None	1
+train-848-1	TARGET	L6	L6	m	Gives cow-weeks 120, not divided by 5 weeks; alt=SETUP	NOEQ	NOEQ	None	7	None	1
+train-87-1	SETUP	L15	L10	h	Subtracts 400 pounds as old value; old value is $1200	NOEQ	NOEQ	None	17	None	1
+train-871-4	OTHER	L1	L1	h	Derivation reaches 1979 but answer line says 1984.	NOEQ	NOEQ	None	1	None	1
+train-877-1	SETUP	L13	L13	h	Divides by 3 people instead of 4.	SETUP	SETUP	4	13	4	1
+train-89-3	SETUP	L6	L6	h	Uses 15% over five days instead of 40% Friday only	OTHER	OTHER	None	13	None	1
+train-890-4	SETUP	L2	L2	h	Third throw four times first; should be twice.	SETUP	SETUP	0	11	0	1
+train-892-4	SETUP	L7	L6	h	Undiscounted total taken as 439/7 instead of 80*7	NOEQ	NOEQ	None	15	None	1
+train-898-3	SETUP	L4	L4	h	Six ropes need 5 knots, not 3	SETUP	SETUP	1	4	1	1
+train-90-1	SETUP	L6	L6	h	Multiplies cups per day by months, not 90 days	OTHER	OTHER	None	7	1	1
+train-901-4	SETUP	L6	L6	h	Uses Sandi's $600 instead of $300 spent	NOEQ	NOEQ	None	9	None	1
+train-903-1	CALC	L17	L17	h	35 + 56 + 28 equals 119, not 120.	CALC	ARITH	0	17	0	1
+train-908-0	OTHER	L9	L9	m	Correct formula, no computed values; answer 110000 unsupported; alt=CALC	NOEQ	NOEQ	None	10	None	1
+train-911-3	SETUP	L6	L6	h	Paul's 6-hour return trip omitted from his walking time	OTHER	OTHER	None	12	None	1
+train-92-0	SETUP	L9	L8	h	Sums full earnings, ignoring that only half is saved	TARGET	TARGET	None	10	0	1
+train-938-4	SETUP	L5	L5	m	Four draw points instead of three and sum off; alt=CALC	CALC	ARITH	0	5	0	1
+train-940-4	SETUP	L4	L3	m	Reverses relation: Michael has 10 more than Mark; alt=L3	SETUP	SETUP	0	9	0	1
+train-942-3	SETUP	L7	L6	h	Adds 12 minutes and divides by 60 instead of 12	SETUP	SETUP	2	7	2	1
+train-946-3	SETUP	L15	L15	h	All 13 classes priced at extra rate; pack is $75	SETUP	SETUP	2	17	None	1
+train-948-4	SETUP	L7	L6	h	Reads 4 times more as 2 + 4*2 = 10	SETUP	SETUP	0	8	0	1
+train-951-3	SETUP	L5	L5	h	Applies plus-two only to neighborhood friends; 18 friends each bring 2	SETUP	SETUP	0	7	0	1
+train-958-2	SETUP	L12	L1	m	S already current age; adds 5 again; alt=L3	SETUP	SETUP	1	12	1	1
+train-97-1	SETUP	L7	L7	h	Assumes 24 bottom books without basis; mystery books then omitted	SETUP	SETUP	0	5	1	1
+train-975-0	TARGET	L7	L7	m	Gives free throw attempts, not made shots; alt=OTHER	TARGET	TARGET	None	7	None	1
+train-98-3	CALC	L10	L10	h	4+8+27+6 equals 45, not 47.	SETUP	SETUP	1	4	None	1
+train-982-4	SETUP	L12	L10	h	Omits Ted's 4 cookies.	TARGET	TARGET	None	13	3	1
+train-990-2	CALC	L9	L9	m	Correct setup, total sum given as 1017 instead of 567; alt=OTHER	NOEQ	NOEQ	None	10	None	1
+train-992-3	OTHER	L4	L4	h	States 6 though explanation computes 15	NOEQ	NOEQ	None	5	None	1

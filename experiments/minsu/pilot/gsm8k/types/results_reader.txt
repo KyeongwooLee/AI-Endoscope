@@ -1,0 +1,58 @@
+items 3386: dominant 2381  stuck 198  competing 291  spread 516
+readers: qwen1.5b (7 layers), qwen7b (7 layers), smollm2 (7 layers)
+
+## each reader, every layer (r_mean); AUROC, 4-way = balanced accuracy
+  qwen1.5b
+    qwen1.5b L4            stuck vs spread 0.727  4-way 0.350  stuck vs rest 0.582  dominant vs rest 0.678
+    qwen1.5b L8            stuck vs spread 0.747  4-way 0.369  stuck vs rest 0.593  dominant vs rest 0.692
+    qwen1.5b L12           stuck vs spread 0.829  4-way 0.389  stuck vs rest 0.663  dominant vs rest 0.725
+    qwen1.5b L16           stuck vs spread 0.874  4-way 0.429  stuck vs rest 0.674  dominant vs rest 0.755
+    qwen1.5b L20           stuck vs spread 0.882  4-way 0.442  stuck vs rest 0.651  dominant vs rest 0.756
+    qwen1.5b L24           stuck vs spread 0.875  4-way 0.411  stuck vs rest 0.648  dominant vs rest 0.747
+    qwen1.5b L28           stuck vs spread 0.841  4-way 0.411  stuck vs rest 0.600  dominant vs rest 0.731
+  qwen7b
+    qwen7b L4              stuck vs spread 0.716  4-way 0.352  stuck vs rest 0.579  dominant vs rest 0.689
+    qwen7b L8              stuck vs spread 0.790  4-way 0.395  stuck vs rest 0.624  dominant vs rest 0.709
+    qwen7b L12             stuck vs spread 0.823  4-way 0.406  stuck vs rest 0.656  dominant vs rest 0.730
+    qwen7b L16             stuck vs spread 0.889  4-way 0.425  stuck vs rest 0.672  dominant vs rest 0.763
+    qwen7b L20             stuck vs spread 0.901  4-way 0.462  stuck vs rest 0.710  dominant vs rest 0.807
+    qwen7b L24             stuck vs spread 0.876  4-way 0.436  stuck vs rest 0.662  dominant vs rest 0.773
+    qwen7b L28             stuck vs spread 0.843  4-way 0.432  stuck vs rest 0.640  dominant vs rest 0.753
+  smollm2
+    smollm2 L3             stuck vs spread 0.724  4-way 0.358  stuck vs rest 0.566  dominant vs rest 0.682
+    smollm2 L7             stuck vs spread 0.776  4-way 0.350  stuck vs rest 0.591  dominant vs rest 0.694
+    smollm2 L10            stuck vs spread 0.793  4-way 0.377  stuck vs rest 0.624  dominant vs rest 0.695
+    smollm2 L14            stuck vs spread 0.857  4-way 0.393  stuck vs rest 0.649  dominant vs rest 0.728
+    smollm2 L17            stuck vs spread 0.879  4-way 0.409  stuck vs rest 0.667  dominant vs rest 0.743
+    smollm2 L21            stuck vs spread 0.878  4-way 0.410  stuck vs rest 0.665  dominant vs rest 0.728
+    smollm2 L24            stuck vs spread 0.813  4-way 0.385  stuck vs rest 0.622  dominant vs rest 0.719
+  reader layer used below = best layer for stuck vs spread: qwen1.5b L20, qwen7b L20, smollm2 L17
+
+## all inputs; AUROC, 4-way = balanced accuracy (chance 0.25)
+  self                               stuck vs spread 0.882  4-way 0.441  stuck vs rest 0.652  dominant vs rest 0.756
+  conf                               stuck vs spread 0.825  4-way 0.408  stuck vs rest 0.684  dominant vs rest 0.710
+  qwen1.5b L20                       stuck vs spread 0.882  4-way 0.442  stuck vs rest 0.651  dominant vs rest 0.756
+  qwen7b L20                         stuck vs spread 0.901  4-way 0.462  stuck vs rest 0.710  dominant vs rest 0.807
+  smollm2 L17                        stuck vs spread 0.879  4-way 0.409  stuck vs rest 0.667  dominant vs rest 0.743
+  self + conf                        stuck vs spread 0.883  4-way 0.437  stuck vs rest 0.656  dominant vs rest 0.760
+  qwen1.5b L20 + conf                stuck vs spread 0.884  4-way 0.441  stuck vs rest 0.654  dominant vs rest 0.759
+  qwen7b L20 + conf                  stuck vs spread 0.901  4-way 0.465  stuck vs rest 0.711  dominant vs rest 0.807
+  smollm2 L17 + conf                 stuck vs spread 0.880  4-way 0.416  stuck vs rest 0.677  dominant vs rest 0.746
+  self + qwen1.5b L20                stuck vs spread 0.878  4-way 0.441  stuck vs rest 0.648  dominant vs rest 0.754
+  self + qwen7b L20                  stuck vs spread 0.902  4-way 0.451  stuck vs rest 0.709  dominant vs rest 0.793
+  self + smollm2 L17                 stuck vs spread 0.891  4-way 0.424  stuck vs rest 0.664  dominant vs rest 0.747
+  self + qwen1.5b L20 + conf         stuck vs spread 0.879  4-way 0.437  stuck vs rest 0.651  dominant vs rest 0.757
+  self + qwen7b L20 + conf           stuck vs spread 0.902  4-way 0.455  stuck vs rest 0.711  dominant vs rest 0.793
+  self + smollm2 L17 + conf          stuck vs spread 0.892  4-way 0.428  stuck vs rest 0.669  dominant vs rest 0.750
+
+## paired bootstrap, A minus B: mean [95% CI]
+  self                               - qwen1.5b L20               stuck vs spread -0.000 [-0.002,+0.001]  4-way -0.002 [-0.016,+0.011]  stuck vs rest +0.001 [-0.009,+0.011]  dominant vs rest +0.000 [-0.003,+0.004]
+  self                               - qwen7b L20                 stuck vs spread -0.019 [-0.037,-0.001]  4-way -0.022 [-0.047,+0.003]  stuck vs rest -0.058 [-0.087,-0.030]  dominant vs rest -0.051 [-0.063,-0.039]
+  self                               - smollm2 L17                stuck vs spread +0.003 [-0.016,+0.021]  4-way +0.032 [+0.009,+0.056]  stuck vs rest -0.014 [-0.047,+0.019]  dominant vs rest +0.014 [+0.002,+0.025]
+  self + qwen1.5b L20                - qwen1.5b L20               stuck vs spread -0.004 [-0.006,-0.003]  4-way -0.002 [-0.013,+0.010]  stuck vs rest -0.003 [-0.010,+0.004]  dominant vs rest -0.002 [-0.005,+0.001]
+  self + qwen7b L20                  - qwen7b L20                 stuck vs spread +0.001 [-0.004,+0.007]  4-way -0.011 [-0.032,+0.008]  stuck vs rest +0.000 [-0.020,+0.018]  dominant vs rest -0.014 [-0.021,-0.007]
+  self + smollm2 L17                 - smollm2 L17                stuck vs spread +0.012 [+0.001,+0.022]  4-way +0.015 [-0.007,+0.037]  stuck vs rest -0.003 [-0.027,+0.021]  dominant vs rest +0.005 [-0.005,+0.015]
+  self + conf                        - conf                       stuck vs spread +0.058 [+0.025,+0.091]  4-way +0.028 [-0.002,+0.057]  stuck vs rest -0.030 [-0.069,+0.011]  dominant vs rest +0.049 [+0.032,+0.067]
+  self + qwen1.5b L20 + conf         - qwen1.5b L20 + conf        stuck vs spread -0.005 [-0.007,-0.003]  4-way -0.003 [-0.015,+0.009]  stuck vs rest -0.003 [-0.010,+0.005]  dominant vs rest -0.002 [-0.005,+0.001]
+  self + qwen7b L20 + conf           - qwen7b L20 + conf          stuck vs spread +0.002 [-0.004,+0.007]  4-way -0.010 [-0.030,+0.010]  stuck vs rest +0.001 [-0.018,+0.019]  dominant vs rest -0.014 [-0.021,-0.006]
+  self + smollm2 L17 + conf          - smollm2 L17 + conf         stuck vs spread +0.012 [+0.001,+0.022]  4-way +0.012 [-0.009,+0.033]  stuck vs rest -0.008 [-0.031,+0.015]  dominant vs rest +0.003 [-0.006,+0.013]

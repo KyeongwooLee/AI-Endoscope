@@ -1,138 +1,180 @@
-# 조민수 실험 (Qwen2.5-1.5B-Instruct)
+# 조민수 실험 (Qwen2.5-1.5B-Instruct, GSM8K)
 
-질문: 모델 내부 hidden state가 confidence(토큰 확률)보다 **오답을 더 잘 찾는가**, 그리고 **오류 유형**까지 구분하는가.
+질문: 모델 내부 hidden state가 confidence(토큰 확률)보다 **자기 오답을 더 잘 찾는가**, 그리고 오답에 대해 **무엇을 더 아는가** (유형, 위치, 고치는 법, 응답 패턴).
 모델 가중치는 고정했고, 학습한 것은 logistic regression probe뿐이다.
+
+## 한눈에 보기
+
+| 질문 | 결과 | 섹션 |
+|---|---|---|
+| 맞았나 틀렸나 | hidden 0.88 vs confidence 0.77 (같은 문제 안에서 0.78 vs 0.68). **가장 확실한 결과** | 2 |
+| 오류 유형 | "계산 실수 vs 나머지"만 구분. 나머지 유형은 주제·난이도를 따라감 | 4, 8, 9 |
+| 처음 틀린 위치 | hidden 51% vs confidence 46% (작지만 유의) | 5 |
+| 어떻게 고치나 | 처음부터 다시 풀기가 거의 모든 방법을 이김. 계산기·코드만 일부 도움 | 6, 10 |
+| 응답 패턴 (같은 오답 반복 vs 답이 흩어짐) | hidden 0.88이지만 **다른 모델이 같은 글을 읽어도 같거나 더 높음** → 자기 인식이 아니라 글에 있는 신호 | 11, 12 |
+| 논문 재현 (Orgad et al. 2025) | "주로 맞힘", "답이 여럿" 패턴은 재현. "같은 오답 반복"은 표본 부족으로 실패 | 13 |
+
+아직 안 한 것: 2번(정답/오답)에 외부 모델 대조군. 11~12에서 이 대조군이 "자기 인식" 주장을 무너뜨렸기 때문에 2번도 같은 검증이 필요하다.
+
+## 폴더
 
 | 폴더 | 내용 |
 |---|---|
-| [pilot/](pilot/) | EIC 데이터(GPT-4가 인위로 넣은 오류)로 단계 단위 오류 탐지·유형 분류 |
-| [pilot/gsm8k/](pilot/gsm8k/) | 모델이 직접 푼 GSM8K 풀이 약 4.3만 개로 정답/오답 판별 |
-| [taxonomy_relabel/](taxonomy_relabel/) | 성훈 오류 주석 885개를 EIC 유형 기준으로 다시 분류 + AI 검수 4건 (`setup_ab/`, `loc_audit/`, `cls_audit/`, `sh_audit/`) |
-| [pilot/gsm8k/types/](pilot/gsm8k/types/) | 규칙 오류 유형, 유형·위치 probe, 교정 실험 결과 |
+| [pilot/](pilot/) | EIC 데이터(GPT-4가 인위로 넣은 오류) 파일럿 |
+| [pilot/gsm8k/](pilot/gsm8k/) | 모델이 직접 푼 GSM8K 풀이로 한 모든 실험 코드 |
+| [pilot/gsm8k/types/](pilot/gsm8k/types/) | 결과 파일 `results_*.txt` (섹션마다 파일명 표기) |
+| [taxonomy_relabel/](taxonomy_relabel/) | AI 검수 라벨과 기준(RUBRIC) |
 
 데이터: [qwen-gsm8k-self-errors-v1](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/qwen-gsm8k-self-errors-v1)
 (GSM8K train 오답 7,691개, 규칙 라벨, token ids, hidden feature).
-팀 Release와 같이 **GSM8K 공식 test의 문제별 데이터·라벨은 공개하지 않는다.** 이 폴더의 문제별 라벨 파일도 train/SVAMP 행만 남겼고, test 결과는 요약 수치만 있다.
+팀 규칙대로 **GSM8K 공식 test의 문제별 데이터·라벨은 공개하지 않는다.** 이 폴더의 문제별 라벨은 train 행만 있고, test 결과는 요약 수치만 있다.
+원본 생성물(`gen/`, `fix/`, `fix2/`, `rs30/`)과 feature(약 7GB)는 서버 `~/yaicon_pilot/gsm8k/`에 있다.
+
+용어:
+- **AUROC**: 0.5는 찍기, 1.0은 완벽. 두 그룹을 얼마나 잘 가르는지.
+- **within (같은 문제 안)**: 같은 문제의 정답 풀이와 오답 풀이만 비교. 문제 난이도 효과를 뺀 값.
+- **질문만 본 hidden (q_end)**: 풀이 전에 질문만 읽은 상태. 이것과 비슷하면 "난이도만 안다"는 뜻.
+- **hidden r_mean L20**: 풀이 토큰들의 20층 hidden 평균. 대부분 실험에서 가장 좋았던 기본 feature.
+- **CI**: bootstrap 95% 신뢰구간. 0을 포함하지 않으면 차이가 유의.
+
+---
 
 ## 1. EIC 파일럿 (`pilot/`)
 
-EIC: Li et al., *Evaluating Mathematical Reasoning of LLMs: A Focus on Error Identification and Correction*.
-데이터는 <https://github.com/LittleCirc1e/EIC> (commit `be8132a`)의 `data/`를 `pilot/data/EIC`에 받아 사용했다(이 브랜치에는 포함하지 않음).
-GSM8K·MathQA 문제 1,558개, 9개 오류 유형.
+EIC(Li et al.) 데이터 <https://github.com/LittleCirc1e/EIC> (commit `be8132a`), GSM8K·MathQA 1,558문제, 9개 오류 유형. 데이터는 이 브랜치에 포함하지 않았다.
 
-**첫 오류 단계 찾기** (`run_steps.sh` → `results_steps.txt`, 문제 단위 5-fold, 같은 F1 기준)
-
-| 방법 | 위치 모름 F1 | 위치 알려줌 F1 |
+| 첫 오류 단계 찾기 (`results_steps.txt`) | 위치 모름 F1 | 위치 알려줌 F1 |
 |---|---|---|
-| 단계 NLL max (가장 낮은 토큰 확률) | 0.62 | 0.80 |
+| 단계 NLL max | 0.62 | 0.80 |
 | hidden mean L28 | 0.66 | 0.79 |
-| hidden mean L28 + NLL | **0.75** | **0.86** |
+| hidden + NLL | **0.75** | **0.86** |
 
-hidden + NLL이 NLL보다 +0.13 (bootstrap 95% CI [+0.11, +0.16]).
+오류 유형 9분류는 macro-F1 0.56이지만 정답 풀이 대조군도 0.43 → 신호 대부분이 문제·위치 맥락. 인위 주입 오류라 모델이 실제로 낼 오류도 아니어서, 이후 모델이 직접 푼 GSM8K로 옮겼다.
 
-**오류 유형 9분류** (`run.sh` → `results.txt`): L16 macro-F1 0.56(chance 0.11).
-하지만 같은 위치의 **정답 풀이**로 학습한 대조군도 0.43이 나와서, 신호 대부분이 유형이 아니라 문제·위치 맥락이다.
-인위 주입 오류라 모델이 실제로 낼 법한 오류도 아니다(`results.txt` [C]: 주입 토큰이 원래 토큰보다 확률이 높은 경우 2~26%).
+## 2. 정답/오답 판별 (`generate.py`, `extract_gen.py`, `probe_gen.py` → `pilot/gsm8k/results.txt`)
 
-## 2. 직접 생성한 GSM8K (`pilot/gsm8k/`)
+GSM8K train+test 8,792문제 × (greedy 1 + sampling 4) = 42,951 풀이. 프롬프트는 성훈 실험과 동일.
 
-GSM8K train+test 8,792문제 × (greedy 1 + sampling 4) = 42,951 풀이(형식 실패 1,009 제외). 프롬프트는 성훈 실험과 동일.
-생성은 vLLM(`generate.py`), feature는 모델 자신의 생성 토큰을 다시 넣어 추출(`extract_gen.py`, layer 4~28, 위치 q_end / r_end / r_mean / ans).
-
-| 입력 | AUROC 전체 | 같은 문제 안(within) |
+| 입력 | AUROC 전체 | within |
 |---|---|---|
 | confidence | 0.771 | 0.675 |
 | confidence + length | 0.804 | 0.661 |
-| 질문만 본 hidden (q_end L20) | 0.757 | 0.515 |
+| 질문만 본 hidden | 0.757 | 0.515 |
 | **hidden r_mean L20** | **0.876** | **0.784** |
-| hidden r_mean L20 + conf + length | 0.882 | 0.791 |
+| hidden + conf + length | 0.882 | 0.791 |
 
-- within = 같은 문제의 정답 풀이와 오답 풀이만 비교. 문제 난이도 효과를 뺀 값이다.
-- 질문만 본 hidden은 within이 0.5 근처라 난이도만 안다. 풀이를 본 hidden은 within에서도 confidence보다 +0.11 (CI [+0.10, +0.12]).
-- train/test 나눠서 따로 봐도 같은 결론(`results_split.txt`).
-- 전체 feature(약 7GB)는 서버 `~/yaicon_pilot/gsm8k/feat`에 있고, train 오답분은 위 Release에 있다.
+풀이를 본 hidden은 within에서도 confidence보다 +0.11 (CI [+0.10, +0.12]). train/test 따로 봐도 같다(`results_split.txt`).
 
 ## 3. 오류 유형 재분류 (`taxonomy_relabel/`)
 
-성훈 주석([error-taxonomy-full-v1-draft](https://github.com/KyeongwooLee/AI-Endoscope/releases/tag/error-taxonomy-full-v1-draft))에서
-첫 오류 위치가 표시된 885개를 EIC 9유형 + TG(묻는 대상을 잘못 고름)로 다시 붙이고, 풀이 단계별 4묶음으로 집계했다. 기준은 [RUBRIC.md](taxonomy_relabel/RUBRIC.md).
+성훈 주석 885개를 EIC 9유형 + TG(묻는 대상을 잘못 고름)로 다시 분류: A 정보 읽기 30% / B 식 세우기 49% / C 실행 16% / D 단위 5%. AI 4명의 일치도는 높지만(코드 0.87) 61%가 스스로 "애매"라고 표시했다. 기준은 [RUBRIC.md](taxonomy_relabel/RUBRIC.md).
 
-| 묶음 | 코드 | 개수 |
-|---|---|---|
-| A 정보 읽기 | CV 147, CO 86, HA 31 | 264 (30%) |
-| B 식·절차 세우기 | OP 73, FC 117, MS 111, TG 133 | 434 (49%) |
-| C 실행 | CA 76, PS 65 | 141 (16%) |
-| D 단위 | UC 45 | 45 (5%) |
+## 4. 규칙 오류 유형 probe (`auto_types.py`, `probe_types.py` → `results_types.txt`)
 
-- 성훈의 산술·단위 유형은 거의 그대로 CA·UC로 옮겨졌고, 실제로 바뀐 건 `modeling_relation` 732개가 A 258 / B 421 등으로 쪼개진 것이다.
-- **AI가 AI 주석을 다시 분류한 초안이다.** 4개 에이전트가 공통 30문항에 붙인 라벨의 쌍별 일치도는 코드 0.87, 묶음 0.94였다. 다만 61%가 경계 사례(conf m)라 사람 검수가 필요하다.
-- 재현: release의 `labels.jsonl`(sha256 `6137ffc9…193d`)을 받아
-  `python -I scripts/make_chunks.py labels.jsonl chunks` → 라벨링 결과를 `out/chunk_k.tsv`에 저장 → `python -I scripts/merge.py labels.jsonl chunks out`.
-  결과는 `out/relabeled.tsv`, `out/summary.txt`.
+맞는 값 목록에 없는 첫 식을 첫 오류로 보고 유형을 붙였다. 오답 9,734개: SETUP 5,659 / NOEQ 2,195 / TARGET(중간값을 답함) 728 / OTHER 707 / ARITH 414.
 
-## 4. 규칙 오류 유형과 유형 probe (`pilot/gsm8k/auto_types.py`, `probe_types.py`)
-
-맞는 값 목록(문제 숫자 + GSM8K 풀이 중간값 + 같은 문제의 정답 풀이 값)에 없는 첫 식을 첫 오류로 보고 유형을 붙였다.
-오답 9,734개: SETUP 5,659 / NOEQ 2,195 / TARGET 728 / OTHER 707 / ARITH 414 / NEWNUM 31.
-
-| 구분 (AUROC) | hidden r_mean L20 | 텍스트 TF-IDF | 확신도+길이 | 질문만 본 hidden |
+| AUROC | hidden | 텍스트 TF-IDF | 확신도+길이 | 질문만 |
 |---|---|---|---|---|
 | ARITH vs SETUP | **0.79** | 0.69 | 0.64 | 0.69 |
 | TARGET vs SETUP | **0.71** | 0.61 | 0.65 | 0.54 |
-| 설정 오류 안의 A 읽기 vs B 식 세우기 (`setup_ab/`) | 0.64 | 0.61 | 0.51 | 0.61 |
+| SETUP 안의 읽기 vs 식 세우기 | 0.64 | 0.61 | 0.51 | 0.61 |
 
-계산 실수와 중간값 답함은 구분되지만, 설정 오류를 더 쪼갠 유형은 문제 주제 이상으로 구분되지 않는다.
+## 5. 처음 틀린 위치 probe (`extract_loc.py`, `probe_loc2.py` → `results_loc2.txt`)
 
-## 5. 첫 오류 위치 probe (`extract_loc.py`, `probe_loc2.py`, `check_loc_noise.py`)
+식마다 hidden을 보고 첫 오류 식 하나를 고른다. train 문제로 학습, test 문제로 평가.
 
-식마다 hidden(L20)을 보고 풀이 안에서 첫 오류 식 하나를 고른다. 규칙 라벨로 train 문제에서 학습하고 test 문제로 평가했다.
-
-| 방법 | 맞힌 비율 (AI 검수 라벨, 설정 오류 1,105개) | 참고: 규칙 라벨로 채점 |
+| 방법 | AI 검수 라벨 기준 (SETUP 1,105개) | 규칙 라벨 기준 |
 |---|---|---|
 | **hidden** | **51%** | 54% |
 | 확신도 | 46% | 41% |
 | 항상 첫 식 | 41% | 40% |
 
-hidden이 확신도보다 +5%p(CI [+1, +9]). 규칙 라벨로 채점하면 차이가 과장된다(probe가 규칙의 버릇까지 배움).
+hidden이 +5%p (CI [+1, +9]). 규칙 라벨로 채점하면 차이가 부풀려진다(probe가 규칙의 버릇까지 배움).
 
-## 6. 교정 실험 (`correct_exp.py`, `analyze_correct.py`, `analyze_repeat.py`)
+## 6. 위치 기반 교정 (`correct_exp.py`, `analyze_correct.py` → `results_correct.txt`, `results_repeat.txt`)
 
-test 오답 1,264개, 풀이마다 4번 시도. 고친 비율:
+test 오답 1,264개 × 4회. 고친 비율: 처음부터 다시 풀기 **32%** / 정답 위치부터 다시 24% / 예측 위치부터 22% / 스스로 검토 3%.
+같은 위치에서 다시 풀면 48%가 같은 틀린 값을 또 쓴다. 계산 실수(99개)만 계산기가 다시 풀기보다 +14%p (CI [+2, +26]).
 
-| 방법 | 고친 비율 |
-|---|---|
-| 처음부터 다시 풀기 | **32%** |
-| 규칙이 찍은 위치부터 다시 풀기 | 24% |
-| 예측한 위치부터 다시 풀기 | 22% |
-| 스스로 검토 (refine) | 3% |
+## 7. AI 검수 (`taxonomy_relabel/*/RUBRIC*.md`, `scripts/merge_*.py`)
 
-- 같은 위치에서 다시 풀면 48%가 같은 틀린 값을 또 쓴다. 다른 값이 나올 때까지 다시 뽑아도 32%로 처음부터 다시 풀기와 같다.
-- 계산 실수(ARITH 99개)는 계산기로 고치면 처음부터 다시 풀기보다 +14%p (CI [+2, +26]).
-- 중간값 답함에 "질문을 다시 봐라" 힌트: 10% vs 다시 풀기 44%. 모델이 힌트를 무시한다.
-
-## 7. AI 검수 (`taxonomy_relabel/`)
-
-검수자는 모두 LLM 에이전트이고, 규칙 라벨을 보지 않고 각 폴더의 RUBRIC 기준으로 라벨링했다. 일치도는 공통 문항의 Fleiss κ.
+검수자는 모두 LLM 에이전트이고, 규칙 라벨을 보지 않고 RUBRIC 기준으로 라벨링했다. 일치도는 공통 문항의 Fleiss κ.
 
 | 폴더 | 대상 | 검수자 | 일치도 | 주요 결과 |
 |---|---|---|---|---|
-| `setup_ab/` | 설정 오류 990개를 A 읽기 / B 식 세우기로 | 6 | 묶음 0.86, 세부 코드 0.77 | 61%가 스스로 "애매" |
+| `setup_ab/` | 설정 오류 990개를 읽기 / 식 세우기로 | 6 | 0.86 | 61%가 "애매" |
 | `loc_audit/` | 첫 오류 식 630개 | 5 | 0.95 | 규칙 위치 = 검수 68% |
-| `cls_audit/` | test 오답 1,406개의 클래스 + 처음 틀린 줄 | 10 | 클래스 0.96, 줄 0.91 | 규칙 정확도 SETUP 93% / ARITH 67% / TARGET 39% |
-| `sh_audit/` | 성훈 7유형 라벨 100개 재라벨 | 5 | 0.94 | 원 라벨과 93% 일치, 관계 설정 66%로 쏠림 |
+| `cls_audit/` | test 오답 1,406개 클래스 + 첫 틀린 줄 | 10 | 0.96 / 0.91 | 규칙 정확도 SETUP 93 / ARITH 67 / TARGET 39% |
+| `sh_audit/` | 성훈 7유형 100개 재라벨 | 5 | 0.94 | 원 라벨과 93% 일치, 관계 설정 66% 쏠림 |
+| `fix_audit/` | train 오답 1,000개 클래스 + 줄 (10번 실험용) | 8 | 0.91 / 0.90 | CALC 10 / TARGET 8.5 / SETUP 68 / OTHER 13% |
 
-클래스를 많이 나누면 애매하고(세부 유형 κ 0.77, 애매 61%), 적게 나누면 한 클래스로 쏠린다(3클래스 κ 0.96, 설정 오류 86%).
+클래스를 많이 나누면 애매하고, 적게 나누면 한 클래스로 쏠린다.
 
-## 8. 성훈 7유형을 hidden으로 맞히기 (`probe_sh_types.py`, `probe_sh_multi.py`)
+## 8. 성훈 7유형 probe (`probe_sh_types.py`, `probe_sh_multi.py` → `results_sh_*.txt`)
 
-성훈 Release의 실제 token ids로 우리 feature를 다시 뽑아(`make_sh_gen.py` → `extract_gen.py`) 1,100개에 probe를 학습했다.
-답 옮기기는 0개라 6개 중 하나를 맞힌다(문제 단위 5-fold × 5회).
+6클래스 balanced accuracy: hidden 41% vs 확신도 39%(차이 n.s.) vs 질문만 29% (찍기 17%). 각 유형 vs 관계 설정 이진 비교에서 질문만 본 hidden보다 확실히 나은 건 계산 실수뿐(0.86 vs 0.73).
 
-| 입력 | 클래스별 정답률 평균 | macro-F1 |
+## 9. 클러스터링으로 유형 찾기 (`cluster_*.py` → `results_cluster*.txt`)
+
+train 오답 hidden에 k-means, GMM, Ward, Louvain, HDBSCAN, UMAP, contrastive PCA를 적용하고, 축을 섞은 가짜 데이터와 비교했다.
+- **오류 유형 클러스터는 없다.** 실루엣이 가짜 데이터와 같고, 규칙·검수 유형과의 일치(AMI)는 0.05 이하.
+- 클러스터는 문제 주제 → 글쓰기 스타일('Step 1' vs LaTeX) 순으로 갈리고, 둘을 빼면 구조가 사라진다. 정답 풀이도 같은 클러스터에 섞인다.
+- 계산 실수가 몰리는 "긴 덧셈" 클러스터가 있지만 식 모양(+ 개수)만으로 같은 설명이 된다.
+- 주제가 유형인가(`cluster_topic.py`): 주제별 오답률은 7.7~38%로 다르지만, 오답이 있는 문제의 88%는 정답도 낸다 → "어디서 틀리나"(문제 유형)와 "어떻게 틀리나"(오류 유형)는 다르다.
+
+## 10. "무엇으로 고쳐지나"를 유형으로 (`fix_exp.py`, `fix_code.py`, `analyze_fix.py`, `analyze_needed.py`, `probe_fix.py`, `probe_gain.py`)
+
+train 오답 1,000개(문제당 1개) × 방법별 32회. 결과 `results_fix*.txt`, `results_gain_*.txt`, `results_needed.txt`.
+
+| 방법 | 고친 비율 | 다시 풀기보다 확실히 나은 오답 (우연 기대치) |
 |---|---|---|
-| 전부 관계 설정으로 찍기 | 17% | 0.13 |
-| 확신도 | 39% | 0.27 |
-| 질문만 본 hidden | 29% | 0.28 |
-| **hidden r_mean L20** | **41%** | **0.40** |
+| 처음부터 다시 풀기 | 60% | — |
+| 검산 프롬프트 (verify) | 61% | 4.0% (1.9%) |
+| 계획 먼저 (plan) | 59% | 6.0% (2.1%) |
+| 코드로 풀기 | 54.5% | **15%** (2%) |
+| 계산기 | 41% (적용 56개) | 23% (전부 실제 계산 실수) |
+| 틀린 줄 직전까지 남기고 이어 쓰기 | 29% | 3.3% (2.4%) |
+| 틀린 줄 알려주기 | 13% | 0.6% |
+| "앞의 답 X는 틀렸다" 알려주기 / T=1.0 | 58% / 54% | — |
 
-이진 비교(각 유형 vs 관계 설정)에서 질문만 본 hidden보다 확실히 나은 건 계산 실행뿐이다(0.86 vs 0.73).
+- 다시 풀기의 성공률은 문제 난이도와 거의 같다(원래 5개 중 정답 수와 상관 0.75). 그래서 "어떤 방법이 통할지" probe는 질문만 본 hidden과 같다(난이도만 앎).
+- 예외: 코드가 다시 풀기보다 나은 정도(gain)는 hidden 0.31 vs 질문만 0.24 (Spearman, CI [+0.00, +0.13]).
+- 모든 방법을 아는 이론적 상한도 64% → 다시 풀기 60%에서 4%p만 오른다.
+
+## 11. 응답 패턴 (`analyze_patterns.py`, `probe_pattern*.py`, `confusion_pattern.py`)
+
+같은 오답 문제를 32번 다시 풀게 해서 답 분포로 나눴다: 한 정답으로 모임(dominant) / **같은 오답 반복(stuck)** / 두 답이 경쟁(competing) / 흩어짐(spread).
+- train 오답 972개 기준 dominant 663 / stuck 76 / competing 81 / spread 152. 반으로 나눠 다시 매겨도 81% 같다.
+- 다수결(16표)은 dominant 74→97%, spread 20→43%로 올리지만 stuck은 19→20% 그대로. 시험한 10가지 방법 모두 stuck을 못 고쳤다.
+- stuck vs spread AUROC: **hidden 0.886** vs 확신도+길이 0.807 vs 질문만 0.730 vs TF-IDF 0.599 (`results_pattern_probe.txt`). 데이터 3,386개로 늘려도 0.874 (`*_big.txt`).
+- 4패턴 동시 분류는 hidden ≈ 확신도(balanced acc 0.40). stuck 정밀도 12% (`results_pattern_confusion.txt`).
+
+## 12. 외부 모델 대조군 (`extract_reader.py`, `probe_reader.py` → `results_reader*.txt`)
+
+다른 모델에게 **같은 프롬프트와 풀이 글**을 읽히고 그 모델의 hidden으로 같은 probe를 학습했다.
+
+| stuck vs spread AUROC | 풀이 hidden | 질문만 |
+|---|---|---|
+| Qwen1.5B 자기 자신 | 0.882 | 0.769 |
+| SmolLM2-1.7B (다른 계열) | 0.879 | 0.733 |
+| **Qwen2.5-7B** | **0.901** | 0.813 |
+
+자기 자신이 1.7B보다 +0.012 앞설 뿐이고, 7B는 자기 자신보다 높으며 자기 feature를 더해도 7B에 보태지 않는다. → **11번 신호는 모델의 자기 인식이 아니라 글 자체에 있다.** 4번의 TF-IDF 대조군은 너무 약했다.
+
+## 13. 논문 재현: Orgad et al., ICLR 2025, *LLMs Know More Than They Show* 5절 (`resample_all.py`, `probe_paper.py` → `results_paper.txt`)
+
+train 7,473문제 × 30회(T=1), 논문 정의 그대로(겹침 허용, 문제마다 one-vs-rest). greedy 정확도 82%.
+
+| 패턴 (비율) | 자기 답 토큰 (논문 방식) | 자기 r_mean | 질문만 | 확신도 | 7B 읽기 | 논문 Math (7~8B) |
+|---|---|---|---|---|---|---|
+| B 주로 맞힘 (75%) | 0.86 | 0.91 | 0.87 | 0.85 | 0.93 | 0.83~0.87 |
+| C 같은 오답 반복 (1.2%) | 0.52 | 0.59 | 0.56 | 0.46 | 0.58 | 0.69~0.91 |
+| D 두 답 경쟁 (6%) | 0.67 | 0.72 | 0.66 | 0.72 | 0.74 | 0.57~0.79 |
+| E 답이 여럿 (28%) | 0.88 | 0.93 | 0.89 | 0.85 | 0.93 | 0.69~0.90 |
+
+B, E는 재현된다. C는 T=1에서 92문제뿐이라 실패. 하지만 질문만 봐도 대부분 맞히고(난이도), 7B가 읽어도 자기 자신 이상이다.
+
+## 다음에 할 것
+
+1. 2번 정답/오답 판별에 12번과 같은 외부 모델 대조군 붙이기.
+2. C(같은 오답 반복)를 늘리려면 낮은 온도로 다시 샘플링.

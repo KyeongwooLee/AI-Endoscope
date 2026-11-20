@@ -1,0 +1,29 @@
+questions 7473, 30 samples each at T=1; greedy accuracy 82.1%
+type shares (overlapping): A 0 (0.0%)  B 5585 (74.7%)  C 92 (1.2%)  D 452 (6.0%)  E 2066 (27.6%)  B1 164 (2.2%)  B2 5421 (72.5%)  C1 20 (0.3%)  C2 72 (1.0%)  E1 88 (1.2%)  E2 1978 (26.5%)
+top-level combinations: B 5069  E 1250  B + E 508  D + E 292  D 142  none 112  C 66  C + E 16  C + D 10  B + D 8
+among greedy-wrong questions: A 0.0%  B 23.7%  C 5.6%  D 16.8%  E 68.7%
+greedy answers with features (format ok): 7409 of 7473
+
+## AUROC, all questions (paper setting); mean +- std over 5 splits; [layer most often chosen]
+type                                      self ans           self r_mean            self q_end            confidence         7B reader ans      7B reader r_mean
+(B) consistently correct        0.861+-0.008  L20     0.912+-0.004  L20     0.869+-0.005  L20     0.851+-0.015          0.875+-0.003  L24     0.929+-0.003  L20
+(C) consistently incorrect      0.523+-0.052  L20     0.588+-0.061  L20     0.560+-0.069  L24     0.455+-0.030          0.592+-0.038  L12     0.584+-0.066  L20
+(D) two competing               0.668+-0.027  L16     0.722+-0.020  L20     0.664+-0.019  L20     0.715+-0.021          0.704+-0.025  L20     0.741+-0.025  L20
+(E) many answers                0.879+-0.008  L20     0.925+-0.006  L20     0.889+-0.006  L20     0.848+-0.010          0.884+-0.008  L24     0.931+-0.003  L20
+(B1) always correct              0.754+-0.043  L20     0.792+-0.032  L16     0.747+-0.030  L20     0.799+-0.031          0.759+-0.038  L20     0.816+-0.020  L20
+(B2) mostly correct              0.807+-0.012  L20     0.852+-0.012  L20     0.824+-0.009  L20     0.807+-0.011          0.818+-0.013  L24     0.871+-0.017  L20
+(C2) C, correct sometimes        0.497+-0.096  L12     0.550+-0.094  L20     0.616+-0.070  L24     0.562+-0.050          0.582+-0.047  L20     0.553+-0.131  L20
+(E1) E, correct never            0.804+-0.049  L28     0.790+-0.046  L20     0.746+-0.036  L20     0.840+-0.046          0.736+-0.073  L28     0.756+-0.062  L20
+(E2) E, correct sometimes        0.857+-0.005  L20     0.906+-0.002  L20     0.873+-0.004  L20     0.837+-0.006          0.864+-0.007  L24     0.911+-0.003  L20
+
+## AUROC, test questions whose greedy answer is wrong; mean +- std over 5 splits; [layer most often chosen]
+type                                      self ans           self r_mean            self q_end            confidence         7B reader ans      7B reader r_mean
+(B) consistently correct        0.714+-0.045  L20     0.766+-0.015  L20     0.832+-0.013  L20     0.718+-0.030          0.713+-0.018  L24     0.789+-0.011  L20
+(C) consistently incorrect      0.602+-0.047  L20     0.605+-0.094  L20     0.582+-0.060  L24     0.469+-0.031          0.648+-0.043  L12     0.615+-0.086  L20
+(D) two competing               0.509+-0.038  L16     0.449+-0.032  L20     0.470+-0.020  L20     0.430+-0.044          0.536+-0.043  L20     0.460+-0.039  L20
+(E) many answers                0.795+-0.023  L20     0.873+-0.007  L20     0.854+-0.011  L20     0.753+-0.012          0.818+-0.028  L24     0.883+-0.009  L20
+(B1) always correct                  nan+-nan  L20         nan+-nan  L16         nan+-nan  L20         nan+-nan              nan+-nan  L20         nan+-nan  L20
+(B2) mostly correct              0.721+-0.014  L20     0.760+-0.036  L20     0.832+-0.014  L20     0.721+-0.014          0.682+-0.014  L24     0.793+-0.038  L20
+(C2) C, correct sometimes        0.523+-0.088  L12     0.512+-0.081  L20     0.630+-0.073  L24     0.478+-0.054          0.668+-0.047  L20     0.583+-0.112  L20
+(E1) E, correct never            0.700+-0.053  L28     0.601+-0.054  L20     0.604+-0.034  L20     0.655+-0.084          0.586+-0.070  L28     0.604+-0.063  L20
+(E2) E, correct sometimes        0.720+-0.022  L20     0.775+-0.016  L20     0.772+-0.009  L20     0.702+-0.024          0.727+-0.020  L24     0.785+-0.007  L20

@@ -1,0 +1,20 @@
+## agreement on 30 shared items (4 labelers each)
+  class                            pairwise 0.96  Fleiss 0.91  all agree 28/30
+  first wrong line (num)           pairwise 0.91  Fleiss 0.90  all agree 25/30
+  thought line                     pairwise 0.92  Fleiss 0.91  all agree 25/30
+  thought earlier than num (y/n)   pairwise 0.95  Fleiss 0.87  all agree 27/30
+  num line, items all labelers call SETUP (20): pairwise 0.97, all agree 19/20
+
+## rule class vs audit class (1000 items)
+  rule / audit      CALC  TARGET   SETUP   OTHER   n   agree
+  CALC                28       1      14       0   43  65.1%
+  TARGET               3      44      23       3   73  60.3%
+  SETUP               15      10     490      11  526  93.2%
+  overall agreement 56.4%; audit class shares: CALC 10.0%  TARGET 8.5%  SETUP 68.1%  OTHER 13.4%
+  conf=m 24.9%
+
+## location, rule SETUP & audit SETUP (467 items)
+  first wrong line vs rule line: same 51.0%  audit earlier 36.0%  audit later 13.1%
+  first wrong line has no checkable equation (wrong number in plain text): 26.8%
+  'wrong from the first equation': rule (k=0) 31.3%, audit 33.0%, agree 84.6%
+  thought earlier than the first wrong number: 36.4%

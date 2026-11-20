@@ -1,0 +1,295 @@
+
+===== raw k=5: train 4269, test 1019 =====
+ c     n  share  SETUP  ARITH TARGET  OTHER NEWNUM   len  n_eq   nll  step latex  bold  cor%  first words
+ 0   802  18.8%  77.2%   4.5%  11.5%   6.6%   0.2%   169   3.2  0.19   84%    4%    3%   18%  step:84% to:12% other:2%
+ 1  1156  27.1%  70.2%   6.5%  12.6%  10.6%   0.1%   187   3.5  0.17   84%   10%    4%   26%  step:84% to:9% other:3%
+ 2   489  11.5%  66.7%   2.5%  11.5%  19.4%   0.0%   238   2.4  0.19   49%   63%   15%   12%  step:51% to:29% let:18%
+ 3  1025  24.0%  70.3%  10.8%   9.1%   8.9%   0.9%   203   4.1  0.15   85%    6%    6%   24%  step:85% to:11% let:2%
+ 4   797  18.7%  74.9%   3.1%  11.7%   9.8%   0.5%   261   3.2  0.19    7%   76%   66%   20%  to:74% let:15% step:8%
+   all 4269         72.0%   6.1%  11.2%  10.3%   0.4%
+words:
+  0 question: serving recipe weeks weekdays knows drinks ounce plays earns feed
+    response: servings plays weekday periods weekdays works weeks nights days /
+  1 question: soccer dropped yesterday library marbles following female accidentally saw plants
+    response: marbles did blue found ate dropped altogether gave who color
+  2 question: age born younger sum older old years ago ages current
+    response: according denote j equation solving age ages w simplifying substituting
+  3 question: fee discount rent groceries tip meal dimes much pays charges
+    response: fee groceries tax rent tip discount discounted expenses salary ticket
+  4 question: blocks pace ground block leaves meters seconds complete across race
+    response: text div break complete down times frac approx calculating we
+test: audited class shares and correction (fix rate per attempt)
+ c     n audited   CALC TARGET  SETUP  OTHER    restart     refine true_plain true_typed pred_plain
+ 0   171     152   5.9%   8.6%  84.9%   0.7%      47.9%       5.4%      39.0%      33.3%      32.6%
+ 1   280     249   6.8%   8.4%  84.7%   0.0%      48.8%       4.0%      34.6%      37.7%      33.5%
+ 2   113      79   8.9%   2.5%  84.8%   3.8%      41.5%       6.0%      34.2%      30.8%      31.8%
+ 3   263     219  14.6%   5.0%  79.9%   0.5%      44.1%       4.2%      31.7%      34.2%      29.5%
+ 4   192     151   4.0%   8.6%  86.1%   1.3%      41.8%       4.8%      30.9%      27.7%      29.3%
+all  1019     850   8.4%   7.1%  83.8%   0.8%      45.5%       4.6%      33.9%      33.6%      31.4%
+difference to restart, by cluster (mean [95% CI] n):
+    0  true_typed -0.138 [-0.209,-0.072] n=132   true_plain -0.081 [-0.143,-0.022] n=132
+    1  true_typed -0.107 [-0.163,-0.050] n=208   true_plain -0.138 [-0.197,-0.082] n=208
+    2  true_typed -0.103 [-0.180,-0.025] n=73   true_plain -0.068 [-0.154,+0.015] n=73
+    3  true_typed -0.084 [-0.138,-0.029] n=206   true_plain -0.109 [-0.162,-0.057] n=206
+    4  true_typed -0.123 [-0.198,-0.049] n=122   true_plain -0.090 [-0.146,-0.034] n=122
+  all  true_typed -0.108 [-0.138,-0.082] n=741   true_plain -0.105 [-0.132,-0.077] n=741
+
+===== qres k=5: train 4269, test 1019 =====
+ c     n  share  SETUP  ARITH TARGET  OTHER NEWNUM   len  n_eq   nll  step latex  bold  cor%  first words
+ 0   720  16.9%  70.8%   9.4%   9.2%   9.6%   1.0%   161   3.6  0.16   97%    1%    0%   14%  step:97% to:2% first:1%
+ 1   759  17.8%  75.4%   4.5%  10.3%   9.5%   0.4%   270   3.4  0.18   10%   84%   67%   21%  to:64% let:21% step:12%
+ 2  1075  25.2%  75.5%   5.2%   8.9%  10.2%   0.1%   209   3.7  0.15   88%    4%    4%   28%  step:88% to:10% let:1%
+ 3   756  17.7%  68.8%   7.5%  11.5%  11.8%   0.4%   203   3.4  0.18   70%   28%    7%   17%  step:70% to:16% other:7%
+ 4   959  22.5%  68.9%   4.6%  16.0%  10.3%   0.2%   194   3.0  0.21   58%   23%   13%   21%  step:58% to:32% let:5%
+   all 4269         72.0%   6.1%  11.2%  10.3%   0.4%
+words:
+  0 question: shirts juice feed tim everything employees fifth cans catch added
+    response: step jar juice calculate shirts / walked cans tom quarters
+  1 question: jason leaves paying said where round including floor too saved
+    response: text frac times break down reasoning numerical let problem determining
+  2 question: loaf plates beach best received andy ready find split whole
+    response: step plates width delivered calculate split five table the own
+  3 question: fries wife pass trees done temperature business gas raise tuesday
+    response: simplifying values fries substituting where simplify according d write substitute
+  4 question: born within wall using matt minimum square returned size boys
+    response: states adjust wall so plus once charges matt dimensions born
+test: audited class shares and correction (fix rate per attempt)
+ c     n audited   CALC TARGET  SETUP  OTHER    restart     refine true_plain true_typed pred_plain
+ 0   152     134   8.2%   6.0%  85.1%   0.7%      54.3%       4.7%      38.7%      38.3%      33.8%
+ 1   179     139   5.8%   7.9%  83.5%   2.9%      44.8%       4.4%      34.0%      35.7%      29.6%
+ 2   265     218   6.4%   8.3%  85.3%   0.0%      42.5%       3.6%      28.4%      30.4%      28.7%
+ 3   197     161  12.4%   6.8%  79.5%   1.2%      47.7%       6.4%      36.8%      32.3%      34.3%
+ 4   226     198   9.1%   6.1%  84.8%   0.0%      41.6%       4.6%      33.8%      33.5%      31.2%
+all  1019     850   8.4%   7.1%  83.8%   0.8%      45.5%       4.6%      33.9%      33.6%      31.4%
+difference to restart, by cluster (mean [95% CI] n):
+    0  true_typed -0.152 [-0.229,-0.080] n=122   true_plain -0.148 [-0.209,-0.083] n=122
+    1  true_typed -0.101 [-0.173,-0.030] n=119   true_plain -0.118 [-0.179,-0.054] n=119
+    2  true_typed -0.111 [-0.172,-0.056] n=182   true_plain -0.130 [-0.181,-0.078] n=182
+    3  true_typed -0.147 [-0.217,-0.080] n=148   true_plain -0.101 [-0.165,-0.038] n=148
+    4  true_typed -0.046 [-0.099,+0.008] n=170   true_plain -0.043 [-0.101,+0.009] n=170
+  all  true_typed -0.108 [-0.139,-0.080] n=741   true_plain -0.105 [-0.133,-0.079] n=741
+
+===== diff k=5: train 4269, test 1019 =====
+ c     n  share  SETUP  ARITH TARGET  OTHER NEWNUM   len  n_eq   nll  step latex  bold  cor%  first words
+ 0   824  19.3%  75.5%   6.7%   9.8%   7.9%   0.1%   183   3.5  0.17   93%    4%    2%   15%  step:93% to:5% let:1%
+ 1  1289  30.2%  67.7%   5.9%  15.4%  10.6%   0.4%   185   3.2  0.19   64%   22%   11%   28%  step:64% to:25% other:5%
+ 2   673  15.8%  74.0%   4.3%  10.7%  10.7%   0.3%   266   3.4  0.18   11%   81%   62%   18%  to:62% let:23% step:13%
+ 3  1476  34.6%  73.2%   6.7%   8.5%  11.0%   0.5%   211   3.5  0.16   78%   18%   11%   39%  step:78% to:17% let:3%
+ 4     7   0.2%  14.3%   0.0%  57.1%  28.6%   0.0%   154   3.3  0.12   43%   43%   29%    0%  step:43% to:43% first:14%
+   all 4269         72.0%   6.1%  11.2%  10.3%   0.4%
+words:
+  0 question: matt stops flower loves charged station tip divided meal thirds
+    response: step matt dinner delivered cooking adult minimum apple tip pm
+  1 question: within library smaller thomas peanut center contain city dropped seven
+    response: us states returned peanut shirts which so mary returns dropped
+  2 question: leaves legs brought round owns ends butter side cup six
+    response: text break j down times reasoning frac setup let right
+  3 question: compared classes payment bills area lose mom using loaf originally
+    response: raise weekends own w purchase rooms loses cheese able guests
+  4 question: 
+    response: 
+test: audited class shares and correction (fix rate per attempt)
+ c     n audited   CALC TARGET  SETUP  OTHER    restart     refine true_plain true_typed pred_plain
+ 0   182     157   8.3%   3.8%  87.3%   0.6%      41.2%       5.1%      30.7%      34.6%      26.1%
+ 1   296     253  10.3%   7.1%  81.8%   0.8%      48.4%       5.3%      34.8%      34.7%      31.1%
+ 2   167     137   8.0%   6.6%  82.5%   2.9%      45.3%       3.8%      35.9%      31.5%      34.7%
+ 3   374     303   6.9%   8.9%  84.2%   0.0%      45.5%       4.3%      34.0%      33.2%      32.8%
+ 4     0       0   0.0%   0.0%   0.0%   0.0%       nan%       nan%       nan%       nan%       nan%
+all  1019     850   8.4%   7.1%  83.8%   0.8%      45.5%       4.6%      33.9%      33.6%      31.4%
+difference to restart, by cluster (mean [95% CI] n):
+    0  true_typed -0.061 [-0.121,+0.000] n=135   true_plain -0.100 [-0.157,-0.042] n=135
+    1  true_typed -0.117 [-0.171,-0.066] n=220   true_plain -0.116 [-0.166,-0.070] n=220
+    2  true_typed -0.132 [-0.201,-0.067] n=119   true_plain -0.088 [-0.152,-0.033] n=119
+    3  true_typed -0.114 [-0.162,-0.069] n=267   true_plain -0.107 [-0.155,-0.064] n=267
+    4  true_typed n=0   true_plain n=0
+  all  true_typed -0.108 [-0.139,-0.081] n=741   true_plain -0.105 [-0.134,-0.079] n=741
+
+===== qres_ns k=5: train 4269, test 1019 =====
+ c     n  share  SETUP  ARITH TARGET  OTHER NEWNUM   len  n_eq   nll  step latex  bold  cor%  first words
+ 0   732  17.1%  72.3%   8.6%  10.0%   8.7%   0.4%   209   3.6  0.17   64%   27%   17%   15%  step:64% to:26% let:6%
+ 1   852  20.0%  72.2%   3.3%  12.6%  11.7%   0.2%   211   3.2  0.18   64%   29%   17%   19%  step:64% to:26% let:7%
+ 2   889  20.8%  69.6%   6.5%  10.8%  12.9%   0.1%   201   3.1  0.17   67%   22%   17%   24%  step:68% to:22% let:7%
+ 3  1137  26.6%  71.8%   6.0%  13.3%   8.8%   0.2%   206   3.5  0.19   66%   27%   18%   28%  step:67% to:24% let:6%
+ 4   659  15.4%  75.3%   6.4%   8.0%   9.1%   1.2%   196   3.8  0.15   68%   27%   17%   14%  step:69% to:24% let:5%
+   all 4269         72.0%   6.1%  11.2%  10.3%   0.4%
+words:
+  0 question: pass ml compared wife bills temperature gas monthly grams fries
+    response: sixth simplifying simplify approx combine approximately tax values trees substitute
+  1 question: using sally basket marbles younger born area few best beginning
+    response: sally younger marbles different sarah caught tank those ages cream
+  2 question: rope ll bank weekdays husband child book library classes parking
+    response: husband perform calculations birthday count book cuts child school customer
+  3 question: matt bedroom wall fries female favorite boys fruits normally pencils
+    response: matt wall sells living works substituting paint period floors so
+  4 question: doesn feed complete shirts knows jack cans meters pm until
+    response: shirts nights the minute text consumption cans / meters orange
+test: audited class shares and correction (fix rate per attempt)
+ c     n audited   CALC TARGET  SETUP  OTHER    restart     refine true_plain true_typed pred_plain
+ 0   211     174  10.9%   6.9%  79.3%   2.9%      48.0%       5.8%      33.4%      34.2%      33.1%
+ 1   196     169   4.7%   8.9%  86.4%   0.0%      43.8%       5.0%      31.2%      33.0%      30.9%
+ 2   207     162   6.2%   8.6%  85.2%   0.0%      44.1%       4.9%      32.8%      32.3%      32.5%
+ 3   264     223  11.2%   5.8%  83.0%   0.0%      44.3%       3.8%      34.3%      34.1%      29.2%
+ 4   141     122   7.4%   4.9%  86.1%   1.6%      48.5%       3.8%      38.9%      34.5%      31.9%
+all  1019     850   8.4%   7.1%  83.8%   0.8%      45.5%       4.6%      33.9%      33.6%      31.4%
+difference to restart, by cluster (mean [95% CI] n):
+    0  true_typed -0.129 [-0.190,-0.066] n=163   true_plain -0.137 [-0.193,-0.080] n=163
+    1  true_typed -0.091 [-0.159,-0.020] n=140   true_plain -0.109 [-0.176,-0.044] n=140
+    2  true_typed -0.103 [-0.158,-0.047] n=134   true_plain -0.097 [-0.155,-0.041] n=134
+    3  true_typed -0.092 [-0.140,-0.036] n=196   true_plain -0.089 [-0.137,-0.039] n=196
+    4  true_typed -0.137 [-0.199,-0.067] n=108   true_plain -0.093 [-0.158,-0.028] n=108
+  all  true_typed -0.108 [-0.141,-0.080] n=741   true_plain -0.105 [-0.134,-0.079] n=741
+
+===== diff_ns k=5: train 4269, test 1019 =====
+ c     n  share  SETUP  ARITH TARGET  OTHER NEWNUM   len  n_eq   nll  step latex  bold  cor%  first words
+ 0   746  17.5%  73.7%   7.9%   6.7%  11.3%   0.4%   219   3.7  0.18   68%   26%   17%   10%  step:68% to:23% let:6%
+ 1  1154  27.0%  73.1%   7.1%   9.5%   9.8%   0.5%   202   3.4  0.17   65%   28%   19%   33%  step:65% to:25% let:7%
+ 2     7   0.2%  14.3%   0.0%  57.1%  28.6%   0.0%   154   3.3  0.12   43%   43%   29%    0%  step:43% to:43% first:14%
+ 3  1185  27.8%  73.3%   4.6%  13.9%   7.9%   0.3%   204   3.4  0.19   63%   27%   20%   32%  step:64% to:27% let:6%
+ 4  1177  27.6%  69.0%   5.4%  12.8%  12.4%   0.3%   200   3.2  0.17   69%   24%   13%   25%  step:69% to:21% let:6%
+   all 4269         72.0%   6.1%  11.2%  10.3%   0.4%
+words:
+  0 question: found women men decide brought come chocolate any like very
+    response: combine values error evaluate simplifying seems verify check re like
+  1 question: serve didn bring wife bread reading reads scores past jack
+    response: bread able discounted guests cheese jack discount running right weekends
+  2 question: 
+    response: 
+  3 question: supplies charged bedroom recipe puts calls reaches living dropped station
+    response: living charges building drink delivered gas did doesn which sets
+  4 question: female plane along jars lose ready classes originally late bathroom
+    response: rooms jars single subtracting once groups today adults dozen return
+test: audited class shares and correction (fix rate per attempt)
+ c     n audited   CALC TARGET  SETUP  OTHER    restart     refine true_plain true_typed pred_plain
+ 0   163     142   9.2%   6.3%  83.8%   0.7%      47.3%       5.7%      36.3%      35.7%      34.2%
+ 1   312     254   6.3%   7.5%  84.6%   1.6%      42.6%       3.6%      30.6%      31.1%      26.7%
+ 2     0       0   0.0%   0.0%   0.0%   0.0%       nan%       nan%       nan%       nan%       nan%
+ 3   291     239  11.3%   6.3%  82.0%   0.4%      45.5%       4.9%      35.9%      35.9%      31.1%
+ 4   253     215   7.0%   7.9%  84.7%   0.5%      47.8%       4.9%      34.0%      32.5%      35.1%
+all  1019     850   8.4%   7.1%  83.8%   0.8%      45.5%       4.6%      33.9%      33.6%      31.4%
+difference to restart, by cluster (mean [95% CI] n):
+    0  true_typed -0.107 [-0.172,-0.037] n=133   true_plain -0.102 [-0.174,-0.036] n=133
+    1  true_typed -0.112 [-0.165,-0.063] n=216   true_plain -0.118 [-0.170,-0.066] n=216
+    2  true_typed n=0   true_plain n=0
+    3  true_typed -0.075 [-0.122,-0.027] n=208   true_plain -0.075 [-0.126,-0.023] n=208
+    4  true_typed -0.143 [-0.205,-0.081] n=184   true_plain -0.128 [-0.186,-0.076] n=184
+  all  true_typed -0.108 [-0.137,-0.080] n=741   true_plain -0.105 [-0.132,-0.079] n=741
+
+===== step k=5: train 4195, test 1182 =====
+ c     n  share  SETUP  ARITH TARGET  OTHER NEWNUM   len  n_eq   nll  step latex  bold  cor%  first words
+ 0   478  11.4%  93.3%   5.9%   0.0%   0.0%   0.8%   217   3.7  0.18   70%   25%   17%  nan%  step:71% to:22% let:5%
+ 1   748  17.8%  95.7%   4.1%   0.0%   0.0%   0.1%   208   3.8  0.18   67%   22%   16%  nan%  step:67% to:22% let:7%
+ 2   866  20.6%  88.1%  11.9%   0.0%   0.0%   0.0%   213   4.0  0.16   70%   22%   17%  nan%  step:71% to:19% let:8%
+ 3  1056  25.2%  94.6%   4.5%   0.0%   0.0%   0.9%   224   4.2  0.17   66%   22%   20%  nan%  step:66% to:26% let:5%
+ 4  1047  25.0%  93.0%   6.0%   0.0%   0.0%   1.0%   212   3.9  0.17   68%   24%   18%  nan%  step:68% to:23% let:6%
+   all 4195         92.9%   6.5%   0.0%   0.0%   0.6%
+words:
+  0 question: bottle pays read fifth change everything saved party equal between
+    response: cover read driving set solving divide equation bottle five fraction
+  1 question: alice remove players payment plans born minimum because computer like
+    response: giving reduction due subtracting states no players net minimum -
+  2 question: remained shirt clothes bedroom bottom ride cat plan fee green
+    response: + rooms bedroom count ride top room green yellow animals
+  3 question: rounds sandwich jake sandwiches pm floor favorite legs best told
+    response: nickel sandwich dime floor jake receive sandwiches floors legs compare
+  4 question: row rows picks kg cuts zoo eggs cats flour taken
+    response: row rows cuts ago eggs kg egg play flour truck
+test: audited class shares and correction (fix rate per attempt)
+ c     n audited   CALC TARGET  SETUP  OTHER    restart     refine true_plain true_typed pred_plain
+ 0   111     111   3.6%   7.2%  88.3%   0.9%      26.8%       1.6%      26.1%      23.0%      24.1%
+ 1   188     188   2.1%   1.6%  94.7%   1.6%      40.7%       2.8%      24.1%      24.1%      27.8%
+ 2   267     267  19.5%   2.2%  76.0%   2.2%      34.8%       3.9%      22.1%      29.1%      22.8%
+ 3   351     351   3.7%   2.6%  92.0%   1.7%      24.7%       1.4%      23.6%      21.2%      15.9%
+ 4   265     265   6.4%   1.5%  91.7%   0.4%      34.8%       3.4%      22.5%      25.9%      24.2%
+all  1182    1182   7.6%   2.5%  88.4%   1.4%      32.0%       2.6%      23.3%      24.7%      22.0%
+difference to restart, by cluster (mean [95% CI] n):
+    0  true_typed -0.038 [-0.105,+0.023] n=111   true_plain -0.007 [-0.063,+0.046] n=111
+    1  true_typed -0.166 [-0.221,-0.112] n=188   true_plain -0.166 [-0.225,-0.114] n=188
+    2  true_typed -0.057 [-0.118,+0.006] n=267   true_plain -0.127 [-0.174,-0.084] n=267
+    3  true_typed -0.036 [-0.064,-0.007] n=351   true_plain -0.011 [-0.039,+0.016] n=351
+    4  true_typed -0.089 [-0.129,-0.049] n=265   true_plain -0.123 [-0.166,-0.083] n=265
+  all  true_typed -0.073 [-0.096,-0.052] n=1182   true_plain -0.087 [-0.108,-0.068] n=1182
+
+===== step_raw k=5: train 4195, test 1182 =====
+ c     n  share  SETUP  ARITH TARGET  OTHER NEWNUM   len  n_eq   nll  step latex  bold  cor%  first words
+ 0   811  19.3%  92.5%   6.3%   0.0%   0.0%   1.2%   227   3.8  0.17   63%   34%   20%  nan%  step:64% to:27% let:7%
+ 1   899  21.4%  95.2%   4.1%   0.0%   0.0%   0.7%   221   4.1  0.19   61%   28%   24%  nan%  step:62% to:26% let:7%
+ 2  1082  25.8%  97.2%   2.8%   0.0%   0.0%   0.0%   206   3.9  0.17   73%   18%   14%  nan%  step:73% to:18% let:7%
+ 3   925  22.1%  94.3%   4.9%   0.0%   0.0%   0.9%   209   4.0  0.17   71%   14%   16%  nan%  step:71% to:23% let:3%
+ 4   478  11.4%  77.0%  23.0%   0.0%   0.0%   0.0%   217   4.0  0.16   72%   21%   15%  nan%  step:72% to:17% let:9%
+   all 4195         92.9%   6.5%   0.0%   0.0%   0.6%
+words:
+  0 question: random favorite offering nickels return mph grams percent value respectively
+    response: w nickel d calculations numerical follows calculated fast nickels perform
+  1 question: cats born kept legs older holds old age scored marbles
+    response: born legs older ago age cats holds another old planted
+  2 question: alice space payment expenses earns computer account minimum sales remove
+    response: saves subtracting expenses cat annual giving hourly spending wage net
+  3 question: open usually tony recipe high owns kg container am mile
+    response: servings periods the period weekdays kg / mile eggs works
+  4 question: case place fee bottom wednesday sunday thursday card tuesday very
+    response: + yellow sunday ride fee wednesday thursday saturday count amounts
+test: audited class shares and correction (fix rate per attempt)
+ c     n audited   CALC TARGET  SETUP  OTHER    restart     refine true_plain true_typed pred_plain
+ 0   240     240   2.9%   3.3%  92.9%   0.8%      24.2%       1.7%      22.0%      21.7%      16.9%
+ 1   249     249   4.4%   1.6%  92.8%   1.2%      31.4%       1.8%      23.2%      21.9%      19.6%
+ 2   302     302   4.6%   2.0%  91.1%   2.3%      40.2%       2.6%      22.8%      25.0%      28.1%
+ 3   247     247   4.5%   4.5%  89.5%   1.6%      28.5%       2.9%      24.0%      22.4%      20.6%
+ 4   144     144  32.6%   0.7%  66.0%   0.7%      34.7%       5.4%      25.9%      37.7%      24.0%
+all  1182    1182   7.6%   2.5%  88.4%   1.4%      32.0%       2.6%      23.3%      24.7%      22.0%
+difference to restart, by cluster (mean [95% CI] n):
+    0  true_typed -0.025 [-0.069,+0.017] n=240   true_plain -0.022 [-0.058,+0.017] n=240
+    1  true_typed -0.095 [-0.133,-0.058] n=249   true_plain -0.082 [-0.122,-0.046] n=249
+    2  true_typed -0.152 [-0.193,-0.110] n=302   true_plain -0.175 [-0.218,-0.131] n=302
+    3  true_typed -0.062 [-0.101,-0.027] n=247   true_plain -0.046 [-0.081,-0.010] n=247
+    4  true_typed +0.030 [-0.067,+0.128] n=144   true_plain -0.089 [-0.149,-0.032] n=144
+  all  true_typed -0.073 [-0.095,-0.050] n=1182   true_plain -0.087 [-0.107,-0.067] n=1182
+
+===== step_raw k=8: train 4195, test 1182 =====
+ c     n  share  SETUP  ARITH TARGET  OTHER NEWNUM   len  n_eq   nll  step latex  bold  cor%  first words
+ 0   355   8.5%  91.0%   9.0%   0.0%   0.0%   0.0%   219   4.0  0.14   80%   11%   12%  nan%  step:81% to:15% let:4%
+ 1   389   9.3%  93.6%   5.4%   0.0%   0.0%   1.0%   250   5.0  0.14   68%   21%   25%  nan%  step:69% to:26% let:4%
+ 2   369   8.8%  74.5%  25.5%   0.0%   0.0%   0.0%   214   4.0  0.16   70%   22%   15%  nan%  step:70% to:18% let:10%
+ 3   492  11.7%  95.1%   3.7%   0.0%   0.0%   1.2%   211   3.7  0.21   62%   29%   21%  nan%  step:63% to:25% let:5%
+ 4   664  15.8%  92.9%   5.9%   0.0%   0.0%   1.2%   225   3.7  0.17   63%   36%   20%  nan%  step:63% to:27% let:8%
+ 5   754  18.0%  94.4%   4.8%   0.0%   0.0%   0.8%   203   3.9  0.18   70%   14%   15%  nan%  step:71% to:23% let:3%
+ 6   540  12.9%  96.1%   3.9%   0.0%   0.0%   0.0%   204   3.8  0.19   67%   23%   16%  nan%  step:68% to:21% let:7%
+ 7   632  15.1%  98.1%   1.9%   0.0%   0.0%   0.0%   210   4.0  0.17   67%   23%   18%  nan%  step:67% to:22% let:8%
+   all 4195         92.9%   6.5%   0.0%   0.0%   0.6%
+words:
+  0 question: expenses card salary monthly fee computer rent offering bills items
+    response: annual expenses rent salary card saves monthly video fee profit
+  1 question: speed show cuts dozen running full eggs charges dogs dog
+    response: fifth pair eggs parents calculations fourth dogs speed during second
+  2 question: place bottom wednesday thursday yellow sunday tuesday like far break
+    response: + yellow sunday ride thursday wednesday type amounts saturday tuesday
+  3 question: turned ago age old older again sister years cup double
+    response: so ago born age plus which older however adds another
+  4 question: favorite respectively jake cheaper nickels percent charge remainder increases mr
+    response: w d nickel follows substitute equation ratio nickels solving frac
+  5 question: kg open high recipe owns drinks juice teacher best apartment
+    response: servings kg the period apartment / weekdays periods nights juice
+  6 question: players yesterday eaten remainder stop fish like still plans finished
+    response: - giving players difference due net available today who men
+  7 question: math homework ages space sum bedroom park room paint plant
+    response: + rooms bedroom found room cat space paint ages adding
+test: audited class shares and correction (fix rate per attempt)
+ c     n audited   CALC TARGET  SETUP  OTHER    restart     refine true_plain true_typed pred_plain
+ 0   118     118  11.0%   0.0%  87.3%   1.7%      40.5%       4.4%      25.2%      28.4%      25.4%
+ 1   100     100   8.0%   1.0%  91.0%   0.0%      32.5%       2.0%      17.8%      23.8%      19.2%
+ 2   114     114  35.1%   0.0%  64.9%   0.0%      33.3%       5.9%      24.3%      37.7%      23.5%
+ 3   133     133   3.8%   1.5%  93.2%   1.5%      31.4%       1.7%      24.4%      21.8%      20.1%
+ 4   189     189   2.1%   3.2%  94.2%   0.5%      25.4%       1.5%      23.0%      22.1%      17.1%
+ 5   207     207   4.3%   5.3%  88.4%   1.9%      26.8%       2.7%      24.8%      21.7%      21.0%
+ 6   145     145   4.1%   2.1%  92.4%   1.4%      38.1%       2.8%      21.9%      25.0%      25.9%
+ 7   176     176   2.8%   4.0%  89.8%   3.4%      33.8%       1.6%      23.6%      22.3%      24.9%
+all  1182    1182   7.6%   2.5%  88.4%   1.4%      32.0%       2.6%      23.3%      24.7%      22.0%
+difference to restart, by cluster (mean [95% CI] n):
+    0  true_typed -0.121 [-0.189,-0.052] n=118   true_plain -0.153 [-0.224,-0.083] n=118
+    1  true_typed -0.087 [-0.160,-0.018] n=100   true_plain -0.147 [-0.209,-0.090] n=100
+    2  true_typed +0.044 [-0.073,+0.154] n=114   true_plain -0.090 [-0.167,-0.019] n=114
+    3  true_typed -0.096 [-0.158,-0.041] n=133   true_plain -0.070 [-0.127,-0.017] n=133
+    4  true_typed -0.033 [-0.080,+0.009] n=189   true_plain -0.024 [-0.069,+0.014] n=189
+    5  true_typed -0.051 [-0.094,-0.013] n=207   true_plain -0.021 [-0.058,+0.013] n=207
+    6  true_typed -0.131 [-0.190,-0.073] n=145   true_plain -0.162 [-0.221,-0.104] n=145
+    7  true_typed -0.115 [-0.169,-0.065] n=176   true_plain -0.102 [-0.151,-0.052] n=176
+  all  true_typed -0.073 [-0.094,-0.052] n=1182   true_plain -0.087 [-0.110,-0.068] n=1182

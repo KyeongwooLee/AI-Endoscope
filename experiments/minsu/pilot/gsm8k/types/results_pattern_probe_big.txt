@@ -1,0 +1,11 @@
+items 3386: dominant 2381  stuck 198  competing 291  spread 516
+
+## 4-way: balanced accuracy (chance 0.25) / macro-F1; binary tasks: AUROC; [95% CI of hidden minus input]
+  hidden r_mean                  4-way 0.441  stuck vs spread 0.882  stuck vs rest 0.652  dominant vs rest 0.756  (4-way macro-F1 0.382)
+  question q_end                 4-way 0.403 [+0.01,+0.07]  stuck vs spread 0.769 [+0.08,+0.15]  stuck vs rest 0.493 [+0.11,+0.21]  dominant vs rest 0.756 [-0.02,+0.02]  (4-way macro-F1 0.360)
+  confidence+len                 4-way 0.408 [+0.00,+0.06]  stuck vs spread 0.825 [+0.02,+0.09]  stuck vs rest 0.684 [-0.08,+0.01]  dominant vs rest 0.710 [+0.03,+0.06]  (4-way macro-F1 0.289)
+  text                           4-way 0.307 [+0.10,+0.16]  stuck vs spread 0.629 [+0.20,+0.30]  stuck vs rest 0.522 [+0.08,+0.18]  dominant vs rest 0.642 [+0.09,+0.13]  (4-way macro-F1 0.297)
+  other-4 accuracy (reference)   4-way 0.489 [-0.08,-0.01]  stuck vs spread 0.532 [+0.29,+0.41]  stuck vs rest 0.859 [-0.25,-0.16]  dominant vs rest 0.896 [-0.16,-0.12]  (4-way macro-F1 0.455)
+
+per-class recall, hidden r_mean 4-way: dominant 54%  stuck 34%  competing 26%  spread 62%
+per-class recall, confidence+len 4-way: dominant 30%  stuck 64%  competing 14%  spread 56%

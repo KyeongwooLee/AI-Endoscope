@@ -1,0 +1,27 @@
+## text markers, all train solutions (format ok)
+  trouble                  wrong   4.0%  correct   0.4%   n wrong   310 n correct   115   wrong rate when present  72.9% (overall 21.1%)
+  rounding                 wrong   3.3%  correct   0.4%   n wrong   253 n correct   107   wrong rate when present  70.3% (overall 21.1%)
+  either                   wrong   6.3%  correct   0.7%   n wrong   482 n correct   194   wrong rate when present  71.3% (overall 21.1%)
+  #### repeated 3+ times   wrong   2.5%  correct   0.5%   n wrong   190 n correct   134   wrong rate when present  58.6% (overall 21.1%)
+
+## contrastive from qres: most wrong-specific cluster, held-out problems (train-fold sizes [179, 194, 167, 169, 176])
+  wrong answers in it   5.2% (224), correct solutions in it   1.2% (78)
+  markers among wrong: in cluster trouble  61.6% rounding  29.0%; outside trouble   1.0% rounding   1.7%
+  AUROC wrong vs correct, cluster member   0.520
+  AUROC wrong vs correct, trouble marker   0.516
+  AUROC wrong vs correct, rounding marker  0.511
+  AUROC wrong vs correct, either marker    0.523
+
+## contrastive from diff: most wrong-specific cluster, held-out problems (train-fold sizes [172, 249, 165, 168, 251])
+  wrong answers in it   5.9% (251), correct solutions in it   0.5% (31)
+  markers among wrong: in cluster trouble  53.4% rounding  27.5%; outside trouble   1.1% rounding   1.6%
+  AUROC wrong vs correct, cluster member   0.527
+  AUROC wrong vs correct, trouble marker   0.517
+  AUROC wrong vs correct, rounding marker  0.511
+  AUROC wrong vs correct, either marker    0.523
+
+## test wrong answers (all non-NOEQ) by marker: audited class and correction
+group            n audited   CALC TARGET  SETUP  restart   refine true_plain true_typed
+trouble         71      50   2.0%   4.0%  94.0%    34.2%     6.1%      25.6%      22.8%
+rounding        40      31   3.2%   0.0%  96.8%    29.0%     4.0%      25.8%      15.3%
+neither       1534    1325   7.1%   6.5%  85.1%    32.9%     2.9%      23.5%      24.6%
