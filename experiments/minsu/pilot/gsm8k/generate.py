@@ -11,7 +11,7 @@ from transformers import AutoTokenizer
 SRC, OUT = sys.argv[1], sys.argv[2]
 K, SHARD, NSH = int(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5])
 LIMIT = int(sys.argv[6]) if len(sys.argv) > 6 else None
-MODEL = 'Qwen/Qwen2.5-1.5B-Instruct'
+MODEL = os.environ.get('MODEL', 'Qwen/Qwen2.5-1.5B-Instruct')
 SYSTEM = ('You are a math problem-solving assistant. Explain your reasoning step by step. You must end every answer '
           'with a separate final line formatted exactly as #### followed by a space and the numerical answer. Write '
           'nothing after this final line. Do not omit this line. The final answer must contain only a number, without '
@@ -42,9 +42,9 @@ def parse_answer(text):
 tok = AutoTokenizer.from_pretrained(MODEL)
 llm = LLM(MODEL, dtype='bfloat16', gpu_memory_utilization=0.85, seed=0)
 greedy = SamplingParams(temperature=0.0, max_tokens=1024)
-sampled = SamplingParams(n=K, temperature=0.7, top_p=0.95, max_tokens=1024)  # engine seed=0 (per-request seed is slow)
+sampled = None if K == 0 else SamplingParams(n=K, temperature=0.7, top_p=0.95, max_tokens=1024)  # engine seed=0 (per-request seed is slow)
 
-for split in ['test', 'train']:
+for split in os.environ.get('SPLITS', 'test,train').split(','):
     rows = [json.loads(l) for l in open(f'{SRC}/{split}.jsonl')]
     rows = rows[:LIMIT] if LIMIT else rows
     ids = [i for i in range(len(rows)) if i % NSH == SHARD]

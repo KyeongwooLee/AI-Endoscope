@@ -1,0 +1,44 @@
+questions 7409; greedy wrong 17.7%
+type shares (overlapping), all / among greedy-wrong: A 0.0%/0.0%  B 79.3%/31.6%  C 2.2%/9.5%  D 5.6%/15.7%  E 24.4%/64.8%
+combinations among greedy-wrong: E 561  B 304  D + E 152  B + E 108  C 90  D 46  C + E 29  none 13
+
+## one-vs-rest AUROC per type (out-of-fold): all questions | greedy-wrong questions only
+type                                 hidden r_mean        hidden ans (paper)            question q_end                confidence
+B mostly correct                     0.884 | 0.715             0.833 | 0.652             0.842 | 0.752             0.832 | 0.656
+C same wrong (stuck)                 0.573 | 0.492             0.554 | 0.535             0.580 | 0.585             0.549 | 0.365
+D two competing                      0.739 | 0.533             0.672 | 0.479             0.689 | 0.536             0.731 | 0.513
+E many answers                       0.904 | 0.821             0.848 | 0.740             0.856 | 0.823             0.839 | 0.746
+
+## fix rate by TRUE type, greedy-wrong questions
+type                         n  restart    vote5   vote15      big
+B mostly correct           414    56.3%    80.9%    91.5%    93.2%
+C same wrong (stuck)       125    22.4%    16.8%    18.4%    42.4%
+D two competing            206    22.8%    35.4%    45.1%    73.3%
+E many answers             850    20.8%    30.9%    40.7%    65.4%
+none no type                   13    23.1%    23.1%    46.2%    53.8%
+
+## pipeline, flag top 25% by hidden P(wrong) (recall of wrong 71%)
+policy                                                      accuracy   cost
+greedy only                                                    82.3%   1.00
+all 3B                                                         92.3%   2.00
+detect -> vote15                                               85.9%   4.75
+detect -> 3B                                                   89.8%   1.50
+detect -> predicted type -> C or E -> 3B, else vote5           89.5%   1.59
+detect -> TRUE      type -> C or E -> 3B, else vote5           88.7%   1.77
+detect -> predicted type -> C -> 3B, E -> vote15, else vote5     86.8%   3.52
+detect -> TRUE      type -> C -> 3B, E -> vote15, else vote5     85.5%   3.74
+detect -> predicted type -> B -> vote5, else 3B                89.4%   1.63
+detect -> TRUE      type -> B -> vote5, else 3B                88.6%   1.83
+
+## pipeline, flag top 40% by hidden P(wrong) (recall of wrong 86%)
+policy                                                      accuracy   cost
+greedy only                                                    82.3%   1.00
+all 3B                                                         92.3%   2.00
+detect -> vote15                                               86.7%   7.00
+detect -> 3B                                                   91.5%   1.80
+detect -> predicted type -> C or E -> 3B, else vote5           90.8%   2.07
+detect -> TRUE      type -> C or E -> 3B, else vote5           89.8%   2.37
+detect -> predicted type -> C -> 3B, E -> vote15, else vote5     87.5%   4.71
+detect -> TRUE      type -> C -> 3B, E -> vote15, else vote5     85.8%   4.93
+detect -> predicted type -> B -> vote5, else 3B                90.5%   2.20
+detect -> TRUE      type -> B -> vote5, else 3B                89.6%   2.48

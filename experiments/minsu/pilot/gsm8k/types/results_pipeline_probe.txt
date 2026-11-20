@@ -1,0 +1,16 @@
+questions 7473; greedy answers with features and format ok: 7409
+greedy wrong 17.7%; classes (TH=8): easy 79.3%  wobbly 18.5%  stuck 2.2% | among greedy-wrong: easy 31.6%  wobbly 58.9%  stuck 9.5%
+
+## (1) greedy answer wrong: AUROC [95% CI]
+  hidden r_mean    0.865 [0.853, 0.874]
+  question q_end   0.742 [0.727, 0.756]
+  confidence       0.809 [0.795, 0.821]
+
+## (2) 3-class, all questions and greedy-wrong only: balanced accuracy, per-class recall, stuck-vs-rest AUROC
+  hidden r_mean    all           bal.acc 0.564  recall easy 73%  wobbly 73%  stuck 23%  stuck AUROC 0.603
+  hidden r_mean    greedy-wrong  bal.acc 0.471  recall easy 42%  wobbly 78%  stuck 21%  stuck AUROC 0.600
+  question q_end   all           bal.acc 0.532  recall easy 67%  wobbly 68%  stuck 24%  stuck AUROC 0.591
+  question q_end   greedy-wrong  bal.acc 0.493  recall easy 51%  wobbly 73%  stuck 24%  stuck AUROC 0.635
+  confidence       all           bal.acc 0.510  recall easy 67%  wobbly 63%  stuck 23%  stuck AUROC 0.549
+  confidence       greedy-wrong  bal.acc 0.406  recall easy 31%  wobbly 68%  stuck 23%  stuck AUROC 0.561
+saved pipe_probes.npz
