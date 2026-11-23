@@ -1,0 +1,87 @@
+questions with rs30 labels, 5 answers and features, greedy format ok: 7409
+greedy wrong 17.7% (n=1311); type share all / greedy-wrong: B 74.9%/23.9%  C 1.2%/5.7%  D 6.1%/17.1%  E 27.4%/68.3%
+gen_train sample accuracy (T=0.7): 78.0%; greedy 82.3%
+
+nested per-answer P(wrong) probes ...
+  fold 0: per-answer wrong AUROC on test questions 0.866
+  fold 1: per-answer wrong AUROC on test questions 0.872
+  fold 2: per-answer wrong AUROC on test questions 0.878
+  fold 3: per-answer wrong AUROC on test questions 0.881
+  fold 4: per-answer wrong AUROC on test questions 0.880
+type probes ...
+
+## one-vs-rest AUROC, greedy-wrong questions (n=1311)
+features          K         B mostly correct    C same wrong (stuck)         D two competing          E many answers
+question          1                    0.820                   0.571                   0.458                   0.847
+greedy hidden     1                    0.773                   0.596                   0.480                   0.866
+hidden mean       1                    0.773                   0.596                   0.480                   0.866
+agree             1                    0.500                   0.500                   0.500                   0.500
+agree+question    1                    0.820                   0.571                   0.458                   0.847
+agree+conf        1                    0.703                   0.499                   0.446                   0.753
+agree+pwrong      1                    0.653                   0.181                   0.409                   0.752
+agree+hidden      1                    0.773                   0.595                   0.480                   0.866
+agree+all         1                    0.771                   0.608                   0.476                   0.864
+hidden mean       3                    0.820                   0.558                   0.487                   0.889
+agree             3                    0.534                   0.519                   0.407                   0.637
+agree+question    3                    0.775                   0.540                   0.413                   0.846
+agree+conf        3                    0.768                   0.514                   0.414                   0.828
+agree+pwrong      3                    0.778                   0.499                   0.435                   0.834
+agree+hidden      3                    0.798                   0.552                   0.470                   0.888
+agree+all         3                    0.805                   0.543                   0.460                   0.889
+hidden mean       5                    0.840                   0.566                   0.501                   0.898
+agree             5                    0.686                   0.583                   0.519                   0.768
+agree+question    5                    0.798                   0.554                   0.457                   0.859
+agree+conf        5                    0.795                   0.587                   0.509                   0.853
+agree+pwrong      5                    0.809                   0.607                   0.535                   0.858
+agree+hidden      5                    0.821                   0.556                   0.501                   0.897
+agree+all         5                    0.820                   0.543                   0.497                   0.898
+
+## one-vs-rest AUROC, all questions (n=7409)
+features          K         B mostly correct    C same wrong (stuck)         D two competing          E many answers
+question          1                    0.865                   0.542                   0.662                   0.884
+greedy hidden     1                    0.910                   0.603                   0.730                   0.922
+hidden mean       1                    0.910                   0.603                   0.730                   0.922
+agree             1                    0.500                   0.500                   0.500                   0.500
+agree+question    1                    0.865                   0.543                   0.662                   0.884
+agree+conf        1                    0.850                   0.487                   0.723                   0.844
+agree+pwrong      1                    0.884                   0.567                   0.763                   0.877
+agree+hidden      1                    0.910                   0.603                   0.730                   0.922
+agree+all         1                    0.910                   0.605                   0.730                   0.922
+hidden mean       3                    0.920                   0.563                   0.734                   0.932
+agree             3                    0.790                   0.557                   0.700                   0.741
+agree+question    3                    0.901                   0.544                   0.712                   0.901
+agree+conf        3                    0.902                   0.529                   0.777                   0.885
+agree+pwrong      3                    0.916                   0.613                   0.798                   0.899
+agree+hidden      3                    0.928                   0.567                   0.750                   0.932
+agree+all         3                    0.929                   0.555                   0.747                   0.932
+hidden mean       5                    0.923                   0.570                   0.744                   0.935
+agree             5                    0.866                   0.606                   0.793                   0.819
+agree+question    5                    0.917                   0.553                   0.759                   0.912
+agree+conf        5                    0.923                   0.577                   0.809                   0.905
+agree+pwrong      5                    0.931                   0.651                   0.827                   0.911
+agree+hidden      5                    0.935                   0.574                   0.783                   0.937
+agree+all         5                    0.936                   0.556                   0.785                   0.937
+
+## does hidden add to answer agreement (and to agreement + question)? greedy-wrong questions, AUROC difference [95% bootstrap CI]
+K=1 hidden mean   - question      : B -0.046 [-0.068,-0.021]  C +0.024 [-0.057,+0.099]  D +0.022 [-0.031,+0.069]  E +0.020 [-0.001,+0.040]
+K=1 agree+hidden  - hidden mean   : B +0.000 [-0.000,+0.000]  C -0.000 [-0.000,+0.000]  D -0.000 [-0.000,+0.000]  E -0.000 [-0.000,+0.000]
+K=1 agree+pwrong  - agree         : B +0.153 [+0.124,+0.189]  C -0.319 [-0.361,-0.267]  D -0.091 [-0.132,-0.052]  E +0.252 [+0.223,+0.279]
+K=1 agree+hidden  - agree         : B +0.273 [+0.251,+0.302]  C +0.095 [+0.029,+0.156]  D -0.020 [-0.061,+0.020]  E +0.366 [+0.344,+0.387]
+K=1 agree+conf    - agree         : B +0.203 [+0.177,+0.238]  C -0.001 [-0.069,+0.067]  D -0.054 [-0.090,-0.014]  E +0.253 [+0.225,+0.283]
+K=1 agree+hidden  - agree+question: B -0.046 [-0.068,-0.021]  C +0.024 [-0.058,+0.099]  D +0.022 [-0.031,+0.069]  E +0.020 [-0.001,+0.040]
+K=1 agree+all     - agree+question: B -0.048 [-0.072,-0.024]  C +0.036 [-0.048,+0.111]  D +0.018 [-0.034,+0.066]  E +0.017 [-0.004,+0.037]
+K=3 hidden mean   - question      : B +0.000 [-0.020,+0.022]  C -0.013 [-0.100,+0.070]  D +0.029 [-0.022,+0.072]  E +0.042 [+0.023,+0.060]
+K=3 agree+hidden  - hidden mean   : B -0.022 [-0.028,-0.016]  C -0.006 [-0.015,+0.002]  D -0.017 [-0.030,-0.004]  E -0.001 [-0.004,+0.001]
+K=3 agree+pwrong  - agree         : B +0.245 [+0.214,+0.274]  C -0.020 [-0.050,+0.007]  D +0.028 [-0.023,+0.075]  E +0.197 [+0.167,+0.233]
+K=3 agree+hidden  - agree         : B +0.264 [+0.234,+0.295]  C +0.033 [-0.048,+0.120]  D +0.063 [+0.011,+0.111]  E +0.250 [+0.221,+0.285]
+K=3 agree+conf    - agree         : B +0.235 [+0.207,+0.269]  C -0.005 [-0.053,+0.044]  D +0.007 [-0.038,+0.053]  E +0.190 [+0.157,+0.224]
+K=3 agree+hidden  - agree+question: B +0.023 [+0.005,+0.042]  C +0.011 [-0.077,+0.092]  D +0.057 [+0.007,+0.095]  E +0.042 [+0.024,+0.058]
+K=3 agree+all     - agree+question: B +0.030 [+0.011,+0.050]  C +0.002 [-0.090,+0.083]  D +0.047 [-0.005,+0.088]  E +0.043 [+0.027,+0.060]
+K=5 hidden mean   - question      : B +0.020 [+0.000,+0.043]  C -0.005 [-0.090,+0.082]  D +0.043 [-0.010,+0.085]  E +0.051 [+0.032,+0.070]
+K=5 agree+hidden  - hidden mean   : B -0.019 [-0.026,-0.011]  C -0.009 [-0.022,+0.001]  D +0.000 [-0.021,+0.020]  E -0.001 [-0.003,+0.002]
+K=5 agree+pwrong  - agree         : B +0.122 [+0.100,+0.145]  C +0.024 [+0.001,+0.046]  D +0.016 [-0.025,+0.055]  E +0.090 [+0.068,+0.112]
+K=5 agree+hidden  - agree         : B +0.135 [+0.111,+0.163]  C -0.027 [-0.108,+0.056]  D -0.018 [-0.077,+0.030]  E +0.129 [+0.105,+0.156]
+K=5 agree+conf    - agree         : B +0.109 [+0.085,+0.133]  C +0.004 [-0.043,+0.054]  D -0.010 [-0.043,+0.019]  E +0.085 [+0.063,+0.109]
+K=5 agree+hidden  - agree+question: B +0.023 [+0.005,+0.042]  C +0.003 [-0.078,+0.087]  D +0.044 [-0.010,+0.087]  E +0.039 [+0.022,+0.056]
+K=5 agree+all     - agree+question: B +0.022 [+0.005,+0.041]  C -0.011 [-0.096,+0.073]  D +0.040 [-0.012,+0.082]  E +0.040 [+0.023,+0.057]
+done

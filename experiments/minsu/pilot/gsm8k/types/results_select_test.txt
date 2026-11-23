@@ -1,0 +1,44 @@
+train questions 7473 (answers 37365); test questions 1319; test greedy acc 72.0%, sampled acc 66.8%
+
+## detection on test: is the greedy answer wrong? AUROC [95% bootstrap CI]
+  hidden  0.863 [0.841, 0.884]   (all answers 0.862)
+  conf    0.772 [0.742, 0.800]   (all answers 0.775)
+
+## test, K=3 answers (greedy + 2 samples): accuracy of the chosen answer
+rule                    all   greedy-wrong   greedy-right
+n                      1319            369            950
+greedy                72.0%           0.0%         100.0%
+majority              73.8%          13.0%          97.5%
+probe vote            76.3%          27.6%          95.2%
+probe pick            76.3%          31.2%          93.9%
+conf vote             74.1%          22.5%          94.1%
+oracle                84.1%          43.1%         100.0%
+
+## test, K=5 answers (greedy + 4 samples): accuracy of the chosen answer
+rule                    all   greedy-wrong   greedy-right
+n                      1319            369            950
+greedy                72.0%           0.0%         100.0%
+majority              76.9%          23.8%          97.5%
+probe vote            78.2%          32.8%          95.9%
+probe pick            76.7%          34.7%          93.1%
+conf vote             76.2%          27.9%          94.9%
+oracle                88.8%          59.9%         100.0%
+
+## test, paired difference vs majority, %p [95% bootstrap CI]
+  K=3 probe vote  +2.43 [+1.14, +3.79]   wins 59 / losses 27
+  K=3 probe pick  +2.50 [+0.83, +4.09]   wins 81 / losses 48
+  K=3 conf vote   +0.23 [-0.91, +1.44]   wins 36 / losses 33
+  K=5 probe vote  +1.36 [+0.08, +2.43]   wins 42 / losses 24
+  K=5 probe pick  -0.15 [-1.67, +1.44]   wins 62 / losses 64
+  K=5 conf vote   -0.68 [-1.82, +0.45]   wins 26 / losses 35
+
+## test pipeline: flag top q% by greedy P(wrong), apply the rule (K=5) only there; cost = 1 + 4q
+rule                         q=25%     q=40%
+detect(hidden) -> majority     74.9%     76.0%
+detect(hidden) -> probe vote     76.2%     77.3%
+detect(hidden) -> oracle     81.7%     85.1%
+detect(conf) -> majority     74.2%     75.2%
+detect(conf) -> probe vote     75.3%     76.7%
+detect(conf) -> oracle       80.5%     83.5%
+(greedy only 72.0%; all questions majority K=5 76.9%, probe vote K=5 78.2%, cost 5)
+done
