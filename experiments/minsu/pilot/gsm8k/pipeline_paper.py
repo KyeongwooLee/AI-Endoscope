@@ -8,7 +8,9 @@ Types overlap; one probe per type (one-vs-rest), out-of-fold (5-fold over questi
 Inputs from the 1.5B greedy answer: hidden r_mean L20, hidden at the answer token L20 (paper's position), question-only
 q_end L20, confidence. Then: fix rate of each strategy by TRUE type, and the pipeline
   greedy -> P(wrong) flag -> predicted type -> strategy, with the type->strategy map chosen on the fix table.
-usage: python pipeline_paper.py <rs_dir> <feat_dir> <gen3b_dir> <probes_npz_from_pipeline_probe>
+usage: python pipeline_paper.py <rs_dir> <feat_dir> <gen3b_dir> <probes_npz_from_pipeline_probe> [<fix_dir>]
+  with <fix_dir> (independent samples, e.g. 15 at T=0.7): types use ALL 30 rs30 samples with the paper's exact K=30
+  thresholds, and every fix is computed from <fix_dir> instead of rs30 samples 16-30.
 """
 import collections, glob, json, sys, warnings
 import numpy as np
@@ -22,6 +24,7 @@ from sklearn.preprocessing import StandardScaler
 
 warnings.filterwarnings('ignore')
 RS, F, G3, PW = sys.argv[1:5]
+FIX = sys.argv[5] if len(sys.argv) > 5 else None
 key = lambda x: None if x is None else round(x, 4)
 ok = lambda x, g: x is not None and abs(x - g) < 1e-6
 T = ['A', 'B', 'C', 'D', 'E']
@@ -33,6 +36,9 @@ def types(p, g):
     c, none = sum(ok(x, g) for x in p), sum(x is None for x in p)
     w = collections.Counter(x for x in p if x is not None and not ok(x, g))
     top = w.most_common(1)[0][1] if w else 0
+    if len(p) == 30:   # paper, K=30
+        return {'A': none >= 15, 'B': c >= 15, 'C': top >= 15, 'D': abs(c - top) <= 5 and c >= 5 and top >= 5,
+                'E': len({x for x in p if x is not None}) > 10}
     return {'A': none >= 8, 'B': c >= 8, 'C': top >= 8, 'D': abs(c - top) <= 2 and c >= 3 and top >= 3,
             'E': len({x for x in p if x is not None}) > 5}
 
@@ -43,19 +49,22 @@ def vote(ps, g):
 
 
 rows = {r['greedy_id']: r for f in sorted(glob.glob(f'{RS}/rs_*.jsonl')) for r in map(json.loads, open(f))}
+fixp = {r['greedy_id']: r['preds'] for f in sorted(glob.glob(f'{FIX}/rs_*.jsonl')) for r in map(json.loads, open(f))} if FIX else None
 big = {f"train-{r['pid']}-0": r['correct'] for f in glob.glob(f'{G3}/train_*.jsonl') for r in map(json.loads, open(f))}
 meta = json.load(open(f'{F}/meta_0.json'))
 L20, POS = meta['layers'].index(20), meta['positions']
 H, C = np.load(f'{F}/H_0.npy', mmap_mode='r'), np.load(f'{F}/C_0.npy')
 mid = [f"{m['split']}-{m['pid']}-{m['sample']}" for m in meta['meta']]
-J = [j for j, i in enumerate(mid) if i in rows and i in big and meta['meta'][j]['format_ok']]
+J = [j for j, i in enumerate(mid) if i in rows and i in big and meta['meta'][j]['format_ok'] and (fixp is None or i in fixp)]
 ids = [mid[j] for j in J]
 J = np.array(J)
 X = {'hidden r_mean': np.asarray(H[J, POS.index('r_mean'), L20], dtype=np.float32),
      'hidden ans (paper)': np.asarray(H[J, POS.index('ans'), L20], dtype=np.float32),
      'question q_end': np.asarray(H[J, POS.index('q_end'), L20], dtype=np.float32),
      'confidence': C[J].astype(np.float32)}
-lab = [types(rows[i]['preds'][:15], rows[i]['gold']) for i in ids]
+lab = [types(rows[i]['preds'] if FIX else rows[i]['preds'][:15], rows[i]['gold']) for i in ids]
+fx = {i: (fixp[i] if FIX else rows[i]['preds'][15:]) for i in ids}
+print('labels from', 'all 30 rs30 samples (paper K=30)' if FIX else 'rs30 samples 1-15', '| fixes from', FIX or 'rs30 samples 16-30')
 Y = {t: np.array([l[t] for l in lab], dtype=int) for t in T}
 wrong = np.array([not rows[i]['greedy_correct'] for i in ids], dtype=int)
 n = len(ids)
@@ -97,9 +106,9 @@ for t in TT:
 
 # fix outcomes from samples 16-30 and 3B
 S = {'keep': 1.0 - wrong}
-S['restart'] = np.array([ok(rows[i]['preds'][15], rows[i]['gold']) for i in ids], float)
-S['vote5'] = np.array([vote(rows[i]['preds'][15:20], rows[i]['gold']) for i in ids], float)
-S['vote15'] = np.array([vote(rows[i]['preds'][15:], rows[i]['gold']) for i in ids], float)
+S['restart'] = np.array([ok(fx[i][0], rows[i]['gold']) for i in ids], float)
+S['vote5'] = np.array([vote(fx[i][:5], rows[i]['gold']) for i in ids], float)
+S['vote15'] = np.array([vote(fx[i][:15], rows[i]['gold']) for i in ids], float)
 S['big'] = np.array([big[i] for i in ids], float)
 COST = {'keep': 0, 'restart': 1, 'vote5': 5, 'vote15': 15, 'big': 2}
 print('\n## fix rate by TRUE type, greedy-wrong questions')

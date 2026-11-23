@@ -230,6 +230,12 @@ hidden을 두 번 쓴다: 고칠 문제를 고를 때, 고칠 답을 고를 때.
 
 참고: 3B 모델로 넘기는 캐스케이드는 모든 패턴에서 가장 잘 고치지만(탐지 25% → 3B 89.8%, 비용 1.5) 모델을 바꾸는 것이라 이 프로젝트의 질문에서 뺐다. 기록은 [PIPELINE_RESULTS.md](pilot/gsm8k/PIPELINE_RESULTS.md), `results_pipeline*.txt`. train 정답률(82%)이 test(72%)보다 높은 건 train 문제가 사전학습에 섞였을 가능성이 있다.
 
+## 15. 그 외 수정 시도 (효과 없음) (`steer.py`, `analyze_steer.py`, `analyze_veto.py` → `results_steer.txt`, `results_veto.txt`)
+
+- **activation steering**: 같은 문제의 정답 풀이 hidden 평균 − 오답 풀이 hidden 평균을 20층에 더해 greedy로 다시 풀게 했다. 방향 벡터는 문제를 반으로 나눠 다른 절반에서 만들었다. 오답 고침은 base 38.6% → 최대 40.1%(+1.5%p, 유의하지 않음)였고, 세게 주면 맞던 문제를 망쳤다(α=4에서 −4.4%p). C에도 효과가 없었다.
+- **veto vote**: greedy 답이 오답으로 탐지되면 그 답을 빼고 다수결을 했다. C·D의 고침률은 오르지만, 맞던 문제를 잘못 탐지하면 정답을 빼버린다. 그래서 파이프라인 전체로는 일반 다수결보다 2.6~4.4%p 낮았다.
+- `probe_wrong_reader.py`는 2번 판별에 외부 모델 대조군을 붙이는 스크립트이고, 아직 결과가 없다(다음에 할 것 1번).
+
 ## 다음에 할 것
 
 1. 2번 정답/오답 판별에 12번과 같은 외부 모델 대조군 붙이기.

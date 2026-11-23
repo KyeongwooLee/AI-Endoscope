@@ -14,7 +14,7 @@ import numpy as np, torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 GEN, OUT, SHARD, NSH = sys.argv[1], sys.argv[2], int(sys.argv[3]), int(sys.argv[4])
-MODEL, LAYERS, BS = 'Qwen/Qwen2.5-1.5B-Instruct', [4, 8, 12, 16, 20, 24, 28], 16
+MODEL, LAYERS, BS = 'Qwen/Qwen2.5-1.5B-Instruct', [4, 8, 12, 16, 20, 24, 28], int(os.environ.get('BS', 16))
 CONF = ['nll_mean', 'nll_max', 'lowtail_lp', 'ent_mean', 'ent_max', 'margin_mean', 'margin_min', 'ans_lp', 'length']
 os.makedirs(OUT, exist_ok=True)
 tok = AutoTokenizer.from_pretrained(MODEL)

@@ -1,0 +1,46 @@
+questions 7409; greedy wrong 17.7%
+
+## greedy-wrong questions by paper type: fix rate (%)
+type       n   vote5   veto5  pass@5  vote15  veto15  pass@15     3B
+B        313   86.3%   95.2%   99.0%   96.2%   98.4%   100.0%  96.8%
+C         75    1.3%   13.3%   16.0%    4.0%   30.7%    46.7%  26.7%
+D        215   40.9%   57.7%   77.2%   53.0%   79.1%    97.7%  75.8%
+E        659   37.3%   41.6%   63.7%   50.8%   56.9%    82.9%  62.4%
+other     49   46.9%   51.0%   67.3%   57.1%   67.3%    98.0%  71.4%
+all     1311   47.9%   55.8%   71.8%   59.6%   69.3%    87.9%  71.1%
+
+## greedy-CORRECT questions: answer still correct after (harm if wrongly flagged)
+  vote5 96.1%  veto5 71.0%  vote15 98.5%  veto15 36.8%  3B 96.8%
+
+## pipeline, flag top 15% by hidden P(wrong) (recall 53%, precision 62%)
+  greedy only              accuracy  82.3%  cost  1.00
+  detect -> vote5          accuracy  85.7%  cost  1.75
+  detect -> VETO vote5     accuracy  83.1%  cost  1.75
+  detect -> vote15         accuracy  87.2%  cost  3.25
+  detect -> VETO vote15    accuracy  82.9%  cost  3.25
+  detect -> 3B             accuracy  87.9%  cost  1.30
+    detect -> VETO vote15 minus detect -> vote15: -4.37%p [-4.87, -3.87]
+    detect -> VETO vote5 minus detect -> vote5: -2.60%p [-3.00, -2.20]
+    detect -> VETO vote15 minus detect -> 3B: -5.02%p [-5.60, -4.39]
+
+## pipeline, flag top 25% by hidden P(wrong) (recall 71%, precision 50%)
+  greedy only              accuracy  82.3%  cost  1.00
+  detect -> vote5          accuracy  86.6%  cost  2.25
+  detect -> VETO vote5     accuracy  80.9%  cost  2.25
+  detect -> vote15         accuracy  88.9%  cost  4.75
+  detect -> VETO vote15    accuracy  79.1%  cost  4.75
+  detect -> 3B             accuracy  89.8%  cost  1.50
+    detect -> VETO vote15 minus detect -> vote15: -9.81%p [-10.55, -9.08]
+    detect -> VETO vote5 minus detect -> vote5: -5.69%p [-6.26, -5.12]
+    detect -> VETO vote15 minus detect -> 3B: -10.66%p [-11.46, -9.87]
+
+## pipeline, flag top 40% by hidden P(wrong) (recall 86%, precision 38%)
+  greedy only              accuracy  82.3%  cost  1.00
+  detect -> vote5          accuracy  87.3%  cost  3.00
+  detect -> VETO vote5     accuracy  77.4%  cost  3.00
+  detect -> vote15         accuracy  90.5%  cost  7.00
+  detect -> VETO vote15    accuracy  71.5%  cost  7.00
+  detect -> 3B             accuracy  91.5%  cost  1.80
+    detect -> VETO vote15 minus detect -> vote15: -18.96%p [-19.96, -17.98]
+    detect -> VETO vote5 minus detect -> vote5: -9.90%p [-10.61, -9.14]
+    detect -> VETO vote15 minus detect -> 3B: -19.98%p [-20.99, -18.98]

@@ -8,6 +8,7 @@ from transformers import AutoTokenizer
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 GEN, OUT, SHARD, NSH = sys.argv[1], sys.argv[2], int(sys.argv[3]), int(sys.argv[4])
 K = int(os.environ.get('K', 30))
+TEMP = float(os.environ.get('T', 1.0))  # paper: 1.0
 MODEL = 'Qwen/Qwen2.5-1.5B-Instruct'
 SYSTEM = ('You are a math problem-solving assistant. Explain your reasoning step by step. You must end every answer '
           'with a separate final line formatted exactly as #### followed by a space and the numerical answer. Write '
@@ -39,7 +40,7 @@ prompts = [{'prompt_token_ids': tok.apply_chat_template(
     [{'role': 'system', 'content': SYSTEM}, {'role': 'user', 'content': USER.format(question=r['question'])}],
     add_generation_prompt=True, tokenize=True)} for r in rows]
 t0 = time.time()
-outs = llm.generate(prompts, SamplingParams(n=K, temperature=1.0, top_p=1.0, max_tokens=1024))
+outs = llm.generate(prompts, SamplingParams(n=K, temperature=TEMP, top_p=1.0 if TEMP == 1.0 else 0.95, max_tokens=1024))
 with open(f'{OUT}/rs_{SHARD}.jsonl.tmp', 'w') as f:
     for r, o in zip(rows, outs):
         pa = [parse_answer(c.text) for c in o.outputs]
