@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "model_weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "gsm8k_revision": "740312add88f781978c0658806c59bc2815b9866",
+  "math_revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+  "seed": 42,
+  "device": "cuda:0",
+  "dtype": "bfloat16",
+  "limit_per_dataset": null,
+  "release_dir": null,
+  "gsm8k_release_bank": false,
+  "forward_budget_per_problem": 200000
+}
